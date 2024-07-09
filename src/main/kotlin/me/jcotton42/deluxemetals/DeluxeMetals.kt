@@ -1,9 +1,10 @@
 package me.jcotton42.deluxemetals
 
-import me.jcotton42.deluxemetals.block.ModBlocks
+import me.jcotton42.deluxemetals.datagen.DataGeneration
 import net.minecraft.client.Minecraft
 import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent
 import net.minecraftforge.fml.event.lifecycle.FMLDedicatedServerSetupEvent
 import org.apache.logging.log4j.Level
 import org.apache.logging.log4j.LogManager
@@ -28,20 +29,21 @@ object DeluxeMetals {
     init {
         LOGGER.log(Level.INFO, "Hello world!")
 
-        // Register the KDeferredRegister to the mod-specific event bus
-        ModBlocks.REGISTRY.register(MOD_BUS)
+        Registration.register(MOD_BUS)
+        MOD_BUS.addListener(::onCommonSetup)
+        MOD_BUS.addListener(DataGeneration::generate)
 
-        val obj = runForDist(
+        runForDist(
             clientTarget = {
                 MOD_BUS.addListener(DeluxeMetals::onClientSetup)
-                Minecraft.getInstance()
             },
             serverTarget = {
                 MOD_BUS.addListener(DeluxeMetals::onServerSetup)
-                "test"
             })
+    }
 
-        println(obj)
+    private fun onCommonSetup(event: FMLCommonSetupEvent) {
+        LOGGER.info("hello from common setup")
     }
 
     /**
