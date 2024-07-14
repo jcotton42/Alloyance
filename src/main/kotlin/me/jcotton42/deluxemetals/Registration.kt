@@ -35,7 +35,7 @@ object Registration {
         ITEMS.register(bus)
         BLOCK_ENTITIES.register(bus)
 
-        bus.register(::addCreative)
+        bus.addListener(::addCreative)
     }
 
     private fun addCreative(event: BuildCreativeModeTabContentsEvent) {
