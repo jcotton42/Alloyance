@@ -1,6 +1,6 @@
-package me.jcotton42.deluxemetals
+package me.jcotton42.alloyance
 
-import me.jcotton42.deluxemetals.block.ModBlocks
+import me.jcotton42.alloyance.datagen.generateData
 import net.minecraft.client.Minecraft
 import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent
@@ -18,9 +18,9 @@ import thedarkcolour.kotlinforforge.forge.runForDist
  *
  * An example for blocks is in the `blocks` package of this mod.
  */
-@Mod(DeluxeMetals.ID)
-object DeluxeMetals {
-    const val ID = "deluxemetals"
+@Mod(Alloyance.ID)
+object Alloyance {
+    const val ID = "alloyance"
 
     // the logger for our mod
     val LOGGER: Logger = LogManager.getLogger(ID)
@@ -29,15 +29,16 @@ object DeluxeMetals {
         LOGGER.log(Level.INFO, "Hello world!")
 
         // Register the KDeferredRegister to the mod-specific event bus
-        ModBlocks.REGISTRY.register(MOD_BUS)
+        Registration.register(MOD_BUS)
+        MOD_BUS.addListener(::generateData)
 
         val obj = runForDist(
             clientTarget = {
-                MOD_BUS.addListener(DeluxeMetals::onClientSetup)
+                MOD_BUS.addListener(Alloyance::onClientSetup)
                 Minecraft.getInstance()
             },
             serverTarget = {
-                MOD_BUS.addListener(DeluxeMetals::onServerSetup)
+                MOD_BUS.addListener(Alloyance::onServerSetup)
                 "test"
             })
 
