@@ -20,4 +20,5 @@ fun generateData(event: GatherDataEvent) {
     generator.addProvider(event.includeServer(), LootTableProvider(packOutput, emptySet(), listOf(
         LootTableProvider.SubProviderEntry(::AlloyanceLootTables, LootContextParamSets.BLOCK)
     )))
+    generator.addProvider(event.includeServer(), AlloyanceWorldGenProvider(packOutput, lookupProvider))
 }
