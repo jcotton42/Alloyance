@@ -1,0 +1,12 @@
+// 1.21	2024-08-03T13:53:24.592127274	Loot Tables
+e83b646c7c7af3f668314fa1c11c2deb5a89a908 data/alloyance/loot_table/blocks/deep_iron_block.json
+65ca6733eb9af3e41b74f86bd35ac5f8ad1dc9f1 data/alloyance/loot_table/blocks/deep_iron_ore.json
+b4b0d18e33efcd418feb6a7c18a037cb792e2a3c data/alloyance/loot_table/blocks/deepslate_deep_iron_ore.json
+8e48254d80df669d78f06de749ca2a95cb6e32dd data/alloyance/loot_table/blocks/deepslate_prometheum_ore.json
+7caa72a8097f16415222e02899decd0eb86a3b25 data/alloyance/loot_table/blocks/deepslate_zinc_ore.json
+20e12d45d1ac4c0334a30338efd35ab6ffcf8a79 data/alloyance/loot_table/blocks/prometheum_block.json
+6f8306da99c434da45c942ecbef90c776e11435e data/alloyance/loot_table/blocks/prometheum_ore.json
+d7e1dd86184c33a50e8344c96e25b97f6cad75fd data/alloyance/loot_table/blocks/tin_block.json
+997e8796cd5f357a034ee34feffb3667e55c9803 data/alloyance/loot_table/blocks/tin_ore.json
+f58fcc1eb0ba6660192a96b2bbf205bd44a404ee data/alloyance/loot_table/blocks/zinc_block.json
+7256f4cc4d7c78bc62f6b4cc7edce57231dd1778 data/alloyance/loot_table/blocks/zinc_ore.json

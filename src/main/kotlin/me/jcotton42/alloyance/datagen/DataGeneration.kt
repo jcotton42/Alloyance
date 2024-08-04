@@ -2,23 +2,30 @@ package me.jcotton42.alloyance.datagen
 
 import net.minecraft.data.loot.LootTableProvider
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets
-import net.minecraftforge.data.event.GatherDataEvent
+import net.neoforged.neoforge.data.event.GatherDataEvent
 
 fun generateData(event: GatherDataEvent) {
+    val existingFileHelper = event.existingFileHelper
     val generator = event.generator
     val packOutput = generator.packOutput
     val lookupProvider = event.lookupProvider
 
-    generator.addProvider(event.includeClient(), AlloyanceBlockStates(packOutput, event.existingFileHelper))
-    generator.addProvider(event.includeClient(), AlloyanceItemModels(packOutput, event.existingFileHelper))
+    generator.addProvider(event.includeClient(), AlloyanceBlockStatesProvider(packOutput, existingFileHelper))
+    generator.addProvider(event.includeClient(), AlloyanceItemModelsProvider(packOutput, existingFileHelper))
     generator.addProvider(event.includeClient(), AlloyanceLanguageProvider(packOutput, "en_us"))
 
-    val blockTags = AlloyanceBlockTags(packOutput, lookupProvider, event.existingFileHelper)
+    val blockTags = AlloyanceBlockTagsProvider(packOutput, lookupProvider, existingFileHelper)
     generator.addProvider(event.includeServer(), blockTags)
-    generator.addProvider(event.includeServer(), AlloyanceItemTags(packOutput, lookupProvider, blockTags, event.existingFileHelper))
-    generator.addProvider(event.includeServer(), AlloyanceRecipes(packOutput))
-    generator.addProvider(event.includeServer(), LootTableProvider(packOutput, emptySet(), listOf(
-        LootTableProvider.SubProviderEntry(::AlloyanceLootTables, LootContextParamSets.BLOCK)
-    )))
+    generator.addProvider(event.includeServer(), AlloyanceItemTagsProvider(packOutput, lookupProvider, blockTags, existingFileHelper))
+    generator.addProvider(event.includeServer(), AlloyanceBiomeTagsProvider(packOutput, lookupProvider, existingFileHelper))
+    generator.addProvider(event.includeServer(), AlloyanceRecipesProvider(packOutput, lookupProvider))
     generator.addProvider(event.includeServer(), AlloyanceWorldGenProvider(packOutput, lookupProvider))
+
+    val blockLoot = LootTableProvider.SubProviderEntry(
+        ::AlloyanceBlockLootProvider,
+        LootContextParamSets.BLOCK
+    )
+    generator.addProvider(event.includeServer(),
+        LootTableProvider(packOutput, emptySet(), listOf(blockLoot), lookupProvider)
+    )
 }

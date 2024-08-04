@@ -1,0 +1,34 @@
+package me.jcotton42.alloyance.datagen
+
+import me.jcotton42.alloyance.Alloyance
+import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags
+import net.minecraft.core.HolderLookup
+import net.minecraft.data.PackOutput
+import net.minecraft.data.tags.BiomeTagsProvider
+import net.minecraft.tags.BiomeTags
+import net.neoforged.neoforge.common.data.ExistingFileHelper
+import java.util.concurrent.CompletableFuture
+
+class AlloyanceBiomeTagsProvider(
+    output: PackOutput,
+    lookupProvider: CompletableFuture<HolderLookup.Provider>,
+    existingFileHelper: ExistingFileHelper,
+) : BiomeTagsProvider(
+    output,
+    lookupProvider,
+    Alloyance.ID,
+    existingFileHelper,
+) {
+    override fun addTags(provider: HolderLookup.Provider) {
+        tag(AlloyanceBiomeTags.HAS_DEEP_IRON_ORE)
+            .addTags(BiomeTags.IS_OCEAN, BiomeTags.IS_RIVER, BiomeTags.IS_BEACH)
+        tag(AlloyanceBiomeTags.HAS_UNDERWATER_DEEP_IRON_ORE)
+            .addTags(BiomeTags.IS_OCEAN)
+        tag(AlloyanceBiomeTags.HAS_PROMETHEUM_ORE)
+            .addTag(BiomeTags.IS_JUNGLE)
+        tag(AlloyanceBiomeTags.HAS_TIN_ORE)
+            .addTag(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_ZINC_ORE)
+            .addTag(BiomeTags.IS_OVERWORLD)
+    }
+}

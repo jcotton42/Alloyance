@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "deep_iron_ingot",
+  "ingredient": {
+    "item": "alloyance:deepslate_deep_iron_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:deep_iron_ingot"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_prometheum_ore",
+  "features": "alloyance:prometheum_ore_upper",
+  "step": "underground_ores"
+}

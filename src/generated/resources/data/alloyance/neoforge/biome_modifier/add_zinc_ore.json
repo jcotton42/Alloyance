@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_zinc_ore",
+  "features": "alloyance:zinc_ore",
+  "step": "underground_ores"
+}

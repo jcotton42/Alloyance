@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_deep_iron_ore",
+  "features": "alloyance:deep_iron_ore",
+  "step": "underground_ores"
+}
