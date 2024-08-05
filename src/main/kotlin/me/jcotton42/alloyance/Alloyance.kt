@@ -29,8 +29,8 @@ object Alloyance {
     init {
         LOGGER.info("Hello world!")
 
-        AlloyanceBlocks.BLOCKS.register(MOD_BUS)
-        AlloyanceItems.ITEMS.register(MOD_BUS)
+        AlloyanceBlocks.register(MOD_BUS)
+        AlloyanceItems.register(MOD_BUS)
         AlloyanceCreativeTabs.register(MOD_BUS)
         MOD_BUS.addListener(::generateData)
 

@@ -1,11 +1,13 @@
 package me.jcotton42.alloyance.registration
 
+import cpw.mods.modlauncher.api.IEnvironment
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.registration.Metal.*
 import net.minecraft.core.Holder
 import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
+import net.neoforged.bus.api.IEventBus
 import net.neoforged.neoforge.registries.DeferredItem
 import net.neoforged.neoforge.registries.DeferredRegister
 
@@ -15,6 +17,8 @@ object AlloyanceItems {
     val RAW_MATERIALS = mutableMapOf<Metal, DeferredItem<Item>>()
     val INGOTS = mutableMapOf<Metal, DeferredItem<Item>>()
     val NUGGETS = mutableMapOf<Metal, DeferredItem<Item>>()
+
+    val CRUSHER = block(AlloyanceBlocks.CRUSHER)
 
     val DEEP_IRON_ORE = block(AlloyanceBlocks.DEEP_IRON_ORE)
     val DEEPSLATE_DEEP_IRON_ORE = block(AlloyanceBlocks.DEEPSLATE_DEEP_IRON_ORE)
@@ -42,6 +46,10 @@ object AlloyanceItems {
     val RAW_TIN = rawMaterial(TIN)
     val TIN_INGOT = ingot(TIN)
     val TIN_NUGGET = nugget(TIN)
+
+    fun register(bus: IEventBus) {
+        ITEMS.register(bus)
+    }
 
     // TODO might want rarity on items for higher tiers, could do it by a level on the Metal?
     // TODO Also would be cool if some of the metals (maybe the Nether ones) were fire-resistant. This goes for all their items.

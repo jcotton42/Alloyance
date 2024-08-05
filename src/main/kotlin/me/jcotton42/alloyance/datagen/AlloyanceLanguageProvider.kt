@@ -35,6 +35,8 @@ class AlloyanceLanguageProvider(
         AlloyanceItems.NUGGETS.forEach {(metal, nugget) ->
             add(nugget.get(), "${getEnglishName(metal)} Nugget")
         }
+
+        add(AlloyanceBlocks.CRUSHER.get(), "Crusher")
     }
 
     private fun getEnglishName(metal: Metal) = when (metal) {
