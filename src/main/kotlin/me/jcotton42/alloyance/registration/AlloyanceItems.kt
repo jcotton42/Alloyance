@@ -1,6 +1,5 @@
 package me.jcotton42.alloyance.registration
 
-import cpw.mods.modlauncher.api.IEnvironment
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.registration.Metal.*
 import net.minecraft.core.Holder

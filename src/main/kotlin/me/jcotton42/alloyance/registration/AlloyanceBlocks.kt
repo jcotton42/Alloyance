@@ -1,11 +1,17 @@
+// BlockEntityType.Builder.build must always take null because it's a datafixer types, and those aren't valid for
+// modded things
+@file:Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
+
 package me.jcotton42.alloyance.registration
 
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.machine.crusher.CrusherBlock
+import me.jcotton42.alloyance.machine.crusher.CrusherBlockEntity
 import me.jcotton42.alloyance.registration.Metal.*
 import net.minecraft.core.registries.Registries
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.SoundType
+import net.minecraft.world.level.block.entity.BlockEntityType
 import net.minecraft.world.level.block.state.BlockBehaviour
 import net.minecraft.world.level.block.state.BlockState
 import net.minecraft.world.level.block.state.properties.BlockStateProperties
@@ -20,6 +26,7 @@ import java.util.function.ToIntFunction
 object AlloyanceBlocks {
     val BLOCKS = DeferredRegister.createBlocks(Alloyance.ID)
     val BLOCK_CODECS = DeferredRegister.create(Registries.BLOCK_TYPE, Alloyance.ID)
+    val BLOCK_ENTITIES = DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, Alloyance.ID)
 
     val CRUSHER = BLOCKS.registerBlock(
         "crusher",
@@ -32,6 +39,9 @@ object AlloyanceBlocks {
             .requiresCorrectToolForDrops()
     )
     val CRUSHER_CODEC = BLOCK_CODECS.register("crusher", Supplier { BlockBehaviour.simpleCodec(::CrusherBlock) })
+    val CRUSHER_BLOCK_ENTITY = BLOCK_ENTITIES.register("crusher", Supplier {
+        BlockEntityType.Builder.of(::CrusherBlockEntity, CRUSHER.get()).build(null)
+    })
 
     val ORES = mutableMapOf<Metal, DeferredBlock<Block>>()
     val DEEPSLATE_ORES = mutableMapOf<Metal, DeferredBlock<Block>>()
@@ -55,6 +65,7 @@ object AlloyanceBlocks {
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)
+        BLOCK_ENTITIES.register(bus)
     }
 
     private fun ore(metal: Metal): DeferredBlock<Block> {
