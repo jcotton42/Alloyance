@@ -4,9 +4,9 @@ import com.mojang.serialization.MapCodec
 import me.jcotton42.alloyance.registration.AlloyanceBlocks
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Direction
+import net.minecraft.world.Containers
 import net.minecraft.world.item.context.BlockPlaceContext
 import net.minecraft.world.level.Level
-import net.minecraft.world.level.block.AbstractFurnaceBlock
 import net.minecraft.world.level.block.BaseEntityBlock
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Mirror
@@ -31,6 +31,31 @@ class CrusherBlock(properties: BlockBehaviour.Properties): BaseEntityBlock(prope
             .setValue(FACING, Direction.NORTH)
             .setValue(LIT, false)
         )
+    }
+
+    override fun onRemove(
+        state: BlockState,
+        level: Level,
+        pos: BlockPos,
+        newState: BlockState,
+        movedByPiston: Boolean
+    ) {
+        if (newState.block != this) {
+            val blockEntity = level.getBlockEntity(pos)
+            if (blockEntity is CrusherBlockEntity) {
+                val itemHandler = blockEntity.inventory
+                for (i in 0 until itemHandler.slots) {
+                    Containers.dropItemStack(
+                        level,
+                        pos.x.toDouble(),
+                        pos.y.toDouble(),
+                        pos.z.toDouble(),
+                        itemHandler.getStackInSlot(i)
+                    )
+                }
+            }
+        }
+        super.onRemove(state, level, pos, newState, movedByPiston)
     }
 
     override fun createBlockStateDefinition(builder: StateDefinition.Builder<Block, BlockState>) {

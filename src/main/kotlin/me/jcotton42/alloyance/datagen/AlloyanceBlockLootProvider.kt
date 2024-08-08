@@ -4,7 +4,6 @@ import me.jcotton42.alloyance.registration.AlloyanceBlocks
 import me.jcotton42.alloyance.registration.AlloyanceItems
 import net.minecraft.core.HolderLookup
 import net.minecraft.data.loot.BlockLootSubProvider
-import net.minecraft.data.loot.packs.VanillaBlockLoot
 import net.minecraft.world.flag.FeatureFlags
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
@@ -24,7 +23,6 @@ class AlloyanceBlockLootProvider(lookupProvider: HolderLookup.Provider): BlockLo
             oreDropsItem(ore.get(), AlloyanceItems.RAW_MATERIALS.getValue(metal).get())
         }
 
-        // TODO after making a block entity, make this like the furnace
         dropSelf(AlloyanceBlocks.CRUSHER.get())
     }
 
