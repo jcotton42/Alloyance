@@ -4,14 +4,13 @@ import com.mojang.serialization.MapCodec
 import me.jcotton42.alloyance.registration.AlloyanceBlocks
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Direction
+import net.minecraft.server.level.ServerPlayer
 import net.minecraft.world.Containers
+import net.minecraft.world.InteractionResult
+import net.minecraft.world.entity.player.Player
 import net.minecraft.world.item.context.BlockPlaceContext
 import net.minecraft.world.level.Level
-import net.minecraft.world.level.block.BaseEntityBlock
-import net.minecraft.world.level.block.Block
-import net.minecraft.world.level.block.Mirror
-import net.minecraft.world.level.block.RenderShape
-import net.minecraft.world.level.block.Rotation
+import net.minecraft.world.level.block.*
 import net.minecraft.world.level.block.entity.BlockEntity
 import net.minecraft.world.level.block.entity.BlockEntityTicker
 import net.minecraft.world.level.block.entity.BlockEntityType
@@ -19,6 +18,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour
 import net.minecraft.world.level.block.state.BlockState
 import net.minecraft.world.level.block.state.StateDefinition
 import net.minecraft.world.level.block.state.properties.BlockStateProperties
+import net.minecraft.world.phys.BlockHitResult
 
 class CrusherBlock(properties: BlockBehaviour.Properties): BaseEntityBlock(properties) {
     companion object {
@@ -88,5 +88,18 @@ class CrusherBlock(properties: BlockBehaviour.Properties): BaseEntityBlock(prope
         return createTickerHelper(blockEntityType, AlloyanceBlocks.CRUSHER_BLOCK_ENTITY.get()) { level, pos, state, entity ->
             entity.tickSerer()
         }
+    }
+
+    override fun useWithoutItem(
+        state: BlockState,
+        level: Level,
+        pos: BlockPos,
+        player: Player,
+        hitResult: BlockHitResult
+    ): InteractionResult {
+        if (!level.isClientSide && player is ServerPlayer) {
+            player.openMenu(getMenuProvider(state, level, pos)!!, pos)
+        }
+        return InteractionResult.sidedSuccess(level.isClientSide)
     }
 }

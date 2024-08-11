@@ -22,5 +22,6 @@
   "item.alloyance.tin_ingot": "Tin Ingot",
   "item.alloyance.tin_nugget": "Tin Nugget",
   "item.alloyance.zinc_ingot": "Zinc Ingot",
-  "item.alloyance.zinc_nugget": "Zinc Nugget"
+  "item.alloyance.zinc_nugget": "Zinc Nugget",
+  "menu.title.alloyance.crusher": "Crusher"
 }

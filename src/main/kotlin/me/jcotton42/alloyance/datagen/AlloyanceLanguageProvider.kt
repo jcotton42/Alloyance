@@ -1,6 +1,7 @@
 package me.jcotton42.alloyance.datagen
 
 import me.jcotton42.alloyance.Alloyance
+import me.jcotton42.alloyance.machine.crusher.CrusherBlockEntity
 import me.jcotton42.alloyance.registration.AlloyanceBlocks
 import me.jcotton42.alloyance.registration.AlloyanceItems
 import me.jcotton42.alloyance.registration.Metal
@@ -37,6 +38,7 @@ class AlloyanceLanguageProvider(
         }
 
         add(AlloyanceBlocks.CRUSHER.get(), "Crusher")
+        add(CrusherBlockEntity.NAME_KEY, "Crusher")
     }
 
     private fun getEnglishName(metal: Metal) = when (metal) {
