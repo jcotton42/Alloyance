@@ -1,0 +1,10 @@
+{
+  "values": {
+    "alloyance:thermite_dust": {
+      "speed": 2
+    },
+    "alloyance:infused_ignatius": {
+      "speed": 3
+    }
+  }
+}

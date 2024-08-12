@@ -8,13 +8,12 @@ import me.jcotton42.alloyance.registration.Metal
 import net.minecraft.data.PackOutput
 import net.neoforged.neoforge.common.data.LanguageProvider
 
-class AlloyanceLanguageProvider(
+class AlloyanceEnglishLanguageProvider(
     output: PackOutput,
-    locale: String
 ): LanguageProvider(
     output,
     Alloyance.ID,
-    locale
+    "en_us"
 ) {
     override fun addTranslations() {
         AlloyanceBlocks.STORAGE_BLOCKS.forEach {(metal, block) ->
@@ -39,6 +38,11 @@ class AlloyanceLanguageProvider(
 
         add(AlloyanceBlocks.CRUSHER.get(), "Crusher")
         add(CrusherBlockEntity.NAME_KEY, "Crusher")
+
+        add(AlloyanceItems.THERMITE_DUST.get(), "Thermite Dust")
+        add("tooltip.alloyance.thermite", "§cActs as a fuel with the same strength of coal (works best in metallurgy machines 2x efficiency!) [check JEI for more information]")
+        add(AlloyanceItems.INFUSED_IGNATIUS.get(), "Infused Ignatius")
+        add("tooltip.alloyance.infused_ignatius", "§cActs as an upgraded fuel with 3 times the strength of coal (works best in metallurgy machines: 3x efficiency!)")
     }
 
     private fun getEnglishName(metal: Metal) = when (metal) {

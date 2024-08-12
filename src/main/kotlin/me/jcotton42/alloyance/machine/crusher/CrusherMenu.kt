@@ -30,22 +30,22 @@ class CrusherMenu(
 ) {
     init {
         // if this breaks, bump the y coords by 31
-        addSlot(SlotItemHandler(crusherInventory, INPUT_SLOT, 61, -4 + 31))
-        addSlot(SlotItemHandler(crusherInventory, FUEL_SLOT, 129, 48 + 31))
-        addSlot(SlotItemHandler(crusherInventory, OUTPUT_SLOT_1, 67, 36 + 31))
-        addSlot(SlotItemHandler(crusherInventory, OUTPUT_SLOT_2, 48, 36 + 31))
-        addSlot(SlotItemHandler(crusherInventory, OUTPUT_SLOT_3, 29, 36 + 31))
+        addSlot(SlotItemHandler(crusherInventory, INPUT_SLOT, 61, 27))
+        addSlot(SlotItemHandler(crusherInventory, FUEL_SLOT, 129, 79))
+        addSlot(SlotItemHandler(crusherInventory, OUTPUT_SLOT_1, 67, 67))
+        addSlot(SlotItemHandler(crusherInventory, OUTPUT_SLOT_2, 48, 67))
+        addSlot(SlotItemHandler(crusherInventory, OUTPUT_SLOT_3, 29, 67))
 
         // player inventory
         for (y in 0..<3) {
             for (x in 0..<9) {
-                this.addSlot(Slot(playerInventory, x + y * 9 + 9, 8 + x * 18, 84 + 31 + y * 18))
+                this.addSlot(Slot(playerInventory, x + y * 9 + 9, 8 + x * 18, 115 + y * 18))
             }
         }
 
         // player hotbar
         for (x in 0..<9) {
-            this.addSlot(Slot(playerInventory, x, 8 + x * 18, 142 + 31))
+            this.addSlot(Slot(playerInventory, x, 8 + x * 18, 173))
         }
 
         // TODO add data slots

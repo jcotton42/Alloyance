@@ -3,8 +3,12 @@ package me.jcotton42.alloyance.registration
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.registration.Metal.*
 import net.minecraft.core.Holder
+import net.minecraft.core.component.DataComponents
+import net.minecraft.network.chat.Component
 import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.Item
+import net.minecraft.world.item.Items
+import net.minecraft.world.item.component.ItemLore
 import net.minecraft.world.level.block.Block
 import net.neoforged.bus.api.IEventBus
 import net.neoforged.neoforge.registries.DeferredItem
@@ -18,6 +22,14 @@ object AlloyanceItems {
     val NUGGETS = mutableMapOf<Metal, DeferredItem<Item>>()
 
     val CRUSHER = block(AlloyanceBlocks.CRUSHER)
+
+    // TODO fireproof?
+    val INFUSED_IGNATIUS = ITEMS.registerSimpleItem("infused_ignatius", Item.Properties().component(
+        DataComponents.LORE, ItemLore(listOf(Component.translatable("tooltip.alloyance.infused_ignatius")))
+    ))
+    val THERMITE_DUST = ITEMS.registerSimpleItem("thermite_dust", Item.Properties().component(
+        DataComponents.LORE, ItemLore(listOf(Component.translatable("tooltip.alloyance.thermite")))
+    ))
 
     val DEEP_IRON_ORE = block(AlloyanceBlocks.DEEP_IRON_ORE)
     val DEEPSLATE_DEEP_IRON_ORE = block(AlloyanceBlocks.DEEPSLATE_DEEP_IRON_ORE)

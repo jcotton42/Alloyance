@@ -1,11 +1,12 @@
-// 1.21	2024-08-03T15:29:30.308780412	Item Models: alloyance
+// 1.21	2024-08-11T01:51:18.5807885	Item Models: alloyance
+adc14d65bc34952af3b365b04e2b1e5ed0a6f1a6 assets/alloyance/models/item/deepslate_deep_iron_ore.json
+b98e1368967fea5c54f6239efcf34e74bc5dc472 assets/alloyance/models/item/deepslate_prometheum_ore.json
+2f745cfff636b10445d4b30749957d12592fc576 assets/alloyance/models/item/deepslate_zinc_ore.json
 3d476e645ab5fad8076d0828910b3be75f6f55a2 assets/alloyance/models/item/deep_iron_block.json
 0c8eb700b603be3d13acdd9d35824249d902697c assets/alloyance/models/item/deep_iron_ingot.json
 85b3d2c3811b2ae300a9064b22b8a36ef4eeca5b assets/alloyance/models/item/deep_iron_nugget.json
 ca6393e0edef3963cd70337fd22e986be52eed5b assets/alloyance/models/item/deep_iron_ore.json
-adc14d65bc34952af3b365b04e2b1e5ed0a6f1a6 assets/alloyance/models/item/deepslate_deep_iron_ore.json
-b98e1368967fea5c54f6239efcf34e74bc5dc472 assets/alloyance/models/item/deepslate_prometheum_ore.json
-2f745cfff636b10445d4b30749957d12592fc576 assets/alloyance/models/item/deepslate_zinc_ore.json
+8202166abefaa407b0b89c75f4203de4a76ea1f7 assets/alloyance/models/item/infused_ignatius.json
 3de63934ecea52817379801ed035ef255a0529da assets/alloyance/models/item/prometheum_block.json
 89d323675d6aa34753f77167f1c2af8fc5bcc8cb assets/alloyance/models/item/prometheum_ingot.json
 c122528d6fda4647c5109d0cbc67baa8759d2544 assets/alloyance/models/item/prometheum_nugget.json
@@ -14,6 +15,7 @@ b3dadf72ade313d203e638c92bbd20e77bb150ce assets/alloyance/models/item/prometheum
 4520de8cdb5c354b8a27f6ee4bf53d506442f6e6 assets/alloyance/models/item/raw_prometheum.json
 096d0c70e0c358f9975562c08a857db9b635f2d5 assets/alloyance/models/item/raw_tin.json
 0a592eb8a3fa44703ea9534dff0eee0369081ee1 assets/alloyance/models/item/raw_zinc.json
+5af677e15357cdfe325366aea1dfbb8fa90dd9a4 assets/alloyance/models/item/thermite_dust.json
 de7becb63407e4fc36d8ab78179f895a771b0b81 assets/alloyance/models/item/tin_block.json
 49e8b82da863f99cd9d7b8ae1d863272292446ba assets/alloyance/models/item/tin_ingot.json
 1c996cf02afcb46bfcbb125ad9cfd6bffb1ac902 assets/alloyance/models/item/tin_nugget.json

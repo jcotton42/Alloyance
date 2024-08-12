@@ -13,15 +13,18 @@
   "block.alloyance.zinc_ore": "Zinc Ore",
   "item.alloyance.deep_iron_ingot": "Deep Iron Ingot",
   "item.alloyance.deep_iron_nugget": "Deep Iron Nugget",
+  "item.alloyance.infused_ignatius": "Infused Ignatius",
   "item.alloyance.prometheum_ingot": "Prometheum Ingot",
   "item.alloyance.prometheum_nugget": "Prometheum Nugget",
   "item.alloyance.raw_deep_iron": "Raw Deep Iron",
   "item.alloyance.raw_prometheum": "Raw Prometheum",
   "item.alloyance.raw_tin": "Raw Tin",
   "item.alloyance.raw_zinc": "Raw Zinc",
+  "item.alloyance.thermite_dust": "Thermite Dust",
   "item.alloyance.tin_ingot": "Tin Ingot",
   "item.alloyance.tin_nugget": "Tin Nugget",
   "item.alloyance.zinc_ingot": "Zinc Ingot",
   "item.alloyance.zinc_nugget": "Zinc Nugget",
-  "menu.title.alloyance.crusher": "Crusher"
+  "menu.title.alloyance.crusher": "Crusher",
+  "tooltip.alloyance.infused_ignatius": "§cActs as an upgraded fuel with 3 times the strength of coal (works best in metallurgy machines: 3x efficiency!)"
 }

@@ -2,11 +2,7 @@ package me.jcotton42.alloyance
 
 import com.mojang.logging.LogUtils
 import me.jcotton42.alloyance.datagen.generateData
-import me.jcotton42.alloyance.registration.AlloyanceBlocks
-import me.jcotton42.alloyance.registration.AlloyanceCreativeTabs
-import me.jcotton42.alloyance.registration.AlloyanceItems
-import me.jcotton42.alloyance.registration.AlloyanceMenuTypes
-import me.jcotton42.alloyance.registration.registerCapabilities
+import me.jcotton42.alloyance.registration.*
 import net.minecraft.client.Minecraft
 import net.neoforged.fml.common.Mod
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent
@@ -35,6 +31,7 @@ object Alloyance {
         AlloyanceItems.register(MOD_BUS)
         AlloyanceCreativeTabs.register(MOD_BUS)
         AlloyanceMenuTypes.register(MOD_BUS)
+        AlloyanceDataMaps.register(MOD_BUS)
         MOD_BUS.addListener(::generateData)
         MOD_BUS.addListener(::registerCapabilities)
 
