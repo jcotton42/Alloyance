@@ -12,7 +12,9 @@ import net.minecraft.network.FriendlyByteBuf
 import net.minecraft.world.entity.player.Inventory
 import net.minecraft.world.entity.player.Player
 import net.minecraft.world.inventory.AbstractContainerMenu
+import net.minecraft.world.inventory.ContainerData
 import net.minecraft.world.inventory.ContainerLevelAccess
+import net.minecraft.world.inventory.SimpleContainerData
 import net.minecraft.world.inventory.Slot
 import net.minecraft.world.item.ItemStack
 import net.neoforged.neoforge.items.IItemHandler
@@ -23,6 +25,7 @@ class CrusherMenu(
     containerId: Int,
     playerInventory: Inventory,
     crusherInventory: IItemHandler,
+    val containerData: ContainerData,
     private val pos: BlockPos,
 ): AbstractContainerMenu(
     AlloyanceMenuTypes.CRUSHER.get(),
@@ -48,14 +51,20 @@ class CrusherMenu(
             this.addSlot(Slot(playerInventory, x, 8 + x * 18, 173))
         }
 
-        // TODO add data slots
+        addDataSlots(containerData)
     }
 
     constructor(
         containerId: Int,
         playerInventory: Inventory,
         extraData: FriendlyByteBuf,
-    ): this(containerId, playerInventory, ItemStackHandler(CrusherBlockEntity.SLOT_COUNT), extraData.readBlockPos())
+    ): this(
+        containerId,
+        playerInventory,
+        ItemStackHandler(CrusherBlockEntity.SLOT_COUNT),
+        SimpleContainerData(CrusherBlockEntity.DATA_SLOT_COUNT),
+        extraData.readBlockPos()
+    )
 
     override fun quickMoveStack(
         player: Player,
