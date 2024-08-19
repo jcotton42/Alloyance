@@ -1,10 +1,12 @@
 package me.jcotton42.alloyance.datagen
 
 import me.jcotton42.alloyance.Alloyance
+import me.jcotton42.alloyance.registration.AlloyanceBlockTags
 import me.jcotton42.alloyance.registration.AlloyanceBlocks
 import net.minecraft.core.HolderLookup
 import net.minecraft.data.PackOutput
 import net.minecraft.tags.BlockTags
+import net.neoforged.neoforge.common.Tags
 import net.neoforged.neoforge.common.data.BlockTagsProvider
 import net.neoforged.neoforge.common.data.ExistingFileHelper
 import java.util.concurrent.CompletableFuture
@@ -42,5 +44,26 @@ class AlloyanceBlockTagsProvider(
         )
 
         // TODO BlockTags.BEACON_BASE_BLOCKS, see isBeaconBase in BlockMetal.java in Reforged for criteria
+
+        AlloyanceBlockTags.STORAGE_BLOCKS.forEach { (metal, blockTag) ->
+            tag(Tags.Blocks.STORAGE_BLOCKS).addTag(blockTag)
+            tag(blockTag).add(AlloyanceBlocks.STORAGE_BLOCKS.getValue(metal).get())
+        }
+
+        AlloyanceBlockTags.ORES.forEach { (metal, blockTag) ->
+            tag(Tags.Blocks.ORES).addTag(blockTag)
+            val ore = AlloyanceBlocks.ORES[metal]?.get()
+            val deepslateOre = AlloyanceBlocks.DEEPSLATE_ORES[metal]?.get()
+            if (ore != null) {
+                tag(blockTag).add(ore)
+                tag(Tags.Blocks.ORES_IN_GROUND_STONE).add(ore)
+                tag(Tags.Blocks.ORE_RATES_SINGULAR).add(ore)
+            }
+            if (deepslateOre != null) {
+                tag(blockTag).add(deepslateOre)
+                tag(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE).add(deepslateOre)
+                tag(Tags.Blocks.ORE_RATES_SINGULAR).add(deepslateOre)
+            }
+        }
     }
 }

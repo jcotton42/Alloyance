@@ -2,10 +2,9 @@ package me.jcotton42.alloyance.datagen
 
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.machine.crusher.CrusherBlockEntity
-import me.jcotton42.alloyance.registration.AlloyanceBlocks
-import me.jcotton42.alloyance.registration.AlloyanceItems
-import me.jcotton42.alloyance.registration.Metal
+import me.jcotton42.alloyance.registration.*
 import net.minecraft.data.PackOutput
+import net.neoforged.neoforge.common.Tags
 import net.neoforged.neoforge.common.data.LanguageProvider
 
 class AlloyanceEnglishLanguageProvider(
@@ -16,36 +15,76 @@ class AlloyanceEnglishLanguageProvider(
     "en_us"
 ) {
     override fun addTranslations() {
-        AlloyanceBlocks.STORAGE_BLOCKS.forEach {(metal, block) ->
+        AlloyanceBlocks.STORAGE_BLOCKS.forEach { (metal, block) ->
             add(block.get(), "Block of ${getEnglishName(metal)}")
         }
-        AlloyanceBlocks.ORES.forEach {(metal, ore) ->
+        AlloyanceBlocks.ORES.forEach { (metal, ore) ->
             add(ore.get(), "${getEnglishName(metal)} Ore")
         }
         AlloyanceBlocks.DEEPSLATE_ORES.forEach { (metal, ore) ->
             add(ore.get(), "Deepslate ${getEnglishName(metal)} Ore")
         }
 
-        AlloyanceItems.RAW_MATERIALS.forEach {(metal, raw) ->
+        AlloyanceItems.RAW_MATERIALS.forEach { (metal, raw) ->
             add(raw.get(), "Raw ${getEnglishName(metal)}")
         }
-        AlloyanceItems.INGOTS.forEach {(metal, ingot) ->
+        AlloyanceItems.INGOTS.forEach { (metal, ingot) ->
             add(ingot.get(), "${getEnglishName(metal)} Ingot")
         }
-        AlloyanceItems.NUGGETS.forEach {(metal, nugget) ->
+        AlloyanceItems.NUGGETS.forEach { (metal, nugget) ->
             add(nugget.get(), "${getEnglishName(metal)} Nugget")
         }
 
         add(AlloyanceBlocks.CRUSHER.get(), "Crusher")
         add(CrusherBlockEntity.NAME_KEY, "Crusher")
 
+        add(AlloyanceItems.COPPER_DUST.get(), "Copper Dust")
+        add(AlloyanceItems.GOLD_DUST.get(), "Gold Dust")
+        add(AlloyanceItems.IRON_DUST.get(), "Iron Dust")
+
         add(AlloyanceItems.THERMITE_DUST.get(), "Thermite Dust")
-        add("tooltip.alloyance.thermite", "§cActs as a fuel with the same strength of coal (works best in metallurgy machines 2x efficiency!) [check JEI for more information]")
+        add(
+            "tooltip.alloyance.thermite",
+            "§cActs as a fuel with the same strength of coal (works best in metallurgy machines 2x efficiency!) [check JEI for more information]"
+        )
         add(AlloyanceItems.INFUSED_IGNATIUS.get(), "Infused Ignatius")
-        add("tooltip.alloyance.infused_ignatius", "§cActs as an upgraded fuel with 3 times the strength of coal (works best in metallurgy machines: 3x efficiency!)")
+        add(
+            "tooltip.alloyance.infused_ignatius",
+            "§cActs as an upgraded fuel with 3 times the strength of coal (works best in metallurgy machines: 3x efficiency!)"
+        )
+
+        add(AlloyanceItemTags.DUSTS_COPPER, "Copper Dusts")
+        add(AlloyanceItemTags.DUSTS_GOLD, "Gold Dusts")
+        add(AlloyanceItemTags.DUSTS_IRON, "Iron Dusts")
+
+        AlloyanceItemTags.RAW_MATERIALS.forEach { (metal, tag) ->
+            add(tag, "${getEnglishName(metal)} Raw Materials")
+        }
+        AlloyanceItemTags.INGOTS.forEach { (metal, tag) ->
+            add(tag, "${getEnglishName(metal)} Ingots")
+        }
+        AlloyanceItemTags.NUGGETS.forEach { (metal, tag) ->
+            add(tag, "${getEnglishName(metal)} Nuggets")
+        }
+        AlloyanceItemTags.DUSTS.forEach { (metal, tag) ->
+            add(tag, "${getEnglishName(metal)} Dusts")
+        }
+        AlloyanceItemTags.STORAGE_BLOCKS.forEach { (metal, tag) ->
+            add(tag, "${getEnglishName(metal)} Storage Blocks")
+        }
+        AlloyanceItemTags.ORES.forEach { (metal, tag) ->
+            add(tag, "${getEnglishName(metal)} Ores")
+        }
+
+        AlloyanceBlockTags.STORAGE_BLOCKS.forEach { (metal, tag) ->
+            add(tag, "${getEnglishName(metal)} Storage Blocks")
+        }
+        AlloyanceBlockTags.ORES.forEach { (metal, tag) ->
+            add(tag, "${getEnglishName(metal)} Ores")
+        }
     }
 
-    private fun getEnglishName(metal: Metal) = when (metal) {
+    private fun getEnglishName(metal: Metal): String = when (metal) {
         Metal.DEEP_IRON -> "Deep Iron"
         Metal.PROMETHEUM -> "Prometheum"
         Metal.ZINC -> "Zinc"

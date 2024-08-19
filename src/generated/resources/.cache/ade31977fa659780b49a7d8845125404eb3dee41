@@ -1,3 +1,16 @@
-// 1.21	2024-08-03T13:53:24.593686734	Tags for minecraft:block mod id alloyance
+// 1.21	2024-08-18T17:05:17.8413685	Tags for minecraft:block mod id alloyance
+b35d06a716821c7e4940efb4c7189def5f300bfa data/c/tags/block/ores.json
+4856011b0694a59916cb7a20cf25b9d6c9f76c01 data/c/tags/block/ores/deep_iron.json
+538157290f51d545311567f0cefb785a4b3e1842 data/c/tags/block/ores/prometheum.json
+96299ff0191a5fa4286bcbaf443628b556345d85 data/c/tags/block/ores/tin.json
+8f8ea038e3acfede87f4a8fb814ec02cd1dfe917 data/c/tags/block/ores/zinc.json
+1b454fd59e57ca863c6dbb9afd1acec1c67529dc data/c/tags/block/ores_in_ground/deepslate.json
+3cddea798bf7810ddf96d4a45e080ebd479867db data/c/tags/block/ores_in_ground/stone.json
+7dc9291ab221a389eae1d27b9a809276e90bcb3d data/c/tags/block/ore_rates/singular.json
+c4be4cb4d282c4015e594b62266e9b176a96ce9f data/c/tags/block/storage_blocks.json
+98d7f09e1c826e979ece333ed160158978e1d55e data/c/tags/block/storage_blocks/deep_iron.json
+f6747fa94156223e85cc85c8446fd91731f53886 data/c/tags/block/storage_blocks/prometheum.json
+f827a7d6fcf6dfe3eee3acf5972208bb27dd7814 data/c/tags/block/storage_blocks/tin.json
+44dcabb93af53db6238114d0bb7887f3a7b757a7 data/c/tags/block/storage_blocks/zinc.json
 779de9872f781f84fa3a6ea46e09d03ced6d4206 data/minecraft/tags/block/mineable/pickaxe.json
 7bad3dd0125660d68723a98b89e6df2dc8f45a3b data/minecraft/tags/block/needs_iron_tool.json

@@ -32,6 +32,7 @@ object Alloyance {
         AlloyanceCreativeTabs.register(MOD_BUS)
         AlloyanceMenuTypes.register(MOD_BUS)
         AlloyanceDataMaps.register(MOD_BUS)
+        AlloyanceRecipes.register(MOD_BUS)
         MOD_BUS.addListener(::generateData)
         MOD_BUS.addListener(::registerCapabilities)
 

@@ -25,7 +25,11 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
         AlloyanceItems.INGOTS.values.forEach { basicItem(it.get()) }
         AlloyanceItems.RAW_MATERIALS.values.forEach { basicItem(it.get()) }
         AlloyanceItems.NUGGETS.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.DUSTS.values.forEach { basicItem(it.get()) }
 
+        basicItem(AlloyanceItems.COPPER_DUST.get())
+        basicItem(AlloyanceItems.IRON_DUST.get())
+        basicItem(AlloyanceItems.GOLD_DUST.get())
         basicItem(AlloyanceItems.INFUSED_IGNATIUS.get())
         basicItem(AlloyanceItems.THERMITE_DUST.get())
     }
