@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "deep_iron_dust",
+  "ingredient": {
+    "tag": "c:raw_materials/deep_iron"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:deep_iron_dust"
+  }
+}

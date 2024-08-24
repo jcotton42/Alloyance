@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "prometheum_dust",
+  "ingredient": {
+    "tag": "c:raw_materials/prometheum"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:prometheum_dust"
+  }
+}

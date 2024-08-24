@@ -33,7 +33,7 @@ class CrusherBlockEntity(
     state
 ), MenuProvider {
     companion object {
-        const val TOTAL_CRUSHING_TIME = 140.0
+        const val TOTAL_CRUSHING_TIME = 140
         const val NAME_KEY = "menu.title.${Alloyance.ID}.crusher"
         const val INVENTORY_TAG = "Inventory"
         const val SLOT_COUNT = 5

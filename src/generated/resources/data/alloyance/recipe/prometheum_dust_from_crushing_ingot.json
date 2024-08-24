@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "prometheum_dust",
+  "ingredient": {
+    "tag": "c:ingots/prometheum"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:prometheum_dust"
+  }
+}
