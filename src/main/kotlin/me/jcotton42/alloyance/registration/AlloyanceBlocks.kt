@@ -20,7 +20,6 @@ import net.minecraft.world.level.material.MapColor
 import net.neoforged.bus.api.IEventBus
 import net.neoforged.neoforge.registries.DeferredBlock
 import net.neoforged.neoforge.registries.DeferredRegister
-import java.util.function.Supplier
 import java.util.function.ToIntFunction
 
 object AlloyanceBlocks {
@@ -38,10 +37,10 @@ object AlloyanceBlocks {
             .lightLevel(litBlockEmission(8))
             .requiresCorrectToolForDrops()
     )
-    val CRUSHER_CODEC = BLOCK_CODECS.register("crusher", Supplier { BlockBehaviour.simpleCodec(::CrusherBlock) })
-    val CRUSHER_BLOCK_ENTITY = BLOCK_ENTITIES.register("crusher", Supplier {
+    val CRUSHER_CODEC = BLOCK_CODECS.register("crusher") { -> BlockBehaviour.simpleCodec(::CrusherBlock) }
+    val CRUSHER_BLOCK_ENTITY = BLOCK_ENTITIES.register("crusher") { ->
         BlockEntityType.Builder.of(::CrusherBlockEntity, CRUSHER.get()).build(null)
-    })
+    }
 
     val ORES = mutableMapOf<Metal, DeferredBlock<Block>>()
     val DEEPSLATE_ORES = mutableMapOf<Metal, DeferredBlock<Block>>()

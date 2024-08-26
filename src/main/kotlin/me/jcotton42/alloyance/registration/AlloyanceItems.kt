@@ -7,11 +7,9 @@ import net.minecraft.core.component.DataComponents
 import net.minecraft.network.chat.Component
 import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.Item
-import net.minecraft.world.item.Items
 import net.minecraft.world.item.component.ItemLore
 import net.minecraft.world.level.block.Block
 import net.neoforged.bus.api.IEventBus
-import net.neoforged.neoforge.common.Tags
 import net.neoforged.neoforge.registries.DeferredItem
 import net.neoforged.neoforge.registries.DeferredRegister
 

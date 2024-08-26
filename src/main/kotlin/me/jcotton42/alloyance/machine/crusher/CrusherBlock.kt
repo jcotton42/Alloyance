@@ -9,6 +9,7 @@ import net.minecraft.world.Containers
 import net.minecraft.world.InteractionResult
 import net.minecraft.world.entity.player.Player
 import net.minecraft.world.item.context.BlockPlaceContext
+import net.minecraft.world.level.BlockGetter
 import net.minecraft.world.level.Level
 import net.minecraft.world.level.block.*
 import net.minecraft.world.level.block.entity.BlockEntity
@@ -19,11 +20,17 @@ import net.minecraft.world.level.block.state.BlockState
 import net.minecraft.world.level.block.state.StateDefinition
 import net.minecraft.world.level.block.state.properties.BlockStateProperties
 import net.minecraft.world.phys.BlockHitResult
+import net.minecraft.world.phys.shapes.Shapes
+import net.minecraft.world.phys.shapes.VoxelShape
 
 class CrusherBlock(properties: BlockBehaviour.Properties): BaseEntityBlock(properties) {
     companion object {
         val FACING = BlockStateProperties.HORIZONTAL_FACING
         val LIT = BlockStateProperties.LIT
+        val OCCLUSION_SHAPE = Shapes.or(
+            box(0.0, 0.0, 0.0, 16.0, 8.0, 16.0),
+            box(1.0, 9.0, 1.0, 15.0, 16.0, 15.0)
+        )
     }
 
     init {
@@ -60,6 +67,10 @@ class CrusherBlock(properties: BlockBehaviour.Properties): BaseEntityBlock(prope
 
     override fun createBlockStateDefinition(builder: StateDefinition.Builder<Block, BlockState>) {
         builder.add(FACING, LIT)
+    }
+
+    override fun getOcclusionShape(state: BlockState, level: BlockGetter, pos: BlockPos): VoxelShape {
+        return OCCLUSION_SHAPE
     }
 
     override fun getStateForPlacement(context: BlockPlaceContext): BlockState? {
