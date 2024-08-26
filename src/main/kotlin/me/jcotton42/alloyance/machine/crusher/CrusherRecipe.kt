@@ -57,7 +57,7 @@ class CrusherRecipe(
                     Ingredient.CODEC_NONEMPTY.fieldOf("ingredient").forGetter(CrusherRecipe::ingredient),
                     ItemStack.CODEC.fieldOf("result").forGetter(CrusherRecipe::result),
                     Codec.FLOAT.optionalFieldOf("experience", 0F).forGetter(CrusherRecipe::experience),
-                    Codec.INT.optionalFieldOf("crushingtime", CrusherBlockEntity.TOTAL_CRUSHING_TIME).forGetter(CrusherRecipe::crushingTime)
+                    Codec.INT.optionalFieldOf("crushingtime", CrusherBlockEntity.NOMINAL_CRUSHING_TIME).forGetter(CrusherRecipe::crushingTime)
                 ).apply(instance, ::CrusherRecipe)
             }
             val STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, CrusherRecipe> = StreamCodec.composite(

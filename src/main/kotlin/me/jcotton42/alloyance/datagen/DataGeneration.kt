@@ -20,6 +20,7 @@ fun generateData(event: GatherDataEvent) {
     generator.addProvider(event.includeServer(), AlloyanceBiomeTagsProvider(packOutput, lookupProvider, existingFileHelper))
     generator.addProvider(event.includeServer(), AlloyanceRecipesProvider(packOutput, lookupProvider))
     generator.addProvider(event.includeServer(), AlloyanceWorldGenProvider(packOutput, lookupProvider))
+    generator.addProvider(event.includeServer(), AlloyanceDataMapProvider(packOutput, lookupProvider))
 
     val blockLoot = LootTableProvider.SubProviderEntry(
         ::AlloyanceBlockLootProvider,

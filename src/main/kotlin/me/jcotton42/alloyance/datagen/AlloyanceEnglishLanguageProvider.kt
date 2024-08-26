@@ -4,7 +4,6 @@ import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.machine.crusher.CrusherBlockEntity
 import me.jcotton42.alloyance.registration.*
 import net.minecraft.data.PackOutput
-import net.neoforged.neoforge.common.Tags
 import net.neoforged.neoforge.common.data.LanguageProvider
 
 class AlloyanceEnglishLanguageProvider(

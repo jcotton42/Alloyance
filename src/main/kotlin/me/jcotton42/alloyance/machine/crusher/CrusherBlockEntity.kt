@@ -3,6 +3,8 @@ package me.jcotton42.alloyance.machine.crusher
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.machine.ExtractOnlyItemHandler
 import me.jcotton42.alloyance.registration.AlloyanceBlocks
+import me.jcotton42.alloyance.registration.AlloyanceDataMaps
+import me.jcotton42.alloyance.registration.AlloyanceRecipes
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Direction
 import net.minecraft.core.HolderLookup
@@ -15,7 +17,9 @@ import net.minecraft.world.inventory.AbstractContainerMenu
 import net.minecraft.world.inventory.ContainerData
 import net.minecraft.world.item.ItemStack
 import net.minecraft.world.item.Items
+import net.minecraft.world.item.crafting.RecipeManager
 import net.minecraft.world.item.crafting.RecipeType
+import net.minecraft.world.item.crafting.SingleRecipeInput
 import net.minecraft.world.level.Level
 import net.minecraft.world.level.block.entity.BlockEntity
 import net.minecraft.world.level.block.state.BlockState
@@ -23,6 +27,7 @@ import net.neoforged.neoforge.items.IItemHandler
 import net.neoforged.neoforge.items.ItemStackHandler
 import net.neoforged.neoforge.items.wrapper.CombinedInvWrapper
 import net.neoforged.neoforge.items.wrapper.RangedWrapper
+import kotlin.math.max
 
 class CrusherBlockEntity(
     pos: BlockPos,
@@ -33,9 +38,11 @@ class CrusherBlockEntity(
     state
 ), MenuProvider {
     companion object {
-        const val TOTAL_CRUSHING_TIME = 140
         const val NAME_KEY = "menu.title.${Alloyance.ID}.crusher"
         const val INVENTORY_TAG = "Inventory"
+
+        // fuel burn times are scaled to this
+        const val NOMINAL_CRUSHING_TIME = 140
         const val SLOT_COUNT = 5
         const val INPUT_SLOT = 0
         const val FUEL_SLOT = 1
@@ -43,16 +50,19 @@ class CrusherBlockEntity(
         const val OUTPUT_SLOT_2 = 3
         const val OUTPUT_SLOT_3 = 4
 
-        const val CRUSHING_PROGRESS_INDEX = 0
-        const val BURN_TIME_REMAINING_INDEX = 1
-        const val TOTAL_BURN_TIME_INDEX = 2
-        const val DATA_SLOT_COUNT = 3
+        const val CRUSHING_TIME_INDEX = 0
+        const val TOTAL_CRUSHING_TIME_INDEX = 1
+        const val BURN_TIME_REMAINING_INDEX = 2
+        const val TOTAL_BURN_TIME_INDEX = 3
+        const val DATA_SLOT_COUNT = 4
     }
 
-    // TODO load/saveAdditional
-    private var crushingProgress = 0
+    // TODO load/saveAdditional, item components
+    private var crushingTime = 0
+    private var totalCrushingTime = 0
     private var burnTimeRemaining = 0
     private var totalBurnTime = 0
+    private var crushProgressPerTick = 0
 
     val inventory = object: ItemStackHandler(5) {
         override fun onContentsChanged(slot: Int) {
@@ -73,14 +83,16 @@ class CrusherBlockEntity(
 
     private val containerData = object: ContainerData {
         override fun get(index: Int): Int = when (index) {
-            CRUSHING_PROGRESS_INDEX -> crushingProgress
+            CRUSHING_TIME_INDEX -> crushingTime
+            TOTAL_CRUSHING_TIME_INDEX -> totalCrushingTime
             BURN_TIME_REMAINING_INDEX -> burnTimeRemaining
             TOTAL_BURN_TIME_INDEX -> totalBurnTime
             else -> TODO("Missing data index $index")
         }
 
         override fun set(index: Int, value: Int) = when (index) {
-            CRUSHING_PROGRESS_INDEX -> crushingProgress = value
+            CRUSHING_TIME_INDEX -> crushingTime = value
+            TOTAL_CRUSHING_TIME_INDEX -> totalCrushingTime = value
             BURN_TIME_REMAINING_INDEX -> burnTimeRemaining = value
             TOTAL_BURN_TIME_INDEX -> totalBurnTime = value
             else -> TODO("Missing data index $index")
@@ -89,15 +101,78 @@ class CrusherBlockEntity(
         override fun getCount(): Int = DATA_SLOT_COUNT
     }
 
+    private val quickCheck = RecipeManager.createCheck(AlloyanceRecipes.CRUSHER_TYPE.get())
+
     fun tickSerer(level: Level, pos: BlockPos, state: BlockState) {
         val inputStack = inventory.getStackInSlot(INPUT_SLOT)
         val fuelStack = inventory.getStackInSlot(FUEL_SLOT)
-        totalBurnTime = inputStack.maxStackSize
-        crushingProgress = inputStack.count
-        burnTimeRemaining = ((fuelStack.count / fuelStack.maxStackSize.toDouble()) * TOTAL_CRUSHING_TIME).toInt()
 
-        val newState = state.setValue(CrusherBlock.LIT, burnTimeRemaining > 0)
-        level.setBlockAndUpdate(pos, newState)
+        val wasBurning = isBurning()
+        burnTimeRemaining = max(burnTimeRemaining - 1, 0)
+        if (inputStack.isEmpty) {
+            crushingTime = 0
+            updateLitState(wasBurning, isBurning(), level, pos, state)
+            return
+        }
+
+        val canCrush = tryCrush(inputStack, level, simulate = true)
+        if (!wasBurning && !fuelStack.isEmpty && canCrush) {
+            crushProgressPerTick = fuelStack.itemHolder.getData(AlloyanceDataMaps.FUEL_SPEED)?.speed ?: 1
+            totalBurnTime = fuelStack.getBurnTime(RecipeType.SMELTING) * NOMINAL_CRUSHING_TIME / 200
+            burnTimeRemaining = totalBurnTime
+            if (fuelStack.hasCraftingRemainingItem()) {
+                inventory.setStackInSlot(FUEL_SLOT, fuelStack.craftingRemainingItem)
+            } else {
+                fuelStack.shrink(1)
+            }
+        }
+
+        if (canCrush) {
+            if (isBurning()) {
+                crushingTime += crushProgressPerTick
+            }
+            if (crushingTime >= totalCrushingTime) {
+                tryCrush(inputStack, level, simulate = false)
+                crushingTime = 0
+            }
+        } else {
+            crushingTime = 0
+        }
+
+        updateLitState(wasBurning, isBurning(), level, pos, state)
+    }
+
+    private fun isBurning(): Boolean = burnTimeRemaining > 0
+
+    private fun tryCrush(inputStack: ItemStack, level: Level, simulate: Boolean): Boolean {
+        val input = SingleRecipeInput(inputStack)
+        val recipe = quickCheck.getRecipeFor(input, level).orElse(null)?.value
+            ?: return false
+        totalCrushingTime = recipe.crushingTime
+        var result = recipe.assemble(input, level.registryAccess())
+        var actualResult = result.copy()
+        for (slot in OUTPUT_SLOT_1..OUTPUT_SLOT_3) {
+            result = inventory.insertItem(slot, result, true)
+            if (result.isEmpty) break
+        }
+
+        if (simulate) return result.isEmpty
+        if (!result.isEmpty) return false
+
+        for (slot in OUTPUT_SLOT_1..OUTPUT_SLOT_3) {
+            actualResult = inventory.insertItem(slot, actualResult, false)
+            if (actualResult.isEmpty) break
+        }
+        // TODO if the input stack doesn't properly clear, this is likely the culprit, might need setChanged on all the shrinks
+        inputStack.shrink(1)
+        return true
+    }
+
+    private fun updateLitState(wasBurning: Boolean, isBurning: Boolean, level: Level, pos: BlockPos, state: BlockState) {
+        if (isBurning != wasBurning) {
+            val newState = state.setValue(CrusherBlock.LIT, isBurning)
+            level.setBlockAndUpdate(pos, newState)
+        }
     }
 
     fun getItemHandler(side: Direction?): IItemHandler = when (side) {

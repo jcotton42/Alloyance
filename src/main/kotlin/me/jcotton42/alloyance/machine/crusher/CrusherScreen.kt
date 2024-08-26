@@ -23,10 +23,6 @@ class CrusherScreen(
         private val METER_SPRITE = ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "crusher/meter")
     }
 
-    private val crushingProgress: Int get() = menu.containerData.get(CrusherBlockEntity.CRUSHING_PROGRESS_INDEX)
-    private val burnTimeRemaining: Int get() = menu.containerData.get(CrusherBlockEntity.BURN_TIME_REMAINING_INDEX)
-    private val totalBurnTime: Int get() = menu.containerData.get(CrusherBlockEntity.TOTAL_BURN_TIME_INDEX)
-
     init {
         imageWidth = 176
         imageHeight = 197
@@ -35,18 +31,23 @@ class CrusherScreen(
     }
 
     override fun renderBg(guiGraphics: GuiGraphics, partialTick: Float, mouseX: Int, mouseY: Int) {
+        val crushingTime = menu.containerData.get(CrusherBlockEntity.CRUSHING_TIME_INDEX)
+        val totalCrushingTime = menu.containerData.get(CrusherBlockEntity.TOTAL_CRUSHING_TIME_INDEX)
+        val burnTimeRemaining = menu.containerData.get(CrusherBlockEntity.BURN_TIME_REMAINING_INDEX)
+        val totalBurnTime = menu.containerData.get(CrusherBlockEntity.TOTAL_BURN_TIME_INDEX)
+
         guiGraphics.blit(BACKGROUND, leftPos, topPos, 0, 0, imageWidth, imageHeight)
 
-        if (crushingProgress > 0) {
+        if (crushingTime > 0) {
             guiGraphics.blitSprite(MELTING_SPRITE, leftPos + 59, topPos + 45, 21, 18)
         }
 
-        val burnLeftPercentage = burnTimeRemaining / totalBurnTime.toDouble()
+        val burnLeftPercentage = burnTimeRemaining / totalBurnTime.toFloat()
         val burnHeight = (burnLeftPercentage * 17).toInt()
         val burnSkip = 17 - burnHeight
         guiGraphics.blitSprite(BURNING_SPRITE, 17, 17, 0, 17 - burnHeight, leftPos + 128, topPos + 61 + burnSkip, 17, burnHeight)
 
-        val crushProgressPercentage = crushingProgress / CrusherBlockEntity.TOTAL_CRUSHING_TIME
+        val crushProgressPercentage = crushingTime / totalCrushingTime.toFloat()
         val crushHeight = (crushProgressPercentage * 33).toInt()
         val crushSkip = 33 - crushHeight
         guiGraphics.blitSprite(METER_SPRITE, 7, 33, 0, 33 - crushHeight, leftPos + 93, topPos + 65 + crushSkip, 7, crushHeight)
