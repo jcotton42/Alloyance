@@ -1,6 +1,7 @@
 package me.jcotton42.alloyance.registration
 
 import me.jcotton42.alloyance.Alloyance
+import me.jcotton42.alloyance.registration.AlloyanceItems.ITEMS
 import me.jcotton42.alloyance.registration.Metal.*
 import net.minecraft.core.Holder
 import net.minecraft.core.component.DataComponents
@@ -29,12 +30,8 @@ object AlloyanceItems {
 
     // TODO fireproof?
     // TODO tags?
-    val INFUSED_IGNATIUS = ITEMS.registerSimpleItem("infused_ignatius", Item.Properties().component(
-        DataComponents.LORE, ItemLore(listOf(Component.translatable("tooltip.alloyance.infused_ignatius")))
-    ))
-    val THERMITE_DUST = ITEMS.registerSimpleItem("thermite_dust", Item.Properties().component(
-        DataComponents.LORE, ItemLore(listOf(Component.translatable("tooltip.alloyance.thermite")))
-    ))
+    val INFUSED_IGNATIUS = ITEMS.registerSimpleItem("infused_ignatius", Item.Properties().lore("tooltip.alloyance.infused_ignatius"))
+    val THERMITE_DUST = ITEMS.registerSimpleItem("thermite_dust", Item.Properties().lore("tooltip.alloyance.thermite"))
 
     val DEEP_IRON_ORE = block(AlloyanceBlocks.DEEP_IRON_ORE)
     val DEEPSLATE_DEEP_IRON_ORE = block(AlloyanceBlocks.DEEPSLATE_DEEP_IRON_ORE)
@@ -101,4 +98,10 @@ object AlloyanceItems {
         DUSTS[metal] = item
         return item
     }
+}
+
+private fun Item.Properties.lore(translationKey: String): Item.Properties {
+    return component(
+        DataComponents.LORE, ItemLore(listOf(Component.translatable(translationKey)))
+    )
 }
