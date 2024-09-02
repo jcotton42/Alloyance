@@ -32,7 +32,9 @@
   "item.alloyance.zinc_dust": "Zinc Dust",
   "item.alloyance.zinc_ingot": "Zinc Ingot",
   "item.alloyance.zinc_nugget": "Zinc Nugget",
-  "menu.title.alloyance.crusher": "Crusher",
+  "sound.alloyance.machines/crusher_ambience": "Crusher Working",
+  "sound.alloyance.machines/crusher_impact": "Crusher Crushes",
+  "sound.alloyance.machines/crusher_windup": "Crusher Starts",
   "tag.block.c.ores.deep_iron": "Deep Iron Ores",
   "tag.block.c.ores.prometheum": "Prometheum Ores",
   "tag.block.c.ores.tin": "Tin Ores",
@@ -69,5 +71,5 @@
   "tag.item.c.storage_blocks.tin": "Tin Storage Blocks",
   "tag.item.c.storage_blocks.zinc": "Zinc Storage Blocks",
   "tooltip.alloyance.infused_ignatius": "§cActs as an upgraded fuel with 3 times the strength of coal (works best in metallurgy machines: 3x efficiency!)",
-  "tooltip.alloyance.thermite": "§cActs as a fuel with the same strength of coal (works best in metallurgy machines 2x efficiency!) [check JEI for more information]"
+  "tooltip.alloyance.thermite_dust": "§cActs as a fuel with the same strength of coal (works best in metallurgy machines 2x efficiency!) [check JEI for more information]"
 }

@@ -13,6 +13,7 @@ fun generateData(event: GatherDataEvent) {
     generator.addProvider(event.includeClient(), AlloyanceBlockStatesProvider(packOutput, existingFileHelper))
     generator.addProvider(event.includeClient(), AlloyanceItemModelsProvider(packOutput, existingFileHelper))
     generator.addProvider(event.includeClient(), AlloyanceEnglishLanguageProvider(packOutput))
+    generator.addProvider(event.includeClient(), AlloyanceSoundDefinitionsProvider(packOutput, existingFileHelper))
 
     val blockTags = AlloyanceBlockTagsProvider(packOutput, lookupProvider, existingFileHelper)
     generator.addProvider(event.includeServer(), blockTags)

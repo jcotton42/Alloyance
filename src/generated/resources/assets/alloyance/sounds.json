@@ -1,0 +1,23 @@
+{
+  "machines/crusher_ambience": {
+    "sounds": [
+      {
+        "name": "alloyance:machines/crusher_ambience",
+        "stream": true
+      }
+    ],
+    "subtitle": "sound.alloyance.machines/crusher_ambience"
+  },
+  "machines/crusher_impact": {
+    "sounds": [
+      "alloyance:machines/crusher_impact"
+    ],
+    "subtitle": "sound.alloyance.machines/crusher_impact"
+  },
+  "machines/crusher_windup": {
+    "sounds": [
+      "alloyance:machines/crusher_windup"
+    ],
+    "subtitle": "sound.alloyance.machines/crusher_windup"
+  }
+}

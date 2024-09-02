@@ -31,7 +31,7 @@ object AlloyanceItems {
     // TODO fireproof?
     // TODO tags?
     val INFUSED_IGNATIUS = ITEMS.registerSimpleItem("infused_ignatius", Item.Properties().lore("tooltip.alloyance.infused_ignatius"))
-    val THERMITE_DUST = ITEMS.registerSimpleItem("thermite_dust", Item.Properties().lore("tooltip.alloyance.thermite"))
+    val THERMITE_DUST = ITEMS.registerSimpleItem("thermite_dust", Item.Properties().lore("tooltip.alloyance.thermite_dust"))
 
     val DEEP_IRON_ORE = block(AlloyanceBlocks.DEEP_IRON_ORE)
     val DEEPSLATE_DEEP_IRON_ORE = block(AlloyanceBlocks.DEEPSLATE_DEEP_IRON_ORE)

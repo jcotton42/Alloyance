@@ -38,7 +38,9 @@ class AlloyanceEnglishLanguageProvider(
         }
 
         add(AlloyanceBlocks.CRUSHER.get(), "Crusher")
-        add(CrusherBlockEntity.DEFAULT_NAME_KEY, "Crusher")
+        add(AlloyanceSounds.CRUSHER_AMBIENCE.id.toLanguageKey("sound"), "Crusher Working")
+        add(AlloyanceSounds.CRUSHER_IMPACT.id.toLanguageKey("sound"), "Crusher Crushes")
+        add(AlloyanceSounds.CRUSHER_WINDUP.id.toLanguageKey("sound"), "Crusher Starts")
 
         add(AlloyanceItems.COPPER_DUST.get(), "Copper Dust")
         add(AlloyanceItems.GOLD_DUST.get(), "Gold Dust")
@@ -46,12 +48,12 @@ class AlloyanceEnglishLanguageProvider(
 
         add(AlloyanceItems.THERMITE_DUST.get(), "Thermite Dust")
         add(
-            "tooltip.alloyance.thermite",
+            AlloyanceItems.THERMITE_DUST.id.toLanguageKey("tooltip"),
             "§cActs as a fuel with the same strength of coal (works best in metallurgy machines 2x efficiency!) [check JEI for more information]"
         )
         add(AlloyanceItems.INFUSED_IGNATIUS.get(), "Infused Ignatius")
         add(
-            "tooltip.alloyance.infused_ignatius",
+            AlloyanceItems.INFUSED_IGNATIUS.id.toLanguageKey("tooltip"),
             "§cActs as an upgraded fuel with 3 times the strength of coal (works best in metallurgy machines: 3x efficiency!)"
         )
 

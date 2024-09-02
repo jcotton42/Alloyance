@@ -55,8 +55,6 @@ class CrusherBlockEntity(
     state
 ), MenuProvider, Nameable {
     companion object {
-        const val DEFAULT_NAME_KEY = "menu.title.${Alloyance.ID}.crusher"
-
         // fuel burn times are scaled to this
         const val NOMINAL_CRUSHING_TIME = 140
         const val SLOT_COUNT = 5
@@ -325,7 +323,7 @@ class CrusherBlockEntity(
     }
 
     override fun getName(): Component {
-        return name ?: Component.translatable(DEFAULT_NAME_KEY)
+        return name ?: Component.translatable(AlloyanceBlocks.CRUSHER.id.toLanguageKey("block"))
     }
 
     override fun getDisplayName(): Component = getName()
