@@ -1,5 +1,6 @@
 package me.jcotton42.alloyance.machine.crusher
 
+import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.machine.ExtractOnlyItemHandler
 import me.jcotton42.alloyance.registration.AlloyanceBlocks
@@ -10,19 +11,26 @@ import net.minecraft.core.Direction
 import net.minecraft.core.HolderLookup
 import net.minecraft.nbt.CompoundTag
 import net.minecraft.network.chat.Component
+import net.minecraft.resources.ResourceLocation
+import net.minecraft.server.level.ServerLevel
+import net.minecraft.server.level.ServerPlayer
+import net.minecraft.util.Mth
 import net.minecraft.world.MenuProvider
+import net.minecraft.world.entity.ExperienceOrb
 import net.minecraft.world.entity.player.Inventory
 import net.minecraft.world.entity.player.Player
 import net.minecraft.world.inventory.AbstractContainerMenu
 import net.minecraft.world.inventory.ContainerData
 import net.minecraft.world.item.ItemStack
 import net.minecraft.world.item.Items
+import net.minecraft.world.item.crafting.RecipeHolder
 import net.minecraft.world.item.crafting.RecipeManager
 import net.minecraft.world.item.crafting.RecipeType
 import net.minecraft.world.item.crafting.SingleRecipeInput
 import net.minecraft.world.level.Level
 import net.minecraft.world.level.block.entity.BlockEntity
 import net.minecraft.world.level.block.state.BlockState
+import net.minecraft.world.phys.Vec3
 import net.neoforged.neoforge.items.IItemHandler
 import net.neoforged.neoforge.items.ItemStackHandler
 import net.neoforged.neoforge.items.wrapper.CombinedInvWrapper
@@ -63,6 +71,7 @@ class CrusherBlockEntity(
     private var burnTimeRemaining = 0
     private var totalBurnTime = 0
     private var crushProgressPerTick = 0
+    private val recipesUsed: Object2IntOpenHashMap<ResourceLocation> = Object2IntOpenHashMap()
 
     val inventory = object: ItemStackHandler(5) {
         override fun onContentsChanged(slot: Int) {
@@ -146,8 +155,9 @@ class CrusherBlockEntity(
 
     private fun tryCrush(inputStack: ItemStack, level: Level, simulate: Boolean): Boolean {
         val input = SingleRecipeInput(inputStack)
-        val recipe = quickCheck.getRecipeFor(input, level).orElse(null)?.value
+        val recipeHolder = quickCheck.getRecipeFor(input, level).orElse(null)
             ?: return false
+        val recipe = recipeHolder.value
         totalCrushingTime = recipe.crushingTime
         var result = recipe.assemble(input, level.registryAccess())
         var actualResult = result.copy()
@@ -163,9 +173,48 @@ class CrusherBlockEntity(
             actualResult = inventory.insertItem(slot, actualResult, false)
             if (actualResult.isEmpty) break
         }
-        // TODO if the input stack doesn't properly clear, this is likely the culprit, might need setChanged on all the shrinks
+
         inputStack.shrink(1)
+        recipesUsed.addTo(recipeHolder.id, 1)
         return true
+    }
+
+    fun awardUsedRecipesAndPopExperience(player: ServerPlayer) {
+        val recipesToAward = getRecipesToAwardAndPopExperience(player.serverLevel(), player.position())
+        player.awardRecipes(recipesToAward)
+        val items = mutableListOf<ItemStack>()
+        for (i in 0..<inventory.slots) {
+            items.add(inventory.getStackInSlot(i))
+        }
+
+        recipesToAward.forEach { recipeHolder ->
+            player.triggerRecipeCrafted(recipeHolder, items)
+        }
+
+        recipesUsed.clear()
+    }
+
+    fun getRecipesToAwardAndPopExperience(level: ServerLevel, popLocation: Vec3): List<RecipeHolder<*>> {
+        val recipes = mutableListOf<RecipeHolder<*>>()
+
+        recipesUsed.forEach { (recipeId, timesUed) ->
+            level.recipeManager.byKey(recipeId).ifPresent { recipe ->
+                recipes.add(recipe)
+                createExperience(level, popLocation, (recipe.value as CrusherRecipe).experience * timesUed)
+            }
+        }
+
+        return recipes
+    }
+
+    private fun createExperience(level: ServerLevel, popLocation: Vec3, experience: Float) {
+        var amount = Mth.floor(experience)
+        val fraction = Mth.frac(experience)
+        if (fraction != 0f && Math.random() < fraction) {
+            amount++
+        }
+
+        ExperienceOrb.award(level, popLocation, amount)
     }
 
     private fun updateLitState(wasBurning: Boolean, isBurning: Boolean, level: Level, pos: BlockPos, state: BlockState) {
@@ -193,7 +242,7 @@ class CrusherBlockEntity(
     }
 
     override fun createMenu(containerId: Int, playerInventory: Inventory, player: Player): AbstractContainerMenu {
-        return CrusherMenu(containerId, playerInventory, all, containerData, blockPos)
+        return CrusherMenu(containerId, playerInventory, all, containerData, ::awardUsedRecipesAndPopExperience, blockPos)
     }
 
     override fun getDisplayName(): Component {

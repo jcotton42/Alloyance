@@ -4,6 +4,7 @@ import com.mojang.serialization.MapCodec
 import me.jcotton42.alloyance.registration.AlloyanceBlocks
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Direction
+import net.minecraft.server.level.ServerLevel
 import net.minecraft.server.level.ServerPlayer
 import net.minecraft.world.Containers
 import net.minecraft.world.InteractionResult
@@ -20,6 +21,7 @@ import net.minecraft.world.level.block.state.BlockState
 import net.minecraft.world.level.block.state.StateDefinition
 import net.minecraft.world.level.block.state.properties.BlockStateProperties
 import net.minecraft.world.phys.BlockHitResult
+import net.minecraft.world.phys.Vec3
 import net.minecraft.world.phys.shapes.Shapes
 import net.minecraft.world.phys.shapes.VoxelShape
 
@@ -49,7 +51,7 @@ class CrusherBlock(properties: BlockBehaviour.Properties): BaseEntityBlock(prope
     ) {
         if (newState.block != this) {
             val blockEntity = level.getBlockEntity(pos)
-            if (blockEntity is CrusherBlockEntity) {
+            if (blockEntity is CrusherBlockEntity && level is ServerLevel) {
                 val itemHandler = blockEntity.inventory
                 for (i in 0 until itemHandler.slots) {
                     Containers.dropItemStack(
@@ -60,6 +62,7 @@ class CrusherBlock(properties: BlockBehaviour.Properties): BaseEntityBlock(prope
                         itemHandler.getStackInSlot(i)
                     )
                 }
+                blockEntity.getRecipesToAwardAndPopExperience(level, Vec3.atCenterOf(pos))
             }
         }
         super.onRemove(state, level, pos, newState, movedByPiston)
