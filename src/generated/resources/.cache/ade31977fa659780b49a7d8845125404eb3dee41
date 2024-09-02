@@ -1,4 +1,4 @@
-// 1.21	2024-08-18T17:05:17.8413685	Tags for minecraft:block mod id alloyance
+// 1.21	2024-09-01T21:08:50.2398089	Tags for minecraft:block mod id alloyance
 b35d06a716821c7e4940efb4c7189def5f300bfa data/c/tags/block/ores.json
 4856011b0694a59916cb7a20cf25b9d6c9f76c01 data/c/tags/block/ores/deep_iron.json
 538157290f51d545311567f0cefb785a4b3e1842 data/c/tags/block/ores/prometheum.json
@@ -12,5 +12,5 @@ c4be4cb4d282c4015e594b62266e9b176a96ce9f data/c/tags/block/storage_blocks.json
 f6747fa94156223e85cc85c8446fd91731f53886 data/c/tags/block/storage_blocks/prometheum.json
 f827a7d6fcf6dfe3eee3acf5972208bb27dd7814 data/c/tags/block/storage_blocks/tin.json
 44dcabb93af53db6238114d0bb7887f3a7b757a7 data/c/tags/block/storage_blocks/zinc.json
-779de9872f781f84fa3a6ea46e09d03ced6d4206 data/minecraft/tags/block/mineable/pickaxe.json
-7bad3dd0125660d68723a98b89e6df2dc8f45a3b data/minecraft/tags/block/needs_iron_tool.json
+5ca5682f8b17ac406362d663705a7f33a39dabce data/minecraft/tags/block/mineable/pickaxe.json
+73ef4d8494dab31a526641150e39427fdcbb3738 data/minecraft/tags/block/needs_iron_tool.json

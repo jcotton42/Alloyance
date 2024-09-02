@@ -33,6 +33,9 @@ class AlloyanceEnglishLanguageProvider(
         AlloyanceItems.NUGGETS.forEach { (metal, nugget) ->
             add(nugget.get(), "${getEnglishName(metal)} Nugget")
         }
+        AlloyanceItems.DUSTS.forEach { (metal, dust) ->
+            add(dust.get(), "${getEnglishName(metal)} Dust")
+        }
 
         add(AlloyanceBlocks.CRUSHER.get(), "Crusher")
         add(CrusherBlockEntity.NAME_KEY, "Crusher")

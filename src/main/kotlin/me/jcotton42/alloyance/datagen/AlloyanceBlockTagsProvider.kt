@@ -26,6 +26,14 @@ class AlloyanceBlockTagsProvider(
         AlloyanceBlocks.ORES.values.forEach { tag(BlockTags.MINEABLE_WITH_PICKAXE).add(it.get()) }
         AlloyanceBlocks.DEEPSLATE_ORES.values.forEach { tag(BlockTags.MINEABLE_WITH_PICKAXE).add(it.get()) }
 
+        tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
+            AlloyanceBlocks.CRUSHER.get(),
+        )
+        tag(BlockTags.NEEDS_IRON_TOOL).add(
+            AlloyanceBlocks.CRUSHER.get(),
+        )
+
+        // TODO make a tier dictionary or something
         tag(BlockTags.NEEDS_IRON_TOOL).add(
             AlloyanceBlocks.DEEP_IRON_BLOCK.get(),
             AlloyanceBlocks.DEEP_IRON_ORE.get(),
