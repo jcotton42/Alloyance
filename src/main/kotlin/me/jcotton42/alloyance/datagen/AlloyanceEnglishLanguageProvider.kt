@@ -38,7 +38,7 @@ class AlloyanceEnglishLanguageProvider(
         }
 
         add(AlloyanceBlocks.CRUSHER.get(), "Crusher")
-        add(CrusherBlockEntity.NAME_KEY, "Crusher")
+        add(CrusherBlockEntity.DEFAULT_NAME_KEY, "Crusher")
 
         add(AlloyanceItems.COPPER_DUST.get(), "Copper Dust")
         add(AlloyanceItems.GOLD_DUST.get(), "Gold Dust")

@@ -2,6 +2,8 @@ package me.jcotton42.alloyance.machine.crusher
 
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap
 import me.jcotton42.alloyance.Alloyance
+import me.jcotton42.alloyance.extensions.copyInto
+import me.jcotton42.alloyance.extensions.getAllStacks
 import me.jcotton42.alloyance.machine.ExtractOnlyItemHandler
 import me.jcotton42.alloyance.registration.AlloyanceBlocks
 import me.jcotton42.alloyance.registration.AlloyanceDataMaps
@@ -9,13 +11,19 @@ import me.jcotton42.alloyance.registration.AlloyanceRecipes
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Direction
 import net.minecraft.core.HolderLookup
+import net.minecraft.core.component.DataComponentMap
+import net.minecraft.core.component.DataComponents
 import net.minecraft.nbt.CompoundTag
 import net.minecraft.network.chat.Component
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.server.level.ServerLevel
 import net.minecraft.server.level.ServerPlayer
+import net.minecraft.sounds.SoundEvents
+import net.minecraft.sounds.SoundSource
 import net.minecraft.util.Mth
+import net.minecraft.world.LockCode
 import net.minecraft.world.MenuProvider
+import net.minecraft.world.Nameable
 import net.minecraft.world.entity.ExperienceOrb
 import net.minecraft.world.entity.player.Inventory
 import net.minecraft.world.entity.player.Player
@@ -23,6 +31,7 @@ import net.minecraft.world.inventory.AbstractContainerMenu
 import net.minecraft.world.inventory.ContainerData
 import net.minecraft.world.item.ItemStack
 import net.minecraft.world.item.Items
+import net.minecraft.world.item.component.ItemContainerContents
 import net.minecraft.world.item.crafting.RecipeHolder
 import net.minecraft.world.item.crafting.RecipeManager
 import net.minecraft.world.item.crafting.RecipeType
@@ -44,10 +53,9 @@ class CrusherBlockEntity(
     AlloyanceBlocks.CRUSHER_BLOCK_ENTITY.get(),
     pos,
     state
-), MenuProvider {
+), MenuProvider, Nameable {
     companion object {
-        const val NAME_KEY = "menu.title.${Alloyance.ID}.crusher"
-        const val INVENTORY_TAG = "Inventory"
+        const val DEFAULT_NAME_KEY = "menu.title.${Alloyance.ID}.crusher"
 
         // fuel burn times are scaled to this
         const val NOMINAL_CRUSHING_TIME = 140
@@ -65,12 +73,13 @@ class CrusherBlockEntity(
         const val DATA_SLOT_COUNT = 4
     }
 
-    // TODO load/saveAdditional, item components
-    private var crushingTime = 0
-    private var totalCrushingTime = 0
-    private var burnTimeRemaining = 0
-    private var totalBurnTime = 0
-    private var crushProgressPerTick = 0
+    private var name: Component? = null
+    private var lockKey: LockCode = LockCode.NO_LOCK
+    private var crushingTime: Int = 0
+    private var totalCrushingTime: Int = 0
+    private var burnTimeRemaining: Int = 0
+    private var totalBurnTime: Int = 0
+    private var crushProgressPerTick: Int = 0
     private val recipesUsed: Object2IntOpenHashMap<ResourceLocation> = Object2IntOpenHashMap()
 
     val inventory = object: ItemStackHandler(5) {
@@ -233,19 +242,93 @@ class CrusherBlockEntity(
 
     override fun saveAdditional(tag: CompoundTag, registries: HolderLookup.Provider) {
         super.saveAdditional(tag, registries)
-        tag.put(INVENTORY_TAG, inventory.serializeNBT(registries))
+        if (name != null) {
+            tag.putString("custom_name", Component.Serializer.toJson(name, registries))
+        }
+
+        lockKey.addToTag(tag)
+
+        tag.putInt("crushing_time", crushingTime)
+        tag.putInt("total_crushing_time", totalCrushingTime)
+        tag.putInt("burn_time_remaining", burnTimeRemaining)
+        tag.putInt("total_burn_time", totalBurnTime)
+        tag.putInt("crush_progress_per_tick", crushProgressPerTick)
+        tag.put("inventory", inventory.serializeNBT(registries))
+
+        val recipesUsedTag = CompoundTag()
+        recipesUsed.forEach { (recipeId, timesUsed) ->
+            recipesUsedTag.putInt(recipeId.toString(), timesUsed)
+        }
+        tag.put("recipes_used", recipesUsedTag)
     }
 
     override fun loadAdditional(tag: CompoundTag, registries: HolderLookup.Provider) {
         super.loadAdditional(tag, registries)
-        inventory.deserializeNBT(registries, tag.getCompound(INVENTORY_TAG))
+        lockKey = LockCode.fromTag(tag)
+        if (tag.contains("custom_name", 8)) {
+            name = parseCustomNameSafe(tag.getString("custom_name"), registries)
+        }
+
+        crushingTime = tag.getInt("crushing_time")
+        totalCrushingTime = tag.getInt("total_crushing_time")
+        burnTimeRemaining = tag.getInt("burn_time_remaining")
+        totalBurnTime = tag.getInt("total_burn_time")
+        crushProgressPerTick = tag.getInt("crush_progress_per_tick")
+        inventory.deserializeNBT(registries, tag.getCompound("inventory"))
+
+        val recipesUsedTag = tag.getCompound("recipes_used")
+        recipesUsedTag.allKeys.forEach { recipeId ->
+            recipesUsed.put(ResourceLocation.parse(recipeId), recipesUsedTag.getInt(recipeId))
+        }
     }
 
-    override fun createMenu(containerId: Int, playerInventory: Inventory, player: Player): AbstractContainerMenu {
-        return CrusherMenu(containerId, playerInventory, all, containerData, ::awardUsedRecipesAndPopExperience, blockPos)
+    override fun collectImplicitComponents(components: DataComponentMap.Builder) {
+        super.collectImplicitComponents(components)
+        components.set(DataComponents.CUSTOM_NAME, name)
+        if (lockKey != LockCode.NO_LOCK) {
+            components.set(DataComponents.LOCK, lockKey)
+        }
+
+        components.set(DataComponents.CONTAINER, ItemContainerContents.fromItems(inventory.getAllStacks()))
     }
 
-    override fun getDisplayName(): Component {
-        return Component.translatable(NAME_KEY)
+    override fun applyImplicitComponents(componentInput: DataComponentInput) {
+        super.applyImplicitComponents(componentInput)
+        name = componentInput.get(DataComponents.CUSTOM_NAME)
+        lockKey = componentInput.getOrDefault(DataComponents.LOCK, LockCode.NO_LOCK)
+        componentInput.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY).copyInto(inventory)
     }
+
+    @Suppress("OVERRIDE_DEPRECATION")
+    override fun removeComponentsFromTag(tag: CompoundTag) {
+        tag.remove("inventory")
+        tag.remove("custom_name")
+        tag.remove("lock")
+    }
+
+    fun canUnlock(player: Player, code: LockCode, displayName: Component): Boolean {
+        if (player.isSpectator || code.unlocksWith(player.mainHandItem)) {
+            return true
+        }
+
+        player.displayClientMessage(Component.translatable("container.isLocked", displayName), true)
+        player.playNotifySound(SoundEvents.CHEST_LOCKED, SoundSource.BLOCKS, 1f, 1f)
+        return false
+    }
+
+    override fun createMenu(containerId: Int, playerInventory: Inventory, player: Player): AbstractContainerMenu? {
+        return if(canUnlock(player, lockKey, displayName)) {
+            CrusherMenu(containerId, playerInventory, all, containerData, ::awardUsedRecipesAndPopExperience, blockPos)
+        } else {
+            null
+        }
+    }
+
+    override fun getName(): Component {
+        return name ?: Component.translatable(DEFAULT_NAME_KEY)
+    }
+
+    override fun getDisplayName(): Component = getName()
+
+    override fun getCustomName(): Component? = name
 }
