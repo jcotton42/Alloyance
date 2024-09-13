@@ -39,6 +39,7 @@ object AlloyanceCreativeTabs {
                 Metal.entries.forEach { metal ->
                     output.accept(AlloyanceItems.DUSTS.getValue(metal))
                 }
+                output.accept(AlloyanceItems.THERMITE_DUST)
             }
             .build()
     }
@@ -88,6 +89,7 @@ object AlloyanceCreativeTabs {
             .icon { ItemStack(AlloyanceItems.CRUSHER.get()) }
             .displayItems { params, output ->
                 output.accept(AlloyanceItems.CRUSHER)
+                output.accept(AlloyanceItems.INFUSED_IGNATIUS)
             }
             .build()
     }
