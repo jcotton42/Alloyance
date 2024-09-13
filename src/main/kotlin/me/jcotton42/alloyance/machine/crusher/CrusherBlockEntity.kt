@@ -1,13 +1,13 @@
 package me.jcotton42.alloyance.machine.crusher
 
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap
-import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.extensions.copyInto
 import me.jcotton42.alloyance.extensions.getAllStacks
 import me.jcotton42.alloyance.machine.ExtractOnlyItemHandler
 import me.jcotton42.alloyance.registration.AlloyanceBlocks
 import me.jcotton42.alloyance.registration.AlloyanceDataMaps
 import me.jcotton42.alloyance.registration.AlloyanceRecipes
+import me.jcotton42.alloyance.registration.AlloyanceSounds
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Direction
 import net.minecraft.core.HolderLookup
@@ -78,6 +78,7 @@ class CrusherBlockEntity(
     private var burnTimeRemaining: Int = 0
     private var totalBurnTime: Int = 0
     private var crushProgressPerTick: Int = 0
+    private var ambienceTimer: Int = 0
     private val recipesUsed: Object2IntOpenHashMap<ResourceLocation> = Object2IntOpenHashMap()
 
     val inventory = object: ItemStackHandler(5) {
@@ -144,15 +145,28 @@ class CrusherBlockEntity(
         }
 
         if (canCrush) {
+            if (ambienceTimer == 0) {
+                level.playSound(null, pos, AlloyanceSounds.CRUSHER_WINDUP.get(), SoundSource.BLOCKS)
+            }
+
+            ambienceTimer++
+
+            // after 6 seconds or every 16.5 seconds from the offset start
+            if (ambienceTimer == 120 || ambienceTimer % 330 == 120) {
+                level.playSound(null, pos, AlloyanceSounds.CRUSHER_AMBIENCE.get(), SoundSource.BLOCKS)
+            }
+
             if (isBurning()) {
                 crushingTime += crushProgressPerTick
             }
             if (crushingTime >= totalCrushingTime) {
                 tryCrush(inputStack, level, simulate = false)
+                level.playSound(null, pos, AlloyanceSounds.CRUSHER_IMPACT.get(), SoundSource.BLOCKS)
                 crushingTime = 0
             }
         } else {
             crushingTime = 0
+            ambienceTimer = 0
         }
 
         updateLitState(wasBurning, isBurning(), level, pos, state)
@@ -251,6 +265,7 @@ class CrusherBlockEntity(
         tag.putInt("burn_time_remaining", burnTimeRemaining)
         tag.putInt("total_burn_time", totalBurnTime)
         tag.putInt("crush_progress_per_tick", crushProgressPerTick)
+        tag.putInt("ambience_timer", ambienceTimer)
         tag.put("inventory", inventory.serializeNBT(registries))
 
         val recipesUsedTag = CompoundTag()
@@ -272,6 +287,7 @@ class CrusherBlockEntity(
         burnTimeRemaining = tag.getInt("burn_time_remaining")
         totalBurnTime = tag.getInt("total_burn_time")
         crushProgressPerTick = tag.getInt("crush_progress_per_tick")
+        ambienceTimer = tag.getInt("ambience_timer")
         inventory.deserializeNBT(registries, tag.getCompound("inventory"))
 
         val recipesUsedTag = tag.getCompound("recipes_used")
