@@ -12,7 +12,8 @@ fun generateData(event: GatherDataEvent) {
 
     generator.addProvider(event.includeClient(), AlloyanceBlockStatesProvider(packOutput, existingFileHelper))
     generator.addProvider(event.includeClient(), AlloyanceItemModelsProvider(packOutput, existingFileHelper))
-    generator.addProvider(event.includeClient(), AlloyanceLanguageProvider(packOutput, "en_us"))
+    generator.addProvider(event.includeClient(), AlloyanceEnglishLanguageProvider(packOutput))
+    generator.addProvider(event.includeClient(), AlloyanceSoundDefinitionsProvider(packOutput, existingFileHelper))
 
     val blockTags = AlloyanceBlockTagsProvider(packOutput, lookupProvider, existingFileHelper)
     generator.addProvider(event.includeServer(), blockTags)
@@ -20,6 +21,7 @@ fun generateData(event: GatherDataEvent) {
     generator.addProvider(event.includeServer(), AlloyanceBiomeTagsProvider(packOutput, lookupProvider, existingFileHelper))
     generator.addProvider(event.includeServer(), AlloyanceRecipesProvider(packOutput, lookupProvider))
     generator.addProvider(event.includeServer(), AlloyanceWorldGenProvider(packOutput, lookupProvider))
+    generator.addProvider(event.includeServer(), AlloyanceDataMapProvider(packOutput, lookupProvider))
 
     val blockLoot = LootTableProvider.SubProviderEntry(
         ::AlloyanceBlockLootProvider,

@@ -1,0 +1,10 @@
+{
+  "values": {
+    "alloyance:infused_ignatius": {
+      "burn_time": 4800
+    },
+    "alloyance:thermite_dust": {
+      "burn_time": 1600
+    }
+  }
+}

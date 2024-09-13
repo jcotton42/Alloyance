@@ -138,7 +138,7 @@ dependencies {
     // We add the full version to localRuntime, not runtimeOnly, so that we do not publish a dependency on it
     localRuntime "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
 
-    localRuntime "mcjty.theoneprobe:theoneprobe:${minecraft_version}_neo-${top_version}"
+    localRuntime "mcjty.theoneprobe:theoneprobe:1.21_neo-${top_version}"
 
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
@@ -154,7 +154,7 @@ dependencies {
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
-    implementation 'thedarkcolour:kotlinforforge-neoforge:5.4.0'
+    implementation "thedarkcolour:kotlinforforge-neoforge:${kff_version}"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

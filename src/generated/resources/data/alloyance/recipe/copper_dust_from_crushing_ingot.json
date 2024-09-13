@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "copper_dust",
+  "ingredient": {
+    "tag": "c:ingots/copper"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:copper_dust"
+  }
+}

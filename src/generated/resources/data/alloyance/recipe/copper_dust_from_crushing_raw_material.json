@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "copper_dust",
+  "ingredient": {
+    "tag": "c:raw_materials/copper"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:copper_dust"
+  }
+}

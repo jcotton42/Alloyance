@@ -1,12 +1,18 @@
-// 1.21	2024-08-03T15:29:30.308780412	Item Models: alloyance
-3d476e645ab5fad8076d0828910b3be75f6f55a2 assets/alloyance/models/item/deep_iron_block.json
-0c8eb700b603be3d13acdd9d35824249d902697c assets/alloyance/models/item/deep_iron_ingot.json
-85b3d2c3811b2ae300a9064b22b8a36ef4eeca5b assets/alloyance/models/item/deep_iron_nugget.json
-ca6393e0edef3963cd70337fd22e986be52eed5b assets/alloyance/models/item/deep_iron_ore.json
+// 1.21.1	2024-09-02T16:08:30.4346188	Item Models: alloyance
+db97babee9684bcb62f1cb81ad1e8d29983a2c2a assets/alloyance/models/item/copper_dust.json
 adc14d65bc34952af3b365b04e2b1e5ed0a6f1a6 assets/alloyance/models/item/deepslate_deep_iron_ore.json
 b98e1368967fea5c54f6239efcf34e74bc5dc472 assets/alloyance/models/item/deepslate_prometheum_ore.json
 2f745cfff636b10445d4b30749957d12592fc576 assets/alloyance/models/item/deepslate_zinc_ore.json
+3d476e645ab5fad8076d0828910b3be75f6f55a2 assets/alloyance/models/item/deep_iron_block.json
+8875e5f698c3c4dc69d5837ddc0bd0e625a1f0d1 assets/alloyance/models/item/deep_iron_dust.json
+0c8eb700b603be3d13acdd9d35824249d902697c assets/alloyance/models/item/deep_iron_ingot.json
+85b3d2c3811b2ae300a9064b22b8a36ef4eeca5b assets/alloyance/models/item/deep_iron_nugget.json
+ca6393e0edef3963cd70337fd22e986be52eed5b assets/alloyance/models/item/deep_iron_ore.json
+4b37cc397851493a5615d91cdacd5b4ff94772bc assets/alloyance/models/item/gold_dust.json
+8202166abefaa407b0b89c75f4203de4a76ea1f7 assets/alloyance/models/item/infused_ignatius.json
+e43851c156331df2c745fce6ff1c4f531cd7c3b0 assets/alloyance/models/item/iron_dust.json
 3de63934ecea52817379801ed035ef255a0529da assets/alloyance/models/item/prometheum_block.json
+4ba2ea9e3b9c0be48f97f495f457717448d210f3 assets/alloyance/models/item/prometheum_dust.json
 89d323675d6aa34753f77167f1c2af8fc5bcc8cb assets/alloyance/models/item/prometheum_ingot.json
 c122528d6fda4647c5109d0cbc67baa8759d2544 assets/alloyance/models/item/prometheum_nugget.json
 b3dadf72ade313d203e638c92bbd20e77bb150ce assets/alloyance/models/item/prometheum_ore.json
@@ -14,11 +20,14 @@ b3dadf72ade313d203e638c92bbd20e77bb150ce assets/alloyance/models/item/prometheum
 4520de8cdb5c354b8a27f6ee4bf53d506442f6e6 assets/alloyance/models/item/raw_prometheum.json
 096d0c70e0c358f9975562c08a857db9b635f2d5 assets/alloyance/models/item/raw_tin.json
 0a592eb8a3fa44703ea9534dff0eee0369081ee1 assets/alloyance/models/item/raw_zinc.json
+5af677e15357cdfe325366aea1dfbb8fa90dd9a4 assets/alloyance/models/item/thermite_dust.json
 de7becb63407e4fc36d8ab78179f895a771b0b81 assets/alloyance/models/item/tin_block.json
+7fbf0505df28d0b8bf7e637239580763d2a63b6a assets/alloyance/models/item/tin_dust.json
 49e8b82da863f99cd9d7b8ae1d863272292446ba assets/alloyance/models/item/tin_ingot.json
 1c996cf02afcb46bfcbb125ad9cfd6bffb1ac902 assets/alloyance/models/item/tin_nugget.json
 4113d2bf6ba5364ad42338f4d60039dfc5840418 assets/alloyance/models/item/tin_ore.json
 4e419f23b901d992c61aba4a0ac400130ff84f53 assets/alloyance/models/item/zinc_block.json
+342bb0714f440a00a57223622c65af51a94a1fe8 assets/alloyance/models/item/zinc_dust.json
 25f668002035f90a1131664ee9440d062d63bfa3 assets/alloyance/models/item/zinc_ingot.json
 02fbd299e72237378acf59c13b8ffd068dfe7f8a assets/alloyance/models/item/zinc_nugget.json
 8fc95ef2d6b2664d5c803ab38352302f0cea9b14 assets/alloyance/models/item/zinc_ore.json

@@ -22,6 +22,8 @@ class AlloyanceBlockLootProvider(lookupProvider: HolderLookup.Provider): BlockLo
         AlloyanceBlocks.DEEPSLATE_ORES.forEach { (metal, ore) ->
             oreDropsItem(ore.get(), AlloyanceItems.RAW_MATERIALS.getValue(metal).get())
         }
+
+        dropSelf(AlloyanceBlocks.CRUSHER.get())
     }
 
     override fun getKnownBlocks(): Iterable<Block> = AlloyanceBlocks.BLOCKS.entries

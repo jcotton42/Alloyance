@@ -1,1 +1,34 @@
-// 1.21	2024-08-03T13:53:24.593778255	Tags for minecraft:item mod id alloyance
+// 1.21.1	2024-09-02T16:08:30.4361195	Tags for minecraft:item mod id alloyance
+161f1b73c38d362c3ee841a00715d94f9c16f87b data/c/tags/item/dusts.json
+7e56c221cbf69f0fb8abf477aaae4d453331f9c1 data/c/tags/item/dusts/deep_iron.json
+8d65f8f2a3350ee219c8563f968acd87a47b2e39 data/c/tags/item/dusts/prometheum.json
+f778cc51e96c4dfd977cb382ed889ee3e715ef59 data/c/tags/item/dusts/tin.json
+30e5ebfb6e043cab8b77e480ca42caf4fb322ab6 data/c/tags/item/dusts/zinc.json
+e50c16ba0b9cc6299e9b4e303f06e628b0dd455b data/c/tags/item/ingots.json
+251b9af67bf17412098745e329b053344859c526 data/c/tags/item/ingots/deep_iron.json
+aa455f91202176c6cc9c1acc4c40f8bd2587a774 data/c/tags/item/ingots/prometheum.json
+d5e25c33f6faacff229b3e494b5401b5d14314d8 data/c/tags/item/ingots/tin.json
+38c245b799b04efe6544d71d99b1b08e0bc99083 data/c/tags/item/ingots/zinc.json
+de96d110b312bb04f8ea25de394b7833c082cba4 data/c/tags/item/nuggets.json
+d4ff184e8f7eb31f7c753a4b7a45b830bb3dcfee data/c/tags/item/nuggets/deep_iron.json
+72fd87942568e63960c7bfba3ffa966c6543cb29 data/c/tags/item/nuggets/prometheum.json
+30204e7433eb335926278c28be8a971d12fee8a5 data/c/tags/item/nuggets/tin.json
+74dd75e5f736dce3240bcce26f0ccf4890de7cbc data/c/tags/item/nuggets/zinc.json
+b35d06a716821c7e4940efb4c7189def5f300bfa data/c/tags/item/ores.json
+4856011b0694a59916cb7a20cf25b9d6c9f76c01 data/c/tags/item/ores/deep_iron.json
+538157290f51d545311567f0cefb785a4b3e1842 data/c/tags/item/ores/prometheum.json
+96299ff0191a5fa4286bcbaf443628b556345d85 data/c/tags/item/ores/tin.json
+8f8ea038e3acfede87f4a8fb814ec02cd1dfe917 data/c/tags/item/ores/zinc.json
+1b454fd59e57ca863c6dbb9afd1acec1c67529dc data/c/tags/item/ores_in_ground/deepslate.json
+3cddea798bf7810ddf96d4a45e080ebd479867db data/c/tags/item/ores_in_ground/stone.json
+7dc9291ab221a389eae1d27b9a809276e90bcb3d data/c/tags/item/ore_rates/singular.json
+057e74838083dbb2f217f7cee2197574b90aa397 data/c/tags/item/raw_materials.json
+45ea6a75205536a5d0a0cafccbc70cfebae9540f data/c/tags/item/raw_materials/deep_iron.json
+fc6448189ba34be78d422411fe2dedb3913a9849 data/c/tags/item/raw_materials/prometheum.json
+74bae4e38cf66dff64a2f45995c17313b5dd78b7 data/c/tags/item/raw_materials/tin.json
+49ba2295d2bb6e79b49ce95fa10f56418a5955d6 data/c/tags/item/raw_materials/zinc.json
+c4be4cb4d282c4015e594b62266e9b176a96ce9f data/c/tags/item/storage_blocks.json
+98d7f09e1c826e979ece333ed160158978e1d55e data/c/tags/item/storage_blocks/deep_iron.json
+f6747fa94156223e85cc85c8446fd91731f53886 data/c/tags/item/storage_blocks/prometheum.json
+f827a7d6fcf6dfe3eee3acf5972208bb27dd7814 data/c/tags/item/storage_blocks/tin.json
+44dcabb93af53db6238114d0bb7887f3a7b757a7 data/c/tags/item/storage_blocks/zinc.json

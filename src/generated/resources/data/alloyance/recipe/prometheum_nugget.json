@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "prometheum_nugget",
+  "ingredients": [
+    {
+      "item": "alloyance:prometheum_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:prometheum_nugget"
+  }
+}

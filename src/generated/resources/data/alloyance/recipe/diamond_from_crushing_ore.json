@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "diamond",
+  "ingredient": {
+    "tag": "c:ores/diamond"
+  },
+  "result": {
+    "count": 2,
+    "id": "minecraft:diamond"
+  }
+}
