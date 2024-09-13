@@ -8,15 +8,15 @@ import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.item.ItemStack
 import net.neoforged.bus.api.IEventBus
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent
+import net.neoforged.neoforge.registries.DeferredHolder
 import net.neoforged.neoforge.registries.DeferredRegister
-import java.util.function.Supplier
 
 object AlloyanceCreativeTabs {
     val TABS: DeferredRegister<CreativeModeTab> = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Alloyance.ID)
 
     // TODO ARMOR
     // TODO pick a variety of metals for the icons
-    val BLOCKS: Supplier<CreativeModeTab> = TABS.register("blocks") { location ->
+    val BLOCKS: DeferredHolder<CreativeModeTab, CreativeModeTab> = TABS.register("blocks") { location ->
         CreativeModeTab.builder()
             .title(Component.translatable(location.toLanguageKey("itemGroup")))
             .icon { ItemStack(AlloyanceBlocks.DEEP_IRON_BLOCK.get()) }
@@ -28,7 +28,7 @@ object AlloyanceCreativeTabs {
             .build()
     }
 
-    val DUSTS: Supplier<CreativeModeTab> = TABS.register("dusts") { location ->
+    val DUSTS: DeferredHolder<CreativeModeTab, CreativeModeTab> = TABS.register("dusts") { location ->
         CreativeModeTab.builder()
             .title(Component.translatable(location.toLanguageKey("itemGroup")))
             .icon { ItemStack(AlloyanceItems.DEEP_IRON_DUST.get()) }
@@ -43,7 +43,7 @@ object AlloyanceCreativeTabs {
             .build()
     }
 
-    val INGOTS: Supplier<CreativeModeTab> = TABS.register("ingots") { location ->
+    val INGOTS: DeferredHolder<CreativeModeTab, CreativeModeTab> = TABS.register("ingots") { location ->
         CreativeModeTab.builder()
             .title(Component.translatable(location.toLanguageKey("itemGroup")))
             .icon { ItemStack(AlloyanceItems.DEEP_IRON_INGOT.get()) }
@@ -55,7 +55,7 @@ object AlloyanceCreativeTabs {
             .build()
     }
 
-    val NUGGETS: Supplier<CreativeModeTab> = TABS.register("nuggets") { location ->
+    val NUGGETS: DeferredHolder<CreativeModeTab, CreativeModeTab> = TABS.register("nuggets") { location ->
         CreativeModeTab.builder()
             .title(Component.translatable(location.toLanguageKey("itemGroup")))
             .icon { ItemStack(AlloyanceItems.DEEP_IRON_NUGGET.get()) }
@@ -67,7 +67,7 @@ object AlloyanceCreativeTabs {
             .build()
     }
 
-    val RAW_MATERIALS: Supplier<CreativeModeTab> = TABS.register("raw_materials") { location ->
+    val RAW_MATERIALS: DeferredHolder<CreativeModeTab, CreativeModeTab> = TABS.register("raw_materials") { location ->
         CreativeModeTab.builder()
             .title(Component.translatable(location.toLanguageKey("itemGroup")))
             .icon { ItemStack(AlloyanceItems.RAW_DEEP_IRON.get()) }
@@ -82,7 +82,7 @@ object AlloyanceCreativeTabs {
             .build()
     }
 
-    val SPECIAL: Supplier<CreativeModeTab> = TABS.register("special") { location ->
+    val SPECIAL: DeferredHolder<CreativeModeTab, CreativeModeTab> = TABS.register("special") { location ->
         CreativeModeTab.builder()
             .title(Component.translatable(location.toLanguageKey("itemGroup")))
             .icon { ItemStack(AlloyanceItems.CRUSHER.get()) }
@@ -92,7 +92,7 @@ object AlloyanceCreativeTabs {
             .build()
     }
 
-    val ORES: Supplier<CreativeModeTab> = TABS.register("ores") { location ->
+    val ORES: DeferredHolder<CreativeModeTab, CreativeModeTab> = TABS.register("ores") { location ->
         CreativeModeTab.builder()
             .title(Component.translatable(location.toLanguageKey("itemGroup")))
             .icon { ItemStack(AlloyanceBlocks.DEEP_IRON_ORE.get()) }
@@ -100,6 +100,7 @@ object AlloyanceCreativeTabs {
                 Metal.entries.forEach { metal ->
                     val ore = AlloyanceBlocks.ORES[metal]
                     val deepslateOre = AlloyanceBlocks.DEEPSLATE_ORES[metal]
+                    // TODO nether, end
                     if (ore != null) output.accept(ore)
                     if (deepslateOre != null) output.accept(deepslateOre)
                 }

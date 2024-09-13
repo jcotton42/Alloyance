@@ -1,10 +1,11 @@
 package me.jcotton42.alloyance.datagen
 
 import me.jcotton42.alloyance.Alloyance
-import me.jcotton42.alloyance.machine.crusher.CrusherBlockEntity
 import me.jcotton42.alloyance.registration.*
 import net.minecraft.data.PackOutput
+import net.minecraft.world.item.CreativeModeTab
 import net.neoforged.neoforge.common.data.LanguageProvider
+import net.neoforged.neoforge.registries.DeferredHolder
 
 class AlloyanceEnglishLanguageProvider(
     output: PackOutput,
@@ -14,6 +15,15 @@ class AlloyanceEnglishLanguageProvider(
     "en_us"
 ) {
     override fun addTranslations() {
+        // TODO clean this up and categorize
+        add(AlloyanceCreativeTabs.BLOCKS, "Alloyance Blocks")
+        add(AlloyanceCreativeTabs.DUSTS, "Alloyance Dusts")
+        add(AlloyanceCreativeTabs.INGOTS, "Alloyance Ingots")
+        add(AlloyanceCreativeTabs.NUGGETS, "Alloyance Nuggets")
+        add(AlloyanceCreativeTabs.RAW_MATERIALS, "Alloyance Raw Materials")
+        add(AlloyanceCreativeTabs.SPECIAL, "Alloyance Special")
+        add(AlloyanceCreativeTabs.ORES, "Alloyance Ores")
+
         AlloyanceBlocks.STORAGE_BLOCKS.forEach { (metal, block) ->
             add(block.get(), "Block of ${getEnglishName(metal)}")
         }
@@ -86,6 +96,10 @@ class AlloyanceEnglishLanguageProvider(
         AlloyanceBlockTags.ORES.forEach { (metal, tag) ->
             add(tag, "${getEnglishName(metal)} Ores")
         }
+    }
+
+    private fun add(tab: DeferredHolder<CreativeModeTab, CreativeModeTab>, name: String) {
+        add(tab.id.toLanguageKey("itemGroup"), name)
     }
 
     private fun getEnglishName(metal: Metal): String = when (metal) {
