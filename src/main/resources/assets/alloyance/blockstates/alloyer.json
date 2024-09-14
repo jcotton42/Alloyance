@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "burning=false,facing=north": {
+      "model": "alloyance:alloyer"
+    },
+    "burning=false,facing=east": {
+      "model": "alloyance:alloyer",
+      "y": 90
+    },
+    "burning=false,facing=south": {
+      "model": "alloyance:alloyer",
+      "y": 180
+    },
+    "burning=false,facing=west": {
+      "model": "alloyance:alloyer",
+      "y": 270
+    },
+    "burning=true,facing=north": {
+      "model": "alloyance:lit_alloyer"
+    },
+    "burning=true,facing=east": {
+      "model": "alloyance:lit_alloyer",
+      "y": 90
+    },
+    "burning=true,facing=south": {
+      "model": "alloyance:lit_alloyer",
+      "y": 180
+    },
+    "burning=true,facing=west": {
+      "model": "alloyance:lit_alloyer",
+      "y": 270
+    }
+  }
+}
