@@ -34,7 +34,7 @@ class AlloyanceBlockTagsProvider(
         )
 
         // TODO make a tier dictionary or something
-        tag(BlockTags.NEEDS_IRON_TOOL).add(
+        tag(BlockTags.NEEDS_STONE_TOOL).add(
             AlloyanceBlocks.DEEP_IRON_BLOCK.get(),
             AlloyanceBlocks.DEEP_IRON_ORE.get(),
             AlloyanceBlocks.DEEPSLATE_DEEP_IRON_ORE.get(),
@@ -49,6 +49,9 @@ class AlloyanceBlockTagsProvider(
 
             AlloyanceBlocks.TIN_BLOCK.get(),
             AlloyanceBlocks.TIN_ORE.get(),
+
+            AlloyanceBlocks.BRONZE_BLOCK.get(),
+            AlloyanceBlocks.BRASS_BLOCK.get(),
         )
 
         // TODO BlockTags.BEACON_BASE_BLOCKS, see isBeaconBase in BlockMetal.java in Reforged for criteria

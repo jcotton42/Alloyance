@@ -150,7 +150,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
 
         if (alloy.input1Count + alloy.input2Count > 9) return
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, resultIngot, alloy.resultCount)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, resultDust, alloy.resultCount)
             .requires(Ingredient.of(dustTag1), alloy.input1Count)
             .requires(Ingredient.of(dustTag2), alloy.input2Count)
             .group(getItemName(resultDust))
@@ -197,9 +197,9 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
 }
 
 private enum class VanillaMetal(val id: String, val dustTag: TagKey<Item>, val alloyableTag: TagKey<Item>) {
-    COPPER("copper", AlloyanceItemTags.DUSTS_COPPER),
-    IRON("iron", AlloyanceItemTags.DUSTS_IRON),
-    GOLD("gold", AlloyanceItemTags.DUSTS_GOLD),
+    COPPER("copper", AlloyanceItemTags.DUSTS_COPPER, AlloyanceItemTags.ALLOYABLES_COPPER),
+    IRON("iron", AlloyanceItemTags.DUSTS_IRON, AlloyanceItemTags.ALLOYABLES_IRON),
+    GOLD("gold", AlloyanceItemTags.DUSTS_GOLD, AlloyanceItemTags.ALLOYABLES_GOLD),
 }
 
 private data class Alloy(

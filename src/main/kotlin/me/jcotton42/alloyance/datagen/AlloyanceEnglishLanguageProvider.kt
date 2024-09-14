@@ -71,6 +71,12 @@ class AlloyanceEnglishLanguageProvider(
         add(AlloyanceItemTags.DUSTS_GOLD, "Gold Dusts")
         add(AlloyanceItemTags.DUSTS_IRON, "Iron Dusts")
 
+        add(AlloyanceItemTags.ALLOYABLES_ROOT, "Alloyables")
+
+        add(AlloyanceItemTags.ALLOYABLES_COPPER, "Copper Alloyables")
+        add(AlloyanceItemTags.ALLOYABLES_GOLD, "Gold Alloyables")
+        add(AlloyanceItemTags.ALLOYABLES_IRON, "Iron Alloyables")
+
         AlloyanceItemTags.RAW_MATERIALS.forEach { (metal, tag) ->
             add(tag, "${getEnglishName(metal)} Raw Materials")
         }
@@ -88,6 +94,9 @@ class AlloyanceEnglishLanguageProvider(
         }
         AlloyanceItemTags.ORES.forEach { (metal, tag) ->
             add(tag, "${getEnglishName(metal)} Ores")
+        }
+        AlloyanceItemTags.ALLOYABLES.forEach { (metal, tag) ->
+            add(tag, "${getEnglishName(metal)} Alloyables")
         }
 
         AlloyanceBlockTags.STORAGE_BLOCKS.forEach { (metal, tag) ->
@@ -107,5 +116,7 @@ class AlloyanceEnglishLanguageProvider(
         Metal.PROMETHEUM -> "Prometheum"
         Metal.ZINC -> "Zinc"
         Metal.TIN -> "Tin"
+        Metal.BRONZE -> "Bronze"
+        Metal.BRASS -> "Brass"
     }
 }

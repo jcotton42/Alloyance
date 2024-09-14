@@ -1,0 +1,17 @@
+{
+  "type": "alloyance:alloyer",
+  "experience": 1.75,
+  "group": "brass_ingot",
+  "ingredient1": {
+    "count": 3,
+    "tag": "alloyance:alloyables/copper"
+  },
+  "ingredient2": {
+    "count": 1,
+    "tag": "alloyance:alloyables/zinc"
+  },
+  "result": {
+    "count": 4,
+    "id": "alloyance:brass_ingot"
+  }
+}

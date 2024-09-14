@@ -64,6 +64,16 @@ object AlloyanceItems {
     val TIN_NUGGET = nugget(TIN)
     val TIN_DUST = dust(TIN)
 
+    val BRONZE_BLOCK = block(AlloyanceBlocks.BRONZE_BLOCK)
+    val BRONZE_INGOT = ingot(BRONZE)
+    val BRONZE_NUGGET = nugget(BRONZE)
+    val BRONZE_DUST = dust(BRONZE)
+
+    val BRASS_BLOCK = block(AlloyanceBlocks.BRASS_BLOCK)
+    val BRASS_INGOT = ingot(BRASS)
+    val BRASS_NUGGET = nugget(BRASS)
+    val BRASS_DUST = dust(BRASS)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

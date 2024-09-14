@@ -61,6 +61,10 @@ object AlloyanceBlocks {
     val TIN_ORE = ore(TIN)
     val TIN_BLOCK = storageBlock(TIN)
 
+    val BRONZE_BLOCK = storageBlock(BRONZE)
+
+    val BRASS_BLOCK = storageBlock(BRASS)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

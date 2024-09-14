@@ -1,8 +1,13 @@
 {
   "values": [
+    "#c:dusts/iron",
+    "#c:dusts/gold",
+    "#c:dusts/copper",
     "#c:dusts/deep_iron",
     "#c:dusts/prometheum",
     "#c:dusts/zinc",
-    "#c:dusts/tin"
+    "#c:dusts/tin",
+    "#c:dusts/bronze",
+    "#c:dusts/brass"
   ]
 }
