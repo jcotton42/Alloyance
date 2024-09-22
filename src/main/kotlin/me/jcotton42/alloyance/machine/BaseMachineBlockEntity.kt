@@ -35,18 +35,18 @@ abstract class BaseMachineBlockEntity(
     pos: BlockPos,
     state: BlockState
 ): BlockEntity(type, pos, state), Nameable {
-    protected var name: Component? = null
+    private var customName: Component? = null
     protected var lockKey: LockCode = LockCode.NO_LOCK
     protected val recipesUsed: Object2IntOpenHashMap<ResourceLocation> = Object2IntOpenHashMap()
-    protected abstract val inventory: ItemStackHandler
+    abstract val inventory: ItemStackHandler
     abstract val defaultName: Component
 
     abstract fun tickServer(level: Level, pos: BlockPos, state: BlockState)
 
     override fun saveAdditional(tag: CompoundTag, registries: HolderLookup.Provider) {
         super.saveAdditional(tag, registries)
-        if (name != null) {
-            tag.putString("custom_name", Component.Serializer.toJson(name, registries))
+        if (customName != null) {
+            tag.putString("custom_name", Component.Serializer.toJson(customName, registries))
         }
 
         lockKey.addToTag(tag)
@@ -63,7 +63,7 @@ abstract class BaseMachineBlockEntity(
         super.loadAdditional(tag, registries)
         lockKey = LockCode.fromTag(tag)
         if (tag.contains("custom_name", 8)) {
-            name = parseCustomNameSafe(tag.getString("custom_name"), registries)
+            customName = parseCustomNameSafe(tag.getString("custom_name"), registries)
         }
 
         val recipesUsedTag = tag.getCompound("recipes_used")
@@ -75,7 +75,7 @@ abstract class BaseMachineBlockEntity(
 
     override fun collectImplicitComponents(components: DataComponentMap.Builder) {
         super.collectImplicitComponents(components)
-        components.set(DataComponents.CUSTOM_NAME, name)
+        components.set(DataComponents.CUSTOM_NAME, customName)
         if (lockKey != LockCode.NO_LOCK) {
             components.set(DataComponents.LOCK, lockKey)
         }
@@ -85,7 +85,7 @@ abstract class BaseMachineBlockEntity(
 
     override fun applyImplicitComponents(componentInput: DataComponentInput) {
         super.applyImplicitComponents(componentInput)
-        name = componentInput.get(DataComponents.CUSTOM_NAME)
+        customName = componentInput.get(DataComponents.CUSTOM_NAME)
         lockKey = componentInput.getOrDefault(DataComponents.LOCK, LockCode.NO_LOCK)
         componentInput.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY).copyInto(inventory)
     }
@@ -98,11 +98,11 @@ abstract class BaseMachineBlockEntity(
     }
 
 
-    override fun getName(): Component = name ?: defaultName
+    override fun getName(): Component = customName ?: defaultName
 
     override fun getDisplayName(): Component = getName()
 
-    override fun getCustomName(): Component? = name
+    override fun getCustomName(): Component? = customName
 
     fun canUnlock(player: Player, code: LockCode, displayName: Component): Boolean {
         if (player.isSpectator || code.unlocksWith(player.mainHandItem)) {

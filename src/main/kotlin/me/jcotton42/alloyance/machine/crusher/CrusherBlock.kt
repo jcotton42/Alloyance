@@ -100,7 +100,7 @@ class CrusherBlock(properties: BlockBehaviour.Properties): BaseEntityBlock(prope
         }
 
         return createTickerHelper(blockEntityType, AlloyanceBlocks.CRUSHER_BLOCK_ENTITY.get()) { level, pos, state, entity ->
-            entity.tickSerer(level, pos, state)
+            entity.tickServer(level, pos, state)
         }
     }
 
