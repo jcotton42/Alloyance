@@ -3,6 +3,7 @@ package me.jcotton42.alloyance.machine.crusher
 import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
 import com.mojang.serialization.codecs.RecordCodecBuilder
+import me.jcotton42.alloyance.common.HasExperience
 import me.jcotton42.alloyance.registration.AlloyanceBlocks
 import me.jcotton42.alloyance.registration.AlloyanceRecipes
 import net.minecraft.core.HolderLookup
@@ -22,9 +23,9 @@ class CrusherRecipe(
     private val group: String,
     val ingredient: Ingredient,
     val result: ItemStack,
-    val experience: Float,
+    override val experience: Float,
     val crushingTime: Int,
-): Recipe<SingleRecipeInput> {
+): Recipe<SingleRecipeInput>, HasExperience {
     private val ingredients: NonNullList<Ingredient> = NonNullList.create()
 
     init {

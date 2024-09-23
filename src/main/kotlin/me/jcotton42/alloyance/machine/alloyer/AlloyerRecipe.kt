@@ -3,6 +3,7 @@ package me.jcotton42.alloyance.machine.alloyer
 import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
 import com.mojang.serialization.codecs.RecordCodecBuilder
+import me.jcotton42.alloyance.common.HasExperience
 import me.jcotton42.alloyance.machine.DualRecipeInput
 import me.jcotton42.alloyance.registration.AlloyanceRecipes
 import net.minecraft.core.HolderLookup
@@ -23,9 +24,9 @@ class AlloyerRecipe(
     val ingredient1: SizedIngredient,
     val ingredient2: SizedIngredient,
     val result: ItemStack,
-    val experience: Float,
+    override val experience: Float,
     val alloyingTime: Int,
-): Recipe<DualRecipeInput> {
+): Recipe<DualRecipeInput>, HasExperience {
     private val ingredients: NonNullList<Ingredient> = NonNullList.create()
 
     init {

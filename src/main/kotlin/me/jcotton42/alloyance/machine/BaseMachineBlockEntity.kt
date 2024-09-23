@@ -1,9 +1,9 @@
 package me.jcotton42.alloyance.machine
 
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap
+import me.jcotton42.alloyance.common.HasExperience
 import me.jcotton42.alloyance.extensions.copyInto
 import me.jcotton42.alloyance.extensions.getAllStacks
-import me.jcotton42.alloyance.machine.crusher.CrusherRecipe
 import net.minecraft.core.BlockPos
 import net.minecraft.core.HolderLookup
 import net.minecraft.core.component.DataComponentMap
@@ -135,7 +135,7 @@ abstract class BaseMachineBlockEntity(
         recipesUsed.forEach { (recipeId, timesUed) ->
             level.recipeManager.byKey(recipeId).ifPresent { recipe ->
                 recipes.add(recipe)
-                createExperience(level, popLocation, (recipe.value as CrusherRecipe).experience * timesUed)
+                createExperience(level, popLocation, (recipe.value as HasExperience).experience * timesUed)
             }
         }
 
