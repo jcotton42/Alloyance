@@ -1,5 +1,6 @@
 package me.jcotton42.alloyance.machine.crusher
 
+import me.jcotton42.alloyance.machine.BaseMachineBlock
 import me.jcotton42.alloyance.machine.BaseMachineBlockEntity
 import me.jcotton42.alloyance.machine.ExtractOnlyItemHandler
 import me.jcotton42.alloyance.registration.AlloyanceBlocks
@@ -185,7 +186,7 @@ class CrusherBlockEntity(
 
     private fun updateLitState(wasBurning: Boolean, isBurning: Boolean, level: Level, pos: BlockPos, state: BlockState) {
         if (isBurning != wasBurning) {
-            val newState = state.setValue(CrusherBlock.LIT, isBurning)
+            val newState = state.setValue(BaseMachineBlock.LIT, isBurning)
             level.setBlockAndUpdate(pos, newState)
         }
     }
