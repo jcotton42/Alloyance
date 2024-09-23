@@ -19,7 +19,6 @@ import net.minecraft.world.entity.player.Player
 import net.minecraft.world.inventory.AbstractContainerMenu
 import net.minecraft.world.inventory.ContainerData
 import net.minecraft.world.item.ItemStack
-import net.minecraft.world.item.Items
 import net.minecraft.world.item.crafting.RecipeManager
 import net.minecraft.world.item.crafting.RecipeType
 import net.minecraft.world.item.crafting.SingleRecipeInput
@@ -73,7 +72,7 @@ class CrusherBlockEntity(
 
         override fun isItemValid(slot: Int, stack: ItemStack): Boolean = when (slot) {
             // TODO see if excluding empty buckets is viable
-            FUEL_SLOT -> stack.getBurnTime(RecipeType.SMELTING) > 0 || stack.`is`(Items.BUCKET)
+            FUEL_SLOT -> stack.getBurnTime(RecipeType.SMELTING) > 0
             else -> true
         }
     }

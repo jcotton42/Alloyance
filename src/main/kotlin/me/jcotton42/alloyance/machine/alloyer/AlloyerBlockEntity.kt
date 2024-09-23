@@ -73,7 +73,7 @@ class AlloyerBlockEntity(
 
         override fun isItemValid(slot: Int, stack: ItemStack): Boolean = when (slot) {
             // TODO see if excluding empty buckets is viable
-            FUEL_SLOT -> stack.getBurnTime(RecipeType.SMELTING) > 0 || stack.`is`(Items.BUCKET)
+            FUEL_SLOT -> stack.getBurnTime(RecipeType.SMELTING) > 0
             else -> true
         }
     }
