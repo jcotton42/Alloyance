@@ -12,6 +12,10 @@ import net.neoforged.neoforge.registries.DeferredHolder
 class AlloyanceSoundDefinitionsProvider(output: PackOutput, existingFileHelper: ExistingFileHelper) :
     SoundDefinitionsProvider(output, Alloyance.ID, existingFileHelper) {
     override fun registerSounds() {
+        standardSound(AlloyanceSounds.ALLOYER_AMBIENCE, stream = true)
+        standardSound(AlloyanceSounds.ALLOYER_IMPACT, stream = false)
+        standardSound(AlloyanceSounds.ALLOYER_WINDUP, stream = false)
+
         standardSound(AlloyanceSounds.CRUSHER_AMBIENCE, stream = true)
         standardSound(AlloyanceSounds.CRUSHER_IMPACT, stream = false)
         standardSound(AlloyanceSounds.CRUSHER_WINDUP, stream = false)

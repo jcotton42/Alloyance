@@ -1,4 +1,5 @@
 {
+  "block.alloyance.alloyer": "Alloyer",
   "block.alloyance.brass_block": "Block of Brass",
   "block.alloyance.bronze_block": "Block of Bronze",
   "block.alloyance.crusher": "Crusher",
@@ -47,6 +48,9 @@
   "itemGroup.alloyance.ores": "Alloyance Ores",
   "itemGroup.alloyance.raw_materials": "Alloyance Raw Materials",
   "itemGroup.alloyance.special": "Alloyance Special",
+  "sound.alloyance.machines/alloyer_ambience": "Alloyer working",
+  "sound.alloyance.machines/alloyer_impact": "Alloyer alloys",
+  "sound.alloyance.machines/alloyer_windup": "Alloyer starts",
   "sound.alloyance.machines/crusher_ambience": "Crusher working",
   "sound.alloyance.machines/crusher_impact": "Crusher crushes",
   "sound.alloyance.machines/crusher_windup": "Crusher starts",

@@ -11,6 +11,10 @@ import net.neoforged.neoforge.registries.DeferredRegister
 object AlloyanceSounds {
     val SOUND_EVENTS: DeferredRegister<SoundEvent> = DeferredRegister.create(Registries.SOUND_EVENT, Alloyance.ID)
 
+    val ALLOYER_AMBIENCE = sound("machines/alloyer_ambience")
+    val ALLOYER_IMPACT = sound("machines/alloyer_impact")
+    val ALLOYER_WINDUP = sound("machines/alloyer_windup")
+
     val CRUSHER_AMBIENCE = sound("machines/crusher_ambience")
     val CRUSHER_IMPACT = sound("machines/crusher_impact")
     val CRUSHER_WINDUP = sound("machines/crusher_windup")

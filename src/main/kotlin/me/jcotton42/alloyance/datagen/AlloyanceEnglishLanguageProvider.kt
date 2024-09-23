@@ -50,6 +50,11 @@ class AlloyanceEnglishLanguageProvider(
             add(dust.get(), "${getEnglishName(metal)} Dust")
         }
 
+        add(AlloyanceBlocks.ALLOYER.get(), "Alloyer")
+        addSubtitle(AlloyanceSounds.ALLOYER_AMBIENCE, "Alloyer working")
+        addSubtitle(AlloyanceSounds.ALLOYER_IMPACT, "Alloyer alloys")
+        addSubtitle(AlloyanceSounds.ALLOYER_WINDUP, "Alloyer starts")
+
         add(AlloyanceBlocks.CRUSHER.get(), "Crusher")
         addSubtitle(AlloyanceSounds.CRUSHER_AMBIENCE, "Crusher working")
         addSubtitle(AlloyanceSounds.CRUSHER_IMPACT, "Crusher crushes")

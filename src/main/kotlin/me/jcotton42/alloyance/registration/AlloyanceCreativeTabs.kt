@@ -20,7 +20,7 @@ object AlloyanceCreativeTabs {
         CreativeModeTab.builder()
             .title(Component.translatable(location.toLanguageKey("itemGroup")))
             .icon { ItemStack(AlloyanceBlocks.DEEP_IRON_BLOCK.get()) }
-            .displayItems { params, output ->
+            .displayItems { _, output ->
                 Metal.entries.forEach { metal ->
                     output.accept(AlloyanceBlocks.STORAGE_BLOCKS.getValue(metal))
                 }
@@ -32,7 +32,7 @@ object AlloyanceCreativeTabs {
         CreativeModeTab.builder()
             .title(Component.translatable(location.toLanguageKey("itemGroup")))
             .icon { ItemStack(AlloyanceItems.DEEP_IRON_DUST.get()) }
-            .displayItems { params, output ->
+            .displayItems { _, output ->
                 output.accept(AlloyanceItems.COPPER_DUST)
                 output.accept(AlloyanceItems.IRON_DUST)
                 output.accept(AlloyanceItems.GOLD_DUST)
@@ -48,7 +48,7 @@ object AlloyanceCreativeTabs {
         CreativeModeTab.builder()
             .title(Component.translatable(location.toLanguageKey("itemGroup")))
             .icon { ItemStack(AlloyanceItems.DEEP_IRON_INGOT.get()) }
-            .displayItems {params, output ->
+            .displayItems { _, output ->
                 Metal.entries.forEach { metal ->
                     output.accept(AlloyanceItems.INGOTS.getValue(metal))
                 }
@@ -60,7 +60,7 @@ object AlloyanceCreativeTabs {
         CreativeModeTab.builder()
             .title(Component.translatable(location.toLanguageKey("itemGroup")))
             .icon { ItemStack(AlloyanceItems.DEEP_IRON_NUGGET.get()) }
-            .displayItems {params, output ->
+            .displayItems { _, output ->
                 Metal.entries.forEach { metal ->
                     output.accept(AlloyanceItems.NUGGETS.getValue(metal))
                 }
@@ -72,7 +72,7 @@ object AlloyanceCreativeTabs {
         CreativeModeTab.builder()
             .title(Component.translatable(location.toLanguageKey("itemGroup")))
             .icon { ItemStack(AlloyanceItems.RAW_DEEP_IRON.get()) }
-            .displayItems {params, output ->
+            .displayItems { _, output ->
                 Metal.entries.forEach { metal ->
                     val raw = AlloyanceItems.RAW_MATERIALS[metal]
                     if (raw != null) {
@@ -87,8 +87,9 @@ object AlloyanceCreativeTabs {
         CreativeModeTab.builder()
             .title(Component.translatable(location.toLanguageKey("itemGroup")))
             .icon { ItemStack(AlloyanceItems.CRUSHER.get()) }
-            .displayItems { params, output ->
+            .displayItems { _, output ->
                 output.accept(AlloyanceItems.CRUSHER)
+                output.accept(AlloyanceItems.ALLOYER)
                 output.accept(AlloyanceItems.INFUSED_IGNATIUS)
             }
             .build()
@@ -98,7 +99,7 @@ object AlloyanceCreativeTabs {
         CreativeModeTab.builder()
             .title(Component.translatable(location.toLanguageKey("itemGroup")))
             .icon { ItemStack(AlloyanceBlocks.DEEP_IRON_ORE.get()) }
-            .displayItems { params, output ->
+            .displayItems { _, output ->
                 Metal.entries.forEach { metal ->
                     val ore = AlloyanceBlocks.ORES[metal]
                     val deepslateOre = AlloyanceBlocks.DEEPSLATE_ORES[metal]

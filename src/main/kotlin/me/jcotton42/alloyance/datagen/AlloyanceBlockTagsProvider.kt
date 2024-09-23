@@ -27,9 +27,11 @@ class AlloyanceBlockTagsProvider(
         AlloyanceBlocks.DEEPSLATE_ORES.values.forEach { tag(BlockTags.MINEABLE_WITH_PICKAXE).add(it.get()) }
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
+            AlloyanceBlocks.ALLOYER.get(),
             AlloyanceBlocks.CRUSHER.get(),
         )
         tag(BlockTags.NEEDS_IRON_TOOL).add(
+            AlloyanceBlocks.ALLOYER.get(),
             AlloyanceBlocks.CRUSHER.get(),
         )
 

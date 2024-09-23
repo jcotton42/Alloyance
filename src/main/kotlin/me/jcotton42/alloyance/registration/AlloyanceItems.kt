@@ -22,6 +22,7 @@ object AlloyanceItems {
     val NUGGETS = mutableMapOf<Metal, DeferredItem<Item>>()
     val DUSTS = mutableMapOf<Metal, DeferredItem<Item>>()
 
+    val ALLOYER = block(AlloyanceBlocks.ALLOYER)
     val CRUSHER = block(AlloyanceBlocks.CRUSHER)
 
     val COPPER_DUST = ITEMS.registerSimpleItem("copper_dust")
