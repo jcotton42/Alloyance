@@ -1,4 +1,4 @@
-package me.jcotton42.alloyance.machine.crusher
+package me.jcotton42.alloyance.machine
 
 import net.minecraft.server.level.ServerPlayer
 import net.minecraft.world.entity.player.Player
@@ -7,7 +7,7 @@ import net.neoforged.neoforge.items.IItemHandler
 import net.neoforged.neoforge.items.SlotItemHandler
 import kotlin.math.min
 
-class CrusherResultSlot(
+class MachineResultSlot(
     private val player: Player,
     private val grantAchievements: (ServerPlayer) -> Unit,
     itemHandler: IItemHandler,

@@ -30,6 +30,11 @@ class CrusherScreen(
         titleLabelY = 9
     }
 
+    override fun render(guiGraphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTick: Float) {
+        super.render(guiGraphics, mouseX, mouseY, partialTick)
+        this.renderTooltip(guiGraphics, mouseX, mouseY)
+    }
+
     override fun renderBg(guiGraphics: GuiGraphics, partialTick: Float, mouseX: Int, mouseY: Int) {
         val crushingTime = menu.containerData.get(CrusherBlockEntity.CRUSHING_TIME_INDEX)
         val totalCrushingTime = menu.containerData.get(CrusherBlockEntity.TOTAL_CRUSHING_TIME_INDEX)

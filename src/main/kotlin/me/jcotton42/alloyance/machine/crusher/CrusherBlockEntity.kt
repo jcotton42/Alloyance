@@ -1,8 +1,7 @@
 package me.jcotton42.alloyance.machine.crusher
 
-import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap
-import me.jcotton42.alloyance.extensions.copyInto
-import me.jcotton42.alloyance.extensions.getAllStacks
+import me.jcotton42.alloyance.machine.BaseMachineBlock
+import me.jcotton42.alloyance.machine.BaseMachineBlockEntity
 import me.jcotton42.alloyance.machine.ExtractOnlyItemHandler
 import me.jcotton42.alloyance.registration.AlloyanceBlocks
 import me.jcotton42.alloyance.registration.AlloyanceDataMaps
@@ -11,35 +10,20 @@ import me.jcotton42.alloyance.registration.AlloyanceSounds
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Direction
 import net.minecraft.core.HolderLookup
-import net.minecraft.core.component.DataComponentMap
-import net.minecraft.core.component.DataComponents
 import net.minecraft.nbt.CompoundTag
 import net.minecraft.network.chat.Component
-import net.minecraft.resources.ResourceLocation
-import net.minecraft.server.level.ServerLevel
-import net.minecraft.server.level.ServerPlayer
-import net.minecraft.sounds.SoundEvents
 import net.minecraft.sounds.SoundSource
-import net.minecraft.util.Mth
-import net.minecraft.world.LockCode
 import net.minecraft.world.MenuProvider
-import net.minecraft.world.Nameable
-import net.minecraft.world.entity.ExperienceOrb
 import net.minecraft.world.entity.player.Inventory
 import net.minecraft.world.entity.player.Player
 import net.minecraft.world.inventory.AbstractContainerMenu
 import net.minecraft.world.inventory.ContainerData
 import net.minecraft.world.item.ItemStack
-import net.minecraft.world.item.Items
-import net.minecraft.world.item.component.ItemContainerContents
-import net.minecraft.world.item.crafting.RecipeHolder
 import net.minecraft.world.item.crafting.RecipeManager
 import net.minecraft.world.item.crafting.RecipeType
 import net.minecraft.world.item.crafting.SingleRecipeInput
 import net.minecraft.world.level.Level
-import net.minecraft.world.level.block.entity.BlockEntity
 import net.minecraft.world.level.block.state.BlockState
-import net.minecraft.world.phys.Vec3
 import net.neoforged.neoforge.items.IItemHandler
 import net.neoforged.neoforge.items.ItemStackHandler
 import net.neoforged.neoforge.items.wrapper.CombinedInvWrapper
@@ -49,11 +33,11 @@ import kotlin.math.max
 class CrusherBlockEntity(
     pos: BlockPos,
     state: BlockState
-): BlockEntity(
+): BaseMachineBlockEntity(
     AlloyanceBlocks.CRUSHER_BLOCK_ENTITY.get(),
     pos,
     state
-), MenuProvider, Nameable {
+), MenuProvider {
     companion object {
         // fuel burn times are scaled to this
         const val NOMINAL_CRUSHING_TIME = 140
@@ -71,24 +55,24 @@ class CrusherBlockEntity(
         const val DATA_SLOT_COUNT = 4
     }
 
-    private var name: Component? = null
-    private var lockKey: LockCode = LockCode.NO_LOCK
     private var crushingTime: Int = 0
     private var totalCrushingTime: Int = 0
     private var burnTimeRemaining: Int = 0
     private var totalBurnTime: Int = 0
     private var crushProgressPerTick: Int = 0
     private var ambienceTimer: Int = 0
-    private val recipesUsed: Object2IntOpenHashMap<ResourceLocation> = Object2IntOpenHashMap()
 
-    val inventory = object: ItemStackHandler(5) {
+    override val defaultName: Component = Component.translatable(AlloyanceBlocks.CRUSHER.id.toLanguageKey("block"))
+
+    override val inventory = object: ItemStackHandler(SLOT_COUNT) {
         override fun onContentsChanged(slot: Int) {
             // TODO maybe add a flag here to suppress updates when doing serverTick stuff, to reduce packets
             setChanged()
         }
 
         override fun isItemValid(slot: Int, stack: ItemStack): Boolean = when (slot) {
-            FUEL_SLOT -> stack.getBurnTime(RecipeType.SMELTING) > 0 || stack.`is`(Items.BUCKET)
+            // TODO see if excluding empty buckets is viable
+            FUEL_SLOT -> stack.getBurnTime(RecipeType.SMELTING) > 0
             else -> true
         }
     }
@@ -120,7 +104,7 @@ class CrusherBlockEntity(
 
     private val quickCheck = RecipeManager.createCheck(AlloyanceRecipes.CRUSHER_TYPE.get())
 
-    fun tickSerer(level: Level, pos: BlockPos, state: BlockState) {
+    override fun tickServer(level: Level, pos: BlockPos, state: BlockState) {
         val inputStack = inventory.getStackInSlot(INPUT_SLOT)
         val fuelStack = inventory.getStackInSlot(FUEL_SLOT)
 
@@ -145,18 +129,18 @@ class CrusherBlockEntity(
         }
 
         if (canCrush) {
-            if (ambienceTimer == 0) {
-                level.playSound(null, pos, AlloyanceSounds.CRUSHER_WINDUP.get(), SoundSource.BLOCKS)
-            }
-
-            ambienceTimer++
-
-            // after 6 seconds or every 16.5 seconds from the offset start
-            if (ambienceTimer == 120 || ambienceTimer % 330 == 120) {
-                level.playSound(null, pos, AlloyanceSounds.CRUSHER_AMBIENCE.get(), SoundSource.BLOCKS)
-            }
-
             if (isBurning()) {
+                if (ambienceTimer == 0) {
+                    level.playSound(null, pos, AlloyanceSounds.CRUSHER_WINDUP.get(), SoundSource.BLOCKS)
+                }
+
+                ambienceTimer++
+
+                // after 6 seconds or every 16.5 seconds from the offset start
+                if (ambienceTimer == 120 || ambienceTimer % 330 == 120) {
+                    level.playSound(null, pos, AlloyanceSounds.CRUSHER_AMBIENCE.get(), SoundSource.BLOCKS)
+                }
+
                 crushingTime += crushProgressPerTick
             }
             if (crushingTime >= totalCrushingTime) {
@@ -200,47 +184,9 @@ class CrusherBlockEntity(
         return true
     }
 
-    fun awardUsedRecipesAndPopExperience(player: ServerPlayer) {
-        val recipesToAward = getRecipesToAwardAndPopExperience(player.serverLevel(), player.position())
-        player.awardRecipes(recipesToAward)
-        val items = mutableListOf<ItemStack>()
-        for (i in 0..<inventory.slots) {
-            items.add(inventory.getStackInSlot(i))
-        }
-
-        recipesToAward.forEach { recipeHolder ->
-            player.triggerRecipeCrafted(recipeHolder, items)
-        }
-
-        recipesUsed.clear()
-    }
-
-    fun getRecipesToAwardAndPopExperience(level: ServerLevel, popLocation: Vec3): List<RecipeHolder<*>> {
-        val recipes = mutableListOf<RecipeHolder<*>>()
-
-        recipesUsed.forEach { (recipeId, timesUed) ->
-            level.recipeManager.byKey(recipeId).ifPresent { recipe ->
-                recipes.add(recipe)
-                createExperience(level, popLocation, (recipe.value as CrusherRecipe).experience * timesUed)
-            }
-        }
-
-        return recipes
-    }
-
-    private fun createExperience(level: ServerLevel, popLocation: Vec3, experience: Float) {
-        var amount = Mth.floor(experience)
-        val fraction = Mth.frac(experience)
-        if (fraction != 0f && Math.random() < fraction) {
-            amount++
-        }
-
-        ExperienceOrb.award(level, popLocation, amount)
-    }
-
     private fun updateLitState(wasBurning: Boolean, isBurning: Boolean, level: Level, pos: BlockPos, state: BlockState) {
         if (isBurning != wasBurning) {
-            val newState = state.setValue(CrusherBlock.LIT, isBurning)
+            val newState = state.setValue(BaseMachineBlock.LIT, isBurning)
             level.setBlockAndUpdate(pos, newState)
         }
     }
@@ -254,33 +200,16 @@ class CrusherBlockEntity(
 
     override fun saveAdditional(tag: CompoundTag, registries: HolderLookup.Provider) {
         super.saveAdditional(tag, registries)
-        if (name != null) {
-            tag.putString("custom_name", Component.Serializer.toJson(name, registries))
-        }
-
-        lockKey.addToTag(tag)
-
         tag.putInt("crushing_time", crushingTime)
         tag.putInt("total_crushing_time", totalCrushingTime)
         tag.putInt("burn_time_remaining", burnTimeRemaining)
         tag.putInt("total_burn_time", totalBurnTime)
         tag.putInt("crush_progress_per_tick", crushProgressPerTick)
         tag.putInt("ambience_timer", ambienceTimer)
-        tag.put("inventory", inventory.serializeNBT(registries))
-
-        val recipesUsedTag = CompoundTag()
-        recipesUsed.forEach { (recipeId, timesUsed) ->
-            recipesUsedTag.putInt(recipeId.toString(), timesUsed)
-        }
-        tag.put("recipes_used", recipesUsedTag)
     }
 
     override fun loadAdditional(tag: CompoundTag, registries: HolderLookup.Provider) {
         super.loadAdditional(tag, registries)
-        lockKey = LockCode.fromTag(tag)
-        if (tag.contains("custom_name", 8)) {
-            name = parseCustomNameSafe(tag.getString("custom_name"), registries)
-        }
 
         crushingTime = tag.getInt("crushing_time")
         totalCrushingTime = tag.getInt("total_crushing_time")
@@ -288,46 +217,6 @@ class CrusherBlockEntity(
         totalBurnTime = tag.getInt("total_burn_time")
         crushProgressPerTick = tag.getInt("crush_progress_per_tick")
         ambienceTimer = tag.getInt("ambience_timer")
-        inventory.deserializeNBT(registries, tag.getCompound("inventory"))
-
-        val recipesUsedTag = tag.getCompound("recipes_used")
-        recipesUsedTag.allKeys.forEach { recipeId ->
-            recipesUsed.put(ResourceLocation.parse(recipeId), recipesUsedTag.getInt(recipeId))
-        }
-    }
-
-    override fun collectImplicitComponents(components: DataComponentMap.Builder) {
-        super.collectImplicitComponents(components)
-        components.set(DataComponents.CUSTOM_NAME, name)
-        if (lockKey != LockCode.NO_LOCK) {
-            components.set(DataComponents.LOCK, lockKey)
-        }
-
-        components.set(DataComponents.CONTAINER, ItemContainerContents.fromItems(inventory.getAllStacks()))
-    }
-
-    override fun applyImplicitComponents(componentInput: DataComponentInput) {
-        super.applyImplicitComponents(componentInput)
-        name = componentInput.get(DataComponents.CUSTOM_NAME)
-        lockKey = componentInput.getOrDefault(DataComponents.LOCK, LockCode.NO_LOCK)
-        componentInput.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY).copyInto(inventory)
-    }
-
-    @Suppress("OVERRIDE_DEPRECATION")
-    override fun removeComponentsFromTag(tag: CompoundTag) {
-        tag.remove("inventory")
-        tag.remove("custom_name")
-        tag.remove("lock")
-    }
-
-    fun canUnlock(player: Player, code: LockCode, displayName: Component): Boolean {
-        if (player.isSpectator || code.unlocksWith(player.mainHandItem)) {
-            return true
-        }
-
-        player.displayClientMessage(Component.translatable("container.isLocked", displayName), true)
-        player.playNotifySound(SoundEvents.CHEST_LOCKED, SoundSource.BLOCKS, 1f, 1f)
-        return false
     }
 
     override fun createMenu(containerId: Int, playerInventory: Inventory, player: Player): AbstractContainerMenu? {
@@ -337,12 +226,4 @@ class CrusherBlockEntity(
             null
         }
     }
-
-    override fun getName(): Component {
-        return name ?: Component.translatable(AlloyanceBlocks.CRUSHER.id.toLanguageKey("block"))
-    }
-
-    override fun getDisplayName(): Component = getName()
-
-    override fun getCustomName(): Component? = name
 }

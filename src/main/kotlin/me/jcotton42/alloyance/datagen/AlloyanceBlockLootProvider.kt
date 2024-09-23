@@ -23,6 +23,7 @@ class AlloyanceBlockLootProvider(lookupProvider: HolderLookup.Provider): BlockLo
             oreDropsItem(ore.get(), AlloyanceItems.RAW_MATERIALS.getValue(metal).get())
         }
 
+        dropSelf(AlloyanceBlocks.ALLOYER.get())
         dropSelf(AlloyanceBlocks.CRUSHER.get())
     }
 

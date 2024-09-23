@@ -1,0 +1,13 @@
+{
+  "values": [
+    "#alloyance:alloyables/iron",
+    "#alloyance:alloyables/gold",
+    "#alloyance:alloyables/copper",
+    "#alloyance:alloyables/deep_iron",
+    "#alloyance:alloyables/prometheum",
+    "#alloyance:alloyables/zinc",
+    "#alloyance:alloyables/tin",
+    "#alloyance:alloyables/bronze",
+    "#alloyance:alloyables/brass"
+  ]
+}

@@ -5,6 +5,8 @@
 package me.jcotton42.alloyance.registration
 
 import me.jcotton42.alloyance.Alloyance
+import me.jcotton42.alloyance.machine.alloyer.AlloyerBlock
+import me.jcotton42.alloyance.machine.alloyer.AlloyerBlockEntity
 import me.jcotton42.alloyance.machine.crusher.CrusherBlock
 import me.jcotton42.alloyance.machine.crusher.CrusherBlockEntity
 import me.jcotton42.alloyance.registration.Metal.*
@@ -26,6 +28,21 @@ object AlloyanceBlocks {
     val BLOCKS = DeferredRegister.createBlocks(Alloyance.ID)
     val BLOCK_CODECS = DeferredRegister.create(Registries.BLOCK_TYPE, Alloyance.ID)
     val BLOCK_ENTITIES = DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, Alloyance.ID)
+
+    val ALLOYER = BLOCKS.registerBlock(
+        "alloyer",
+        ::AlloyerBlock,
+        BlockBehaviour.Properties.of()
+            .sound(SoundType.METAL)
+            .strength(6f, 8f)
+            .mapColor(MapColor.METAL)
+            .lightLevel(litBlockEmission(8))
+            .requiresCorrectToolForDrops()
+    )
+    val ALLOYER_CODEC = BLOCK_CODECS.register("alloyer") { -> BlockBehaviour.simpleCodec(::AlloyerBlock) }
+    val ALLOYER_BLOCK_ENTITY = BLOCK_ENTITIES.register("alloyer") { ->
+        BlockEntityType.Builder.of(::AlloyerBlockEntity, ALLOYER.get()).build(null)
+    }
 
     val CRUSHER = BLOCKS.registerBlock(
         "crusher",
@@ -60,6 +77,10 @@ object AlloyanceBlocks {
 
     val TIN_ORE = ore(TIN)
     val TIN_BLOCK = storageBlock(TIN)
+
+    val BRONZE_BLOCK = storageBlock(BRONZE)
+
+    val BRASS_BLOCK = storageBlock(BRASS)
 
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)

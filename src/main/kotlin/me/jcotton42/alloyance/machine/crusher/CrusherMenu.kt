@@ -1,5 +1,6 @@
 package me.jcotton42.alloyance.machine.crusher
 
+import me.jcotton42.alloyance.machine.MachineResultSlot
 import me.jcotton42.alloyance.machine.crusher.CrusherBlockEntity.Companion.FUEL_SLOT
 import me.jcotton42.alloyance.machine.crusher.CrusherBlockEntity.Companion.INPUT_SLOT
 import me.jcotton42.alloyance.machine.crusher.CrusherBlockEntity.Companion.OUTPUT_SLOT_1
@@ -35,12 +36,11 @@ class CrusherMenu(
     containerId
 ) {
     init {
-        // if this breaks, bump the y coords by 31
         addSlot(SlotItemHandler(crusherInventory, INPUT_SLOT, 61, 27))
         addSlot(SlotItemHandler(crusherInventory, FUEL_SLOT, 129, 79))
-        addSlot(CrusherResultSlot(playerInventory.player, grantAchievements, crusherInventory, OUTPUT_SLOT_1, 67, 67))
-        addSlot(CrusherResultSlot(playerInventory.player, grantAchievements, crusherInventory, OUTPUT_SLOT_2, 48, 67))
-        addSlot(CrusherResultSlot(playerInventory.player, grantAchievements, crusherInventory, OUTPUT_SLOT_3, 29, 67))
+        addSlot(MachineResultSlot(playerInventory.player, grantAchievements, crusherInventory, OUTPUT_SLOT_1, 67, 67))
+        addSlot(MachineResultSlot(playerInventory.player, grantAchievements, crusherInventory, OUTPUT_SLOT_2, 48, 67))
+        addSlot(MachineResultSlot(playerInventory.player, grantAchievements, crusherInventory, OUTPUT_SLOT_3, 29, 67))
 
         // player inventory
         for (y in 0..<3) {

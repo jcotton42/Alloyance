@@ -3,9 +3,12 @@ package me.jcotton42.alloyance.datagen
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.registration.*
 import net.minecraft.data.PackOutput
+import net.minecraft.sounds.SoundEvent
 import net.minecraft.world.item.CreativeModeTab
+import net.minecraft.world.item.Item
 import net.neoforged.neoforge.common.data.LanguageProvider
 import net.neoforged.neoforge.registries.DeferredHolder
+import net.neoforged.neoforge.registries.DeferredItem
 
 class AlloyanceEnglishLanguageProvider(
     output: PackOutput,
@@ -16,13 +19,13 @@ class AlloyanceEnglishLanguageProvider(
 ) {
     override fun addTranslations() {
         // TODO clean this up and categorize
-        add(AlloyanceCreativeTabs.BLOCKS, "Alloyance Blocks")
-        add(AlloyanceCreativeTabs.DUSTS, "Alloyance Dusts")
-        add(AlloyanceCreativeTabs.INGOTS, "Alloyance Ingots")
-        add(AlloyanceCreativeTabs.NUGGETS, "Alloyance Nuggets")
-        add(AlloyanceCreativeTabs.RAW_MATERIALS, "Alloyance Raw Materials")
-        add(AlloyanceCreativeTabs.SPECIAL, "Alloyance Special")
-        add(AlloyanceCreativeTabs.ORES, "Alloyance Ores")
+        addTab(AlloyanceCreativeTabs.BLOCKS, "Alloyance Blocks")
+        addTab(AlloyanceCreativeTabs.DUSTS, "Alloyance Dusts")
+        addTab(AlloyanceCreativeTabs.INGOTS, "Alloyance Ingots")
+        addTab(AlloyanceCreativeTabs.NUGGETS, "Alloyance Nuggets")
+        addTab(AlloyanceCreativeTabs.RAW_MATERIALS, "Alloyance Raw Materials")
+        addTab(AlloyanceCreativeTabs.SPECIAL, "Alloyance Special")
+        addTab(AlloyanceCreativeTabs.ORES, "Alloyance Ores")
 
         AlloyanceBlocks.STORAGE_BLOCKS.forEach { (metal, block) ->
             add(block.get(), "Block of ${getEnglishName(metal)}")
@@ -47,29 +50,40 @@ class AlloyanceEnglishLanguageProvider(
             add(dust.get(), "${getEnglishName(metal)} Dust")
         }
 
+        add(AlloyanceBlocks.ALLOYER.get(), "Alloyer")
+        addSubtitle(AlloyanceSounds.ALLOYER_AMBIENCE, "Alloyer working")
+        addSubtitle(AlloyanceSounds.ALLOYER_IMPACT, "Alloyer alloys")
+        addSubtitle(AlloyanceSounds.ALLOYER_WINDUP, "Alloyer starts")
+
         add(AlloyanceBlocks.CRUSHER.get(), "Crusher")
-        add(AlloyanceSounds.CRUSHER_AMBIENCE.id.toLanguageKey("sound"), "Crusher Working")
-        add(AlloyanceSounds.CRUSHER_IMPACT.id.toLanguageKey("sound"), "Crusher Crushes")
-        add(AlloyanceSounds.CRUSHER_WINDUP.id.toLanguageKey("sound"), "Crusher Starts")
+        addSubtitle(AlloyanceSounds.CRUSHER_AMBIENCE, "Crusher working")
+        addSubtitle(AlloyanceSounds.CRUSHER_IMPACT, "Crusher crushes")
+        addSubtitle(AlloyanceSounds.CRUSHER_WINDUP, "Crusher starts")
 
         add(AlloyanceItems.COPPER_DUST.get(), "Copper Dust")
         add(AlloyanceItems.GOLD_DUST.get(), "Gold Dust")
         add(AlloyanceItems.IRON_DUST.get(), "Iron Dust")
 
         add(AlloyanceItems.THERMITE_DUST.get(), "Thermite Dust")
-        add(
-            AlloyanceItems.THERMITE_DUST.id.toLanguageKey("tooltip"),
+        addTooltip(
+            AlloyanceItems.THERMITE_DUST,
             "§cActs as a fuel with the same strength of coal (works best in metallurgy machines 2x efficiency!) [check JEI for more information]"
         )
         add(AlloyanceItems.INFUSED_IGNATIUS.get(), "Infused Ignatius")
-        add(
-            AlloyanceItems.INFUSED_IGNATIUS.id.toLanguageKey("tooltip"),
+        addTooltip(
+            AlloyanceItems.INFUSED_IGNATIUS,
             "§cActs as an upgraded fuel with 3 times the strength of coal (works best in metallurgy machines: 3x efficiency!)"
         )
 
         add(AlloyanceItemTags.DUSTS_COPPER, "Copper Dusts")
         add(AlloyanceItemTags.DUSTS_GOLD, "Gold Dusts")
         add(AlloyanceItemTags.DUSTS_IRON, "Iron Dusts")
+
+        add(AlloyanceItemTags.ALLOYABLES_ROOT, "Alloyables")
+
+        add(AlloyanceItemTags.ALLOYABLES_COPPER, "Copper Alloyables")
+        add(AlloyanceItemTags.ALLOYABLES_GOLD, "Gold Alloyables")
+        add(AlloyanceItemTags.ALLOYABLES_IRON, "Iron Alloyables")
 
         AlloyanceItemTags.RAW_MATERIALS.forEach { (metal, tag) ->
             add(tag, "${getEnglishName(metal)} Raw Materials")
@@ -89,6 +103,9 @@ class AlloyanceEnglishLanguageProvider(
         AlloyanceItemTags.ORES.forEach { (metal, tag) ->
             add(tag, "${getEnglishName(metal)} Ores")
         }
+        AlloyanceItemTags.ALLOYABLES.forEach { (metal, tag) ->
+            add(tag, "${getEnglishName(metal)} Alloyables")
+        }
 
         AlloyanceBlockTags.STORAGE_BLOCKS.forEach { (metal, tag) ->
             add(tag, "${getEnglishName(metal)} Storage Blocks")
@@ -98,8 +115,16 @@ class AlloyanceEnglishLanguageProvider(
         }
     }
 
-    private fun add(tab: DeferredHolder<CreativeModeTab, CreativeModeTab>, name: String) {
+    private fun addTab(tab: DeferredHolder<CreativeModeTab, CreativeModeTab>, name: String) {
         add(tab.id.toLanguageKey("itemGroup"), name)
+    }
+
+    private fun addSubtitle(sound: DeferredHolder<SoundEvent, SoundEvent>, subtitle: String) {
+        add(sound.id.toLanguageKey("sound"), subtitle)
+    }
+
+    private fun addTooltip(item: DeferredItem<Item>, tooltip: String) {
+        add(item.id.toLanguageKey("tooltip"), tooltip)
     }
 
     private fun getEnglishName(metal: Metal): String = when (metal) {
@@ -107,5 +132,7 @@ class AlloyanceEnglishLanguageProvider(
         Metal.PROMETHEUM -> "Prometheum"
         Metal.ZINC -> "Zinc"
         Metal.TIN -> "Tin"
+        Metal.BRONZE -> "Bronze"
+        Metal.BRASS -> "Brass"
     }
 }

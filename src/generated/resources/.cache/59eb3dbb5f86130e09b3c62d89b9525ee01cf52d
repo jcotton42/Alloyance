@@ -1,4 +1,7 @@
-// 1.21.1	2024-09-02T16:08:30.4301092	Loot Tables
+// 1.21.1	2024-09-22T22:50:15.2476745	Loot Tables
+00986215a0540b1b41631c104659deaa568ccfea data/alloyance/loot_table/blocks/alloyer.json
+977bab28703316c4ca553b283bd8f0d3bfdd801b data/alloyance/loot_table/blocks/brass_block.json
+9c4df2b41e7f414e4625a84af977c04d43e3e630 data/alloyance/loot_table/blocks/bronze_block.json
 da661da2648d0a162afeb276de291c7a180ef08a data/alloyance/loot_table/blocks/crusher.json
 b4b0d18e33efcd418feb6a7c18a037cb792e2a3c data/alloyance/loot_table/blocks/deepslate_deep_iron_ore.json
 8e48254d80df669d78f06de749ca2a95cb6e32dd data/alloyance/loot_table/blocks/deepslate_prometheum_ore.json

@@ -12,13 +12,21 @@ object AlloyanceItemTags {
     val INGOTS: MutableMap<Metal, TagKey<Item>> = mutableMapOf()
     val NUGGETS: MutableMap<Metal, TagKey<Item>> = mutableMapOf()
     val DUSTS: MutableMap<Metal, TagKey<Item>> = mutableMapOf()
+    val ALLOYABLES: MutableMap<Metal, TagKey<Item>> = mutableMapOf()
 
     val STORAGE_BLOCKS: MutableMap<Metal, TagKey<Item>> = mutableMapOf()
     val ORES: MutableMap<Metal, TagKey<Item>> = mutableMapOf()
 
+    val ALLOYABLES_ROOT: TagKey<Item> = alloyance("alloyables")
+
     val DUSTS_IRON: TagKey<Item> = c("dusts/iron")
+    val ALLOYABLES_IRON: TagKey<Item> = alloyance("alloyables/iron")
+
     val DUSTS_GOLD: TagKey<Item> = c("dusts/gold")
+    val ALLOYABLES_GOLD: TagKey<Item> = alloyance("alloyables/gold")
+
     val DUSTS_COPPER: TagKey<Item> = c("dusts/copper")
+    val ALLOYABLES_COPPER: TagKey<Item> = alloyance("alloyables/copper")
 
     val RAW_MATERIALS_DEEP_IRON: TagKey<Item> = rawMaterials(DEEP_IRON)
     val INGOTS_DEEP_IRON: TagKey<Item> = ingots(DEEP_IRON)
@@ -26,6 +34,7 @@ object AlloyanceItemTags {
     val DUSTS_DEEP_IRON: TagKey<Item> = dusts(DEEP_IRON)
     val STORAGE_BLOCKS_DEEP_IRON: TagKey<Item> = storageBlocks(DEEP_IRON)
     val ORES_DEEP_IRON: TagKey<Item> = ores(DEEP_IRON)
+    val ALLOYABLES_DEEP_IRON: TagKey<Item> = alloyables(DEEP_IRON)
 
     val RAW_MATERIALS_PROMETHEUM: TagKey<Item> = rawMaterials(PROMETHEUM)
     val INGOTS_PROMETHEUM: TagKey<Item> = ingots(PROMETHEUM)
@@ -33,6 +42,7 @@ object AlloyanceItemTags {
     val DUSTS_PROMETHEUM: TagKey<Item> = dusts(PROMETHEUM)
     val STORAGE_BLOCKS_PROMETHEUM: TagKey<Item> = storageBlocks(PROMETHEUM)
     val ORES_PROMETHEUM: TagKey<Item> = ores(PROMETHEUM)
+    val ALLOYABLES_PROMETHEUM: TagKey<Item> = alloyables(PROMETHEUM)
 
     val RAW_MATERIALS_ZINC: TagKey<Item> = rawMaterials(ZINC)
     val INGOTS_ZINC: TagKey<Item> = ingots(ZINC)
@@ -40,6 +50,7 @@ object AlloyanceItemTags {
     val DUSTS_ZINC: TagKey<Item> = dusts(ZINC)
     val STORAGE_BLOCKS_ZINC: TagKey<Item> = storageBlocks(ZINC)
     val ORES_ZINC: TagKey<Item> = ores(ZINC)
+    val ALLOYABLES_ZINC: TagKey<Item> = alloyables(ZINC)
 
     val RAW_MATERIALS_TIN: TagKey<Item> = rawMaterials(TIN)
     val INGOTS_TIN: TagKey<Item> = ingots(TIN)
@@ -47,6 +58,19 @@ object AlloyanceItemTags {
     val DUSTS_TIN: TagKey<Item> = dusts(TIN)
     val STORAGE_BLOCKS_TIN: TagKey<Item> = storageBlocks(TIN)
     val ORES_TIN: TagKey<Item> = ores(TIN)
+    val ALLOYABLES_TIN: TagKey<Item> = alloyables(TIN)
+
+    val INGOTS_BRONZE: TagKey<Item> = ingots(BRONZE)
+    val NUGGETS_BRONZE: TagKey<Item> = nuggets(BRONZE)
+    val DUSTS_BRONZE: TagKey<Item> = dusts(BRONZE)
+    val STORAGE_BLOCKS_BRONZE: TagKey<Item> = storageBlocks(BRONZE)
+    val ALLOYABLES_BRONZE: TagKey<Item> = alloyables(BRONZE)
+
+    val INGOTS_BRASS: TagKey<Item> = ingots(BRASS)
+    val NUGGETS_BRASS: TagKey<Item> = nuggets(BRASS)
+    val DUSTS_BRASS: TagKey<Item> = dusts(BRASS)
+    val STORAGE_BLOCKS_BRASS: TagKey<Item> = storageBlocks(BRASS)
+    val ALLOYABLES_BRASS: TagKey<Item> = alloyables(BRASS)
 
     private fun rawMaterials(metal: Metal): TagKey<Item> {
         val tag = c("raw_materials/${metal.id}")
@@ -81,6 +105,12 @@ object AlloyanceItemTags {
     private fun ores(metal: Metal): TagKey<Item> {
         val tag = c("ores/${metal.id}")
         ORES[metal] = tag
+        return tag
+    }
+
+    private fun alloyables(metal: Metal): TagKey<Item> {
+        val tag = alloyance("alloyables/${metal.id}")
+        ALLOYABLES[metal] = tag
         return tag
     }
 

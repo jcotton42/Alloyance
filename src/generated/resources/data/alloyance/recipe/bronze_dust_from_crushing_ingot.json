@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "bronze_dust",
+  "ingredient": {
+    "tag": "c:ingots/bronze"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:bronze_dust"
+  }
+}

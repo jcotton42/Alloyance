@@ -1,4 +1,25 @@
 {
+  "machines/alloyer_ambience": {
+    "sounds": [
+      {
+        "name": "alloyance:machines/alloyer_ambience",
+        "stream": true
+      }
+    ],
+    "subtitle": "sound.alloyance.machines/alloyer_ambience"
+  },
+  "machines/alloyer_impact": {
+    "sounds": [
+      "alloyance:machines/alloyer_impact"
+    ],
+    "subtitle": "sound.alloyance.machines/alloyer_impact"
+  },
+  "machines/alloyer_windup": {
+    "sounds": [
+      "alloyance:machines/alloyer_windup"
+    ],
+    "subtitle": "sound.alloyance.machines/alloyer_windup"
+  },
   "machines/crusher_ambience": {
     "sounds": [
       {

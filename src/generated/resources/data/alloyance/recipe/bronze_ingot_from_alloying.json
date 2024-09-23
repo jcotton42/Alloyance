@@ -1,0 +1,17 @@
+{
+  "type": "alloyance:alloyer",
+  "experience": 1.75,
+  "group": "bronze_ingot",
+  "ingredient1": {
+    "count": 3,
+    "tag": "alloyance:alloyables/copper"
+  },
+  "ingredient2": {
+    "count": 1,
+    "tag": "alloyance:alloyables/tin"
+  },
+  "result": {
+    "count": 4,
+    "id": "alloyance:bronze_ingot"
+  }
+}
