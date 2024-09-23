@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_prometheum_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:prometheum_dust"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:prometheum_ingot_from_blasting_prometheum_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_prometheum_dust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:prometheum_ingot_from_blasting_prometheum_dust"
+    ]
+  }
+}

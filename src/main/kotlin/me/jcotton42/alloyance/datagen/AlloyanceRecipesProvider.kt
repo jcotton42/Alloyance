@@ -96,6 +96,8 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
         val smeltables = listOf(
             AlloyanceBlocks.ORES[metal],
             AlloyanceBlocks.DEEPSLATE_ORES[metal],
+            // TODO: end and nether ores
+            AlloyanceItems.DUSTS[metal],
             AlloyanceItems.RAW_MATERIALS[metal],
         )
         for (input in smeltables) {
