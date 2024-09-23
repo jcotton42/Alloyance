@@ -131,18 +131,18 @@ class AlloyerBlockEntity(
         }
 
         if (canAlloy) {
-            if (ambienceTimer == 0) {
-                level.playSound(null, pos, AlloyanceSounds.ALLOYER_WINDUP.get(), SoundSource.BLOCKS)
-            }
-
-            ambienceTimer++
-
-            // after 4.5 seconds or every 18.5 seconds from the offset start
-            if (ambienceTimer == 90 || ambienceTimer % 370 == 90) {
-                level.playSound(null, pos, AlloyanceSounds.ALLOYER_AMBIENCE.get(), SoundSource.BLOCKS)
-            }
-
             if (isBurning()) {
+                if (ambienceTimer == 0) {
+                    level.playSound(null, pos, AlloyanceSounds.ALLOYER_WINDUP.get(), SoundSource.BLOCKS)
+                }
+
+                ambienceTimer++
+
+                // after 4.5 seconds or every 18.5 seconds from the offset start
+                if (ambienceTimer == 90 || ambienceTimer % 370 == 90) {
+                    level.playSound(null, pos, AlloyanceSounds.ALLOYER_AMBIENCE.get(), SoundSource.BLOCKS)
+                }
+
                 alloyingTime += alloyProgressPerTick
             }
             if (alloyingTime >= totalAlloyingTime) {

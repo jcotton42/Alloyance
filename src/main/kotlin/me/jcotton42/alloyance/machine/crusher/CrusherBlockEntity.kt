@@ -65,13 +65,14 @@ class CrusherBlockEntity(
 
     override val defaultName: Component = Component.translatable(AlloyanceBlocks.CRUSHER.id.toLanguageKey("block"))
 
-    override val inventory = object: ItemStackHandler(5) {
+    override val inventory = object: ItemStackHandler(SLOT_COUNT) {
         override fun onContentsChanged(slot: Int) {
             // TODO maybe add a flag here to suppress updates when doing serverTick stuff, to reduce packets
             setChanged()
         }
 
         override fun isItemValid(slot: Int, stack: ItemStack): Boolean = when (slot) {
+            // TODO see if excluding empty buckets is viable
             FUEL_SLOT -> stack.getBurnTime(RecipeType.SMELTING) > 0 || stack.`is`(Items.BUCKET)
             else -> true
         }
@@ -129,18 +130,18 @@ class CrusherBlockEntity(
         }
 
         if (canCrush) {
-            if (ambienceTimer == 0) {
-                level.playSound(null, pos, AlloyanceSounds.CRUSHER_WINDUP.get(), SoundSource.BLOCKS)
-            }
-
-            ambienceTimer++
-
-            // after 6 seconds or every 16.5 seconds from the offset start
-            if (ambienceTimer == 120 || ambienceTimer % 330 == 120) {
-                level.playSound(null, pos, AlloyanceSounds.CRUSHER_AMBIENCE.get(), SoundSource.BLOCKS)
-            }
-
             if (isBurning()) {
+                if (ambienceTimer == 0) {
+                    level.playSound(null, pos, AlloyanceSounds.CRUSHER_WINDUP.get(), SoundSource.BLOCKS)
+                }
+
+                ambienceTimer++
+
+                // after 6 seconds or every 16.5 seconds from the offset start
+                if (ambienceTimer == 120 || ambienceTimer % 330 == 120) {
+                    level.playSound(null, pos, AlloyanceSounds.CRUSHER_AMBIENCE.get(), SoundSource.BLOCKS)
+                }
+
                 crushingTime += crushProgressPerTick
             }
             if (crushingTime >= totalCrushingTime) {
