@@ -72,7 +72,6 @@ class AlloyerBlockEntity(
         }
 
         override fun isItemValid(slot: Int, stack: ItemStack): Boolean = when (slot) {
-            // TODO see if excluding empty buckets is viable
             FUEL_SLOT -> stack.getBurnTime(RecipeType.SMELTING) > 0
             else -> true
         }
@@ -89,7 +88,7 @@ class AlloyerBlockEntity(
             TOTAL_ALLOYING_TIME_INDEX -> totalAlloyingTime
             BURN_TIME_REMAINING_INDEX -> burnTimeRemaining
             TOTAL_BURN_TIME_INDEX -> totalBurnTime
-            else -> TODO("Missing data index $index")
+            else -> throw NotImplementedError("Missing data index in alloyer: $index")
         }
 
         override fun set(index: Int, value: Int) = when (index) {
@@ -97,7 +96,7 @@ class AlloyerBlockEntity(
             TOTAL_ALLOYING_TIME_INDEX -> totalAlloyingTime = value
             BURN_TIME_REMAINING_INDEX -> burnTimeRemaining = value
             TOTAL_BURN_TIME_INDEX -> totalBurnTime = value
-            else -> TODO("Missing data index $index")
+            else -> throw NotImplementedError("Missing data index in alloyer: $index")
         }
 
         override fun getCount(): Int = DATA_SLOT_COUNT
