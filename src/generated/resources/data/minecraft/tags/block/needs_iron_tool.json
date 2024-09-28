@@ -2,6 +2,8 @@
   "values": [
     "alloyance:alloyer",
     "alloyance:crusher",
-    "alloyance:damascus_steel_block"
+    "alloyance:damascus_steel_block",
+    "alloyance:osmium_block",
+    "alloyance:deepslate_osmium_ore"
   ]
 }

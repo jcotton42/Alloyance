@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "osmium_ingot",
+  "key": {
+    "n": {
+      "item": "alloyance:osmium_nugget"
+    }
+  },
+  "pattern": [
+    "nnn",
+    "nnn",
+    "nnn"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:osmium_ingot"
+  }
+}

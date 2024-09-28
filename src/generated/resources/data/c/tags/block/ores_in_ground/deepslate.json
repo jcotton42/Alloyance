@@ -2,6 +2,7 @@
   "values": [
     "alloyance:deepslate_deep_iron_ore",
     "alloyance:deepslate_prometheum_ore",
-    "alloyance:deepslate_zinc_ore"
+    "alloyance:deepslate_zinc_ore",
+    "alloyance:deepslate_osmium_ore"
   ]
 }

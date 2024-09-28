@@ -84,6 +84,9 @@ object AlloyanceBlocks {
 
     val DAMASCUS_STEEL_BLOCK = storageBlock(DAMASCUS_STEEL)
 
+    val DEEPSLATE_OSMIUM_ORE = deepslateOre(OSMIUM)
+    val OSMIUM_BLOCK = storageBlock(OSMIUM)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

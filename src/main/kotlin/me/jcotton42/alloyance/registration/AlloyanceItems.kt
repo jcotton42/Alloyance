@@ -80,6 +80,13 @@ object AlloyanceItems {
     val DAMASCUS_STEEL_NUGGET = nugget(DAMASCUS_STEEL)
     val DAMASCUS_STEEL_DUST = dust(DAMASCUS_STEEL)
 
+    val DEEPSLATE_OSMIUM_ORE = block(AlloyanceBlocks.DEEPSLATE_OSMIUM_ORE)
+    val OSMIUM_BLOCK = block(AlloyanceBlocks.OSMIUM_BLOCK)
+    val RAW_OSMIUM = rawMaterial(OSMIUM)
+    val OSMIUM_INGOT = ingot(OSMIUM)
+    val OSMIUM_NUGGET = nugget(OSMIUM)
+    val OSMIUM_DUST = dust(OSMIUM)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

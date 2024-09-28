@@ -6,6 +6,7 @@
     "alloyance:tin_block",
     "alloyance:bronze_block",
     "alloyance:brass_block",
-    "alloyance:damascus_steel_block"
+    "alloyance:damascus_steel_block",
+    "alloyance:osmium_block"
   ]
 }

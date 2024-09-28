@@ -3,6 +3,7 @@
     "#c:raw_materials/deep_iron",
     "#c:raw_materials/prometheum",
     "#c:raw_materials/zinc",
-    "#c:raw_materials/tin"
+    "#c:raw_materials/tin",
+    "#c:raw_materials/osmium"
   ]
 }
