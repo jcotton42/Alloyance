@@ -5,6 +5,7 @@ import com.mojang.serialization.MapCodec
 import com.mojang.serialization.codecs.RecordCodecBuilder
 import me.jcotton42.alloyance.common.HasExperience
 import me.jcotton42.alloyance.machine.DualRecipeInput
+import me.jcotton42.alloyance.registration.AlloyanceBlocks
 import me.jcotton42.alloyance.registration.AlloyanceRecipes
 import net.minecraft.core.HolderLookup
 import net.minecraft.core.NonNullList
@@ -47,9 +48,7 @@ class AlloyerRecipe(
 
     override fun getResultItem(registries: HolderLookup.Provider): ItemStack = result
 
-    override fun getToastSymbol(): ItemStack {
-        TODO("Alloyer icon")
-    }
+    override fun getToastSymbol(): ItemStack = ItemStack(AlloyanceBlocks.ALLOYER.get())
 
     override fun getGroup(): String = group
 
