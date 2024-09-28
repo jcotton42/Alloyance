@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "damascus_steel_dust",
+  "ingredient": {
+    "tag": "c:ingots/damascus_steel"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:damascus_steel_dust"
+  }
+}

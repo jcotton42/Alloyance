@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-13T17:53:36.103337776	Item Models: alloyance
+// 1.21.1	2024-09-28T12:55:22.0075763	Item Models: alloyance
 5facb9ab27d0a31e5ed78d734fd05fbf45b69b48 assets/alloyance/models/item/brass_block.json
 bbd4f561ea91ce4f4f9b2459f328a9ca9d20b1b7 assets/alloyance/models/item/brass_dust.json
 7264319356f2c8c8be9605198e31056446786b2d assets/alloyance/models/item/brass_ingot.json
@@ -8,14 +8,18 @@ ed30e9cf1aec257ef52efba11dd6fbb0594c49b8 assets/alloyance/models/item/bronze_blo
 bb3c4148a5d88b5c00f7f8fe03f715f335784290 assets/alloyance/models/item/bronze_ingot.json
 48ece8da966a18759ccb2f718af642aea1dc2ba6 assets/alloyance/models/item/bronze_nugget.json
 db97babee9684bcb62f1cb81ad1e8d29983a2c2a assets/alloyance/models/item/copper_dust.json
+2b9075cdc4241674ce3f17dae57ec70ce133131f assets/alloyance/models/item/damascus_steel_block.json
+a19d1318ccf2e5fd42b41250c8992c934baba2e3 assets/alloyance/models/item/damascus_steel_dust.json
+e99503a1168e632a5a4307bb8ef2f502d6d8b568 assets/alloyance/models/item/damascus_steel_ingot.json
+5dd5cbe6fff131bd0c7f55614a082ad635a06140 assets/alloyance/models/item/damascus_steel_nugget.json
+adc14d65bc34952af3b365b04e2b1e5ed0a6f1a6 assets/alloyance/models/item/deepslate_deep_iron_ore.json
+b98e1368967fea5c54f6239efcf34e74bc5dc472 assets/alloyance/models/item/deepslate_prometheum_ore.json
+2f745cfff636b10445d4b30749957d12592fc576 assets/alloyance/models/item/deepslate_zinc_ore.json
 3d476e645ab5fad8076d0828910b3be75f6f55a2 assets/alloyance/models/item/deep_iron_block.json
 8875e5f698c3c4dc69d5837ddc0bd0e625a1f0d1 assets/alloyance/models/item/deep_iron_dust.json
 0c8eb700b603be3d13acdd9d35824249d902697c assets/alloyance/models/item/deep_iron_ingot.json
 85b3d2c3811b2ae300a9064b22b8a36ef4eeca5b assets/alloyance/models/item/deep_iron_nugget.json
 ca6393e0edef3963cd70337fd22e986be52eed5b assets/alloyance/models/item/deep_iron_ore.json
-adc14d65bc34952af3b365b04e2b1e5ed0a6f1a6 assets/alloyance/models/item/deepslate_deep_iron_ore.json
-b98e1368967fea5c54f6239efcf34e74bc5dc472 assets/alloyance/models/item/deepslate_prometheum_ore.json
-2f745cfff636b10445d4b30749957d12592fc576 assets/alloyance/models/item/deepslate_zinc_ore.json
 4b37cc397851493a5615d91cdacd5b4ff94772bc assets/alloyance/models/item/gold_dust.json
 8202166abefaa407b0b89c75f4203de4a76ea1f7 assets/alloyance/models/item/infused_ignatius.json
 e43851c156331df2c745fce6ff1c4f531cd7c3b0 assets/alloyance/models/item/iron_dust.json

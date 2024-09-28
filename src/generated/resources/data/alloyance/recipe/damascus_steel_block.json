@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "damascus_steel_block",
+  "key": {
+    "i": {
+      "item": "alloyance:damascus_steel_ingot"
+    }
+  },
+  "pattern": [
+    "iii",
+    "iii",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:damascus_steel_block"
+  }
+}

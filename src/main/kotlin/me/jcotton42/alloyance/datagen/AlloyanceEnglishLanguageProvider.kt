@@ -134,5 +134,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.TIN -> "Tin"
         Metal.BRONZE -> "Bronze"
         Metal.BRASS -> "Brass"
+        Metal.DAMASCUS_STEEL -> "Damascus Steel"
     }
 }

@@ -82,6 +82,8 @@ object AlloyanceBlocks {
 
     val BRASS_BLOCK = storageBlock(BRASS)
 
+    val DAMASCUS_STEEL_BLOCK = storageBlock(DAMASCUS_STEEL)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

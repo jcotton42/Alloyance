@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "damascus_steel_dust",
+  "ingredients": [
+    {
+      "tag": "c:dusts/iron"
+    },
+    {
+      "tag": "c:dusts/bronze"
+    },
+    {
+      "tag": "c:dusts/bronze"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "alloyance:damascus_steel_dust"
+  }
+}

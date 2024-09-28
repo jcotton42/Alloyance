@@ -3,9 +3,13 @@ package me.jcotton42.alloyance.datagen
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.registration.AlloyanceBlockTags
 import me.jcotton42.alloyance.registration.AlloyanceBlocks
+import me.jcotton42.alloyance.registration.Metal
+import me.jcotton42.alloyance.registration.Metal.*
 import net.minecraft.core.HolderLookup
 import net.minecraft.data.PackOutput
 import net.minecraft.tags.BlockTags
+import net.minecraft.tags.TagKey
+import net.minecraft.world.level.block.Block
 import net.neoforged.neoforge.common.Tags
 import net.neoforged.neoforge.common.data.BlockTagsProvider
 import net.neoforged.neoforge.common.data.ExistingFileHelper
@@ -22,10 +26,6 @@ class AlloyanceBlockTagsProvider(
     existingFileHelper
 ) {
     override fun addTags(provider: HolderLookup.Provider) {
-        AlloyanceBlocks.STORAGE_BLOCKS.values.forEach { tag(BlockTags.MINEABLE_WITH_PICKAXE).add(it.get()) }
-        AlloyanceBlocks.ORES.values.forEach { tag(BlockTags.MINEABLE_WITH_PICKAXE).add(it.get()) }
-        AlloyanceBlocks.DEEPSLATE_ORES.values.forEach { tag(BlockTags.MINEABLE_WITH_PICKAXE).add(it.get()) }
-
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
             AlloyanceBlocks.ALLOYER.get(),
             AlloyanceBlocks.CRUSHER.get(),
@@ -35,28 +35,19 @@ class AlloyanceBlockTagsProvider(
             AlloyanceBlocks.CRUSHER.get(),
         )
 
-        // TODO make a tier dictionary or something
-        tag(BlockTags.NEEDS_STONE_TOOL).add(
-            AlloyanceBlocks.DEEP_IRON_BLOCK.get(),
-            AlloyanceBlocks.DEEP_IRON_ORE.get(),
-            AlloyanceBlocks.DEEPSLATE_DEEP_IRON_ORE.get(),
-
-            AlloyanceBlocks.PROMETHEUM_BLOCK.get(),
-            AlloyanceBlocks.PROMETHEUM_ORE.get(),
-            AlloyanceBlocks.DEEPSLATE_PROMETHEUM_ORE.get(),
-
-            AlloyanceBlocks.ZINC_BLOCK.get(),
-            AlloyanceBlocks.ZINC_ORE.get(),
-            AlloyanceBlocks.DEEPSLATE_ZINC_ORE.get(),
-
-            AlloyanceBlocks.TIN_BLOCK.get(),
-            AlloyanceBlocks.TIN_ORE.get(),
-
-            AlloyanceBlocks.BRONZE_BLOCK.get(),
-            AlloyanceBlocks.BRASS_BLOCK.get(),
-        )
-
-        // TODO BlockTags.BEACON_BASE_BLOCKS, see isBeaconBase in BlockMetal.java in Reforged for criteria
+        AlloyanceBlocks.STORAGE_BLOCKS.forEach { (metal, block) ->
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get())
+            tag(BlockTags.BEACON_BASE_BLOCKS).add(block.get())
+            tag(getToolTag(metal)).add(block.get())
+        }
+        AlloyanceBlocks.ORES.forEach { (metal, block) ->
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get())
+            tag(getToolTag(metal)).add(block.get())
+        }
+        AlloyanceBlocks.DEEPSLATE_ORES.forEach { (metal, block) ->
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get())
+            tag(getToolTag(metal)).add(block.get())
+        }
 
         AlloyanceBlockTags.STORAGE_BLOCKS.forEach { (metal, blockTag) ->
             tag(Tags.Blocks.STORAGE_BLOCKS).addTag(blockTag)
@@ -79,4 +70,9 @@ class AlloyanceBlockTagsProvider(
             }
         }
     }
+}
+
+private fun getToolTag(metal: Metal): TagKey<Block> = when (metal) {
+    DEEP_IRON, PROMETHEUM, ZINC, TIN, BRONZE, BRASS -> BlockTags.NEEDS_STONE_TOOL
+    DAMASCUS_STEEL -> BlockTags.NEEDS_IRON_TOOL
 }

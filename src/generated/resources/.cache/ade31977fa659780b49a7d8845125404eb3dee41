@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-22T22:50:15.2506932	Tags for minecraft:block mod id alloyance
+// 1.21.1	2024-09-28T14:20:48.7896194	Tags for minecraft:block mod id alloyance
 b35d06a716821c7e4940efb4c7189def5f300bfa data/c/tags/block/ores.json
 4856011b0694a59916cb7a20cf25b9d6c9f76c01 data/c/tags/block/ores/deep_iron.json
 538157290f51d545311567f0cefb785a4b3e1842 data/c/tags/block/ores/prometheum.json
@@ -7,13 +7,15 @@ b35d06a716821c7e4940efb4c7189def5f300bfa data/c/tags/block/ores.json
 1b454fd59e57ca863c6dbb9afd1acec1c67529dc data/c/tags/block/ores_in_ground/deepslate.json
 3cddea798bf7810ddf96d4a45e080ebd479867db data/c/tags/block/ores_in_ground/stone.json
 7dc9291ab221a389eae1d27b9a809276e90bcb3d data/c/tags/block/ore_rates/singular.json
-92174fd2161ec51f7f7e00e6e2769049d15e7357 data/c/tags/block/storage_blocks.json
+153f748b7cf2346c70f19e2899a0a8aaed91f31c data/c/tags/block/storage_blocks.json
 5a3b92ef94bbbc5ca6fc0cc6ecbd1cb5b125a2ff data/c/tags/block/storage_blocks/brass.json
 8e63366bfe3429b1c1976829d63e839feee4f5ec data/c/tags/block/storage_blocks/bronze.json
+2afde956ab247d8d9bb0513dd07ff5c1d4f604f5 data/c/tags/block/storage_blocks/damascus_steel.json
 98d7f09e1c826e979ece333ed160158978e1d55e data/c/tags/block/storage_blocks/deep_iron.json
 f6747fa94156223e85cc85c8446fd91731f53886 data/c/tags/block/storage_blocks/prometheum.json
 f827a7d6fcf6dfe3eee3acf5972208bb27dd7814 data/c/tags/block/storage_blocks/tin.json
 44dcabb93af53db6238114d0bb7887f3a7b757a7 data/c/tags/block/storage_blocks/zinc.json
-c2d5fc019eed9c496886b839a90b0f028459d866 data/minecraft/tags/block/mineable/pickaxe.json
-0e998635b65a3a3058b91bdd3722b02a62e3d980 data/minecraft/tags/block/needs_iron_tool.json
-560d7ff4fe58ae59fd3549ed7f56e72a75ea3662 data/minecraft/tags/block/needs_stone_tool.json
+1f3939a3af61389c0492b1f577a3a0eabd2e7e8b data/minecraft/tags/block/beacon_base_blocks.json
+e03cef8a50a803a9eb407b4b721121665495aff3 data/minecraft/tags/block/mineable/pickaxe.json
+bc78752319e0d7ae85f7e70b246eb21f40346129 data/minecraft/tags/block/needs_iron_tool.json
+e293b0f44585305db5c648efaa3e9f56918c2c60 data/minecraft/tags/block/needs_stone_tool.json

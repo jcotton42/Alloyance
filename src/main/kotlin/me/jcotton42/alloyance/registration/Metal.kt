@@ -7,4 +7,5 @@ enum class Metal(val id: String, val hardness: Float, val blockBlastResistance: 
     TIN("tin", 2.5f, 6.0f),
     BRONZE("bronze", 10.0f, 15.0f),
     BRASS("brass", 10.0f, 10.0f),
+    DAMASCUS_STEEL("damascus_steel", 10.0f, 20.0f),
 }

@@ -75,6 +75,11 @@ object AlloyanceItems {
     val BRASS_NUGGET = nugget(BRASS)
     val BRASS_DUST = dust(BRASS)
 
+    val DAMASCUS_STEEL_BLOCK = block(AlloyanceBlocks.DAMASCUS_STEEL_BLOCK)
+    val DAMASCUS_STEEL_INGOT = ingot(DAMASCUS_STEEL)
+    val DAMASCUS_STEEL_NUGGET = nugget(DAMASCUS_STEEL)
+    val DAMASCUS_STEEL_DUST = dust(DAMASCUS_STEEL)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

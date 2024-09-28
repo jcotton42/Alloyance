@@ -8,6 +8,7 @@
     "#alloyance:alloyables/zinc",
     "#alloyance:alloyables/tin",
     "#alloyance:alloyables/bronze",
-    "#alloyance:alloyables/brass"
+    "#alloyance:alloyables/brass",
+    "#alloyance:alloyables/damascus_steel"
   ]
 }

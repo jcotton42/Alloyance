@@ -5,6 +5,7 @@
     "#c:ingots/zinc",
     "#c:ingots/tin",
     "#c:ingots/bronze",
-    "#c:ingots/brass"
+    "#c:ingots/brass",
+    "#c:ingots/damascus_steel"
   ]
 }
