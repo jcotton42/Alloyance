@@ -45,8 +45,8 @@ abstract class BaseMachineBlockEntity(
 
     override fun saveAdditional(tag: CompoundTag, registries: HolderLookup.Provider) {
         super.saveAdditional(tag, registries)
-        if (customName != null) {
-            tag.putString("custom_name", Component.Serializer.toJson(customName, registries))
+        customName?.let {
+            tag.putString("custom_name", Component.Serializer.toJson(it, registries))
         }
 
         lockKey.addToTag(tag)
