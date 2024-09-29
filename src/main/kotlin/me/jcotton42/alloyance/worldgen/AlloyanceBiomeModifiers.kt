@@ -9,6 +9,7 @@ import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_MANGANESE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_OSMIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_OURECLASE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_PROMETHEUM_ORE
+import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_RUBRACIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_SILVER_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_TIN_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_UNDERWATER_DEEP_IRON_ORE
@@ -23,6 +24,7 @@ import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.OSMIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.OURECLASE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PROMETHEUM_ORE_LOWER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PROMETHEUM_ORE_UPPER
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.RUBRACIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.SILVER_ORE_LOWER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.SILVER_ORE_UPPER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.TIN_ORE
@@ -54,6 +56,7 @@ object AlloyanceBiomeModifiers {
     val ADD_ASTRAL_SILVER_ORE_LOWER = registerKey("add_astral_silver_ore_lower")
     val ADD_IGNATIUS_ORE = registerKey("add_ignatius_ore")
     val ADD_OURECLASE_ORE = registerKey("add_oureclase_ore")
+    val ADD_RUBRACIUM_ORE = registerKey("add_rubracium_ore")
 
     private val ores = listOf(
         Triple(ADD_DEEP_IRON_ORE, HAS_DEEP_IRON_ORE, DEEP_IRON_ORE),
@@ -71,6 +74,7 @@ object AlloyanceBiomeModifiers {
         Triple(ADD_ASTRAL_SILVER_ORE_LOWER, HAS_ASTRAL_SILVER_ORE, ASTRAL_SILVER_ORE_LOWER),
         Triple(ADD_IGNATIUS_ORE, HAS_IGNATIUS_ORE, IGNATIUS_ORE),
         Triple(ADD_OURECLASE_ORE, HAS_OURECLASE_ORE, OURECLASE_ORE),
+        Triple(ADD_RUBRACIUM_ORE, HAS_RUBRACIUM_ORE, RUBRACIUM_ORE),
     )
 
     fun bootstrap(context: BootstrapContext<BiomeModifier>) {

@@ -29,6 +29,7 @@ object AlloyanceConfiguredFeatures {
     val ASTRAL_SILVER_ORE = registerKey("astral_silver_ore")
     val IGNATIUS_ORE = registerKey("ignatius_ore")
     val OURECLASE_ORE = registerKey("oureclase_ore")
+    val RUBRACIUM_ORE = registerKey("rubracium_ore")
 
     fun bootstrap(context: BootstrapContext<ConfiguredFeature<*, *>>) {
         val deepIronOres = listOf(inStone(AlloyanceBlocks.DEEP_IRON_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_DEEP_IRON_ORE))
@@ -42,6 +43,7 @@ object AlloyanceConfiguredFeatures {
         val astralSilverOres = listOf(inStone(AlloyanceBlocks.ASTRAL_SILVER_ORE))
         val ignatiusOres = listOf(inNetherrack(AlloyanceBlocks.NETHER_IGNATIUS_ORE))
         val oureclaseOres = listOf(inStone(AlloyanceBlocks.OURECLASE_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_OURECLASE_ORE))
+        val rubraciumOres = listOf(inStone(AlloyanceBlocks.RUBRACIUM_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_RUBRACIUM_ORE))
 
         register(context, DEEP_IRON_ORE, Feature.ORE, OreConfiguration(deepIronOres, 5))
         register(context, PROMETHEUM_ORE, Feature.ORE, OreConfiguration(prometheumOres, 6))
@@ -56,6 +58,7 @@ object AlloyanceConfiguredFeatures {
         register(context, ASTRAL_SILVER_ORE, Feature.ORE, OreConfiguration(astralSilverOres, 6))
         register(context, IGNATIUS_ORE, Feature.ORE, OreConfiguration(ignatiusOres, 8))
         register(context, OURECLASE_ORE, Feature.ORE, OreConfiguration(oureclaseOres, 6))
+        register(context, RUBRACIUM_ORE, Feature.ORE, OreConfiguration(rubraciumOres, 6))
     }
 
     private fun inStone(replacement: Supplier<Block>): OreConfiguration.TargetBlockState {
