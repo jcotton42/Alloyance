@@ -7,61 +7,42 @@ import net.minecraft.data.worldgen.BootstrapContext
 import net.minecraft.resources.ResourceKey
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.tags.BlockTags
+import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature
 import net.minecraft.world.level.levelgen.feature.Feature
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest
+import java.util.function.Supplier
 
 object AlloyanceConfiguredFeatures {
     val DEEP_IRON_ORE = registerKey("deep_iron_ore")
     val PROMETHEUM_ORE = registerKey("prometheum_ore")
     val TIN_ORE = registerKey("tin_ore")
     val ZINC_ORE = registerKey("zinc_ore")
+    val OSMIUM_ORE = registerKey("osmium_ore")
 
     fun bootstrap(context: BootstrapContext<ConfiguredFeature<*, *>>) {
-        val stoneReplaceables = TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES)
-        val deepslateReplaceables = TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES)
-        val deepIronOres = listOf(
-            OreConfiguration.target(
-                stoneReplaceables,
-                AlloyanceBlocks.DEEP_IRON_ORE.get().defaultBlockState()
-            ),
-            OreConfiguration.target(
-                deepslateReplaceables,
-                AlloyanceBlocks.DEEPSLATE_DEEP_IRON_ORE.get().defaultBlockState()
-            )
-        )
-        val prometheumOres = listOf(
-            OreConfiguration.target(
-                stoneReplaceables,
-                AlloyanceBlocks.PROMETHEUM_ORE.get().defaultBlockState()
-            ),
-            OreConfiguration.target(
-                deepslateReplaceables,
-                AlloyanceBlocks.DEEPSLATE_PROMETHEUM_ORE.get().defaultBlockState()
-            )
-        )
-        val tinOres = listOf(
-            OreConfiguration.target(
-                stoneReplaceables,
-                AlloyanceBlocks.TIN_ORE.get().defaultBlockState()
-            )
-        )
-        val zincOres = listOf(
-            OreConfiguration.target(
-                stoneReplaceables,
-                AlloyanceBlocks.ZINC_ORE.get().defaultBlockState()
-            ),
-            OreConfiguration.target(
-                deepslateReplaceables,
-                AlloyanceBlocks.DEEPSLATE_ZINC_ORE.get().defaultBlockState()
-            )
-        )
+        val deepIronOres = listOf(inStone(AlloyanceBlocks.DEEP_IRON_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_DEEP_IRON_ORE))
+        val prometheumOres = listOf(inStone(AlloyanceBlocks.PROMETHEUM_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_PROMETHEUM_ORE))
+        val tinOres = listOf(inStone(AlloyanceBlocks.TIN_ORE))
+        val zincOres = listOf(inStone(AlloyanceBlocks.ZINC_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_ZINC_ORE))
+        val osmiumOres = listOf(inDeepslate(AlloyanceBlocks.DEEPSLATE_OSMIUM_ORE))
+
         register(context, DEEP_IRON_ORE, Feature.ORE, OreConfiguration(deepIronOres, 5))
         register(context, PROMETHEUM_ORE, Feature.ORE, OreConfiguration(prometheumOres, 6))
         register(context, TIN_ORE, Feature.ORE, OreConfiguration(tinOres, 8))
         register(context, ZINC_ORE, Feature.ORE, OreConfiguration(zincOres, 8))
+
+        register(context, OSMIUM_ORE, Feature.ORE, OreConfiguration(osmiumOres, 6))
+    }
+
+    private fun inStone(replacement: Supplier<Block>): OreConfiguration.TargetBlockState {
+        return OreConfiguration.target(TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES), replacement.get().defaultBlockState())
+    }
+
+    private fun inDeepslate(replacement: Supplier<Block>): OreConfiguration.TargetBlockState {
+        return OreConfiguration.target(TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES), replacement.get().defaultBlockState())
     }
 
     private fun registerKey(path: String): ResourceKey<ConfiguredFeature<*, *>> =

@@ -2,11 +2,13 @@ package me.jcotton42.alloyance.worldgen
 
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_DEEP_IRON_ORE
+import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_OSMIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_PROMETHEUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_TIN_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_UNDERWATER_DEEP_IRON_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_ZINC_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.DEEP_IRON_ORE
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.OSMIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PROMETHEUM_ORE_LOWER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PROMETHEUM_ORE_UPPER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.TIN_ORE
@@ -29,6 +31,7 @@ object AlloyanceBiomeModifiers {
     val ADD_PROMETHEUM_ORE_LOWER = registerKey("add_prometheum_ore_lower")
     val ADD_TIN_ORE = registerKey("add_tin_ore")
     val ADD_ZINC_ORE = registerKey("add_zinc_ore")
+    val ADD_OSMIUM_ORE = registerKey("add_osmium_ore")
 
     private val ores = listOf(
         Triple(ADD_DEEP_IRON_ORE, HAS_DEEP_IRON_ORE, DEEP_IRON_ORE),
@@ -37,6 +40,7 @@ object AlloyanceBiomeModifiers {
         Triple(ADD_PROMETHEUM_ORE_LOWER, HAS_PROMETHEUM_ORE, PROMETHEUM_ORE_LOWER),
         Triple(ADD_TIN_ORE, HAS_TIN_ORE, TIN_ORE),
         Triple(ADD_ZINC_ORE, HAS_ZINC_ORE, ZINC_ORE),
+        Triple(ADD_OSMIUM_ORE, HAS_OSMIUM_ORE, OSMIUM_ORE),
     )
 
     fun bootstrap(context: BootstrapContext<BiomeModifier>) {

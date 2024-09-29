@@ -30,5 +30,8 @@ class AlloyanceBiomeTagsProvider(
             .addTag(BiomeTags.IS_OVERWORLD)
         tag(AlloyanceBiomeTags.HAS_ZINC_ORE)
             .addTag(BiomeTags.IS_OVERWORLD)
+
+        tag(AlloyanceBiomeTags.HAS_OSMIUM_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
     }
 }

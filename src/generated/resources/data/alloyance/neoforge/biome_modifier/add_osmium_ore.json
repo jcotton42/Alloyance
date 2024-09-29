@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_osmium_ore",
+  "features": "alloyance:osmium_ore",
+  "step": "underground_ores"
+}

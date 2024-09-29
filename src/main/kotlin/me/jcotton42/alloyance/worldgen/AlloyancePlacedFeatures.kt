@@ -10,6 +10,7 @@ import net.minecraft.util.valueproviders.UniformInt
 import net.minecraft.world.level.levelgen.Heightmap
 import net.minecraft.world.level.levelgen.VerticalAnchor
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature
+import net.minecraft.world.level.levelgen.heightproviders.TrapezoidHeight
 import net.minecraft.world.level.levelgen.placement.BiomeFilter
 import net.minecraft.world.level.levelgen.placement.CountPlacement
 import net.minecraft.world.level.levelgen.placement.HeightRangePlacement
@@ -32,6 +33,7 @@ object AlloyancePlacedFeatures {
     val PROMETHEUM_ORE_LOWER = registerKey("prometheum_ore_lower")
     val TIN_ORE = registerKey("tin_ore")
     val ZINC_ORE = registerKey("zinc_ore")
+    val OSMIUM_ORE = registerKey("osmium_ore")
 
     fun bootstrap(context: BootstrapContext<PlacedFeature>) {
         val configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE)
@@ -40,7 +42,7 @@ object AlloyancePlacedFeatures {
             context,
             DEEP_IRON_ORE,
             configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.DEEP_IRON_ORE),
-            commonOrePlacement(
+            countOrePlacement(
                 COMMON,
                 HeightRangePlacement.triangle(VerticalAnchor.absolute(-48), VerticalAnchor.absolute(0))
             )
@@ -59,7 +61,7 @@ object AlloyancePlacedFeatures {
             context,
             PROMETHEUM_ORE_UPPER,
             configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.PROMETHEUM_ORE),
-            commonOrePlacement(
+            countOrePlacement(
                 COMMON,
                 HeightRangePlacement.triangle(VerticalAnchor.absolute(-16), VerticalAnchor.absolute(64))
             )
@@ -68,7 +70,7 @@ object AlloyancePlacedFeatures {
             context,
             PROMETHEUM_ORE_LOWER,
             configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.PROMETHEUM_ORE),
-            commonOrePlacement(
+            countOrePlacement(
                 COMMON,
                 HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-16))
             )
@@ -77,7 +79,7 @@ object AlloyancePlacedFeatures {
             context,
             TIN_ORE,
             configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.TIN_ORE),
-            commonOrePlacement(
+            countOrePlacement(
                 COMMON,
                 HeightRangePlacement.triangle(VerticalAnchor.absolute(-10), VerticalAnchor.absolute(45))
             )
@@ -86,9 +88,19 @@ object AlloyancePlacedFeatures {
             context,
             ZINC_ORE,
             configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.ZINC_ORE),
-            commonOrePlacement(
+            countOrePlacement(
                 COMMON,
                 HeightRangePlacement.uniform(VerticalAnchor.absolute(10), VerticalAnchor.absolute(30))
+            )
+        )
+
+        register(
+            context,
+            OSMIUM_ORE,
+            configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.OSMIUM_ORE),
+            countOrePlacement(
+                UNCOMMON,
+                HeightRangePlacement.of(TrapezoidHeight.of(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-32), 12))
             )
         )
     }
@@ -112,11 +124,11 @@ object AlloyancePlacedFeatures {
         return listOf(countPlacement, InSquarePlacement.spread(), *placementModifiers, BiomeFilter.biome())
     }
 
-    private fun commonOrePlacement(count: Int, vararg placementModifiers: PlacementModifier): List<PlacementModifier> {
+    private fun countOrePlacement(count: Int, vararg placementModifiers: PlacementModifier): List<PlacementModifier> {
         return orePlacement(CountPlacement.of(count), *placementModifiers)
     }
 
-    private fun rareOrePlacement(chance: Int, vararg placementModifiers: PlacementModifier): List<PlacementModifier> {
+    private fun chanceOrePlacement(chance: Int, vararg placementModifiers: PlacementModifier): List<PlacementModifier> {
         return orePlacement(RarityFilter.onAverageOnceEvery(chance), *placementModifiers)
     }
 }
