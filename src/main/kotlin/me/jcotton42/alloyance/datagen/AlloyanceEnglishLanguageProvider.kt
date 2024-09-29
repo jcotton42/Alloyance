@@ -144,5 +144,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.STEEL -> "Steel"
         Metal.HEPATIZON -> "Hepatizon"
         Metal.BLACK_STEEL -> "Black Steel"
+        Metal.ELECTRUM -> "Electrum"
     }
 }

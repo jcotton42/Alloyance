@@ -131,6 +131,11 @@ object AlloyanceItems {
     val BLACK_STEEL_NUGGET = nugget(BLACK_STEEL)
     val BLACK_STEEL_DUST = dust(BLACK_STEEL)
 
+    val ELECTRUM_BLOCK = block(AlloyanceBlocks.ELECTRUM_BLOCK)
+    val ELECTRUM_INGOT = ingot(ELECTRUM)
+    val ELECTRUM_NUGGET = nugget(ELECTRUM)
+    val ELECTRUM_DUST = dust(ELECTRUM)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

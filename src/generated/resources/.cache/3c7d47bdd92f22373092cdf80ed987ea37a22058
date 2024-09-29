@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-28T21:20:05.6566106	Block States: alloyance
+// 1.21.1	2024-09-28T21:25:27.4188303	Block States: alloyance
 c26456305e269f780b04ddc67ae97c824afc4b9b assets/alloyance/blockstates/angmallen_block.json
 fd0f506cbecdef19f9a263a2e9785ba60f0f293d assets/alloyance/blockstates/black_steel_block.json
 c43dc809c374767bffdda77a2b99324659be7594 assets/alloyance/blockstates/brass_block.json
@@ -13,6 +13,7 @@ e91ef0005c9fbe7c8eed306ba1976296b96adf24 assets/alloyance/blockstates/deepslate_
 601f0200a7851a741b3e7d37a4a1a0e216c16669 assets/alloyance/blockstates/deepslate_zinc_ore.json
 ade2de4db6b68fb07bcc8be4081d8258069d7a42 assets/alloyance/blockstates/deep_iron_block.json
 d095310118c0a31d850eb6d7420e9c23e665692d assets/alloyance/blockstates/deep_iron_ore.json
+3c23cba9e20a9854bfa1f8c1648b5f22395640ea assets/alloyance/blockstates/electrum_block.json
 563a51be0fa98b12c103eeb278fec0c5cff3e4ea assets/alloyance/blockstates/hepatizon_block.json
 da4e99cc6ba922301b5e53a8657188dcc8046eae assets/alloyance/blockstates/infuscolium_block.json
 5bd0d2e8b8785ba31fe61bfdd80503195cd61f27 assets/alloyance/blockstates/infuscolium_ore.json
@@ -42,6 +43,7 @@ bacd98c321cdea3855787783ed7b464586ef06c1 assets/alloyance/models/block/deepslate
 2d0b41c482c4e60dcfd4942318e43af580bc235a assets/alloyance/models/block/deepslate_zinc_ore.json
 c2261a5e10786e9dc936d9d790bfd166c33cd4d7 assets/alloyance/models/block/deep_iron_block.json
 f57dece34d0ddc41e095adb7870dc05cb49bfdd4 assets/alloyance/models/block/deep_iron_ore.json
+b1de0185f4e170c1f432ac7389a44d266ac318aa assets/alloyance/models/block/electrum_block.json
 869c1e0ded89e16329be85f3f4234f6a1cb72310 assets/alloyance/models/block/hepatizon_block.json
 b5645e09d292d354ca70806df8ef2e29e000f2ff assets/alloyance/models/block/infuscolium_block.json
 eda78d50c26622b44e69ae2fd494d66078fba640 assets/alloyance/models/block/infuscolium_ore.json

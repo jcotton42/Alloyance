@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "electrum_dust",
+  "ingredient": {
+    "tag": "c:ingots/electrum"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:electrum_dust"
+  }
+}

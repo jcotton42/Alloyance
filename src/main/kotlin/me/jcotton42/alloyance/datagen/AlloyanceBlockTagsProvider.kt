@@ -74,8 +74,11 @@ class AlloyanceBlockTagsProvider(
 
 // TODO reconsider these based on hardness
 private fun getToolTag(metal: Metal): TagKey<Block> = when (metal) {
+    // tier 1
     DEEP_IRON, PROMETHEUM, ZINC, TIN, BRONZE, BRASS -> BlockTags.NEEDS_STONE_TOOL
     DAMASCUS_STEEL -> BlockTags.NEEDS_IRON_TOOL
-    OSMIUM, SILVER, INFUSCOLIUM, MANGANESE, ANGMALLEN -> BlockTags.NEEDS_IRON_TOOL
+
+    // tier 2
+    OSMIUM, SILVER, INFUSCOLIUM, MANGANESE, ANGMALLEN, ELECTRUM -> BlockTags.NEEDS_IRON_TOOL
     STEEL, HEPATIZON, BLACK_STEEL -> BlockTags.NEEDS_DIAMOND_TOOL
 }

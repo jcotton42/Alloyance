@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-28T21:20:05.6691492	Item Models: alloyance
+// 1.21.1	2024-09-28T21:25:27.4329105	Item Models: alloyance
 108c391f311a4a8cfe2e0dd65402f5ba2141c734 assets/alloyance/models/item/angmallen_block.json
 85ba55fe0cd8e5b732353680066523bdcea8a466 assets/alloyance/models/item/angmallen_dust.json
 ec2a81e76c2cc1fc87dd300872eec982fa8f03fa assets/alloyance/models/item/angmallen_ingot.json
@@ -32,6 +32,10 @@ f54e9f2a3e6e52b6eaa168f0a17d532ce6a15647 assets/alloyance/models/item/deepslate_
 0c8eb700b603be3d13acdd9d35824249d902697c assets/alloyance/models/item/deep_iron_ingot.json
 85b3d2c3811b2ae300a9064b22b8a36ef4eeca5b assets/alloyance/models/item/deep_iron_nugget.json
 ca6393e0edef3963cd70337fd22e986be52eed5b assets/alloyance/models/item/deep_iron_ore.json
+734a1c67ebf51af0b9d1733f7969e488bb3ca22e assets/alloyance/models/item/electrum_block.json
+ad517e41f8306cc065c7a50ea064995104aeeed4 assets/alloyance/models/item/electrum_dust.json
+ab498396beb0d48afc8f4e364f9bdc2b6f1cc305 assets/alloyance/models/item/electrum_ingot.json
+fa782c4363dd7981853a36ec74dd7a5ca60c087d assets/alloyance/models/item/electrum_nugget.json
 4b37cc397851493a5615d91cdacd5b4ff94772bc assets/alloyance/models/item/gold_dust.json
 dc4e09dc91cdcd0e194c4520c91baa317776522a assets/alloyance/models/item/hepatizon_block.json
 791b26776fba0674fb07616868711dc298a5fb50 assets/alloyance/models/item/hepatizon_dust.json

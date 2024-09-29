@@ -1,5 +1,5 @@
-// 1.21.1	2024-09-28T21:20:05.6711465	Tags for minecraft:item mod id alloyance
-470c03153cbb17b3970765dd8c8f4b554441d261 data/alloyance/tags/item/alloyables.json
+// 1.21.1	2024-09-28T21:25:27.4349087	Tags for minecraft:item mod id alloyance
+c9f9f3cab1aceeec0c808011fbace29f013447ea data/alloyance/tags/item/alloyables.json
 377249b26bc8f1377bded168543b4379340c69d6 data/alloyance/tags/item/alloyables/angmallen.json
 b9bb9d5217c6f23a4392ab6a4f83ceb90aa2ee61 data/alloyance/tags/item/alloyables/black_steel.json
 db59289810d0b8e15d6bdb0f9ab6741f394d89b5 data/alloyance/tags/item/alloyables/brass.json
@@ -7,6 +7,7 @@ a85a9d8b241f03903bf9368de9ea36a5c0e9740c data/alloyance/tags/item/alloyables/bro
 3303dea003f2f7f81d93ee159b9f20862af5ce95 data/alloyance/tags/item/alloyables/copper.json
 e63958665990d2a46c8f5d55b666b87146960398 data/alloyance/tags/item/alloyables/damascus_steel.json
 c500e2fe677ec260a621d25cce859b8ec1d650fa data/alloyance/tags/item/alloyables/deep_iron.json
+cc2f821072565b3577f31014cbc71bb573620df8 data/alloyance/tags/item/alloyables/electrum.json
 8badaa4dcf4582dc4f59ce54abe795462b6f0d8d data/alloyance/tags/item/alloyables/gold.json
 577e1ab6fb674163143f918061c4a18664f64a1c data/alloyance/tags/item/alloyables/hepatizon.json
 548cb1ce9b01906a8662d8291152862cf47cfc3d data/alloyance/tags/item/alloyables/infuscolium.json
@@ -18,7 +19,7 @@ f73b1a510cd6db95928c95d3e037a3d6047b9d60 data/alloyance/tags/item/alloyables/pro
 b2b40839320518ac3843e3df7993bf29ff219a36 data/alloyance/tags/item/alloyables/steel.json
 3b121bbaff2a2788269466daf49a2e4ef4f9372f data/alloyance/tags/item/alloyables/tin.json
 68143d514bf194a281517d128892c2d73c34fbe9 data/alloyance/tags/item/alloyables/zinc.json
-062dd65316b7cc232047ecf80fdbd3b031ac960a data/c/tags/item/dusts.json
+3d2a8e29222f789c203f00f64dc229efec542e38 data/c/tags/item/dusts.json
 dc9bd4011c544abee5dee660e2d1d6c0c69dabc2 data/c/tags/item/dusts/angmallen.json
 af6d70da67ce62db302d63b0ae52a6baa3e157aa data/c/tags/item/dusts/black_steel.json
 970284b3ba2b9e918f7f3ac1cfd3bc74a18a631c data/c/tags/item/dusts/brass.json
@@ -26,6 +27,7 @@ af6d70da67ce62db302d63b0ae52a6baa3e157aa data/c/tags/item/dusts/black_steel.json
 7ff7dedc30ce1cae10a7d49f0956ec041158856d data/c/tags/item/dusts/copper.json
 ca0f58b1617eba475822182e305de3ca5b510ca3 data/c/tags/item/dusts/damascus_steel.json
 7e56c221cbf69f0fb8abf477aaae4d453331f9c1 data/c/tags/item/dusts/deep_iron.json
+8bf6ed18817be9853f6efeba2161cecd16cd6517 data/c/tags/item/dusts/electrum.json
 4730f65dc905e005aee99cf0c7eda3b9ab7b5c26 data/c/tags/item/dusts/gold.json
 5d5897177ca9679c5597d2071a572eb5d8680973 data/c/tags/item/dusts/hepatizon.json
 2f2f0e1266f6aed025d8a6cbf7bf118264e9d757 data/c/tags/item/dusts/infuscolium.json
@@ -37,13 +39,14 @@ ae7a7f1627ea0bf71bd51a229fd5020098c3cb42 data/c/tags/item/dusts/silver.json
 a322e89c2441bbff5718d20779b70fc3f1d3a889 data/c/tags/item/dusts/steel.json
 f778cc51e96c4dfd977cb382ed889ee3e715ef59 data/c/tags/item/dusts/tin.json
 30e5ebfb6e043cab8b77e480ca42caf4fb322ab6 data/c/tags/item/dusts/zinc.json
-5672a7ddb4bdd1880d6775b277fc63317b6f402d data/c/tags/item/ingots.json
+bbab53c2547bafc223e98d038adb5a99af3e9742 data/c/tags/item/ingots.json
 cef653a06639c3cabdcd1cec42139b117f7acd05 data/c/tags/item/ingots/angmallen.json
 5aa99436ac7f5204792567d95dced6cbcd211d6b data/c/tags/item/ingots/black_steel.json
 811b635596d54c94fba1dc20c41fc78b242e7261 data/c/tags/item/ingots/brass.json
 514006bacfd1d23bb9b91f2336d74fb648565568 data/c/tags/item/ingots/bronze.json
 b62f6f47f799bc714e95f0a43fb6451d22315420 data/c/tags/item/ingots/damascus_steel.json
 251b9af67bf17412098745e329b053344859c526 data/c/tags/item/ingots/deep_iron.json
+d8b8d5cdf4cac7189430b1db6e19b8175f5deb12 data/c/tags/item/ingots/electrum.json
 647362ffe8a5bbc80daf47555a68425f781e6847 data/c/tags/item/ingots/hepatizon.json
 1ae0d44415770663f60c3ecbcd84161ef6dc7f3a data/c/tags/item/ingots/infuscolium.json
 03ea5550bdc07f47d4b19c6595c279cf82fabd8b data/c/tags/item/ingots/manganese.json
@@ -53,13 +56,14 @@ aa455f91202176c6cc9c1acc4c40f8bd2587a774 data/c/tags/item/ingots/prometheum.json
 3a161599a2f99a1b99e4b07f60d75c9bd1e7a592 data/c/tags/item/ingots/steel.json
 d5e25c33f6faacff229b3e494b5401b5d14314d8 data/c/tags/item/ingots/tin.json
 38c245b799b04efe6544d71d99b1b08e0bc99083 data/c/tags/item/ingots/zinc.json
-d0d24a72f58ce06c2c8ae4b90b6bc19772981d7c data/c/tags/item/nuggets.json
+367945017f8817414111d2674f6339f1f8be4c8f data/c/tags/item/nuggets.json
 324918a4426c2a08d3df317fa698601bb95bdbc3 data/c/tags/item/nuggets/angmallen.json
 3d18e45087cc172b48d98fcb92eb94e2ad1b3b0a data/c/tags/item/nuggets/black_steel.json
 885f396b5825c976482617c824bc7c4802ceb232 data/c/tags/item/nuggets/brass.json
 555afb023555207c488dfaa416adbf9533535ecd data/c/tags/item/nuggets/bronze.json
 61795809870a3f6349400da0e9162eaa3b9ad0c0 data/c/tags/item/nuggets/damascus_steel.json
 d4ff184e8f7eb31f7c753a4b7a45b830bb3dcfee data/c/tags/item/nuggets/deep_iron.json
+b33e160ed0d4dc3005151bc342bd9f76e5a9905b data/c/tags/item/nuggets/electrum.json
 e583729dbfe1d0c34e0bd025e8fcf1028bfb070e data/c/tags/item/nuggets/hepatizon.json
 3e796cf958ad32ad3356a3fd244072196256df3d data/c/tags/item/nuggets/infuscolium.json
 fcbe35d960e95dc7b72475b19143542da0183c86 data/c/tags/item/nuggets/manganese.json
@@ -90,13 +94,14 @@ fc6448189ba34be78d422411fe2dedb3913a9849 data/c/tags/item/raw_materials/promethe
 348671637456be88f6b784a88f954e8851c6da43 data/c/tags/item/raw_materials/silver.json
 74bae4e38cf66dff64a2f45995c17313b5dd78b7 data/c/tags/item/raw_materials/tin.json
 49ba2295d2bb6e79b49ce95fa10f56418a5955d6 data/c/tags/item/raw_materials/zinc.json
-a81d9405875e7c0168ce13c37b9660c2ef51aba6 data/c/tags/item/storage_blocks.json
+400e554f1f88ff06989e49f7fed72ba319f6df0e data/c/tags/item/storage_blocks.json
 18ef9f2ab9af5be3948a4e6cdf6890a3cba1df42 data/c/tags/item/storage_blocks/angmallen.json
 45842c65b05f479234c6354d62a69090b93e6369 data/c/tags/item/storage_blocks/black_steel.json
 5a3b92ef94bbbc5ca6fc0cc6ecbd1cb5b125a2ff data/c/tags/item/storage_blocks/brass.json
 8e63366bfe3429b1c1976829d63e839feee4f5ec data/c/tags/item/storage_blocks/bronze.json
 2afde956ab247d8d9bb0513dd07ff5c1d4f604f5 data/c/tags/item/storage_blocks/damascus_steel.json
 98d7f09e1c826e979ece333ed160158978e1d55e data/c/tags/item/storage_blocks/deep_iron.json
+413f85a775150dbf681ab9e5ad55b5d082b597bb data/c/tags/item/storage_blocks/electrum.json
 c450e225607a09db7a783a3af2d9207335408522 data/c/tags/item/storage_blocks/hepatizon.json
 ed561f6da86be37fa1bfc2a2485e3acc120335c1 data/c/tags/item/storage_blocks/infuscolium.json
 c58df94141ec1add51460dca22efe821ad3529c6 data/c/tags/item/storage_blocks/manganese.json

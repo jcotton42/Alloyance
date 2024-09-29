@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "electrum_nugget",
+  "ingredients": [
+    {
+      "item": "alloyance:electrum_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:electrum_nugget"
+  }
+}
