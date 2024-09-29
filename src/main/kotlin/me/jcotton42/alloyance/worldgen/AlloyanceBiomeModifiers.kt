@@ -1,6 +1,7 @@
 package me.jcotton42.alloyance.worldgen
 
 import me.jcotton42.alloyance.Alloyance
+import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_ASTRAL_SILVER_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_DEEP_IRON_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_INFUSCOLIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_MANGANESE_ORE
@@ -10,6 +11,8 @@ import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_SILVER_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_TIN_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_UNDERWATER_DEEP_IRON_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_ZINC_ORE
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ASTRAL_SILVER_ORE_LOWER
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ASTRAL_SILVER_ORE_UPPER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.DEEP_IRON_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.INFUSCOLIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.MANGANESE_ORE
@@ -43,6 +46,8 @@ object AlloyanceBiomeModifiers {
     val ADD_SILVER_ORE_LOWER = registerKey("add_silver_ore_lower")
     val ADD_INFUSCOLIUM_ORE = registerKey("add_infuscolium_ore")
     val ADD_MANGANESE_ORE = registerKey("add_manganese_ore")
+    val ADD_ASTRAL_SILVER_ORE_UPPER = registerKey("add_astral_silver_ore_upper")
+    val ADD_ASTRAL_SILVER_ORE_LOWER = registerKey("add_astral_silver_ore_lower")
 
     private val ores = listOf(
         Triple(ADD_DEEP_IRON_ORE, HAS_DEEP_IRON_ORE, DEEP_IRON_ORE),
@@ -56,6 +61,8 @@ object AlloyanceBiomeModifiers {
         Triple(ADD_SILVER_ORE_LOWER, HAS_SILVER_ORE, SILVER_ORE_LOWER),
         Triple(ADD_INFUSCOLIUM_ORE, HAS_INFUSCOLIUM_ORE, INFUSCOLIUM_ORE),
         Triple(ADD_MANGANESE_ORE, HAS_MANGANESE_ORE, MANGANESE_ORE),
+        Triple(ADD_ASTRAL_SILVER_ORE_UPPER, HAS_ASTRAL_SILVER_ORE, ASTRAL_SILVER_ORE_UPPER),
+        Triple(ADD_ASTRAL_SILVER_ORE_LOWER, HAS_ASTRAL_SILVER_ORE, ASTRAL_SILVER_ORE_LOWER),
     )
 
     fun bootstrap(context: BootstrapContext<BiomeModifier>) {

@@ -38,6 +38,8 @@ object AlloyancePlacedFeatures {
     val SILVER_ORE_LOWER = registerKey("silver_ore_lower")
     val INFUSCOLIUM_ORE = registerKey("infuscolium_ore")
     val MANGANESE_ORE = registerKey("manganese_ore")
+    val ASTRAL_SILVER_ORE_UPPER = registerKey("astral_silver_ore_upper")
+    val ASTRAL_SILVER_ORE_LOWER = registerKey("astral_silver_ore_lower")
 
     fun bootstrap(context: BootstrapContext<PlacedFeature>) {
         val configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE)
@@ -142,6 +144,25 @@ object AlloyancePlacedFeatures {
                 // COMMON was too rare with uniform placement
                 20,
                 HeightRangePlacement.uniform(VerticalAnchor.absolute(-16), VerticalAnchor.TOP)
+            )
+        )
+
+        register(
+            context,
+            ASTRAL_SILVER_ORE_UPPER,
+            configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.ASTRAL_SILVER_ORE),
+            countOrePlacement(
+                COMMON,
+                HeightRangePlacement.triangle(VerticalAnchor.absolute(100), VerticalAnchor.belowTop(-20))
+            )
+        )
+        register(
+            context,
+            ASTRAL_SILVER_ORE_LOWER,
+            configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.ASTRAL_SILVER_ORE),
+            countOrePlacement(
+                COMMON / 2,
+                HeightRangePlacement.triangle(VerticalAnchor.absolute(45), VerticalAnchor.absolute(155))
             )
         )
     }

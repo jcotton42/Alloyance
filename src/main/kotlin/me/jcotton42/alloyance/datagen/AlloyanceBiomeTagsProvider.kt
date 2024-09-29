@@ -39,5 +39,8 @@ class AlloyanceBiomeTagsProvider(
             .addTags(BiomeTags.IS_OVERWORLD)
         tag(AlloyanceBiomeTags.HAS_MANGANESE_ORE)
             .addTags(BiomeTags.IS_OVERWORLD)
+
+        tag(AlloyanceBiomeTags.HAS_ASTRAL_SILVER_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
     }
 }
