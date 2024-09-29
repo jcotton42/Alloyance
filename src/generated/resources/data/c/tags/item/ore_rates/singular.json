@@ -11,6 +11,8 @@
     "alloyance:silver_ore",
     "alloyance:deepslate_silver_ore",
     "alloyance:infuscolium_ore",
-    "alloyance:deepslate_infuscolium_ore"
+    "alloyance:deepslate_infuscolium_ore",
+    "alloyance:manganese_ore",
+    "alloyance:deepslate_manganese_ore"
   ]
 }

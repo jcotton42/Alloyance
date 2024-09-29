@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "manganese_dust",
+  "ingredient": {
+    "tag": "c:ingots/manganese"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:manganese_dust"
+  }
+}

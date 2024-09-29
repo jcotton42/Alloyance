@@ -9,6 +9,7 @@
     "#c:storage_blocks/damascus_steel",
     "#c:storage_blocks/osmium",
     "#c:storage_blocks/silver",
-    "#c:storage_blocks/infuscolium"
+    "#c:storage_blocks/infuscolium",
+    "#c:storage_blocks/manganese"
   ]
 }

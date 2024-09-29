@@ -12,6 +12,7 @@
     "#alloyance:alloyables/damascus_steel",
     "#alloyance:alloyables/osmium",
     "#alloyance:alloyables/silver",
-    "#alloyance:alloyables/infuscolium"
+    "#alloyance:alloyables/infuscolium",
+    "#alloyance:alloyables/manganese"
   ]
 }

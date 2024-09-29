@@ -103,6 +103,14 @@ object AlloyanceItems {
     val INFUSCOLIUM_NUGGET = nugget(INFUSCOLIUM)
     val INFUSCOLIUM_DUST = dust(INFUSCOLIUM)
 
+    val MANGANESE_ORE = block(AlloyanceBlocks.MANGANESE_ORE)
+    val DEEPSLATE_MANGANESE_ORE = block(AlloyanceBlocks.DEEPSLATE_MANGANESE_ORE)
+    val MANGANESE_BLOCK = block(AlloyanceBlocks.MANGANESE_BLOCK)
+    val RAW_MANGANESE = rawMaterial(MANGANESE)
+    val MANGANESE_INGOT = ingot(MANGANESE)
+    val MANGANESE_NUGGET = nugget(MANGANESE)
+    val MANGANESE_DUST = dust(MANGANESE)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "manganese_ingot",
+  "key": {
+    "n": {
+      "item": "alloyance:manganese_nugget"
+    }
+  },
+  "pattern": [
+    "nnn",
+    "nnn",
+    "nnn"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:manganese_ingot"
+  }
+}
