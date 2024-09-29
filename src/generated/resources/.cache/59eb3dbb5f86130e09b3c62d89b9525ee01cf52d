@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-28T23:54:33.1469438	Loot Tables
+// 1.21.1	2024-09-29T15:44:41.1443197	Loot Tables
 00986215a0540b1b41631c104659deaa568ccfea data/alloyance/loot_table/blocks/alloyer.json
 a80a5cc977a2ae430a4f1e00459a6153eafa8f03 data/alloyance/loot_table/blocks/angmallen_block.json
 d6e65e8d30262ba84d58b5ada3e8bc8b0a49b4c8 data/alloyance/loot_table/blocks/astral_silver_block.json
@@ -12,6 +12,7 @@ b4b0d18e33efcd418feb6a7c18a037cb792e2a3c data/alloyance/loot_table/blocks/deepsl
 be4ca5b1c44889cfa9bcb5b013566625972b86a9 data/alloyance/loot_table/blocks/deepslate_infuscolium_ore.json
 8c8d7e1ae4b6c9782b967d194c81ef7b349be0b5 data/alloyance/loot_table/blocks/deepslate_manganese_ore.json
 b539dc94601fa4e931f16e5a9542fd903c67c1f0 data/alloyance/loot_table/blocks/deepslate_osmium_ore.json
+2f893b2a1f3d5b462e23eb832d3a89dd3a33a5b1 data/alloyance/loot_table/blocks/deepslate_oureclase_ore.json
 8e48254d80df669d78f06de749ca2a95cb6e32dd data/alloyance/loot_table/blocks/deepslate_prometheum_ore.json
 d13fb44d986b37f3bd832263b7887a82fdb946e6 data/alloyance/loot_table/blocks/deepslate_silver_ore.json
 7caa72a8097f16415222e02899decd0eb86a3b25 data/alloyance/loot_table/blocks/deepslate_zinc_ore.json
@@ -26,6 +27,8 @@ b6714299770c3d2ab67e9ee93be4e39b04f0d760 data/alloyance/loot_table/blocks/mangan
 262dcc164a06325636d6754cee2f7d63aeddd9fd data/alloyance/loot_table/blocks/manganese_ore.json
 c96baa9b3eec782ab8b52b999a8a83243fa9a19b data/alloyance/loot_table/blocks/nether_ignatius_ore.json
 afdf364c1c272e5befd0be061f7e9c86b2cd6e05 data/alloyance/loot_table/blocks/osmium_block.json
+2e804d59d99db3cca0b2d3ff9312f68c5be3c278 data/alloyance/loot_table/blocks/oureclase_block.json
+14fb194a93f15e3aad8bc3320dd3d4469b53b5b1 data/alloyance/loot_table/blocks/oureclase_ore.json
 20e12d45d1ac4c0334a30338efd35ab6ffcf8a79 data/alloyance/loot_table/blocks/prometheum_block.json
 6f8306da99c434da45c942ecbef90c776e11435e data/alloyance/loot_table/blocks/prometheum_ore.json
 8b9b776b1008423d20b046f9e796dc62dc6a18ad data/alloyance/loot_table/blocks/silver_block.json

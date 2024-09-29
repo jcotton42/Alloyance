@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_oureclase": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:raw_oureclase"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:oureclase_ingot_from_blasting_raw_oureclase"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_oureclase"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:oureclase_ingot_from_blasting_raw_oureclase"
+    ]
+  }
+}

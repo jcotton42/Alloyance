@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "oureclase_dust",
+  "ingredient": {
+    "tag": "c:raw_materials/oureclase"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:oureclase_dust"
+  }
+}

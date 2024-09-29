@@ -154,5 +154,6 @@ class AlloyanceEnglishLanguageProvider(
 
         Metal.ASTRAL_SILVER -> "Astral Silver"
         Metal.IGNATIUS -> "Ignatius"
+        Metal.OURECLASE -> "Oureclase"
     }
 }

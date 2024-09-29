@@ -150,6 +150,14 @@ object AlloyanceItems {
     val IGNATIUS_NUGGET = nugget(IGNATIUS)
     val IGNATIUS_DUST = dust(IGNATIUS)
 
+    val OURECLASE_ORE = block(AlloyanceBlocks.OURECLASE_ORE)
+    val DEEPSLATE_OURECLASE_ORE = block(AlloyanceBlocks.DEEPSLATE_OURECLASE_ORE)
+    val OURECLASE_BLOCK = block(AlloyanceBlocks.OURECLASE_BLOCK)
+    val RAW_OURECLASE = rawMaterial(OURECLASE)
+    val OURECLASE_INGOT = ingot(OURECLASE)
+    val OURECLASE_NUGGET = nugget(OURECLASE)
+    val OURECLASE_DUST = dust(OURECLASE)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

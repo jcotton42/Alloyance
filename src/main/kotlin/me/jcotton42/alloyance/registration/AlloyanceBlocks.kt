@@ -117,6 +117,10 @@ object AlloyanceBlocks {
     val NETHER_IGNATIUS_ORE = netherOre(IGNATIUS)
     val IGNATIUS_BLOCK = storageBlock(IGNATIUS)
 
+    val OURECLASE_ORE = ore(OURECLASE)
+    val DEEPSLATE_OURECLASE_ORE = deepslateOre(OURECLASE)
+    val OURECLASE_BLOCK = storageBlock(OURECLASE)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

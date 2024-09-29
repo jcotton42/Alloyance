@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "oureclase_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:oureclase_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:oureclase_ingot"
+  }
+}

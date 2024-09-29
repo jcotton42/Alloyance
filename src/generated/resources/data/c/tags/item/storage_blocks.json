@@ -17,6 +17,7 @@
     "#c:storage_blocks/black_steel",
     "#c:storage_blocks/electrum",
     "#c:storage_blocks/astral_silver",
-    "#c:storage_blocks/ignatius"
+    "#c:storage_blocks/ignatius",
+    "#c:storage_blocks/oureclase"
   ]
 }

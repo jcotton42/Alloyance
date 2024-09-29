@@ -24,4 +24,5 @@ enum class Metal(val id: String, val hardness: Float, val blockBlastResistance: 
     // tier 3
     ASTRAL_SILVER("astral_silver", 4.1f, 10.0f),
     IGNATIUS("ignatius", 3.1f, 6.0f),
+    OURECLASE("oureclase", 5.1f, 15.0f),
 }
