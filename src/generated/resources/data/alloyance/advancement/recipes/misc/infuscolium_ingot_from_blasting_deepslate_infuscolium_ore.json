@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslate_infuscolium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:deepslate_infuscolium_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:infuscolium_ingot_from_blasting_deepslate_infuscolium_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_deepslate_infuscolium_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:infuscolium_ingot_from_blasting_deepslate_infuscolium_ore"
+    ]
+  }
+}

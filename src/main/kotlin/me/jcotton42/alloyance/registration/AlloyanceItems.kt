@@ -95,6 +95,14 @@ object AlloyanceItems {
     val SILVER_NUGGET = nugget(SILVER)
     val SILVER_DUST = dust(SILVER)
 
+    val INFUSCOLIUM_ORE = block(AlloyanceBlocks.INFUSCOLIUM_ORE)
+    val DEEPSLATE_INFUSCOLIUM_ORE = block(AlloyanceBlocks.DEEPSLATE_INFUSCOLIUM_ORE)
+    val INFUSCOLIUM_BLOCK = block(AlloyanceBlocks.INFUSCOLIUM_BLOCK)
+    val RAW_INFUSCOLIUM = rawMaterial(INFUSCOLIUM)
+    val INFUSCOLIUM_INGOT = ingot(INFUSCOLIUM)
+    val INFUSCOLIUM_NUGGET = nugget(INFUSCOLIUM)
+    val INFUSCOLIUM_DUST = dust(INFUSCOLIUM)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

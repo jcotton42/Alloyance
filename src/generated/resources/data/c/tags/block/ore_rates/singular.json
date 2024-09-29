@@ -9,6 +9,8 @@
     "alloyance:tin_ore",
     "alloyance:deepslate_osmium_ore",
     "alloyance:silver_ore",
-    "alloyance:deepslate_silver_ore"
+    "alloyance:deepslate_silver_ore",
+    "alloyance:infuscolium_ore",
+    "alloyance:deepslate_infuscolium_ore"
   ]
 }

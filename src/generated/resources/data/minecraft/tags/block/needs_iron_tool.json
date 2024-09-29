@@ -5,8 +5,11 @@
     "alloyance:damascus_steel_block",
     "alloyance:osmium_block",
     "alloyance:silver_block",
+    "alloyance:infuscolium_block",
     "alloyance:silver_ore",
+    "alloyance:infuscolium_ore",
     "alloyance:deepslate_osmium_ore",
-    "alloyance:deepslate_silver_ore"
+    "alloyance:deepslate_silver_ore",
+    "alloyance:deepslate_infuscolium_ore"
   ]
 }

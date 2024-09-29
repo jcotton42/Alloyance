@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "infuscolium_dust",
+  "ingredient": {
+    "tag": "c:raw_materials/infuscolium"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:infuscolium_dust"
+  }
+}
