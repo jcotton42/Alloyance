@@ -142,6 +142,7 @@ object AlloyanceBlocks {
                 .mapColor(MapColor.METAL)
                 .sound(SoundType.METAL)
                 .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                .requiresCorrectToolForDrops()
                 .strength(metal.hardness, metal.blockBlastResistance)
         )
         STORAGE_BLOCKS[metal] = block
