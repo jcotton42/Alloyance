@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_silver_ore",
+  "features": "alloyance:silver_ore_upper",
+  "step": "underground_ores"
+}

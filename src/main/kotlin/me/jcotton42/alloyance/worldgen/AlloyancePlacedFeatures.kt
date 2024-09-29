@@ -20,11 +20,11 @@ import net.minecraft.world.level.levelgen.placement.PlacementModifier
 import net.minecraft.world.level.levelgen.placement.RarityFilter
 import net.minecraft.world.level.levelgen.placement.SurfaceRelativeThresholdFilter
 
-private val COMMON = 10
-private val UNCOMMON = 7
-private val RARE = 5
-private val VERY_RARE = 3
-private val ULTRA_RARE = 1
+private const val COMMON = 10
+private const val UNCOMMON = 7
+private const val RARE = 5
+private const val VERY_RARE = 3
+private const val ULTRA_RARE = 1
 
 object AlloyancePlacedFeatures {
     val DEEP_IRON_ORE = registerKey("deep_iron_ore")
@@ -34,6 +34,8 @@ object AlloyancePlacedFeatures {
     val TIN_ORE = registerKey("tin_ore")
     val ZINC_ORE = registerKey("zinc_ore")
     val OSMIUM_ORE = registerKey("osmium_ore")
+    val SILVER_ORE_UPPER = registerKey("silver_ore_upper")
+    val SILVER_ORE_LOWER = registerKey("silver_ore_lower")
 
     fun bootstrap(context: BootstrapContext<PlacedFeature>) {
         val configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE)
@@ -101,6 +103,24 @@ object AlloyancePlacedFeatures {
             countOrePlacement(
                 UNCOMMON,
                 HeightRangePlacement.of(TrapezoidHeight.of(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-32), 12))
+            )
+        )
+        register(
+            context,
+            SILVER_ORE_UPPER,
+            configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.SILVER_ORE),
+            countOrePlacement(
+                UNCOMMON,
+                HeightRangePlacement.triangle(VerticalAnchor.absolute(-40), VerticalAnchor.absolute(96))
+            )
+        )
+        register(
+            context,
+            SILVER_ORE_LOWER,
+            configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.SILVER_ORE),
+            countOrePlacement(
+                UNCOMMON,
+                HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-40))
             )
         )
     }

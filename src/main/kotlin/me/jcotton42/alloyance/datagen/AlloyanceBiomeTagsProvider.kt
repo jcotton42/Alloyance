@@ -33,5 +33,7 @@ class AlloyanceBiomeTagsProvider(
 
         tag(AlloyanceBiomeTags.HAS_OSMIUM_ORE)
             .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_SILVER_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
     }
 }
