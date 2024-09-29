@@ -121,6 +121,11 @@ object AlloyanceItems {
     val STEEL_NUGGET = nugget(STEEL)
     val STEEL_DUST = dust(STEEL)
 
+    val HEPATIZON_BLOCK = block(AlloyanceBlocks.HEPATIZON_BLOCK)
+    val HEPATIZON_INGOT = ingot(HEPATIZON)
+    val HEPATIZON_NUGGET = nugget(HEPATIZON)
+    val HEPATIZON_DUST = dust(HEPATIZON)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

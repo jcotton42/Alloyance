@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "hepatizon_nugget",
+  "ingredients": [
+    {
+      "item": "alloyance:hepatizon_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:hepatizon_nugget"
+  }
+}

@@ -103,6 +103,8 @@ object AlloyanceBlocks {
 
     val STEEL_BLOCK = storageBlock(STEEL)
 
+    val HEPATIZON_BLOCK = storageBlock(HEPATIZON)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

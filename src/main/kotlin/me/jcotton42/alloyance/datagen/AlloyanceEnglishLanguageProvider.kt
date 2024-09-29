@@ -142,5 +142,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.MANGANESE -> "Manganese"
         Metal.ANGMALLEN -> "Angmallen"
         Metal.STEEL -> "Steel"
+        Metal.HEPATIZON -> "Hepatizon"
     }
 }

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "hepatizon_ingot",
+  "ingredient": {
+    "item": "alloyance:hepatizon_dust"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:hepatizon_ingot"
+  }
+}

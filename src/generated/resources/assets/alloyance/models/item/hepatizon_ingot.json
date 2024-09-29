@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "alloyance:item/hepatizon_ingot"
+  }
+}

@@ -45,6 +45,8 @@ object AlloyanceBlockTags {
 
     val STORAGE_BLOCKS_STEEL = storageBlocks(STEEL)
 
+    val STORAGE_BLOCKS_HEPATIZON = storageBlocks(HEPATIZON)
+
     private fun storageBlocks(metal: Metal): TagKey<Block> {
         val tag = c("storage_blocks/${metal.id}")
         STORAGE_BLOCKS[metal] = tag

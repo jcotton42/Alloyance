@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "hepatizon_dust",
+  "ingredient": {
+    "tag": "c:ingots/hepatizon"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:hepatizon_dust"
+  }
+}
