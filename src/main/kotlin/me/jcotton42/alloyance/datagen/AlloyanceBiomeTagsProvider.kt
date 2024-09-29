@@ -35,5 +35,7 @@ class AlloyanceBiomeTagsProvider(
             .addTags(BiomeTags.IS_OVERWORLD)
         tag(AlloyanceBiomeTags.HAS_SILVER_ORE)
             .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_INFUSCOLIUM_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
     }
 }
