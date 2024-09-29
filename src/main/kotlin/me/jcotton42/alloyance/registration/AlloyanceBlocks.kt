@@ -121,6 +121,10 @@ object AlloyanceBlocks {
     val DEEPSLATE_OURECLASE_ORE = deepslateOre(OURECLASE)
     val OURECLASE_BLOCK = storageBlock(OURECLASE)
 
+    val RUBRACIUM_ORE = ore(RUBRACIUM)
+    val DEEPSLATE_RUBRACIUM_ORE = deepslateOre(RUBRACIUM)
+    val RUBRACIUM_BLOCK = storageBlock(RUBRACIUM)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

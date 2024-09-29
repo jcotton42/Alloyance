@@ -1,5 +1,5 @@
-// 1.21.1	2024-09-29T15:44:41.1593629	Tags for minecraft:item mod id alloyance
-e1ca9f6684605f067a8690636ec72ddd4a3f3055 data/alloyance/tags/item/alloyables.json
+// 1.21.1	2024-09-29T16:35:23.1882108	Tags for minecraft:item mod id alloyance
+869fcd9dd40baac1d6c20823b6eca1c00a4b3740 data/alloyance/tags/item/alloyables.json
 377249b26bc8f1377bded168543b4379340c69d6 data/alloyance/tags/item/alloyables/angmallen.json
 4160ff10b39f9bf455ee2b99893bc69582b02f1f data/alloyance/tags/item/alloyables/astral_silver.json
 b9bb9d5217c6f23a4392ab6a4f83ceb90aa2ee61 data/alloyance/tags/item/alloyables/black_steel.json
@@ -18,11 +18,12 @@ cc2f821072565b3577f31014cbc71bb573620df8 data/alloyance/tags/item/alloyables/ele
 f4039ba610c9842068f6475dd204165b1d7cc848 data/alloyance/tags/item/alloyables/osmium.json
 0e1b7c8a07065096691fe96e40b744a4e69422fb data/alloyance/tags/item/alloyables/oureclase.json
 f73b1a510cd6db95928c95d3e037a3d6047b9d60 data/alloyance/tags/item/alloyables/prometheum.json
+8209459fa2b06d966b643478ecc4906a2a8779a8 data/alloyance/tags/item/alloyables/rubracium.json
 7a13c53896cb9e23e6b17560251a448557d1a7a9 data/alloyance/tags/item/alloyables/silver.json
 b2b40839320518ac3843e3df7993bf29ff219a36 data/alloyance/tags/item/alloyables/steel.json
 3b121bbaff2a2788269466daf49a2e4ef4f9372f data/alloyance/tags/item/alloyables/tin.json
 68143d514bf194a281517d128892c2d73c34fbe9 data/alloyance/tags/item/alloyables/zinc.json
-3d13c20ef56fd6e0a242da18d7503ea3c9e2cac8 data/c/tags/item/dusts.json
+1a5b1df41c9e7a2fd936bc3b626872d8c95664ab data/c/tags/item/dusts.json
 dc9bd4011c544abee5dee660e2d1d6c0c69dabc2 data/c/tags/item/dusts/angmallen.json
 75818ad6811847efd72f7754f35bfff31c375fcf data/c/tags/item/dusts/astral_silver.json
 af6d70da67ce62db302d63b0ae52a6baa3e157aa data/c/tags/item/dusts/black_steel.json
@@ -41,11 +42,12 @@ e38988fbb5fe04af3c8e4a826c93b6e82c94acf3 data/c/tags/item/dusts/iron.json
 7d5b24495b7771ac5434e73603c7efb7110192a0 data/c/tags/item/dusts/osmium.json
 bf0ab37edffc8e50042c75d2106821b53b168d32 data/c/tags/item/dusts/oureclase.json
 8d65f8f2a3350ee219c8563f968acd87a47b2e39 data/c/tags/item/dusts/prometheum.json
+6942d39348df114687dbbd2ea152f35eeb333ce2 data/c/tags/item/dusts/rubracium.json
 ae7a7f1627ea0bf71bd51a229fd5020098c3cb42 data/c/tags/item/dusts/silver.json
 a322e89c2441bbff5718d20779b70fc3f1d3a889 data/c/tags/item/dusts/steel.json
 f778cc51e96c4dfd977cb382ed889ee3e715ef59 data/c/tags/item/dusts/tin.json
 30e5ebfb6e043cab8b77e480ca42caf4fb322ab6 data/c/tags/item/dusts/zinc.json
-581c4ddaae2c0237966ebc7874d4e9280a4799b6 data/c/tags/item/ingots.json
+28c82efc76570cdf812edcbf5a84f5d7de7401b3 data/c/tags/item/ingots.json
 cef653a06639c3cabdcd1cec42139b117f7acd05 data/c/tags/item/ingots/angmallen.json
 9057d1eedc31252c11242a2feb8fe680856a29d8 data/c/tags/item/ingots/astral_silver.json
 5aa99436ac7f5204792567d95dced6cbcd211d6b data/c/tags/item/ingots/black_steel.json
@@ -61,11 +63,12 @@ d8b8d5cdf4cac7189430b1db6e19b8175f5deb12 data/c/tags/item/ingots/electrum.json
 e9461b29e98f66db0e253a4f223b5029e68f2be2 data/c/tags/item/ingots/osmium.json
 50e41c30749d0d1a817b7e2167ab8b1f64084a18 data/c/tags/item/ingots/oureclase.json
 aa455f91202176c6cc9c1acc4c40f8bd2587a774 data/c/tags/item/ingots/prometheum.json
+323bac15042a88958887abacc6539b2370b2b5b3 data/c/tags/item/ingots/rubracium.json
 41b116afebbdd4f563178ad62ca2971bb8a829da data/c/tags/item/ingots/silver.json
 3a161599a2f99a1b99e4b07f60d75c9bd1e7a592 data/c/tags/item/ingots/steel.json
 d5e25c33f6faacff229b3e494b5401b5d14314d8 data/c/tags/item/ingots/tin.json
 38c245b799b04efe6544d71d99b1b08e0bc99083 data/c/tags/item/ingots/zinc.json
-a81e051db7b71d519edb365ba778ab35ce41fd7a data/c/tags/item/nuggets.json
+504c728d89dc8b37704afd2088198aac0b38346b data/c/tags/item/nuggets.json
 324918a4426c2a08d3df317fa698601bb95bdbc3 data/c/tags/item/nuggets/angmallen.json
 8c648abb8dfdc7a949a7a02bf48ca1bff2c8b45f data/c/tags/item/nuggets/astral_silver.json
 3d18e45087cc172b48d98fcb92eb94e2ad1b3b0a data/c/tags/item/nuggets/black_steel.json
@@ -81,11 +84,12 @@ fcbe35d960e95dc7b72475b19143542da0183c86 data/c/tags/item/nuggets/manganese.json
 1a910eba1de9855cd3308d92a4563d45b33de18b data/c/tags/item/nuggets/osmium.json
 760f1f51a392765f192f569f125c4d4f27e9a9b5 data/c/tags/item/nuggets/oureclase.json
 72fd87942568e63960c7bfba3ffa966c6543cb29 data/c/tags/item/nuggets/prometheum.json
+39ffa2177fc2f358d81b3fa32f1a44025dd96576 data/c/tags/item/nuggets/rubracium.json
 eab586d664870d225290e5258ad6a7c41b90bef1 data/c/tags/item/nuggets/silver.json
 8357f661abf0cd992205594f8cb898157aea0cbb data/c/tags/item/nuggets/steel.json
 30204e7433eb335926278c28be8a971d12fee8a5 data/c/tags/item/nuggets/tin.json
 74dd75e5f736dce3240bcce26f0ccf4890de7cbc data/c/tags/item/nuggets/zinc.json
-d26891bf736971c6c1ae5939eeee36491e8ce45e data/c/tags/item/ores.json
+41b3c092c48c93c3fb799994118572559ca4b634 data/c/tags/item/ores.json
 b0b453b05b70b674bcd6d479954b4063df9a6945 data/c/tags/item/ores/astral_silver.json
 4856011b0694a59916cb7a20cf25b9d6c9f76c01 data/c/tags/item/ores/deep_iron.json
 ea3fa54c049e6cb158cd4b7aa0755853498abc97 data/c/tags/item/ores/ignatius.json
@@ -94,14 +98,15 @@ aae418588f11ddea316f7ab7e54a1a33b83dd1c9 data/c/tags/item/ores/infuscolium.json
 575815da68c26150b0582acb33bef4122723d33b data/c/tags/item/ores/osmium.json
 dbd0f3bb8b9b62211b78b785ccb78e980eb3bb3f data/c/tags/item/ores/oureclase.json
 538157290f51d545311567f0cefb785a4b3e1842 data/c/tags/item/ores/prometheum.json
+0827241a8c8683422ede89f162caf55079b0437b data/c/tags/item/ores/rubracium.json
 b5847b4a65fb265052f0d2c49f73b82b8b8bc0f9 data/c/tags/item/ores/silver.json
 96299ff0191a5fa4286bcbaf443628b556345d85 data/c/tags/item/ores/tin.json
 8f8ea038e3acfede87f4a8fb814ec02cd1dfe917 data/c/tags/item/ores/zinc.json
-7f69b2a8b12765f972164551319243247305dca2 data/c/tags/item/ores_in_ground/deepslate.json
+fae5f7f74393a8b181fd4e53c84f6a37558cf141 data/c/tags/item/ores_in_ground/deepslate.json
 ea3fa54c049e6cb158cd4b7aa0755853498abc97 data/c/tags/item/ores_in_ground/netherrack.json
-0697f2560953adc1f1a00a44330735902ca9a428 data/c/tags/item/ores_in_ground/stone.json
-e7e357a226871d19cf4d1bce20611a62b0817a7d data/c/tags/item/ore_rates/singular.json
-962fbc93d6399dcce4804f4a00fe111fd20f5b38 data/c/tags/item/raw_materials.json
+77d1372693aafb9249056074f108e25539146bf6 data/c/tags/item/ores_in_ground/stone.json
+eba7e0e5d1d5a3927ef3cd3171e3e95004164312 data/c/tags/item/ore_rates/singular.json
+4992fc8cf316128dfbda5350812e6ad3050b4226 data/c/tags/item/raw_materials.json
 2a8658cfdd7a80a24b90c29dc4e31007433a9771 data/c/tags/item/raw_materials/astral_silver.json
 45ea6a75205536a5d0a0cafccbc70cfebae9540f data/c/tags/item/raw_materials/deep_iron.json
 d5c1bcf2228970520fda55f86bd40a0385972e4a data/c/tags/item/raw_materials/ignatius.json
@@ -110,10 +115,11 @@ d5c1bcf2228970520fda55f86bd40a0385972e4a data/c/tags/item/raw_materials/ignatius
 acf6c9f65f3bb75f4fa0317958d00576cdd2a941 data/c/tags/item/raw_materials/osmium.json
 ca288b1252efd3d8602b4ac0860581a5441d2402 data/c/tags/item/raw_materials/oureclase.json
 fc6448189ba34be78d422411fe2dedb3913a9849 data/c/tags/item/raw_materials/prometheum.json
+34a40eb5af16749bb14acd3a3805916316b76d23 data/c/tags/item/raw_materials/rubracium.json
 348671637456be88f6b784a88f954e8851c6da43 data/c/tags/item/raw_materials/silver.json
 74bae4e38cf66dff64a2f45995c17313b5dd78b7 data/c/tags/item/raw_materials/tin.json
 49ba2295d2bb6e79b49ce95fa10f56418a5955d6 data/c/tags/item/raw_materials/zinc.json
-4e5e95f0a06d15adfdcd49072d37ce98a0c9425a data/c/tags/item/storage_blocks.json
+a45742eeef53bf68ad8b2c81f2f0f93665faa521 data/c/tags/item/storage_blocks.json
 18ef9f2ab9af5be3948a4e6cdf6890a3cba1df42 data/c/tags/item/storage_blocks/angmallen.json
 860f60434d7b9ca9e627318a83cd5d09bacded2d data/c/tags/item/storage_blocks/astral_silver.json
 45842c65b05f479234c6354d62a69090b93e6369 data/c/tags/item/storage_blocks/black_steel.json
@@ -129,6 +135,7 @@ c58df94141ec1add51460dca22efe821ad3529c6 data/c/tags/item/storage_blocks/mangane
 7d9c5bd1d44dfbd432c1366cda8c67dce2ae72e5 data/c/tags/item/storage_blocks/osmium.json
 f464b3cc1f706e2695cbf0f2336327e99ed6fc9c data/c/tags/item/storage_blocks/oureclase.json
 f6747fa94156223e85cc85c8446fd91731f53886 data/c/tags/item/storage_blocks/prometheum.json
+a916a0dd4b16bfdc996d5753a9c5d076d9784572 data/c/tags/item/storage_blocks/rubracium.json
 e46f97339fbaecc0c38babcb17157c046a349f31 data/c/tags/item/storage_blocks/silver.json
 8784ef98f5156affc5e14abb441354ab52dd170f data/c/tags/item/storage_blocks/steel.json
 f827a7d6fcf6dfe3eee3acf5972208bb27dd7814 data/c/tags/item/storage_blocks/tin.json

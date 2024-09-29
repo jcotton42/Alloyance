@@ -21,6 +21,7 @@
     "#alloyance:alloyables/electrum",
     "#alloyance:alloyables/astral_silver",
     "#alloyance:alloyables/ignatius",
-    "#alloyance:alloyables/oureclase"
+    "#alloyance:alloyables/oureclase",
+    "#alloyance:alloyables/rubracium"
   ]
 }

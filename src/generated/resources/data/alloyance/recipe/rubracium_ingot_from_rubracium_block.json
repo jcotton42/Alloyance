@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "rubracium_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:rubracium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:rubracium_ingot"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "rubracium_dust",
+  "ingredient": {
+    "tag": "c:ingots/rubracium"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:rubracium_dust"
+  }
+}

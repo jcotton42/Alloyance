@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rubracium_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:rubracium_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:rubracium_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rubracium_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:rubracium_block"
+    ]
+  }
+}

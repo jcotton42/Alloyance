@@ -165,6 +165,14 @@ object AlloyanceItemTags {
     val ORES_OURECLASE: TagKey<Item> = ores(OURECLASE)
     val ALLOYABLES_OURECLASE: TagKey<Item> = alloyables(OURECLASE)
 
+    val RAW_MATERIALS_RUBRACIUM: TagKey<Item> = rawMaterials(RUBRACIUM)
+    val INGOTS_RUBRACIUM: TagKey<Item> = ingots(RUBRACIUM)
+    val NUGGETS_RUBRACIUM: TagKey<Item> = nuggets(RUBRACIUM)
+    val DUSTS_RUBRACIUM: TagKey<Item> = dusts(RUBRACIUM)
+    val STORAGE_BLOCKS_RUBRACIUM: TagKey<Item> = storageBlocks(RUBRACIUM)
+    val ORES_RUBRACIUM: TagKey<Item> = ores(RUBRACIUM)
+    val ALLOYABLES_RUBRACIUM: TagKey<Item> = alloyables(RUBRACIUM)
+
     private fun rawMaterials(metal: Metal): TagKey<Item> {
         val tag = c("raw_materials/${metal.id}")
         RAW_MATERIALS[metal] = tag
