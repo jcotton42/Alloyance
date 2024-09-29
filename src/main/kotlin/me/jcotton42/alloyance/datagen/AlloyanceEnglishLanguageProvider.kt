@@ -153,5 +153,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.ELECTRUM -> "Electrum"
 
         Metal.ASTRAL_SILVER -> "Astral Silver"
+        Metal.IGNATIUS -> "Ignatius"
     }
 }

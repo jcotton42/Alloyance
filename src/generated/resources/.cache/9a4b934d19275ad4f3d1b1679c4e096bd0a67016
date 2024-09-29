@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-28T21:59:16.4955031	Item Models: alloyance
+// 1.21.1	2024-09-28T23:54:33.1590084	Item Models: alloyance
 108c391f311a4a8cfe2e0dd65402f5ba2141c734 assets/alloyance/models/item/angmallen_block.json
 85ba55fe0cd8e5b732353680066523bdcea8a466 assets/alloyance/models/item/angmallen_dust.json
 ec2a81e76c2cc1fc87dd300872eec982fa8f03fa assets/alloyance/models/item/angmallen_ingot.json
@@ -46,6 +46,10 @@ dc4e09dc91cdcd0e194c4520c91baa317776522a assets/alloyance/models/item/hepatizon_
 791b26776fba0674fb07616868711dc298a5fb50 assets/alloyance/models/item/hepatizon_dust.json
 e47a5af9665c457147a7acd530e429f595820512 assets/alloyance/models/item/hepatizon_ingot.json
 4feef1d922e329313fb948c1927bcc5be1253747 assets/alloyance/models/item/hepatizon_nugget.json
+c313ae32bd76b6c030fe049b7f53156a94f1b57a assets/alloyance/models/item/ignatius_block.json
+9a35856afc4ddcc389d2ae105e4b6cb73b5b2969 assets/alloyance/models/item/ignatius_dust.json
+70d96deb8bf5291866d4f25bf87bfae16555ae6f assets/alloyance/models/item/ignatius_ingot.json
+9c15c78686bc436b2379a2ba72713e204ce1c8d2 assets/alloyance/models/item/ignatius_nugget.json
 381acd837e9e4ebf7707f4a0305368dcdd29809e assets/alloyance/models/item/infuscolium_block.json
 5db41f340306fc81bd09aab31a767391ebab0069 assets/alloyance/models/item/infuscolium_dust.json
 3202d0258d8b384119ce16bf896fe2aca349351e assets/alloyance/models/item/infuscolium_ingot.json
@@ -58,6 +62,7 @@ e43851c156331df2c745fce6ff1c4f531cd7c3b0 assets/alloyance/models/item/iron_dust.
 5de53e321869a7a72227afdee6c84ea354181a4b assets/alloyance/models/item/manganese_ingot.json
 e7e185b33ab4a84fc88f8eaff913c1d3145201ea assets/alloyance/models/item/manganese_nugget.json
 748087aae279f18e87f289fb673825beb7799f91 assets/alloyance/models/item/manganese_ore.json
+1f73bb7bd2a90948ba4e76a431e97f3e3e4307c8 assets/alloyance/models/item/nether_ignatius_ore.json
 d3c0821e0dda332e5585694f684f3d53c1b98114 assets/alloyance/models/item/osmium_block.json
 f0d6903d3473370abc0f536033c80f994eebddbe assets/alloyance/models/item/osmium_dust.json
 6489cb93607a58a7d752aa6c0bb44cf54ba66104 assets/alloyance/models/item/osmium_ingot.json
@@ -69,6 +74,7 @@ c122528d6fda4647c5109d0cbc67baa8759d2544 assets/alloyance/models/item/prometheum
 b3dadf72ade313d203e638c92bbd20e77bb150ce assets/alloyance/models/item/prometheum_ore.json
 376bc2054ede0087c8116f1aeb316ad614750208 assets/alloyance/models/item/raw_astral_silver.json
 50b04df6ca337a75040a3e2ec6331d715de4bd29 assets/alloyance/models/item/raw_deep_iron.json
+dd68db532dde3f888d516bab3132abf84d05c0ed assets/alloyance/models/item/raw_ignatius.json
 bc8fa47cf548768e6251ce0b7df1eeba1bffc41a assets/alloyance/models/item/raw_infuscolium.json
 13dc44afb3badd2b327177ae2083c67a52488264 assets/alloyance/models/item/raw_manganese.json
 11a5574f501bf995deff9ba07b6bc0e71f1a6144 assets/alloyance/models/item/raw_osmium.json

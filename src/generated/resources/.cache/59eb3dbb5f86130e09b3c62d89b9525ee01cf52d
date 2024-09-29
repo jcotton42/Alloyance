@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-28T21:59:16.4838421	Loot Tables
+// 1.21.1	2024-09-28T23:54:33.1469438	Loot Tables
 00986215a0540b1b41631c104659deaa568ccfea data/alloyance/loot_table/blocks/alloyer.json
 a80a5cc977a2ae430a4f1e00459a6153eafa8f03 data/alloyance/loot_table/blocks/angmallen_block.json
 d6e65e8d30262ba84d58b5ada3e8bc8b0a49b4c8 data/alloyance/loot_table/blocks/astral_silver_block.json
@@ -19,10 +19,12 @@ e83b646c7c7af3f668314fa1c11c2deb5a89a908 data/alloyance/loot_table/blocks/deep_i
 65ca6733eb9af3e41b74f86bd35ac5f8ad1dc9f1 data/alloyance/loot_table/blocks/deep_iron_ore.json
 dfc390b875e2da75ae723b6a530a897c826a44d2 data/alloyance/loot_table/blocks/electrum_block.json
 b8e58eb2f15e14af7b883d0896ba2ff4d06c8e71 data/alloyance/loot_table/blocks/hepatizon_block.json
+9011ed0177245008de29ca76084275a1e9263caf data/alloyance/loot_table/blocks/ignatius_block.json
 ceebd788e4fb1b47523c15b424bfddda381e8edc data/alloyance/loot_table/blocks/infuscolium_block.json
 db564ba2bf4d481ad6003b16d9bda68e5571957a data/alloyance/loot_table/blocks/infuscolium_ore.json
 b6714299770c3d2ab67e9ee93be4e39b04f0d760 data/alloyance/loot_table/blocks/manganese_block.json
 262dcc164a06325636d6754cee2f7d63aeddd9fd data/alloyance/loot_table/blocks/manganese_ore.json
+c96baa9b3eec782ab8b52b999a8a83243fa9a19b data/alloyance/loot_table/blocks/nether_ignatius_ore.json
 afdf364c1c272e5befd0be061f7e9c86b2cd6e05 data/alloyance/loot_table/blocks/osmium_block.json
 20e12d45d1ac4c0334a30338efd35ab6ffcf8a79 data/alloyance/loot_table/blocks/prometheum_block.json
 6f8306da99c434da45c942ecbef90c776e11435e data/alloyance/loot_table/blocks/prometheum_ore.json

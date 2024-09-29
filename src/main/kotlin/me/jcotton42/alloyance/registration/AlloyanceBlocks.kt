@@ -114,6 +114,9 @@ object AlloyanceBlocks {
     val ASTRAL_SILVER_ORE = ore(ASTRAL_SILVER)
     val ASTRAL_SILVER_BLOCK = storageBlock(ASTRAL_SILVER)
 
+    val NETHER_IGNATIUS_ORE = netherOre(IGNATIUS)
+    val IGNATIUS_BLOCK = storageBlock(IGNATIUS)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

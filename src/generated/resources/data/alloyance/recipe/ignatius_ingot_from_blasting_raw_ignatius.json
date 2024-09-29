@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "ignatius_ingot",
+  "ingredient": {
+    "item": "alloyance:raw_ignatius"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:ignatius_ingot"
+  }
+}

@@ -143,6 +143,13 @@ object AlloyanceItems {
     val ASTRAL_SILVER_NUGGET = nugget(ASTRAL_SILVER)
     val ASTRAL_SILVER_DUST = dust(ASTRAL_SILVER)
 
+    val NETHER_IGNATIUS_ORE = block(AlloyanceBlocks.NETHER_IGNATIUS_ORE)
+    val IGNATIUS_BLOCK = block(AlloyanceBlocks.IGNATIUS_BLOCK)
+    val RAW_IGNATIUS = rawMaterial(IGNATIUS)
+    val IGNATIUS_INGOT = ingot(IGNATIUS)
+    val IGNATIUS_NUGGET = nugget(IGNATIUS)
+    val IGNATIUS_DUST = dust(IGNATIUS)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "ignatius_nugget",
+  "ingredients": [
+    {
+      "item": "alloyance:ignatius_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:ignatius_nugget"
+  }
+}

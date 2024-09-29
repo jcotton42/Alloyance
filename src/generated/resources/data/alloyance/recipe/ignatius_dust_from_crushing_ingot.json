@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "ignatius_dust",
+  "ingredient": {
+    "tag": "c:ingots/ignatius"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:ignatius_dust"
+  }
+}

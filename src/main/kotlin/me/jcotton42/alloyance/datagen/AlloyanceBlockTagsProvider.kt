@@ -103,5 +103,5 @@ private fun getToolTag(metal: Metal): TagKey<Block> = when (metal) {
     STEEL, HEPATIZON, BLACK_STEEL -> BlockTags.NEEDS_DIAMOND_TOOL
 
     // tier 3
-    ASTRAL_SILVER -> BlockTags.NEEDS_DIAMOND_TOOL
+    ASTRAL_SILVER, IGNATIUS -> BlockTags.NEEDS_DIAMOND_TOOL
 }
