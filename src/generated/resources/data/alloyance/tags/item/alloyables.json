@@ -10,6 +10,7 @@
     "#alloyance:alloyables/bronze",
     "#alloyance:alloyables/brass",
     "#alloyance:alloyables/damascus_steel",
-    "#alloyance:alloyables/osmium"
+    "#alloyance:alloyables/osmium",
+    "#alloyance:alloyables/silver"
   ]
 }

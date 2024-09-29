@@ -4,6 +4,9 @@
     "alloyance:crusher",
     "alloyance:damascus_steel_block",
     "alloyance:osmium_block",
-    "alloyance:deepslate_osmium_ore"
+    "alloyance:silver_block",
+    "alloyance:silver_ore",
+    "alloyance:deepslate_osmium_ore",
+    "alloyance:deepslate_silver_ore"
   ]
 }

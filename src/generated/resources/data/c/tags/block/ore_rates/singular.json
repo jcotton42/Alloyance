@@ -7,6 +7,8 @@
     "alloyance:zinc_ore",
     "alloyance:deepslate_zinc_ore",
     "alloyance:tin_ore",
-    "alloyance:deepslate_osmium_ore"
+    "alloyance:deepslate_osmium_ore",
+    "alloyance:silver_ore",
+    "alloyance:deepslate_silver_ore"
   ]
 }

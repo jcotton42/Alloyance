@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-28T15:09:22.2226219	Item Models: alloyance
+// 1.21.1	2024-09-28T18:21:39.2170117	Item Models: alloyance
 5facb9ab27d0a31e5ed78d734fd05fbf45b69b48 assets/alloyance/models/item/brass_block.json
 bbd4f561ea91ce4f4f9b2459f328a9ca9d20b1b7 assets/alloyance/models/item/brass_dust.json
 7264319356f2c8c8be9605198e31056446786b2d assets/alloyance/models/item/brass_ingot.json
@@ -15,6 +15,7 @@ e99503a1168e632a5a4307bb8ef2f502d6d8b568 assets/alloyance/models/item/damascus_s
 adc14d65bc34952af3b365b04e2b1e5ed0a6f1a6 assets/alloyance/models/item/deepslate_deep_iron_ore.json
 1400859d2d9829efeaf6d7cfa0007937ceb0a0d8 assets/alloyance/models/item/deepslate_osmium_ore.json
 b98e1368967fea5c54f6239efcf34e74bc5dc472 assets/alloyance/models/item/deepslate_prometheum_ore.json
+f54e9f2a3e6e52b6eaa168f0a17d532ce6a15647 assets/alloyance/models/item/deepslate_silver_ore.json
 2f745cfff636b10445d4b30749957d12592fc576 assets/alloyance/models/item/deepslate_zinc_ore.json
 3d476e645ab5fad8076d0828910b3be75f6f55a2 assets/alloyance/models/item/deep_iron_block.json
 8875e5f698c3c4dc69d5837ddc0bd0e625a1f0d1 assets/alloyance/models/item/deep_iron_dust.json
@@ -36,8 +37,14 @@ b3dadf72ade313d203e638c92bbd20e77bb150ce assets/alloyance/models/item/prometheum
 50b04df6ca337a75040a3e2ec6331d715de4bd29 assets/alloyance/models/item/raw_deep_iron.json
 11a5574f501bf995deff9ba07b6bc0e71f1a6144 assets/alloyance/models/item/raw_osmium.json
 4520de8cdb5c354b8a27f6ee4bf53d506442f6e6 assets/alloyance/models/item/raw_prometheum.json
+429286322ac029f0761c428aa3cf48292b56aaff assets/alloyance/models/item/raw_silver.json
 096d0c70e0c358f9975562c08a857db9b635f2d5 assets/alloyance/models/item/raw_tin.json
 0a592eb8a3fa44703ea9534dff0eee0369081ee1 assets/alloyance/models/item/raw_zinc.json
+1036e9929ca7a8f5cd451a27b19bf9671a2275b3 assets/alloyance/models/item/silver_block.json
+ec11fbc5c78407a28a0834bfd9edc7f3aba2c0c4 assets/alloyance/models/item/silver_dust.json
+52cfc9509ae6cd3c449b7009c03c34040a0937a1 assets/alloyance/models/item/silver_ingot.json
+fb4fed6f162bd86bfebaa72e3c1b2d6e20c9f8cd assets/alloyance/models/item/silver_nugget.json
+534de7c6431de0922460aa1119fef8d391cc14b2 assets/alloyance/models/item/silver_ore.json
 5af677e15357cdfe325366aea1dfbb8fa90dd9a4 assets/alloyance/models/item/thermite_dust.json
 de7becb63407e4fc36d8ab78179f895a771b0b81 assets/alloyance/models/item/tin_block.json
 7fbf0505df28d0b8bf7e637239580763d2a63b6a assets/alloyance/models/item/tin_dust.json

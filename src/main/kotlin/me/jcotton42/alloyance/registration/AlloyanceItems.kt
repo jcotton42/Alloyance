@@ -87,6 +87,14 @@ object AlloyanceItems {
     val OSMIUM_NUGGET = nugget(OSMIUM)
     val OSMIUM_DUST = dust(OSMIUM)
 
+    val SILVER_ORE = block(AlloyanceBlocks.SILVER_ORE)
+    val DEEPSLATE_SILVER_ORE = block(AlloyanceBlocks.DEEPSLATE_SILVER_ORE)
+    val SILVER_BLOCK = block(AlloyanceBlocks.SILVER_BLOCK)
+    val RAW_SILVER = rawMaterial(SILVER)
+    val SILVER_INGOT = ingot(SILVER)
+    val SILVER_NUGGET = nugget(SILVER)
+    val SILVER_DUST = dust(SILVER)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

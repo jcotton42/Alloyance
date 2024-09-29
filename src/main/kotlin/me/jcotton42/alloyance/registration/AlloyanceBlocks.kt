@@ -87,6 +87,10 @@ object AlloyanceBlocks {
     val DEEPSLATE_OSMIUM_ORE = deepslateOre(OSMIUM)
     val OSMIUM_BLOCK = storageBlock(OSMIUM)
 
+    val SILVER_ORE = ore(SILVER)
+    val DEEPSLATE_SILVER_ORE = deepslateOre(SILVER)
+    val SILVER_BLOCK = storageBlock(SILVER)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

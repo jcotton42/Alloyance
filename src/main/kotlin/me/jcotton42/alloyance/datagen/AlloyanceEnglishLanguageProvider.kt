@@ -137,5 +137,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.DAMASCUS_STEEL -> "Damascus Steel"
 
         Metal.OSMIUM -> "Osmium"
+        Metal.SILVER -> "Silver"
     }
 }
