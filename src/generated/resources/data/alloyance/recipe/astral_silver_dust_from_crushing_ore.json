@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "astral_silver_dust",
+  "ingredient": {
+    "tag": "c:ores/astral_silver"
+  },
+  "result": {
+    "count": 2,
+    "id": "alloyance:astral_silver_dust"
+  }
+}

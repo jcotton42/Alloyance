@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "astral_silver_block",
+  "key": {
+    "i": {
+      "item": "alloyance:astral_silver_ingot"
+    }
+  },
+  "pattern": [
+    "iii",
+    "iii",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:astral_silver_block"
+  }
+}

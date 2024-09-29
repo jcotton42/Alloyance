@@ -109,6 +109,9 @@ object AlloyanceBlocks {
 
     val ELECTRUM_BLOCK = storageBlock(ELECTRUM)
 
+    val ASTRAL_SILVER_ORE = ore(ASTRAL_SILVER)
+    val ASTRAL_SILVER_BLOCK = storageBlock(ASTRAL_SILVER)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

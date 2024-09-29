@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "astral_silver_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:astral_silver_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:astral_silver_ingot"
+  }
+}

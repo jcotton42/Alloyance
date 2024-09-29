@@ -20,4 +20,7 @@ enum class Metal(val id: String, val hardness: Float, val blockBlastResistance: 
     HEPATIZON("hepatizon", 10.0f, 15.0f),
     BLACK_STEEL("black_steel", 10.0f, 15.0f),
     ELECTRUM("electrum", 10.0f, 6.0f),
+
+    // tier 3
+    ASTRAL_SILVER("astral_silver", 4.1f, 10.0f),
 }

@@ -1,6 +1,7 @@
-// 1.21.1	2024-09-28T21:25:27.4349087	Tags for minecraft:item mod id alloyance
-c9f9f3cab1aceeec0c808011fbace29f013447ea data/alloyance/tags/item/alloyables.json
+// 1.21.1	2024-09-28T21:59:16.4985029	Tags for minecraft:item mod id alloyance
+1da07bbe366fbc6ea98d5d94f46e382a186008e9 data/alloyance/tags/item/alloyables.json
 377249b26bc8f1377bded168543b4379340c69d6 data/alloyance/tags/item/alloyables/angmallen.json
+4160ff10b39f9bf455ee2b99893bc69582b02f1f data/alloyance/tags/item/alloyables/astral_silver.json
 b9bb9d5217c6f23a4392ab6a4f83ceb90aa2ee61 data/alloyance/tags/item/alloyables/black_steel.json
 db59289810d0b8e15d6bdb0f9ab6741f394d89b5 data/alloyance/tags/item/alloyables/brass.json
 a85a9d8b241f03903bf9368de9ea36a5c0e9740c data/alloyance/tags/item/alloyables/bronze.json
@@ -19,8 +20,9 @@ f73b1a510cd6db95928c95d3e037a3d6047b9d60 data/alloyance/tags/item/alloyables/pro
 b2b40839320518ac3843e3df7993bf29ff219a36 data/alloyance/tags/item/alloyables/steel.json
 3b121bbaff2a2788269466daf49a2e4ef4f9372f data/alloyance/tags/item/alloyables/tin.json
 68143d514bf194a281517d128892c2d73c34fbe9 data/alloyance/tags/item/alloyables/zinc.json
-3d2a8e29222f789c203f00f64dc229efec542e38 data/c/tags/item/dusts.json
+de8d55c24b35c582dd4e0670e35f8c14f788dbfa data/c/tags/item/dusts.json
 dc9bd4011c544abee5dee660e2d1d6c0c69dabc2 data/c/tags/item/dusts/angmallen.json
+75818ad6811847efd72f7754f35bfff31c375fcf data/c/tags/item/dusts/astral_silver.json
 af6d70da67ce62db302d63b0ae52a6baa3e157aa data/c/tags/item/dusts/black_steel.json
 970284b3ba2b9e918f7f3ac1cfd3bc74a18a631c data/c/tags/item/dusts/brass.json
 2aecfd2165a356e6b0b36c5322a414322a5e4eff data/c/tags/item/dusts/bronze.json
@@ -39,8 +41,9 @@ ae7a7f1627ea0bf71bd51a229fd5020098c3cb42 data/c/tags/item/dusts/silver.json
 a322e89c2441bbff5718d20779b70fc3f1d3a889 data/c/tags/item/dusts/steel.json
 f778cc51e96c4dfd977cb382ed889ee3e715ef59 data/c/tags/item/dusts/tin.json
 30e5ebfb6e043cab8b77e480ca42caf4fb322ab6 data/c/tags/item/dusts/zinc.json
-bbab53c2547bafc223e98d038adb5a99af3e9742 data/c/tags/item/ingots.json
+88fc262eb3ac0ba9d502f5e340caad7781da4917 data/c/tags/item/ingots.json
 cef653a06639c3cabdcd1cec42139b117f7acd05 data/c/tags/item/ingots/angmallen.json
+9057d1eedc31252c11242a2feb8fe680856a29d8 data/c/tags/item/ingots/astral_silver.json
 5aa99436ac7f5204792567d95dced6cbcd211d6b data/c/tags/item/ingots/black_steel.json
 811b635596d54c94fba1dc20c41fc78b242e7261 data/c/tags/item/ingots/brass.json
 514006bacfd1d23bb9b91f2336d74fb648565568 data/c/tags/item/ingots/bronze.json
@@ -56,8 +59,9 @@ aa455f91202176c6cc9c1acc4c40f8bd2587a774 data/c/tags/item/ingots/prometheum.json
 3a161599a2f99a1b99e4b07f60d75c9bd1e7a592 data/c/tags/item/ingots/steel.json
 d5e25c33f6faacff229b3e494b5401b5d14314d8 data/c/tags/item/ingots/tin.json
 38c245b799b04efe6544d71d99b1b08e0bc99083 data/c/tags/item/ingots/zinc.json
-367945017f8817414111d2674f6339f1f8be4c8f data/c/tags/item/nuggets.json
+9af80cbb31631c4b3d879ef1e3c8f51693f7b9f6 data/c/tags/item/nuggets.json
 324918a4426c2a08d3df317fa698601bb95bdbc3 data/c/tags/item/nuggets/angmallen.json
+8c648abb8dfdc7a949a7a02bf48ca1bff2c8b45f data/c/tags/item/nuggets/astral_silver.json
 3d18e45087cc172b48d98fcb92eb94e2ad1b3b0a data/c/tags/item/nuggets/black_steel.json
 885f396b5825c976482617c824bc7c4802ceb232 data/c/tags/item/nuggets/brass.json
 555afb023555207c488dfaa416adbf9533535ecd data/c/tags/item/nuggets/bronze.json
@@ -73,7 +77,8 @@ eab586d664870d225290e5258ad6a7c41b90bef1 data/c/tags/item/nuggets/silver.json
 8357f661abf0cd992205594f8cb898157aea0cbb data/c/tags/item/nuggets/steel.json
 30204e7433eb335926278c28be8a971d12fee8a5 data/c/tags/item/nuggets/tin.json
 74dd75e5f736dce3240bcce26f0ccf4890de7cbc data/c/tags/item/nuggets/zinc.json
-7a7d11d4b5693a3c62d572b4083629b2880ce9ad data/c/tags/item/ores.json
+f057364c9ee311a53905cd03d5d7e138ad63dada data/c/tags/item/ores.json
+b0b453b05b70b674bcd6d479954b4063df9a6945 data/c/tags/item/ores/astral_silver.json
 4856011b0694a59916cb7a20cf25b9d6c9f76c01 data/c/tags/item/ores/deep_iron.json
 aae418588f11ddea316f7ab7e54a1a33b83dd1c9 data/c/tags/item/ores/infuscolium.json
 7cf3fd3aafcb434fdd0bb1346418575ad62b3e8b data/c/tags/item/ores/manganese.json
@@ -83,9 +88,10 @@ b5847b4a65fb265052f0d2c49f73b82b8b8bc0f9 data/c/tags/item/ores/silver.json
 96299ff0191a5fa4286bcbaf443628b556345d85 data/c/tags/item/ores/tin.json
 8f8ea038e3acfede87f4a8fb814ec02cd1dfe917 data/c/tags/item/ores/zinc.json
 0868ac28397d9d7290b683bf3439907688c80585 data/c/tags/item/ores_in_ground/deepslate.json
-4763daf21b28cc02f9694130bbfe34461a7c41e1 data/c/tags/item/ores_in_ground/stone.json
-52973b8abac7493a50c1925ee2fbf582c49feec6 data/c/tags/item/ore_rates/singular.json
-a279dcc4e12d028216faf5bfee6fc4ff4001c1bb data/c/tags/item/raw_materials.json
+7a2cb4964fdcfa961c98bf5a93f9245cf42da96c data/c/tags/item/ores_in_ground/stone.json
+51bd893a16c4b0025db287382f550574484fdf36 data/c/tags/item/ore_rates/singular.json
+af27d4a33ac72fe6432b4e1a46971003cd52c01c data/c/tags/item/raw_materials.json
+2a8658cfdd7a80a24b90c29dc4e31007433a9771 data/c/tags/item/raw_materials/astral_silver.json
 45ea6a75205536a5d0a0cafccbc70cfebae9540f data/c/tags/item/raw_materials/deep_iron.json
 2b69d06de844cb52e204012ce8b8544da08a6b4c data/c/tags/item/raw_materials/infuscolium.json
 2028abe1726b80656d86016bb76544b19ea747aa data/c/tags/item/raw_materials/manganese.json
@@ -94,8 +100,9 @@ fc6448189ba34be78d422411fe2dedb3913a9849 data/c/tags/item/raw_materials/promethe
 348671637456be88f6b784a88f954e8851c6da43 data/c/tags/item/raw_materials/silver.json
 74bae4e38cf66dff64a2f45995c17313b5dd78b7 data/c/tags/item/raw_materials/tin.json
 49ba2295d2bb6e79b49ce95fa10f56418a5955d6 data/c/tags/item/raw_materials/zinc.json
-400e554f1f88ff06989e49f7fed72ba319f6df0e data/c/tags/item/storage_blocks.json
+8173e69953e119519088658737576647889f6ed2 data/c/tags/item/storage_blocks.json
 18ef9f2ab9af5be3948a4e6cdf6890a3cba1df42 data/c/tags/item/storage_blocks/angmallen.json
+860f60434d7b9ca9e627318a83cd5d09bacded2d data/c/tags/item/storage_blocks/astral_silver.json
 45842c65b05f479234c6354d62a69090b93e6369 data/c/tags/item/storage_blocks/black_steel.json
 5a3b92ef94bbbc5ca6fc0cc6ecbd1cb5b125a2ff data/c/tags/item/storage_blocks/brass.json
 8e63366bfe3429b1c1976829d63e839feee4f5ec data/c/tags/item/storage_blocks/bronze.json

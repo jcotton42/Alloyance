@@ -2,6 +2,8 @@
   "values": [
     "alloyance:steel_block",
     "alloyance:hepatizon_block",
-    "alloyance:black_steel_block"
+    "alloyance:black_steel_block",
+    "alloyance:astral_silver_block",
+    "alloyance:astral_silver_ore"
   ]
 }

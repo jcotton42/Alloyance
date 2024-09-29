@@ -1,8 +1,13 @@
-// 1.21.1	2024-09-28T21:25:27.4329105	Item Models: alloyance
+// 1.21.1	2024-09-28T21:59:16.4955031	Item Models: alloyance
 108c391f311a4a8cfe2e0dd65402f5ba2141c734 assets/alloyance/models/item/angmallen_block.json
 85ba55fe0cd8e5b732353680066523bdcea8a466 assets/alloyance/models/item/angmallen_dust.json
 ec2a81e76c2cc1fc87dd300872eec982fa8f03fa assets/alloyance/models/item/angmallen_ingot.json
 a7bfe23ccb06feddd27a75620f2c663d3cab6e12 assets/alloyance/models/item/angmallen_nugget.json
+d68d520c9f68a62d40769503bf256ef4c10fb140 assets/alloyance/models/item/astral_silver_block.json
+6e5bbfae7fe05e6aa2b607aad04d5eb9f4b30e67 assets/alloyance/models/item/astral_silver_dust.json
+29c48c49d8263013eb26737d05330a710c577f21 assets/alloyance/models/item/astral_silver_ingot.json
+c1f95c29b81607420a70c0645f04bd42f98c5232 assets/alloyance/models/item/astral_silver_nugget.json
+d9e8c44516407f785b6ae8cc1f10f1145dd3d686 assets/alloyance/models/item/astral_silver_ore.json
 3cc2d63d4beff0505bc0006e7444b67c83971c8f assets/alloyance/models/item/black_steel_block.json
 07a403b38c5c7f7dfbba1a6a6e1cb8fd84d00ab8 assets/alloyance/models/item/black_steel_dust.json
 1ed0b85fa06affd6a7ece8214992da1c30631e53 assets/alloyance/models/item/black_steel_ingot.json
@@ -62,6 +67,7 @@ f0d6903d3473370abc0f536033c80f994eebddbe assets/alloyance/models/item/osmium_dus
 89d323675d6aa34753f77167f1c2af8fc5bcc8cb assets/alloyance/models/item/prometheum_ingot.json
 c122528d6fda4647c5109d0cbc67baa8759d2544 assets/alloyance/models/item/prometheum_nugget.json
 b3dadf72ade313d203e638c92bbd20e77bb150ce assets/alloyance/models/item/prometheum_ore.json
+376bc2054ede0087c8116f1aeb316ad614750208 assets/alloyance/models/item/raw_astral_silver.json
 50b04df6ca337a75040a3e2ec6331d715de4bd29 assets/alloyance/models/item/raw_deep_iron.json
 bc8fa47cf548768e6251ce0b7df1eeba1bffc41a assets/alloyance/models/item/raw_infuscolium.json
 13dc44afb3badd2b327177ae2083c67a52488264 assets/alloyance/models/item/raw_manganese.json
