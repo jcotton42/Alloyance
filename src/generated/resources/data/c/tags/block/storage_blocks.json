@@ -11,6 +11,7 @@
     "#c:storage_blocks/silver",
     "#c:storage_blocks/infuscolium",
     "#c:storage_blocks/manganese",
-    "#c:storage_blocks/angmallen"
+    "#c:storage_blocks/angmallen",
+    "#c:storage_blocks/steel"
   ]
 }

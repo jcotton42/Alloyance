@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-28T20:51:26.5949916	Block States: alloyance
+// 1.21.1	2024-09-28T21:00:13.4393541	Block States: alloyance
 c26456305e269f780b04ddc67ae97c824afc4b9b assets/alloyance/blockstates/angmallen_block.json
 c43dc809c374767bffdda77a2b99324659be7594 assets/alloyance/blockstates/brass_block.json
 01f43f5ce418f5caea95dd4e13d212a0bc92d74b assets/alloyance/blockstates/bronze_block.json
@@ -21,6 +21,7 @@ a7550445593ffde0b8194980b6f901381d7ffee1 assets/alloyance/blockstates/osmium_blo
 a3a68fa8d68c2545a0b983b278486586003644da assets/alloyance/blockstates/prometheum_ore.json
 812928603ff5a576d2b112e66c20c6c00a5920ab assets/alloyance/blockstates/silver_block.json
 e2f07f47c5c664d3d25dbce4f216a95bcd81d76e assets/alloyance/blockstates/silver_ore.json
+8f5a17de209b8bf8ee424a36438538ccba02fa33 assets/alloyance/blockstates/steel_block.json
 fb5a6f36f1a4fa638382eac46915bdaed96e94a7 assets/alloyance/blockstates/tin_block.json
 d708b81c2209135700696ede31f1329a4aeda949 assets/alloyance/blockstates/tin_ore.json
 7c118d83e12feea50af060a632b00f2efbcf160e assets/alloyance/blockstates/zinc_block.json
@@ -47,6 +48,7 @@ c704395ec3f916b9a7ad03cc5abc1035b85a5196 assets/alloyance/models/block/manganese
 ad879b893dec554f0c608df01d1a6bb090b85345 assets/alloyance/models/block/prometheum_ore.json
 62ae4c4df0ac6487f6a6acc76e22cffc887c5834 assets/alloyance/models/block/silver_block.json
 e7cc25c328dffa96df6109ada3d8d9a7a1df0ede assets/alloyance/models/block/silver_ore.json
+15dd231ce42da83a61fc2dcf7f6182fa197cf587 assets/alloyance/models/block/steel_block.json
 9a6be2d8a23d50ba37f8ddc1bd51815e0904b4ce assets/alloyance/models/block/tin_block.json
 a22f61ac10da814eb738b23d2d7b8d954033e4f3 assets/alloyance/models/block/tin_ore.json
 415313370252000678dc2f3528323591db088723 assets/alloyance/models/block/zinc_block.json

@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-28T20:51:26.6055164	Item Models: alloyance
+// 1.21.1	2024-09-28T21:00:13.4503749	Item Models: alloyance
 108c391f311a4a8cfe2e0dd65402f5ba2141c734 assets/alloyance/models/item/angmallen_block.json
 85ba55fe0cd8e5b732353680066523bdcea8a466 assets/alloyance/models/item/angmallen_dust.json
 ec2a81e76c2cc1fc87dd300872eec982fa8f03fa assets/alloyance/models/item/angmallen_ingot.json
@@ -63,6 +63,10 @@ ec11fbc5c78407a28a0834bfd9edc7f3aba2c0c4 assets/alloyance/models/item/silver_dus
 52cfc9509ae6cd3c449b7009c03c34040a0937a1 assets/alloyance/models/item/silver_ingot.json
 fb4fed6f162bd86bfebaa72e3c1b2d6e20c9f8cd assets/alloyance/models/item/silver_nugget.json
 534de7c6431de0922460aa1119fef8d391cc14b2 assets/alloyance/models/item/silver_ore.json
+aa05ce0d3794a5dca367dd2c15adda9ef496b384 assets/alloyance/models/item/steel_block.json
+a733ca3f9f53981749d9dd1b91b9ef0f7c03f263 assets/alloyance/models/item/steel_dust.json
+3336ef295f7a286fd9aa24596deb1f9c6c5b19c4 assets/alloyance/models/item/steel_ingot.json
+6bb5f90180c1829ea161ecfa2fb9ab8544c6a00c assets/alloyance/models/item/steel_nugget.json
 5af677e15357cdfe325366aea1dfbb8fa90dd9a4 assets/alloyance/models/item/thermite_dust.json
 de7becb63407e4fc36d8ab78179f895a771b0b81 assets/alloyance/models/item/tin_block.json
 7fbf0505df28d0b8bf7e637239580763d2a63b6a assets/alloyance/models/item/tin_dust.json

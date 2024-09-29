@@ -35,6 +35,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
         addAlloy(output, BRASS, 4, 1.75f, COPPER, 3, ZINC, 1)
         addAlloy(output, DAMASCUS_STEEL, 3, 1.5f, IRON, 1, BRONZE, 2)
         addAlloy(output, ANGMALLEN, 2, 1.25f, GOLD, 1, IRON, 1)
+        addAlloy(output, STEEL, 2, 1.5f, IRON, 1, MANGANESE, 2)
     }
 
     private fun addVanillaCompatRecipes(output: RecipeOutput) {

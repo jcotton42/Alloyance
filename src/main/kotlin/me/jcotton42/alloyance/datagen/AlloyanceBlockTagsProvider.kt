@@ -76,4 +76,5 @@ private fun getToolTag(metal: Metal): TagKey<Block> = when (metal) {
     DEEP_IRON, PROMETHEUM, ZINC, TIN, BRONZE, BRASS -> BlockTags.NEEDS_STONE_TOOL
     DAMASCUS_STEEL -> BlockTags.NEEDS_IRON_TOOL
     OSMIUM, SILVER, INFUSCOLIUM, MANGANESE, ANGMALLEN -> BlockTags.NEEDS_IRON_TOOL
+    STEEL -> BlockTags.NEEDS_DIAMOND_TOOL
 }

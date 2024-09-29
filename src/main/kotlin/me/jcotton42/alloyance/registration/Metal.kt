@@ -16,4 +16,5 @@ enum class Metal(val id: String, val hardness: Float, val blockBlastResistance: 
     INFUSCOLIUM("infuscolium", 3.2f, 10.0f),
     MANGANESE("manganese", 3.2f, 10.0f),
     ANGMALLEN("angmallen", 10.0f, 10.0f),
+    STEEL("steel", 10.0f, 15.0f),
 }

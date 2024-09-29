@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-28T20:51:26.5969908	Loot Tables
+// 1.21.1	2024-09-28T21:00:13.4418523	Loot Tables
 00986215a0540b1b41631c104659deaa568ccfea data/alloyance/loot_table/blocks/alloyer.json
 a80a5cc977a2ae430a4f1e00459a6153eafa8f03 data/alloyance/loot_table/blocks/angmallen_block.json
 977bab28703316c4ca553b283bd8f0d3bfdd801b data/alloyance/loot_table/blocks/brass_block.json
@@ -23,6 +23,7 @@ afdf364c1c272e5befd0be061f7e9c86b2cd6e05 data/alloyance/loot_table/blocks/osmium
 6f8306da99c434da45c942ecbef90c776e11435e data/alloyance/loot_table/blocks/prometheum_ore.json
 8b9b776b1008423d20b046f9e796dc62dc6a18ad data/alloyance/loot_table/blocks/silver_block.json
 ddf6a22386853a575fc967430e43be6b22338e30 data/alloyance/loot_table/blocks/silver_ore.json
+ad562ccd44763f3bc7f00e876172dcdf546ca282 data/alloyance/loot_table/blocks/steel_block.json
 d7e1dd86184c33a50e8344c96e25b97f6cad75fd data/alloyance/loot_table/blocks/tin_block.json
 997e8796cd5f357a034ee34feffb3667e55c9803 data/alloyance/loot_table/blocks/tin_ore.json
 f58fcc1eb0ba6660192a96b2bbf205bd44a404ee data/alloyance/loot_table/blocks/zinc_block.json

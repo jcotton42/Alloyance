@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-28T20:51:26.6070142	Tags for minecraft:block mod id alloyance
+// 1.21.1	2024-09-28T21:00:13.4518744	Tags for minecraft:block mod id alloyance
 7a7d11d4b5693a3c62d572b4083629b2880ce9ad data/c/tags/block/ores.json
 4856011b0694a59916cb7a20cf25b9d6c9f76c01 data/c/tags/block/ores/deep_iron.json
 aae418588f11ddea316f7ab7e54a1a33b83dd1c9 data/c/tags/block/ores/infuscolium.json
@@ -11,7 +11,7 @@ b5847b4a65fb265052f0d2c49f73b82b8b8bc0f9 data/c/tags/block/ores/silver.json
 0868ac28397d9d7290b683bf3439907688c80585 data/c/tags/block/ores_in_ground/deepslate.json
 4763daf21b28cc02f9694130bbfe34461a7c41e1 data/c/tags/block/ores_in_ground/stone.json
 52973b8abac7493a50c1925ee2fbf582c49feec6 data/c/tags/block/ore_rates/singular.json
-09bbe561cadb1afb080a52efea39fdc0d366d470 data/c/tags/block/storage_blocks.json
+fc23535ac4f095f60109d20706f2595c93023e2a data/c/tags/block/storage_blocks.json
 18ef9f2ab9af5be3948a4e6cdf6890a3cba1df42 data/c/tags/block/storage_blocks/angmallen.json
 5a3b92ef94bbbc5ca6fc0cc6ecbd1cb5b125a2ff data/c/tags/block/storage_blocks/brass.json
 8e63366bfe3429b1c1976829d63e839feee4f5ec data/c/tags/block/storage_blocks/bronze.json
@@ -22,9 +22,11 @@ c58df94141ec1add51460dca22efe821ad3529c6 data/c/tags/block/storage_blocks/mangan
 7d9c5bd1d44dfbd432c1366cda8c67dce2ae72e5 data/c/tags/block/storage_blocks/osmium.json
 f6747fa94156223e85cc85c8446fd91731f53886 data/c/tags/block/storage_blocks/prometheum.json
 e46f97339fbaecc0c38babcb17157c046a349f31 data/c/tags/block/storage_blocks/silver.json
+8784ef98f5156affc5e14abb441354ab52dd170f data/c/tags/block/storage_blocks/steel.json
 f827a7d6fcf6dfe3eee3acf5972208bb27dd7814 data/c/tags/block/storage_blocks/tin.json
 44dcabb93af53db6238114d0bb7887f3a7b757a7 data/c/tags/block/storage_blocks/zinc.json
-35bf6d4cda5861c9812ca30c4f547030e51c3983 data/minecraft/tags/block/beacon_base_blocks.json
-a7948b6960338327634ac0c1c0c7bee18e2666b6 data/minecraft/tags/block/mineable/pickaxe.json
+8f850c90204e4ceea04abeb203da632c8a1577b9 data/minecraft/tags/block/beacon_base_blocks.json
+df5f07f33b822e5adcac569eda3bc00109919f8d data/minecraft/tags/block/mineable/pickaxe.json
+8784ef98f5156affc5e14abb441354ab52dd170f data/minecraft/tags/block/needs_diamond_tool.json
 c86876bf6f03366081a28635dd1d9b9fda60dcac data/minecraft/tags/block/needs_iron_tool.json
 e293b0f44585305db5c648efaa3e9f56918c2c60 data/minecraft/tags/block/needs_stone_tool.json
