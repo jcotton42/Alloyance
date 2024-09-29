@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "angmallen_dust",
+  "ingredient": {
+    "tag": "c:ingots/angmallen"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:angmallen_dust"
+  }
+}

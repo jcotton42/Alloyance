@@ -1,4 +1,5 @@
-// 1.21.1	2024-09-28T20:06:05.5775054	Block States: alloyance
+// 1.21.1	2024-09-28T20:51:26.5949916	Block States: alloyance
+c26456305e269f780b04ddc67ae97c824afc4b9b assets/alloyance/blockstates/angmallen_block.json
 c43dc809c374767bffdda77a2b99324659be7594 assets/alloyance/blockstates/brass_block.json
 01f43f5ce418f5caea95dd4e13d212a0bc92d74b assets/alloyance/blockstates/bronze_block.json
 722c6fbc65c9d32a01ea2aa4b24e4914871ba2f0 assets/alloyance/blockstates/damascus_steel_block.json
@@ -24,6 +25,7 @@ fb5a6f36f1a4fa638382eac46915bdaed96e94a7 assets/alloyance/blockstates/tin_block.
 d708b81c2209135700696ede31f1329a4aeda949 assets/alloyance/blockstates/tin_ore.json
 7c118d83e12feea50af060a632b00f2efbcf160e assets/alloyance/blockstates/zinc_block.json
 9e34f9e29b3d0ecefe58ddca4b87c873b1d7dfc4 assets/alloyance/blockstates/zinc_ore.json
+1671fd3af438b4b7acee1127c594c2d2bcbcaec3 assets/alloyance/models/block/angmallen_block.json
 2d5d1e35e33394787002543ae720dc5c29b0c7ea assets/alloyance/models/block/brass_block.json
 ed1152b343101d5bf997f4e09857e2a5dcec4df9 assets/alloyance/models/block/bronze_block.json
 b4ab6dd2355a5e3b27e03807ae7c9566bdd89a0f assets/alloyance/models/block/damascus_steel_block.json

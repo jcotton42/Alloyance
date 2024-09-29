@@ -99,6 +99,8 @@ object AlloyanceBlocks {
     val DEEPSLATE_MANGANESE_ORE = deepslateOre(MANGANESE)
     val MANGANESE_BLOCK = storageBlock(MANGANESE)
 
+    val ANGMALLEN_BLOCK = storageBlock(ANGMALLEN)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

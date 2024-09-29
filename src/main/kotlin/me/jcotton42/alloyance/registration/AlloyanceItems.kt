@@ -111,6 +111,11 @@ object AlloyanceItems {
     val MANGANESE_NUGGET = nugget(MANGANESE)
     val MANGANESE_DUST = dust(MANGANESE)
 
+    val ANGMALLEN_BLOCK = block(AlloyanceBlocks.ANGMALLEN_BLOCK)
+    val ANGMALLEN_INGOT = ingot(ANGMALLEN)
+    val ANGMALLEN_NUGGET = nugget(ANGMALLEN)
+    val ANGMALLEN_DUST = dust(ANGMALLEN)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

@@ -13,6 +13,7 @@
     "#alloyance:alloyables/osmium",
     "#alloyance:alloyables/silver",
     "#alloyance:alloyables/infuscolium",
-    "#alloyance:alloyables/manganese"
+    "#alloyance:alloyables/manganese",
+    "#alloyance:alloyables/angmallen"
   ]
 }

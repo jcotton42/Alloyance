@@ -10,6 +10,7 @@
     "alloyance:osmium_block",
     "alloyance:silver_block",
     "alloyance:infuscolium_block",
-    "alloyance:manganese_block"
+    "alloyance:manganese_block",
+    "alloyance:angmallen_block"
   ]
 }

@@ -1,4 +1,8 @@
-// 1.21.1	2024-09-28T20:06:05.5865249	Item Models: alloyance
+// 1.21.1	2024-09-28T20:51:26.6055164	Item Models: alloyance
+108c391f311a4a8cfe2e0dd65402f5ba2141c734 assets/alloyance/models/item/angmallen_block.json
+85ba55fe0cd8e5b732353680066523bdcea8a466 assets/alloyance/models/item/angmallen_dust.json
+ec2a81e76c2cc1fc87dd300872eec982fa8f03fa assets/alloyance/models/item/angmallen_ingot.json
+a7bfe23ccb06feddd27a75620f2c663d3cab6e12 assets/alloyance/models/item/angmallen_nugget.json
 5facb9ab27d0a31e5ed78d734fd05fbf45b69b48 assets/alloyance/models/item/brass_block.json
 bbd4f561ea91ce4f4f9b2459f328a9ca9d20b1b7 assets/alloyance/models/item/brass_dust.json
 7264319356f2c8c8be9605198e31056446786b2d assets/alloyance/models/item/brass_ingot.json

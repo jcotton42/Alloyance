@@ -140,5 +140,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.SILVER -> "Silver"
         Metal.INFUSCOLIUM -> "Infuscolium"
         Metal.MANGANESE -> "Manganese"
+        Metal.ANGMALLEN -> "Angmallen"
     }
 }
