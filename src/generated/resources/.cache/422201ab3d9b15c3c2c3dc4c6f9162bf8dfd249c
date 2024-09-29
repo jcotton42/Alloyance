@@ -1,6 +1,7 @@
-// 1.21.1	2024-09-28T21:11:37.6699599	Tags for minecraft:item mod id alloyance
-1929e53a15e14d6fed42c3c39b71b05f608f34b5 data/alloyance/tags/item/alloyables.json
+// 1.21.1	2024-09-28T21:20:05.6711465	Tags for minecraft:item mod id alloyance
+470c03153cbb17b3970765dd8c8f4b554441d261 data/alloyance/tags/item/alloyables.json
 377249b26bc8f1377bded168543b4379340c69d6 data/alloyance/tags/item/alloyables/angmallen.json
+b9bb9d5217c6f23a4392ab6a4f83ceb90aa2ee61 data/alloyance/tags/item/alloyables/black_steel.json
 db59289810d0b8e15d6bdb0f9ab6741f394d89b5 data/alloyance/tags/item/alloyables/brass.json
 a85a9d8b241f03903bf9368de9ea36a5c0e9740c data/alloyance/tags/item/alloyables/bronze.json
 3303dea003f2f7f81d93ee159b9f20862af5ce95 data/alloyance/tags/item/alloyables/copper.json
@@ -17,8 +18,9 @@ f73b1a510cd6db95928c95d3e037a3d6047b9d60 data/alloyance/tags/item/alloyables/pro
 b2b40839320518ac3843e3df7993bf29ff219a36 data/alloyance/tags/item/alloyables/steel.json
 3b121bbaff2a2788269466daf49a2e4ef4f9372f data/alloyance/tags/item/alloyables/tin.json
 68143d514bf194a281517d128892c2d73c34fbe9 data/alloyance/tags/item/alloyables/zinc.json
-2744a0f2d3eea858631c6dd66ccfff0cad6dfb56 data/c/tags/item/dusts.json
+062dd65316b7cc232047ecf80fdbd3b031ac960a data/c/tags/item/dusts.json
 dc9bd4011c544abee5dee660e2d1d6c0c69dabc2 data/c/tags/item/dusts/angmallen.json
+af6d70da67ce62db302d63b0ae52a6baa3e157aa data/c/tags/item/dusts/black_steel.json
 970284b3ba2b9e918f7f3ac1cfd3bc74a18a631c data/c/tags/item/dusts/brass.json
 2aecfd2165a356e6b0b36c5322a414322a5e4eff data/c/tags/item/dusts/bronze.json
 7ff7dedc30ce1cae10a7d49f0956ec041158856d data/c/tags/item/dusts/copper.json
@@ -35,8 +37,9 @@ ae7a7f1627ea0bf71bd51a229fd5020098c3cb42 data/c/tags/item/dusts/silver.json
 a322e89c2441bbff5718d20779b70fc3f1d3a889 data/c/tags/item/dusts/steel.json
 f778cc51e96c4dfd977cb382ed889ee3e715ef59 data/c/tags/item/dusts/tin.json
 30e5ebfb6e043cab8b77e480ca42caf4fb322ab6 data/c/tags/item/dusts/zinc.json
-1c176c035a078de2e2a13c0394ffd28effb53a31 data/c/tags/item/ingots.json
+5672a7ddb4bdd1880d6775b277fc63317b6f402d data/c/tags/item/ingots.json
 cef653a06639c3cabdcd1cec42139b117f7acd05 data/c/tags/item/ingots/angmallen.json
+5aa99436ac7f5204792567d95dced6cbcd211d6b data/c/tags/item/ingots/black_steel.json
 811b635596d54c94fba1dc20c41fc78b242e7261 data/c/tags/item/ingots/brass.json
 514006bacfd1d23bb9b91f2336d74fb648565568 data/c/tags/item/ingots/bronze.json
 b62f6f47f799bc714e95f0a43fb6451d22315420 data/c/tags/item/ingots/damascus_steel.json
@@ -50,8 +53,9 @@ aa455f91202176c6cc9c1acc4c40f8bd2587a774 data/c/tags/item/ingots/prometheum.json
 3a161599a2f99a1b99e4b07f60d75c9bd1e7a592 data/c/tags/item/ingots/steel.json
 d5e25c33f6faacff229b3e494b5401b5d14314d8 data/c/tags/item/ingots/tin.json
 38c245b799b04efe6544d71d99b1b08e0bc99083 data/c/tags/item/ingots/zinc.json
-7ae7859b417e22ac373caa7cffd346b78c9e9160 data/c/tags/item/nuggets.json
+d0d24a72f58ce06c2c8ae4b90b6bc19772981d7c data/c/tags/item/nuggets.json
 324918a4426c2a08d3df317fa698601bb95bdbc3 data/c/tags/item/nuggets/angmallen.json
+3d18e45087cc172b48d98fcb92eb94e2ad1b3b0a data/c/tags/item/nuggets/black_steel.json
 885f396b5825c976482617c824bc7c4802ceb232 data/c/tags/item/nuggets/brass.json
 555afb023555207c488dfaa416adbf9533535ecd data/c/tags/item/nuggets/bronze.json
 61795809870a3f6349400da0e9162eaa3b9ad0c0 data/c/tags/item/nuggets/damascus_steel.json
@@ -86,8 +90,9 @@ fc6448189ba34be78d422411fe2dedb3913a9849 data/c/tags/item/raw_materials/promethe
 348671637456be88f6b784a88f954e8851c6da43 data/c/tags/item/raw_materials/silver.json
 74bae4e38cf66dff64a2f45995c17313b5dd78b7 data/c/tags/item/raw_materials/tin.json
 49ba2295d2bb6e79b49ce95fa10f56418a5955d6 data/c/tags/item/raw_materials/zinc.json
-2c352d65575825d2e70c24f90552246a95455d71 data/c/tags/item/storage_blocks.json
+a81d9405875e7c0168ce13c37b9660c2ef51aba6 data/c/tags/item/storage_blocks.json
 18ef9f2ab9af5be3948a4e6cdf6890a3cba1df42 data/c/tags/item/storage_blocks/angmallen.json
+45842c65b05f479234c6354d62a69090b93e6369 data/c/tags/item/storage_blocks/black_steel.json
 5a3b92ef94bbbc5ca6fc0cc6ecbd1cb5b125a2ff data/c/tags/item/storage_blocks/brass.json
 8e63366bfe3429b1c1976829d63e839feee4f5ec data/c/tags/item/storage_blocks/bronze.json
 2afde956ab247d8d9bb0513dd07ff5c1d4f604f5 data/c/tags/item/storage_blocks/damascus_steel.json

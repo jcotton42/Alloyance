@@ -143,5 +143,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.ANGMALLEN -> "Angmallen"
         Metal.STEEL -> "Steel"
         Metal.HEPATIZON -> "Hepatizon"
+        Metal.BLACK_STEEL -> "Black Steel"
     }
 }

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "black_steel_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:black_steel_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:black_steel_ingot"
+  }
+}
