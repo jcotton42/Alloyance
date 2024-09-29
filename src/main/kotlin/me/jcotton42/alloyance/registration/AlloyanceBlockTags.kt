@@ -11,6 +11,8 @@ object AlloyanceBlockTags {
     val STORAGE_BLOCKS: MutableMap<Metal, TagKey<Block>> = mutableMapOf()
     val ORES: MutableMap<Metal, TagKey<Block>> = mutableMapOf()
 
+    val ORES_IN_GROUND_END_STONE: TagKey<Block> = c("ores_in_ground/end_stone")
+
     val STORAGE_BLOCKS_DEEP_IRON: TagKey<Block> = storageBlocks(DEEP_IRON)
     val ORES_DEEP_IRON: TagKey<Block> = ores(DEEP_IRON)
 

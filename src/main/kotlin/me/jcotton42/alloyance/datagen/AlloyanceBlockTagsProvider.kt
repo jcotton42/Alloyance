@@ -48,6 +48,14 @@ class AlloyanceBlockTagsProvider(
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get())
             tag(getToolTag(metal)).add(block.get())
         }
+        AlloyanceBlocks.END_ORES.forEach { (metal, block) ->
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get())
+            tag(getToolTag(metal)).add(block.get())
+        }
+        AlloyanceBlocks.NETHER_ORES.forEach { (metal, block) ->
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get())
+            tag(getToolTag(metal)).add(block.get())
+        }
 
         AlloyanceBlockTags.STORAGE_BLOCKS.forEach { (metal, blockTag) ->
             tag(Tags.Blocks.STORAGE_BLOCKS).addTag(blockTag)
@@ -58,6 +66,8 @@ class AlloyanceBlockTagsProvider(
             tag(Tags.Blocks.ORES).addTag(blockTag)
             val ore = AlloyanceBlocks.ORES[metal]?.get()
             val deepslateOre = AlloyanceBlocks.DEEPSLATE_ORES[metal]?.get()
+            val endOre = AlloyanceBlocks.END_ORES[metal]?.get()
+            val netherOre = AlloyanceBlocks.NETHER_ORES[metal]?.get()
             if (ore != null) {
                 tag(blockTag).add(ore)
                 tag(Tags.Blocks.ORES_IN_GROUND_STONE).add(ore)
@@ -67,6 +77,16 @@ class AlloyanceBlockTagsProvider(
                 tag(blockTag).add(deepslateOre)
                 tag(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE).add(deepslateOre)
                 tag(Tags.Blocks.ORE_RATES_SINGULAR).add(deepslateOre)
+            }
+            if (endOre != null) {
+                tag(blockTag).add(endOre)
+                tag(AlloyanceBlockTags.ORES_IN_GROUND_END_STONE).add(endOre)
+                tag(Tags.Blocks.ORE_RATES_SINGULAR).add(endOre)
+            }
+            if (netherOre != null) {
+                tag(blockTag).add(netherOre)
+                tag(Tags.Blocks.ORES_IN_GROUND_NETHERRACK).add(netherOre)
+                tag(Tags.Blocks.ORE_RATES_SINGULAR).add(netherOre)
             }
         }
     }

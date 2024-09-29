@@ -7,7 +7,6 @@ import me.jcotton42.alloyance.registration.AlloyanceItems
 import net.minecraft.core.HolderLookup
 import net.minecraft.data.PackOutput
 import net.minecraft.data.tags.ItemTagsProvider
-import net.minecraft.world.item.Items
 import net.neoforged.neoforge.common.Tags
 import net.neoforged.neoforge.common.data.BlockTagsProvider
 import net.neoforged.neoforge.common.data.ExistingFileHelper
@@ -86,6 +85,8 @@ class AlloyanceItemTagsProvider(
         copy(Tags.Blocks.ORES, Tags.Items.ORES)
         copy(Tags.Blocks.ORES_IN_GROUND_STONE, Tags.Items.ORES_IN_GROUND_STONE)
         copy(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE, Tags.Items.ORES_IN_GROUND_DEEPSLATE)
+        copy(AlloyanceBlockTags.ORES_IN_GROUND_END_STONE, AlloyanceItemTags.ORES_IN_GROUND_END_STONE)
+        copy(Tags.Blocks.ORES_IN_GROUND_NETHERRACK, Tags.Items.ORES_IN_GROUND_NETHERRACK)
         copy(Tags.Blocks.ORE_RATES_SINGULAR, Tags.Items.ORE_RATES_SINGULAR)
     }
 }

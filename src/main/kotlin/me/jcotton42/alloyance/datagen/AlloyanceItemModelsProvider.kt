@@ -19,6 +19,12 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
         AlloyanceBlocks.DEEPSLATE_ORES.forEach { (metal, ore) ->
             withExistingParent(ore.id.path, modLoc("block/deepslate_${metal.id}_ore"))
         }
+        AlloyanceBlocks.END_ORES.forEach { (metal, ore) ->
+            withExistingParent(ore.id.path, modLoc("block/end_${metal.id}_ore"))
+        }
+        AlloyanceBlocks.NETHER_ORES.forEach { (metal, ore) ->
+            withExistingParent(ore.id.path, modLoc("block/nether_${metal.id}_ore"))
+        }
         AlloyanceBlocks.STORAGE_BLOCKS.forEach { (metal, ore) ->
             withExistingParent(ore.id.path, modLoc("block/${metal.id}_block"))
         }

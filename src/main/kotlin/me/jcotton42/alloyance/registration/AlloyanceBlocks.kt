@@ -29,6 +29,12 @@ object AlloyanceBlocks {
     val BLOCK_CODECS = DeferredRegister.create(Registries.BLOCK_TYPE, Alloyance.ID)
     val BLOCK_ENTITIES = DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, Alloyance.ID)
 
+    val ORES = mutableMapOf<Metal, DeferredBlock<Block>>()
+    val DEEPSLATE_ORES = mutableMapOf<Metal, DeferredBlock<Block>>()
+    val END_ORES = mutableMapOf<Metal, DeferredBlock<Block>>()
+    val NETHER_ORES = mutableMapOf<Metal, DeferredBlock<Block>>()
+    val STORAGE_BLOCKS = mutableMapOf<Metal, DeferredBlock<Block>>()
+
     val ALLOYER = BLOCKS.registerBlock(
         "alloyer",
         ::AlloyerBlock,
@@ -58,10 +64,6 @@ object AlloyanceBlocks {
     val CRUSHER_BLOCK_ENTITY = BLOCK_ENTITIES.register("crusher") { ->
         BlockEntityType.Builder.of(::CrusherBlockEntity, CRUSHER.get()).build(null)
     }
-
-    val ORES = mutableMapOf<Metal, DeferredBlock<Block>>()
-    val DEEPSLATE_ORES = mutableMapOf<Metal, DeferredBlock<Block>>()
-    val STORAGE_BLOCKS = mutableMapOf<Metal, DeferredBlock<Block>>()
 
     val DEEP_IRON_ORE = ore(DEEP_IRON)
     val DEEPSLATE_DEEP_IRON_ORE = deepslateOre(DEEP_IRON)
@@ -142,6 +144,33 @@ object AlloyanceBlocks {
                 .strength(4.5f, 3.0f)
         )
         DEEPSLATE_ORES[metal] = ore
+        return ore
+    }
+
+    private fun endOre(metal: Metal): DeferredBlock<Block> {
+        val ore = BLOCKS.registerSimpleBlock("end_${metal.id}_ore",
+            BlockBehaviour.Properties.of()
+                .mapColor(MapColor.SAND)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .sound(SoundType.STONE)
+                .strength(3.0f, 9.0f)
+        )
+        END_ORES[metal] = ore
+        return ore
+    }
+
+    private fun netherOre(metal: Metal): DeferredBlock<Block> {
+        val ore = BLOCKS.registerSimpleBlock("nether_${metal.id}_ore",
+            BlockBehaviour.Properties.of()
+                .mapColor(MapColor.NETHER)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                // TODO NETHER_GOLD_ORE may be a more fitting sound
+                .sound(SoundType.NETHER_ORE)
+                .strength(3.0f, 3.0f)
+        )
+        NETHER_ORES[metal] = ore
         return ore
     }
 

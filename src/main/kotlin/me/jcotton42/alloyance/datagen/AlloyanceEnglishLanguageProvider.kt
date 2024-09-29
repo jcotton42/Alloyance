@@ -36,6 +36,12 @@ class AlloyanceEnglishLanguageProvider(
         AlloyanceBlocks.DEEPSLATE_ORES.forEach { (metal, ore) ->
             add(ore.get(), "Deepslate ${getEnglishName(metal)} Ore")
         }
+        AlloyanceBlocks.END_ORES.forEach { (metal, ore) ->
+            add(ore.get(), "End ${getEnglishName(metal)} Ore")
+        }
+        AlloyanceBlocks.NETHER_ORES.forEach { (metal, ore) ->
+            add(ore.get(), "Nether ${getEnglishName(metal)} Ore")
+        }
 
         AlloyanceItems.RAW_MATERIALS.forEach { (metal, raw) ->
             add(raw.get(), "Raw ${getEnglishName(metal)}")

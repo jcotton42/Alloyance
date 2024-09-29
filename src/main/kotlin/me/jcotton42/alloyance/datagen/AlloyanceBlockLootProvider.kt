@@ -15,6 +15,9 @@ class AlloyanceBlockLootProvider(lookupProvider: HolderLookup.Provider): BlockLo
     lookupProvider
 ) {
     override fun generate() {
+        dropSelf(AlloyanceBlocks.ALLOYER.get())
+        dropSelf(AlloyanceBlocks.CRUSHER.get())
+
         AlloyanceBlocks.STORAGE_BLOCKS.values.forEach { dropSelf(it.get()) }
         AlloyanceBlocks.ORES.forEach { (metal, ore) ->
             oreDropsItem(ore.get(), AlloyanceItems.RAW_MATERIALS.getValue(metal).get())
@@ -22,9 +25,12 @@ class AlloyanceBlockLootProvider(lookupProvider: HolderLookup.Provider): BlockLo
         AlloyanceBlocks.DEEPSLATE_ORES.forEach { (metal, ore) ->
             oreDropsItem(ore.get(), AlloyanceItems.RAW_MATERIALS.getValue(metal).get())
         }
-
-        dropSelf(AlloyanceBlocks.ALLOYER.get())
-        dropSelf(AlloyanceBlocks.CRUSHER.get())
+        AlloyanceBlocks.END_ORES.forEach { (metal, ore) ->
+            oreDropsItem(ore.get(), AlloyanceItems.RAW_MATERIALS.getValue(metal).get())
+        }
+        AlloyanceBlocks.NETHER_ORES.forEach{ (metal, ore) ->
+            oreDropsItem(ore.get(), AlloyanceItems.RAW_MATERIALS.getValue(metal).get())
+        }
     }
 
     override fun getKnownBlocks(): Iterable<Block> = AlloyanceBlocks.BLOCKS.entries

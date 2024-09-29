@@ -18,6 +18,7 @@ object AlloyanceItemTags {
     val ORES: MutableMap<Metal, TagKey<Item>> = mutableMapOf()
 
     val ALLOYABLES_ROOT: TagKey<Item> = alloyance("alloyables")
+    val ORES_IN_GROUND_END_STONE: TagKey<Item> = c("ores_in_ground/end_stone")
 
     val DUSTS_IRON: TagKey<Item> = c("dusts/iron")
     val ALLOYABLES_IRON: TagKey<Item> = alloyance("alloyables/iron")
