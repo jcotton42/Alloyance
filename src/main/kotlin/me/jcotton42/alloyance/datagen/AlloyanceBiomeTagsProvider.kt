@@ -42,5 +42,7 @@ class AlloyanceBiomeTagsProvider(
 
         tag(AlloyanceBiomeTags.HAS_ASTRAL_SILVER_ORE)
             .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_IGNATIUS_ORE)
+            .addTags(BiomeTags.IS_NETHER)
     }
 }
