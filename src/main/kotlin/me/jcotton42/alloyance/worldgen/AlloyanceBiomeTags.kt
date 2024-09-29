@@ -20,6 +20,7 @@ object AlloyanceBiomeTags {
 
     val HAS_ASTRAL_SILVER_ORE: TagKey<Biome> = create("has_astral_silver_ore")
     val HAS_IGNATIUS_ORE: TagKey<Biome> = create("has_ignatius_ore")
+    val HAS_OURECLASE_ORE: TagKey<Biome> = create("has_oureclase_ore")
 
     private fun create(path: String): TagKey<Biome> =
         TagKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, path))
