@@ -96,7 +96,7 @@ object AlloyancePlacedFeatures {
             configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.ZINC_ORE),
             countOrePlacement(
                 COMMON,
-                HeightRangePlacement.uniform(VerticalAnchor.absolute(10), VerticalAnchor.absolute(30))
+                HeightRangePlacement.of(TrapezoidHeight.of(VerticalAnchor.absolute(-48), VerticalAnchor.absolute(50), 30))
             )
         )
 
