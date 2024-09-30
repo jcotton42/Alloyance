@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-29T20:14:25.2281735	Tags for minecraft:block mod id alloyance
+// 1.21.1	2024-09-29T20:45:15.4177865	Tags for minecraft:block mod id alloyance
 886d097832d69ca0e5a8ffc0c75d595d81d5eec0 data/c/tags/block/ores.json
 b0b453b05b70b674bcd6d479954b4063df9a6945 data/c/tags/block/ores/astral_silver.json
 75ab44eb59d5383582bb81f9ee3ea79ead6930b7 data/c/tags/block/ores/ceruclase.json
@@ -46,6 +46,7 @@ f827a7d6fcf6dfe3eee3acf5972208bb27dd7814 data/c/tags/block/storage_blocks/tin.js
 28664f209d59643cd660ffecc4ec013d2b0ccf68 data/minecraft/tags/block/incorrect_for_diamond_tool.json
 28664f209d59643cd660ffecc4ec013d2b0ccf68 data/minecraft/tags/block/incorrect_for_gold_tool.json
 28664f209d59643cd660ffecc4ec013d2b0ccf68 data/minecraft/tags/block/incorrect_for_iron_tool.json
+28664f209d59643cd660ffecc4ec013d2b0ccf68 data/minecraft/tags/block/incorrect_for_stone_tool.json
 28664f209d59643cd660ffecc4ec013d2b0ccf68 data/minecraft/tags/block/incorrect_for_wooden_tool.json
 fe9b4698e28855ef9b47fa508229e8f56edd90e8 data/minecraft/tags/block/mineable/pickaxe.json
 7857e501ea0e4afa55b818c5f0f9bf654fd6dce6 data/minecraft/tags/block/needs_diamond_tool.json
