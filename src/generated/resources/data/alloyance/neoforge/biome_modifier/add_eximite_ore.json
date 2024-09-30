@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_eximite_ore",
+  "features": "alloyance:eximite_ore",
+  "step": "underground_ores"
+}

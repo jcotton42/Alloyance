@@ -6,6 +6,7 @@ import net.minecraft.core.HolderLookup
 import net.minecraft.data.PackOutput
 import net.minecraft.data.tags.BiomeTagsProvider
 import net.minecraft.tags.BiomeTags
+import net.minecraft.world.level.biome.Biomes
 import net.neoforged.neoforge.common.data.ExistingFileHelper
 import java.util.concurrent.CompletableFuture
 
@@ -53,5 +54,7 @@ class AlloyanceBiomeTagsProvider(
 
         tag(AlloyanceBiomeTags.HAS_CERUCLASE_ORE)
             .addTags(BiomeTags.IS_NETHER)
+        tag(AlloyanceBiomeTags.HAS_EXIMITE_ORE)
+            .add(Biomes.SMALL_END_ISLANDS)
     }
 }

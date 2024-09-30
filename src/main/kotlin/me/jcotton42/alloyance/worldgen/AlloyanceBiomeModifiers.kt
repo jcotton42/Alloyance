@@ -4,6 +4,7 @@ import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_ASTRAL_SILVER_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_CERUCLASE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_DEEP_IRON_ORE
+import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_EXIMITE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_IGNATIUS_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_INFUSCOLIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_MANGANESE_ORE
@@ -20,6 +21,7 @@ import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ASTRAL_SILVER_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ASTRAL_SILVER_ORE_UPPER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.CERUCLASE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.DEEP_IRON_ORE
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.EXIMITE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.IGNATIUS_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.INFUSCOLIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.MANGANESE_ORE
@@ -65,6 +67,7 @@ object AlloyanceBiomeModifiers {
     val ADD_SHADOW_IRON_ORE_UPPER = registerKey("add_shadow_iron_ore_upper")
     val ADD_SHADOW_IRON_ORE_LOWER = registerKey("add_shadow_iron_ore_lower")
     val ADD_CERUCLASE_ORE = registerKey("add_ceruclase_ore")
+    val ADD_EXIMITE_ORE = registerKey("add_eximite_ore")
 
     private val ores = listOf(
         Triple(ADD_DEEP_IRON_ORE, HAS_DEEP_IRON_ORE, DEEP_IRON_ORE),
@@ -86,6 +89,7 @@ object AlloyanceBiomeModifiers {
         Triple(ADD_SHADOW_IRON_ORE_UPPER, HAS_SHADOW_IRON_ORE, SHADOW_IRON_ORE_UPPER),
         Triple(ADD_SHADOW_IRON_ORE_LOWER, HAS_SHADOW_IRON_ORE, SHADOW_IRON_ORE_LOWER),
         Triple(ADD_CERUCLASE_ORE, HAS_CERUCLASE_ORE, CERUCLASE_ORE),
+        Triple(ADD_EXIMITE_ORE, HAS_EXIMITE_ORE, EXIMITE_ORE),
     )
 
     fun bootstrap(context: BootstrapContext<BiomeModifier>) {

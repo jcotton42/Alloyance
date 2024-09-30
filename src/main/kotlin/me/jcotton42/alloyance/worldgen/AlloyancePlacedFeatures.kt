@@ -46,6 +46,7 @@ object AlloyancePlacedFeatures {
     val SHADOW_IRON_ORE_UPPER = registerKey("shadow_iron_ore_upper")
     val SHADOW_IRON_ORE_LOWER = registerKey("shadow_iron_ore_lower")
     val CERUCLASE_ORE = registerKey("ceruclase_ore")
+    val EXIMITE_ORE = registerKey("eximite_ore")
 
     fun bootstrap(context: BootstrapContext<PlacedFeature>) {
         val configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE)
@@ -221,6 +222,15 @@ object AlloyancePlacedFeatures {
             context,
             CERUCLASE_ORE,
             configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.CERUCLASE_ORE),
+            countOrePlacement(
+                COMMON,
+                HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.TOP)
+            )
+        )
+        register(
+            context,
+            EXIMITE_ORE,
+            configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.EXIMITE_ORE),
             countOrePlacement(
                 COMMON,
                 HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.TOP)
