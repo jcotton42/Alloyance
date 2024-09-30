@@ -153,6 +153,8 @@ object AlloyanceBlocks {
     val NETHER_VULCANITE_ORE = netherOre(VULCANITE)
     val VULCANITE_BLOCK = storageBlock(VULCANITE)
 
+    val CELENEGIL_BLOCK = storageBlock(CELENEGIL)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

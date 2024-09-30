@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "celenegil_ingot",
+  "ingredient": {
+    "item": "alloyance:celenegil_dust"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:celenegil_ingot"
+  }
+}

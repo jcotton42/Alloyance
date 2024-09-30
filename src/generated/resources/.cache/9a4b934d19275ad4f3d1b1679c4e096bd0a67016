@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-29T23:06:13.3581285	Item Models: alloyance
+// 1.21.1	2024-09-29T23:55:20.1682901	Item Models: alloyance
 108c391f311a4a8cfe2e0dd65402f5ba2141c734 assets/alloyance/models/item/angmallen_block.json
 85ba55fe0cd8e5b732353680066523bdcea8a466 assets/alloyance/models/item/angmallen_dust.json
 ec2a81e76c2cc1fc87dd300872eec982fa8f03fa assets/alloyance/models/item/angmallen_ingot.json
@@ -20,6 +20,10 @@ ed30e9cf1aec257ef52efba11dd6fbb0594c49b8 assets/alloyance/models/item/bronze_blo
 00675336f96e908e026e0bd40781acc0c710a87c assets/alloyance/models/item/bronze_dust.json
 bb3c4148a5d88b5c00f7f8fe03f715f335784290 assets/alloyance/models/item/bronze_ingot.json
 48ece8da966a18759ccb2f718af642aea1dc2ba6 assets/alloyance/models/item/bronze_nugget.json
+4006f241feea50c96041f82aed3edb18e7574745 assets/alloyance/models/item/celenegil_block.json
+e5c1081ea4a178acb6b5ad547960168b245a7e23 assets/alloyance/models/item/celenegil_dust.json
+b40a33d921a451d18dc32ba6b633311ebf74eb7f assets/alloyance/models/item/celenegil_ingot.json
+c7fc7a2db03996cc6112a2b9aea68f163302f7bb assets/alloyance/models/item/celenegil_nugget.json
 82c68890889467a07d6ac1e85f9126d82149f5fd assets/alloyance/models/item/ceruclase_block.json
 0425561d025d09901d14bd959b946e970d9a46d9 assets/alloyance/models/item/ceruclase_dust.json
 2fc498e42c579f0b49d01a0bdc60c480228b096b assets/alloyance/models/item/ceruclase_ingot.json

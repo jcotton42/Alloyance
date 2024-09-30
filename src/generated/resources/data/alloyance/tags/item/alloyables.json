@@ -31,6 +31,7 @@
     "#alloyance:alloyables/midasium",
     "#alloyance:alloyables/orichalcum",
     "#alloyance:alloyables/platinum",
-    "#alloyance:alloyables/vulcanite"
+    "#alloyance:alloyables/vulcanite",
+    "#alloyance:alloyables/celenegil"
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "celenegil_dust",
+  "ingredient": {
+    "tag": "c:ingots/celenegil"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:celenegil_dust"
+  }
+}

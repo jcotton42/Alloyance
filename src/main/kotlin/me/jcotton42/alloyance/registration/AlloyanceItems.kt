@@ -229,6 +229,11 @@ object AlloyanceItems {
     val VULCANITE_NUGGET = nugget(VULCANITE)
     val VULCANITE_DUST = dust(VULCANITE)
 
+    val CELENEGIL_BLOCK = block(AlloyanceBlocks.CELENEGIL_BLOCK)
+    val CELENEGIL_INGOT = ingot(CELENEGIL)
+    val CELENEGIL_NUGGET = nugget(CELENEGIL)
+    val CELENEGIL_DUST = dust(CELENEGIL)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

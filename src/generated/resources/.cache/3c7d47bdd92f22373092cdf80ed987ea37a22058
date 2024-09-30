@@ -1,10 +1,11 @@
-// 1.21.1	2024-09-29T23:06:13.3439743	Block States: alloyance
+// 1.21.1	2024-09-29T23:55:20.1516678	Block States: alloyance
 c26456305e269f780b04ddc67ae97c824afc4b9b assets/alloyance/blockstates/angmallen_block.json
 ef8ae4510e7a1f98a340dc69eac37d825f237b82 assets/alloyance/blockstates/astral_silver_block.json
 e1d8dd2c0e22971ec2459e10034c4e29a0091ad7 assets/alloyance/blockstates/astral_silver_ore.json
 fd0f506cbecdef19f9a263a2e9785ba60f0f293d assets/alloyance/blockstates/black_steel_block.json
 c43dc809c374767bffdda77a2b99324659be7594 assets/alloyance/blockstates/brass_block.json
 01f43f5ce418f5caea95dd4e13d212a0bc92d74b assets/alloyance/blockstates/bronze_block.json
+38193ad28e83945f8d6366c1f41b6e4f81d15b28 assets/alloyance/blockstates/celenegil_block.json
 6751852f32584ba4347234bcfcf8f40edbd0ecc9 assets/alloyance/blockstates/ceruclase_block.json
 722c6fbc65c9d32a01ea2aa4b24e4914871ba2f0 assets/alloyance/blockstates/damascus_steel_block.json
 5b2bf722ed26dcd2affdf49d416bdbea2389a4cc assets/alloyance/blockstates/deepslate_deep_iron_ore.json
@@ -64,6 +65,7 @@ a6624b16147326e50a9b23dea31b72f9aa63022a assets/alloyance/models/block/astral_si
 b4fb983f1d4e30ff63db9c80cc46f531c86c3a02 assets/alloyance/models/block/black_steel_block.json
 2d5d1e35e33394787002543ae720dc5c29b0c7ea assets/alloyance/models/block/brass_block.json
 ed1152b343101d5bf997f4e09857e2a5dcec4df9 assets/alloyance/models/block/bronze_block.json
+e15cb6a76415298d4c040947163e04a53ae8bf34 assets/alloyance/models/block/celenegil_block.json
 5106dda6c22da479d2decc5f6b1e2b97dbaeb647 assets/alloyance/models/block/ceruclase_block.json
 b4ab6dd2355a5e3b27e03807ae7c9566bdd89a0f assets/alloyance/models/block/damascus_steel_block.json
 bacd98c321cdea3855787783ed7b464586ef06c1 assets/alloyance/models/block/deepslate_deep_iron_ore.json

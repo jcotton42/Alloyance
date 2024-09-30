@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_orichalcum_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:dusts/orichalcum"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_platinum_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:dusts/platinum"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:celenegil_dust_from_mixing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_orichalcum_dust",
+      "has_platinum_dust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:celenegil_dust_from_mixing"
+    ]
+  }
+}

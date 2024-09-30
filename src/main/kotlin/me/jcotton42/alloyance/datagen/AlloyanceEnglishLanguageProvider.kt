@@ -165,5 +165,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.ORICHALCUM -> "Orichalcum"
         Metal.PLATINUM -> "Platinum"
         Metal.VULCANITE -> "Vulcanite"
+        Metal.CELENEGIL -> "Celenegil"
     }
 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "celenegil_dust",
+  "ingredients": [
+    {
+      "tag": "c:dusts/orichalcum"
+    },
+    {
+      "tag": "c:dusts/platinum"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "alloyance:celenegil_dust"
+  }
+}
