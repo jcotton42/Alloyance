@@ -173,6 +173,11 @@ object AlloyanceItems {
     val SHADOW_IRON_NUGGET = nugget(SHADOW_IRON)
     val SHADOW_IRON_DUST = dust(SHADOW_IRON)
 
+    val QUICKSILVER_BLOCK = block(AlloyanceBlocks.QUICKSILVER_BLOCK)
+    val QUICKSILVER_INGOT = ingot(QUICKSILVER)
+    val QUICKSILVER_NUGGET = nugget(QUICKSILVER)
+    val QUICKSILVER_DUST = dust(QUICKSILVER)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

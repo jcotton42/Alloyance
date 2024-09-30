@@ -39,6 +39,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
         addAlloy(output, HEPATIZON, 2, 1.25f, INFUSCOLIUM, 1, STEEL, 1)
         addAlloy(output, BLACK_STEEL, 4, 1.75f, DEEP_IRON, 3, INFUSCOLIUM, 1)
         addAlloy(output, ELECTRUM, 2, 1.25f, SILVER, 1, GOLD, 1)
+        addAlloy(output, QUICKSILVER, 2, 1.25f, SILVER, 1, ASTRAL_SILVER, 1)
     }
 
     private fun addVanillaCompatRecipes(output: RecipeOutput) {

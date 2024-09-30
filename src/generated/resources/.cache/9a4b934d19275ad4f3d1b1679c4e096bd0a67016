@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-29T16:59:09.9397185	Item Models: alloyance
+// 1.21.1	2024-09-29T17:48:30.2581468	Item Models: alloyance
 108c391f311a4a8cfe2e0dd65402f5ba2141c734 assets/alloyance/models/item/angmallen_block.json
 85ba55fe0cd8e5b732353680066523bdcea8a466 assets/alloyance/models/item/angmallen_dust.json
 ec2a81e76c2cc1fc87dd300872eec982fa8f03fa assets/alloyance/models/item/angmallen_ingot.json
@@ -80,6 +80,10 @@ fe22f50e78544960ad83e4e9974893df95beeda0 assets/alloyance/models/item/oureclase_
 89d323675d6aa34753f77167f1c2af8fc5bcc8cb assets/alloyance/models/item/prometheum_ingot.json
 c122528d6fda4647c5109d0cbc67baa8759d2544 assets/alloyance/models/item/prometheum_nugget.json
 b3dadf72ade313d203e638c92bbd20e77bb150ce assets/alloyance/models/item/prometheum_ore.json
+8b7e119f36b1d8706e0817068bc8cc37f47625d9 assets/alloyance/models/item/quicksilver_block.json
+7ff6d215919f3a20787d9b674d19f9968a973164 assets/alloyance/models/item/quicksilver_dust.json
+1ab905f6a637cd63bb8eee750b4515dab18ad9a1 assets/alloyance/models/item/quicksilver_ingot.json
+2802b9bf32231eed723554255dd96453d8d73974 assets/alloyance/models/item/quicksilver_nugget.json
 376bc2054ede0087c8116f1aeb316ad614750208 assets/alloyance/models/item/raw_astral_silver.json
 50b04df6ca337a75040a3e2ec6331d715de4bd29 assets/alloyance/models/item/raw_deep_iron.json
 dd68db532dde3f888d516bab3132abf84d05c0ed assets/alloyance/models/item/raw_ignatius.json

@@ -157,5 +157,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.OURECLASE -> "Oureclase"
         Metal.RUBRACIUM -> "Rubracium"
         Metal.SHADOW_IRON -> "Shadow Iron"
+        Metal.QUICKSILVER -> "Quicksilver"
     }
 }

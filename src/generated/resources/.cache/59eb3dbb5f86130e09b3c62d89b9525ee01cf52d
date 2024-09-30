@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-29T16:59:09.9281924	Loot Tables
+// 1.21.1	2024-09-29T17:48:30.2486239	Loot Tables
 00986215a0540b1b41631c104659deaa568ccfea data/alloyance/loot_table/blocks/alloyer.json
 a80a5cc977a2ae430a4f1e00459a6153eafa8f03 data/alloyance/loot_table/blocks/angmallen_block.json
 d6e65e8d30262ba84d58b5ada3e8bc8b0a49b4c8 data/alloyance/loot_table/blocks/astral_silver_block.json
@@ -33,6 +33,7 @@ afdf364c1c272e5befd0be061f7e9c86b2cd6e05 data/alloyance/loot_table/blocks/osmium
 14fb194a93f15e3aad8bc3320dd3d4469b53b5b1 data/alloyance/loot_table/blocks/oureclase_ore.json
 20e12d45d1ac4c0334a30338efd35ab6ffcf8a79 data/alloyance/loot_table/blocks/prometheum_block.json
 6f8306da99c434da45c942ecbef90c776e11435e data/alloyance/loot_table/blocks/prometheum_ore.json
+5cb0eeb80e62fcaea21362d8853e123f62e7cde6 data/alloyance/loot_table/blocks/quicksilver_block.json
 82896c1069a41ee18dd510ec4e49eff2ff24af82 data/alloyance/loot_table/blocks/rubracium_block.json
 333a3ee58972430dcb73a8488772c3063758b2e1 data/alloyance/loot_table/blocks/rubracium_ore.json
 9e03b9de6a033c3438d1abbcbdc60dccf236e4b7 data/alloyance/loot_table/blocks/shadow_iron_block.json

@@ -128,6 +128,8 @@ object AlloyanceBlocks {
     val NETHER_SHADOW_IRON_ORE = netherOre(SHADOW_IRON)
     val SHADOW_IRON_BLOCK = storageBlock(SHADOW_IRON)
 
+    val QUICKSILVER_BLOCK = storageBlock(QUICKSILVER)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)
