@@ -36,9 +36,6 @@ repositories {
         // for The One Probe
         url "https://maven.k-4u.nl"
     }
-    maven {
-        url "https://cursemaven.com"
-    }
 }
 
 base {
