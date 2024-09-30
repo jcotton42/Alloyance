@@ -50,5 +50,8 @@ class AlloyanceBiomeTagsProvider(
             .addTags(BiomeTags.IS_OVERWORLD)
         tag(AlloyanceBiomeTags.HAS_SHADOW_IRON_ORE)
             .addTags(BiomeTags.IS_NETHER)
+
+        tag(AlloyanceBiomeTags.HAS_CERUCLASE_ORE)
+            .addTags(BiomeTags.IS_NETHER)
     }
 }

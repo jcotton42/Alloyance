@@ -31,6 +31,7 @@ object AlloyanceConfiguredFeatures {
     val OURECLASE_ORE = registerKey("oureclase_ore")
     val RUBRACIUM_ORE = registerKey("rubracium_ore")
     val SHADOW_IRON_ORE = registerKey("shadow_iron_ore")
+    val CERUCLASE_ORE = registerKey("ceruclase_ore")
 
     fun bootstrap(context: BootstrapContext<ConfiguredFeature<*, *>>) {
         val deepIronOres = listOf(inStone(AlloyanceBlocks.DEEP_IRON_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_DEEP_IRON_ORE))
@@ -46,6 +47,7 @@ object AlloyanceConfiguredFeatures {
         val oureclaseOres = listOf(inStone(AlloyanceBlocks.OURECLASE_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_OURECLASE_ORE))
         val rubraciumOres = listOf(inStone(AlloyanceBlocks.RUBRACIUM_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_RUBRACIUM_ORE))
         val shadowIronOres = listOf(inNetherrack(AlloyanceBlocks.NETHER_SHADOW_IRON_ORE))
+        val ceruclaseOres = listOf(inNetherrack(AlloyanceBlocks.NETHER_CERUCLASE_ORE))
 
         register(context, DEEP_IRON_ORE, Feature.ORE, OreConfiguration(deepIronOres, 5))
         register(context, PROMETHEUM_ORE, Feature.ORE, OreConfiguration(prometheumOres, 6))
@@ -62,6 +64,8 @@ object AlloyanceConfiguredFeatures {
         register(context, OURECLASE_ORE, Feature.ORE, OreConfiguration(oureclaseOres, 6))
         register(context, RUBRACIUM_ORE, Feature.ORE, OreConfiguration(rubraciumOres, 6))
         register(context, SHADOW_IRON_ORE, Feature.ORE, OreConfiguration(shadowIronOres, 7))
+
+        register(context, CERUCLASE_ORE, Feature.ORE, OreConfiguration(ceruclaseOres, 5))
     }
 
     private fun inStone(replacement: Supplier<Block>): OreConfiguration.TargetBlockState {

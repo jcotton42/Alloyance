@@ -1,5 +1,6 @@
-// 1.21.1	2024-09-29T17:38:41.8549192	Tags for minecraft:worldgen/biome mod id alloyance
+// 1.21.1	2024-09-29T20:48:23.0684236	Tags for minecraft:worldgen/biome mod id alloyance
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_astral_silver_ore.json
+a24545b58f3f91c6c033586e2b2ae12f1e8131b1 data/alloyance/tags/worldgen/biome/has_ceruclase_ore.json
 8f0899a462b0051f730735e859d045f202b9d46b data/alloyance/tags/worldgen/biome/has_deep_iron_ore.json
 a24545b58f3f91c6c033586e2b2ae12f1e8131b1 data/alloyance/tags/worldgen/biome/has_ignatius_ore.json
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_infuscolium_ore.json
