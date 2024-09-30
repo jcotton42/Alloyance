@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "shadow_iron_dust",
+  "ingredient": {
+    "tag": "c:ingots/shadow_iron"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:shadow_iron_dust"
+  }
+}

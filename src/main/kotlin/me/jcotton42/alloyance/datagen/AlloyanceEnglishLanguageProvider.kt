@@ -156,5 +156,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.IGNATIUS -> "Ignatius"
         Metal.OURECLASE -> "Oureclase"
         Metal.RUBRACIUM -> "Rubracium"
+        Metal.SHADOW_IRON -> "Shadow Iron"
     }
 }

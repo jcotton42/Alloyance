@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-29T16:35:23.1847059	Item Models: alloyance
+// 1.21.1	2024-09-29T16:59:09.9397185	Item Models: alloyance
 108c391f311a4a8cfe2e0dd65402f5ba2141c734 assets/alloyance/models/item/angmallen_block.json
 85ba55fe0cd8e5b732353680066523bdcea8a466 assets/alloyance/models/item/angmallen_dust.json
 ec2a81e76c2cc1fc87dd300872eec982fa8f03fa assets/alloyance/models/item/angmallen_ingot.json
@@ -65,6 +65,7 @@ e43851c156331df2c745fce6ff1c4f531cd7c3b0 assets/alloyance/models/item/iron_dust.
 e7e185b33ab4a84fc88f8eaff913c1d3145201ea assets/alloyance/models/item/manganese_nugget.json
 748087aae279f18e87f289fb673825beb7799f91 assets/alloyance/models/item/manganese_ore.json
 1f73bb7bd2a90948ba4e76a431e97f3e3e4307c8 assets/alloyance/models/item/nether_ignatius_ore.json
+719a4d8cef86acb59bddac533ac73b4e22cf4249 assets/alloyance/models/item/nether_shadow_iron_ore.json
 d3c0821e0dda332e5585694f684f3d53c1b98114 assets/alloyance/models/item/osmium_block.json
 f0d6903d3473370abc0f536033c80f994eebddbe assets/alloyance/models/item/osmium_dust.json
 6489cb93607a58a7d752aa6c0bb44cf54ba66104 assets/alloyance/models/item/osmium_ingot.json
@@ -88,6 +89,7 @@ bc8fa47cf548768e6251ce0b7df1eeba1bffc41a assets/alloyance/models/item/raw_infusc
 fe814d5e9d1f62eb98ca8fba02c43eb574cad051 assets/alloyance/models/item/raw_oureclase.json
 4520de8cdb5c354b8a27f6ee4bf53d506442f6e6 assets/alloyance/models/item/raw_prometheum.json
 44e9d493ef2ab25841c0f74221f6d2925db08ca6 assets/alloyance/models/item/raw_rubracium.json
+d0e37bc377e7e0847708425ecbc7c2e6aa633d20 assets/alloyance/models/item/raw_shadow_iron.json
 429286322ac029f0761c428aa3cf48292b56aaff assets/alloyance/models/item/raw_silver.json
 096d0c70e0c358f9975562c08a857db9b635f2d5 assets/alloyance/models/item/raw_tin.json
 0a592eb8a3fa44703ea9534dff0eee0369081ee1 assets/alloyance/models/item/raw_zinc.json
@@ -96,6 +98,10 @@ fe814d5e9d1f62eb98ca8fba02c43eb574cad051 assets/alloyance/models/item/raw_ourecl
 c83457b4ad6fac74564fbc541a66f15f6598476f assets/alloyance/models/item/rubracium_ingot.json
 96d5a5bb60f9b2d50e189dc615744802dfac13ce assets/alloyance/models/item/rubracium_nugget.json
 25fa9f6b0e2502d006d93bebb2a16aa3464a9789 assets/alloyance/models/item/rubracium_ore.json
+77456768bc96230d15643603b8dce7c8b6b7ccc3 assets/alloyance/models/item/shadow_iron_block.json
+a61d9c14fbc8b991d6b2125f6df05c914f81c798 assets/alloyance/models/item/shadow_iron_dust.json
+70c1ee36b62e6d26a90db14b024f8bdd30a33ccf assets/alloyance/models/item/shadow_iron_ingot.json
+90fbc20e0d7f08576411017e6f8fb8330119b199 assets/alloyance/models/item/shadow_iron_nugget.json
 1036e9929ca7a8f5cd451a27b19bf9671a2275b3 assets/alloyance/models/item/silver_block.json
 ec11fbc5c78407a28a0834bfd9edc7f3aba2c0c4 assets/alloyance/models/item/silver_dust.json
 52cfc9509ae6cd3c449b7009c03c34040a0937a1 assets/alloyance/models/item/silver_ingot.json

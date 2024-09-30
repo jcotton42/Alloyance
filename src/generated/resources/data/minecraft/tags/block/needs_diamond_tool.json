@@ -7,11 +7,13 @@
     "alloyance:ignatius_block",
     "alloyance:oureclase_block",
     "alloyance:rubracium_block",
+    "alloyance:shadow_iron_block",
     "alloyance:astral_silver_ore",
     "alloyance:oureclase_ore",
     "alloyance:rubracium_ore",
     "alloyance:deepslate_oureclase_ore",
     "alloyance:deepslate_rubracium_ore",
-    "alloyance:nether_ignatius_ore"
+    "alloyance:nether_ignatius_ore",
+    "alloyance:nether_shadow_iron_ore"
   ]
 }

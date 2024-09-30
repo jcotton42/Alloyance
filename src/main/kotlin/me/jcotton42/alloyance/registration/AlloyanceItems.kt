@@ -166,11 +166,17 @@ object AlloyanceItems {
     val RUBRACIUM_NUGGET = nugget(RUBRACIUM)
     val RUBRACIUM_DUST = dust(RUBRACIUM)
 
+    val NETHER_SHADOW_IRON_ORE = block(AlloyanceBlocks.NETHER_SHADOW_IRON_ORE)
+    val SHADOW_IRON_BLOCK = block(AlloyanceBlocks.SHADOW_IRON_BLOCK)
+    val RAW_SHADOW_IRON = rawMaterial(SHADOW_IRON)
+    val SHADOW_IRON_INGOT = ingot(SHADOW_IRON)
+    val SHADOW_IRON_NUGGET = nugget(SHADOW_IRON)
+    val SHADOW_IRON_DUST = dust(SHADOW_IRON)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }
 
-    // TODO might want rarity on items for higher tiers, could do it by a level on the Metal?
     // TODO Also would be cool if some of the metals (maybe the Nether ones) were fire-resistant. This goes for all their items.
 
     private fun block(block: Holder<Block>): DeferredItem<BlockItem> {

@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "shadow_iron_dust",
+  "ingredient": {
+    "tag": "c:raw_materials/shadow_iron"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:shadow_iron_dust"
+  }
+}

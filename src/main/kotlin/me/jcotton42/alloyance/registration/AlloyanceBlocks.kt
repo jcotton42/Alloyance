@@ -125,6 +125,9 @@ object AlloyanceBlocks {
     val DEEPSLATE_RUBRACIUM_ORE = deepslateOre(RUBRACIUM)
     val RUBRACIUM_BLOCK = storageBlock(RUBRACIUM)
 
+    val NETHER_SHADOW_IRON_ORE = netherOre(SHADOW_IRON)
+    val SHADOW_IRON_BLOCK = storageBlock(SHADOW_IRON)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

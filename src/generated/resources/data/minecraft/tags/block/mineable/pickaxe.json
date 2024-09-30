@@ -22,6 +22,7 @@
     "alloyance:ignatius_block",
     "alloyance:oureclase_block",
     "alloyance:rubracium_block",
+    "alloyance:shadow_iron_block",
     "alloyance:deep_iron_ore",
     "alloyance:prometheum_ore",
     "alloyance:zinc_ore",
@@ -41,6 +42,7 @@
     "alloyance:deepslate_manganese_ore",
     "alloyance:deepslate_oureclase_ore",
     "alloyance:deepslate_rubracium_ore",
-    "alloyance:nether_ignatius_ore"
+    "alloyance:nether_ignatius_ore",
+    "alloyance:nether_shadow_iron_ore"
   ]
 }

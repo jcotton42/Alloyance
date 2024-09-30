@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-29T16:35:23.1666638	Block States: alloyance
+// 1.21.1	2024-09-29T16:59:09.9226699	Block States: alloyance
 c26456305e269f780b04ddc67ae97c824afc4b9b assets/alloyance/blockstates/angmallen_block.json
 ef8ae4510e7a1f98a340dc69eac37d825f237b82 assets/alloyance/blockstates/astral_silver_block.json
 e1d8dd2c0e22971ec2459e10034c4e29a0091ad7 assets/alloyance/blockstates/astral_silver_ore.json
@@ -25,6 +25,7 @@ da4e99cc6ba922301b5e53a8657188dcc8046eae assets/alloyance/blockstates/infuscoliu
 23400d15387c8ab0d571e79c85a2b72c337665f2 assets/alloyance/blockstates/manganese_block.json
 934c4e034b43dcadaa547be453979491c55e6dd2 assets/alloyance/blockstates/manganese_ore.json
 296472dd0ec09ebca6aa1ef707c65c585ff22883 assets/alloyance/blockstates/nether_ignatius_ore.json
+3898cd753a7fd7041d92a796eace837a3419474c assets/alloyance/blockstates/nether_shadow_iron_ore.json
 a7550445593ffde0b8194980b6f901381d7ffee1 assets/alloyance/blockstates/osmium_block.json
 549450398bf9d00b889660653e5a1b8ac8d04a42 assets/alloyance/blockstates/oureclase_block.json
 755835f2c0222931c2e0e3a851bce53edf6e3ed4 assets/alloyance/blockstates/oureclase_ore.json
@@ -32,6 +33,7 @@ a7550445593ffde0b8194980b6f901381d7ffee1 assets/alloyance/blockstates/osmium_blo
 a3a68fa8d68c2545a0b983b278486586003644da assets/alloyance/blockstates/prometheum_ore.json
 d9ea2dd447dd8a47ea986cc87489050ed894a916 assets/alloyance/blockstates/rubracium_block.json
 975c8bb56c3a8259de01c3d50cf7077a79a3cb5a assets/alloyance/blockstates/rubracium_ore.json
+9c1e584c7cf3d920ab3266e10ffcabb88e5ebad6 assets/alloyance/blockstates/shadow_iron_block.json
 812928603ff5a576d2b112e66c20c6c00a5920ab assets/alloyance/blockstates/silver_block.json
 e2f07f47c5c664d3d25dbce4f216a95bcd81d76e assets/alloyance/blockstates/silver_ore.json
 8f5a17de209b8bf8ee424a36438538ccba02fa33 assets/alloyance/blockstates/steel_block.json
@@ -65,6 +67,7 @@ eda78d50c26622b44e69ae2fd494d66078fba640 assets/alloyance/models/block/infuscoli
 c704395ec3f916b9a7ad03cc5abc1035b85a5196 assets/alloyance/models/block/manganese_block.json
 1a20a6af02cd68ee4be06e2ddcd3820efbdb4c08 assets/alloyance/models/block/manganese_ore.json
 37decaaef75095bdc38733b75bc6b9acbf28e2cb assets/alloyance/models/block/nether_ignatius_ore.json
+97f08e5e1577e634f4d1636d8e92a15e846f547a assets/alloyance/models/block/nether_shadow_iron_ore.json
 95ab24516984b11ede62096cea117d8075b4bac3 assets/alloyance/models/block/osmium_block.json
 93ab38b42131f68ef3597cb605d614a48ef7b0a4 assets/alloyance/models/block/oureclase_block.json
 b5c3f872e53ece339de1806c7d3b16276728a52c assets/alloyance/models/block/oureclase_ore.json
@@ -72,6 +75,7 @@ b5c3f872e53ece339de1806c7d3b16276728a52c assets/alloyance/models/block/oureclase
 ad879b893dec554f0c608df01d1a6bb090b85345 assets/alloyance/models/block/prometheum_ore.json
 f66a87df6e055319257a8cd233818d6f4edf6fae assets/alloyance/models/block/rubracium_block.json
 c24963dbcb9d9cdb23a6eeb487d318b4f60fd6a7 assets/alloyance/models/block/rubracium_ore.json
+a0452010220cde839e6c2113e91794a56c3de9e3 assets/alloyance/models/block/shadow_iron_block.json
 62ae4c4df0ac6487f6a6acc76e22cffc887c5834 assets/alloyance/models/block/silver_block.json
 e7cc25c328dffa96df6109ada3d8d9a7a1df0ede assets/alloyance/models/block/silver_ore.json
 15dd231ce42da83a61fc2dcf7f6182fa197cf587 assets/alloyance/models/block/steel_block.json
