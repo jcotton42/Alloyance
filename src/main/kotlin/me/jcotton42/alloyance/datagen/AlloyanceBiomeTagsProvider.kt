@@ -58,5 +58,7 @@ class AlloyanceBiomeTagsProvider(
             .add(Biomes.SMALL_END_ISLANDS)
         tag(AlloyanceBiomeTags.HAS_KALENDRITE_ORE)
             .addTags(BiomeTags.IS_NETHER)
+        tag(AlloyanceBiomeTags.HAS_MIDASIUM_ORE)
+            .addTags(BiomeTags.IS_NETHER)
     }
 }
