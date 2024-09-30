@@ -2,7 +2,9 @@
   "values": [
     "alloyance:ceruclase_block",
     "alloyance:eximite_block",
+    "alloyance:kalendrite_block",
     "alloyance:end_eximite_ore",
-    "alloyance:nether_ceruclase_ore"
+    "alloyance:nether_ceruclase_ore",
+    "alloyance:nether_kalendrite_ore"
   ]
 }

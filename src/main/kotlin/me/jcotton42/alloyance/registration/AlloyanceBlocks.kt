@@ -136,6 +136,9 @@ object AlloyanceBlocks {
     val END_EXIMITE_ORE = endOre(EXIMITE)
     val EXIMITE_BLOCK = storageBlock(EXIMITE)
 
+    val NETHER_KALENDRITE_ORE = netherOre(KALENDRITE)
+    val KALENDRITE_BLOCK = storageBlock(KALENDRITE)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

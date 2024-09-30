@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_nether_kalendrite_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:nether_kalendrite_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:kalendrite_ingot_from_blasting_nether_kalendrite_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_nether_kalendrite_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:kalendrite_ingot_from_blasting_nether_kalendrite_ore"
+    ]
+  }
+}

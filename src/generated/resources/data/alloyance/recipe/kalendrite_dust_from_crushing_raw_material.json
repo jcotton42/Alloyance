@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "kalendrite_dust",
+  "ingredient": {
+    "tag": "c:raw_materials/kalendrite"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:kalendrite_dust"
+  }
+}

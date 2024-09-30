@@ -192,6 +192,13 @@ object AlloyanceItems {
     val EXIMITE_NUGGET = nugget(EXIMITE)
     val EXIMITE_DUST = dust(EXIMITE)
 
+    val NETHER_KALENDRITE_ORE = block(AlloyanceBlocks.NETHER_KALENDRITE_ORE)
+    val KALENDRITE_BLOCK = block(AlloyanceBlocks.KALENDRITE_BLOCK)
+    val RAW_KALENDRITE = rawMaterial(KALENDRITE)
+    val KALENDRITE_INGOT = ingot(KALENDRITE)
+    val KALENDRITE_NUGGET = nugget(KALENDRITE)
+    val KALENDRITE_DUST = dust(KALENDRITE)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

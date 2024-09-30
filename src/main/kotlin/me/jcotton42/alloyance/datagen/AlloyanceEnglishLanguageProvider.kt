@@ -160,5 +160,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.QUICKSILVER -> "Quicksilver"
         Metal.CERUCLASE -> "Ceruclase"
         Metal.EXIMITE -> "Eximite"
+        Metal.KALENDRITE -> "Kalendrite"
     }
 }

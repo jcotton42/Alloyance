@@ -32,4 +32,5 @@ enum class Metal(val id: String, val hardness: Float, val blockBlastResistance: 
     // tier 4
     CERUCLASE("ceruclase", 4.1f, 15.0f),
     EXIMITE("eximite", 4.7f, 15.0f),
+    KALENDRITE("kalendrite", 4.7f, 15.0f),
 }
