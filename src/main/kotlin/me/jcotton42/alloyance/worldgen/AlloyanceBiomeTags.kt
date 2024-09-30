@@ -26,6 +26,7 @@ object AlloyanceBiomeTags {
 
     val HAS_CERUCLASE_ORE: TagKey<Biome> = create("has_ceruclase_ore")
     val HAS_EXIMITE_ORE: TagKey<Biome> = create("has_eximite_ore")
+    val HAS_KALENDRITE_ORE: TagKey<Biome> = create("has_kalendrite_ore")
 
     private fun create(path: String): TagKey<Biome> =
         TagKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, path))
