@@ -64,5 +64,7 @@ class AlloyanceBiomeTagsProvider(
             .addTags(BiomeTags.IS_OVERWORLD)
         tag(AlloyanceBiomeTags.HAS_PLATINUM_ORE)
             .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_VULCANITE_ORE)
+            .addTags(BiomeTags.IS_NETHER)
     }
 }

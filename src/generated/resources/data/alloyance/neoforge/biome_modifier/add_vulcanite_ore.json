@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_vulcanite_ore",
+  "features": "alloyance:vulcanite_ore",
+  "step": "underground_ores"
+}
