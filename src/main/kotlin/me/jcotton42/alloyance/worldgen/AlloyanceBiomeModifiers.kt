@@ -10,6 +10,7 @@ import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_OSMIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_OURECLASE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_PROMETHEUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_RUBRACIUM_ORE
+import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_SHADOW_IRON_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_SILVER_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_TIN_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_UNDERWATER_DEEP_IRON_ORE
@@ -25,6 +26,8 @@ import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.OURECLASE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PROMETHEUM_ORE_LOWER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PROMETHEUM_ORE_UPPER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.RUBRACIUM_ORE
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.SHADOW_IRON_ORE_LOWER
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.SHADOW_IRON_ORE_UPPER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.SILVER_ORE_LOWER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.SILVER_ORE_UPPER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.TIN_ORE
@@ -57,6 +60,8 @@ object AlloyanceBiomeModifiers {
     val ADD_IGNATIUS_ORE = registerKey("add_ignatius_ore")
     val ADD_OURECLASE_ORE = registerKey("add_oureclase_ore")
     val ADD_RUBRACIUM_ORE = registerKey("add_rubracium_ore")
+    val ADD_SHADOW_IRON_ORE_UPPER = registerKey("add_shadow_iron_ore_upper")
+    val ADD_SHADOW_IRON_ORE_LOWER = registerKey("add_shadow_iron_ore_lower")
 
     private val ores = listOf(
         Triple(ADD_DEEP_IRON_ORE, HAS_DEEP_IRON_ORE, DEEP_IRON_ORE),
@@ -75,6 +80,8 @@ object AlloyanceBiomeModifiers {
         Triple(ADD_IGNATIUS_ORE, HAS_IGNATIUS_ORE, IGNATIUS_ORE),
         Triple(ADD_OURECLASE_ORE, HAS_OURECLASE_ORE, OURECLASE_ORE),
         Triple(ADD_RUBRACIUM_ORE, HAS_RUBRACIUM_ORE, RUBRACIUM_ORE),
+        Triple(ADD_SHADOW_IRON_ORE_UPPER, HAS_SHADOW_IRON_ORE, SHADOW_IRON_ORE_UPPER),
+        Triple(ADD_SHADOW_IRON_ORE_LOWER, HAS_SHADOW_IRON_ORE, SHADOW_IRON_ORE_LOWER),
     )
 
     fun bootstrap(context: BootstrapContext<BiomeModifier>) {

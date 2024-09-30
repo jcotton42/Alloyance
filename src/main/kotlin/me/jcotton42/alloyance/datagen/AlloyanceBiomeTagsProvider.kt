@@ -48,5 +48,7 @@ class AlloyanceBiomeTagsProvider(
             .addTags(BiomeTags.IS_OVERWORLD)
         tag(AlloyanceBiomeTags.HAS_RUBRACIUM_ORE)
             .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_SHADOW_IRON_ORE)
+            .addTags(BiomeTags.IS_NETHER)
     }
 }
