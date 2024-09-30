@@ -60,5 +60,7 @@ class AlloyanceBiomeTagsProvider(
             .addTags(BiomeTags.IS_NETHER)
         tag(AlloyanceBiomeTags.HAS_MIDASIUM_ORE)
             .addTags(BiomeTags.IS_NETHER)
+        tag(AlloyanceBiomeTags.HAS_ORICHALCUM_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
     }
 }

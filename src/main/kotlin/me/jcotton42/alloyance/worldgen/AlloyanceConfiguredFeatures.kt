@@ -35,6 +35,7 @@ object AlloyanceConfiguredFeatures {
     val EXIMITE_ORE = registerKey("eximite_ore")
     val KALENDRITE_ORE = registerKey("kalendrite_ore")
     val MIDASIUM_ORE = registerKey("midasium_ore")
+    val ORICHALCUM_ORE = registerKey("orichalcum_ore")
 
     fun bootstrap(context: BootstrapContext<ConfiguredFeature<*, *>>) {
         val deepIronOres = listOf(inStone(AlloyanceBlocks.DEEP_IRON_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_DEEP_IRON_ORE))
@@ -54,6 +55,7 @@ object AlloyanceConfiguredFeatures {
         val eximiteOres = listOf(inEndStone(AlloyanceBlocks.END_EXIMITE_ORE))
         val kalendriteOres = listOf(inNetherrack(AlloyanceBlocks.NETHER_KALENDRITE_ORE))
         val midasiumOres = listOf(inNetherrack(AlloyanceBlocks.NETHER_MIDASIUM_ORE))
+        val orichalcumOres = listOf(inStone(AlloyanceBlocks.ORICHALCUM_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_ORICHALCUM_ORE))
 
         register(context, DEEP_IRON_ORE, Feature.ORE, OreConfiguration(deepIronOres, 5))
         register(context, PROMETHEUM_ORE, Feature.ORE, OreConfiguration(prometheumOres, 6))
@@ -75,6 +77,7 @@ object AlloyanceConfiguredFeatures {
         register(context, EXIMITE_ORE, Feature.ORE, OreConfiguration(eximiteOres, 7))
         register(context, KALENDRITE_ORE, Feature.ORE, OreConfiguration(kalendriteOres, 5))
         register(context, MIDASIUM_ORE, Feature.ORE, OreConfiguration(midasiumOres, 6))
+        register(context, ORICHALCUM_ORE, Feature.ORE, OreConfiguration(orichalcumOres, 6))
     }
 
     private fun inStone(replacement: Supplier<Block>): OreConfiguration.TargetBlockState {
