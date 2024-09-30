@@ -164,5 +164,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.MIDASIUM -> "Midasium"
         Metal.ORICHALCUM -> "Orichalcum"
         Metal.PLATINUM -> "Platinum"
+        Metal.VULCANITE -> "Vulcanite"
     }
 }

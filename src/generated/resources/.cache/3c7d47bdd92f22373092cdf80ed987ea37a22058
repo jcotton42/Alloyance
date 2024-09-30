@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-29T22:36:08.9164697	Block States: alloyance
+// 1.21.1	2024-09-29T23:06:13.3439743	Block States: alloyance
 c26456305e269f780b04ddc67ae97c824afc4b9b assets/alloyance/blockstates/angmallen_block.json
 ef8ae4510e7a1f98a340dc69eac37d825f237b82 assets/alloyance/blockstates/astral_silver_block.json
 e1d8dd2c0e22971ec2459e10034c4e29a0091ad7 assets/alloyance/blockstates/astral_silver_ore.json
@@ -36,6 +36,7 @@ d87e6eb80819d3837d108021e60ed0e1c4164553 assets/alloyance/blockstates/nether_cer
 aa7e702ecc361b1a6addd2315453fb1a77d9a961 assets/alloyance/blockstates/nether_kalendrite_ore.json
 67f5d48ef56404b1fbd2a00adb5c8153a68a36c1 assets/alloyance/blockstates/nether_midasium_ore.json
 3898cd753a7fd7041d92a796eace837a3419474c assets/alloyance/blockstates/nether_shadow_iron_ore.json
+63a437500f28ad5a36f6d87ea01ae4703e1b6f7d assets/alloyance/blockstates/nether_vulcanite_ore.json
 ee688bff91397bf32e62a49f010ec50a321c0d7d assets/alloyance/blockstates/orichalcum_block.json
 6624933da094e545be0a533cc270a18b1dcb1787 assets/alloyance/blockstates/orichalcum_ore.json
 a7550445593ffde0b8194980b6f901381d7ffee1 assets/alloyance/blockstates/osmium_block.json
@@ -54,6 +55,7 @@ e2f07f47c5c664d3d25dbce4f216a95bcd81d76e assets/alloyance/blockstates/silver_ore
 8f5a17de209b8bf8ee424a36438538ccba02fa33 assets/alloyance/blockstates/steel_block.json
 fb5a6f36f1a4fa638382eac46915bdaed96e94a7 assets/alloyance/blockstates/tin_block.json
 d708b81c2209135700696ede31f1329a4aeda949 assets/alloyance/blockstates/tin_ore.json
+bdbcc831a1c1e934b6d3d9f403c6ff04bb2cd121 assets/alloyance/blockstates/vulcanite_block.json
 7c118d83e12feea50af060a632b00f2efbcf160e assets/alloyance/blockstates/zinc_block.json
 9e34f9e29b3d0ecefe58ddca4b87c873b1d7dfc4 assets/alloyance/blockstates/zinc_ore.json
 1671fd3af438b4b7acee1127c594c2d2bcbcaec3 assets/alloyance/models/block/angmallen_block.json
@@ -93,6 +95,7 @@ ee787244720ab8e5bbe4b7a3d2df1ddead2f86e3 assets/alloyance/models/block/midasium_
 2ca42c4b3d0babe61b862f1d62526ffe5b8b41ab assets/alloyance/models/block/nether_kalendrite_ore.json
 129f30fdf244b9f144d16c1b973ec72bf44e30ed assets/alloyance/models/block/nether_midasium_ore.json
 97f08e5e1577e634f4d1636d8e92a15e846f547a assets/alloyance/models/block/nether_shadow_iron_ore.json
+5f63590c62151609cc74459ea5a260a9300140e5 assets/alloyance/models/block/nether_vulcanite_ore.json
 7d72b10b14ad33305f40d26e4a96d1f931a1f570 assets/alloyance/models/block/orichalcum_block.json
 c1210171faab518d6f48fc68a6b5ada8dea477b9 assets/alloyance/models/block/orichalcum_ore.json
 95ab24516984b11ede62096cea117d8075b4bac3 assets/alloyance/models/block/osmium_block.json
@@ -111,5 +114,6 @@ e7cc25c328dffa96df6109ada3d8d9a7a1df0ede assets/alloyance/models/block/silver_or
 15dd231ce42da83a61fc2dcf7f6182fa197cf587 assets/alloyance/models/block/steel_block.json
 9a6be2d8a23d50ba37f8ddc1bd51815e0904b4ce assets/alloyance/models/block/tin_block.json
 a22f61ac10da814eb738b23d2d7b8d954033e4f3 assets/alloyance/models/block/tin_ore.json
+c4673dd9e3c72e4d81e0893e57096c0fc2d562b7 assets/alloyance/models/block/vulcanite_block.json
 415313370252000678dc2f3528323591db088723 assets/alloyance/models/block/zinc_block.json
 21aed3c4275bc854a77831a903f07a84634b18cd assets/alloyance/models/block/zinc_ore.json

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "vulcanite_nugget",
+  "ingredients": [
+    {
+      "item": "alloyance:vulcanite_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:vulcanite_nugget"
+  }
+}

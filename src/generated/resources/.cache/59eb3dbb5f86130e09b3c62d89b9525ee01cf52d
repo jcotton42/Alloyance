@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-29T22:36:08.9209813	Loot Tables
+// 1.21.1	2024-09-29T23:06:13.3480905	Loot Tables
 00986215a0540b1b41631c104659deaa568ccfea data/alloyance/loot_table/blocks/alloyer.json
 a80a5cc977a2ae430a4f1e00459a6153eafa8f03 data/alloyance/loot_table/blocks/angmallen_block.json
 d6e65e8d30262ba84d58b5ada3e8bc8b0a49b4c8 data/alloyance/loot_table/blocks/astral_silver_block.json
@@ -38,6 +38,7 @@ c96baa9b3eec782ab8b52b999a8a83243fa9a19b data/alloyance/loot_table/blocks/nether
 1ce04ba8a3ffc168c3c35d51d751034c24d3a2a4 data/alloyance/loot_table/blocks/nether_kalendrite_ore.json
 d8d0c0e134a3d25819965222260f6728725958dd data/alloyance/loot_table/blocks/nether_midasium_ore.json
 5237ce0d7d67d566b28521ceb94dead3927d1364 data/alloyance/loot_table/blocks/nether_shadow_iron_ore.json
+0f711337c709e09ba4372984d148fc61e240e7f5 data/alloyance/loot_table/blocks/nether_vulcanite_ore.json
 83baeec64327ff321345063f16d8299e47ef8b8a data/alloyance/loot_table/blocks/orichalcum_block.json
 40002e4a3b7760a18184f6fa21390159cd707690 data/alloyance/loot_table/blocks/orichalcum_ore.json
 afdf364c1c272e5befd0be061f7e9c86b2cd6e05 data/alloyance/loot_table/blocks/osmium_block.json
@@ -56,5 +57,6 @@ ddf6a22386853a575fc967430e43be6b22338e30 data/alloyance/loot_table/blocks/silver
 ad562ccd44763f3bc7f00e876172dcdf546ca282 data/alloyance/loot_table/blocks/steel_block.json
 d7e1dd86184c33a50e8344c96e25b97f6cad75fd data/alloyance/loot_table/blocks/tin_block.json
 997e8796cd5f357a034ee34feffb3667e55c9803 data/alloyance/loot_table/blocks/tin_ore.json
+0db459efb93a062fbfb7efc82ea236559baf498c data/alloyance/loot_table/blocks/vulcanite_block.json
 f58fcc1eb0ba6660192a96b2bbf205bd44a404ee data/alloyance/loot_table/blocks/zinc_block.json
 7256f4cc4d7c78bc62f6b4cc7edce57231dd1778 data/alloyance/loot_table/blocks/zinc_ore.json

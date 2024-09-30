@@ -30,6 +30,7 @@
     "#alloyance:alloyables/kalendrite",
     "#alloyance:alloyables/midasium",
     "#alloyance:alloyables/orichalcum",
-    "#alloyance:alloyables/platinum"
+    "#alloyance:alloyables/platinum",
+    "#alloyance:alloyables/vulcanite"
   ]
 }

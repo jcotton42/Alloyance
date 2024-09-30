@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "vulcanite_ingot",
+  "ingredient": {
+    "item": "alloyance:raw_vulcanite"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:vulcanite_ingot"
+  }
+}

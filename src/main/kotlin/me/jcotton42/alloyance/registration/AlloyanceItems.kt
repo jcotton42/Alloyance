@@ -222,6 +222,13 @@ object AlloyanceItems {
     val PLATINUM_NUGGET = nugget(PLATINUM)
     val PLATINUM_DUST = dust(PLATINUM)
 
+    val NETHER_VULCANITE_ORE = block(AlloyanceBlocks.NETHER_VULCANITE_ORE)
+    val VULCANITE_BLOCK = block(AlloyanceBlocks.VULCANITE_BLOCK)
+    val RAW_VULCANITE = rawMaterial(VULCANITE)
+    val VULCANITE_INGOT = ingot(VULCANITE)
+    val VULCANITE_NUGGET = nugget(VULCANITE)
+    val VULCANITE_DUST = dust(VULCANITE)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

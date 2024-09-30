@@ -150,6 +150,9 @@ object AlloyanceBlocks {
     val DEEPSLATE_PLATINUM_ORE = deepslateOre(PLATINUM)
     val PLATINUM_BLOCK = storageBlock(PLATINUM)
 
+    val NETHER_VULCANITE_ORE = netherOre(VULCANITE)
+    val VULCANITE_BLOCK = storageBlock(VULCANITE)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

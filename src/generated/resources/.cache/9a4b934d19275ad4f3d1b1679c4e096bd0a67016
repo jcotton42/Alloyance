@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-29T22:36:08.932069	Item Models: alloyance
+// 1.21.1	2024-09-29T23:06:13.3581285	Item Models: alloyance
 108c391f311a4a8cfe2e0dd65402f5ba2141c734 assets/alloyance/models/item/angmallen_block.json
 85ba55fe0cd8e5b732353680066523bdcea8a466 assets/alloyance/models/item/angmallen_dust.json
 ec2a81e76c2cc1fc87dd300872eec982fa8f03fa assets/alloyance/models/item/angmallen_ingot.json
@@ -88,6 +88,7 @@ da19a119497db918f948614f3bc4f4fb351c3d00 assets/alloyance/models/item/midasium_n
 bd17875269beb057f536be4bed34616750fc6f9e assets/alloyance/models/item/nether_kalendrite_ore.json
 9dad48fce792771f30d42c08614242f9dbbd5c12 assets/alloyance/models/item/nether_midasium_ore.json
 719a4d8cef86acb59bddac533ac73b4e22cf4249 assets/alloyance/models/item/nether_shadow_iron_ore.json
+c6c5d35313f017e271f6ebb8e9786807f2eff028 assets/alloyance/models/item/nether_vulcanite_ore.json
 e89fc4367de2f3cd1b98f584bdf88f07dbbd513d assets/alloyance/models/item/orichalcum_block.json
 384a280de01284aac7ce5584e1662a7aee1c942b assets/alloyance/models/item/orichalcum_dust.json
 a351f1f31b0db3b62ffd229acddb24169b2e07b0 assets/alloyance/models/item/orichalcum_ingot.json
@@ -134,6 +135,7 @@ fe814d5e9d1f62eb98ca8fba02c43eb574cad051 assets/alloyance/models/item/raw_ourecl
 d0e37bc377e7e0847708425ecbc7c2e6aa633d20 assets/alloyance/models/item/raw_shadow_iron.json
 429286322ac029f0761c428aa3cf48292b56aaff assets/alloyance/models/item/raw_silver.json
 096d0c70e0c358f9975562c08a857db9b635f2d5 assets/alloyance/models/item/raw_tin.json
+72b00c1c1b7dc4332f189d9130441a02a69a6a20 assets/alloyance/models/item/raw_vulcanite.json
 0a592eb8a3fa44703ea9534dff0eee0369081ee1 assets/alloyance/models/item/raw_zinc.json
 9ad8aa71a39ba14805ea0595e4715a1e7646d2c4 assets/alloyance/models/item/rubracium_block.json
 97b03c96c75956255ef5f518298e0d3e5040c918 assets/alloyance/models/item/rubracium_dust.json
@@ -159,6 +161,10 @@ de7becb63407e4fc36d8ab78179f895a771b0b81 assets/alloyance/models/item/tin_block.
 49e8b82da863f99cd9d7b8ae1d863272292446ba assets/alloyance/models/item/tin_ingot.json
 1c996cf02afcb46bfcbb125ad9cfd6bffb1ac902 assets/alloyance/models/item/tin_nugget.json
 4113d2bf6ba5364ad42338f4d60039dfc5840418 assets/alloyance/models/item/tin_ore.json
+227422e04f4eb470bd18c44ee611e30ad04f2734 assets/alloyance/models/item/vulcanite_block.json
+94b0ecb624cfb313f020c4cbe5a24167969f1ecc assets/alloyance/models/item/vulcanite_dust.json
+02212d757a0be3c12d80314bd55e95b8c8631059 assets/alloyance/models/item/vulcanite_ingot.json
+1ed9dda42351dc7dc561a47cddc150ad9a04fb38 assets/alloyance/models/item/vulcanite_nugget.json
 4e419f23b901d992c61aba4a0ac400130ff84f53 assets/alloyance/models/item/zinc_block.json
 342bb0714f440a00a57223622c65af51a94a1fe8 assets/alloyance/models/item/zinc_dust.json
 25f668002035f90a1131664ee9440d062d63bfa3 assets/alloyance/models/item/zinc_ingot.json

@@ -27,6 +27,7 @@
     "alloyance:kalendrite_block",
     "alloyance:midasium_block",
     "alloyance:orichalcum_block",
-    "alloyance:platinum_block"
+    "alloyance:platinum_block",
+    "alloyance:vulcanite_block"
   ]
 }
