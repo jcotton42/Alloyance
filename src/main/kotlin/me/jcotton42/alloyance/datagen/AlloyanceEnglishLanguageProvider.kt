@@ -158,6 +158,7 @@ class AlloyanceEnglishLanguageProvider(
         Metal.RUBRACIUM -> "Rubracium"
         Metal.SHADOW_IRON -> "Shadow Iron"
         Metal.QUICKSILVER -> "Quicksilver"
+
         Metal.CERUCLASE -> "Ceruclase"
         Metal.EXIMITE -> "Eximite"
         Metal.KALENDRITE -> "Kalendrite"
@@ -166,5 +167,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.PLATINUM -> "Platinum"
         Metal.VULCANITE -> "Vulcanite"
         Metal.CELENEGIL -> "Celenegil"
+        Metal.AMORDRINE -> "Amordrine"
     }
 }

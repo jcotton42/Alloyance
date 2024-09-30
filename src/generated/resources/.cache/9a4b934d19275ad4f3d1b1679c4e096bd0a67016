@@ -1,4 +1,8 @@
-// 1.21.1	2024-09-29T23:55:20.1682901	Item Models: alloyance
+// 1.21.1	2024-09-30T00:01:49.3635724	Item Models: alloyance
+bfb369f6a77fec5776fb060493aa0b7bff388e39 assets/alloyance/models/item/amordrine_block.json
+ffc8a232ff19dbfd15a3ea160593598f3a2fa5d0 assets/alloyance/models/item/amordrine_dust.json
+2cd9b43b2b47414f0270caf00a4845193959d020 assets/alloyance/models/item/amordrine_ingot.json
+5aa874e525a86fe3b81443a6af7c56c2cc16f30f assets/alloyance/models/item/amordrine_nugget.json
 108c391f311a4a8cfe2e0dd65402f5ba2141c734 assets/alloyance/models/item/angmallen_block.json
 85ba55fe0cd8e5b732353680066523bdcea8a466 assets/alloyance/models/item/angmallen_dust.json
 ec2a81e76c2cc1fc87dd300872eec982fa8f03fa assets/alloyance/models/item/angmallen_ingot.json

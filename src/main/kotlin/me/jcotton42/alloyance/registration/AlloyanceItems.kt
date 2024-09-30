@@ -234,6 +234,11 @@ object AlloyanceItems {
     val CELENEGIL_NUGGET = nugget(CELENEGIL)
     val CELENEGIL_DUST = dust(CELENEGIL)
 
+    val AMORDRINE_BLOCK = block(AlloyanceBlocks.AMORDRINE_BLOCK)
+    val AMORDRINE_INGOT = ingot(AMORDRINE)
+    val AMORDRINE_NUGGET = nugget(AMORDRINE)
+    val AMORDRINE_DUST = dust(AMORDRINE)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

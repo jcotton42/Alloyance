@@ -1,5 +1,6 @@
-// 1.21.1	2024-09-29T23:55:20.1567014	Loot Tables
+// 1.21.1	2024-09-30T00:01:49.35152	Loot Tables
 00986215a0540b1b41631c104659deaa568ccfea data/alloyance/loot_table/blocks/alloyer.json
+dcac1ba2ee83e55ce89f5d4bb5fcc256b7926d3f data/alloyance/loot_table/blocks/amordrine_block.json
 a80a5cc977a2ae430a4f1e00459a6153eafa8f03 data/alloyance/loot_table/blocks/angmallen_block.json
 d6e65e8d30262ba84d58b5ada3e8bc8b0a49b4c8 data/alloyance/loot_table/blocks/astral_silver_block.json
 7608c1ccf302f9bbcbd9d9c8f30dfb7ed07305d5 data/alloyance/loot_table/blocks/astral_silver_ore.json

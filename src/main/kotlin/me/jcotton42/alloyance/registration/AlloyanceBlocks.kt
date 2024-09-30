@@ -155,6 +155,8 @@ object AlloyanceBlocks {
 
     val CELENEGIL_BLOCK = storageBlock(CELENEGIL)
 
+    val AMORDRINE_BLOCK = storageBlock(AMORDRINE)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

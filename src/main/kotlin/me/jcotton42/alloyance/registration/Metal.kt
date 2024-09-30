@@ -38,4 +38,5 @@ enum class Metal(val id: String, val hardness: Float, val blockBlastResistance: 
     PLATINUM("platinum", 4.4f, 15.0f),
     VULCANITE("vulcanite", 6.5f, 15.0f),
     CELENEGIL("celenegil", 10.0f, 20.0f),
+    AMORDRINE("amordrine", 10.0f, 10.0f),
 }
