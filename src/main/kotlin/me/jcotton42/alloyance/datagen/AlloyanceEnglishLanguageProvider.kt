@@ -161,5 +161,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.CERUCLASE -> "Ceruclase"
         Metal.EXIMITE -> "Eximite"
         Metal.KALENDRITE -> "Kalendrite"
+        Metal.MIDASIUM -> "Midasium"
     }
 }

@@ -199,6 +199,13 @@ object AlloyanceItems {
     val KALENDRITE_NUGGET = nugget(KALENDRITE)
     val KALENDRITE_DUST = dust(KALENDRITE)
 
+    val NETHER_MIDASIUM_ORE = block(AlloyanceBlocks.NETHER_MIDASIUM_ORE)
+    val MIDASIUM_BLOCK = block(AlloyanceBlocks.MIDASIUM_BLOCK)
+    val RAW_MIDASIUM = rawMaterial(MIDASIUM)
+    val MIDASIUM_INGOT = ingot(MIDASIUM)
+    val MIDASIUM_NUGGET = nugget(MIDASIUM)
+    val MIDASIUM_DUST = dust(MIDASIUM)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

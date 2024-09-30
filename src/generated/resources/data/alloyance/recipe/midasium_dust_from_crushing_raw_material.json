@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "midasium_dust",
+  "ingredient": {
+    "tag": "c:raw_materials/midasium"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:midasium_dust"
+  }
+}

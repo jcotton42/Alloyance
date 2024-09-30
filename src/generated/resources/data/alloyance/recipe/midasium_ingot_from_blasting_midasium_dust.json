@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "midasium_ingot",
+  "ingredient": {
+    "item": "alloyance:midasium_dust"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:midasium_ingot"
+  }
+}

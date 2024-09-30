@@ -139,6 +139,9 @@ object AlloyanceBlocks {
     val NETHER_KALENDRITE_ORE = netherOre(KALENDRITE)
     val KALENDRITE_BLOCK = storageBlock(KALENDRITE)
 
+    val NETHER_MIDASIUM_ORE = netherOre(MIDASIUM)
+    val MIDASIUM_BLOCK = storageBlock(MIDASIUM)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)
