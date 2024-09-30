@@ -28,4 +28,7 @@ enum class Metal(val id: String, val hardness: Float, val blockBlastResistance: 
     RUBRACIUM("rubracium", 8.5f, 10.0f),
     SHADOW_IRON("shadow_iron", 4.2f, 6.0f),
     QUICKSILVER("quicksilver", 10.0f, 15.0f),
+
+    // tier 4
+    CERUCLASE("ceruclase", 4.1f, 15.0f),
 }

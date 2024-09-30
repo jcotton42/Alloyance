@@ -130,6 +130,9 @@ object AlloyanceBlocks {
 
     val QUICKSILVER_BLOCK = storageBlock(QUICKSILVER)
 
+    val NETHER_CERUCLASE_ORE = netherOre(CERUCLASE)
+    val CERUCLASE_BLOCK = storageBlock(CERUCLASE)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

@@ -178,6 +178,13 @@ object AlloyanceItems {
     val QUICKSILVER_NUGGET = nugget(QUICKSILVER)
     val QUICKSILVER_DUST = dust(QUICKSILVER)
 
+    val NETHER_CERUCLASE_ORE = block(AlloyanceBlocks.NETHER_CERUCLASE_ORE)
+    val CERUCLASE_BLOCK = block(AlloyanceBlocks.CERUCLASE_BLOCK)
+    val RAW_CERUCLASE = rawMaterial(CERUCLASE)
+    val CERUCLASE_INGOT = ingot(CERUCLASE)
+    val CERUCLASE_NUGGET = nugget(CERUCLASE)
+    val CERUCLASE_DUST = dust(CERUCLASE)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

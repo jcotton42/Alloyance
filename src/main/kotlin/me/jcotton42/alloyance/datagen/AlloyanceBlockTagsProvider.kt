@@ -115,4 +115,7 @@ private fun getToolTag(metal: Metal): TagKey<Block> = when (metal) {
 
     // tier 3
     ASTRAL_SILVER, IGNATIUS, OURECLASE, RUBRACIUM, SHADOW_IRON, QUICKSILVER -> BlockTags.NEEDS_DIAMOND_TOOL
+
+    // tier 4
+    CERUCLASE -> Tags.Blocks.NEEDS_NETHERITE_TOOL
 }

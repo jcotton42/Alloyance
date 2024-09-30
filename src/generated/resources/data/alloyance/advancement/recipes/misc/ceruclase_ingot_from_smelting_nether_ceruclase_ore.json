@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_nether_ceruclase_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:nether_ceruclase_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:ceruclase_ingot_from_smelting_nether_ceruclase_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_nether_ceruclase_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:ceruclase_ingot_from_smelting_nether_ceruclase_ore"
+    ]
+  }
+}

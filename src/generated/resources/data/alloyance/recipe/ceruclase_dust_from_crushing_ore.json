@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "ceruclase_dust",
+  "ingredient": {
+    "tag": "c:ores/ceruclase"
+  },
+  "result": {
+    "count": 2,
+    "id": "alloyance:ceruclase_dust"
+  }
+}
