@@ -133,6 +133,9 @@ object AlloyanceBlocks {
     val NETHER_CERUCLASE_ORE = netherOre(CERUCLASE)
     val CERUCLASE_BLOCK = storageBlock(CERUCLASE)
 
+    val END_EXIMITE_ORE = endOre(EXIMITE)
+    val EXIMITE_BLOCK = storageBlock(EXIMITE)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

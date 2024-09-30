@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_eximite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:raw_eximite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:eximite_ingot_from_smelting_raw_eximite"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_eximite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:eximite_ingot_from_smelting_raw_eximite"
+    ]
+  }
+}

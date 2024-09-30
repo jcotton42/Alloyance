@@ -185,6 +185,13 @@ object AlloyanceItems {
     val CERUCLASE_NUGGET = nugget(CERUCLASE)
     val CERUCLASE_DUST = dust(CERUCLASE)
 
+    val END_EXIMITE_ORE = block(AlloyanceBlocks.END_EXIMITE_ORE)
+    val EXIMITE_BLOCK = block(AlloyanceBlocks.EXIMITE_BLOCK)
+    val RAW_EXIMITE = rawMaterial(EXIMITE)
+    val EXIMITE_INGOT = ingot(EXIMITE)
+    val EXIMITE_NUGGET = nugget(EXIMITE)
+    val EXIMITE_DUST = dust(EXIMITE)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

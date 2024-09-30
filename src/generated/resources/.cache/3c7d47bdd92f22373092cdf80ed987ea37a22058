@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-29T19:57:28.1678756	Block States: alloyance
+// 1.21.1	2024-09-29T21:04:39.1501787	Block States: alloyance
 c26456305e269f780b04ddc67ae97c824afc4b9b assets/alloyance/blockstates/angmallen_block.json
 ef8ae4510e7a1f98a340dc69eac37d825f237b82 assets/alloyance/blockstates/astral_silver_block.json
 e1d8dd2c0e22971ec2459e10034c4e29a0091ad7 assets/alloyance/blockstates/astral_silver_ore.json
@@ -19,6 +19,8 @@ e91ef0005c9fbe7c8eed306ba1976296b96adf24 assets/alloyance/blockstates/deepslate_
 ade2de4db6b68fb07bcc8be4081d8258069d7a42 assets/alloyance/blockstates/deep_iron_block.json
 d095310118c0a31d850eb6d7420e9c23e665692d assets/alloyance/blockstates/deep_iron_ore.json
 3c23cba9e20a9854bfa1f8c1648b5f22395640ea assets/alloyance/blockstates/electrum_block.json
+9895d270086a1c5c6aa819598d3bcb99b477c211 assets/alloyance/blockstates/end_eximite_ore.json
+bc9517842fdbe0996e754eeb629560a9ff9f1242 assets/alloyance/blockstates/eximite_block.json
 563a51be0fa98b12c103eeb278fec0c5cff3e4ea assets/alloyance/blockstates/hepatizon_block.json
 26e362f22a600feccf9a71481302f51f50e86109 assets/alloyance/blockstates/ignatius_block.json
 da4e99cc6ba922301b5e53a8657188dcc8046eae assets/alloyance/blockstates/infuscolium_block.json
@@ -64,6 +66,8 @@ c92029bb62f878dca03b539b8de25fdeb75a6fda assets/alloyance/models/block/deepslate
 c2261a5e10786e9dc936d9d790bfd166c33cd4d7 assets/alloyance/models/block/deep_iron_block.json
 f57dece34d0ddc41e095adb7870dc05cb49bfdd4 assets/alloyance/models/block/deep_iron_ore.json
 b1de0185f4e170c1f432ac7389a44d266ac318aa assets/alloyance/models/block/electrum_block.json
+98cc1f72655ea2219998d5b9d133d672e8034644 assets/alloyance/models/block/end_eximite_ore.json
+5f32c03a9c6b6881efa671566972e27a44030139 assets/alloyance/models/block/eximite_block.json
 869c1e0ded89e16329be85f3f4234f6a1cb72310 assets/alloyance/models/block/hepatizon_block.json
 104a3634f34015946de15c1c38d5e1751231b2e6 assets/alloyance/models/block/ignatius_block.json
 b5645e09d292d354ca70806df8ef2e29e000f2ff assets/alloyance/models/block/infuscolium_block.json

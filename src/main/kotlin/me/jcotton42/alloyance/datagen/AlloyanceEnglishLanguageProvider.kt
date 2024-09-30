@@ -159,5 +159,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.SHADOW_IRON -> "Shadow Iron"
         Metal.QUICKSILVER -> "Quicksilver"
         Metal.CERUCLASE -> "Ceruclase"
+        Metal.EXIMITE -> "Eximite"
     }
 }

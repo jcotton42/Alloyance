@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-29T19:57:28.1799778	Item Models: alloyance
+// 1.21.1	2024-09-29T21:04:39.163345	Item Models: alloyance
 108c391f311a4a8cfe2e0dd65402f5ba2141c734 assets/alloyance/models/item/angmallen_block.json
 85ba55fe0cd8e5b732353680066523bdcea8a466 assets/alloyance/models/item/angmallen_dust.json
 ec2a81e76c2cc1fc87dd300872eec982fa8f03fa assets/alloyance/models/item/angmallen_ingot.json
@@ -47,6 +47,11 @@ ca6393e0edef3963cd70337fd22e986be52eed5b assets/alloyance/models/item/deep_iron_
 ad517e41f8306cc065c7a50ea064995104aeeed4 assets/alloyance/models/item/electrum_dust.json
 ab498396beb0d48afc8f4e364f9bdc2b6f1cc305 assets/alloyance/models/item/electrum_ingot.json
 fa782c4363dd7981853a36ec74dd7a5ca60c087d assets/alloyance/models/item/electrum_nugget.json
+4672129d17abaa54aeb70667d9c7d7aae056b2fc assets/alloyance/models/item/end_eximite_ore.json
+ef6c583ef6627a1970cfeda4d422820257cbd4b9 assets/alloyance/models/item/eximite_block.json
+f2507e0949cfa6c8bba0f59e14517e54634251c9 assets/alloyance/models/item/eximite_dust.json
+0621f96dd09ac9a35a92477b8dee93d8ded16592 assets/alloyance/models/item/eximite_ingot.json
+10d34a86d2aaab2818b53bbd7dc215e367fd76d3 assets/alloyance/models/item/eximite_nugget.json
 4b37cc397851493a5615d91cdacd5b4ff94772bc assets/alloyance/models/item/gold_dust.json
 dc4e09dc91cdcd0e194c4520c91baa317776522a assets/alloyance/models/item/hepatizon_block.json
 791b26776fba0674fb07616868711dc298a5fb50 assets/alloyance/models/item/hepatizon_dust.json
@@ -92,6 +97,7 @@ b3dadf72ade313d203e638c92bbd20e77bb150ce assets/alloyance/models/item/prometheum
 376bc2054ede0087c8116f1aeb316ad614750208 assets/alloyance/models/item/raw_astral_silver.json
 8299ed93c1eaeb6db92c804ed69e63171b53318f assets/alloyance/models/item/raw_ceruclase.json
 50b04df6ca337a75040a3e2ec6331d715de4bd29 assets/alloyance/models/item/raw_deep_iron.json
+ca8d5f008ee3bd3a428c78d9e532e4b03c358978 assets/alloyance/models/item/raw_eximite.json
 dd68db532dde3f888d516bab3132abf84d05c0ed assets/alloyance/models/item/raw_ignatius.json
 bc8fa47cf548768e6251ce0b7df1eeba1bffc41a assets/alloyance/models/item/raw_infuscolium.json
 13dc44afb3badd2b327177ae2083c67a52488264 assets/alloyance/models/item/raw_manganese.json
