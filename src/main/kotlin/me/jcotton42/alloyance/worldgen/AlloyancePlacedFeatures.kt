@@ -52,6 +52,8 @@ object AlloyancePlacedFeatures {
     val ORICHALCUM_ORE_UPPER = registerKey("orichalcum_ore_upper")
     val ORICHALCUM_ORE_MIDDLE = registerKey("orichalcum_ore_middle")
     val ORICHALCUM_ORE_LOWER = registerKey("orichalcum_ore_lower")
+    val PLATINUM_ORE_UPPER = registerKey("platinum_ore_upper")
+    val PLATINUM_ORE_LOWER = registerKey("platinum_ore_lower")
 
     fun bootstrap(context: BootstrapContext<PlacedFeature>) {
         val configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE)
@@ -284,6 +286,24 @@ object AlloyancePlacedFeatures {
             countOrePlacement(
                 RARE,
                 HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-20), VerticalAnchor.absolute(0))
+            )
+        )
+        register(
+            context,
+            PLATINUM_ORE_UPPER,
+            configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.PLATINUM_ORE),
+            countOrePlacement(
+                ULTRA_RARE,
+                HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(80))
+            )
+        )
+        register(
+            context,
+            PLATINUM_ORE_LOWER,
+            configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.PLATINUM_ORE),
+            countOrePlacement(
+                VERY_RARE,
+                HeightRangePlacement.triangle(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(0))
             )
         )
     }

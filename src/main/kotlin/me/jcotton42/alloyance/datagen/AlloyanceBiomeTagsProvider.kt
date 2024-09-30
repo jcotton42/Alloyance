@@ -62,5 +62,7 @@ class AlloyanceBiomeTagsProvider(
             .addTags(BiomeTags.IS_NETHER)
         tag(AlloyanceBiomeTags.HAS_ORICHALCUM_ORE)
             .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_PLATINUM_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
     }
 }

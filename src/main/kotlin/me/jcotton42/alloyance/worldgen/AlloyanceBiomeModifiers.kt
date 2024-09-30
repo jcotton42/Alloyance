@@ -13,6 +13,7 @@ import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_MIDASIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_ORICHALCUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_OSMIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_OURECLASE_ORE
+import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_PLATINUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_PROMETHEUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_RUBRACIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_SHADOW_IRON_ORE
@@ -35,6 +36,8 @@ import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ORICHALCUM_ORE_MI
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ORICHALCUM_ORE_UPPER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.OSMIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.OURECLASE_ORE
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PLATINUM_ORE_LOWER
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PLATINUM_ORE_UPPER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PROMETHEUM_ORE_LOWER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PROMETHEUM_ORE_UPPER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.RUBRACIUM_ORE
@@ -81,6 +84,8 @@ object AlloyanceBiomeModifiers {
     val ADD_ORICHALCUM_ORE_UPPER = registerKey("add_orichalcum_ore_upper")
     val ADD_ORICHALCUM_ORE_MIDDLE = registerKey("add_orichalcum_ore_middle")
     val ADD_ORICHALCUM_ORE_LOWER = registerKey("add_orichalcum_ore_lower")
+    val ADD_PLATINUM_ORE_UPPER = registerKey("add_platinum_ore_upper")
+    val ADD_PLATINUM_ORE_LOWER = registerKey("add_platinum_ore_lower")
 
     private val ores = listOf(
         Triple(ADD_DEEP_IRON_ORE, HAS_DEEP_IRON_ORE, DEEP_IRON_ORE),
@@ -108,6 +113,8 @@ object AlloyanceBiomeModifiers {
         Triple(ADD_ORICHALCUM_ORE_UPPER, HAS_ORICHALCUM_ORE, ORICHALCUM_ORE_UPPER),
         Triple(ADD_ORICHALCUM_ORE_MIDDLE, HAS_ORICHALCUM_ORE, ORICHALCUM_ORE_MIDDLE),
         Triple(ADD_ORICHALCUM_ORE_LOWER, HAS_ORICHALCUM_ORE, ORICHALCUM_ORE_LOWER),
+        Triple(ADD_PLATINUM_ORE_UPPER, HAS_PLATINUM_ORE, PLATINUM_ORE_UPPER),
+        Triple(ADD_PLATINUM_ORE_LOWER, HAS_PLATINUM_ORE, PLATINUM_ORE_LOWER),
     )
 
     fun bootstrap(context: BootstrapContext<BiomeModifier>) {
