@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "platinum_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:platinum_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:platinum_ingot"
+  }
+}

@@ -214,6 +214,14 @@ object AlloyanceItems {
     val ORICHALCUM_NUGGET = nugget(ORICHALCUM)
     val ORICHALCUM_DUST = dust(ORICHALCUM)
 
+    val PLATINUM_ORE = block(AlloyanceBlocks.PLATINUM_ORE)
+    val DEEPSLATE_PLATINUM_ORE = block(AlloyanceBlocks.DEEPSLATE_PLATINUM_ORE)
+    val PLATINUM_BLOCK = block(AlloyanceBlocks.PLATINUM_BLOCK)
+    val RAW_PLATINUM = rawMaterial(PLATINUM)
+    val PLATINUM_INGOT = ingot(PLATINUM)
+    val PLATINUM_NUGGET = nugget(PLATINUM)
+    val PLATINUM_DUST = dust(PLATINUM)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

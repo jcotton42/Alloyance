@@ -146,6 +146,10 @@ object AlloyanceBlocks {
     val DEEPSLATE_ORICHALCUM_ORE = deepslateOre(ORICHALCUM)
     val ORICHALCUM_BLOCK = storageBlock(ORICHALCUM)
 
+    val PLATINUM_ORE = ore(PLATINUM)
+    val DEEPSLATE_PLATINUM_ORE = deepslateOre(PLATINUM)
+    val PLATINUM_BLOCK = storageBlock(PLATINUM)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

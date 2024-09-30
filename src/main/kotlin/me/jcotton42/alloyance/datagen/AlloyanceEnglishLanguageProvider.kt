@@ -163,5 +163,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.KALENDRITE -> "Kalendrite"
         Metal.MIDASIUM -> "Midasium"
         Metal.ORICHALCUM -> "Orichalcum"
+        Metal.PLATINUM -> "Platinum"
     }
 }

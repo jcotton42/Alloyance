@@ -26,6 +26,8 @@
     "alloyance:nether_kalendrite_ore",
     "alloyance:nether_midasium_ore",
     "alloyance:orichalcum_ore",
-    "alloyance:deepslate_orichalcum_ore"
+    "alloyance:deepslate_orichalcum_ore",
+    "alloyance:platinum_ore",
+    "alloyance:deepslate_platinum_ore"
   ]
 }
