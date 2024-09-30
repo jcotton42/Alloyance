@@ -34,6 +34,17 @@ class AlloyanceBlockTagsProvider(
             AlloyanceBlocks.ALLOYER.get(),
             AlloyanceBlocks.CRUSHER.get(),
         )
+        // workaround for https://github.com/neoforged/NeoForge/issues/1571
+        tag(BlockTags.INCORRECT_FOR_WOODEN_TOOL)
+            .addTags(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+        tag(BlockTags.INCORRECT_FOR_STONE_TOOL)
+            .addTags(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+        tag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+            .addTags(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+        tag(BlockTags.INCORRECT_FOR_GOLD_TOOL)
+            .addTags(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+        tag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+            .addTag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
 
         AlloyanceBlocks.STORAGE_BLOCKS.forEach { (metal, block) ->
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get())
