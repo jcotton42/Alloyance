@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "orichalcum_dust",
+  "ingredient": {
+    "tag": "c:ingots/orichalcum"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:orichalcum_dust"
+  }
+}

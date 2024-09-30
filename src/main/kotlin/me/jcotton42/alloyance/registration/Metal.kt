@@ -34,4 +34,5 @@ enum class Metal(val id: String, val hardness: Float, val blockBlastResistance: 
     EXIMITE("eximite", 4.7f, 15.0f),
     KALENDRITE("kalendrite", 4.7f, 15.0f),
     MIDASIUM("midasium", 4.2f, 10.0f),
+    ORICHALCUM("orichalcum", 6.1f, 20.0f),
 }

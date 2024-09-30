@@ -142,6 +142,10 @@ object AlloyanceBlocks {
     val NETHER_MIDASIUM_ORE = netherOre(MIDASIUM)
     val MIDASIUM_BLOCK = storageBlock(MIDASIUM)
 
+    val ORICHALCUM_ORE = ore(ORICHALCUM)
+    val DEEPSLATE_ORICHALCUM_ORE = deepslateOre(ORICHALCUM)
+    val ORICHALCUM_BLOCK = storageBlock(ORICHALCUM)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

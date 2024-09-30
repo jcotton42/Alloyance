@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-29T21:48:36.7300436	Item Models: alloyance
+// 1.21.1	2024-09-29T22:09:03.7211197	Item Models: alloyance
 108c391f311a4a8cfe2e0dd65402f5ba2141c734 assets/alloyance/models/item/angmallen_block.json
 85ba55fe0cd8e5b732353680066523bdcea8a466 assets/alloyance/models/item/angmallen_dust.json
 ec2a81e76c2cc1fc87dd300872eec982fa8f03fa assets/alloyance/models/item/angmallen_ingot.json
@@ -32,6 +32,7 @@ e99503a1168e632a5a4307bb8ef2f502d6d8b568 assets/alloyance/models/item/damascus_s
 adc14d65bc34952af3b365b04e2b1e5ed0a6f1a6 assets/alloyance/models/item/deepslate_deep_iron_ore.json
 2a3b4114701dd79fd3f8dfe7bf650ae0e06ba251 assets/alloyance/models/item/deepslate_infuscolium_ore.json
 e1cad102fde35956f1932c4d52219803f643d5a3 assets/alloyance/models/item/deepslate_manganese_ore.json
+35f0c6fd7b9c1daa7f5333c7833bc3a6ee93dc90 assets/alloyance/models/item/deepslate_orichalcum_ore.json
 1400859d2d9829efeaf6d7cfa0007937ceb0a0d8 assets/alloyance/models/item/deepslate_osmium_ore.json
 c1cbfa0ff96d2b322f5cd2ad0d84925886b3ca90 assets/alloyance/models/item/deepslate_oureclase_ore.json
 b98e1368967fea5c54f6239efcf34e74bc5dc472 assets/alloyance/models/item/deepslate_prometheum_ore.json
@@ -86,6 +87,11 @@ da19a119497db918f948614f3bc4f4fb351c3d00 assets/alloyance/models/item/midasium_n
 bd17875269beb057f536be4bed34616750fc6f9e assets/alloyance/models/item/nether_kalendrite_ore.json
 9dad48fce792771f30d42c08614242f9dbbd5c12 assets/alloyance/models/item/nether_midasium_ore.json
 719a4d8cef86acb59bddac533ac73b4e22cf4249 assets/alloyance/models/item/nether_shadow_iron_ore.json
+e89fc4367de2f3cd1b98f584bdf88f07dbbd513d assets/alloyance/models/item/orichalcum_block.json
+384a280de01284aac7ce5584e1662a7aee1c942b assets/alloyance/models/item/orichalcum_dust.json
+a351f1f31b0db3b62ffd229acddb24169b2e07b0 assets/alloyance/models/item/orichalcum_ingot.json
+75a9905593848acf5c3c5ccec19fdc0692534356 assets/alloyance/models/item/orichalcum_nugget.json
+32a8553ce5aee51a15f78760b04c57cd0d05957a assets/alloyance/models/item/orichalcum_ore.json
 d3c0821e0dda332e5585694f684f3d53c1b98114 assets/alloyance/models/item/osmium_block.json
 f0d6903d3473370abc0f536033c80f994eebddbe assets/alloyance/models/item/osmium_dust.json
 6489cb93607a58a7d752aa6c0bb44cf54ba66104 assets/alloyance/models/item/osmium_ingot.json
@@ -113,6 +119,7 @@ bc8fa47cf548768e6251ce0b7df1eeba1bffc41a assets/alloyance/models/item/raw_infusc
 db79408cb9db62d4682c6fbd28e1ac1854a3c1e2 assets/alloyance/models/item/raw_kalendrite.json
 13dc44afb3badd2b327177ae2083c67a52488264 assets/alloyance/models/item/raw_manganese.json
 658bb9824d248689fbf69fd0105bb18c30f92389 assets/alloyance/models/item/raw_midasium.json
+18d19b7f39363d8743ad7079e5c1bb4fa83b9e65 assets/alloyance/models/item/raw_orichalcum.json
 11a5574f501bf995deff9ba07b6bc0e71f1a6144 assets/alloyance/models/item/raw_osmium.json
 fe814d5e9d1f62eb98ca8fba02c43eb574cad051 assets/alloyance/models/item/raw_oureclase.json
 4520de8cdb5c354b8a27f6ee4bf53d506442f6e6 assets/alloyance/models/item/raw_prometheum.json
