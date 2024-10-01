@@ -239,6 +239,14 @@ object AlloyanceItems {
     val AMORDRINE_NUGGET = nugget(AMORDRINE)
     val AMORDRINE_DUST = dust(AMORDRINE)
 
+    val CARMOT_ORE = block(AlloyanceBlocks.CARMOT_ORE)
+    val DEEPSLATE_CARMOT_ORE = block(AlloyanceBlocks.DEEPSLATE_CARMOT_ORE)
+    val CARMOT_BLOCK = block(AlloyanceBlocks.CARMOT_BLOCK)
+    val RAW_CARMOT = rawMaterial(CARMOT)
+    val CARMOT_INGOT = ingot(CARMOT)
+    val CARMOT_NUGGET = nugget(CARMOT)
+    val CARMOT_DUST = dust(CARMOT)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

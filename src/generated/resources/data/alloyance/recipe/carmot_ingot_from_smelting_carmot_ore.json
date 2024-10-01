@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "carmot_ingot",
+  "ingredient": {
+    "item": "alloyance:carmot_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:carmot_ingot"
+  }
+}

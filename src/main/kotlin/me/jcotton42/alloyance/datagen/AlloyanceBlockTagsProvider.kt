@@ -120,4 +120,7 @@ private fun getToolTag(metal: Metal): TagKey<Block> = when (metal) {
     CERUCLASE, EXIMITE, KALENDRITE, MIDASIUM, ORICHALCUM, PLATINUM, VULCANITE, AMORDRINE -> Tags.Blocks.NEEDS_NETHERITE_TOOL
     // TODO below here should be higher than netherite once tools are implemented
     CELENEGIL -> Tags.Blocks.NEEDS_NETHERITE_TOOL
+
+    // tier 5
+    CARMOT -> Tags.Blocks.NEEDS_NETHERITE_TOOL
 }

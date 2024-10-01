@@ -255,6 +255,14 @@ object AlloyanceItemTags {
     val STORAGE_BLOCKS_AMORDRINE: TagKey<Item> = storageBlocks(AMORDRINE)
     val ALLOYABLES_AMORDRINE: TagKey<Item> = alloyables(AMORDRINE)
 
+    val RAW_MATERIALS_CARMOT: TagKey<Item> = rawMaterials(CARMOT)
+    val INGOTS_CARMOT: TagKey<Item> = ingots(CARMOT)
+    val NUGGETS_CARMOT: TagKey<Item> = nuggets(CARMOT)
+    val DUSTS_CARMOT: TagKey<Item> = dusts(CARMOT)
+    val STORAGE_BLOCKS_CARMOT: TagKey<Item> = storageBlocks(CARMOT)
+    val ORES_CARMOT: TagKey<Item> = ores(CARMOT)
+    val ALLOYABLES_CARMOT: TagKey<Item> = alloyables(CARMOT)
+
     private fun rawMaterials(metal: Metal): TagKey<Item> {
         val tag = c("raw_materials/${metal.id}")
         RAW_MATERIALS[metal] = tag

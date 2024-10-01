@@ -29,6 +29,8 @@
     "alloyance:deepslate_orichalcum_ore",
     "alloyance:platinum_ore",
     "alloyance:deepslate_platinum_ore",
-    "alloyance:nether_vulcanite_ore"
+    "alloyance:nether_vulcanite_ore",
+    "alloyance:carmot_ore",
+    "alloyance:deepslate_carmot_ore"
   ]
 }

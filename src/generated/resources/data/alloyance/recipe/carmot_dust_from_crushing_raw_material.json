@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "carmot_dust",
+  "ingredient": {
+    "tag": "c:raw_materials/carmot"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:carmot_dust"
+  }
+}

@@ -157,6 +157,10 @@ object AlloyanceBlocks {
 
     val AMORDRINE_BLOCK = storageBlock(AMORDRINE)
 
+    val CARMOT_ORE = ore(CARMOT)
+    val DEEPSLATE_CARMOT_ORE = deepslateOre(CARMOT)
+    val CARMOT_BLOCK = storageBlock(CARMOT)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

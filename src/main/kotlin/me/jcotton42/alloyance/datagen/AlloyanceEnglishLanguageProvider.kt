@@ -168,5 +168,7 @@ class AlloyanceEnglishLanguageProvider(
         Metal.VULCANITE -> "Vulcanite"
         Metal.CELENEGIL -> "Celenegil"
         Metal.AMORDRINE -> "Amordrine"
+
+        Metal.CARMOT -> "Carmot"
     }
 }
