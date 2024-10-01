@@ -2,6 +2,7 @@ package me.jcotton42.alloyance.worldgen
 
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_ASTRAL_SILVER_ORE
+import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_CARMOT_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_CERUCLASE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_DEEP_IRON_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_EXIMITE_ORE
@@ -24,6 +25,8 @@ import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_VULCANITE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_ZINC_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ASTRAL_SILVER_ORE_LOWER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ASTRAL_SILVER_ORE_UPPER
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.CARMOT_ORE_LOWER
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.CARMOT_ORE_UPPER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.CERUCLASE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.DEEP_IRON_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.EXIMITE_ORE
@@ -89,6 +92,8 @@ object AlloyanceBiomeModifiers {
     val ADD_PLATINUM_ORE_UPPER = registerKey("add_platinum_ore_upper")
     val ADD_PLATINUM_ORE_LOWER = registerKey("add_platinum_ore_lower")
     val ADD_VULCANITE_ORE = registerKey("add_vulcanite_ore")
+    val ADD_CARMOT_ORE_UPPER = registerKey("add_carmot_ore_upper")
+    val ADD_CARMOT_ORE_LOWER = registerKey("add_carmot_ore_lower")
 
     private val ores = listOf(
         Triple(ADD_DEEP_IRON_ORE, HAS_DEEP_IRON_ORE, DEEP_IRON_ORE),
@@ -119,6 +124,8 @@ object AlloyanceBiomeModifiers {
         Triple(ADD_PLATINUM_ORE_UPPER, HAS_PLATINUM_ORE, PLATINUM_ORE_UPPER),
         Triple(ADD_PLATINUM_ORE_LOWER, HAS_PLATINUM_ORE, PLATINUM_ORE_LOWER),
         Triple(ADD_VULCANITE_ORE, HAS_VULCANITE_ORE, VULCANITE_ORE),
+        Triple(ADD_CARMOT_ORE_UPPER, HAS_CARMOT_ORE, CARMOT_ORE_UPPER),
+        Triple(ADD_CARMOT_ORE_LOWER, HAS_CARMOT_ORE, CARMOT_ORE_LOWER),
     )
 
     fun bootstrap(context: BootstrapContext<BiomeModifier>) {

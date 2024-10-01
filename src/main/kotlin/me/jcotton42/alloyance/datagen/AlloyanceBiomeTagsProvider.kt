@@ -66,5 +66,8 @@ class AlloyanceBiomeTagsProvider(
             .addTags(BiomeTags.IS_OVERWORLD)
         tag(AlloyanceBiomeTags.HAS_VULCANITE_ORE)
             .addTags(BiomeTags.IS_NETHER)
+
+        tag(AlloyanceBiomeTags.HAS_CARMOT_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
     }
 }
