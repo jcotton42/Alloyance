@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_adamantine": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:raw_adamantine"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:adamantine_ingot_from_blasting_raw_adamantine"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_adamantine"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:adamantine_ingot_from_blasting_raw_adamantine"
+    ]
+  }
+}

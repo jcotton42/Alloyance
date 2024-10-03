@@ -1,4 +1,9 @@
-// 1.21.1	2024-10-02T21:27:20.0192702	Item Models: alloyance
+// 1.21.1	2024-10-02T21:40:50.0824649	Item Models: alloyance
+6f3701e75c5cc7421d5146a262eae52e34592565 assets/alloyance/models/item/adamantine_block.json
+4b1bfbc8cf265a0a7a6220be35ffec627f9d35c2 assets/alloyance/models/item/adamantine_dust.json
+61a3f9dd92fc288e7a15147d5b7db4165b8c77b0 assets/alloyance/models/item/adamantine_ingot.json
+6264c48e26862efe63b6c6fa3a01e320f933d0c6 assets/alloyance/models/item/adamantine_nugget.json
+ecf7ec5add0cf3e620d92ea5e9cc8d200b6ad88c assets/alloyance/models/item/adamantine_ore.json
 bfb369f6a77fec5776fb060493aa0b7bff388e39 assets/alloyance/models/item/amordrine_block.json
 ffc8a232ff19dbfd15a3ea160593598f3a2fa5d0 assets/alloyance/models/item/amordrine_dust.json
 2cd9b43b2b47414f0270caf00a4845193959d020 assets/alloyance/models/item/amordrine_ingot.json
@@ -47,6 +52,7 @@ db97babee9684bcb62f1cb81ad1e8d29983a2c2a assets/alloyance/models/item/copper_dus
 a19d1318ccf2e5fd42b41250c8992c934baba2e3 assets/alloyance/models/item/damascus_steel_dust.json
 e99503a1168e632a5a4307bb8ef2f502d6d8b568 assets/alloyance/models/item/damascus_steel_ingot.json
 5dd5cbe6fff131bd0c7f55614a082ad635a06140 assets/alloyance/models/item/damascus_steel_nugget.json
+fdbda7db08bbe9097782b7610c420b02b3d8669e assets/alloyance/models/item/deepslate_adamantine_ore.json
 9fa22838ab8e0cd0aea5059245d80fbaeeb26b6d assets/alloyance/models/item/deepslate_atlarus_ore.json
 7d5e5bac2777e059a5e86e9879a48cc1f0d1f039 assets/alloyance/models/item/deepslate_carmot_ore.json
 adc14d65bc34952af3b365b04e2b1e5ed0a6f1a6 assets/alloyance/models/item/deepslate_deep_iron_ore.json
@@ -162,6 +168,7 @@ b3dadf72ade313d203e638c92bbd20e77bb150ce assets/alloyance/models/item/prometheum
 7ff6d215919f3a20787d9b674d19f9968a973164 assets/alloyance/models/item/quicksilver_dust.json
 1ab905f6a637cd63bb8eee750b4515dab18ad9a1 assets/alloyance/models/item/quicksilver_ingot.json
 2802b9bf32231eed723554255dd96453d8d73974 assets/alloyance/models/item/quicksilver_nugget.json
+e388b28a53b45236a0d845ca867dece552fb8bc2 assets/alloyance/models/item/raw_adamantine.json
 376bc2054ede0087c8116f1aeb316ad614750208 assets/alloyance/models/item/raw_astral_silver.json
 8a593d4267a34773510fca5342ff201b66d797c2 assets/alloyance/models/item/raw_atlarus.json
 44fd4a0fed4c321eb99026d9af07e971fc564be8 assets/alloyance/models/item/raw_carmot.json

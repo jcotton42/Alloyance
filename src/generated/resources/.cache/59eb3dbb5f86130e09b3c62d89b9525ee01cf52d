@@ -1,4 +1,6 @@
-// 1.21.1	2024-10-02T21:27:20.0046397	Loot Tables
+// 1.21.1	2024-10-02T21:40:50.0563904	Loot Tables
+c900960f05fd9b83417973a0e30e13cc4abbdb90 data/alloyance/loot_table/blocks/adamantine_block.json
+8e7e56838177962741d8dd34e99516a9bc981054 data/alloyance/loot_table/blocks/adamantine_ore.json
 00986215a0540b1b41631c104659deaa568ccfea data/alloyance/loot_table/blocks/alloyer.json
 dcac1ba2ee83e55ce89f5d4bb5fcc256b7926d3f data/alloyance/loot_table/blocks/amordrine_block.json
 a80a5cc977a2ae430a4f1e00459a6153eafa8f03 data/alloyance/loot_table/blocks/angmallen_block.json
@@ -15,6 +17,7 @@ d4a069a40342c8003813eefdfc8b6545214ee99f data/alloyance/loot_table/blocks/celene
 e07b8f914c45dc33e91b209e31ec0229864429a1 data/alloyance/loot_table/blocks/ceruclase_block.json
 da661da2648d0a162afeb276de291c7a180ef08a data/alloyance/loot_table/blocks/crusher.json
 0c019d83175b2c87326719853a2793a1cf2eb006 data/alloyance/loot_table/blocks/damascus_steel_block.json
+10a0a01830ce420d4fad84964b0f24934e837d84 data/alloyance/loot_table/blocks/deepslate_adamantine_ore.json
 0ed35a471db8c1644618194f4a91042a75034d1c data/alloyance/loot_table/blocks/deepslate_atlarus_ore.json
 b22d8d2c601eb3fdf0f54d542651d661c61cea54 data/alloyance/loot_table/blocks/deepslate_carmot_ore.json
 b4b0d18e33efcd418feb6a7c18a037cb792e2a3c data/alloyance/loot_table/blocks/deepslate_deep_iron_ore.json

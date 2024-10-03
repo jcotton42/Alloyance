@@ -305,6 +305,14 @@ object AlloyanceItems {
     val ATLARUS_NUGGET = nugget(ATLARUS)
     val ATLARUS_DUST = dust(ATLARUS)
 
+    val ADAMANTINE_ORE = block(AlloyanceBlocks.ADAMANTINE_ORE)
+    val DEEPSLATE_ADAMANTINE_ORE = block(AlloyanceBlocks.DEEPSLATE_ADAMANTINE_ORE)
+    val ADAMANTINE_BLOCK = block(AlloyanceBlocks.ADAMANTINE_BLOCK)
+    val RAW_ADAMANTINE = rawMaterial(ADAMANTINE)
+    val ADAMANTINE_INGOT = ingot(ADAMANTINE)
+    val ADAMANTINE_NUGGET = nugget(ADAMANTINE)
+    val ADAMANTINE_DUST = dust(ADAMANTINE)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

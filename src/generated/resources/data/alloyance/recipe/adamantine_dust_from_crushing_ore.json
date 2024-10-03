@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "adamantine_dust",
+  "ingredient": {
+    "tag": "c:ores/adamantine"
+  },
+  "result": {
+    "count": 2,
+    "id": "alloyance:adamantine_dust"
+  }
+}

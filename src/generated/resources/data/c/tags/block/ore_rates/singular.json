@@ -38,6 +38,8 @@
     "alloyance:nether_sanguinite_ore",
     "alloyance:nether_vyroxeres_ore",
     "alloyance:atlarus_ore",
-    "alloyance:deepslate_atlarus_ore"
+    "alloyance:deepslate_atlarus_ore",
+    "alloyance:adamantine_ore",
+    "alloyance:deepslate_adamantine_ore"
   ]
 }

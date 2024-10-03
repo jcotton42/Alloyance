@@ -40,6 +40,7 @@
     "#c:storage_blocks/shadow_steel",
     "#c:storage_blocks/haderoth",
     "#c:storage_blocks/desichalkos",
-    "#c:storage_blocks/atlarus"
+    "#c:storage_blocks/atlarus",
+    "#c:storage_blocks/adamantine"
   ]
 }

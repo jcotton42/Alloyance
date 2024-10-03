@@ -180,5 +180,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.DESICHALKOS -> "Desichalkos"
 
         Metal.ATLARUS -> "Atlarus"
+        Metal.ADAMANTINE -> "Adamantine"
     }
 }

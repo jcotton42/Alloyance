@@ -53,4 +53,5 @@ enum class Metal(val id: String, val hardness: Float, val blockBlastResistance: 
 
     // tier 6
     ATLARUS("atlarus", 9.3f, 15f, 0xF2CB59),
+    ADAMANTINE("adamantine", 11.5f, 15f, 0xC62C29),
 }
