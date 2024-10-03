@@ -167,6 +167,9 @@ object AlloyanceBlocks {
     val END_MEUTOITE_ORE = endOre(MEUTOITE)
     val MEUTOITE_BLOCK = storageBlock(MEUTOITE)
 
+    val MITHRIL_ORE = ore(MITHRIL)
+    val MITHRIL_BLOCK = storageBlock(MITHRIL)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

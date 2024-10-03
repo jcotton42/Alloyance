@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "mithril_ingot",
+  "ingredient": {
+    "item": "alloyance:mithril_dust"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:mithril_ingot"
+  }
+}

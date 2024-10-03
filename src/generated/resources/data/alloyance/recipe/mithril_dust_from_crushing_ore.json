@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "mithril_dust",
+  "ingredient": {
+    "tag": "c:ores/mithril"
+  },
+  "result": {
+    "count": 2,
+    "id": "alloyance:mithril_dust"
+  }
+}

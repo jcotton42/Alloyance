@@ -261,6 +261,13 @@ object AlloyanceItems {
     val MEUTOITE_NUGGET = nugget(MEUTOITE)
     val MEUTOITE_DUST = dust(MEUTOITE)
 
+    val MITHRIL_ORE = block(AlloyanceBlocks.MITHRIL_ORE)
+    val MITHRIL_BLOCK = block(AlloyanceBlocks.MITHRIL_BLOCK)
+    val RAW_MITHRIL = rawMaterial(MITHRIL)
+    val MITHRIL_INGOT = ingot(MITHRIL)
+    val MITHRIL_NUGGET = nugget(MITHRIL)
+    val MITHRIL_DUST = dust(MITHRIL)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

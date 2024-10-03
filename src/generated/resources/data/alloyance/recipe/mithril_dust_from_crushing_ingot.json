@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "mithril_dust",
+  "ingredient": {
+    "tag": "c:ingots/mithril"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:mithril_dust"
+  }
+}

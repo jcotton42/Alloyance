@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T20:05:33.4718766	Item Models: alloyance
+// 1.21.1	2024-10-02T20:18:25.5424595	Item Models: alloyance
 bfb369f6a77fec5776fb060493aa0b7bff388e39 assets/alloyance/models/item/amordrine_block.json
 ffc8a232ff19dbfd15a3ea160593598f3a2fa5d0 assets/alloyance/models/item/amordrine_dust.json
 2cd9b43b2b47414f0270caf00a4845193959d020 assets/alloyance/models/item/amordrine_ingot.json
@@ -106,6 +106,11 @@ ea1c73bad2d18aa5895bf0282263c3aca73d1159 assets/alloyance/models/item/meutoite_i
 9a171d1a3a99cb014242fd748883830569c2787b assets/alloyance/models/item/midasium_dust.json
 2315ea29b08a78be50d86f6123757a89d16b9da1 assets/alloyance/models/item/midasium_ingot.json
 da19a119497db918f948614f3bc4f4fb351c3d00 assets/alloyance/models/item/midasium_nugget.json
+e9a23065022f1b41228d5c78adbed236bd135a02 assets/alloyance/models/item/mithril_block.json
+bfbcb0403b183cc53b39537e40d6f452b53a2818 assets/alloyance/models/item/mithril_dust.json
+f50bee9cdf20c897411016069b0a3b9e8b6a80bf assets/alloyance/models/item/mithril_ingot.json
+8f015ed4921360ddc479eecc4e74ab47ad66aa78 assets/alloyance/models/item/mithril_nugget.json
+d5bbf5ff25f14cc620eb2bed777a422e942b8682 assets/alloyance/models/item/mithril_ore.json
 03684423b4f14c5e9fdf5eff129a70e8fa029763 assets/alloyance/models/item/nether_ceruclase_ore.json
 1f73bb7bd2a90948ba4e76a431e97f3e3e4307c8 assets/alloyance/models/item/nether_ignatius_ore.json
 bd17875269beb057f536be4bed34616750fc6f9e assets/alloyance/models/item/nether_kalendrite_ore.json
@@ -153,6 +158,7 @@ db79408cb9db62d4682c6fbd28e1ac1854a3c1e2 assets/alloyance/models/item/raw_kalend
 13dc44afb3badd2b327177ae2083c67a52488264 assets/alloyance/models/item/raw_manganese.json
 2d1233f8bce5238aece3f560e01e14ed703f6d94 assets/alloyance/models/item/raw_meutoite.json
 658bb9824d248689fbf69fd0105bb18c30f92389 assets/alloyance/models/item/raw_midasium.json
+9fd42a7ef38f988b03ee312b155a313695942e88 assets/alloyance/models/item/raw_mithril.json
 18d19b7f39363d8743ad7079e5c1bb4fa83b9e65 assets/alloyance/models/item/raw_orichalcum.json
 11a5574f501bf995deff9ba07b6bc0e71f1a6144 assets/alloyance/models/item/raw_osmium.json
 fe814d5e9d1f62eb98ca8fba02c43eb574cad051 assets/alloyance/models/item/raw_oureclase.json

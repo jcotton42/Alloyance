@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T20:05:33.4538093	Block States: alloyance
+// 1.21.1	2024-10-02T20:18:25.5259112	Block States: alloyance
 fa74f1a98b899467fa84d795ba97e57a70a1f0b0 assets/alloyance/blockstates/amordrine_block.json
 c26456305e269f780b04ddc67ae97c824afc4b9b assets/alloyance/blockstates/angmallen_block.json
 ef8ae4510e7a1f98a340dc69eac37d825f237b82 assets/alloyance/blockstates/astral_silver_block.json
@@ -39,6 +39,8 @@ ab093f4defedffe1cad1f2b201f9e8e0423692b0 assets/alloyance/blockstates/kalendrite
 934c4e034b43dcadaa547be453979491c55e6dd2 assets/alloyance/blockstates/manganese_ore.json
 20199bd6c2fedea26d9447e7b3d8625f4a95b6b0 assets/alloyance/blockstates/meutoite_block.json
 f5b4a5c8732f9bbd623902bcac4aae54fc7fc699 assets/alloyance/blockstates/midasium_block.json
+6834ad443e6e0c12d4cbc6987dee5973f9be7f78 assets/alloyance/blockstates/mithril_block.json
+1c24a75b7c37bf1258c69d24091498330c3c13cf assets/alloyance/blockstates/mithril_ore.json
 d87e6eb80819d3837d108021e60ed0e1c4164553 assets/alloyance/blockstates/nether_ceruclase_ore.json
 296472dd0ec09ebca6aa1ef707c65c585ff22883 assets/alloyance/blockstates/nether_ignatius_ore.json
 aa7e702ecc361b1a6addd2315453fb1a77d9a961 assets/alloyance/blockstates/nether_kalendrite_ore.json
@@ -107,6 +109,8 @@ c704395ec3f916b9a7ad03cc5abc1035b85a5196 assets/alloyance/models/block/manganese
 1a20a6af02cd68ee4be06e2ddcd3820efbdb4c08 assets/alloyance/models/block/manganese_ore.json
 83dd868fae55f367389310c95efdbabc2e7b4f61 assets/alloyance/models/block/meutoite_block.json
 ee787244720ab8e5bbe4b7a3d2df1ddead2f86e3 assets/alloyance/models/block/midasium_block.json
+c33614dd64eca8dc2a77a51ce9da165c93a52cfb assets/alloyance/models/block/mithril_block.json
+fe922b6ba90ea01f1bc18fad02cadb900e25e0fe assets/alloyance/models/block/mithril_ore.json
 633a94b2d520042da357c88cfc2b6426b074047c assets/alloyance/models/block/nether_ceruclase_ore.json
 37decaaef75095bdc38733b75bc6b9acbf28e2cb assets/alloyance/models/block/nether_ignatius_ore.json
 2ca42c4b3d0babe61b862f1d62526ffe5b8b41ab assets/alloyance/models/block/nether_kalendrite_ore.json

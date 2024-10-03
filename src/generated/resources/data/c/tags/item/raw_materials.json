@@ -22,6 +22,7 @@
     "#c:raw_materials/vulcanite",
     "#c:raw_materials/carmot",
     "#c:raw_materials/lemurite",
-    "#c:raw_materials/meutoite"
+    "#c:raw_materials/meutoite",
+    "#c:raw_materials/mithril"
   ]
 }

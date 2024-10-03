@@ -172,5 +172,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.CARMOT -> "Carmot"
         Metal.LEMURITE -> "Lemurite"
         Metal.MEUTOITE -> "Meutoite"
+        Metal.MITHRIL -> "Mithril"
     }
 }
