@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T20:49:58.6672856	Item Models: alloyance
+// 1.21.1	2024-10-02T21:05:53.8607171	Item Models: alloyance
 bfb369f6a77fec5776fb060493aa0b7bff388e39 assets/alloyance/models/item/amordrine_block.json
 ffc8a232ff19dbfd15a3ea160593598f3a2fa5d0 assets/alloyance/models/item/amordrine_dust.json
 2cd9b43b2b47414f0270caf00a4845193959d020 assets/alloyance/models/item/amordrine_ingot.json
@@ -187,6 +187,10 @@ c83457b4ad6fac74564fbc541a66f15f6598476f assets/alloyance/models/item/rubracium_
 a61d9c14fbc8b991d6b2125f6df05c914f81c798 assets/alloyance/models/item/shadow_iron_dust.json
 70c1ee36b62e6d26a90db14b024f8bdd30a33ccf assets/alloyance/models/item/shadow_iron_ingot.json
 90fbc20e0d7f08576411017e6f8fb8330119b199 assets/alloyance/models/item/shadow_iron_nugget.json
+b7f4f0a98bd9b6ddf74b77735250d914936a682e assets/alloyance/models/item/shadow_steel_block.json
+5653205273015d6b3a8ed82a6cc8c8c546e56ce7 assets/alloyance/models/item/shadow_steel_dust.json
+ec122f33edd029e27111bf0c54e038c7aa2f42ce assets/alloyance/models/item/shadow_steel_ingot.json
+a045e393094abae7d02059aad9cb4d10f71ceb54 assets/alloyance/models/item/shadow_steel_nugget.json
 1036e9929ca7a8f5cd451a27b19bf9671a2275b3 assets/alloyance/models/item/silver_block.json
 ec11fbc5c78407a28a0834bfd9edc7f3aba2c0c4 assets/alloyance/models/item/silver_dust.json
 52cfc9509ae6cd3c449b7009c03c34040a0937a1 assets/alloyance/models/item/silver_ingot.json

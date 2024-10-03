@@ -36,6 +36,7 @@
     "alloyance:meutoite_block",
     "alloyance:mithril_block",
     "alloyance:sanguinite_block",
-    "alloyance:vyroxeres_block"
+    "alloyance:vyroxeres_block",
+    "alloyance:shadow_steel_block"
   ]
 }

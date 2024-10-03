@@ -303,6 +303,12 @@ object AlloyanceItemTags {
     val ORES_VYROXERES: TagKey<Item> = ores(VYROXERES)
     val ALLOYABLES_VYROXERES: TagKey<Item> = alloyables(VYROXERES)
 
+    val INGOTS_SHADOW_STEEL: TagKey<Item> = ingots(SHADOW_STEEL)
+    val NUGGETS_SHADOW_STEEL: TagKey<Item> = nuggets(SHADOW_STEEL)
+    val DUSTS_SHADOW_STEEL: TagKey<Item> = dusts(SHADOW_STEEL)
+    val STORAGE_BLOCKS_SHADOW_STEEL: TagKey<Item> = storageBlocks(SHADOW_STEEL)
+    val ALLOYABLES_SHADOW_STEEL: TagKey<Item> = alloyables(SHADOW_STEEL)
+
     private fun rawMaterials(metal: Metal): TagKey<Item> {
         val tag = c("raw_materials/${metal.id}")
         RAW_MATERIALS[metal] = tag

@@ -176,6 +176,8 @@ object AlloyanceBlocks {
     val NETHER_VYROXERES_ORE = netherOre(VYROXERES)
     val VYROXERES_BLOCK = storageBlock(VYROXERES)
 
+    val SHADOW_STEEL_BLOCK = storageBlock(SHADOW_STEEL)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

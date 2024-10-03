@@ -282,6 +282,11 @@ object AlloyanceItems {
     val VYROXERES_NUGGET = nugget(VYROXERES)
     val VYROXERES_DUST = dust(VYROXERES)
 
+    val SHADOW_STEEL_BLOCK = block(AlloyanceBlocks.SHADOW_STEEL_BLOCK)
+    val SHADOW_STEEL_INGOT = ingot(SHADOW_STEEL)
+    val SHADOW_STEEL_NUGGET = nugget(SHADOW_STEEL)
+    val SHADOW_STEEL_DUST = dust(SHADOW_STEEL)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

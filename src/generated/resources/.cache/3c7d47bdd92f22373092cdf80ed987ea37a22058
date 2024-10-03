@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T20:49:58.6476315	Block States: alloyance
+// 1.21.1	2024-10-02T21:05:53.8380683	Block States: alloyance
 fa74f1a98b899467fa84d795ba97e57a70a1f0b0 assets/alloyance/blockstates/amordrine_block.json
 c26456305e269f780b04ddc67ae97c824afc4b9b assets/alloyance/blockstates/angmallen_block.json
 ef8ae4510e7a1f98a340dc69eac37d825f237b82 assets/alloyance/blockstates/astral_silver_block.json
@@ -64,6 +64,7 @@ d9ea2dd447dd8a47ea986cc87489050ed894a916 assets/alloyance/blockstates/rubracium_
 975c8bb56c3a8259de01c3d50cf7077a79a3cb5a assets/alloyance/blockstates/rubracium_ore.json
 10d0564592fa03921bda660c0e7008c1d83094ab assets/alloyance/blockstates/sanguinite_block.json
 9c1e584c7cf3d920ab3266e10ffcabb88e5ebad6 assets/alloyance/blockstates/shadow_iron_block.json
+d846b3f9a9d8efdce4aba36da8b7465cfc86ec25 assets/alloyance/blockstates/shadow_steel_block.json
 812928603ff5a576d2b112e66c20c6c00a5920ab assets/alloyance/blockstates/silver_block.json
 e2f07f47c5c664d3d25dbce4f216a95bcd81d76e assets/alloyance/blockstates/silver_ore.json
 8f5a17de209b8bf8ee424a36438538ccba02fa33 assets/alloyance/blockstates/steel_block.json
@@ -138,6 +139,7 @@ f66a87df6e055319257a8cd233818d6f4edf6fae assets/alloyance/models/block/rubracium
 c24963dbcb9d9cdb23a6eeb487d318b4f60fd6a7 assets/alloyance/models/block/rubracium_ore.json
 d6cd1dba40fc2b3dc7c5c17a94497c81931518a7 assets/alloyance/models/block/sanguinite_block.json
 a0452010220cde839e6c2113e91794a56c3de9e3 assets/alloyance/models/block/shadow_iron_block.json
+3d8423bdde54246c0cf92621c10c42a5ca3b1a57 assets/alloyance/models/block/shadow_steel_block.json
 62ae4c4df0ac6487f6a6acc76e22cffc887c5834 assets/alloyance/models/block/silver_block.json
 e7cc25c328dffa96df6109ada3d8d9a7a1df0ede assets/alloyance/models/block/silver_ore.json
 15dd231ce42da83a61fc2dcf7f6182fa197cf587 assets/alloyance/models/block/steel_block.json

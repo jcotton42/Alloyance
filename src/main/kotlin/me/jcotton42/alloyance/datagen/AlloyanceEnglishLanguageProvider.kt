@@ -175,5 +175,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.MITHRIL -> "Mithril"
         Metal.SANGUINITE -> "Sanguinite"
         Metal.VYROXERES -> "Vyroxeres"
+        Metal.SHADOW_STEEL -> "Shadow Steel"
     }
 }
