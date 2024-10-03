@@ -29,6 +29,7 @@ object Alloyance {
 
         AlloyanceBlocks.register(MOD_BUS)
         AlloyanceCreativeTabs.register(MOD_BUS)
+        AlloyanceDataComponents.register(MOD_BUS)
         AlloyanceDataMaps.register(MOD_BUS)
         AlloyanceItems.register(MOD_BUS)
         AlloyanceMenuTypes.register(MOD_BUS)
