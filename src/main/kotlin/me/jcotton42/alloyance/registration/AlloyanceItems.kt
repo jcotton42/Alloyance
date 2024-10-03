@@ -337,6 +337,11 @@ object AlloyanceItems {
     val KRIK_NUGGET = nugget(KRIK)
     val KRIK_DUST = dust(KRIK)
 
+    val TARTARITE_BLOCK = block(AlloyanceBlocks.TARTARITE_BLOCK)
+    val TARTARITE_INGOT = ingot(TARTARITE)
+    val TARTARITE_NUGGET = nugget(TARTARITE)
+    val TARTARITE_DUST = dust(TARTARITE)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

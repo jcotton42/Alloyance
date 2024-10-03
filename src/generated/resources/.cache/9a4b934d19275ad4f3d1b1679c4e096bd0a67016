@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T22:21:32.7491463	Item Models: alloyance
+// 1.21.1	2024-10-02T22:24:13.7891082	Item Models: alloyance
 6f3701e75c5cc7421d5146a262eae52e34592565 assets/alloyance/models/item/adamantine_block.json
 4b1bfbc8cf265a0a7a6220be35ffec627f9d35c2 assets/alloyance/models/item/adamantine_dust.json
 61a3f9dd92fc288e7a15147d5b7db4165b8c77b0 assets/alloyance/models/item/adamantine_ingot.json
@@ -242,6 +242,10 @@ aa05ce0d3794a5dca367dd2c15adda9ef496b384 assets/alloyance/models/item/steel_bloc
 a733ca3f9f53981749d9dd1b91b9ef0f7c03f263 assets/alloyance/models/item/steel_dust.json
 3336ef295f7a286fd9aa24596deb1f9c6c5b19c4 assets/alloyance/models/item/steel_ingot.json
 6bb5f90180c1829ea161ecfa2fb9ab8544c6a00c assets/alloyance/models/item/steel_nugget.json
+cfa0004d4e03015a073c23039d8d29cfad6896c7 assets/alloyance/models/item/tartarite_block.json
+9c71753fc5a652f24c590f1091bba204792e7bd1 assets/alloyance/models/item/tartarite_dust.json
+d03fd6a298e539480e3d51ae1160f4dc6bc11e19 assets/alloyance/models/item/tartarite_ingot.json
+7369f6d45c8e1f15e6970dbc21c1923cfadfba24 assets/alloyance/models/item/tartarite_nugget.json
 5af677e15357cdfe325366aea1dfbb8fa90dd9a4 assets/alloyance/models/item/thermite_dust.json
 de7becb63407e4fc36d8ab78179f895a771b0b81 assets/alloyance/models/item/tin_block.json
 7fbf0505df28d0b8bf7e637239580763d2a63b6a assets/alloyance/models/item/tin_dust.json

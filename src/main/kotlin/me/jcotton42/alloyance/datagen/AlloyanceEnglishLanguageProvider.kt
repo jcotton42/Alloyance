@@ -185,5 +185,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.LUTETIUM -> "Lutetium"
         Metal.INOLASHITE -> "Inolashite"
         Metal.KRIK -> "Krik"
+        Metal.TARTARITE -> "Tartarite"
     }
 }

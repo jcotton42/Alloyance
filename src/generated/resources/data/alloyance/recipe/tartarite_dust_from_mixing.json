@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "tartarite_dust",
+  "ingredients": [
+    {
+      "tag": "c:dusts/adamantine"
+    },
+    {
+      "tag": "c:dusts/atlarus"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:tartarite_dust"
+  }
+}

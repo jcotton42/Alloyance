@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T22:21:32.7260699	Block States: alloyance
+// 1.21.1	2024-10-02T22:24:13.7654104	Block States: alloyance
 177ad7fb981f29d57b4febc3786c268f8465c3a7 assets/alloyance/blockstates/adamantine_block.json
 4ceb30e2ac220dddf3263c45e1c7ec16016814e5 assets/alloyance/blockstates/adamantine_ore.json
 bd6b35e4666c02e1575153a549b52c2527b5e26f assets/alloyance/blockstates/alduorite_block.json
@@ -82,6 +82,7 @@ d846b3f9a9d8efdce4aba36da8b7465cfc86ec25 assets/alloyance/blockstates/shadow_ste
 812928603ff5a576d2b112e66c20c6c00a5920ab assets/alloyance/blockstates/silver_block.json
 e2f07f47c5c664d3d25dbce4f216a95bcd81d76e assets/alloyance/blockstates/silver_ore.json
 8f5a17de209b8bf8ee424a36438538ccba02fa33 assets/alloyance/blockstates/steel_block.json
+ba7e22d4a0abccd1e8c0aecd902a5297c40004fb assets/alloyance/blockstates/tartarite_block.json
 fb5a6f36f1a4fa638382eac46915bdaed96e94a7 assets/alloyance/blockstates/tin_block.json
 d708b81c2209135700696ede31f1329a4aeda949 assets/alloyance/blockstates/tin_ore.json
 bdbcc831a1c1e934b6d3d9f403c6ff04bb2cd121 assets/alloyance/blockstates/vulcanite_block.json
@@ -171,6 +172,7 @@ a0452010220cde839e6c2113e91794a56c3de9e3 assets/alloyance/models/block/shadow_ir
 62ae4c4df0ac6487f6a6acc76e22cffc887c5834 assets/alloyance/models/block/silver_block.json
 e7cc25c328dffa96df6109ada3d8d9a7a1df0ede assets/alloyance/models/block/silver_ore.json
 15dd231ce42da83a61fc2dcf7f6182fa197cf587 assets/alloyance/models/block/steel_block.json
+5cdb98ee9b59a8a54c8baef89671a248a5fe3fa9 assets/alloyance/models/block/tartarite_block.json
 9a6be2d8a23d50ba37f8ddc1bd51815e0904b4ce assets/alloyance/models/block/tin_block.json
 a22f61ac10da814eb738b23d2d7b8d954033e4f3 assets/alloyance/models/block/tin_ore.json
 c4673dd9e3c72e4d81e0893e57096c0fc2d562b7 assets/alloyance/models/block/vulcanite_block.json
