@@ -13,6 +13,7 @@ import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_LEMURITE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_MANGANESE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_MEUTOITE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_MIDASIUM_ORE
+import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_MITHRIL_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_ORICHALCUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_OSMIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_OURECLASE_ORE
@@ -39,6 +40,9 @@ import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.LEMURITE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.MANGANESE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.MEUTOITE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.MIDASIUM_ORE
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.MITHRIL_ORE
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.MITHRIL_ORE_LOWER
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.MITHRIL_ORE_UPPER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ORICHALCUM_ORE_LOWER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ORICHALCUM_ORE_MIDDLE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ORICHALCUM_ORE_UPPER
@@ -100,6 +104,9 @@ object AlloyanceBiomeModifiers {
     val ADD_CARMOT_ORE_LOWER = registerKey("add_carmot_ore_lower")
     val ADD_LEMURITE_ORE = registerKey("add_lemurite_ore")
     val ADD_MEUTOITE_ORE = registerKey("add_meutoite_ore")
+    val ADD_MITHRIL_ORE = registerKey("add_mithril_ore")
+    val ADD_MITHRIL_ORE_UPPER = registerKey("add_mithril_ore_upper")
+    val ADD_MITHRIL_ORE_LOWER = registerKey("add_mithril_ore_lower")
 
     private val ores = listOf(
         Triple(ADD_DEEP_IRON_ORE, HAS_DEEP_IRON_ORE, DEEP_IRON_ORE),
@@ -134,6 +141,9 @@ object AlloyanceBiomeModifiers {
         Triple(ADD_CARMOT_ORE_LOWER, HAS_CARMOT_ORE, CARMOT_ORE_LOWER),
         Triple(ADD_LEMURITE_ORE, HAS_LEMURITE_ORE, LEMURITE_ORE),
         Triple(ADD_MEUTOITE_ORE, HAS_MEUTOITE_ORE, MEUTOITE_ORE),
+        Triple(ADD_MITHRIL_ORE, HAS_MITHRIL_ORE, MITHRIL_ORE),
+        Triple(ADD_MITHRIL_ORE_UPPER, HAS_MITHRIL_ORE, MITHRIL_ORE_UPPER),
+        Triple(ADD_MITHRIL_ORE_LOWER, HAS_MITHRIL_ORE, MITHRIL_ORE_LOWER),
     )
 
     fun bootstrap(context: BootstrapContext<BiomeModifier>) {

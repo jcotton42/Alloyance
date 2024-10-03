@@ -73,5 +73,7 @@ class AlloyanceBiomeTagsProvider(
             .addTags(BiomeTags.IS_NETHER)
         tag(AlloyanceBiomeTags.HAS_MEUTOITE_ORE)
             .addTags(BiomeTags.IS_END)
+        tag(AlloyanceBiomeTags.HAS_MITHRIL_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
     }
 }

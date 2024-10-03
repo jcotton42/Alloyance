@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T20:10:52.9486987	Tags for minecraft:worldgen/biome mod id alloyance
+// 1.21.1	2024-10-02T20:26:09.9726834	Tags for minecraft:worldgen/biome mod id alloyance
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_astral_silver_ore.json
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_carmot_ore.json
 a24545b58f3f91c6c033586e2b2ae12f1e8131b1 data/alloyance/tags/worldgen/biome/has_ceruclase_ore.json
@@ -11,6 +11,7 @@ a24545b58f3f91c6c033586e2b2ae12f1e8131b1 data/alloyance/tags/worldgen/biome/has_
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_manganese_ore.json
 2848fd21678020e480817af24906cc7471b13118 data/alloyance/tags/worldgen/biome/has_meutoite_ore.json
 a24545b58f3f91c6c033586e2b2ae12f1e8131b1 data/alloyance/tags/worldgen/biome/has_midasium_ore.json
+b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_mithril_ore.json
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_orichalcum_ore.json
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_osmium_ore.json
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_oureclase_ore.json
