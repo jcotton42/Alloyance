@@ -287,6 +287,11 @@ object AlloyanceItems {
     val SHADOW_STEEL_NUGGET = nugget(SHADOW_STEEL)
     val SHADOW_STEEL_DUST = dust(SHADOW_STEEL)
 
+    val HADEROTH_BLOCK = block(AlloyanceBlocks.HADEROTH_BLOCK)
+    val HADEROTH_INGOT = ingot(HADEROTH)
+    val HADEROTH_NUGGET = nugget(HADEROTH)
+    val HADEROTH_DUST = dust(HADEROTH)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

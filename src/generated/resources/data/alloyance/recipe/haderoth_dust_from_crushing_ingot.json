@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "haderoth_dust",
+  "ingredient": {
+    "tag": "c:ingots/haderoth"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:haderoth_dust"
+  }
+}

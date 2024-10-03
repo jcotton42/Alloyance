@@ -48,4 +48,5 @@ enum class Metal(val id: String, val hardness: Float, val blockBlastResistance: 
     SANGUINITE("sanguinite", 6.6f, 20f, 0xC34F4F),
     VYROXERES("vyroxeres", 4.7f, 15f, 0x5FC83F),
     SHADOW_STEEL("shadow_steel", 10f, 10f, 0xC6BBB9),
+    HADEROTH("haderoth", 10f, 20f, 0x351F22),
 }

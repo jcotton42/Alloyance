@@ -1,0 +1,17 @@
+{
+  "type": "alloyance:alloyer",
+  "experience": 1.5,
+  "group": "haderoth_ingot",
+  "ingredient1": {
+    "count": 1,
+    "tag": "alloyance:alloyables/mithril"
+  },
+  "ingredient2": {
+    "count": 2,
+    "tag": "alloyance:alloyables/rubracium"
+  },
+  "result": {
+    "count": 3,
+    "id": "alloyance:haderoth_ingot"
+  }
+}

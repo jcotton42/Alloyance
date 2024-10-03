@@ -178,6 +178,8 @@ object AlloyanceBlocks {
 
     val SHADOW_STEEL_BLOCK = storageBlock(SHADOW_STEEL)
 
+    val HADEROTH_BLOCK = storageBlock(HADEROTH)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

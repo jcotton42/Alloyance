@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T21:05:53.8607171	Item Models: alloyance
+// 1.21.1	2024-10-02T21:09:44.3299783	Item Models: alloyance
 bfb369f6a77fec5776fb060493aa0b7bff388e39 assets/alloyance/models/item/amordrine_block.json
 ffc8a232ff19dbfd15a3ea160593598f3a2fa5d0 assets/alloyance/models/item/amordrine_dust.json
 2cd9b43b2b47414f0270caf00a4845193959d020 assets/alloyance/models/item/amordrine_ingot.json
@@ -70,6 +70,10 @@ f2507e0949cfa6c8bba0f59e14517e54634251c9 assets/alloyance/models/item/eximite_du
 0621f96dd09ac9a35a92477b8dee93d8ded16592 assets/alloyance/models/item/eximite_ingot.json
 10d34a86d2aaab2818b53bbd7dc215e367fd76d3 assets/alloyance/models/item/eximite_nugget.json
 4b37cc397851493a5615d91cdacd5b4ff94772bc assets/alloyance/models/item/gold_dust.json
+b6f939633bc5dbd1d25c90c04788be39f186fe06 assets/alloyance/models/item/haderoth_block.json
+88027a264eb06770a5091975c477a86f372e6914 assets/alloyance/models/item/haderoth_dust.json
+0395d7aa854ed367992e86beb9a5b889e274202d assets/alloyance/models/item/haderoth_ingot.json
+04d286cf494393c5eaacfb671aeb20aa28bb022c assets/alloyance/models/item/haderoth_nugget.json
 dc4e09dc91cdcd0e194c4520c91baa317776522a assets/alloyance/models/item/hepatizon_block.json
 791b26776fba0674fb07616868711dc298a5fb50 assets/alloyance/models/item/hepatizon_dust.json
 e47a5af9665c457147a7acd530e429f595820512 assets/alloyance/models/item/hepatizon_ingot.json

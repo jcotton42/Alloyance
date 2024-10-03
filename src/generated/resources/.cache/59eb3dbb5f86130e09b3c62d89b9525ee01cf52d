@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T21:05:53.8436002	Loot Tables
+// 1.21.1	2024-10-02T21:09:44.3164304	Loot Tables
 00986215a0540b1b41631c104659deaa568ccfea data/alloyance/loot_table/blocks/alloyer.json
 dcac1ba2ee83e55ce89f5d4bb5fcc256b7926d3f data/alloyance/loot_table/blocks/amordrine_block.json
 a80a5cc977a2ae430a4f1e00459a6153eafa8f03 data/alloyance/loot_table/blocks/angmallen_block.json
@@ -31,6 +31,7 @@ dfc390b875e2da75ae723b6a530a897c826a44d2 data/alloyance/loot_table/blocks/electr
 7071f0637ba7d5d94ae2f0251fabc611efd1e041 data/alloyance/loot_table/blocks/end_eximite_ore.json
 6ddb464ee9ba309aad0e52d3deee8eda214cd0c8 data/alloyance/loot_table/blocks/end_meutoite_ore.json
 42c46f0c03d9cacebb8a00574abd70f41001f6a8 data/alloyance/loot_table/blocks/eximite_block.json
+b78a685b55ffeb14a060fa8196c76306bd1c58e7 data/alloyance/loot_table/blocks/haderoth_block.json
 b8e58eb2f15e14af7b883d0896ba2ff4d06c8e71 data/alloyance/loot_table/blocks/hepatizon_block.json
 9011ed0177245008de29ca76084275a1e9263caf data/alloyance/loot_table/blocks/ignatius_block.json
 ceebd788e4fb1b47523c15b424bfddda381e8edc data/alloyance/loot_table/blocks/infuscolium_block.json
