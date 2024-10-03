@@ -181,5 +181,6 @@ class AlloyanceEnglishLanguageProvider(
 
         Metal.ATLARUS -> "Atlarus"
         Metal.ADAMANTINE -> "Adamantine"
+        Metal.ALDUORITE -> "Alduorite"
     }
 }

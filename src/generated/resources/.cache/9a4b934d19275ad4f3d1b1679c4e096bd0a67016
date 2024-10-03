@@ -1,9 +1,13 @@
-// 1.21.1	2024-10-02T21:40:50.0824649	Item Models: alloyance
+// 1.21.1	2024-10-02T21:52:14.3209953	Item Models: alloyance
 6f3701e75c5cc7421d5146a262eae52e34592565 assets/alloyance/models/item/adamantine_block.json
 4b1bfbc8cf265a0a7a6220be35ffec627f9d35c2 assets/alloyance/models/item/adamantine_dust.json
 61a3f9dd92fc288e7a15147d5b7db4165b8c77b0 assets/alloyance/models/item/adamantine_ingot.json
 6264c48e26862efe63b6c6fa3a01e320f933d0c6 assets/alloyance/models/item/adamantine_nugget.json
 ecf7ec5add0cf3e620d92ea5e9cc8d200b6ad88c assets/alloyance/models/item/adamantine_ore.json
+f3874ffb2c773ae9356ba858a66b33b3eefd80aa assets/alloyance/models/item/alduorite_block.json
+ffe285f219984e45f2719b01d3f6ab577bdbed2a assets/alloyance/models/item/alduorite_dust.json
+6ea67197112bc1c96949b550e6721701d0c7dd08 assets/alloyance/models/item/alduorite_ingot.json
+76dd8d72a2c9b4608092fd3409f104c09d5bc039 assets/alloyance/models/item/alduorite_nugget.json
 bfb369f6a77fec5776fb060493aa0b7bff388e39 assets/alloyance/models/item/amordrine_block.json
 ffc8a232ff19dbfd15a3ea160593598f3a2fa5d0 assets/alloyance/models/item/amordrine_dust.json
 2cd9b43b2b47414f0270caf00a4845193959d020 assets/alloyance/models/item/amordrine_ingot.json
@@ -131,6 +135,7 @@ bfbcb0403b183cc53b39537e40d6f452b53a2818 assets/alloyance/models/item/mithril_du
 f50bee9cdf20c897411016069b0a3b9e8b6a80bf assets/alloyance/models/item/mithril_ingot.json
 8f015ed4921360ddc479eecc4e74ab47ad66aa78 assets/alloyance/models/item/mithril_nugget.json
 d5bbf5ff25f14cc620eb2bed777a422e942b8682 assets/alloyance/models/item/mithril_ore.json
+c383c52bc113024cbf7b74165d56ff84e546d19f assets/alloyance/models/item/nether_alduorite_ore.json
 03684423b4f14c5e9fdf5eff129a70e8fa029763 assets/alloyance/models/item/nether_ceruclase_ore.json
 1f73bb7bd2a90948ba4e76a431e97f3e3e4307c8 assets/alloyance/models/item/nether_ignatius_ore.json
 bd17875269beb057f536be4bed34616750fc6f9e assets/alloyance/models/item/nether_kalendrite_ore.json
@@ -169,6 +174,7 @@ b3dadf72ade313d203e638c92bbd20e77bb150ce assets/alloyance/models/item/prometheum
 1ab905f6a637cd63bb8eee750b4515dab18ad9a1 assets/alloyance/models/item/quicksilver_ingot.json
 2802b9bf32231eed723554255dd96453d8d73974 assets/alloyance/models/item/quicksilver_nugget.json
 e388b28a53b45236a0d845ca867dece552fb8bc2 assets/alloyance/models/item/raw_adamantine.json
+f87c3c3928c27aba446e15da93a1c2e6ebc529cf assets/alloyance/models/item/raw_alduorite.json
 376bc2054ede0087c8116f1aeb316ad614750208 assets/alloyance/models/item/raw_astral_silver.json
 8a593d4267a34773510fca5342ff201b66d797c2 assets/alloyance/models/item/raw_atlarus.json
 44fd4a0fed4c321eb99026d9af07e971fc564be8 assets/alloyance/models/item/raw_carmot.json

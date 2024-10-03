@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "alduorite_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:alduorite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:alduorite_ingot"
+  }
+}

@@ -1,6 +1,7 @@
-// 1.21.1	2024-10-02T21:40:50.0563904	Loot Tables
+// 1.21.1	2024-10-02T21:52:14.3047756	Loot Tables
 c900960f05fd9b83417973a0e30e13cc4abbdb90 data/alloyance/loot_table/blocks/adamantine_block.json
 8e7e56838177962741d8dd34e99516a9bc981054 data/alloyance/loot_table/blocks/adamantine_ore.json
+7a4d2b4ddcd5c8b78f386bcc5a049313cbc020aa data/alloyance/loot_table/blocks/alduorite_block.json
 00986215a0540b1b41631c104659deaa568ccfea data/alloyance/loot_table/blocks/alloyer.json
 dcac1ba2ee83e55ce89f5d4bb5fcc256b7926d3f data/alloyance/loot_table/blocks/amordrine_block.json
 a80a5cc977a2ae430a4f1e00459a6153eafa8f03 data/alloyance/loot_table/blocks/angmallen_block.json
@@ -51,6 +52,7 @@ b6714299770c3d2ab67e9ee93be4e39b04f0d760 data/alloyance/loot_table/blocks/mangan
 5429a099016048443d9fc8a99e32dccc19644b7b data/alloyance/loot_table/blocks/midasium_block.json
 3706fd77ee9e9222e13df4cbcbcc563cb7a56044 data/alloyance/loot_table/blocks/mithril_block.json
 227ecb9979ba0397801a97356f03ecd975f3a6b2 data/alloyance/loot_table/blocks/mithril_ore.json
+1cb96b6ce8a7e5b9d90ca1f9ec06d358cec6164f data/alloyance/loot_table/blocks/nether_alduorite_ore.json
 f047008c7180ad27d5c892e88e9597b011042920 data/alloyance/loot_table/blocks/nether_ceruclase_ore.json
 c96baa9b3eec782ab8b52b999a8a83243fa9a19b data/alloyance/loot_table/blocks/nether_ignatius_ore.json
 1ce04ba8a3ffc168c3c35d51d751034c24d3a2a4 data/alloyance/loot_table/blocks/nether_kalendrite_ore.json

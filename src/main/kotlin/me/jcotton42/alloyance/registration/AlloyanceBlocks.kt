@@ -190,6 +190,9 @@ object AlloyanceBlocks {
     val DEEPSLATE_ADAMANTINE_ORE = deepslateOre(ADAMANTINE)
     val ADAMANTINE_BLOCK = storageBlock(ADAMANTINE)
 
+    val NETHER_ALDUORITE_ORE = netherOre(ALDUORITE)
+    val ALDUORITE_BLOCK = storageBlock(ALDUORITE)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

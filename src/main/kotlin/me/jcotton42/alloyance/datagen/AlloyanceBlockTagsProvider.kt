@@ -126,5 +126,5 @@ private fun getToolTag(metal: Metal): TagKey<Block> = when (metal) {
     SHADOW_STEEL, HADEROTH, DESICHALKOS -> Tags.Blocks.NEEDS_NETHERITE_TOOL
 
     // tier 6
-    ATLARUS, ADAMANTINE -> Tags.Blocks.NEEDS_NETHERITE_TOOL
+    ATLARUS, ADAMANTINE, ALDUORITE -> Tags.Blocks.NEEDS_NETHERITE_TOOL
 }

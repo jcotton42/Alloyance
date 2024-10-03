@@ -1,6 +1,7 @@
-// 1.21.1	2024-10-02T21:40:50.0508772	Block States: alloyance
+// 1.21.1	2024-10-02T21:52:14.29825	Block States: alloyance
 177ad7fb981f29d57b4febc3786c268f8465c3a7 assets/alloyance/blockstates/adamantine_block.json
 4ceb30e2ac220dddf3263c45e1c7ec16016814e5 assets/alloyance/blockstates/adamantine_ore.json
+bd6b35e4666c02e1575153a549b52c2527b5e26f assets/alloyance/blockstates/alduorite_block.json
 fa74f1a98b899467fa84d795ba97e57a70a1f0b0 assets/alloyance/blockstates/amordrine_block.json
 c26456305e269f780b04ddc67ae97c824afc4b9b assets/alloyance/blockstates/angmallen_block.json
 ef8ae4510e7a1f98a340dc69eac37d825f237b82 assets/alloyance/blockstates/astral_silver_block.json
@@ -49,6 +50,7 @@ ab093f4defedffe1cad1f2b201f9e8e0423692b0 assets/alloyance/blockstates/kalendrite
 f5b4a5c8732f9bbd623902bcac4aae54fc7fc699 assets/alloyance/blockstates/midasium_block.json
 6834ad443e6e0c12d4cbc6987dee5973f9be7f78 assets/alloyance/blockstates/mithril_block.json
 1c24a75b7c37bf1258c69d24091498330c3c13cf assets/alloyance/blockstates/mithril_ore.json
+aee5bc78a71392a1e3fcc5c847d9b1c9edd18f59 assets/alloyance/blockstates/nether_alduorite_ore.json
 d87e6eb80819d3837d108021e60ed0e1c4164553 assets/alloyance/blockstates/nether_ceruclase_ore.json
 296472dd0ec09ebca6aa1ef707c65c585ff22883 assets/alloyance/blockstates/nether_ignatius_ore.json
 aa7e702ecc361b1a6addd2315453fb1a77d9a961 assets/alloyance/blockstates/nether_kalendrite_ore.json
@@ -84,6 +86,7 @@ bdbcc831a1c1e934b6d3d9f403c6ff04bb2cd121 assets/alloyance/blockstates/vulcanite_
 9e34f9e29b3d0ecefe58ddca4b87c873b1d7dfc4 assets/alloyance/blockstates/zinc_ore.json
 3a5625f78e7ed4cbdb7b8e6dd7199f514f209365 assets/alloyance/models/block/adamantine_block.json
 8b4e4442eaa0451935aee945484fa53b042c469f assets/alloyance/models/block/adamantine_ore.json
+49150d6f8dc7076f87314fc2e3d41dbdaec042a0 assets/alloyance/models/block/alduorite_block.json
 b0bd40ec22aafa459ebc9033fbb9e9f6dcd52a21 assets/alloyance/models/block/amordrine_block.json
 1671fd3af438b4b7acee1127c594c2d2bcbcaec3 assets/alloyance/models/block/angmallen_block.json
 233e7f25e5c4e72f11a600d01b85368a56cadfd5 assets/alloyance/models/block/astral_silver_block.json
@@ -132,6 +135,7 @@ c704395ec3f916b9a7ad03cc5abc1035b85a5196 assets/alloyance/models/block/manganese
 ee787244720ab8e5bbe4b7a3d2df1ddead2f86e3 assets/alloyance/models/block/midasium_block.json
 c33614dd64eca8dc2a77a51ce9da165c93a52cfb assets/alloyance/models/block/mithril_block.json
 fe922b6ba90ea01f1bc18fad02cadb900e25e0fe assets/alloyance/models/block/mithril_ore.json
+af7229c2a34499614996ad5cc8a51327a07755ec assets/alloyance/models/block/nether_alduorite_ore.json
 633a94b2d520042da357c88cfc2b6426b074047c assets/alloyance/models/block/nether_ceruclase_ore.json
 37decaaef75095bdc38733b75bc6b9acbf28e2cb assets/alloyance/models/block/nether_ignatius_ore.json
 2ca42c4b3d0babe61b862f1d62526ffe5b8b41ab assets/alloyance/models/block/nether_kalendrite_ore.json
