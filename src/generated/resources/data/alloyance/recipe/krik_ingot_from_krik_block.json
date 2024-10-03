@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "krik_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:krik_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:krik_ingot"
+  }
+}

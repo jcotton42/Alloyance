@@ -57,4 +57,5 @@ enum class Metal(val id: String, val hardness: Float, val blockBlastResistance: 
     ALDUORITE("alduorite", 5.3f, 10f, 0x9294BE),
     LUTETIUM("lutetium", 5.1f, 15f, 0x777221),
     INOLASHITE("inolashite", 10f, 20f, 0x92D2D2),
+    KRIK("krik", 10f, 10f, 0xA7D85E),
 }

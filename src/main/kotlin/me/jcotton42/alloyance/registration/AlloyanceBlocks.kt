@@ -198,6 +198,8 @@ object AlloyanceBlocks {
 
     val INOLASHITE_BLOCK = storageBlock(INOLASHITE)
 
+    val KRIK_BLOCK = storageBlock(KRIK)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

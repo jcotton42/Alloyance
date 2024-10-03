@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "krik_dust",
+  "ingredients": [
+    {
+      "tag": "c:dusts/lutetium"
+    },
+    {
+      "tag": "c:dusts/osmium"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "alloyance:krik_dust"
+  }
+}

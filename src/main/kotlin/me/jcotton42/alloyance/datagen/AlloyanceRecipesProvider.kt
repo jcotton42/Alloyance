@@ -46,6 +46,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
         addAlloy(output, HADEROTH, 3, 1.5f, MITHRIL, 1, RUBRACIUM, 2)
         addAlloy(output, DESICHALKOS, 2, 1.25f, EXIMITE, 1, MEUTOITE, 1)
         addAlloy(output, INOLASHITE, 2, 1.25f, ALDUORITE, 1, CERUCLASE, 1)
+        addAlloy(output, KRIK, 2, 1.25f, LUTETIUM, 1, OSMIUM, 1)
     }
 
     private fun addVanillaCompatRecipes(output: RecipeOutput) {

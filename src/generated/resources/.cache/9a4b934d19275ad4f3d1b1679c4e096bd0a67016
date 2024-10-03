@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T22:16:42.9878818	Item Models: alloyance
+// 1.21.1	2024-10-02T22:21:32.7491463	Item Models: alloyance
 6f3701e75c5cc7421d5146a262eae52e34592565 assets/alloyance/models/item/adamantine_block.json
 4b1bfbc8cf265a0a7a6220be35ffec627f9d35c2 assets/alloyance/models/item/adamantine_dust.json
 61a3f9dd92fc288e7a15147d5b7db4165b8c77b0 assets/alloyance/models/item/adamantine_ingot.json
@@ -117,6 +117,10 @@ e43851c156331df2c745fce6ff1c4f531cd7c3b0 assets/alloyance/models/item/iron_dust.
 5a866b48ba084d0e737e0a1dd5bfa0c45c73df7c assets/alloyance/models/item/kalendrite_dust.json
 f254787d2bed495147a764dc6cbd8e708b3af4cc assets/alloyance/models/item/kalendrite_ingot.json
 0b0d942786ea9e7794d495c95554475c10ee5f9a assets/alloyance/models/item/kalendrite_nugget.json
+3fffe127c3cc10e46b5944565be380be991b8c88 assets/alloyance/models/item/krik_block.json
+28cb4a0ecb9e18d8bc60deea9c82ff80bf1dfea7 assets/alloyance/models/item/krik_dust.json
+1a241968f17f5fea42a7a0f9ec56884826260607 assets/alloyance/models/item/krik_ingot.json
+a71632e1211269de25accb72d7e49454bfd0a2f1 assets/alloyance/models/item/krik_nugget.json
 17954a350f41b42e992b827ed656c4e9cf91e075 assets/alloyance/models/item/lemurite_block.json
 7abb1ef11ac6ab87c8fbe2b779e876d2c80a27d2 assets/alloyance/models/item/lemurite_dust.json
 5c759b45907ac1fe1533e256a449980fe5c1abb4 assets/alloyance/models/item/lemurite_ingot.json
