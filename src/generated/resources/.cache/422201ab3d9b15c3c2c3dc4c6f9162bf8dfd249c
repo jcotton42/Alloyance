@@ -1,5 +1,5 @@
-// 1.21.1	2024-10-02T20:33:01.769815	Tags for minecraft:item mod id alloyance
-c4df23f1b3780d2aa46a2cf6ed845e99783cc6c7 data/alloyance/tags/item/alloyables.json
+// 1.21.1	2024-10-02T20:49:58.6712979	Tags for minecraft:item mod id alloyance
+5e466edcd577375565fa5cdcf7404730b391fae0 data/alloyance/tags/item/alloyables.json
 1db71cbfbd53be632e07baf2d30422ffa6c6d43a data/alloyance/tags/item/alloyables/amordrine.json
 377249b26bc8f1377bded168543b4379340c69d6 data/alloyance/tags/item/alloyables/angmallen.json
 4160ff10b39f9bf455ee2b99893bc69582b02f1f data/alloyance/tags/item/alloyables/astral_silver.json
@@ -38,8 +38,9 @@ dc8913aaf7f2c6466feb0bfcd413df5853491776 data/alloyance/tags/item/alloyables/san
 b2b40839320518ac3843e3df7993bf29ff219a36 data/alloyance/tags/item/alloyables/steel.json
 3b121bbaff2a2788269466daf49a2e4ef4f9372f data/alloyance/tags/item/alloyables/tin.json
 9b7c0574a1f26dd54363b52052e4d22153e16596 data/alloyance/tags/item/alloyables/vulcanite.json
+3f8b82dd283a91515db678b1dd1f3b120f3b88f7 data/alloyance/tags/item/alloyables/vyroxeres.json
 68143d514bf194a281517d128892c2d73c34fbe9 data/alloyance/tags/item/alloyables/zinc.json
-6ada75bbf0e0ca4a0aea4f4e1ce88c5b3c3e3fca data/c/tags/item/dusts.json
+5c6a78395f1cd374073140eeedc264aad03c20f0 data/c/tags/item/dusts.json
 a07607d6f027d9436c5a77159eb929e87ed96bb3 data/c/tags/item/dusts/amordrine.json
 dc9bd4011c544abee5dee660e2d1d6c0c69dabc2 data/c/tags/item/dusts/angmallen.json
 75818ad6811847efd72f7754f35bfff31c375fcf data/c/tags/item/dusts/astral_silver.json
@@ -78,8 +79,9 @@ ae7a7f1627ea0bf71bd51a229fd5020098c3cb42 data/c/tags/item/dusts/silver.json
 a322e89c2441bbff5718d20779b70fc3f1d3a889 data/c/tags/item/dusts/steel.json
 f778cc51e96c4dfd977cb382ed889ee3e715ef59 data/c/tags/item/dusts/tin.json
 2275fcde0d8414deb92110188f63dfac7a058ab4 data/c/tags/item/dusts/vulcanite.json
+496f89b8e31d0185fe3a8b709b0432750318e095 data/c/tags/item/dusts/vyroxeres.json
 30e5ebfb6e043cab8b77e480ca42caf4fb322ab6 data/c/tags/item/dusts/zinc.json
-fa4a398d5b45843fd5c9e3874fce6fbf57376520 data/c/tags/item/ingots.json
+2d6dacb088f444d0ed8ef7bd9355147aebe22537 data/c/tags/item/ingots.json
 5a1fe75dc9eb761047f1fdd07bc152c2e5b42d9e data/c/tags/item/ingots/amordrine.json
 cef653a06639c3cabdcd1cec42139b117f7acd05 data/c/tags/item/ingots/angmallen.json
 9057d1eedc31252c11242a2feb8fe680856a29d8 data/c/tags/item/ingots/astral_silver.json
@@ -115,8 +117,9 @@ cc48bf72815651b4864345ac06c2f1a1409b9460 data/c/tags/item/ingots/shadow_iron.jso
 3a161599a2f99a1b99e4b07f60d75c9bd1e7a592 data/c/tags/item/ingots/steel.json
 d5e25c33f6faacff229b3e494b5401b5d14314d8 data/c/tags/item/ingots/tin.json
 6537dd1835de338b8f0b4d24603de07cda3092cb data/c/tags/item/ingots/vulcanite.json
+5902b6b80681246574d40490430f5a50866b1a68 data/c/tags/item/ingots/vyroxeres.json
 38c245b799b04efe6544d71d99b1b08e0bc99083 data/c/tags/item/ingots/zinc.json
-2cefbfcdd689a84f71c3b036f2f4a4d64496e08d data/c/tags/item/nuggets.json
+64f38695d38a79a87a40277880e40bfa6fc8064a data/c/tags/item/nuggets.json
 522d07fbfbdd46d180ed53fde593879f15688c07 data/c/tags/item/nuggets/amordrine.json
 324918a4426c2a08d3df317fa698601bb95bdbc3 data/c/tags/item/nuggets/angmallen.json
 8c648abb8dfdc7a949a7a02bf48ca1bff2c8b45f data/c/tags/item/nuggets/astral_silver.json
@@ -152,8 +155,9 @@ eab586d664870d225290e5258ad6a7c41b90bef1 data/c/tags/item/nuggets/silver.json
 8357f661abf0cd992205594f8cb898157aea0cbb data/c/tags/item/nuggets/steel.json
 30204e7433eb335926278c28be8a971d12fee8a5 data/c/tags/item/nuggets/tin.json
 7e7990f9246227ba6596081a6b1fb47e89008f11 data/c/tags/item/nuggets/vulcanite.json
+562bd56eeca5778df150732cfc07b81aea0843dd data/c/tags/item/nuggets/vyroxeres.json
 74dd75e5f736dce3240bcce26f0ccf4890de7cbc data/c/tags/item/nuggets/zinc.json
-05fabf7ef4d8671e7e8ee132c59bb60b8744cfa6 data/c/tags/item/ores.json
+47a52443842d18cfb938e09fbe875dc4f2311ccf data/c/tags/item/ores.json
 b0b453b05b70b674bcd6d479954b4063df9a6945 data/c/tags/item/ores/astral_silver.json
 3112e7ad5289c46f0ad110e30faa957eae9402a8 data/c/tags/item/ores/carmot.json
 75ab44eb59d5383582bb81f9ee3ea79ead6930b7 data/c/tags/item/ores/ceruclase.json
@@ -178,12 +182,13 @@ dbd0f3bb8b9b62211b78b785ccb78e980eb3bb3f data/c/tags/item/ores/oureclase.json
 b5847b4a65fb265052f0d2c49f73b82b8b8bc0f9 data/c/tags/item/ores/silver.json
 96299ff0191a5fa4286bcbaf443628b556345d85 data/c/tags/item/ores/tin.json
 9248c67e796c14386d25b241f4f160d8878f5935 data/c/tags/item/ores/vulcanite.json
+953b7d8ccc973497dfdef60f277b28b48517d567 data/c/tags/item/ores/vyroxeres.json
 8f8ea038e3acfede87f4a8fb814ec02cd1dfe917 data/c/tags/item/ores/zinc.json
 dafd3eb8cbb98a35df4efb9b3e99d942a1f5106a data/c/tags/item/ores_in_ground/deepslate.json
-517132ff05e7e470ef71aa44f6695d9cef2c9ee1 data/c/tags/item/ores_in_ground/netherrack.json
+0fda437034c0f3a5d8d9e8a91fb49b756f8cd628 data/c/tags/item/ores_in_ground/netherrack.json
 c8d8789c408faacb76d75a066be294f00d98efa3 data/c/tags/item/ores_in_ground/stone.json
-8f03547ec6ca0abbaaa7aa447e838ecb6229df13 data/c/tags/item/ore_rates/singular.json
-3de24ab7bf86552388b7fe0b5ac870ecf15fe696 data/c/tags/item/raw_materials.json
+20501e29c74193ba4161464b8b39bc8b6126fc82 data/c/tags/item/ore_rates/singular.json
+d320e0509d75f016a4f70f58574228c6365321a7 data/c/tags/item/raw_materials.json
 2a8658cfdd7a80a24b90c29dc4e31007433a9771 data/c/tags/item/raw_materials/astral_silver.json
 5bba8ce78dc742a7108af193bd6937b813195abf data/c/tags/item/raw_materials/carmot.json
 eb1e227fa1ee8b3df4f2049ea27166d28447a0c5 data/c/tags/item/raw_materials/ceruclase.json
@@ -208,8 +213,9 @@ fc6448189ba34be78d422411fe2dedb3913a9849 data/c/tags/item/raw_materials/promethe
 348671637456be88f6b784a88f954e8851c6da43 data/c/tags/item/raw_materials/silver.json
 74bae4e38cf66dff64a2f45995c17313b5dd78b7 data/c/tags/item/raw_materials/tin.json
 7927393ae096233440d37fbdedf84910605ea761 data/c/tags/item/raw_materials/vulcanite.json
+75f56540883ddd13fa3a2017bce6d8647afcf691 data/c/tags/item/raw_materials/vyroxeres.json
 49ba2295d2bb6e79b49ce95fa10f56418a5955d6 data/c/tags/item/raw_materials/zinc.json
-1ee4c1c2bc4a946a8b781f6e54ff3eaf995b13c9 data/c/tags/item/storage_blocks.json
+866c079f45ba57c8f4ed0a2e8713477a17789d12 data/c/tags/item/storage_blocks.json
 6b8487afd922d222ded413fc5159e17ea84adcea data/c/tags/item/storage_blocks/amordrine.json
 18ef9f2ab9af5be3948a4e6cdf6890a3cba1df42 data/c/tags/item/storage_blocks/angmallen.json
 860f60434d7b9ca9e627318a83cd5d09bacded2d data/c/tags/item/storage_blocks/astral_silver.json
@@ -245,4 +251,5 @@ e46f97339fbaecc0c38babcb17157c046a349f31 data/c/tags/item/storage_blocks/silver.
 8784ef98f5156affc5e14abb441354ab52dd170f data/c/tags/item/storage_blocks/steel.json
 f827a7d6fcf6dfe3eee3acf5972208bb27dd7814 data/c/tags/item/storage_blocks/tin.json
 b63f2fd13e913c85cea87aabb8bc11190ff0a790 data/c/tags/item/storage_blocks/vulcanite.json
+91513400935b6397539e2c5375a463112844fe61 data/c/tags/item/storage_blocks/vyroxeres.json
 44dcabb93af53db6238114d0bb7887f3a7b757a7 data/c/tags/item/storage_blocks/zinc.json

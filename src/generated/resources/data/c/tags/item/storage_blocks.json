@@ -35,6 +35,7 @@
     "#c:storage_blocks/lemurite",
     "#c:storage_blocks/meutoite",
     "#c:storage_blocks/mithril",
-    "#c:storage_blocks/sanguinite"
+    "#c:storage_blocks/sanguinite",
+    "#c:storage_blocks/vyroxeres"
   ]
 }

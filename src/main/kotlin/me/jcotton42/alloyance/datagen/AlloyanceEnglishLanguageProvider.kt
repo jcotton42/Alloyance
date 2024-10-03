@@ -174,5 +174,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.MEUTOITE -> "Meutoite"
         Metal.MITHRIL -> "Mithril"
         Metal.SANGUINITE -> "Sanguinite"
+        Metal.VYROXERES -> "Vyroxeres"
     }
 }

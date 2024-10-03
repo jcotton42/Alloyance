@@ -275,11 +275,16 @@ object AlloyanceItems {
     val SANGUINITE_NUGGET = nugget(SANGUINITE)
     val SANGUINITE_DUST = dust(SANGUINITE)
 
+    val NETHER_VYROXERES_ORE = block(AlloyanceBlocks.NETHER_VYROXERES_ORE)
+    val VYROXERES_BLOCK = block(AlloyanceBlocks.VYROXERES_BLOCK)
+    val RAW_VYROXERES = rawMaterial(VYROXERES)
+    val VYROXERES_INGOT = ingot(VYROXERES)
+    val VYROXERES_NUGGET = nugget(VYROXERES)
+    val VYROXERES_DUST = dust(VYROXERES)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }
-
-    // TODO Also would be cool if some of the metals (maybe the Nether ones) were fire-resistant. This goes for all their items.
 
     private fun block(block: Holder<Block>): DeferredItem<BlockItem> {
         return ITEMS.registerSimpleBlockItem(block)
