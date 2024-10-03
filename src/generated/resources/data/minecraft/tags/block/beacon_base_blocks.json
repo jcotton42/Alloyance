@@ -34,6 +34,7 @@
     "alloyance:carmot_block",
     "alloyance:lemurite_block",
     "alloyance:meutoite_block",
-    "alloyance:mithril_block"
+    "alloyance:mithril_block",
+    "alloyance:sanguinite_block"
   ]
 }

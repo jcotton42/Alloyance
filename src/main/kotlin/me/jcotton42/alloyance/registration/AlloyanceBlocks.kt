@@ -170,6 +170,9 @@ object AlloyanceBlocks {
     val MITHRIL_ORE = ore(MITHRIL)
     val MITHRIL_BLOCK = storageBlock(MITHRIL)
 
+    val NETHER_SANGUINITE_ORE = netherOre(SANGUINITE)
+    val SANGUINITE_BLOCK = storageBlock(SANGUINITE)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

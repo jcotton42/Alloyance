@@ -45,4 +45,5 @@ enum class Metal(val id: String, val hardness: Float, val blockBlastResistance: 
     LEMURITE("lemurite", 5.5f, 6f, 0xD0D0D0),
     MEUTOITE("meutoite", 3.6f, 15f, 0x332E38),
     MITHRIL("mithril", 6.8f, 15f, 0x69D3BE),
+    SANGUINITE("sanguinite", 6.6f, 20f, 0xC34F4F),
 }

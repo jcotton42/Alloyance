@@ -37,6 +37,7 @@
     "#alloyance:alloyables/carmot",
     "#alloyance:alloyables/lemurite",
     "#alloyance:alloyables/meutoite",
-    "#alloyance:alloyables/mithril"
+    "#alloyance:alloyables/mithril",
+    "#alloyance:alloyables/sanguinite"
   ]
 }

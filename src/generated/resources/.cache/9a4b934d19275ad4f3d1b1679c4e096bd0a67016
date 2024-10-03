@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T20:18:25.5424595	Item Models: alloyance
+// 1.21.1	2024-10-02T20:33:01.7663073	Item Models: alloyance
 bfb369f6a77fec5776fb060493aa0b7bff388e39 assets/alloyance/models/item/amordrine_block.json
 ffc8a232ff19dbfd15a3ea160593598f3a2fa5d0 assets/alloyance/models/item/amordrine_dust.json
 2cd9b43b2b47414f0270caf00a4845193959d020 assets/alloyance/models/item/amordrine_ingot.json
@@ -116,6 +116,7 @@ d5bbf5ff25f14cc620eb2bed777a422e942b8682 assets/alloyance/models/item/mithril_or
 bd17875269beb057f536be4bed34616750fc6f9e assets/alloyance/models/item/nether_kalendrite_ore.json
 e599797d2070bb9f0b41c9999453461721ecbd72 assets/alloyance/models/item/nether_lemurite_ore.json
 9dad48fce792771f30d42c08614242f9dbbd5c12 assets/alloyance/models/item/nether_midasium_ore.json
+6af9a887136f5b4d0c2c13a26001664d7f04c119 assets/alloyance/models/item/nether_sanguinite_ore.json
 719a4d8cef86acb59bddac533ac73b4e22cf4249 assets/alloyance/models/item/nether_shadow_iron_ore.json
 c6c5d35313f017e271f6ebb8e9786807f2eff028 assets/alloyance/models/item/nether_vulcanite_ore.json
 e89fc4367de2f3cd1b98f584bdf88f07dbbd513d assets/alloyance/models/item/orichalcum_block.json
@@ -165,6 +166,7 @@ fe814d5e9d1f62eb98ca8fba02c43eb574cad051 assets/alloyance/models/item/raw_ourecl
 7b63349332aa8f04460d46ea0e106197bb259320 assets/alloyance/models/item/raw_platinum.json
 4520de8cdb5c354b8a27f6ee4bf53d506442f6e6 assets/alloyance/models/item/raw_prometheum.json
 44e9d493ef2ab25841c0f74221f6d2925db08ca6 assets/alloyance/models/item/raw_rubracium.json
+a11c0db483fe71431110c83ffeed332f22c01981 assets/alloyance/models/item/raw_sanguinite.json
 d0e37bc377e7e0847708425ecbc7c2e6aa633d20 assets/alloyance/models/item/raw_shadow_iron.json
 429286322ac029f0761c428aa3cf48292b56aaff assets/alloyance/models/item/raw_silver.json
 096d0c70e0c358f9975562c08a857db9b635f2d5 assets/alloyance/models/item/raw_tin.json
@@ -175,6 +177,10 @@ d0e37bc377e7e0847708425ecbc7c2e6aa633d20 assets/alloyance/models/item/raw_shadow
 c83457b4ad6fac74564fbc541a66f15f6598476f assets/alloyance/models/item/rubracium_ingot.json
 96d5a5bb60f9b2d50e189dc615744802dfac13ce assets/alloyance/models/item/rubracium_nugget.json
 25fa9f6b0e2502d006d93bebb2a16aa3464a9789 assets/alloyance/models/item/rubracium_ore.json
+7b893d473e11de9d4b4ceb947fd0f2bfd7d83cac assets/alloyance/models/item/sanguinite_block.json
+56371ecd9ba61c06f3f13111099158457a601360 assets/alloyance/models/item/sanguinite_dust.json
+696585dfd7e31265855f2fa39ef7439a57baebf2 assets/alloyance/models/item/sanguinite_ingot.json
+7ac25e7e5e15caa06f40aee632f5ebc90210aefd assets/alloyance/models/item/sanguinite_nugget.json
 77456768bc96230d15643603b8dce7c8b6b7ccc3 assets/alloyance/models/item/shadow_iron_block.json
 a61d9c14fbc8b991d6b2125f6df05c914f81c798 assets/alloyance/models/item/shadow_iron_dust.json
 70c1ee36b62e6d26a90db14b024f8bdd30a33ccf assets/alloyance/models/item/shadow_iron_ingot.json

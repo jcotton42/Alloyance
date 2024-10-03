@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "sanguinite_dust",
+  "ingredient": {
+    "tag": "c:ores/sanguinite"
+  },
+  "result": {
+    "count": 2,
+    "id": "alloyance:sanguinite_dust"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "sanguinite_nugget",
+  "ingredients": [
+    {
+      "item": "alloyance:sanguinite_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:sanguinite_nugget"
+  }
+}

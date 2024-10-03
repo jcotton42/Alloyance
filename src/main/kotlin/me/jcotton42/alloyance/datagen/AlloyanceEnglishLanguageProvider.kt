@@ -173,5 +173,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.LEMURITE -> "Lemurite"
         Metal.MEUTOITE -> "Meutoite"
         Metal.MITHRIL -> "Mithril"
+        Metal.SANGUINITE -> "Sanguinite"
     }
 }
