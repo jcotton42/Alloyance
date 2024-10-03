@@ -42,6 +42,7 @@ object AlloyanceConfiguredFeatures {
     val LEMURITE_ORE = registerKey("lemurite_ore")
     val MEUTOITE_ORE = registerKey("meutoite_ore")
     val MITHRIL_ORE = registerKey("mithril_ore")
+    val SANGUINITE_ORE = registerKey("sanguinite_ore")
 
     fun bootstrap(context: BootstrapContext<ConfiguredFeature<*, *>>) {
         val deepIronOres = listOf(inStone(AlloyanceBlocks.DEEP_IRON_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_DEEP_IRON_ORE))
@@ -68,6 +69,7 @@ object AlloyanceConfiguredFeatures {
         val lemuriteOres = listOf(inNetherrack(AlloyanceBlocks.NETHER_LEMURITE_ORE))
         val meutoiteOres = listOf(inEndStone(AlloyanceBlocks.END_MEUTOITE_ORE))
         val mithrilOres = listOf(inStone(AlloyanceBlocks.MITHRIL_ORE))
+        val sanguiniteOres = listOf(inNetherrack(AlloyanceBlocks.NETHER_SANGUINITE_ORE))
 
         register(context, DEEP_IRON_ORE, Feature.ORE, OreConfiguration(deepIronOres, 5))
         register(context, PROMETHEUM_ORE, Feature.ORE, OreConfiguration(prometheumOres, 6))
@@ -97,6 +99,7 @@ object AlloyanceConfiguredFeatures {
         register(context, LEMURITE_ORE, Feature.ORE, OreConfiguration(lemuriteOres, 6))
         register(context, MEUTOITE_ORE, Feature.ORE, OreConfiguration(meutoiteOres, 7))
         register(context, MITHRIL_ORE, Feature.ORE, OreConfiguration(mithrilOres, 5))
+        register(context, SANGUINITE_ORE, Feature.ORE, OreConfiguration(sanguiniteOres, 4))
     }
 
     private fun inStone(replacement: Supplier<Block>): OreConfiguration.TargetBlockState {
