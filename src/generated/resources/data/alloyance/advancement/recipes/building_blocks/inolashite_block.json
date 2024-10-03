@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_inolashite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:inolashite_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:inolashite_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_inolashite_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:inolashite_block"
+    ]
+  }
+}

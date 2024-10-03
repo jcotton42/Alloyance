@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T22:03:02.9605662	Loot Tables
+// 1.21.1	2024-10-02T22:16:42.9716366	Loot Tables
 c900960f05fd9b83417973a0e30e13cc4abbdb90 data/alloyance/loot_table/blocks/adamantine_block.json
 8e7e56838177962741d8dd34e99516a9bc981054 data/alloyance/loot_table/blocks/adamantine_ore.json
 7a4d2b4ddcd5c8b78f386bcc5a049313cbc020aa data/alloyance/loot_table/blocks/alduorite_block.json
@@ -44,6 +44,7 @@ b8e58eb2f15e14af7b883d0896ba2ff4d06c8e71 data/alloyance/loot_table/blocks/hepati
 9011ed0177245008de29ca76084275a1e9263caf data/alloyance/loot_table/blocks/ignatius_block.json
 ceebd788e4fb1b47523c15b424bfddda381e8edc data/alloyance/loot_table/blocks/infuscolium_block.json
 db564ba2bf4d481ad6003b16d9bda68e5571957a data/alloyance/loot_table/blocks/infuscolium_ore.json
+fa12265a128927d02aab11659d486978a8e96cc6 data/alloyance/loot_table/blocks/inolashite_block.json
 d2a5290351dab72c5c0acbbe1d46931e082163fd data/alloyance/loot_table/blocks/kalendrite_block.json
 de7d629a3b7f044a55445f27ae8baf03b2f5d65c data/alloyance/loot_table/blocks/lemurite_block.json
 694d89a532ad07f7742faafd5f2f350970419065 data/alloyance/loot_table/blocks/lutetium_block.json

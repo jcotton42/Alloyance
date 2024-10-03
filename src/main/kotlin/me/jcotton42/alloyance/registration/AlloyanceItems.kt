@@ -327,6 +327,11 @@ object AlloyanceItems {
     val LUTETIUM_NUGGET = nugget(LUTETIUM)
     val LUTETIUM_DUST = dust(LUTETIUM)
 
+    val INOLASHITE_BLOCK = block(AlloyanceBlocks.INOLASHITE_BLOCK)
+    val INOLASHITE_INGOT = ingot(INOLASHITE)
+    val INOLASHITE_NUGGET = nugget(INOLASHITE)
+    val INOLASHITE_DUST = dust(INOLASHITE)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

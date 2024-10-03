@@ -125,6 +125,7 @@ private fun getToolTag(metal: Metal): TagKey<Block> = when (metal) {
     CARMOT, LEMURITE, MEUTOITE, MITHRIL, SANGUINITE, VYROXERES -> Tags.Blocks.NEEDS_NETHERITE_TOOL
     SHADOW_STEEL, HADEROTH, DESICHALKOS -> Tags.Blocks.NEEDS_NETHERITE_TOOL
 
+    // TODO double check all these values, above and below
     // tier 6
-    ATLARUS, ADAMANTINE, ALDUORITE, LUTETIUM -> Tags.Blocks.NEEDS_NETHERITE_TOOL
+    ATLARUS, ADAMANTINE, ALDUORITE, LUTETIUM, INOLASHITE -> Tags.Blocks.NEEDS_NETHERITE_TOOL
 }

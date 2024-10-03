@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T22:03:02.9766963	Tags for minecraft:block mod id alloyance
+// 1.21.1	2024-10-02T22:16:42.9909134	Tags for minecraft:block mod id alloyance
 a59c1f25437b69550834f47e2d46a06363383fd2 data/c/tags/block/ores.json
 eee77fbdd60d030b8a05c26a6b886775e1fbaa94 data/c/tags/block/ores/adamantine.json
 48b6fd0e8a94232da539b2d3efa9e7c5060c5ec6 data/c/tags/block/ores/alduorite.json
@@ -35,7 +35,7 @@ b5847b4a65fb265052f0d2c49f73b82b8b8bc0f9 data/c/tags/block/ores/silver.json
 0c63af0bf0cf67405fd088c73cd72b6e9c57b096 data/c/tags/block/ores_in_ground/netherrack.json
 6c98cbb8f012fb94d68c42271cebc5d435568094 data/c/tags/block/ores_in_ground/stone.json
 abb6d1fc648015f5404189dbcf1ec15a0660b885 data/c/tags/block/ore_rates/singular.json
-ad4159f3a14d2092fd6502ae276211f93e28724e data/c/tags/block/storage_blocks.json
+5a5f7d81a549f93dcf8f28128b04ee255fae638d data/c/tags/block/storage_blocks.json
 e1be8f7aa9f785e82a8cb87ad2a4da780f1d288a data/c/tags/block/storage_blocks/adamantine.json
 5c95cccd13bb0ba463f366f010b8342b27d6bb97 data/c/tags/block/storage_blocks/alduorite.json
 6b8487afd922d222ded413fc5159e17ea84adcea data/c/tags/block/storage_blocks/amordrine.json
@@ -57,6 +57,7 @@ c5c674038a8a06aaa6bb0b21b522a49a5e226f55 data/c/tags/block/storage_blocks/desich
 c450e225607a09db7a783a3af2d9207335408522 data/c/tags/block/storage_blocks/hepatizon.json
 be1acf85519bf1a841f0d6b8f500a8610519aee3 data/c/tags/block/storage_blocks/ignatius.json
 ed561f6da86be37fa1bfc2a2485e3acc120335c1 data/c/tags/block/storage_blocks/infuscolium.json
+6837fe3b798f0ae739ac8e5fbc411c3be3a6d2ab data/c/tags/block/storage_blocks/inolashite.json
 609f388dc1f28c327a2b145ff7805ec091f8723c data/c/tags/block/storage_blocks/kalendrite.json
 27f6607aa34a44cecb633b00d956ae00687d1b34 data/c/tags/block/storage_blocks/lemurite.json
 ee872ef0ac759fd48509b19443d495e1a7cc7369 data/c/tags/block/storage_blocks/lutetium.json
@@ -80,14 +81,14 @@ f827a7d6fcf6dfe3eee3acf5972208bb27dd7814 data/c/tags/block/storage_blocks/tin.js
 b63f2fd13e913c85cea87aabb8bc11190ff0a790 data/c/tags/block/storage_blocks/vulcanite.json
 91513400935b6397539e2c5375a463112844fe61 data/c/tags/block/storage_blocks/vyroxeres.json
 44dcabb93af53db6238114d0bb7887f3a7b757a7 data/c/tags/block/storage_blocks/zinc.json
-9a77a2fc74093c4d5b4f3ca41b65c6adc797f2bb data/minecraft/tags/block/beacon_base_blocks.json
+d7fe4bc1cf7d6adcf5afecdf22b7c4965479c8ae data/minecraft/tags/block/beacon_base_blocks.json
 28664f209d59643cd660ffecc4ec013d2b0ccf68 data/minecraft/tags/block/incorrect_for_diamond_tool.json
 28664f209d59643cd660ffecc4ec013d2b0ccf68 data/minecraft/tags/block/incorrect_for_gold_tool.json
 28664f209d59643cd660ffecc4ec013d2b0ccf68 data/minecraft/tags/block/incorrect_for_iron_tool.json
 28664f209d59643cd660ffecc4ec013d2b0ccf68 data/minecraft/tags/block/incorrect_for_stone_tool.json
 28664f209d59643cd660ffecc4ec013d2b0ccf68 data/minecraft/tags/block/incorrect_for_wooden_tool.json
-f0598ffeabb370c95eca40baa3b4606f0c859c5a data/minecraft/tags/block/mineable/pickaxe.json
+58394cf0e8333c24c165eea3fad6f936d917bc2d data/minecraft/tags/block/mineable/pickaxe.json
 7857e501ea0e4afa55b818c5f0f9bf654fd6dce6 data/minecraft/tags/block/needs_diamond_tool.json
 f8a107f745130fb039dfb963f91f164a4654250e data/minecraft/tags/block/needs_iron_tool.json
 e293b0f44585305db5c648efaa3e9f56918c2c60 data/minecraft/tags/block/needs_stone_tool.json
-f4ed9855e5513485d82dfc09e9e4fda19f49e485 data/neoforge/tags/block/needs_netherite_tool.json
+f12117619dccb27ae61d1d773c28d4b7344cf8fe data/neoforge/tags/block/needs_netherite_tool.json

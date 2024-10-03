@@ -196,6 +196,8 @@ object AlloyanceBlocks {
     val NETHER_LUTETIUM_ORE = netherOre(LUTETIUM)
     val LUTETIUM_BLOCK = storageBlock(LUTETIUM)
 
+    val INOLASHITE_BLOCK = storageBlock(INOLASHITE)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

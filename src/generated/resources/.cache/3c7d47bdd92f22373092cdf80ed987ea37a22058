@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T22:03:02.9544904	Block States: alloyance
+// 1.21.1	2024-10-02T22:16:42.9651086	Block States: alloyance
 177ad7fb981f29d57b4febc3786c268f8465c3a7 assets/alloyance/blockstates/adamantine_block.json
 4ceb30e2ac220dddf3263c45e1c7ec16016814e5 assets/alloyance/blockstates/adamantine_ore.json
 bd6b35e4666c02e1575153a549b52c2527b5e26f assets/alloyance/blockstates/alduorite_block.json
@@ -42,6 +42,7 @@ bc9517842fdbe0996e754eeb629560a9ff9f1242 assets/alloyance/blockstates/eximite_bl
 26e362f22a600feccf9a71481302f51f50e86109 assets/alloyance/blockstates/ignatius_block.json
 da4e99cc6ba922301b5e53a8657188dcc8046eae assets/alloyance/blockstates/infuscolium_block.json
 5bd0d2e8b8785ba31fe61bfdd80503195cd61f27 assets/alloyance/blockstates/infuscolium_ore.json
+05c20bcd768ac036b0eb8a4a0b2cf62f114ccf58 assets/alloyance/blockstates/inolashite_block.json
 ab093f4defedffe1cad1f2b201f9e8e0423692b0 assets/alloyance/blockstates/kalendrite_block.json
 14297b459eb38559080ccc79cfe67ad0d3eab19e assets/alloyance/blockstates/lemurite_block.json
 558cc41018ad336045c09dd307076b53fb664253 assets/alloyance/blockstates/lutetium_block.json
@@ -129,6 +130,7 @@ c6dd52eb043ac061ba7cd99b7ab06704e9fc3eb9 assets/alloyance/models/block/haderoth_
 104a3634f34015946de15c1c38d5e1751231b2e6 assets/alloyance/models/block/ignatius_block.json
 b5645e09d292d354ca70806df8ef2e29e000f2ff assets/alloyance/models/block/infuscolium_block.json
 eda78d50c26622b44e69ae2fd494d66078fba640 assets/alloyance/models/block/infuscolium_ore.json
+dd86e9cd3c5c7671633f01fdd7d1f45240ffa52f assets/alloyance/models/block/inolashite_block.json
 8a8cfead09ddeab97dcd8ea9cf600a25d3072757 assets/alloyance/models/block/kalendrite_block.json
 3e9b7d000e82fbc7aced42250144ca68dd0fe6e1 assets/alloyance/models/block/lemurite_block.json
 ec4293a360566ca347de7921b1d2a6870a15dc46 assets/alloyance/models/block/lutetium_block.json

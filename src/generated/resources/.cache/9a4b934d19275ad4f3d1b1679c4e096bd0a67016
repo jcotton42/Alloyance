@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T22:03:02.9741919	Item Models: alloyance
+// 1.21.1	2024-10-02T22:16:42.9878818	Item Models: alloyance
 6f3701e75c5cc7421d5146a262eae52e34592565 assets/alloyance/models/item/adamantine_block.json
 4b1bfbc8cf265a0a7a6220be35ffec627f9d35c2 assets/alloyance/models/item/adamantine_dust.json
 61a3f9dd92fc288e7a15147d5b7db4165b8c77b0 assets/alloyance/models/item/adamantine_ingot.json
@@ -108,6 +108,10 @@ c313ae32bd76b6c030fe049b7f53156a94f1b57a assets/alloyance/models/item/ignatius_b
 7f5ab18998ae678db21f372635fc1e5c0a1d43b7 assets/alloyance/models/item/infuscolium_nugget.json
 897b1b92f92074688466b77ed02460e01a0f18fd assets/alloyance/models/item/infuscolium_ore.json
 8202166abefaa407b0b89c75f4203de4a76ea1f7 assets/alloyance/models/item/infused_ignatius.json
+f12c962db8d3a5f31d4325d3d28d21ecc777f69f assets/alloyance/models/item/inolashite_block.json
+ffed1c69162642f9f276e2f48262c7d473ab9a79 assets/alloyance/models/item/inolashite_dust.json
+906b2c012593834e052c671ef2a2eb6a5f6fb8f1 assets/alloyance/models/item/inolashite_ingot.json
+d43d77adbedc020e876e97666a887a2f22f2d828 assets/alloyance/models/item/inolashite_nugget.json
 e43851c156331df2c745fce6ff1c4f531cd7c3b0 assets/alloyance/models/item/iron_dust.json
 64be96bc2877af363b0b0c4675b4045a09d791ad assets/alloyance/models/item/kalendrite_block.json
 5a866b48ba084d0e737e0a1dd5bfa0c45c73df7c assets/alloyance/models/item/kalendrite_dust.json

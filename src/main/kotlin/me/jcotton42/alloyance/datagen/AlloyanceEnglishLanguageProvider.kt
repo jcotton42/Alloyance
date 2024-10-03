@@ -183,5 +183,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.ADAMANTINE -> "Adamantine"
         Metal.ALDUORITE -> "Alduorite"
         Metal.LUTETIUM -> "Lutetium"
+        Metal.INOLASHITE -> "Inolashite"
     }
 }
