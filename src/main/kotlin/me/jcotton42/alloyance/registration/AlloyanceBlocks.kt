@@ -161,6 +161,9 @@ object AlloyanceBlocks {
     val DEEPSLATE_CARMOT_ORE = deepslateOre(CARMOT)
     val CARMOT_BLOCK = storageBlock(CARMOT)
 
+    val NETHER_LEMURITE_ORE = netherOre(LEMURITE)
+    val LEMURITE_BLOCK = storageBlock(LEMURITE)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

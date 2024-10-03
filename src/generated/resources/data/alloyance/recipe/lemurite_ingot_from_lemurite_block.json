@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "lemurite_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:lemurite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:lemurite_ingot"
+  }
+}

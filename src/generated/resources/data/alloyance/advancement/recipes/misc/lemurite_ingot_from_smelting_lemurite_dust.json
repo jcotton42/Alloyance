@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lemurite_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:lemurite_dust"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:lemurite_ingot_from_smelting_lemurite_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lemurite_dust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:lemurite_ingot_from_smelting_lemurite_dust"
+    ]
+  }
+}

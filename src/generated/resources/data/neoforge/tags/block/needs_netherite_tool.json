@@ -10,6 +10,7 @@
     "alloyance:celenegil_block",
     "alloyance:amordrine_block",
     "alloyance:carmot_block",
+    "alloyance:lemurite_block",
     "alloyance:orichalcum_ore",
     "alloyance:platinum_ore",
     "alloyance:carmot_ore",
@@ -20,6 +21,7 @@
     "alloyance:nether_ceruclase_ore",
     "alloyance:nether_kalendrite_ore",
     "alloyance:nether_midasium_ore",
-    "alloyance:nether_vulcanite_ore"
+    "alloyance:nether_vulcanite_ore",
+    "alloyance:nether_lemurite_ore"
   ]
 }

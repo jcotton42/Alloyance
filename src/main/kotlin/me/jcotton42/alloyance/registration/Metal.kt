@@ -42,4 +42,5 @@ enum class Metal(val id: String, val hardness: Float, val blockBlastResistance: 
 
     // tier 5
     CARMOT("carmot", 5.1f, 15f, 0xC39C69),
+    LEMURITE("lemurite", 5.5f, 6f, 0xD0D0D0),
 }

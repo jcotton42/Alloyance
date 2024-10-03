@@ -170,5 +170,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.AMORDRINE -> "Amordrine"
 
         Metal.CARMOT -> "Carmot"
+        Metal.LEMURITE -> "Lemurite"
     }
 }

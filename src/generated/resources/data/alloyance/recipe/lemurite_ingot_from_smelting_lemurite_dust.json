@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "lemurite_ingot",
+  "ingredient": {
+    "item": "alloyance:lemurite_dust"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:lemurite_ingot"
+  }
+}

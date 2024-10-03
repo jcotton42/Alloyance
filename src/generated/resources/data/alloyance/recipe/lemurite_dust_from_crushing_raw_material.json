@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "lemurite_dust",
+  "ingredient": {
+    "tag": "c:raw_materials/lemurite"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:lemurite_dust"
+  }
+}

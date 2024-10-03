@@ -122,5 +122,5 @@ private fun getToolTag(metal: Metal): TagKey<Block> = when (metal) {
     CELENEGIL -> Tags.Blocks.NEEDS_NETHERITE_TOOL
 
     // tier 5
-    CARMOT -> Tags.Blocks.NEEDS_NETHERITE_TOOL
+    CARMOT, LEMURITE -> Tags.Blocks.NEEDS_NETHERITE_TOOL
 }

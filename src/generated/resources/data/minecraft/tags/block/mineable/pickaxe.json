@@ -34,6 +34,7 @@
     "alloyance:celenegil_block",
     "alloyance:amordrine_block",
     "alloyance:carmot_block",
+    "alloyance:lemurite_block",
     "alloyance:deep_iron_ore",
     "alloyance:prometheum_ore",
     "alloyance:zinc_ore",
@@ -65,6 +66,7 @@
     "alloyance:nether_ceruclase_ore",
     "alloyance:nether_kalendrite_ore",
     "alloyance:nether_midasium_ore",
-    "alloyance:nether_vulcanite_ore"
+    "alloyance:nether_vulcanite_ore",
+    "alloyance:nether_lemurite_ore"
   ]
 }
