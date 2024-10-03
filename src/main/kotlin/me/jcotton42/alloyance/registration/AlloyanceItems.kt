@@ -342,6 +342,11 @@ object AlloyanceItems {
     val TARTARITE_NUGGET = nugget(TARTARITE)
     val TARTARITE_DUST = dust(TARTARITE)
 
+    val ETHERIUM_BLOCK = block(AlloyanceBlocks.ETHERIUM_BLOCK)
+    val ETHERIUM_INGOT = ingot(ETHERIUM)
+    val ETHERIUM_NUGGET = nugget(ETHERIUM)
+    val ETHERIUM_DUST = dust(ETHERIUM)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

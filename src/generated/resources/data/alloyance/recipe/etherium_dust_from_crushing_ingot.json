@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "etherium_dust",
+  "ingredient": {
+    "tag": "c:ingots/etherium"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:etherium_dust"
+  }
+}

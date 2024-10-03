@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T22:24:13.7724365	Loot Tables
+// 1.21.1	2024-10-02T22:26:59.4483316	Loot Tables
 c900960f05fd9b83417973a0e30e13cc4abbdb90 data/alloyance/loot_table/blocks/adamantine_block.json
 8e7e56838177962741d8dd34e99516a9bc981054 data/alloyance/loot_table/blocks/adamantine_ore.json
 7a4d2b4ddcd5c8b78f386bcc5a049313cbc020aa data/alloyance/loot_table/blocks/alduorite_block.json
@@ -38,6 +38,7 @@ e83b646c7c7af3f668314fa1c11c2deb5a89a908 data/alloyance/loot_table/blocks/deep_i
 dfc390b875e2da75ae723b6a530a897c826a44d2 data/alloyance/loot_table/blocks/electrum_block.json
 7071f0637ba7d5d94ae2f0251fabc611efd1e041 data/alloyance/loot_table/blocks/end_eximite_ore.json
 6ddb464ee9ba309aad0e52d3deee8eda214cd0c8 data/alloyance/loot_table/blocks/end_meutoite_ore.json
+058e25b4f193023e78d3ef33f09f768a922ec6e2 data/alloyance/loot_table/blocks/etherium_block.json
 42c46f0c03d9cacebb8a00574abd70f41001f6a8 data/alloyance/loot_table/blocks/eximite_block.json
 b78a685b55ffeb14a060fa8196c76306bd1c58e7 data/alloyance/loot_table/blocks/haderoth_block.json
 b8e58eb2f15e14af7b883d0896ba2ff4d06c8e71 data/alloyance/loot_table/blocks/hepatizon_block.json

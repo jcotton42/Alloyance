@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "etherium_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:etherium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:etherium_ingot"
+  }
+}

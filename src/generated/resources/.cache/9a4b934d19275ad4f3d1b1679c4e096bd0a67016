@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T22:24:13.7891082	Item Models: alloyance
+// 1.21.1	2024-10-02T22:26:59.4633874	Item Models: alloyance
 6f3701e75c5cc7421d5146a262eae52e34592565 assets/alloyance/models/item/adamantine_block.json
 4b1bfbc8cf265a0a7a6220be35ffec627f9d35c2 assets/alloyance/models/item/adamantine_dust.json
 61a3f9dd92fc288e7a15147d5b7db4165b8c77b0 assets/alloyance/models/item/adamantine_ingot.json
@@ -85,6 +85,10 @@ ab498396beb0d48afc8f4e364f9bdc2b6f1cc305 assets/alloyance/models/item/electrum_i
 fa782c4363dd7981853a36ec74dd7a5ca60c087d assets/alloyance/models/item/electrum_nugget.json
 4672129d17abaa54aeb70667d9c7d7aae056b2fc assets/alloyance/models/item/end_eximite_ore.json
 0dffd82c8020b3669fa70f5a3cc5bde8d5e16b51 assets/alloyance/models/item/end_meutoite_ore.json
+8601b165bd419c88e6a96710e2049599adca7d41 assets/alloyance/models/item/etherium_block.json
+2aa613ad7e1c85da20289b3fce04a8e60a6d58cf assets/alloyance/models/item/etherium_dust.json
+d264cc3c42aa1d67c3864c6b0a31012dfe49011f assets/alloyance/models/item/etherium_ingot.json
+65e534d5733eae17059b1b290ee93c7f0c4750e7 assets/alloyance/models/item/etherium_nugget.json
 ef6c583ef6627a1970cfeda4d422820257cbd4b9 assets/alloyance/models/item/eximite_block.json
 f2507e0949cfa6c8bba0f59e14517e54634251c9 assets/alloyance/models/item/eximite_dust.json
 0621f96dd09ac9a35a92477b8dee93d8ded16592 assets/alloyance/models/item/eximite_ingot.json

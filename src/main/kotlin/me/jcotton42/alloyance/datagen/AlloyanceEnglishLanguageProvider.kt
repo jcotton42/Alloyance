@@ -186,5 +186,6 @@ class AlloyanceEnglishLanguageProvider(
         Metal.INOLASHITE -> "Inolashite"
         Metal.KRIK -> "Krik"
         Metal.TARTARITE -> "Tartarite"
+        Metal.ETHERIUM -> "Etherium"
     }
 }

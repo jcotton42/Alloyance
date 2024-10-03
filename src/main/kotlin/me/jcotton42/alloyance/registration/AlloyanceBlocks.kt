@@ -202,6 +202,8 @@ object AlloyanceBlocks {
 
     val TARTARITE_BLOCK = storageBlock(TARTARITE)
 
+    val ETHERIUM_BLOCK = storageBlock(ETHERIUM)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

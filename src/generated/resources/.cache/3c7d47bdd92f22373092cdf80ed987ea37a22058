@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T22:24:13.7654104	Block States: alloyance
+// 1.21.1	2024-10-02T22:26:59.4407571	Block States: alloyance
 177ad7fb981f29d57b4febc3786c268f8465c3a7 assets/alloyance/blockstates/adamantine_block.json
 4ceb30e2ac220dddf3263c45e1c7ec16016814e5 assets/alloyance/blockstates/adamantine_ore.json
 bd6b35e4666c02e1575153a549b52c2527b5e26f assets/alloyance/blockstates/alduorite_block.json
@@ -36,6 +36,7 @@ b5d1a80c524ce42bcf156efc59e00806e4cf1ab5 assets/alloyance/blockstates/desichalko
 3c23cba9e20a9854bfa1f8c1648b5f22395640ea assets/alloyance/blockstates/electrum_block.json
 9895d270086a1c5c6aa819598d3bcb99b477c211 assets/alloyance/blockstates/end_eximite_ore.json
 b4a4a5d0a96a175fca9b05a6781db81225add8ef assets/alloyance/blockstates/end_meutoite_ore.json
+1e4fcebd00a2a10d8ad769670a96a8dcce6fa438 assets/alloyance/blockstates/etherium_block.json
 bc9517842fdbe0996e754eeb629560a9ff9f1242 assets/alloyance/blockstates/eximite_block.json
 6079197e3c947e91db21c308fe054ba2421e239f assets/alloyance/blockstates/haderoth_block.json
 563a51be0fa98b12c103eeb278fec0c5cff3e4ea assets/alloyance/blockstates/hepatizon_block.json
@@ -126,6 +127,7 @@ f57dece34d0ddc41e095adb7870dc05cb49bfdd4 assets/alloyance/models/block/deep_iron
 b1de0185f4e170c1f432ac7389a44d266ac318aa assets/alloyance/models/block/electrum_block.json
 98cc1f72655ea2219998d5b9d133d672e8034644 assets/alloyance/models/block/end_eximite_ore.json
 12056391ea4e80e67666fac06ef35f0f3de84ccc assets/alloyance/models/block/end_meutoite_ore.json
+014062fce42b6906b90d529ba195763f750d1738 assets/alloyance/models/block/etherium_block.json
 5f32c03a9c6b6881efa671566972e27a44030139 assets/alloyance/models/block/eximite_block.json
 c6dd52eb043ac061ba7cd99b7ab06704e9fc3eb9 assets/alloyance/models/block/haderoth_block.json
 869c1e0ded89e16329be85f3f4234f6a1cb72310 assets/alloyance/models/block/hepatizon_block.json
