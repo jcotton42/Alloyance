@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_meutoite_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:meutoite_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:meutoite_ingot_from_meutoite_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_meutoite_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:meutoite_ingot_from_meutoite_block"
+    ]
+  }
+}

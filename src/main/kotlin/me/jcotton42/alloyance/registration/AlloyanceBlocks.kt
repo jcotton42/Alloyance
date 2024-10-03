@@ -164,6 +164,9 @@ object AlloyanceBlocks {
     val NETHER_LEMURITE_ORE = netherOre(LEMURITE)
     val LEMURITE_BLOCK = storageBlock(LEMURITE)
 
+    val END_MEUTOITE_ORE = endOre(MEUTOITE)
+    val MEUTOITE_BLOCK = storageBlock(MEUTOITE)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

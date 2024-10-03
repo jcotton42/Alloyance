@@ -1,5 +1,5 @@
-// 1.21.1	2024-10-02T19:52:39.7141164	Tags for minecraft:item mod id alloyance
-fee0022ae91b750b81637385aa0308393ab2c195 data/alloyance/tags/item/alloyables.json
+// 1.21.1	2024-10-02T20:05:33.475384	Tags for minecraft:item mod id alloyance
+b1b9cc50bf1e013d43f6af552a893ddcf3e380ed data/alloyance/tags/item/alloyables.json
 1db71cbfbd53be632e07baf2d30422ffa6c6d43a data/alloyance/tags/item/alloyables/amordrine.json
 377249b26bc8f1377bded168543b4379340c69d6 data/alloyance/tags/item/alloyables/angmallen.json
 4160ff10b39f9bf455ee2b99893bc69582b02f1f data/alloyance/tags/item/alloyables/astral_silver.json
@@ -22,6 +22,7 @@ cc2f821072565b3577f31014cbc71bb573620df8 data/alloyance/tags/item/alloyables/ele
 3d6321939caa21f466b1504750a8034a51be3c12 data/alloyance/tags/item/alloyables/kalendrite.json
 d47b9864dd02fd4bc851640398dce796822298d5 data/alloyance/tags/item/alloyables/lemurite.json
 44546b4fc1040a2340ca9e832fee7cb558c7530d data/alloyance/tags/item/alloyables/manganese.json
+ce75d8c6359ff34e5c8179d0ed1b7d4745e37fc7 data/alloyance/tags/item/alloyables/meutoite.json
 71cebdb290179a8ae529873d328d0e38bdd6e65f data/alloyance/tags/item/alloyables/midasium.json
 fa9653c887666fd96cf364cf96b05ef8db120ab9 data/alloyance/tags/item/alloyables/orichalcum.json
 f4039ba610c9842068f6475dd204165b1d7cc848 data/alloyance/tags/item/alloyables/osmium.json
@@ -36,7 +37,7 @@ b2b40839320518ac3843e3df7993bf29ff219a36 data/alloyance/tags/item/alloyables/ste
 3b121bbaff2a2788269466daf49a2e4ef4f9372f data/alloyance/tags/item/alloyables/tin.json
 9b7c0574a1f26dd54363b52052e4d22153e16596 data/alloyance/tags/item/alloyables/vulcanite.json
 68143d514bf194a281517d128892c2d73c34fbe9 data/alloyance/tags/item/alloyables/zinc.json
-8078f330c86c28d4d5021fd1c2016dd33348c55f data/c/tags/item/dusts.json
+cfec1cf2cdb51dea609b6c945bd68b21b9d1b06a data/c/tags/item/dusts.json
 a07607d6f027d9436c5a77159eb929e87ed96bb3 data/c/tags/item/dusts/amordrine.json
 dc9bd4011c544abee5dee660e2d1d6c0c69dabc2 data/c/tags/item/dusts/angmallen.json
 75818ad6811847efd72f7754f35bfff31c375fcf data/c/tags/item/dusts/astral_silver.json
@@ -59,6 +60,7 @@ e38988fbb5fe04af3c8e4a826c93b6e82c94acf3 data/c/tags/item/dusts/iron.json
 bc4a1e250c23ef653df36bddeecc3fef34fbdf8c data/c/tags/item/dusts/kalendrite.json
 fd88b75874f72b4a61dc3f5f8f3185b482b71acb data/c/tags/item/dusts/lemurite.json
 2d6bb282daae7ceedd9f8817929288cad9f63070 data/c/tags/item/dusts/manganese.json
+22fc1324c8d919a94b5a011e6e814f102d2b3403 data/c/tags/item/dusts/meutoite.json
 353515bc37932b4bfd8812f20d7b9ea74bc232c7 data/c/tags/item/dusts/midasium.json
 a274d268b707d995e44c1e400ef560ccc22e20f9 data/c/tags/item/dusts/orichalcum.json
 7d5b24495b7771ac5434e73603c7efb7110192a0 data/c/tags/item/dusts/osmium.json
@@ -73,7 +75,7 @@ a322e89c2441bbff5718d20779b70fc3f1d3a889 data/c/tags/item/dusts/steel.json
 f778cc51e96c4dfd977cb382ed889ee3e715ef59 data/c/tags/item/dusts/tin.json
 2275fcde0d8414deb92110188f63dfac7a058ab4 data/c/tags/item/dusts/vulcanite.json
 30e5ebfb6e043cab8b77e480ca42caf4fb322ab6 data/c/tags/item/dusts/zinc.json
-c7676fb5a6f32e4e04e18ed8cda5945213670515 data/c/tags/item/ingots.json
+4e6207a97ee295a0ba5f570d48ebce367c54095a data/c/tags/item/ingots.json
 5a1fe75dc9eb761047f1fdd07bc152c2e5b42d9e data/c/tags/item/ingots/amordrine.json
 cef653a06639c3cabdcd1cec42139b117f7acd05 data/c/tags/item/ingots/angmallen.json
 9057d1eedc31252c11242a2feb8fe680856a29d8 data/c/tags/item/ingots/astral_silver.json
@@ -93,6 +95,7 @@ d8b8d5cdf4cac7189430b1db6e19b8175f5deb12 data/c/tags/item/ingots/electrum.json
 26b6d6ec1d38b0ff6603db11167ae521e9921bc3 data/c/tags/item/ingots/kalendrite.json
 c38dc002dee486e96e01a9082fa1dda0190c93ce data/c/tags/item/ingots/lemurite.json
 03ea5550bdc07f47d4b19c6595c279cf82fabd8b data/c/tags/item/ingots/manganese.json
+0eef504b9318963744d40b00f6bde0b4e2514787 data/c/tags/item/ingots/meutoite.json
 458fb9f2f5ad54710e43ee41730c72d0f3199cfc data/c/tags/item/ingots/midasium.json
 8f4889b33803212f38eac354c2923d66aa997f72 data/c/tags/item/ingots/orichalcum.json
 e9461b29e98f66db0e253a4f223b5029e68f2be2 data/c/tags/item/ingots/osmium.json
@@ -107,7 +110,7 @@ cc48bf72815651b4864345ac06c2f1a1409b9460 data/c/tags/item/ingots/shadow_iron.jso
 d5e25c33f6faacff229b3e494b5401b5d14314d8 data/c/tags/item/ingots/tin.json
 6537dd1835de338b8f0b4d24603de07cda3092cb data/c/tags/item/ingots/vulcanite.json
 38c245b799b04efe6544d71d99b1b08e0bc99083 data/c/tags/item/ingots/zinc.json
-59b3fb7c207e215ccefe5430b92aa714c9868bc8 data/c/tags/item/nuggets.json
+6a410f5498bd85a9d87223208d95a76bd649005e data/c/tags/item/nuggets.json
 522d07fbfbdd46d180ed53fde593879f15688c07 data/c/tags/item/nuggets/amordrine.json
 324918a4426c2a08d3df317fa698601bb95bdbc3 data/c/tags/item/nuggets/angmallen.json
 8c648abb8dfdc7a949a7a02bf48ca1bff2c8b45f data/c/tags/item/nuggets/astral_silver.json
@@ -127,6 +130,7 @@ cb6c9b1799853bac98f0f1ae1dc9ebd80a00ff45 data/c/tags/item/nuggets/ignatius.json
 1cdaa419ba93a40da0cc3e5c84cf8b36d4321a56 data/c/tags/item/nuggets/kalendrite.json
 4560c5dc8d46a21476f0b13664b5dca899b74acc data/c/tags/item/nuggets/lemurite.json
 fcbe35d960e95dc7b72475b19143542da0183c86 data/c/tags/item/nuggets/manganese.json
+277092213db0cc07caf257df04807c9b099e8ad9 data/c/tags/item/nuggets/meutoite.json
 420397ddbe16ca2cfc5c1cc9d219230e3e3bf2b1 data/c/tags/item/nuggets/midasium.json
 139e9db6db7245fdd92c2c8d72074696b8dcf4dd data/c/tags/item/nuggets/orichalcum.json
 1a910eba1de9855cd3308d92a4563d45b33de18b data/c/tags/item/nuggets/osmium.json
@@ -141,7 +145,7 @@ eab586d664870d225290e5258ad6a7c41b90bef1 data/c/tags/item/nuggets/silver.json
 30204e7433eb335926278c28be8a971d12fee8a5 data/c/tags/item/nuggets/tin.json
 7e7990f9246227ba6596081a6b1fb47e89008f11 data/c/tags/item/nuggets/vulcanite.json
 74dd75e5f736dce3240bcce26f0ccf4890de7cbc data/c/tags/item/nuggets/zinc.json
-256f99dbb414981114630a57b11a391d83e5a8cb data/c/tags/item/ores.json
+5861678025d13fa51cfa85779007fcdb028129bd data/c/tags/item/ores.json
 b0b453b05b70b674bcd6d479954b4063df9a6945 data/c/tags/item/ores/astral_silver.json
 3112e7ad5289c46f0ad110e30faa957eae9402a8 data/c/tags/item/ores/carmot.json
 75ab44eb59d5383582bb81f9ee3ea79ead6930b7 data/c/tags/item/ores/ceruclase.json
@@ -152,6 +156,7 @@ aae418588f11ddea316f7ab7e54a1a33b83dd1c9 data/c/tags/item/ores/infuscolium.json
 70821761823f5d9aff031c1bbf062008216ac3d8 data/c/tags/item/ores/kalendrite.json
 384bde7a0f005ab49237c8a167d65b4e3004308d data/c/tags/item/ores/lemurite.json
 7cf3fd3aafcb434fdd0bb1346418575ad62b3e8b data/c/tags/item/ores/manganese.json
+01ea4378509726510bc631317b805f2d2f97a574 data/c/tags/item/ores/meutoite.json
 bed510ba65568a68013580ad65f7fc087b320649 data/c/tags/item/ores/midasium.json
 71bf5ee7723d715f6bc86011139b7d2a3b405b07 data/c/tags/item/ores/orichalcum.json
 575815da68c26150b0582acb33bef4122723d33b data/c/tags/item/ores/osmium.json
@@ -167,8 +172,8 @@ b5847b4a65fb265052f0d2c49f73b82b8b8bc0f9 data/c/tags/item/ores/silver.json
 dafd3eb8cbb98a35df4efb9b3e99d942a1f5106a data/c/tags/item/ores_in_ground/deepslate.json
 2aa2d5f230a453ad9a269cb2036e51b4546b2a52 data/c/tags/item/ores_in_ground/netherrack.json
 1af3368da63fd695d4635013ca50c4ee0ab9e28f data/c/tags/item/ores_in_ground/stone.json
-ad2c610867938a357285af96d61f804a2f4df91a data/c/tags/item/ore_rates/singular.json
-6deef3b3cca96c4802565ac3aa017a3a5ce5347b data/c/tags/item/raw_materials.json
+f4cc436186b9e97eb8ce54296473568cf5ec9377 data/c/tags/item/ore_rates/singular.json
+d7c0b3ee03202e32e19be6387d4cec1fbbc7dd87 data/c/tags/item/raw_materials.json
 2a8658cfdd7a80a24b90c29dc4e31007433a9771 data/c/tags/item/raw_materials/astral_silver.json
 5bba8ce78dc742a7108af193bd6937b813195abf data/c/tags/item/raw_materials/carmot.json
 eb1e227fa1ee8b3df4f2049ea27166d28447a0c5 data/c/tags/item/raw_materials/ceruclase.json
@@ -179,6 +184,7 @@ d5c1bcf2228970520fda55f86bd40a0385972e4a data/c/tags/item/raw_materials/ignatius
 a79e8fbc92d12fc900f8856ff634d7fcc4277f86 data/c/tags/item/raw_materials/kalendrite.json
 3840a13d4d132049d7768deef0117e701846ce3a data/c/tags/item/raw_materials/lemurite.json
 2028abe1726b80656d86016bb76544b19ea747aa data/c/tags/item/raw_materials/manganese.json
+721777af9068a21865de6a1ec0d9ee2f2a1e4e05 data/c/tags/item/raw_materials/meutoite.json
 12b2e01e461b7f4112ec4ecc95552906a75ee27e data/c/tags/item/raw_materials/midasium.json
 6e74dcd19222c49aa7e1fd5cefadeab81099521a data/c/tags/item/raw_materials/orichalcum.json
 acf6c9f65f3bb75f4fa0317958d00576cdd2a941 data/c/tags/item/raw_materials/osmium.json
@@ -191,7 +197,7 @@ fc6448189ba34be78d422411fe2dedb3913a9849 data/c/tags/item/raw_materials/promethe
 74bae4e38cf66dff64a2f45995c17313b5dd78b7 data/c/tags/item/raw_materials/tin.json
 7927393ae096233440d37fbdedf84910605ea761 data/c/tags/item/raw_materials/vulcanite.json
 49ba2295d2bb6e79b49ce95fa10f56418a5955d6 data/c/tags/item/raw_materials/zinc.json
-a6506b7c6243e3b2e0f54b57c53fe8e6b74e028f data/c/tags/item/storage_blocks.json
+79d686e0377ef89e1675883d00aac91a8d78c219 data/c/tags/item/storage_blocks.json
 6b8487afd922d222ded413fc5159e17ea84adcea data/c/tags/item/storage_blocks/amordrine.json
 18ef9f2ab9af5be3948a4e6cdf6890a3cba1df42 data/c/tags/item/storage_blocks/angmallen.json
 860f60434d7b9ca9e627318a83cd5d09bacded2d data/c/tags/item/storage_blocks/astral_silver.json
@@ -211,6 +217,7 @@ ed561f6da86be37fa1bfc2a2485e3acc120335c1 data/c/tags/item/storage_blocks/infusco
 609f388dc1f28c327a2b145ff7805ec091f8723c data/c/tags/item/storage_blocks/kalendrite.json
 27f6607aa34a44cecb633b00d956ae00687d1b34 data/c/tags/item/storage_blocks/lemurite.json
 c58df94141ec1add51460dca22efe821ad3529c6 data/c/tags/item/storage_blocks/manganese.json
+52494c90c495edd255e3742da1428685ff8181e1 data/c/tags/item/storage_blocks/meutoite.json
 b3ce81b19d902e63556ba5fe5450fbc49ce92a75 data/c/tags/item/storage_blocks/midasium.json
 bbbade344ccf613c29a548809edcdd8315229a9b data/c/tags/item/storage_blocks/orichalcum.json
 7d9c5bd1d44dfbd432c1366cda8c67dce2ae72e5 data/c/tags/item/storage_blocks/osmium.json

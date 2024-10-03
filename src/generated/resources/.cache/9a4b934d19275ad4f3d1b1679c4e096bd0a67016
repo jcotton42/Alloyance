@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T19:52:39.7103684	Item Models: alloyance
+// 1.21.1	2024-10-02T20:05:33.4718766	Item Models: alloyance
 bfb369f6a77fec5776fb060493aa0b7bff388e39 assets/alloyance/models/item/amordrine_block.json
 ffc8a232ff19dbfd15a3ea160593598f3a2fa5d0 assets/alloyance/models/item/amordrine_dust.json
 2cd9b43b2b47414f0270caf00a4845193959d020 assets/alloyance/models/item/amordrine_ingot.json
@@ -64,6 +64,7 @@ ad517e41f8306cc065c7a50ea064995104aeeed4 assets/alloyance/models/item/electrum_d
 ab498396beb0d48afc8f4e364f9bdc2b6f1cc305 assets/alloyance/models/item/electrum_ingot.json
 fa782c4363dd7981853a36ec74dd7a5ca60c087d assets/alloyance/models/item/electrum_nugget.json
 4672129d17abaa54aeb70667d9c7d7aae056b2fc assets/alloyance/models/item/end_eximite_ore.json
+0dffd82c8020b3669fa70f5a3cc5bde8d5e16b51 assets/alloyance/models/item/end_meutoite_ore.json
 ef6c583ef6627a1970cfeda4d422820257cbd4b9 assets/alloyance/models/item/eximite_block.json
 f2507e0949cfa6c8bba0f59e14517e54634251c9 assets/alloyance/models/item/eximite_dust.json
 0621f96dd09ac9a35a92477b8dee93d8ded16592 assets/alloyance/models/item/eximite_ingot.json
@@ -97,6 +98,10 @@ a66749e7dc51f6475ed624c905ee7492afe050b8 assets/alloyance/models/item/lemurite_n
 5de53e321869a7a72227afdee6c84ea354181a4b assets/alloyance/models/item/manganese_ingot.json
 e7e185b33ab4a84fc88f8eaff913c1d3145201ea assets/alloyance/models/item/manganese_nugget.json
 748087aae279f18e87f289fb673825beb7799f91 assets/alloyance/models/item/manganese_ore.json
+5c2b0a723a4920ecea760df2f109b21269496900 assets/alloyance/models/item/meutoite_block.json
+00edf373d6f1476a9fe188985ed5dd6e3d2be8bd assets/alloyance/models/item/meutoite_dust.json
+ea1c73bad2d18aa5895bf0282263c3aca73d1159 assets/alloyance/models/item/meutoite_ingot.json
+452723022cadb73a4b7f9c6ef79600a08d098d67 assets/alloyance/models/item/meutoite_nugget.json
 952d25c72143862085901c0189475437c76a7b97 assets/alloyance/models/item/midasium_block.json
 9a171d1a3a99cb014242fd748883830569c2787b assets/alloyance/models/item/midasium_dust.json
 2315ea29b08a78be50d86f6123757a89d16b9da1 assets/alloyance/models/item/midasium_ingot.json
@@ -146,6 +151,7 @@ bc8fa47cf548768e6251ce0b7df1eeba1bffc41a assets/alloyance/models/item/raw_infusc
 db79408cb9db62d4682c6fbd28e1ac1854a3c1e2 assets/alloyance/models/item/raw_kalendrite.json
 41f391e88591273ce1508967d1d4c6ba7327b7b3 assets/alloyance/models/item/raw_lemurite.json
 13dc44afb3badd2b327177ae2083c67a52488264 assets/alloyance/models/item/raw_manganese.json
+2d1233f8bce5238aece3f560e01e14ed703f6d94 assets/alloyance/models/item/raw_meutoite.json
 658bb9824d248689fbf69fd0105bb18c30f92389 assets/alloyance/models/item/raw_midasium.json
 18d19b7f39363d8743ad7079e5c1bb4fa83b9e65 assets/alloyance/models/item/raw_orichalcum.json
 11a5574f501bf995deff9ba07b6bc0e71f1a6144 assets/alloyance/models/item/raw_osmium.json

@@ -254,6 +254,13 @@ object AlloyanceItems {
     val LEMURITE_NUGGET = nugget(LEMURITE)
     val LEMURITE_DUST = dust(LEMURITE)
 
+    val END_MEUTOITE_ORE = block(AlloyanceBlocks.END_MEUTOITE_ORE)
+    val MEUTOITE_BLOCK = block(AlloyanceBlocks.MEUTOITE_BLOCK)
+    val RAW_MEUTOITE = rawMaterial(MEUTOITE)
+    val MEUTOITE_INGOT = ingot(MEUTOITE)
+    val MEUTOITE_NUGGET = nugget(MEUTOITE)
+    val MEUTOITE_DUST = dust(MEUTOITE)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

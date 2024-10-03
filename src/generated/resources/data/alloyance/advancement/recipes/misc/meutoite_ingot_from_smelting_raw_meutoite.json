@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_meutoite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:raw_meutoite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:meutoite_ingot_from_smelting_raw_meutoite"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_meutoite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:meutoite_ingot_from_smelting_raw_meutoite"
+    ]
+  }
+}

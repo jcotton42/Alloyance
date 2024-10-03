@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "meutoite_dust",
+  "ingredient": {
+    "tag": "c:raw_materials/meutoite"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:meutoite_dust"
+  }
+}
