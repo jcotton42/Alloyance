@@ -79,5 +79,8 @@ class AlloyanceBiomeTagsProvider(
             .addTags(BiomeTags.IS_NETHER)
         tag(AlloyanceBiomeTags.HAS_VYROXERES_ORE)
             .addTags(BiomeTags.IS_NETHER)
+
+        tag(AlloyanceBiomeTags.HAS_ATLARUS_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
     }
 }
