@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_adamantine_ore",
+  "features": "alloyance:adamantine_ore",
+  "step": "underground_ores"
+}

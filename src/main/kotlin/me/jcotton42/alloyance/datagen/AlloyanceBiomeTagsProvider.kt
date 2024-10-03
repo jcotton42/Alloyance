@@ -82,5 +82,7 @@ class AlloyanceBiomeTagsProvider(
 
         tag(AlloyanceBiomeTags.HAS_ATLARUS_ORE)
             .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_ADAMANTINE_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
     }
 }
