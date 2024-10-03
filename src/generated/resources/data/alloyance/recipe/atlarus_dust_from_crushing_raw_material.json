@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "atlarus_dust",
+  "ingredient": {
+    "tag": "c:raw_materials/atlarus"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:atlarus_dust"
+  }
+}

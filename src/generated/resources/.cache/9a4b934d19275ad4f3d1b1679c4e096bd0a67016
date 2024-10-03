@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T21:17:19.3632945	Item Models: alloyance
+// 1.21.1	2024-10-02T21:27:20.0192702	Item Models: alloyance
 bfb369f6a77fec5776fb060493aa0b7bff388e39 assets/alloyance/models/item/amordrine_block.json
 ffc8a232ff19dbfd15a3ea160593598f3a2fa5d0 assets/alloyance/models/item/amordrine_dust.json
 2cd9b43b2b47414f0270caf00a4845193959d020 assets/alloyance/models/item/amordrine_ingot.json
@@ -12,6 +12,11 @@ d68d520c9f68a62d40769503bf256ef4c10fb140 assets/alloyance/models/item/astral_sil
 29c48c49d8263013eb26737d05330a710c577f21 assets/alloyance/models/item/astral_silver_ingot.json
 c1f95c29b81607420a70c0645f04bd42f98c5232 assets/alloyance/models/item/astral_silver_nugget.json
 d9e8c44516407f785b6ae8cc1f10f1145dd3d686 assets/alloyance/models/item/astral_silver_ore.json
+e4f26f3270a2028edac36786ad6a511a93699511 assets/alloyance/models/item/atlarus_block.json
+b3836844a1534df852d2ce40e2944832c8b1bf85 assets/alloyance/models/item/atlarus_dust.json
+943c5f6c07e7942cf7b6f41e51055245252cbeb8 assets/alloyance/models/item/atlarus_ingot.json
+58de8a68a195d2a9bd3fdda6007e07da02a4f049 assets/alloyance/models/item/atlarus_nugget.json
+e337a427597b7cfd5d4d27f9aaa7e42bbeedaf27 assets/alloyance/models/item/atlarus_ore.json
 3cc2d63d4beff0505bc0006e7444b67c83971c8f assets/alloyance/models/item/black_steel_block.json
 07a403b38c5c7f7dfbba1a6a6e1cb8fd84d00ab8 assets/alloyance/models/item/black_steel_dust.json
 1ed0b85fa06affd6a7ece8214992da1c30631e53 assets/alloyance/models/item/black_steel_ingot.json
@@ -42,6 +47,7 @@ db97babee9684bcb62f1cb81ad1e8d29983a2c2a assets/alloyance/models/item/copper_dus
 a19d1318ccf2e5fd42b41250c8992c934baba2e3 assets/alloyance/models/item/damascus_steel_dust.json
 e99503a1168e632a5a4307bb8ef2f502d6d8b568 assets/alloyance/models/item/damascus_steel_ingot.json
 5dd5cbe6fff131bd0c7f55614a082ad635a06140 assets/alloyance/models/item/damascus_steel_nugget.json
+9fa22838ab8e0cd0aea5059245d80fbaeeb26b6d assets/alloyance/models/item/deepslate_atlarus_ore.json
 7d5e5bac2777e059a5e86e9879a48cc1f0d1f039 assets/alloyance/models/item/deepslate_carmot_ore.json
 adc14d65bc34952af3b365b04e2b1e5ed0a6f1a6 assets/alloyance/models/item/deepslate_deep_iron_ore.json
 2a3b4114701dd79fd3f8dfe7bf650ae0e06ba251 assets/alloyance/models/item/deepslate_infuscolium_ore.json
@@ -157,6 +163,7 @@ b3dadf72ade313d203e638c92bbd20e77bb150ce assets/alloyance/models/item/prometheum
 1ab905f6a637cd63bb8eee750b4515dab18ad9a1 assets/alloyance/models/item/quicksilver_ingot.json
 2802b9bf32231eed723554255dd96453d8d73974 assets/alloyance/models/item/quicksilver_nugget.json
 376bc2054ede0087c8116f1aeb316ad614750208 assets/alloyance/models/item/raw_astral_silver.json
+8a593d4267a34773510fca5342ff201b66d797c2 assets/alloyance/models/item/raw_atlarus.json
 44fd4a0fed4c321eb99026d9af07e971fc564be8 assets/alloyance/models/item/raw_carmot.json
 8299ed93c1eaeb6db92c804ed69e63171b53318f assets/alloyance/models/item/raw_ceruclase.json
 50b04df6ca337a75040a3e2ec6331d715de4bd29 assets/alloyance/models/item/raw_deep_iron.json

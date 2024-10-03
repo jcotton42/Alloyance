@@ -297,6 +297,14 @@ object AlloyanceItems {
     val DESICHALKOS_NUGGET = nugget(DESICHALKOS)
     val DESICHALKOS_DUST = dust(DESICHALKOS)
 
+    val ATLARUS_ORE = block(AlloyanceBlocks.ATLARUS_ORE)
+    val DEEPSLATE_ATLARUS_ORE = block(AlloyanceBlocks.DEEPSLATE_ATLARUS_ORE)
+    val ATLARUS_BLOCK = block(AlloyanceBlocks.ATLARUS_BLOCK)
+    val RAW_ATLARUS = rawMaterial(ATLARUS)
+    val ATLARUS_INGOT = ingot(ATLARUS)
+    val ATLARUS_NUGGET = nugget(ATLARUS)
+    val ATLARUS_DUST = dust(ATLARUS)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "atlarus_dust",
+  "ingredient": {
+    "tag": "c:ingots/atlarus"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:atlarus_dust"
+  }
+}

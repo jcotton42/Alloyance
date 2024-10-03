@@ -182,6 +182,10 @@ object AlloyanceBlocks {
 
     val DESICHALKOS_BLOCK = storageBlock(DESICHALKOS)
 
+    val ATLARUS_ORE = ore(ATLARUS)
+    val DEEPSLATE_ATLARUS_ORE = deepslateOre(ATLARUS)
+    val ATLARUS_BLOCK = storageBlock(ATLARUS)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

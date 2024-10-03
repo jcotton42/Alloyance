@@ -1,9 +1,11 @@
-// 1.21.1	2024-10-02T21:17:19.3492335	Loot Tables
+// 1.21.1	2024-10-02T21:27:20.0046397	Loot Tables
 00986215a0540b1b41631c104659deaa568ccfea data/alloyance/loot_table/blocks/alloyer.json
 dcac1ba2ee83e55ce89f5d4bb5fcc256b7926d3f data/alloyance/loot_table/blocks/amordrine_block.json
 a80a5cc977a2ae430a4f1e00459a6153eafa8f03 data/alloyance/loot_table/blocks/angmallen_block.json
 d6e65e8d30262ba84d58b5ada3e8bc8b0a49b4c8 data/alloyance/loot_table/blocks/astral_silver_block.json
 7608c1ccf302f9bbcbd9d9c8f30dfb7ed07305d5 data/alloyance/loot_table/blocks/astral_silver_ore.json
+a17fe8438e3747a93e9d375f78486c10fa4cd61a data/alloyance/loot_table/blocks/atlarus_block.json
+7ac14e21d9f63ff4116f724e29528389a72411fb data/alloyance/loot_table/blocks/atlarus_ore.json
 c688d425bbd99d21cef44b91af577a5f8443c7b0 data/alloyance/loot_table/blocks/black_steel_block.json
 977bab28703316c4ca553b283bd8f0d3bfdd801b data/alloyance/loot_table/blocks/brass_block.json
 9c4df2b41e7f414e4625a84af977c04d43e3e630 data/alloyance/loot_table/blocks/bronze_block.json
@@ -13,6 +15,7 @@ d4a069a40342c8003813eefdfc8b6545214ee99f data/alloyance/loot_table/blocks/celene
 e07b8f914c45dc33e91b209e31ec0229864429a1 data/alloyance/loot_table/blocks/ceruclase_block.json
 da661da2648d0a162afeb276de291c7a180ef08a data/alloyance/loot_table/blocks/crusher.json
 0c019d83175b2c87326719853a2793a1cf2eb006 data/alloyance/loot_table/blocks/damascus_steel_block.json
+0ed35a471db8c1644618194f4a91042a75034d1c data/alloyance/loot_table/blocks/deepslate_atlarus_ore.json
 b22d8d2c601eb3fdf0f54d542651d661c61cea54 data/alloyance/loot_table/blocks/deepslate_carmot_ore.json
 b4b0d18e33efcd418feb6a7c18a037cb792e2a3c data/alloyance/loot_table/blocks/deepslate_deep_iron_ore.json
 be4ca5b1c44889cfa9bcb5b013566625972b86a9 data/alloyance/loot_table/blocks/deepslate_infuscolium_ore.json

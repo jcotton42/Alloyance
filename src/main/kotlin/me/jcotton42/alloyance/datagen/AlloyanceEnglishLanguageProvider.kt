@@ -178,5 +178,7 @@ class AlloyanceEnglishLanguageProvider(
         Metal.SHADOW_STEEL -> "Shadow Steel"
         Metal.HADEROTH -> "Haderoth"
         Metal.DESICHALKOS -> "Desichalkos"
+
+        Metal.ATLARUS -> "Atlarus"
     }
 }

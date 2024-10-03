@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "atlarus_ingot",
+  "ingredient": {
+    "item": "alloyance:raw_atlarus"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:atlarus_ingot"
+  }
+}
