@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T21:52:14.3209953	Item Models: alloyance
+// 1.21.1	2024-10-02T22:03:02.9741919	Item Models: alloyance
 6f3701e75c5cc7421d5146a262eae52e34592565 assets/alloyance/models/item/adamantine_block.json
 4b1bfbc8cf265a0a7a6220be35ffec627f9d35c2 assets/alloyance/models/item/adamantine_dust.json
 61a3f9dd92fc288e7a15147d5b7db4165b8c77b0 assets/alloyance/models/item/adamantine_ingot.json
@@ -117,6 +117,10 @@ f254787d2bed495147a764dc6cbd8e708b3af4cc assets/alloyance/models/item/kalendrite
 7abb1ef11ac6ab87c8fbe2b779e876d2c80a27d2 assets/alloyance/models/item/lemurite_dust.json
 5c759b45907ac1fe1533e256a449980fe5c1abb4 assets/alloyance/models/item/lemurite_ingot.json
 a66749e7dc51f6475ed624c905ee7492afe050b8 assets/alloyance/models/item/lemurite_nugget.json
+0d0d8f5913129e6bfab9ce48af3c934c9d48b708 assets/alloyance/models/item/lutetium_block.json
+77e08b5aa0dd7c7e15d7789461a5492979379f1f assets/alloyance/models/item/lutetium_dust.json
+72eb85a8ce9a1dbc0396271da71faac02a346c6f assets/alloyance/models/item/lutetium_ingot.json
+2154be2f182c78dcf59816fbd9777670de5a5cf5 assets/alloyance/models/item/lutetium_nugget.json
 54fa9e09e71a71961ea735e97a5fb0e3d181b3d6 assets/alloyance/models/item/manganese_block.json
 98afe30679fa5c28fe45fbaa6d2bf15c8f051d9e assets/alloyance/models/item/manganese_dust.json
 5de53e321869a7a72227afdee6c84ea354181a4b assets/alloyance/models/item/manganese_ingot.json
@@ -140,6 +144,7 @@ c383c52bc113024cbf7b74165d56ff84e546d19f assets/alloyance/models/item/nether_ald
 1f73bb7bd2a90948ba4e76a431e97f3e3e4307c8 assets/alloyance/models/item/nether_ignatius_ore.json
 bd17875269beb057f536be4bed34616750fc6f9e assets/alloyance/models/item/nether_kalendrite_ore.json
 e599797d2070bb9f0b41c9999453461721ecbd72 assets/alloyance/models/item/nether_lemurite_ore.json
+3562389fa847902a20b6a03e7b71014496b6b330 assets/alloyance/models/item/nether_lutetium_ore.json
 9dad48fce792771f30d42c08614242f9dbbd5c12 assets/alloyance/models/item/nether_midasium_ore.json
 6af9a887136f5b4d0c2c13a26001664d7f04c119 assets/alloyance/models/item/nether_sanguinite_ore.json
 719a4d8cef86acb59bddac533ac73b4e22cf4249 assets/alloyance/models/item/nether_shadow_iron_ore.json
@@ -185,6 +190,7 @@ dd68db532dde3f888d516bab3132abf84d05c0ed assets/alloyance/models/item/raw_ignati
 bc8fa47cf548768e6251ce0b7df1eeba1bffc41a assets/alloyance/models/item/raw_infuscolium.json
 db79408cb9db62d4682c6fbd28e1ac1854a3c1e2 assets/alloyance/models/item/raw_kalendrite.json
 41f391e88591273ce1508967d1d4c6ba7327b7b3 assets/alloyance/models/item/raw_lemurite.json
+39d4f0e927f3618b676747d76259cef723e00d78 assets/alloyance/models/item/raw_lutetium.json
 13dc44afb3badd2b327177ae2083c67a52488264 assets/alloyance/models/item/raw_manganese.json
 2d1233f8bce5238aece3f560e01e14ed703f6d94 assets/alloyance/models/item/raw_meutoite.json
 658bb9824d248689fbf69fd0105bb18c30f92389 assets/alloyance/models/item/raw_midasium.json

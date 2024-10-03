@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "lutetium_nugget",
+  "ingredients": [
+    {
+      "item": "alloyance:lutetium_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:lutetium_nugget"
+  }
+}

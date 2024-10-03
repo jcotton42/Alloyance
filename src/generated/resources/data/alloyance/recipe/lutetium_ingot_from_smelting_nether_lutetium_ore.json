@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "lutetium_ingot",
+  "ingredient": {
+    "item": "alloyance:nether_lutetium_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:lutetium_ingot"
+  }
+}

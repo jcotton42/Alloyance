@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T21:52:14.3047756	Loot Tables
+// 1.21.1	2024-10-02T22:03:02.9605662	Loot Tables
 c900960f05fd9b83417973a0e30e13cc4abbdb90 data/alloyance/loot_table/blocks/adamantine_block.json
 8e7e56838177962741d8dd34e99516a9bc981054 data/alloyance/loot_table/blocks/adamantine_ore.json
 7a4d2b4ddcd5c8b78f386bcc5a049313cbc020aa data/alloyance/loot_table/blocks/alduorite_block.json
@@ -46,6 +46,7 @@ ceebd788e4fb1b47523c15b424bfddda381e8edc data/alloyance/loot_table/blocks/infusc
 db564ba2bf4d481ad6003b16d9bda68e5571957a data/alloyance/loot_table/blocks/infuscolium_ore.json
 d2a5290351dab72c5c0acbbe1d46931e082163fd data/alloyance/loot_table/blocks/kalendrite_block.json
 de7d629a3b7f044a55445f27ae8baf03b2f5d65c data/alloyance/loot_table/blocks/lemurite_block.json
+694d89a532ad07f7742faafd5f2f350970419065 data/alloyance/loot_table/blocks/lutetium_block.json
 b6714299770c3d2ab67e9ee93be4e39b04f0d760 data/alloyance/loot_table/blocks/manganese_block.json
 262dcc164a06325636d6754cee2f7d63aeddd9fd data/alloyance/loot_table/blocks/manganese_ore.json
 4ca3bd78408231b4334a160ba80f6986495ae652 data/alloyance/loot_table/blocks/meutoite_block.json
@@ -57,6 +58,7 @@ f047008c7180ad27d5c892e88e9597b011042920 data/alloyance/loot_table/blocks/nether
 c96baa9b3eec782ab8b52b999a8a83243fa9a19b data/alloyance/loot_table/blocks/nether_ignatius_ore.json
 1ce04ba8a3ffc168c3c35d51d751034c24d3a2a4 data/alloyance/loot_table/blocks/nether_kalendrite_ore.json
 887adc01be7db29d9ae39f348a9f9f33c97ca6f9 data/alloyance/loot_table/blocks/nether_lemurite_ore.json
+761a5d4fb5d7383bc6ff9ee81c604412f3d93bf8 data/alloyance/loot_table/blocks/nether_lutetium_ore.json
 d8d0c0e134a3d25819965222260f6728725958dd data/alloyance/loot_table/blocks/nether_midasium_ore.json
 98da7138f37b18a82a5d788f12665332d7acfa39 data/alloyance/loot_table/blocks/nether_sanguinite_ore.json
 5237ce0d7d67d566b28521ceb94dead3927d1364 data/alloyance/loot_table/blocks/nether_shadow_iron_ore.json

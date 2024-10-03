@@ -21,6 +21,7 @@
     "alloyance:atlarus_block",
     "alloyance:adamantine_block",
     "alloyance:alduorite_block",
+    "alloyance:lutetium_block",
     "alloyance:orichalcum_ore",
     "alloyance:platinum_ore",
     "alloyance:carmot_ore",
@@ -41,6 +42,7 @@
     "alloyance:nether_lemurite_ore",
     "alloyance:nether_sanguinite_ore",
     "alloyance:nether_vyroxeres_ore",
-    "alloyance:nether_alduorite_ore"
+    "alloyance:nether_alduorite_ore",
+    "alloyance:nether_lutetium_ore"
   ]
 }

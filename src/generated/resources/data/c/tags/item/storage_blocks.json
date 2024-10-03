@@ -42,6 +42,7 @@
     "#c:storage_blocks/desichalkos",
     "#c:storage_blocks/atlarus",
     "#c:storage_blocks/adamantine",
-    "#c:storage_blocks/alduorite"
+    "#c:storage_blocks/alduorite",
+    "#c:storage_blocks/lutetium"
   ]
 }

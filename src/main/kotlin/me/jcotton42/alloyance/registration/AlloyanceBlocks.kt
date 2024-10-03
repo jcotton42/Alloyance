@@ -193,6 +193,9 @@ object AlloyanceBlocks {
     val NETHER_ALDUORITE_ORE = netherOre(ALDUORITE)
     val ALDUORITE_BLOCK = storageBlock(ALDUORITE)
 
+    val NETHER_LUTETIUM_ORE = netherOre(LUTETIUM)
+    val LUTETIUM_BLOCK = storageBlock(LUTETIUM)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

@@ -320,6 +320,13 @@ object AlloyanceItems {
     val ALDUORITE_NUGGET = nugget(ALDUORITE)
     val ALDUORITE_DUST = dust(ALDUORITE)
 
+    val NETHER_LUTETIUM_ORE = block(AlloyanceBlocks.NETHER_LUTETIUM_ORE)
+    val LUTETIUM_BLOCK = block(AlloyanceBlocks.LUTETIUM_BLOCK)
+    val RAW_LUTETIUM = rawMaterial(LUTETIUM)
+    val LUTETIUM_INGOT = ingot(LUTETIUM)
+    val LUTETIUM_NUGGET = nugget(LUTETIUM)
+    val LUTETIUM_DUST = dust(LUTETIUM)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }
