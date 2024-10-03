@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "mithril_nugget",
+  "ingredients": [
+    {
+      "item": "alloyance:mithril_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:mithril_nugget"
+  }
+}

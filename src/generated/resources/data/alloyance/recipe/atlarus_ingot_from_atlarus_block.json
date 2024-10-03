@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "atlarus_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:atlarus_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:atlarus_ingot"
+  }
+}

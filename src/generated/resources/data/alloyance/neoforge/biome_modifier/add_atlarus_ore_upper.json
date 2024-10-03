@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_atlarus_ore",
+  "features": "alloyance:atlarus_ore_upper",
+  "step": "underground_ores"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "desichalkos_nugget",
+  "ingredients": [
+    {
+      "item": "alloyance:desichalkos_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:desichalkos_nugget"
+  }
+}

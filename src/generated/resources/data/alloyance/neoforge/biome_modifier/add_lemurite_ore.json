@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_lemurite_ore",
+  "features": "alloyance:lemurite_ore",
+  "step": "underground_ores"
+}

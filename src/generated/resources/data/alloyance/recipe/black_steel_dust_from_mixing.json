@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "black_steel_dust",
+  "ingredients": [
+    {
+      "tag": "c:dusts/deep_iron"
+    },
+    {
+      "tag": "c:dusts/deep_iron"
+    },
+    {
+      "tag": "c:dusts/deep_iron"
+    },
+    {
+      "tag": "c:dusts/infuscolium"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "alloyance:black_steel_dust"
+  }
+}

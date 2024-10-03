@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_platinum_ore",
+  "features": "alloyance:platinum_ore_upper",
+  "step": "underground_ores"
+}

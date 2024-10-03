@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "carmot_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:carmot_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:carmot_ingot"
+  }
+}

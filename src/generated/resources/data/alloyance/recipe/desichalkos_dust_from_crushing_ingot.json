@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "desichalkos_dust",
+  "ingredient": {
+    "tag": "c:ingots/desichalkos"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:desichalkos_dust"
+  }
+}

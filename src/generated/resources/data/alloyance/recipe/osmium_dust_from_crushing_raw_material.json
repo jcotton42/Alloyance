@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "osmium_dust",
+  "ingredient": {
+    "tag": "c:raw_materials/osmium"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:osmium_dust"
+  }
+}

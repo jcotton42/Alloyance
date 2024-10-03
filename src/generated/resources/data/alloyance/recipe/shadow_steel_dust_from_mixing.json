@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "shadow_steel_dust",
+  "ingredients": [
+    {
+      "tag": "c:dusts/shadow_iron"
+    },
+    {
+      "tag": "c:dusts/shadow_iron"
+    },
+    {
+      "tag": "c:dusts/lemurite"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "alloyance:shadow_steel_dust"
+  }
+}

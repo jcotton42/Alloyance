@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "rubracium_block",
+  "key": {
+    "i": {
+      "item": "alloyance:rubracium_ingot"
+    }
+  },
+  "pattern": [
+    "iii",
+    "iii",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:rubracium_block"
+  }
+}

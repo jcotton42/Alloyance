@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:vulcanite_ingot_from_vulcanite_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_vulcanite_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:vulcanite_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_vulcanite_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:vulcanite_ingot_from_vulcanite_block"
+    ]
+  }
+}

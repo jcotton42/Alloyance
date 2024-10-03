@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "vyroxeres_dust",
+  "ingredient": {
+    "tag": "c:ingots/vyroxeres"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:vyroxeres_dust"
+  }
+}

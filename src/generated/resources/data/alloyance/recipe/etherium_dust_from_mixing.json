@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "etherium_dust",
+  "ingredients": [
+    {
+      "tag": "c:dusts/sanguinite"
+    },
+    {
+      "tag": "c:dusts/alduorite"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "alloyance:etherium_dust"
+  }
+}

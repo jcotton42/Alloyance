@@ -1,0 +1,17 @@
+{
+  "type": "alloyance:alloyer",
+  "experience": 1.75,
+  "group": "black_steel_ingot",
+  "ingredient1": {
+    "count": 3,
+    "tag": "alloyance:alloyables/deep_iron"
+  },
+  "ingredient2": {
+    "count": 1,
+    "tag": "alloyance:alloyables/infuscolium"
+  },
+  "result": {
+    "count": 4,
+    "id": "alloyance:black_steel_ingot"
+  }
+}

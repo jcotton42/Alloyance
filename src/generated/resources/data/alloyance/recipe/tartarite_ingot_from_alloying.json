@@ -1,0 +1,17 @@
+{
+  "type": "alloyance:alloyer",
+  "experience": 1.5,
+  "group": "tartarite_ingot",
+  "ingredient1": {
+    "count": 1,
+    "tag": "alloyance:alloyables/adamantine"
+  },
+  "ingredient2": {
+    "count": 1,
+    "tag": "alloyance:alloyables/atlarus"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:tartarite_ingot"
+  }
+}

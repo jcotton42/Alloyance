@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rubracium_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:rubracium_dust"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:rubracium_ingot_from_smelting_rubracium_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rubracium_dust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:rubracium_ingot_from_smelting_rubracium_dust"
+    ]
+  }
+}

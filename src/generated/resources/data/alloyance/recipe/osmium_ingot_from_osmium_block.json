@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "osmium_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:osmium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:osmium_ingot"
+  }
+}

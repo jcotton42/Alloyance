@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "eximite_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:eximite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:eximite_ingot"
+  }
+}

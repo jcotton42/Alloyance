@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "shadow_iron_block",
+  "key": {
+    "i": {
+      "item": "alloyance:shadow_iron_ingot"
+    }
+  },
+  "pattern": [
+    "iii",
+    "iii",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:shadow_iron_block"
+  }
+}

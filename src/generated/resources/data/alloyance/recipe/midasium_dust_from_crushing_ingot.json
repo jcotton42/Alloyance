@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "midasium_dust",
+  "ingredient": {
+    "tag": "c:ingots/midasium"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:midasium_dust"
+  }
+}

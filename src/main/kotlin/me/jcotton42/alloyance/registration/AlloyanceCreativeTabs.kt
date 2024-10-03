@@ -103,9 +103,12 @@ object AlloyanceCreativeTabs {
                 Metal.entries.forEach { metal ->
                     val ore = AlloyanceBlocks.ORES[metal]
                     val deepslateOre = AlloyanceBlocks.DEEPSLATE_ORES[metal]
-                    // TODO nether, end
+                    val endOre = AlloyanceBlocks.END_ORES[metal]
+                    val netherOre = AlloyanceBlocks.NETHER_ORES[metal]
                     if (ore != null) output.accept(ore)
                     if (deepslateOre != null) output.accept(deepslateOre)
+                    if (endOre != null) output.accept(endOre)
+                    if (netherOre != null) output.accept(netherOre)
                 }
             }
             .build()

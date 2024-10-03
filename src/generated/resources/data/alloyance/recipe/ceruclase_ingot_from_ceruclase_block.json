@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "ceruclase_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:ceruclase_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:ceruclase_ingot"
+  }
+}

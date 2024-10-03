@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "amordrine_dust",
+  "ingredient": {
+    "tag": "c:ingots/amordrine"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:amordrine_dust"
+  }
+}

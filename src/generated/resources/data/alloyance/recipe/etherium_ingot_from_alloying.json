@@ -1,0 +1,17 @@
+{
+  "type": "alloyance:alloyer",
+  "experience": 1.25,
+  "group": "etherium_ingot",
+  "ingredient1": {
+    "count": 1,
+    "tag": "alloyance:alloyables/sanguinite"
+  },
+  "ingredient2": {
+    "count": 1,
+    "tag": "alloyance:alloyables/alduorite"
+  },
+  "result": {
+    "count": 2,
+    "id": "alloyance:etherium_ingot"
+  }
+}

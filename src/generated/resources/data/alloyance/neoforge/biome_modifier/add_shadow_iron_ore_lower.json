@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_shadow_iron_ore",
+  "features": "alloyance:shadow_iron_ore_lower",
+  "step": "underground_ores"
+}

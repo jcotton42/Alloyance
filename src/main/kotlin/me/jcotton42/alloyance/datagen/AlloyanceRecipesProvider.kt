@@ -30,18 +30,39 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
             addSmeltingRecipes(output, metal)
             addCrusherRecipes(output, metal)
         }
-        ALLOYS.forEach { addAlloyerRecipes(output, it) }
+
+        addAlloy(output, BRONZE, 4, 1.75f, COPPER, 3, TIN, 1)
+        addAlloy(output, BRASS, 4, 1.75f, COPPER, 3, ZINC, 1)
+        addAlloy(output, DAMASCUS_STEEL, 3, 1.5f, IRON, 1, BRONZE, 2)
+        addAlloy(output, ANGMALLEN, 2, 1.25f, GOLD, 1, IRON, 1)
+        addAlloy(output, STEEL, 2, 1.5f, IRON, 1, MANGANESE, 2)
+        addAlloy(output, HEPATIZON, 2, 1.25f, INFUSCOLIUM, 1, STEEL, 1)
+        addAlloy(output, BLACK_STEEL, 4, 1.75f, DEEP_IRON, 3, INFUSCOLIUM, 1)
+        addAlloy(output, ELECTRUM, 2, 1.25f, SILVER, 1, GOLD, 1)
+        addAlloy(output, QUICKSILVER, 2, 1.25f, SILVER, 1, ASTRAL_SILVER, 1)
+        addAlloy(output, CELENEGIL, 2, 1.25f, ORICHALCUM, 1, PLATINUM, 1)
+        addAlloy(output, AMORDRINE, 2, 1.25f, KALENDRITE, 1, PLATINUM, 1)
+        addAlloy(output, SHADOW_STEEL, 3, 1.5f, SHADOW_IRON, 2, LEMURITE, 1)
+        addAlloy(output, HADEROTH, 3, 1.5f, MITHRIL, 1, RUBRACIUM, 2)
+        addAlloy(output, DESICHALKOS, 2, 1.25f, EXIMITE, 1, MEUTOITE, 1)
+        addAlloy(output, INOLASHITE, 2, 1.25f, ALDUORITE, 1, CERUCLASE, 1)
+        addAlloy(output, KRIK, 2, 1.25f, LUTETIUM, 1, OSMIUM, 1)
+        addAlloy(output, TARTARITE, 1, 1.5f, ADAMANTINE, 1, ATLARUS, 1)
+        addAlloy(output, ETHERIUM, 2, 1.25f, SANGUINITE, 1, ALDUORITE, 1)
     }
 
     private fun addVanillaCompatRecipes(output: RecipeOutput) {
+        smeltToIngot(output, AlloyanceItems.IRON_DUST, Items.IRON_INGOT)
         crushOre(output, AlloyanceItems.IRON_DUST, Tags.Items.ORES_IRON)
         crushRawMaterial(output, AlloyanceItems.IRON_DUST, Tags.Items.RAW_MATERIALS_IRON)
         crushIngot(output, AlloyanceItems.IRON_DUST, Tags.Items.INGOTS_IRON)
 
+        smeltToIngot(output, AlloyanceItems.GOLD_DUST, Items.GOLD_INGOT)
         crushOre(output, AlloyanceItems.GOLD_DUST, Tags.Items.ORES_GOLD)
         crushRawMaterial(output, AlloyanceItems.GOLD_DUST, Tags.Items.RAW_MATERIALS_GOLD)
         crushIngot(output, AlloyanceItems.GOLD_DUST, Tags.Items.INGOTS_GOLD)
 
+        smeltToIngot(output, AlloyanceItems.COPPER_DUST, Items.COPPER_INGOT)
         crushOre(output, AlloyanceItems.COPPER_DUST, Tags.Items.ORES_COPPER)
         crushRawMaterial(output, AlloyanceItems.COPPER_DUST, Tags.Items.RAW_MATERIALS_COPPER)
         crushIngot(output, AlloyanceItems.COPPER_DUST, Tags.Items.INGOTS_COPPER)
@@ -92,27 +113,17 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
 
     private fun addSmeltingRecipes(output: RecipeOutput, metal: Metal) {
         val ingot = AlloyanceItems.INGOTS.getValue(metal)
-        val ingotName = getItemName(ingot)
         val smeltables = listOf(
             AlloyanceBlocks.ORES[metal],
             AlloyanceBlocks.DEEPSLATE_ORES[metal],
-            // TODO: end and nether ores
+            AlloyanceBlocks.END_ORES[metal],
+            AlloyanceBlocks.NETHER_ORES[metal],
             AlloyanceItems.DUSTS[metal],
             AlloyanceItems.RAW_MATERIALS[metal],
         )
         for (input in smeltables) {
             if (input == null) continue
-            val inputName = getItemName(input)
-            val ingredient = Ingredient.of(input)
-            // TODO check experience, smelt time, blast time values
-            SimpleCookingRecipeBuilder.smelting(ingredient, RecipeCategory.MISC, ingot, 0.7F, 200)
-                .group(ingotName)
-                .unlockedBy(getHasName(input), has(input))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${ingotName}_from_smelting_${inputName}"))
-            SimpleCookingRecipeBuilder.blasting(ingredient, RecipeCategory.MISC, ingot, 0.7F, 100)
-                .group(ingotName)
-                .unlockedBy(getHasName(input), has(input))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${ingotName}_from_blasting_${inputName}"))
+            smeltToIngot(output, input, ingot)
         }
     }
 
@@ -131,34 +142,53 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
         }
     }
 
-    private fun addAlloyerRecipes(output: RecipeOutput, alloy: Alloy) {
-        val resultIngot = AlloyanceItems.INGOTS.getValue(alloy.result)
-        val resultDust = AlloyanceItems.DUSTS.getValue(alloy.result)
-        val dustTag1 = getAlloyDust(alloy.input1)
-        val alloyableTag1 = getAlloyAlloyable(alloy.input1)
-        val id1 = getAlloyId(alloy.input1)
-        val dustTag2 = getAlloyDust(alloy.input2)
-        val alloyableTag2 = getAlloyAlloyable(alloy.input2)
-        val id2 = getAlloyId(alloy.input2)
+    private fun addAlloy(output: RecipeOutput, result: Metal, resultCount: Int, experience: Float, input1: Any, input1Count: Int, input2: Any, input2Count: Int) {
+        val resultIngot = AlloyanceItems.INGOTS.getValue(result)
+        val resultDust = AlloyanceItems.DUSTS.getValue(result)
+        val dustTag1 = getAlloyDust(input1)
+        val alloyableTag1 = getAlloyAlloyable(input1)
+        val id1 = getAlloyId(input1)
+        val dustTag2 = getAlloyDust(input2)
+        val alloyableTag2 = getAlloyAlloyable(input2)
+        val id2 = getAlloyId(input2)
 
         AlloyerRecipeBuilder(
-            ItemStack(resultIngot.get(), alloy.resultCount),
-            SizedIngredient.of(alloyableTag1, alloy.input1Count),
-            SizedIngredient.of(alloyableTag2, alloy.input2Count),
-            alloy.experience,
-            140)
+            ItemStack(resultIngot.get(), resultCount),
+            SizedIngredient.of(alloyableTag1, input1Count),
+            SizedIngredient.of(alloyableTag2, input2Count),
+            experience,
+            140
+        )
             .group(getItemName(resultIngot))
-            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${getItemName(resultIngot)}_from_alloying"))
+            .save(
+                output,
+                ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${getItemName(resultIngot)}_from_alloying")
+            )
 
-        if (alloy.input1Count + alloy.input2Count > 9) return
+        if (input1Count + input2Count > 9) return
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, resultDust, alloy.resultCount)
-            .requires(Ingredient.of(dustTag1), alloy.input1Count)
-            .requires(Ingredient.of(dustTag2), alloy.input2Count)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, resultDust, resultCount)
+            .requires(Ingredient.of(dustTag1), input1Count)
+            .requires(Ingredient.of(dustTag2), input2Count)
             .group(getItemName(resultDust))
             .unlockedBy("has_${id1}_dust", has(dustTag1))
             .unlockedBy("has_${id2}_dust", has(dustTag2))
             .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${getItemName(resultDust)}_from_mixing"))
+    }
+
+    private fun smeltToIngot(output: RecipeOutput, input: ItemLike, ingot: ItemLike) {
+        val inputName = getItemName(input)
+        val ingredient = Ingredient.of(input)
+        val ingotName = getItemName(ingot)
+        // TODO check experience, smelt time, blast time values
+        SimpleCookingRecipeBuilder.smelting(ingredient, RecipeCategory.MISC, ingot, 0.7F, 200)
+            .group(ingotName)
+            .unlockedBy(getHasName(input), has(input))
+            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${ingotName}_from_smelting_${inputName}"))
+        SimpleCookingRecipeBuilder.blasting(ingredient, RecipeCategory.MISC, ingot, 0.7F, 100)
+            .group(ingotName)
+            .unlockedBy(getHasName(input), has(input))
+            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${ingotName}_from_blasting_${inputName}"))
     }
 
     private fun crushOre(output: RecipeOutput, dust: ItemLike, oreTag: TagKey<Item>) {
@@ -203,18 +233,3 @@ private enum class VanillaMetal(val id: String, val dustTag: TagKey<Item>, val a
     IRON("iron", AlloyanceItemTags.DUSTS_IRON, AlloyanceItemTags.ALLOYABLES_IRON),
     GOLD("gold", AlloyanceItemTags.DUSTS_GOLD, AlloyanceItemTags.ALLOYABLES_GOLD),
 }
-
-private data class Alloy(
-    val result: Metal,
-    val resultCount: Int,
-    val experience: Float,
-    val input1: Any,
-    val input1Count: Int,
-    val input2: Any,
-    val input2Count: Int,
-    )
-
-private val ALLOYS: List<Alloy> = listOf(
-    Alloy(BRONZE, 4, 1.75f, COPPER, 3, TIN, 1),
-    Alloy(BRASS, 4, 1.75f, COPPER, 3, ZINC, 1),
-)

@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_lutetium_ore",
+  "features": "alloyance:lutetium_ore",
+  "step": "underground_ores"
+}

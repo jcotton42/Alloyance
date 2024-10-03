@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "orichalcum_dust",
+  "ingredient": {
+    "tag": "c:raw_materials/orichalcum"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:orichalcum_dust"
+  }
+}

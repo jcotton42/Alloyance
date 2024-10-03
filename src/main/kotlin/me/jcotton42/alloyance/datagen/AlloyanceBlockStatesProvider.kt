@@ -14,6 +14,8 @@ class AlloyanceBlockStatesProvider(output: PackOutput, existingFileHelper: Exist
     override fun registerStatesAndModels() {
         AlloyanceBlocks.ORES.values.forEach { simpleBlock(it.get()) }
         AlloyanceBlocks.DEEPSLATE_ORES.values.forEach { simpleBlock(it.get()) }
+        AlloyanceBlocks.END_ORES.values.forEach { simpleBlock(it.get()) }
+        AlloyanceBlocks.NETHER_ORES.values.forEach { simpleBlock(it.get()) }
         AlloyanceBlocks.STORAGE_BLOCKS.values.forEach { simpleBlock(it.get()) }
     }
 }

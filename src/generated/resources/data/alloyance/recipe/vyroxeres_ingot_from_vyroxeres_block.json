@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "vyroxeres_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:vyroxeres_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:vyroxeres_ingot"
+  }
+}

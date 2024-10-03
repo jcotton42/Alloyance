@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "vulcanite_ingot",
+  "ingredient": {
+    "item": "alloyance:nether_vulcanite_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:vulcanite_ingot"
+  }
+}

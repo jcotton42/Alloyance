@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "meutoite_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:meutoite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:meutoite_ingot"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "alduorite_dust",
+  "ingredient": {
+    "tag": "c:raw_materials/alduorite"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:alduorite_dust"
+  }
+}

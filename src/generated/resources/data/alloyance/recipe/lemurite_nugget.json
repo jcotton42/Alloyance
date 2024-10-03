@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "lemurite_nugget",
+  "ingredients": [
+    {
+      "item": "alloyance:lemurite_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:lemurite_nugget"
+  }
+}

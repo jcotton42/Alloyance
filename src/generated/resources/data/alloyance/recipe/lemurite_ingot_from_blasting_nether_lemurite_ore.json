@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "lemurite_ingot",
+  "ingredient": {
+    "item": "alloyance:nether_lemurite_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:lemurite_ingot"
+  }
+}

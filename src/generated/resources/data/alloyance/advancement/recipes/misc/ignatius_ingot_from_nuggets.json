@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ignatius_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:ignatius_nugget"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:ignatius_ingot_from_nuggets"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ignatius_nugget"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:ignatius_ingot_from_nuggets"
+    ]
+  }
+}

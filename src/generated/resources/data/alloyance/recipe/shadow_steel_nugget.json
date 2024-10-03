@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "shadow_steel_nugget",
+  "ingredients": [
+    {
+      "item": "alloyance:shadow_steel_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:shadow_steel_nugget"
+  }
+}

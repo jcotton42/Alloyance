@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "adamantine_dust",
+  "ingredient": {
+    "tag": "c:ingots/adamantine"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:adamantine_dust"
+  }
+}

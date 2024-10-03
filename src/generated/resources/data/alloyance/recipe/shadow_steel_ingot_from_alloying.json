@@ -1,0 +1,17 @@
+{
+  "type": "alloyance:alloyer",
+  "experience": 1.5,
+  "group": "shadow_steel_ingot",
+  "ingredient1": {
+    "count": 2,
+    "tag": "alloyance:alloyables/shadow_iron"
+  },
+  "ingredient2": {
+    "count": 1,
+    "tag": "alloyance:alloyables/lemurite"
+  },
+  "result": {
+    "count": 3,
+    "id": "alloyance:shadow_steel_ingot"
+  }
+}

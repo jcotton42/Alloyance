@@ -1,0 +1,17 @@
+{
+  "type": "alloyance:alloyer",
+  "experience": 1.25,
+  "group": "desichalkos_ingot",
+  "ingredient1": {
+    "count": 1,
+    "tag": "alloyance:alloyables/eximite"
+  },
+  "ingredient2": {
+    "count": 1,
+    "tag": "alloyance:alloyables/meutoite"
+  },
+  "result": {
+    "count": 2,
+    "id": "alloyance:desichalkos_ingot"
+  }
+}

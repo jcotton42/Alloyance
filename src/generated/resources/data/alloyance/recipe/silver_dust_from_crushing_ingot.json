@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "silver_dust",
+  "ingredient": {
+    "tag": "c:ingots/silver"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:silver_dust"
+  }
+}

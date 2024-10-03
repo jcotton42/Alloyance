@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "silver_nugget",
+  "ingredients": [
+    {
+      "item": "alloyance:silver_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:silver_nugget"
+  }
+}

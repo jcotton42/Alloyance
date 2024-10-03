@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_sanguinite_ore",
+  "features": "alloyance:sanguinite_ore",
+  "step": "underground_ores"
+}

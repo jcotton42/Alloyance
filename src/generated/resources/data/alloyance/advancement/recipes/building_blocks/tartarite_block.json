@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_tartarite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:tartarite_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:tartarite_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tartarite_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:tartarite_block"
+    ]
+  }
+}

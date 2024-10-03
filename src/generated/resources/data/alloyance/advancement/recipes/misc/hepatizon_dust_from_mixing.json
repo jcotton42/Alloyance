@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_infuscolium_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:dusts/infuscolium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_steel_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:dusts/steel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:hepatizon_dust_from_mixing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_infuscolium_dust",
+      "has_steel_dust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:hepatizon_dust_from_mixing"
+    ]
+  }
+}

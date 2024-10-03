@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:vulcanite_ingot_from_smelting_vulcanite_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_vulcanite_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:vulcanite_dust"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_vulcanite_dust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:vulcanite_ingot_from_smelting_vulcanite_dust"
+    ]
+  }
+}

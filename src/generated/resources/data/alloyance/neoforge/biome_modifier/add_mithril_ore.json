@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_mithril_ore",
+  "features": "alloyance:mithril_ore",
+  "step": "underground_ores"
+}

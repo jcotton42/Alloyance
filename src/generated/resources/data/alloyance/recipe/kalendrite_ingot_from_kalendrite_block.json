@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "kalendrite_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:kalendrite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:kalendrite_ingot"
+  }
+}

@@ -36,6 +36,12 @@ class AlloyanceEnglishLanguageProvider(
         AlloyanceBlocks.DEEPSLATE_ORES.forEach { (metal, ore) ->
             add(ore.get(), "Deepslate ${getEnglishName(metal)} Ore")
         }
+        AlloyanceBlocks.END_ORES.forEach { (metal, ore) ->
+            add(ore.get(), "End ${getEnglishName(metal)} Ore")
+        }
+        AlloyanceBlocks.NETHER_ORES.forEach { (metal, ore) ->
+            add(ore.get(), "Nether ${getEnglishName(metal)} Ore")
+        }
 
         AlloyanceItems.RAW_MATERIALS.forEach { (metal, raw) ->
             add(raw.get(), "Raw ${getEnglishName(metal)}")
@@ -134,5 +140,52 @@ class AlloyanceEnglishLanguageProvider(
         Metal.TIN -> "Tin"
         Metal.BRONZE -> "Bronze"
         Metal.BRASS -> "Brass"
+        Metal.DAMASCUS_STEEL -> "Damascus Steel"
+
+        Metal.OSMIUM -> "Osmium"
+        Metal.SILVER -> "Silver"
+        Metal.INFUSCOLIUM -> "Infuscolium"
+        Metal.MANGANESE -> "Manganese"
+        Metal.ANGMALLEN -> "Angmallen"
+        Metal.STEEL -> "Steel"
+        Metal.HEPATIZON -> "Hepatizon"
+        Metal.BLACK_STEEL -> "Black Steel"
+        Metal.ELECTRUM -> "Electrum"
+
+        Metal.ASTRAL_SILVER -> "Astral Silver"
+        Metal.IGNATIUS -> "Ignatius"
+        Metal.OURECLASE -> "Oureclase"
+        Metal.RUBRACIUM -> "Rubracium"
+        Metal.SHADOW_IRON -> "Shadow Iron"
+        Metal.QUICKSILVER -> "Quicksilver"
+
+        Metal.CERUCLASE -> "Ceruclase"
+        Metal.EXIMITE -> "Eximite"
+        Metal.KALENDRITE -> "Kalendrite"
+        Metal.MIDASIUM -> "Midasium"
+        Metal.ORICHALCUM -> "Orichalcum"
+        Metal.PLATINUM -> "Platinum"
+        Metal.VULCANITE -> "Vulcanite"
+        Metal.CELENEGIL -> "Celenegil"
+        Metal.AMORDRINE -> "Amordrine"
+
+        Metal.CARMOT -> "Carmot"
+        Metal.LEMURITE -> "Lemurite"
+        Metal.MEUTOITE -> "Meutoite"
+        Metal.MITHRIL -> "Mithril"
+        Metal.SANGUINITE -> "Sanguinite"
+        Metal.VYROXERES -> "Vyroxeres"
+        Metal.SHADOW_STEEL -> "Shadow Steel"
+        Metal.HADEROTH -> "Haderoth"
+        Metal.DESICHALKOS -> "Desichalkos"
+
+        Metal.ATLARUS -> "Atlarus"
+        Metal.ADAMANTINE -> "Adamantine"
+        Metal.ALDUORITE -> "Alduorite"
+        Metal.LUTETIUM -> "Lutetium"
+        Metal.INOLASHITE -> "Inolashite"
+        Metal.KRIK -> "Krik"
+        Metal.TARTARITE -> "Tartarite"
+        Metal.ETHERIUM -> "Etherium"
     }
 }

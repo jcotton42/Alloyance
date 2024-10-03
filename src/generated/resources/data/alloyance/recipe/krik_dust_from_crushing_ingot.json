@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "krik_dust",
+  "ingredient": {
+    "tag": "c:ingots/krik"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:krik_dust"
+  }
+}

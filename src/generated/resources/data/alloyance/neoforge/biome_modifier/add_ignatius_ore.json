@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_ignatius_ore",
+  "features": "alloyance:ignatius_ore",
+  "step": "underground_ores"
+}

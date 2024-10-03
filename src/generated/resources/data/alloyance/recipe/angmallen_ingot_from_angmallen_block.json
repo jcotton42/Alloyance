@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "angmallen_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:angmallen_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:angmallen_ingot"
+  }
+}

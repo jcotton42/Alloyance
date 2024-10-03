@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "rubracium_dust",
+  "ingredient": {
+    "tag": "c:raw_materials/rubracium"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:rubracium_dust"
+  }
+}

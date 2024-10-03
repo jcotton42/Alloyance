@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "ceruclase_dust",
+  "ingredient": {
+    "tag": "c:ingots/ceruclase"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:ceruclase_dust"
+  }
+}

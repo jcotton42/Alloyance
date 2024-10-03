@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_oureclase_ore",
+  "features": "alloyance:oureclase_ore",
+  "step": "underground_ores"
+}

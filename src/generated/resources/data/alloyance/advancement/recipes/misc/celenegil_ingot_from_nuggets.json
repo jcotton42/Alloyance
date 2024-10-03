@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_celenegil_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:celenegil_nugget"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:celenegil_ingot_from_nuggets"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_celenegil_nugget"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:celenegil_ingot_from_nuggets"
+    ]
+  }
+}

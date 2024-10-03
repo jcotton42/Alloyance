@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "steel_dust",
+  "ingredient": {
+    "tag": "c:ingots/steel"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:steel_dust"
+  }
+}

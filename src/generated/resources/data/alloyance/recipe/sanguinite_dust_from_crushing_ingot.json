@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "sanguinite_dust",
+  "ingredient": {
+    "tag": "c:ingots/sanguinite"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:sanguinite_dust"
+  }
+}

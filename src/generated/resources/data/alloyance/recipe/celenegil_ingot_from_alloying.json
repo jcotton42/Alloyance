@@ -1,0 +1,17 @@
+{
+  "type": "alloyance:alloyer",
+  "experience": 1.25,
+  "group": "celenegil_ingot",
+  "ingredient1": {
+    "count": 1,
+    "tag": "alloyance:alloyables/orichalcum"
+  },
+  "ingredient2": {
+    "count": 1,
+    "tag": "alloyance:alloyables/platinum"
+  },
+  "result": {
+    "count": 2,
+    "id": "alloyance:celenegil_ingot"
+  }
+}

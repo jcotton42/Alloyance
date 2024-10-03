@@ -71,7 +71,6 @@ class CrusherBlockEntity(
         }
 
         override fun isItemValid(slot: Int, stack: ItemStack): Boolean = when (slot) {
-            // TODO see if excluding empty buckets is viable
             FUEL_SLOT -> stack.getBurnTime(RecipeType.SMELTING) > 0
             else -> true
         }
@@ -88,7 +87,7 @@ class CrusherBlockEntity(
             TOTAL_CRUSHING_TIME_INDEX -> totalCrushingTime
             BURN_TIME_REMAINING_INDEX -> burnTimeRemaining
             TOTAL_BURN_TIME_INDEX -> totalBurnTime
-            else -> TODO("Missing data index $index")
+            else -> throw NotImplementedError("Missing data index in crusher: $index")
         }
 
         override fun set(index: Int, value: Int) = when (index) {
@@ -96,7 +95,7 @@ class CrusherBlockEntity(
             TOTAL_CRUSHING_TIME_INDEX -> totalCrushingTime = value
             BURN_TIME_REMAINING_INDEX -> burnTimeRemaining = value
             TOTAL_BURN_TIME_INDEX -> totalBurnTime = value
-            else -> TODO("Missing data index $index")
+            else -> throw NotImplementedError("Missing data index in crusher: $index")
         }
 
         override fun getCount(): Int = DATA_SLOT_COUNT

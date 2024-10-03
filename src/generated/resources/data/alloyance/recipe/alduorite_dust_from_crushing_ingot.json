@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "alduorite_dust",
+  "ingredient": {
+    "tag": "c:ingots/alduorite"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:alduorite_dust"
+  }
+}

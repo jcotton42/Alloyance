@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "manganese_dust",
+  "ingredient": {
+    "tag": "c:ores/manganese"
+  },
+  "result": {
+    "count": 2,
+    "id": "alloyance:manganese_dust"
+  }
+}

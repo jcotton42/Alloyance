@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_nether_vulcanite_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:nether_vulcanite_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:vulcanite_ingot_from_blasting_nether_vulcanite_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_nether_vulcanite_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:vulcanite_ingot_from_blasting_nether_vulcanite_ore"
+    ]
+  }
+}

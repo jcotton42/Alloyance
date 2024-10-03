@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "haderoth_dust",
+  "ingredients": [
+    {
+      "tag": "c:dusts/mithril"
+    },
+    {
+      "tag": "c:dusts/rubracium"
+    },
+    {
+      "tag": "c:dusts/rubracium"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "alloyance:haderoth_dust"
+  }
+}

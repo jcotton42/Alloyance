@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_kalendrite_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:kalendrite_dust"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:kalendrite_ingot_from_blasting_kalendrite_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_kalendrite_dust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:kalendrite_ingot_from_blasting_kalendrite_dust"
+    ]
+  }
+}

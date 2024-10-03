@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "carmot_dust",
+  "ingredient": {
+    "tag": "c:ingots/carmot"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:carmot_dust"
+  }
+}

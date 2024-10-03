@@ -1,0 +1,17 @@
+{
+  "type": "alloyance:alloyer",
+  "experience": 1.25,
+  "group": "inolashite_ingot",
+  "ingredient1": {
+    "count": 1,
+    "tag": "alloyance:alloyables/alduorite"
+  },
+  "ingredient2": {
+    "count": 1,
+    "tag": "alloyance:alloyables/ceruclase"
+  },
+  "result": {
+    "count": 2,
+    "id": "alloyance:inolashite_ingot"
+  }
+}

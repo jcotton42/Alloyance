@@ -6,6 +6,7 @@ import net.minecraft.core.HolderLookup
 import net.minecraft.data.PackOutput
 import net.minecraft.data.tags.BiomeTagsProvider
 import net.minecraft.tags.BiomeTags
+import net.minecraft.world.level.biome.Biomes
 import net.neoforged.neoforge.common.data.ExistingFileHelper
 import java.util.concurrent.CompletableFuture
 
@@ -30,5 +31,62 @@ class AlloyanceBiomeTagsProvider(
             .addTag(BiomeTags.IS_OVERWORLD)
         tag(AlloyanceBiomeTags.HAS_ZINC_ORE)
             .addTag(BiomeTags.IS_OVERWORLD)
+
+        tag(AlloyanceBiomeTags.HAS_OSMIUM_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_SILVER_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_INFUSCOLIUM_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_MANGANESE_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
+
+        tag(AlloyanceBiomeTags.HAS_ASTRAL_SILVER_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_IGNATIUS_ORE)
+            .addTags(BiomeTags.IS_NETHER)
+        tag(AlloyanceBiomeTags.HAS_OURECLASE_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_RUBRACIUM_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_SHADOW_IRON_ORE)
+            .addTags(BiomeTags.IS_NETHER)
+
+        tag(AlloyanceBiomeTags.HAS_CERUCLASE_ORE)
+            .addTags(BiomeTags.IS_NETHER)
+        tag(AlloyanceBiomeTags.HAS_EXIMITE_ORE)
+            .add(Biomes.SMALL_END_ISLANDS)
+        tag(AlloyanceBiomeTags.HAS_KALENDRITE_ORE)
+            .addTags(BiomeTags.IS_NETHER)
+        tag(AlloyanceBiomeTags.HAS_MIDASIUM_ORE)
+            .addTags(BiomeTags.IS_NETHER)
+        tag(AlloyanceBiomeTags.HAS_ORICHALCUM_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_PLATINUM_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_VULCANITE_ORE)
+            .addTags(BiomeTags.IS_NETHER)
+
+        tag(AlloyanceBiomeTags.HAS_CARMOT_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_LEMURITE_ORE)
+            .addTags(BiomeTags.IS_NETHER)
+        tag(AlloyanceBiomeTags.HAS_MEUTOITE_ORE)
+            .addTags(BiomeTags.IS_END)
+        tag(AlloyanceBiomeTags.HAS_MITHRIL_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_SANGUINITE_ORE)
+            .addTags(BiomeTags.IS_NETHER)
+        tag(AlloyanceBiomeTags.HAS_VYROXERES_ORE)
+            .addTags(BiomeTags.IS_NETHER)
+
+        tag(AlloyanceBiomeTags.HAS_ATLARUS_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_ADAMANTINE_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_ALDUORITE_ORE)
+            .addTags(BiomeTags.IS_NETHER)
+        tag(AlloyanceBiomeTags.HAS_LUTETIUM_ORE)
+            .addTags(BiomeTags.IS_NETHER)
     }
 }

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "ceruclase_ingot",
+  "ingredient": {
+    "item": "alloyance:ceruclase_dust"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:ceruclase_ingot"
+  }
+}

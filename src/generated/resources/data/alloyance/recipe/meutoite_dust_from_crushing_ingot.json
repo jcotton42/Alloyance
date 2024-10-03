@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "meutoite_dust",
+  "ingredient": {
+    "tag": "c:ingots/meutoite"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:meutoite_dust"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "alduorite_ingot",
+  "ingredient": {
+    "item": "alloyance:raw_alduorite"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:alduorite_ingot"
+  }
+}

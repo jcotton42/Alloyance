@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "hepatizon_dust",
+  "ingredients": [
+    {
+      "tag": "c:dusts/infuscolium"
+    },
+    {
+      "tag": "c:dusts/steel"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "alloyance:hepatizon_dust"
+  }
+}

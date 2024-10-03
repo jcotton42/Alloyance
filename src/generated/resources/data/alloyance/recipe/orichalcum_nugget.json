@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "orichalcum_nugget",
+  "ingredients": [
+    {
+      "item": "alloyance:orichalcum_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:orichalcum_nugget"
+  }
+}

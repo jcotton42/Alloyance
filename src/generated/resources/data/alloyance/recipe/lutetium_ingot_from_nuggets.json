@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "lutetium_ingot",
+  "key": {
+    "n": {
+      "item": "alloyance:lutetium_nugget"
+    }
+  },
+  "pattern": [
+    "nnn",
+    "nnn",
+    "nnn"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:lutetium_ingot"
+  }
+}

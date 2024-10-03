@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "ignatius_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:ignatius_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:ignatius_ingot"
+  }
+}

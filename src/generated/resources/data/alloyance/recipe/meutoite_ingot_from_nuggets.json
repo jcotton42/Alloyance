@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "meutoite_ingot",
+  "key": {
+    "n": {
+      "item": "alloyance:meutoite_nugget"
+    }
+  },
+  "pattern": [
+    "nnn",
+    "nnn",
+    "nnn"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:meutoite_ingot"
+  }
+}

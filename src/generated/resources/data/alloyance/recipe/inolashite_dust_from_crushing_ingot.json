@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "inolashite_dust",
+  "ingredient": {
+    "tag": "c:ingots/inolashite"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:inolashite_dust"
+  }
+}

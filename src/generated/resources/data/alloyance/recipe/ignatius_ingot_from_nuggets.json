@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ignatius_ingot",
+  "key": {
+    "n": {
+      "item": "alloyance:ignatius_nugget"
+    }
+  },
+  "pattern": [
+    "nnn",
+    "nnn",
+    "nnn"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:ignatius_ingot"
+  }
+}

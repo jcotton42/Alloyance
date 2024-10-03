@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_orichalcum_ore",
+  "features": "alloyance:orichalcum_ore_middle",
+  "step": "underground_ores"
+}

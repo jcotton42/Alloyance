@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "infuscolium_nugget",
+  "ingredients": [
+    {
+      "item": "alloyance:infuscolium_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:infuscolium_nugget"
+  }
+}

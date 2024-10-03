@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "quicksilver_nugget",
+  "ingredients": [
+    {
+      "item": "alloyance:quicksilver_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:quicksilver_nugget"
+  }
+}

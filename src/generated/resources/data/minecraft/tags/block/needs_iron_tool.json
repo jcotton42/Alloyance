@@ -1,6 +1,20 @@
 {
   "values": [
     "alloyance:alloyer",
-    "alloyance:crusher"
+    "alloyance:crusher",
+    "alloyance:damascus_steel_block",
+    "alloyance:osmium_block",
+    "alloyance:silver_block",
+    "alloyance:infuscolium_block",
+    "alloyance:manganese_block",
+    "alloyance:angmallen_block",
+    "alloyance:electrum_block",
+    "alloyance:silver_ore",
+    "alloyance:infuscolium_ore",
+    "alloyance:manganese_ore",
+    "alloyance:deepslate_osmium_ore",
+    "alloyance:deepslate_silver_ore",
+    "alloyance:deepslate_infuscolium_ore",
+    "alloyance:deepslate_manganese_ore"
   ]
 }

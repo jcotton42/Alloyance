@@ -1,0 +1,17 @@
+{
+  "type": "alloyance:alloyer",
+  "experience": 1.5,
+  "group": "damascus_steel_ingot",
+  "ingredient1": {
+    "count": 1,
+    "tag": "alloyance:alloyables/iron"
+  },
+  "ingredient2": {
+    "count": 2,
+    "tag": "alloyance:alloyables/bronze"
+  },
+  "result": {
+    "count": 3,
+    "id": "alloyance:damascus_steel_ingot"
+  }
+}

@@ -29,6 +29,12 @@ object AlloyanceBlocks {
     val BLOCK_CODECS = DeferredRegister.create(Registries.BLOCK_TYPE, Alloyance.ID)
     val BLOCK_ENTITIES = DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, Alloyance.ID)
 
+    val ORES = mutableMapOf<Metal, DeferredBlock<Block>>()
+    val DEEPSLATE_ORES = mutableMapOf<Metal, DeferredBlock<Block>>()
+    val END_ORES = mutableMapOf<Metal, DeferredBlock<Block>>()
+    val NETHER_ORES = mutableMapOf<Metal, DeferredBlock<Block>>()
+    val STORAGE_BLOCKS = mutableMapOf<Metal, DeferredBlock<Block>>()
+
     val ALLOYER = BLOCKS.registerBlock(
         "alloyer",
         ::AlloyerBlock,
@@ -59,10 +65,6 @@ object AlloyanceBlocks {
         BlockEntityType.Builder.of(::CrusherBlockEntity, CRUSHER.get()).build(null)
     }
 
-    val ORES = mutableMapOf<Metal, DeferredBlock<Block>>()
-    val DEEPSLATE_ORES = mutableMapOf<Metal, DeferredBlock<Block>>()
-    val STORAGE_BLOCKS = mutableMapOf<Metal, DeferredBlock<Block>>()
-
     val DEEP_IRON_ORE = ore(DEEP_IRON)
     val DEEPSLATE_DEEP_IRON_ORE = deepslateOre(DEEP_IRON)
     val DEEP_IRON_BLOCK = storageBlock(DEEP_IRON)
@@ -81,6 +83,126 @@ object AlloyanceBlocks {
     val BRONZE_BLOCK = storageBlock(BRONZE)
 
     val BRASS_BLOCK = storageBlock(BRASS)
+
+    val DAMASCUS_STEEL_BLOCK = storageBlock(DAMASCUS_STEEL)
+
+    val DEEPSLATE_OSMIUM_ORE = deepslateOre(OSMIUM)
+    val OSMIUM_BLOCK = storageBlock(OSMIUM)
+
+    val SILVER_ORE = ore(SILVER)
+    val DEEPSLATE_SILVER_ORE = deepslateOre(SILVER)
+    val SILVER_BLOCK = storageBlock(SILVER)
+
+    val INFUSCOLIUM_ORE = ore(INFUSCOLIUM)
+    val DEEPSLATE_INFUSCOLIUM_ORE = deepslateOre(INFUSCOLIUM)
+    val INFUSCOLIUM_BLOCK = storageBlock(INFUSCOLIUM)
+
+    val MANGANESE_ORE = ore(MANGANESE)
+    val DEEPSLATE_MANGANESE_ORE = deepslateOre(MANGANESE)
+    val MANGANESE_BLOCK = storageBlock(MANGANESE)
+
+    val ANGMALLEN_BLOCK = storageBlock(ANGMALLEN)
+
+    val STEEL_BLOCK = storageBlock(STEEL)
+
+    val HEPATIZON_BLOCK = storageBlock(HEPATIZON)
+
+    val BLACK_STEEL_BLOCK = storageBlock(BLACK_STEEL)
+
+    val ELECTRUM_BLOCK = storageBlock(ELECTRUM)
+
+    val ASTRAL_SILVER_ORE = ore(ASTRAL_SILVER)
+    val ASTRAL_SILVER_BLOCK = storageBlock(ASTRAL_SILVER)
+
+    val NETHER_IGNATIUS_ORE = netherOre(IGNATIUS)
+    val IGNATIUS_BLOCK = storageBlock(IGNATIUS)
+
+    val OURECLASE_ORE = ore(OURECLASE)
+    val DEEPSLATE_OURECLASE_ORE = deepslateOre(OURECLASE)
+    val OURECLASE_BLOCK = storageBlock(OURECLASE)
+
+    val RUBRACIUM_ORE = ore(RUBRACIUM)
+    val DEEPSLATE_RUBRACIUM_ORE = deepslateOre(RUBRACIUM)
+    val RUBRACIUM_BLOCK = storageBlock(RUBRACIUM)
+
+    val NETHER_SHADOW_IRON_ORE = netherOre(SHADOW_IRON)
+    val SHADOW_IRON_BLOCK = storageBlock(SHADOW_IRON)
+
+    val QUICKSILVER_BLOCK = storageBlock(QUICKSILVER)
+
+    val NETHER_CERUCLASE_ORE = netherOre(CERUCLASE)
+    val CERUCLASE_BLOCK = storageBlock(CERUCLASE)
+
+    val END_EXIMITE_ORE = endOre(EXIMITE)
+    val EXIMITE_BLOCK = storageBlock(EXIMITE)
+
+    val NETHER_KALENDRITE_ORE = netherOre(KALENDRITE)
+    val KALENDRITE_BLOCK = storageBlock(KALENDRITE)
+
+    val NETHER_MIDASIUM_ORE = netherOre(MIDASIUM)
+    val MIDASIUM_BLOCK = storageBlock(MIDASIUM)
+
+    val ORICHALCUM_ORE = ore(ORICHALCUM)
+    val DEEPSLATE_ORICHALCUM_ORE = deepslateOre(ORICHALCUM)
+    val ORICHALCUM_BLOCK = storageBlock(ORICHALCUM)
+
+    val PLATINUM_ORE = ore(PLATINUM)
+    val DEEPSLATE_PLATINUM_ORE = deepslateOre(PLATINUM)
+    val PLATINUM_BLOCK = storageBlock(PLATINUM)
+
+    val NETHER_VULCANITE_ORE = netherOre(VULCANITE)
+    val VULCANITE_BLOCK = storageBlock(VULCANITE)
+
+    val CELENEGIL_BLOCK = storageBlock(CELENEGIL)
+
+    val AMORDRINE_BLOCK = storageBlock(AMORDRINE)
+
+    val CARMOT_ORE = ore(CARMOT)
+    val DEEPSLATE_CARMOT_ORE = deepslateOre(CARMOT)
+    val CARMOT_BLOCK = storageBlock(CARMOT)
+
+    val NETHER_LEMURITE_ORE = netherOre(LEMURITE)
+    val LEMURITE_BLOCK = storageBlock(LEMURITE)
+
+    val END_MEUTOITE_ORE = endOre(MEUTOITE)
+    val MEUTOITE_BLOCK = storageBlock(MEUTOITE)
+
+    val MITHRIL_ORE = ore(MITHRIL)
+    val MITHRIL_BLOCK = storageBlock(MITHRIL)
+
+    val NETHER_SANGUINITE_ORE = netherOre(SANGUINITE)
+    val SANGUINITE_BLOCK = storageBlock(SANGUINITE)
+
+    val NETHER_VYROXERES_ORE = netherOre(VYROXERES)
+    val VYROXERES_BLOCK = storageBlock(VYROXERES)
+
+    val SHADOW_STEEL_BLOCK = storageBlock(SHADOW_STEEL)
+
+    val HADEROTH_BLOCK = storageBlock(HADEROTH)
+
+    val DESICHALKOS_BLOCK = storageBlock(DESICHALKOS)
+
+    val ATLARUS_ORE = ore(ATLARUS)
+    val DEEPSLATE_ATLARUS_ORE = deepslateOre(ATLARUS)
+    val ATLARUS_BLOCK = storageBlock(ATLARUS)
+
+    val ADAMANTINE_ORE = ore(ADAMANTINE)
+    val DEEPSLATE_ADAMANTINE_ORE = deepslateOre(ADAMANTINE)
+    val ADAMANTINE_BLOCK = storageBlock(ADAMANTINE)
+
+    val NETHER_ALDUORITE_ORE = netherOre(ALDUORITE)
+    val ALDUORITE_BLOCK = storageBlock(ALDUORITE)
+
+    val NETHER_LUTETIUM_ORE = netherOre(LUTETIUM)
+    val LUTETIUM_BLOCK = storageBlock(LUTETIUM)
+
+    val INOLASHITE_BLOCK = storageBlock(INOLASHITE)
+
+    val KRIK_BLOCK = storageBlock(KRIK)
+
+    val TARTARITE_BLOCK = storageBlock(TARTARITE)
+
+    val ETHERIUM_BLOCK = storageBlock(ETHERIUM)
 
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
@@ -115,6 +237,33 @@ object AlloyanceBlocks {
         return ore
     }
 
+    private fun endOre(metal: Metal): DeferredBlock<Block> {
+        val ore = BLOCKS.registerSimpleBlock("end_${metal.id}_ore",
+            BlockBehaviour.Properties.of()
+                .mapColor(MapColor.SAND)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .sound(SoundType.STONE)
+                .strength(3.0f, 9.0f)
+        )
+        END_ORES[metal] = ore
+        return ore
+    }
+
+    private fun netherOre(metal: Metal): DeferredBlock<Block> {
+        val ore = BLOCKS.registerSimpleBlock("nether_${metal.id}_ore",
+            BlockBehaviour.Properties.of()
+                .mapColor(MapColor.NETHER)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                // TODO NETHER_GOLD_ORE may be a more fitting sound
+                .sound(SoundType.NETHER_ORE)
+                .strength(3.0f, 3.0f)
+        )
+        NETHER_ORES[metal] = ore
+        return ore
+    }
+
     private fun storageBlock(metal: Metal): DeferredBlock<Block> {
         val block = BLOCKS.registerSimpleBlock(
             "${metal.id}_block",
@@ -123,6 +272,7 @@ object AlloyanceBlocks {
                 .mapColor(MapColor.METAL)
                 .sound(SoundType.METAL)
                 .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                .requiresCorrectToolForDrops()
                 .strength(metal.hardness, metal.blockBlastResistance)
         )
         STORAGE_BLOCKS[metal] = block

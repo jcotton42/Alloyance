@@ -2,6 +2,17 @@
   "values": [
     "alloyance:deepslate_deep_iron_ore",
     "alloyance:deepslate_prometheum_ore",
-    "alloyance:deepslate_zinc_ore"
+    "alloyance:deepslate_zinc_ore",
+    "alloyance:deepslate_osmium_ore",
+    "alloyance:deepslate_silver_ore",
+    "alloyance:deepslate_infuscolium_ore",
+    "alloyance:deepslate_manganese_ore",
+    "alloyance:deepslate_oureclase_ore",
+    "alloyance:deepslate_rubracium_ore",
+    "alloyance:deepslate_orichalcum_ore",
+    "alloyance:deepslate_platinum_ore",
+    "alloyance:deepslate_carmot_ore",
+    "alloyance:deepslate_atlarus_ore",
+    "alloyance:deepslate_adamantine_ore"
   ]
 }

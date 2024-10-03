@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "quicksilver_dust",
+  "ingredient": {
+    "tag": "c:ingots/quicksilver"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:quicksilver_dust"
+  }
+}

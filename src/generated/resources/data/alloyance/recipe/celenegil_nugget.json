@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "celenegil_nugget",
+  "ingredients": [
+    {
+      "item": "alloyance:celenegil_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:celenegil_nugget"
+  }
+}

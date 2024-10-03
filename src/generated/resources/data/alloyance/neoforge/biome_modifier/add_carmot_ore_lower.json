@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_carmot_ore",
+  "features": "alloyance:carmot_ore_lower",
+  "step": "underground_ores"
+}

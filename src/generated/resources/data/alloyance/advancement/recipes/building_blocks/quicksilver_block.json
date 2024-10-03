@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_quicksilver_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:quicksilver_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:quicksilver_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_quicksilver_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:quicksilver_block"
+    ]
+  }
+}

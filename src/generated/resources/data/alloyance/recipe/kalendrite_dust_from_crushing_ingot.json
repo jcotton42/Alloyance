@@ -1,0 +1,11 @@
+{
+  "type": "alloyance:crusher",
+  "group": "kalendrite_dust",
+  "ingredient": {
+    "tag": "c:ingots/kalendrite"
+  },
+  "result": {
+    "count": 1,
+    "id": "alloyance:kalendrite_dust"
+  }
+}

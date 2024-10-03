@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "adamantine_nugget",
+  "ingredients": [
+    {
+      "item": "alloyance:adamantine_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:adamantine_nugget"
+  }
+}
