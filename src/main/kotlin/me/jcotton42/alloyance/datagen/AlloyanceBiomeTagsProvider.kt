@@ -69,5 +69,7 @@ class AlloyanceBiomeTagsProvider(
 
         tag(AlloyanceBiomeTags.HAS_CARMOT_ORE)
             .addTags(BiomeTags.IS_OVERWORLD)
+        tag(AlloyanceBiomeTags.HAS_LEMURITE_ORE)
+            .addTags(BiomeTags.IS_NETHER)
     }
 }

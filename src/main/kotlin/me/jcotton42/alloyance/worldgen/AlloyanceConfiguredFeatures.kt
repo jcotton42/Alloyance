@@ -39,6 +39,7 @@ object AlloyanceConfiguredFeatures {
     val PLATINUM_ORE = registerKey("platinum_ore")
     val VULCANITE_ORE = registerKey("vulcanite_ore")
     val CARMOT_ORE = registerKey("carmot_ore")
+    val LEMURITE_ORE = registerKey("lemurite_ore")
 
     fun bootstrap(context: BootstrapContext<ConfiguredFeature<*, *>>) {
         val deepIronOres = listOf(inStone(AlloyanceBlocks.DEEP_IRON_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_DEEP_IRON_ORE))
@@ -62,6 +63,7 @@ object AlloyanceConfiguredFeatures {
         val platinumOres = listOf(inStone(AlloyanceBlocks.PLATINUM_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_PLATINUM_ORE))
         val vulcaniteOres = listOf(inNetherrack(AlloyanceBlocks.NETHER_VULCANITE_ORE))
         val carmotOres = listOf(inStone(AlloyanceBlocks.CARMOT_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_CARMOT_ORE))
+        val lemuriteOres = listOf(inNetherrack(AlloyanceBlocks.NETHER_LEMURITE_ORE))
 
         register(context, DEEP_IRON_ORE, Feature.ORE, OreConfiguration(deepIronOres, 5))
         register(context, PROMETHEUM_ORE, Feature.ORE, OreConfiguration(prometheumOres, 6))
@@ -88,6 +90,7 @@ object AlloyanceConfiguredFeatures {
         register(context, VULCANITE_ORE, Feature.ORE, OreConfiguration(vulcaniteOres, 5))
 
         register(context, CARMOT_ORE, Feature.ORE, OreConfiguration(carmotOres, 4))
+        register(context, LEMURITE_ORE, Feature.ORE, OreConfiguration(lemuriteOres, 6))
     }
 
     private fun inStone(replacement: Supplier<Block>): OreConfiguration.TargetBlockState {

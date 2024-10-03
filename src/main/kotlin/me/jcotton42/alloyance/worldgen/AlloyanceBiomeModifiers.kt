@@ -9,6 +9,7 @@ import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_EXIMITE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_IGNATIUS_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_INFUSCOLIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_KALENDRITE_ORE
+import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_LEMURITE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_MANGANESE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_MIDASIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_ORICHALCUM_ORE
@@ -33,6 +34,7 @@ import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.EXIMITE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.IGNATIUS_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.INFUSCOLIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.KALENDRITE_ORE
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.LEMURITE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.MANGANESE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.MIDASIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ORICHALCUM_ORE_LOWER
@@ -94,6 +96,7 @@ object AlloyanceBiomeModifiers {
     val ADD_VULCANITE_ORE = registerKey("add_vulcanite_ore")
     val ADD_CARMOT_ORE_UPPER = registerKey("add_carmot_ore_upper")
     val ADD_CARMOT_ORE_LOWER = registerKey("add_carmot_ore_lower")
+    val ADD_LEMURITE_ORE = registerKey("add_lemurite_ore")
 
     private val ores = listOf(
         Triple(ADD_DEEP_IRON_ORE, HAS_DEEP_IRON_ORE, DEEP_IRON_ORE),
@@ -126,6 +129,7 @@ object AlloyanceBiomeModifiers {
         Triple(ADD_VULCANITE_ORE, HAS_VULCANITE_ORE, VULCANITE_ORE),
         Triple(ADD_CARMOT_ORE_UPPER, HAS_CARMOT_ORE, CARMOT_ORE_UPPER),
         Triple(ADD_CARMOT_ORE_LOWER, HAS_CARMOT_ORE, CARMOT_ORE_LOWER),
+        Triple(ADD_LEMURITE_ORE, HAS_LEMURITE_ORE, LEMURITE_ORE),
     )
 
     fun bootstrap(context: BootstrapContext<BiomeModifier>) {
