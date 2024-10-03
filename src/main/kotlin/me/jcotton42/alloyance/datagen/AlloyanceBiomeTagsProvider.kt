@@ -77,5 +77,7 @@ class AlloyanceBiomeTagsProvider(
             .addTags(BiomeTags.IS_OVERWORLD)
         tag(AlloyanceBiomeTags.HAS_SANGUINITE_ORE)
             .addTags(BiomeTags.IS_NETHER)
+        tag(AlloyanceBiomeTags.HAS_VYROXERES_ORE)
+            .addTags(BiomeTags.IS_NETHER)
     }
 }

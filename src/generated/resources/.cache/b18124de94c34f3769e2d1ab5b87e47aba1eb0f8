@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T20:38:20.4843354	Tags for minecraft:worldgen/biome mod id alloyance
+// 1.21.1	2024-10-02T20:53:24.1207561	Tags for minecraft:worldgen/biome mod id alloyance
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_astral_silver_ore.json
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_carmot_ore.json
 a24545b58f3f91c6c033586e2b2ae12f1e8131b1 data/alloyance/tags/worldgen/biome/has_ceruclase_ore.json
@@ -24,4 +24,5 @@ b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_tin_ore.json
 afd9da16b8e57511d3b12c69ccd4555d71ebb29f data/alloyance/tags/worldgen/biome/has_underwater_deep_iron_ore.json
 a24545b58f3f91c6c033586e2b2ae12f1e8131b1 data/alloyance/tags/worldgen/biome/has_vulcanite_ore.json
+a24545b58f3f91c6c033586e2b2ae12f1e8131b1 data/alloyance/tags/worldgen/biome/has_vyroxeres_ore.json
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_zinc_ore.json

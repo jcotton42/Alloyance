@@ -26,6 +26,7 @@ import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_SILVER_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_TIN_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_UNDERWATER_DEEP_IRON_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_VULCANITE_ORE
+import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_VYROXERES_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_ZINC_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ASTRAL_SILVER_ORE_LOWER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ASTRAL_SILVER_ORE_UPPER
@@ -62,6 +63,7 @@ import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.SILVER_ORE_UPPER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.TIN_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.UNDERWATER_DEEP_IRON_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.VULCANITE_ORE
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.VYROXERES_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ZINC_ORE
 import net.minecraft.core.HolderSet
 import net.minecraft.core.registries.Registries
@@ -110,6 +112,7 @@ object AlloyanceBiomeModifiers {
     val ADD_MITHRIL_ORE_UPPER = registerKey("add_mithril_ore_upper")
     val ADD_MITHRIL_ORE_LOWER = registerKey("add_mithril_ore_lower")
     val ADD_SANGUINITE_ORE = registerKey("add_sanguinite_ore")
+    val ADD_VYROXERES_ORE = registerKey("add_vyroxeres_ore")
 
     private val ores = listOf(
         Triple(ADD_DEEP_IRON_ORE, HAS_DEEP_IRON_ORE, DEEP_IRON_ORE),
@@ -148,6 +151,7 @@ object AlloyanceBiomeModifiers {
         Triple(ADD_MITHRIL_ORE_UPPER, HAS_MITHRIL_ORE, MITHRIL_ORE_UPPER),
         Triple(ADD_MITHRIL_ORE_LOWER, HAS_MITHRIL_ORE, MITHRIL_ORE_LOWER),
         Triple(ADD_SANGUINITE_ORE, HAS_SANGUINITE_ORE, SANGUINITE_ORE),
+        Triple(ADD_VYROXERES_ORE, HAS_VYROXERES_ORE, VYROXERES_ORE),
     )
 
     fun bootstrap(context: BootstrapContext<BiomeModifier>) {
