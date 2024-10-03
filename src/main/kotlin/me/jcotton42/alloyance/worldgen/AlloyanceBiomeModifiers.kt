@@ -2,6 +2,7 @@ package me.jcotton42.alloyance.worldgen
 
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_ADAMANTINE_ORE
+import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_ALDUORITE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_ASTRAL_SILVER_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_ATLARUS_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_CARMOT_ORE
@@ -31,6 +32,7 @@ import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_VULCANITE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_VYROXERES_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_ZINC_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ADAMANTINE_ORE
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ALDUORITE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ASTRAL_SILVER_ORE_LOWER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ASTRAL_SILVER_ORE_UPPER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.ATLARUS_ORE_LOWER
@@ -121,6 +123,7 @@ object AlloyanceBiomeModifiers {
     val ADD_ATLARUS_ORE_UPPER = registerKey("add_atlarus_ore_upper")
     val ADD_ATLARUS_ORE_LOWER = registerKey("add_atlarus_ore_lower")
     val ADD_ADAMANTINE_ORE = registerKey("add_adamantine_ore")
+    val ADD_ALDUORITE_ORE = registerKey("add_alduorite_ore")
 
     private val ores = listOf(
         Triple(ADD_DEEP_IRON_ORE, HAS_DEEP_IRON_ORE, DEEP_IRON_ORE),
@@ -163,6 +166,7 @@ object AlloyanceBiomeModifiers {
         Triple(ADD_ATLARUS_ORE_UPPER, HAS_ATLARUS_ORE, ATLARUS_ORE_UPPER),
         Triple(ADD_ATLARUS_ORE_LOWER, HAS_ATLARUS_ORE, ATLARUS_ORE_LOWER),
         Triple(ADD_ADAMANTINE_ORE, HAS_ADAMANTINE_ORE, ADAMANTINE_ORE),
+        Triple(ADD_ALDUORITE_ORE, HAS_ALDUORITE_ORE, ALDUORITE_ORE),
     )
 
     fun bootstrap(context: BootstrapContext<BiomeModifier>) {

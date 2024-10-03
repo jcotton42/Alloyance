@@ -67,6 +67,7 @@ object AlloyancePlacedFeatures {
     val ATLARUS_ORE_UPPER = registerKey("atlarus_ore_upper")
     val ATLARUS_ORE_LOWER = registerKey("atlarus_ore_lower")
     val ADAMANTINE_ORE = registerKey("adamantine_ore")
+    val ALDUORITE_ORE = registerKey("alduorite_ore")
 
     fun bootstrap(context: BootstrapContext<PlacedFeature>) {
         val configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE)
@@ -436,6 +437,15 @@ object AlloyancePlacedFeatures {
             countOrePlacement(
                 VERY_RARE,
                 HeightRangePlacement.triangle(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(-4))
+            )
+        )
+        register(
+            context,
+            ALDUORITE_ORE,
+            configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.ALDUORITE_ORE),
+            countOrePlacement(
+                UNCOMMON,
+                HeightRangePlacement.uniform(VerticalAnchor.absolute(70), VerticalAnchor.TOP)
             )
         )
     }

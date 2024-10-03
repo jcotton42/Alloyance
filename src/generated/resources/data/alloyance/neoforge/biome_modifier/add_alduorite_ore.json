@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_alduorite_ore",
+  "features": "alloyance:alduorite_ore",
+  "step": "underground_ores"
+}
