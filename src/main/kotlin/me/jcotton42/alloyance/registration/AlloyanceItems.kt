@@ -292,6 +292,11 @@ object AlloyanceItems {
     val HADEROTH_NUGGET = nugget(HADEROTH)
     val HADEROTH_DUST = dust(HADEROTH)
 
+    val DESICHALKOS_BLOCK = block(AlloyanceBlocks.DESICHALKOS_BLOCK)
+    val DESICHALKOS_INGOT = ingot(DESICHALKOS)
+    val DESICHALKOS_NUGGET = nugget(DESICHALKOS)
+    val DESICHALKOS_DUST = dust(DESICHALKOS)
+
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

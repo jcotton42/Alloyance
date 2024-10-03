@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T21:09:44.3164304	Loot Tables
+// 1.21.1	2024-10-02T21:17:19.3492335	Loot Tables
 00986215a0540b1b41631c104659deaa568ccfea data/alloyance/loot_table/blocks/alloyer.json
 dcac1ba2ee83e55ce89f5d4bb5fcc256b7926d3f data/alloyance/loot_table/blocks/amordrine_block.json
 a80a5cc977a2ae430a4f1e00459a6153eafa8f03 data/alloyance/loot_table/blocks/angmallen_block.json
@@ -27,6 +27,7 @@ d13fb44d986b37f3bd832263b7887a82fdb946e6 data/alloyance/loot_table/blocks/deepsl
 7caa72a8097f16415222e02899decd0eb86a3b25 data/alloyance/loot_table/blocks/deepslate_zinc_ore.json
 e83b646c7c7af3f668314fa1c11c2deb5a89a908 data/alloyance/loot_table/blocks/deep_iron_block.json
 65ca6733eb9af3e41b74f86bd35ac5f8ad1dc9f1 data/alloyance/loot_table/blocks/deep_iron_ore.json
+6e2dc325858835b68029f2daf3d982949e83e1d4 data/alloyance/loot_table/blocks/desichalkos_block.json
 dfc390b875e2da75ae723b6a530a897c826a44d2 data/alloyance/loot_table/blocks/electrum_block.json
 7071f0637ba7d5d94ae2f0251fabc611efd1e041 data/alloyance/loot_table/blocks/end_eximite_ore.json
 6ddb464ee9ba309aad0e52d3deee8eda214cd0c8 data/alloyance/loot_table/blocks/end_meutoite_ore.json

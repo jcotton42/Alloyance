@@ -1,5 +1,5 @@
-// 1.21.1	2024-10-02T21:09:44.3334955	Tags for minecraft:item mod id alloyance
-f99e6c5fef3927f05cb9317ff4be776fb093f5d8 data/alloyance/tags/item/alloyables.json
+// 1.21.1	2024-10-02T21:17:19.3678124	Tags for minecraft:item mod id alloyance
+ee5bfe041e53e018c893bada13f74fd6285e6064 data/alloyance/tags/item/alloyables.json
 1db71cbfbd53be632e07baf2d30422ffa6c6d43a data/alloyance/tags/item/alloyables/amordrine.json
 377249b26bc8f1377bded168543b4379340c69d6 data/alloyance/tags/item/alloyables/angmallen.json
 4160ff10b39f9bf455ee2b99893bc69582b02f1f data/alloyance/tags/item/alloyables/astral_silver.json
@@ -12,6 +12,7 @@ c8281acdaa60595754169599c2fe2b94ec952357 data/alloyance/tags/item/alloyables/cer
 3303dea003f2f7f81d93ee159b9f20862af5ce95 data/alloyance/tags/item/alloyables/copper.json
 e63958665990d2a46c8f5d55b666b87146960398 data/alloyance/tags/item/alloyables/damascus_steel.json
 c500e2fe677ec260a621d25cce859b8ec1d650fa data/alloyance/tags/item/alloyables/deep_iron.json
+fe7524f4fa7c571a3cc6279c0e1982181d2be124 data/alloyance/tags/item/alloyables/desichalkos.json
 cc2f821072565b3577f31014cbc71bb573620df8 data/alloyance/tags/item/alloyables/electrum.json
 64c9ff5668982734eae7879a497b9d450a6dddda data/alloyance/tags/item/alloyables/eximite.json
 8badaa4dcf4582dc4f59ce54abe795462b6f0d8d data/alloyance/tags/item/alloyables/gold.json
@@ -42,7 +43,7 @@ b2b40839320518ac3843e3df7993bf29ff219a36 data/alloyance/tags/item/alloyables/ste
 9b7c0574a1f26dd54363b52052e4d22153e16596 data/alloyance/tags/item/alloyables/vulcanite.json
 3f8b82dd283a91515db678b1dd1f3b120f3b88f7 data/alloyance/tags/item/alloyables/vyroxeres.json
 68143d514bf194a281517d128892c2d73c34fbe9 data/alloyance/tags/item/alloyables/zinc.json
-66281908ae1e99222e511f7153df2eb1513c44d0 data/c/tags/item/dusts.json
+61752b4154134681ecc271e77dad677c2b60fd23 data/c/tags/item/dusts.json
 a07607d6f027d9436c5a77159eb929e87ed96bb3 data/c/tags/item/dusts/amordrine.json
 dc9bd4011c544abee5dee660e2d1d6c0c69dabc2 data/c/tags/item/dusts/angmallen.json
 75818ad6811847efd72f7754f35bfff31c375fcf data/c/tags/item/dusts/astral_silver.json
@@ -55,6 +56,7 @@ c30ffeeb6c6ee1037a8f7c9cf28b70c8685de35c data/c/tags/item/dusts/ceruclase.json
 7ff7dedc30ce1cae10a7d49f0956ec041158856d data/c/tags/item/dusts/copper.json
 ca0f58b1617eba475822182e305de3ca5b510ca3 data/c/tags/item/dusts/damascus_steel.json
 7e56c221cbf69f0fb8abf477aaae4d453331f9c1 data/c/tags/item/dusts/deep_iron.json
+cf1d1c36e77f19211730f393a51585975aa4ea5e data/c/tags/item/dusts/desichalkos.json
 8bf6ed18817be9853f6efeba2161cecd16cd6517 data/c/tags/item/dusts/electrum.json
 25afe633296d39b2ebfa9f4724e91a377df1389e data/c/tags/item/dusts/eximite.json
 4730f65dc905e005aee99cf0c7eda3b9ab7b5c26 data/c/tags/item/dusts/gold.json
@@ -85,7 +87,7 @@ f778cc51e96c4dfd977cb382ed889ee3e715ef59 data/c/tags/item/dusts/tin.json
 2275fcde0d8414deb92110188f63dfac7a058ab4 data/c/tags/item/dusts/vulcanite.json
 496f89b8e31d0185fe3a8b709b0432750318e095 data/c/tags/item/dusts/vyroxeres.json
 30e5ebfb6e043cab8b77e480ca42caf4fb322ab6 data/c/tags/item/dusts/zinc.json
-90a854cfa9c84819b51f9792eb01c76cf8919d5a data/c/tags/item/ingots.json
+1f5c739e60c457b8be79171eeebb4194d562ba03 data/c/tags/item/ingots.json
 5a1fe75dc9eb761047f1fdd07bc152c2e5b42d9e data/c/tags/item/ingots/amordrine.json
 cef653a06639c3cabdcd1cec42139b117f7acd05 data/c/tags/item/ingots/angmallen.json
 9057d1eedc31252c11242a2feb8fe680856a29d8 data/c/tags/item/ingots/astral_silver.json
@@ -97,6 +99,7 @@ f2c72c5897fe855d74c74a8a870c6e2cccdb59cf data/c/tags/item/ingots/carmot.json
 c78aaff80be3487121329df0d90d1fd997eaa32b data/c/tags/item/ingots/ceruclase.json
 b62f6f47f799bc714e95f0a43fb6451d22315420 data/c/tags/item/ingots/damascus_steel.json
 251b9af67bf17412098745e329b053344859c526 data/c/tags/item/ingots/deep_iron.json
+794158454a97eac7c85a8df25d3ecb51920983d2 data/c/tags/item/ingots/desichalkos.json
 d8b8d5cdf4cac7189430b1db6e19b8175f5deb12 data/c/tags/item/ingots/electrum.json
 11c9830d628a463a93d340435cef9fbc3850fd86 data/c/tags/item/ingots/eximite.json
 1080ba6923ac4692a1de1039338dae6cbaf4af29 data/c/tags/item/ingots/haderoth.json
@@ -125,7 +128,7 @@ d5e25c33f6faacff229b3e494b5401b5d14314d8 data/c/tags/item/ingots/tin.json
 6537dd1835de338b8f0b4d24603de07cda3092cb data/c/tags/item/ingots/vulcanite.json
 5902b6b80681246574d40490430f5a50866b1a68 data/c/tags/item/ingots/vyroxeres.json
 38c245b799b04efe6544d71d99b1b08e0bc99083 data/c/tags/item/ingots/zinc.json
-617ccb695031142d96131c116a6c0b778174c21e data/c/tags/item/nuggets.json
+a9772bb3d12e89fc1aff248885cc8c6fb0108a14 data/c/tags/item/nuggets.json
 522d07fbfbdd46d180ed53fde593879f15688c07 data/c/tags/item/nuggets/amordrine.json
 324918a4426c2a08d3df317fa698601bb95bdbc3 data/c/tags/item/nuggets/angmallen.json
 8c648abb8dfdc7a949a7a02bf48ca1bff2c8b45f data/c/tags/item/nuggets/astral_silver.json
@@ -137,6 +140,7 @@ b008b1eee412ae2b8c625004e0e2f1ea8ccdf495 data/c/tags/item/nuggets/celenegil.json
 c19c99fa85405bca3010d02dc32efa2b3047d64e data/c/tags/item/nuggets/ceruclase.json
 61795809870a3f6349400da0e9162eaa3b9ad0c0 data/c/tags/item/nuggets/damascus_steel.json
 d4ff184e8f7eb31f7c753a4b7a45b830bb3dcfee data/c/tags/item/nuggets/deep_iron.json
+8498f3a3735d43e5b3ee916fb1ceb6f755539c7a data/c/tags/item/nuggets/desichalkos.json
 b33e160ed0d4dc3005151bc342bd9f76e5a9905b data/c/tags/item/nuggets/electrum.json
 1174f794926403ee8eacf576e53c8abb4915931b data/c/tags/item/nuggets/eximite.json
 c788839e922fe21e0c98a6ce9587a84f3f82e53a data/c/tags/item/nuggets/haderoth.json
@@ -223,7 +227,7 @@ fc6448189ba34be78d422411fe2dedb3913a9849 data/c/tags/item/raw_materials/promethe
 7927393ae096233440d37fbdedf84910605ea761 data/c/tags/item/raw_materials/vulcanite.json
 75f56540883ddd13fa3a2017bce6d8647afcf691 data/c/tags/item/raw_materials/vyroxeres.json
 49ba2295d2bb6e79b49ce95fa10f56418a5955d6 data/c/tags/item/raw_materials/zinc.json
-66864ae871c2d1336e4729a0ca0459e07db2a540 data/c/tags/item/storage_blocks.json
+67ae2b091ae908306c48565f3d9fffb66e890aa7 data/c/tags/item/storage_blocks.json
 6b8487afd922d222ded413fc5159e17ea84adcea data/c/tags/item/storage_blocks/amordrine.json
 18ef9f2ab9af5be3948a4e6cdf6890a3cba1df42 data/c/tags/item/storage_blocks/angmallen.json
 860f60434d7b9ca9e627318a83cd5d09bacded2d data/c/tags/item/storage_blocks/astral_silver.json
@@ -235,6 +239,7 @@ b5ab7ce213a603284c7ff09bdfd643585eb707e2 data/c/tags/item/storage_blocks/carmot.
 c2663175e0eaf6f1fb0b23ffaa96cc9a677aa9e1 data/c/tags/item/storage_blocks/ceruclase.json
 2afde956ab247d8d9bb0513dd07ff5c1d4f604f5 data/c/tags/item/storage_blocks/damascus_steel.json
 98d7f09e1c826e979ece333ed160158978e1d55e data/c/tags/item/storage_blocks/deep_iron.json
+c5c674038a8a06aaa6bb0b21b522a49a5e226f55 data/c/tags/item/storage_blocks/desichalkos.json
 413f85a775150dbf681ab9e5ad55b5d082b597bb data/c/tags/item/storage_blocks/electrum.json
 0e9e47ba71da24653e26b50b41df670d77a3d08f data/c/tags/item/storage_blocks/eximite.json
 87ffdf02d4c47f8af52af9d447c84160fac6868e data/c/tags/item/storage_blocks/haderoth.json

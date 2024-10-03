@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "desichalkos_dust",
+  "ingredients": [
+    {
+      "tag": "c:dusts/eximite"
+    },
+    {
+      "tag": "c:dusts/meutoite"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "alloyance:desichalkos_dust"
+  }
+}

@@ -180,6 +180,8 @@ object AlloyanceBlocks {
 
     val HADEROTH_BLOCK = storageBlock(HADEROTH)
 
+    val DESICHALKOS_BLOCK = storageBlock(DESICHALKOS)
+
     fun register(bus: IEventBus) {
         BLOCKS.register(bus)
         BLOCK_CODECS.register(bus)

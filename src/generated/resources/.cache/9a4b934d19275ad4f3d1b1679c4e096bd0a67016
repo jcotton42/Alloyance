@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T21:09:44.3299783	Item Models: alloyance
+// 1.21.1	2024-10-02T21:17:19.3632945	Item Models: alloyance
 bfb369f6a77fec5776fb060493aa0b7bff388e39 assets/alloyance/models/item/amordrine_block.json
 ffc8a232ff19dbfd15a3ea160593598f3a2fa5d0 assets/alloyance/models/item/amordrine_dust.json
 2cd9b43b2b47414f0270caf00a4845193959d020 assets/alloyance/models/item/amordrine_ingot.json
@@ -59,6 +59,10 @@ f54e9f2a3e6e52b6eaa168f0a17d532ce6a15647 assets/alloyance/models/item/deepslate_
 0c8eb700b603be3d13acdd9d35824249d902697c assets/alloyance/models/item/deep_iron_ingot.json
 85b3d2c3811b2ae300a9064b22b8a36ef4eeca5b assets/alloyance/models/item/deep_iron_nugget.json
 ca6393e0edef3963cd70337fd22e986be52eed5b assets/alloyance/models/item/deep_iron_ore.json
+17bbfe01fc9e28281e9fc4edc2ccfb8ed040caf8 assets/alloyance/models/item/desichalkos_block.json
+bf19765ce131c577d7306c5b04eb7d419f1af297 assets/alloyance/models/item/desichalkos_dust.json
+39bba7ed5ce258f8a9dfedbf9dd0a22cf86e5340 assets/alloyance/models/item/desichalkos_ingot.json
+2ecfd3ed5fad4ba16c28f2a29aff764e2f7338bd assets/alloyance/models/item/desichalkos_nugget.json
 734a1c67ebf51af0b9d1733f7969e488bb3ca22e assets/alloyance/models/item/electrum_block.json
 ad517e41f8306cc065c7a50ea064995104aeeed4 assets/alloyance/models/item/electrum_dust.json
 ab498396beb0d48afc8f4e364f9bdc2b6f1cc305 assets/alloyance/models/item/electrum_ingot.json

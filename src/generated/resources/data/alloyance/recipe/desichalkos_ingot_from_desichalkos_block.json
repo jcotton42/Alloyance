@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "desichalkos_ingot",
+  "ingredients": [
+    {
+      "item": "alloyance:desichalkos_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:desichalkos_ingot"
+  }
+}
