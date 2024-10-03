@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_meutoite_ore",
+  "features": "alloyance:meutoite_ore",
+  "step": "underground_ores"
+}

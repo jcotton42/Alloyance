@@ -58,6 +58,7 @@ object AlloyancePlacedFeatures {
     val CARMOT_ORE_UPPER = registerKey("carmot_ore_upper")
     val CARMOT_ORE_LOWER = registerKey("carmot_ore_lower")
     val LEMURITE_ORE = registerKey("lemurite_ore")
+    val MEUTOITE_ORE = registerKey("meutoite_ore")
 
     fun bootstrap(context: BootstrapContext<PlacedFeature>) {
         val configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE)
@@ -345,6 +346,15 @@ object AlloyancePlacedFeatures {
             countOrePlacement(
                 COMMON,
                 HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(50))
+            )
+        )
+        register(
+            context,
+            MEUTOITE_ORE,
+            configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.MEUTOITE_ORE),
+            countOrePlacement(
+                RARE,
+                HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.TOP)
             )
         )
     }
