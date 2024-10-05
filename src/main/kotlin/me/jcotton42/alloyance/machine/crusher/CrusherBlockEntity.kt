@@ -3,8 +3,8 @@ package me.jcotton42.alloyance.machine.crusher
 import me.jcotton42.alloyance.machine.BaseMachineBlock
 import me.jcotton42.alloyance.machine.BaseMachineBlockEntity
 import me.jcotton42.alloyance.machine.ExtractOnlyItemHandler
+import me.jcotton42.alloyance.machine.getFuelSpeed
 import me.jcotton42.alloyance.registration.AlloyanceBlocks
-import me.jcotton42.alloyance.registration.AlloyanceDataMaps
 import me.jcotton42.alloyance.registration.AlloyanceRecipes
 import me.jcotton42.alloyance.registration.AlloyanceSounds
 import net.minecraft.core.BlockPos
@@ -117,7 +117,7 @@ class CrusherBlockEntity(
 
         val canCrush = tryCrush(inputStack, level, simulate = true)
         if (!wasBurning && !fuelStack.isEmpty && canCrush) {
-            crushProgressPerTick = fuelStack.itemHolder.getData(AlloyanceDataMaps.FUEL_SPEED)?.speed ?: 1
+            crushProgressPerTick = fuelStack.getFuelSpeed()
             totalBurnTime = fuelStack.getBurnTime(RecipeType.SMELTING) * NOMINAL_CRUSHING_TIME / 200
             burnTimeRemaining = totalBurnTime
             if (fuelStack.hasCraftingRemainingItem()) {
