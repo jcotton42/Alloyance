@@ -1,11 +1,7 @@
 package me.jcotton42.alloyance.machine.alloyer
 
-import me.jcotton42.alloyance.machine.BaseMachineBlock
-import me.jcotton42.alloyance.machine.BaseMachineBlockEntity
-import me.jcotton42.alloyance.machine.DualRecipeInput
-import me.jcotton42.alloyance.machine.ExtractOnlyItemHandler
+import me.jcotton42.alloyance.machine.*
 import me.jcotton42.alloyance.registration.AlloyanceBlocks
-import me.jcotton42.alloyance.registration.AlloyanceDataMaps
 import me.jcotton42.alloyance.registration.AlloyanceRecipes
 import me.jcotton42.alloyance.registration.AlloyanceSounds
 import net.minecraft.core.BlockPos
@@ -20,10 +16,8 @@ import net.minecraft.world.entity.player.Player
 import net.minecraft.world.inventory.AbstractContainerMenu
 import net.minecraft.world.inventory.ContainerData
 import net.minecraft.world.item.ItemStack
-import net.minecraft.world.item.Items
 import net.minecraft.world.item.crafting.RecipeManager
 import net.minecraft.world.item.crafting.RecipeType
-import net.minecraft.world.item.crafting.SingleRecipeInput
 import net.minecraft.world.level.Level
 import net.minecraft.world.level.block.state.BlockState
 import net.neoforged.neoforge.items.IItemHandler
@@ -119,7 +113,7 @@ class AlloyerBlockEntity(
 
         val canAlloy = tryAlloy(input1Stack, input2Stack, level, simulate = true)
         if (!wasBurning && !fuelStack.isEmpty && canAlloy) {
-            alloyProgressPerTick = fuelStack.itemHolder.getData(AlloyanceDataMaps.FUEL_SPEED)?.speed ?: 1
+            alloyProgressPerTick = fuelStack.getFuelSpeed() ?: 1
             totalBurnTime = fuelStack.getBurnTime(RecipeType.SMELTING) * NOMINAL_ALLOYING_TIME / 200
             burnTimeRemaining = totalBurnTime
             if (fuelStack.hasCraftingRemainingItem()) {
