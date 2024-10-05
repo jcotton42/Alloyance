@@ -117,7 +117,7 @@ class CrusherBlockEntity(
 
         val canCrush = tryCrush(inputStack, level, simulate = true)
         if (!wasBurning && !fuelStack.isEmpty && canCrush) {
-            crushProgressPerTick = fuelStack.getFuelSpeed()
+            crushProgressPerTick = fuelStack.getFuelSpeed() ?: 1
             totalBurnTime = fuelStack.getBurnTime(RecipeType.SMELTING) * NOMINAL_CRUSHING_TIME / 200
             burnTimeRemaining = totalBurnTime
             if (fuelStack.hasCraftingRemainingItem()) {

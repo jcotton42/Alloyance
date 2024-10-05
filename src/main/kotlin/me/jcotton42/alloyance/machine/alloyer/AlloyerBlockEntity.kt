@@ -113,7 +113,7 @@ class AlloyerBlockEntity(
 
         val canAlloy = tryAlloy(input1Stack, input2Stack, level, simulate = true)
         if (!wasBurning && !fuelStack.isEmpty && canAlloy) {
-            alloyProgressPerTick = fuelStack.getFuelSpeed()
+            alloyProgressPerTick = fuelStack.getFuelSpeed() ?: 1
             totalBurnTime = fuelStack.getBurnTime(RecipeType.SMELTING) * NOMINAL_ALLOYING_TIME / 200
             burnTimeRemaining = totalBurnTime
             if (fuelStack.hasCraftingRemainingItem()) {
