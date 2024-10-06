@@ -88,5 +88,8 @@ class AlloyanceBiomeTagsProvider(
             .addTags(BiomeTags.IS_NETHER)
         tag(AlloyanceBiomeTags.HAS_LUTETIUM_ORE)
             .addTags(BiomeTags.IS_NETHER)
+
+        tag(AlloyanceBiomeTags.HAS_SULFUR_ORE)
+            .addTags(BiomeTags.IS_OVERWORLD)
     }
 }
