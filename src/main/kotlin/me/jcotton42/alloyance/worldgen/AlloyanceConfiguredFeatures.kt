@@ -48,6 +48,7 @@ object AlloyanceConfiguredFeatures {
     val ADAMANTINE_ORE = registerKey("adamantine_ore")
     val ALDUORITE_ORE = registerKey("alduorite_ore")
     val LUTETIUM_ORE = registerKey("lutetium_ore")
+    val POTASH_ORE = registerKey("potash_ore")
     val SULFUR_ORE = registerKey("sulfur_ore")
 
     fun bootstrap(context: BootstrapContext<ConfiguredFeature<*, *>>) {
@@ -81,6 +82,7 @@ object AlloyanceConfiguredFeatures {
         val adamantineOres = listOf(inStone(AlloyanceBlocks.ADAMANTINE_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_ADAMANTINE_ORE))
         val alduoriteOres = listOf(inNetherrack(AlloyanceBlocks.NETHER_ALDUORITE_ORE))
         val lutetiumOres = listOf(inNetherrack(AlloyanceBlocks.NETHER_LUTETIUM_ORE))
+        val potashOres = listOf(inStone(AlloyanceBlocks.POTASH_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_POTASH_ORE))
         val sulfurOres = listOf(inDeepslate(AlloyanceBlocks.DEEPSLATE_SULFUR_ORE))
 
         register(context, DEEP_IRON_ORE, Feature.ORE, OreConfiguration(deepIronOres, 5))
@@ -119,6 +121,7 @@ object AlloyanceConfiguredFeatures {
         register(context, ALDUORITE_ORE, Feature.ORE, OreConfiguration(alduoriteOres, 4))
         register(context, LUTETIUM_ORE, Feature.ORE, OreConfiguration(lutetiumOres, 4))
 
+        register(context, POTASH_ORE, Feature.ORE, OreConfiguration(potashOres, 7))
         register(context, SULFUR_ORE, Feature.ORE, OreConfiguration(sulfurOres, 6))
     }
 

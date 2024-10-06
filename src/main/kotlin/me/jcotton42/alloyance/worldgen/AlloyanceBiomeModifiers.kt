@@ -22,6 +22,7 @@ import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_ORICHALCUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_OSMIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_OURECLASE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_PLATINUM_ORE
+import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_POTASH_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_PROMETHEUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_RUBRACIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyanceBiomeTags.HAS_SANGUINITE_ORE
@@ -62,6 +63,7 @@ import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.OSMIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.OURECLASE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PLATINUM_ORE_LOWER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PLATINUM_ORE_UPPER
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.POTASH_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PROMETHEUM_ORE_LOWER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PROMETHEUM_ORE_UPPER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.RUBRACIUM_ORE
@@ -129,6 +131,7 @@ object AlloyanceBiomeModifiers {
     val ADD_ADAMANTINE_ORE = registerKey("add_adamantine_ore")
     val ADD_ALDUORITE_ORE = registerKey("add_alduorite_ore")
     val ADD_LUTETIUM_ORE = registerKey("add_lutetium_ore")
+    val ADD_POTASH_ORE = registerKey("add_potash_ore")
     val ADD_SULFUR_ORE = registerKey("add_sulfur_ore")
 
     private val ores = listOf(
@@ -174,6 +177,7 @@ object AlloyanceBiomeModifiers {
         Triple(ADD_ADAMANTINE_ORE, HAS_ADAMANTINE_ORE, ADAMANTINE_ORE),
         Triple(ADD_ALDUORITE_ORE, HAS_ALDUORITE_ORE, ALDUORITE_ORE),
         Triple(ADD_LUTETIUM_ORE, HAS_LUTETIUM_ORE, LUTETIUM_ORE),
+        Triple(ADD_POTASH_ORE, HAS_POTASH_ORE, POTASH_ORE),
         Triple(ADD_SULFUR_ORE, HAS_SULFUR_ORE, SULFUR_ORE),
     )
 
