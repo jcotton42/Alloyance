@@ -35,6 +35,10 @@ object AlloyanceItems {
     val INFUSED_IGNATIUS = ITEMS.registerSimpleItem("infused_ignatius", Item.Properties().lore("tooltip.alloyance.infused_ignatius"))
     val THERMITE_DUST = ITEMS.registerSimpleItem("thermite_dust", Item.Properties().lore("tooltip.alloyance.thermite_dust"))
 
+    val DEEPSLATE_SULFUR_ORE = block(AlloyanceBlocks.DEEPSLATE_SULFUR_ORE)
+    val SULFUR_BLOCK = block(AlloyanceBlocks.SULFUR_BLOCK)
+    val SULFUR = ITEMS.registerSimpleItem("sulfur")
+
     val DEEP_IRON_ORE = block(AlloyanceBlocks.DEEP_IRON_ORE, DEEP_IRON)
     val DEEPSLATE_DEEP_IRON_ORE = block(AlloyanceBlocks.DEEPSLATE_DEEP_IRON_ORE, DEEP_IRON)
     val DEEP_IRON_BLOCK = block(AlloyanceBlocks.DEEP_IRON_BLOCK, DEEP_IRON)

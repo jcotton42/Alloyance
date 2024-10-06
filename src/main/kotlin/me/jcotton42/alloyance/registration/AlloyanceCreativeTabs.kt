@@ -24,6 +24,7 @@ object AlloyanceCreativeTabs {
                 Metal.entries.forEach { metal ->
                     output.accept(AlloyanceBlocks.STORAGE_BLOCKS.getValue(metal))
                 }
+                output.accept(AlloyanceBlocks.SULFUR_BLOCK)
             }
             .build()
     }
@@ -39,6 +40,7 @@ object AlloyanceCreativeTabs {
                 Metal.entries.forEach { metal ->
                     output.accept(AlloyanceItems.DUSTS.getValue(metal))
                 }
+                output.accept(AlloyanceItems.SULFUR)
                 output.accept(AlloyanceItems.THERMITE_DUST)
             }
             .build()
@@ -74,10 +76,7 @@ object AlloyanceCreativeTabs {
             .icon { ItemStack(AlloyanceItems.RAW_DEEP_IRON.get()) }
             .displayItems { _, output ->
                 Metal.entries.forEach { metal ->
-                    val raw = AlloyanceItems.RAW_MATERIALS[metal]
-                    if (raw != null) {
-                        output.accept(raw)
-                    }
+                    AlloyanceItems.RAW_MATERIALS[metal]?.let(output::accept)
                 }
             }
             .build()
@@ -101,46 +100,17 @@ object AlloyanceCreativeTabs {
             .icon { ItemStack(AlloyanceBlocks.DEEP_IRON_ORE.get()) }
             .displayItems { _, output ->
                 Metal.entries.forEach { metal ->
-                    val ore = AlloyanceBlocks.ORES[metal]
-                    val deepslateOre = AlloyanceBlocks.DEEPSLATE_ORES[metal]
-                    val endOre = AlloyanceBlocks.END_ORES[metal]
-                    val netherOre = AlloyanceBlocks.NETHER_ORES[metal]
-                    if (ore != null) output.accept(ore)
-                    if (deepslateOre != null) output.accept(deepslateOre)
-                    if (endOre != null) output.accept(endOre)
-                    if (netherOre != null) output.accept(netherOre)
+                    AlloyanceBlocks.ORES[metal]?.let(output::accept)
+                    AlloyanceBlocks.DEEPSLATE_ORES[metal]?.let(output::accept)
+                    AlloyanceBlocks.END_ORES[metal]?.let(output::accept)
+                    AlloyanceBlocks.NETHER_ORES[metal]?.let(output::accept)
                 }
+                output.accept(AlloyanceItems.DEEPSLATE_SULFUR_ORE)
             }
             .build()
     }
 
     fun register(bus: IEventBus) {
         TABS.register(bus)
-        bus.addListener(::registerCreative)
-    }
-
-    private fun registerCreative(event: BuildCreativeModeTabContentsEvent) = when (event.tabKey) {
-        // TODO remove this?
-        CreativeModeTabs.BUILDING_BLOCKS -> {
-            event.accept(AlloyanceBlocks.DEEP_IRON_BLOCK)
-            event.accept(AlloyanceBlocks.PROMETHEUM_BLOCK)
-            event.accept(AlloyanceBlocks.ZINC_BLOCK)
-            event.accept(AlloyanceBlocks.TIN_BLOCK)
-        }
-        CreativeModeTabs.INGREDIENTS -> {
-            AlloyanceItems.RAW_MATERIALS.values.forEach { event.accept(it.get()) }
-            AlloyanceItems.NUGGETS.values.forEach { event.accept(it.get()) }
-            AlloyanceItems.INGOTS.values.forEach { event.accept(it.get()) }
-        }
-        CreativeModeTabs.NATURAL_BLOCKS -> {
-            event.accept(AlloyanceBlocks.DEEP_IRON_ORE)
-            event.accept(AlloyanceBlocks.DEEPSLATE_DEEP_IRON_ORE)
-            event.accept(AlloyanceBlocks.PROMETHEUM_ORE)
-            event.accept(AlloyanceBlocks.DEEPSLATE_PROMETHEUM_ORE)
-            event.accept(AlloyanceBlocks.ZINC_ORE)
-            event.accept(AlloyanceBlocks.DEEPSLATE_ZINC_ORE)
-            event.accept(AlloyanceBlocks.TIN_ORE)
-        }
-        else -> {}
     }
 }

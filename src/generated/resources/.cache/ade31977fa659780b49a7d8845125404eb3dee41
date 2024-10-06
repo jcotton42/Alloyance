@@ -1,5 +1,5 @@
-// 1.21.1	2024-10-02T22:26:59.4663872	Tags for minecraft:block mod id alloyance
-a59c1f25437b69550834f47e2d46a06363383fd2 data/c/tags/block/ores.json
+// 1.21.1	2024-10-05T16:26:11.6636762	Tags for minecraft:block mod id alloyance
+e71dba0fb4e45d814e42a968938806e12ef08eb8 data/c/tags/block/ores.json
 eee77fbdd60d030b8a05c26a6b886775e1fbaa94 data/c/tags/block/ores/adamantine.json
 48b6fd0e8a94232da539b2d3efa9e7c5060c5ec6 data/c/tags/block/ores/alduorite.json
 b0b453b05b70b674bcd6d479954b4063df9a6945 data/c/tags/block/ores/astral_silver.json
@@ -26,6 +26,7 @@ dbd0f3bb8b9b62211b78b785ccb78e980eb3bb3f data/c/tags/block/ores/oureclase.json
 4cda00645712267c8598a21472960ecf2aa08fff data/c/tags/block/ores/sanguinite.json
 14c73626dad32df7f05d0661c1eea1a0dd3fa409 data/c/tags/block/ores/shadow_iron.json
 b5847b4a65fb265052f0d2c49f73b82b8b8bc0f9 data/c/tags/block/ores/silver.json
+2a28f251ac0f00baaaa4c1ff7eeb498d56695d9b data/c/tags/block/ores/sulfur.json
 96299ff0191a5fa4286bcbaf443628b556345d85 data/c/tags/block/ores/tin.json
 9248c67e796c14386d25b241f4f160d8878f5935 data/c/tags/block/ores/vulcanite.json
 953b7d8ccc973497dfdef60f277b28b48517d567 data/c/tags/block/ores/vyroxeres.json
@@ -35,7 +36,7 @@ b5847b4a65fb265052f0d2c49f73b82b8b8bc0f9 data/c/tags/block/ores/silver.json
 0c63af0bf0cf67405fd088c73cd72b6e9c57b096 data/c/tags/block/ores_in_ground/netherrack.json
 6c98cbb8f012fb94d68c42271cebc5d435568094 data/c/tags/block/ores_in_ground/stone.json
 abb6d1fc648015f5404189dbcf1ec15a0660b885 data/c/tags/block/ore_rates/singular.json
-1775badaac7f608fc7d25154cd7ba5b6b1d3adee data/c/tags/block/storage_blocks.json
+2266a7d06fc77a1fb9ed735366db74ec9697556d data/c/tags/block/storage_blocks.json
 e1be8f7aa9f785e82a8cb87ad2a4da780f1d288a data/c/tags/block/storage_blocks/adamantine.json
 5c95cccd13bb0ba463f366f010b8342b27d6bb97 data/c/tags/block/storage_blocks/alduorite.json
 6b8487afd922d222ded413fc5159e17ea84adcea data/c/tags/block/storage_blocks/amordrine.json
@@ -79,6 +80,7 @@ b5aa486fa7854d9154d55649f54285d0ad482ed5 data/c/tags/block/storage_blocks/sangui
 282730bf56e397cde249041599c5c2d88d80fd32 data/c/tags/block/storage_blocks/shadow_steel.json
 e46f97339fbaecc0c38babcb17157c046a349f31 data/c/tags/block/storage_blocks/silver.json
 8784ef98f5156affc5e14abb441354ab52dd170f data/c/tags/block/storage_blocks/steel.json
+df694cfa16654b25361af4689b815d6f0f3eee44 data/c/tags/block/storage_blocks/sulfur.json
 835c63322684f06a6a61deca6e532e0a8c392882 data/c/tags/block/storage_blocks/tartarite.json
 f827a7d6fcf6dfe3eee3acf5972208bb27dd7814 data/c/tags/block/storage_blocks/tin.json
 b63f2fd13e913c85cea87aabb8bc11190ff0a790 data/c/tags/block/storage_blocks/vulcanite.json
@@ -90,8 +92,8 @@ f76db009805d4984ee4fd105da05cdb338558331 data/minecraft/tags/block/beacon_base_b
 28664f209d59643cd660ffecc4ec013d2b0ccf68 data/minecraft/tags/block/incorrect_for_iron_tool.json
 28664f209d59643cd660ffecc4ec013d2b0ccf68 data/minecraft/tags/block/incorrect_for_stone_tool.json
 28664f209d59643cd660ffecc4ec013d2b0ccf68 data/minecraft/tags/block/incorrect_for_wooden_tool.json
-2ebf76d0544549cb2de9fe343544d176c05fe06c data/minecraft/tags/block/mineable/pickaxe.json
+79ed6b2785ed50a6955a204e435a4b43a46748f3 data/minecraft/tags/block/mineable/pickaxe.json
 7857e501ea0e4afa55b818c5f0f9bf654fd6dce6 data/minecraft/tags/block/needs_diamond_tool.json
 f8a107f745130fb039dfb963f91f164a4654250e data/minecraft/tags/block/needs_iron_tool.json
-e293b0f44585305db5c648efaa3e9f56918c2c60 data/minecraft/tags/block/needs_stone_tool.json
+3a60df66021e71dab3f13e9fccfa6b478424ef38 data/minecraft/tags/block/needs_stone_tool.json
 236d1d88a8b140ed99b9dffa605d210ef7e7b96e data/neoforge/tags/block/needs_netherite_tool.json

@@ -11,7 +11,9 @@ import me.jcotton42.alloyance.machine.crusher.CrusherBlock
 import me.jcotton42.alloyance.machine.crusher.CrusherBlockEntity
 import me.jcotton42.alloyance.registration.Metal.*
 import net.minecraft.core.registries.Registries
+import net.minecraft.util.valueproviders.UniformInt
 import net.minecraft.world.level.block.Block
+import net.minecraft.world.level.block.DropExperienceBlock
 import net.minecraft.world.level.block.SoundType
 import net.minecraft.world.level.block.entity.BlockEntityType
 import net.minecraft.world.level.block.state.BlockBehaviour
@@ -23,6 +25,13 @@ import net.neoforged.bus.api.IEventBus
 import net.neoforged.neoforge.registries.DeferredBlock
 import net.neoforged.neoforge.registries.DeferredRegister
 import java.util.function.ToIntFunction
+
+private val deepslateOreProps = BlockBehaviour.Properties.of()
+    .mapColor(MapColor.DEEPSLATE)
+    .instrument(NoteBlockInstrument.BASEDRUM)
+    .requiresCorrectToolForDrops()
+    .sound(SoundType.DEEPSLATE)
+    .strength(4.5f, 3.0f)
 
 object AlloyanceBlocks {
     val BLOCKS = DeferredRegister.createBlocks(Alloyance.ID)
@@ -65,16 +74,25 @@ object AlloyanceBlocks {
         BlockEntityType.Builder.of(::CrusherBlockEntity, CRUSHER.get()).build(null)
     }
 
+    val DEEPSLATE_SULFUR_ORE = deepslateOre("sulfur")
+    val SULFUR_BLOCK = BLOCKS.registerSimpleBlock("sulfur_block", BlockBehaviour.Properties.of()
+        .mapColor(MapColor.COLOR_LIGHT_GREEN)
+        .sound(SoundType.STONE)
+        .instrument(NoteBlockInstrument.BASEDRUM)
+        .strength(3f, 10f)
+        .requiresCorrectToolForDrops()
+    )
+
     val DEEP_IRON_ORE = ore(DEEP_IRON)
-    val DEEPSLATE_DEEP_IRON_ORE = deepslateOre(DEEP_IRON)
+    val DEEPSLATE_DEEP_IRON_ORE = metalDeepslateOre(DEEP_IRON)
     val DEEP_IRON_BLOCK = storageBlock(DEEP_IRON)
 
     val PROMETHEUM_ORE = ore(PROMETHEUM)
-    val DEEPSLATE_PROMETHEUM_ORE = deepslateOre(PROMETHEUM)
+    val DEEPSLATE_PROMETHEUM_ORE = metalDeepslateOre(PROMETHEUM)
     val PROMETHEUM_BLOCK = storageBlock(PROMETHEUM)
 
     val ZINC_ORE = ore(ZINC)
-    val DEEPSLATE_ZINC_ORE = deepslateOre(ZINC)
+    val DEEPSLATE_ZINC_ORE = metalDeepslateOre(ZINC)
     val ZINC_BLOCK = storageBlock(ZINC)
 
     val TIN_ORE = ore(TIN)
@@ -86,19 +104,19 @@ object AlloyanceBlocks {
 
     val DAMASCUS_STEEL_BLOCK = storageBlock(DAMASCUS_STEEL)
 
-    val DEEPSLATE_OSMIUM_ORE = deepslateOre(OSMIUM)
+    val DEEPSLATE_OSMIUM_ORE = metalDeepslateOre(OSMIUM)
     val OSMIUM_BLOCK = storageBlock(OSMIUM)
 
     val SILVER_ORE = ore(SILVER)
-    val DEEPSLATE_SILVER_ORE = deepslateOre(SILVER)
+    val DEEPSLATE_SILVER_ORE = metalDeepslateOre(SILVER)
     val SILVER_BLOCK = storageBlock(SILVER)
 
     val INFUSCOLIUM_ORE = ore(INFUSCOLIUM)
-    val DEEPSLATE_INFUSCOLIUM_ORE = deepslateOre(INFUSCOLIUM)
+    val DEEPSLATE_INFUSCOLIUM_ORE = metalDeepslateOre(INFUSCOLIUM)
     val INFUSCOLIUM_BLOCK = storageBlock(INFUSCOLIUM)
 
     val MANGANESE_ORE = ore(MANGANESE)
-    val DEEPSLATE_MANGANESE_ORE = deepslateOre(MANGANESE)
+    val DEEPSLATE_MANGANESE_ORE = metalDeepslateOre(MANGANESE)
     val MANGANESE_BLOCK = storageBlock(MANGANESE)
 
     val ANGMALLEN_BLOCK = storageBlock(ANGMALLEN)
@@ -118,11 +136,11 @@ object AlloyanceBlocks {
     val IGNATIUS_BLOCK = storageBlock(IGNATIUS)
 
     val OURECLASE_ORE = ore(OURECLASE)
-    val DEEPSLATE_OURECLASE_ORE = deepslateOre(OURECLASE)
+    val DEEPSLATE_OURECLASE_ORE = metalDeepslateOre(OURECLASE)
     val OURECLASE_BLOCK = storageBlock(OURECLASE)
 
     val RUBRACIUM_ORE = ore(RUBRACIUM)
-    val DEEPSLATE_RUBRACIUM_ORE = deepslateOre(RUBRACIUM)
+    val DEEPSLATE_RUBRACIUM_ORE = metalDeepslateOre(RUBRACIUM)
     val RUBRACIUM_BLOCK = storageBlock(RUBRACIUM)
 
     val NETHER_SHADOW_IRON_ORE = netherOre(SHADOW_IRON)
@@ -143,11 +161,11 @@ object AlloyanceBlocks {
     val MIDASIUM_BLOCK = storageBlock(MIDASIUM)
 
     val ORICHALCUM_ORE = ore(ORICHALCUM)
-    val DEEPSLATE_ORICHALCUM_ORE = deepslateOre(ORICHALCUM)
+    val DEEPSLATE_ORICHALCUM_ORE = metalDeepslateOre(ORICHALCUM)
     val ORICHALCUM_BLOCK = storageBlock(ORICHALCUM)
 
     val PLATINUM_ORE = ore(PLATINUM)
-    val DEEPSLATE_PLATINUM_ORE = deepslateOre(PLATINUM)
+    val DEEPSLATE_PLATINUM_ORE = metalDeepslateOre(PLATINUM)
     val PLATINUM_BLOCK = storageBlock(PLATINUM)
 
     val NETHER_VULCANITE_ORE = netherOre(VULCANITE)
@@ -158,7 +176,7 @@ object AlloyanceBlocks {
     val AMORDRINE_BLOCK = storageBlock(AMORDRINE)
 
     val CARMOT_ORE = ore(CARMOT)
-    val DEEPSLATE_CARMOT_ORE = deepslateOre(CARMOT)
+    val DEEPSLATE_CARMOT_ORE = metalDeepslateOre(CARMOT)
     val CARMOT_BLOCK = storageBlock(CARMOT)
 
     val NETHER_LEMURITE_ORE = netherOre(LEMURITE)
@@ -183,11 +201,11 @@ object AlloyanceBlocks {
     val DESICHALKOS_BLOCK = storageBlock(DESICHALKOS)
 
     val ATLARUS_ORE = ore(ATLARUS)
-    val DEEPSLATE_ATLARUS_ORE = deepslateOre(ATLARUS)
+    val DEEPSLATE_ATLARUS_ORE = metalDeepslateOre(ATLARUS)
     val ATLARUS_BLOCK = storageBlock(ATLARUS)
 
     val ADAMANTINE_ORE = ore(ADAMANTINE)
-    val DEEPSLATE_ADAMANTINE_ORE = deepslateOre(ADAMANTINE)
+    val DEEPSLATE_ADAMANTINE_ORE = metalDeepslateOre(ADAMANTINE)
     val ADAMANTINE_BLOCK = storageBlock(ADAMANTINE)
 
     val NETHER_ALDUORITE_ORE = netherOre(ALDUORITE)
@@ -224,17 +242,16 @@ object AlloyanceBlocks {
         return ore
     }
 
-    private fun deepslateOre(metal: Metal): DeferredBlock<Block> {
-        val ore = BLOCKS.registerSimpleBlock("deepslate_${metal.id}_ore",
-            BlockBehaviour.Properties.of()
-                .mapColor(MapColor.DEEPSLATE)
-                .instrument(NoteBlockInstrument.BASEDRUM)
-                .requiresCorrectToolForDrops()
-                .sound(SoundType.DEEPSLATE)
-                .strength(4.5f, 3.0f)
-        )
+    private fun metalDeepslateOre(metal: Metal): DeferredBlock<Block> {
+        val ore = BLOCKS.registerSimpleBlock("deepslate_${metal.id}_ore", deepslateOreProps)
         DEEPSLATE_ORES[metal] = ore
         return ore
+    }
+
+    private fun deepslateOre(name: String): DeferredBlock<Block> {
+        return BLOCKS.register("deepslate_${name}_ore") { ->
+            DropExperienceBlock(UniformInt.of(2, 5), deepslateOreProps)
+        }
     }
 
     private fun endOre(metal: Metal): DeferredBlock<Block> {
@@ -268,7 +285,6 @@ object AlloyanceBlocks {
         val block = BLOCKS.registerSimpleBlock(
             "${metal.id}_block",
             BlockBehaviour.Properties.of()
-                // TODO custom map colors per metal
                 .mapColor(MapColor.METAL)
                 .sound(SoundType.METAL)
                 .instrument(NoteBlockInstrument.IRON_XYLOPHONE)

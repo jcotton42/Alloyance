@@ -5,8 +5,10 @@ import me.jcotton42.alloyance.registration.AlloyanceBlockTags
 import me.jcotton42.alloyance.registration.AlloyanceItemTags
 import me.jcotton42.alloyance.registration.AlloyanceItems
 import net.minecraft.core.HolderLookup
+import net.minecraft.core.registries.Registries
 import net.minecraft.data.PackOutput
 import net.minecraft.data.tags.ItemTagsProvider
+import net.minecraft.resources.ResourceKey
 import net.neoforged.neoforge.common.Tags
 import net.neoforged.neoforge.common.data.BlockTagsProvider
 import net.neoforged.neoforge.common.data.ExistingFileHelper
@@ -25,6 +27,10 @@ class AlloyanceItemTagsProvider(
     existingFileHelper
 ) {
     override fun addTags(provider: HolderLookup.Provider) {
+        tag(AlloyanceItemTags.DUSTS_SULFUR).add(AlloyanceItems.SULFUR.get())
+        tag(AlloyanceItemTags.ORES_SULFUR).add(AlloyanceItems.DEEPSLATE_SULFUR_ORE.get())
+        tag(AlloyanceItemTags.STORAGE_BLOCKS_SULFUR).add(AlloyanceItems.SULFUR_BLOCK.get())
+
         tag(AlloyanceItemTags.DUSTS_IRON).add(AlloyanceItems.IRON_DUST.get())
         tag(AlloyanceItemTags.DUSTS_GOLD).add(AlloyanceItems.GOLD_DUST.get())
         tag(AlloyanceItemTags.DUSTS_COPPER).add(AlloyanceItems.COPPER_DUST.get())
@@ -81,6 +87,8 @@ class AlloyanceItemTagsProvider(
             copy(blockTag, AlloyanceItemTags.ORES.getValue(metal))
         }
 
+        copy(AlloyanceBlockTags.ORES_SULFUR, AlloyanceItemTags.ORES_SULFUR)
+        copy(AlloyanceBlockTags.STORAGE_BLOCKS_SULFUR, AlloyanceItemTags.STORAGE_BLOCKS_SULFUR)
         copy(Tags.Blocks.STORAGE_BLOCKS, Tags.Items.STORAGE_BLOCKS)
         copy(Tags.Blocks.ORES, Tags.Items.ORES)
         copy(Tags.Blocks.ORES_IN_GROUND_STONE, Tags.Items.ORES_IN_GROUND_STONE)

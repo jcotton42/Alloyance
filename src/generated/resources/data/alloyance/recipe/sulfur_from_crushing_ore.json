@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "sulfur",
+  "ingredient": {
+    "tag": "c:ores/sulfur"
+  },
+  "result": {
+    "count": 4,
+    "id": "alloyance:sulfur"
+  }
+}

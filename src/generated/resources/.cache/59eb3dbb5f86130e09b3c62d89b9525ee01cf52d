@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T22:26:59.4483316	Loot Tables
+// 1.21.1	2024-10-05T16:26:11.646622	Loot Tables
 c900960f05fd9b83417973a0e30e13cc4abbdb90 data/alloyance/loot_table/blocks/adamantine_block.json
 8e7e56838177962741d8dd34e99516a9bc981054 data/alloyance/loot_table/blocks/adamantine_ore.json
 7a4d2b4ddcd5c8b78f386bcc5a049313cbc020aa data/alloyance/loot_table/blocks/alduorite_block.json
@@ -31,6 +31,7 @@ b539dc94601fa4e931f16e5a9542fd903c67c1f0 data/alloyance/loot_table/blocks/deepsl
 8e48254d80df669d78f06de749ca2a95cb6e32dd data/alloyance/loot_table/blocks/deepslate_prometheum_ore.json
 40ff5973e2bea135c9693da832bf4d5fe960cf5e data/alloyance/loot_table/blocks/deepslate_rubracium_ore.json
 d13fb44d986b37f3bd832263b7887a82fdb946e6 data/alloyance/loot_table/blocks/deepslate_silver_ore.json
+d1fc2e997e34f9335ac10874c43b6f2963352ff8 data/alloyance/loot_table/blocks/deepslate_sulfur_ore.json
 7caa72a8097f16415222e02899decd0eb86a3b25 data/alloyance/loot_table/blocks/deepslate_zinc_ore.json
 e83b646c7c7af3f668314fa1c11c2deb5a89a908 data/alloyance/loot_table/blocks/deep_iron_block.json
 65ca6733eb9af3e41b74f86bd35ac5f8ad1dc9f1 data/alloyance/loot_table/blocks/deep_iron_ore.json
@@ -85,6 +86,7 @@ e6765a6d8bebc7db940e6f6075261d24cf7c5839 data/alloyance/loot_table/blocks/shadow
 8b9b776b1008423d20b046f9e796dc62dc6a18ad data/alloyance/loot_table/blocks/silver_block.json
 ddf6a22386853a575fc967430e43be6b22338e30 data/alloyance/loot_table/blocks/silver_ore.json
 ad562ccd44763f3bc7f00e876172dcdf546ca282 data/alloyance/loot_table/blocks/steel_block.json
+88566a0859b8e36fa511df81c3184dc0df4144af data/alloyance/loot_table/blocks/sulfur_block.json
 897b768aa9c5e9074e3e80e54bc43a4f85960da8 data/alloyance/loot_table/blocks/tartarite_block.json
 d7e1dd86184c33a50e8344c96e25b97f6cad75fd data/alloyance/loot_table/blocks/tin_block.json
 997e8796cd5f357a034ee34feffb3667e55c9803 data/alloyance/loot_table/blocks/tin_ore.json

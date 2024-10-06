@@ -18,6 +18,15 @@ class AlloyanceEnglishLanguageProvider(
     "en_us"
 ) {
     override fun addTranslations() {
+        add(AlloyanceBlocks.DEEPSLATE_SULFUR_ORE.get(), "Deepslate Sulfur Ore")
+        add(AlloyanceBlocks.SULFUR_BLOCK.get(), "Block of Sulfur")
+        add(AlloyanceItems.SULFUR.get(), "Sulfur")
+        add(AlloyanceBlockTags.ORES_SULFUR, "Sulfur Ores")
+        add(AlloyanceBlockTags.STORAGE_BLOCKS_SULFUR, "Sulfur Storage Blocks")
+        add(AlloyanceItemTags.DUSTS_SULFUR, "Sulfur Dusts")
+        add(AlloyanceItemTags.ORES_SULFUR, "Sulfur Ores")
+        add(AlloyanceItemTags.STORAGE_BLOCKS_SULFUR, "Sulfur Storage Blocks")
+
         // TODO clean this up and categorize
         addTab(AlloyanceCreativeTabs.BLOCKS, "Alloyance Blocks")
         addTab(AlloyanceCreativeTabs.DUSTS, "Alloyance Dusts")

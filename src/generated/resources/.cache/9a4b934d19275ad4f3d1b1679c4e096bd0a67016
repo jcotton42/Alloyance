@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T22:26:59.4633874	Item Models: alloyance
+// 1.21.1	2024-10-05T22:27:12.0327087	Item Models: alloyance
 6f3701e75c5cc7421d5146a262eae52e34592565 assets/alloyance/models/item/adamantine_block.json
 4b1bfbc8cf265a0a7a6220be35ffec627f9d35c2 assets/alloyance/models/item/adamantine_dust.json
 61a3f9dd92fc288e7a15147d5b7db4165b8c77b0 assets/alloyance/models/item/adamantine_ingot.json
@@ -69,6 +69,7 @@ cb6549731391064d2bca815323043d619545a601 assets/alloyance/models/item/deepslate_
 b98e1368967fea5c54f6239efcf34e74bc5dc472 assets/alloyance/models/item/deepslate_prometheum_ore.json
 150b16204e942bdc980e2cc9231febc06ce196d0 assets/alloyance/models/item/deepslate_rubracium_ore.json
 f54e9f2a3e6e52b6eaa168f0a17d532ce6a15647 assets/alloyance/models/item/deepslate_silver_ore.json
+628b8208dbb1624b5a169e5fd32b25f1830c2dc6 assets/alloyance/models/item/deepslate_sulfur_ore.json
 2f745cfff636b10445d4b30749957d12592fc576 assets/alloyance/models/item/deepslate_zinc_ore.json
 3d476e645ab5fad8076d0828910b3be75f6f55a2 assets/alloyance/models/item/deep_iron_block.json
 8875e5f698c3c4dc69d5837ddc0bd0e625a1f0d1 assets/alloyance/models/item/deep_iron_dust.json
@@ -246,6 +247,8 @@ aa05ce0d3794a5dca367dd2c15adda9ef496b384 assets/alloyance/models/item/steel_bloc
 a733ca3f9f53981749d9dd1b91b9ef0f7c03f263 assets/alloyance/models/item/steel_dust.json
 3336ef295f7a286fd9aa24596deb1f9c6c5b19c4 assets/alloyance/models/item/steel_ingot.json
 6bb5f90180c1829ea161ecfa2fb9ab8544c6a00c assets/alloyance/models/item/steel_nugget.json
+e548dcdd029e8aade441278537709f481d5f23ca assets/alloyance/models/item/sulfur.json
+0941340b6e0ae0bee631e4636c2ee1ea3990f06c assets/alloyance/models/item/sulfur_block.json
 cfa0004d4e03015a073c23039d8d29cfad6896c7 assets/alloyance/models/item/tartarite_block.json
 9c71753fc5a652f24c590f1091bba204792e7bd1 assets/alloyance/models/item/tartarite_dust.json
 d03fd6a298e539480e3d51ae1160f4dc6bc11e19 assets/alloyance/models/item/tartarite_ingot.json
