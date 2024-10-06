@@ -1,5 +1,8 @@
 {
   "values": [
+    "alloyance:deepslate_phosphorite_ore",
+    "alloyance:deepslate_potash_ore",
+    "alloyance:deepslate_sulfur_ore",
     "alloyance:deepslate_deep_iron_ore",
     "alloyance:deepslate_prometheum_ore",
     "alloyance:deepslate_zinc_ore",

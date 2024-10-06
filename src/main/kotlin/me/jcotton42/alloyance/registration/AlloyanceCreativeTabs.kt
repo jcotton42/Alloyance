@@ -41,6 +41,7 @@ object AlloyanceCreativeTabs {
                 Metal.entries.forEach { metal ->
                     output.accept(AlloyanceItems.DUSTS.getValue(metal))
                 }
+                output.accept(AlloyanceItems.PHOSPHORUS)
                 output.accept(AlloyanceItems.POTASH)
                 output.accept(AlloyanceItems.SULFUR)
                 output.accept(AlloyanceItems.THERMITE_DUST)
@@ -107,6 +108,8 @@ object AlloyanceCreativeTabs {
                     AlloyanceBlocks.END_ORES[metal]?.let(output::accept)
                     AlloyanceBlocks.NETHER_ORES[metal]?.let(output::accept)
                 }
+                output.accept(AlloyanceItems.PHOSPHORITE_ORE)
+                output.accept(AlloyanceItems.DEEPSLATE_PHOSPHORITE_ORE)
                 output.accept(AlloyanceItems.POTASH_ORE)
                 output.accept(AlloyanceItems.DEEPSLATE_POTASH_ORE)
                 output.accept(AlloyanceItems.DEEPSLATE_SULFUR_ORE)

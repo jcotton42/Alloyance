@@ -5,10 +5,8 @@ import me.jcotton42.alloyance.registration.AlloyanceBlockTags
 import me.jcotton42.alloyance.registration.AlloyanceItemTags
 import me.jcotton42.alloyance.registration.AlloyanceItems
 import net.minecraft.core.HolderLookup
-import net.minecraft.core.registries.Registries
 import net.minecraft.data.PackOutput
 import net.minecraft.data.tags.ItemTagsProvider
-import net.minecraft.resources.ResourceKey
 import net.neoforged.neoforge.common.Tags
 import net.neoforged.neoforge.common.data.BlockTagsProvider
 import net.neoforged.neoforge.common.data.ExistingFileHelper
@@ -27,6 +25,10 @@ class AlloyanceItemTagsProvider(
     existingFileHelper
 ) {
     override fun addTags(provider: HolderLookup.Provider) {
+        tag(AlloyanceItemTags.DUSTS_PHOSPHOROUS).add(AlloyanceItems.PHOSPHORUS.get())
+        tag(AlloyanceItemTags.ORES_PHOSPHORITE).add(AlloyanceItems.PHOSPHORITE_ORE.get(), AlloyanceItems.DEEPSLATE_PHOSPHORITE_ORE.get())
+        copy(AlloyanceBlockTags.ORES_PHOSPHORITE, AlloyanceItemTags.ORES_PHOSPHORITE)
+
         tag(AlloyanceItemTags.DUSTS_POTASH).add(AlloyanceItems.POTASH.get())
         tag(AlloyanceItemTags.ORES_POTASH).add(AlloyanceItems.POTASH_ORE.get(), AlloyanceItems.DEEPSLATE_POTASH_ORE.get())
         tag(AlloyanceItemTags.STORAGE_BLOCKS_POTASH).add(AlloyanceItems.POTASH_BLOCK.get())

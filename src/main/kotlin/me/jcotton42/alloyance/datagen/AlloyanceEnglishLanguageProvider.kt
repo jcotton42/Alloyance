@@ -18,6 +18,13 @@ class AlloyanceEnglishLanguageProvider(
     "en_us"
 ) {
     override fun addTranslations() {
+        add(AlloyanceBlocks.PHOSPHORITE_ORE.get(), "Phosphorite Ore")
+        add(AlloyanceBlocks.DEEPSLATE_PHOSPHORITE_ORE.get(), "Deepslate Phosphorite Ore")
+        add(AlloyanceItems.PHOSPHORUS.get(), "Phosphorous")
+        add(AlloyanceBlockTags.ORES_PHOSPHORITE, "Phosphorite Ores")
+        add(AlloyanceItemTags.DUSTS_PHOSPHOROUS, "Phosphorous Dusts")
+        add(AlloyanceItemTags.ORES_PHOSPHORITE, "Phosphorite Ores")
+
         add(AlloyanceBlocks.POTASH_ORE.get(), "Potash Ore")
         add(AlloyanceBlocks.DEEPSLATE_POTASH_ORE.get(), "Deepslate Potash Ore")
         add(AlloyanceBlocks.POTASH_BLOCK.get(), "Block of Potash")

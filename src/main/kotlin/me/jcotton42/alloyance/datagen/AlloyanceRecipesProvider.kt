@@ -20,11 +20,13 @@ import java.util.concurrent.CompletableFuture
 
 class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFuture<HolderLookup.Provider>): RecipeProvider(output, lookupProvider) {
     override fun buildRecipes(output: RecipeOutput) {
+        crushOre(output, AlloyanceItems.PHOSPHORUS, 6, AlloyanceItemTags.ORES_PHOSPHORITE)
+
         nineBlockStorageRecipe(output, AlloyanceItems.POTASH, AlloyanceItems.POTASH_BLOCK)
-        crushOre(output, AlloyanceItems.POTASH, 3, AlloyanceItemTags.DUSTS_POTASH)
+        crushOre(output, AlloyanceItems.POTASH, 6, AlloyanceItemTags.ORES_POTASH)
 
         nineBlockStorageRecipe(output, AlloyanceItems.SULFUR, AlloyanceItems.SULFUR_BLOCK)
-        crushOre(output, AlloyanceItems.SULFUR, 4, AlloyanceItemTags.ORES_SULFUR)
+        crushOre(output, AlloyanceItems.SULFUR, 6, AlloyanceItemTags.ORES_SULFUR)
 
         addVanillaCompatRecipes(output)
 
@@ -52,10 +54,6 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
         addAlloy(output, KRIK, 2, 1.25f, LUTETIUM, 1, OSMIUM, 1)
         addAlloy(output, TARTARITE, 1, 1.5f, ADAMANTINE, 1, ATLARUS, 1)
         addAlloy(output, ETHERIUM, 2, 1.25f, SANGUINITE, 1, ALDUORITE, 1)
-    }
-
-    private fun addNonMetalOre(output: RecipeOutput) {
-
     }
 
     private fun nineBlockStorageRecipe(output: RecipeOutput, unpacked: ItemLike, packed: ItemLike) {

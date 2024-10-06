@@ -13,6 +13,8 @@ object AlloyanceBlockTags {
 
     val ORES_IN_GROUND_END_STONE: TagKey<Block> = c("ores_in_ground/end_stone")
 
+    val ORES_PHOSPHORITE: TagKey<Block> = c("ores/phosphorite")
+
     val STORAGE_BLOCKS_POTASH: TagKey<Block> = c("storage_blocks/potash")
     val ORES_POTASH: TagKey<Block> = c("ores/potash")
 

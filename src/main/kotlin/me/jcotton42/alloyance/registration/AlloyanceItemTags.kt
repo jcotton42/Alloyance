@@ -20,6 +20,9 @@ object AlloyanceItemTags {
     val ALLOYABLES_ROOT: TagKey<Item> = alloyance("alloyables")
     val ORES_IN_GROUND_END_STONE: TagKey<Item> = c("ores_in_ground/end_stone")
 
+    val DUSTS_PHOSPHOROUS: TagKey<Item> = c("dusts/phosphorous")
+    val ORES_PHOSPHORITE: TagKey<Item> = c("ores/phosphorite")
+
     val DUSTS_POTASH: TagKey<Item> = c("dusts/potash")
     val STORAGE_BLOCKS_POTASH: TagKey<Item> = c("storage_blocks/potash")
     val ORES_POTASH: TagKey<Item> = c("ores/potash")

@@ -12,6 +12,9 @@ class AlloyanceBlockStatesProvider(output: PackOutput, existingFileHelper: Exist
     existingFileHelper
 ) {
     override fun registerStatesAndModels() {
+        simpleBlock(AlloyanceBlocks.PHOSPHORITE_ORE.get())
+        simpleBlock(AlloyanceBlocks.DEEPSLATE_PHOSPHORITE_ORE.get())
+
         simpleBlock(AlloyanceBlocks.POTASH_ORE.get())
         simpleBlock(AlloyanceBlocks.DEEPSLATE_POTASH_ORE.get())
         simpleBlock(AlloyanceBlocks.POTASH_BLOCK.get())

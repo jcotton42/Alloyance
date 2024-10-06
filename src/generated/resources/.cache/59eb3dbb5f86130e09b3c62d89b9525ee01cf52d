@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-05T23:36:49.384619	Loot Tables
+// 1.21.1	2024-10-06T00:30:03.2671082	Loot Tables
 c900960f05fd9b83417973a0e30e13cc4abbdb90 data/alloyance/loot_table/blocks/adamantine_block.json
 8e7e56838177962741d8dd34e99516a9bc981054 data/alloyance/loot_table/blocks/adamantine_ore.json
 7a4d2b4ddcd5c8b78f386bcc5a049313cbc020aa data/alloyance/loot_table/blocks/alduorite_block.json
@@ -27,6 +27,7 @@ be4ca5b1c44889cfa9bcb5b013566625972b86a9 data/alloyance/loot_table/blocks/deepsl
 4301b8031bc3ae7aac68d15c6584b41da035a4c7 data/alloyance/loot_table/blocks/deepslate_orichalcum_ore.json
 b539dc94601fa4e931f16e5a9542fd903c67c1f0 data/alloyance/loot_table/blocks/deepslate_osmium_ore.json
 2f893b2a1f3d5b462e23eb832d3a89dd3a33a5b1 data/alloyance/loot_table/blocks/deepslate_oureclase_ore.json
+97c9fed57af784173f227dad31c3f867987aa89f data/alloyance/loot_table/blocks/deepslate_phosphorite_ore.json
 86bf081bd9dd96dc393db1a6d94ff592496b7be7 data/alloyance/loot_table/blocks/deepslate_platinum_ore.json
 1c04242b6db094d2b02dfa60b7734af0be7edef8 data/alloyance/loot_table/blocks/deepslate_potash_ore.json
 8e48254d80df669d78f06de749ca2a95cb6e32dd data/alloyance/loot_table/blocks/deepslate_prometheum_ore.json
@@ -74,6 +75,7 @@ fcce035ece889c875d4eb8b40542a34bb5fff28d data/alloyance/loot_table/blocks/nether
 afdf364c1c272e5befd0be061f7e9c86b2cd6e05 data/alloyance/loot_table/blocks/osmium_block.json
 2e804d59d99db3cca0b2d3ff9312f68c5be3c278 data/alloyance/loot_table/blocks/oureclase_block.json
 14fb194a93f15e3aad8bc3320dd3d4469b53b5b1 data/alloyance/loot_table/blocks/oureclase_ore.json
+65ac01bcc41962196fb1edf98204bbde3a9b62e9 data/alloyance/loot_table/blocks/phosphorite_ore.json
 419960f45ee8a4b5de6c92ac371ab21a89593bcb data/alloyance/loot_table/blocks/platinum_block.json
 90ff3b5b42486e41d8005e6f836e224d2a81de88 data/alloyance/loot_table/blocks/platinum_ore.json
 1b5972aa57b20b27b6161ce021fe8b550ba0eae1 data/alloyance/loot_table/blocks/potash_block.json

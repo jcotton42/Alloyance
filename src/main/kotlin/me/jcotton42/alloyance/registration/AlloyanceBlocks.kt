@@ -80,6 +80,9 @@ object AlloyanceBlocks {
         BlockEntityType.Builder.of(::CrusherBlockEntity, CRUSHER.get()).build(null)
     }
 
+    val PHOSPHORITE_ORE = ore("phosphorite")
+    val DEEPSLATE_PHOSPHORITE_ORE = deepslateOre("phosphorite")
+
     val POTASH_ORE = ore("potash")
     val DEEPSLATE_POTASH_ORE = deepslateOre("potash")
     val POTASH_BLOCK = BLOCKS.registerSimpleBlock("potash_block", BlockBehaviour.Properties.of()
