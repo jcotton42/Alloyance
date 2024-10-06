@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-05T22:27:12.0327087	Item Models: alloyance
+// 1.21.1	2024-10-05T23:29:58.0177123	Item Models: alloyance
 6f3701e75c5cc7421d5146a262eae52e34592565 assets/alloyance/models/item/adamantine_block.json
 4b1bfbc8cf265a0a7a6220be35ffec627f9d35c2 assets/alloyance/models/item/adamantine_dust.json
 61a3f9dd92fc288e7a15147d5b7db4165b8c77b0 assets/alloyance/models/item/adamantine_ingot.json
@@ -66,6 +66,7 @@ e1cad102fde35956f1932c4d52219803f643d5a3 assets/alloyance/models/item/deepslate_
 1400859d2d9829efeaf6d7cfa0007937ceb0a0d8 assets/alloyance/models/item/deepslate_osmium_ore.json
 c1cbfa0ff96d2b322f5cd2ad0d84925886b3ca90 assets/alloyance/models/item/deepslate_oureclase_ore.json
 cb6549731391064d2bca815323043d619545a601 assets/alloyance/models/item/deepslate_platinum_ore.json
+4a2f3860342bef13d6e8ef95cfd9da26fadd06c2 assets/alloyance/models/item/deepslate_potash_ore.json
 b98e1368967fea5c54f6239efcf34e74bc5dc472 assets/alloyance/models/item/deepslate_prometheum_ore.json
 150b16204e942bdc980e2cc9231febc06ce196d0 assets/alloyance/models/item/deepslate_rubracium_ore.json
 f54e9f2a3e6e52b6eaa168f0a17d532ce6a15647 assets/alloyance/models/item/deepslate_silver_ore.json
@@ -182,6 +183,9 @@ b714e70644bc80b3c1a30c45e03807a4fd9e0623 assets/alloyance/models/item/platinum_d
 32fc69d8c7e67c3364a60df9988ec645a3e9a32c assets/alloyance/models/item/platinum_ingot.json
 73c4e5328981b3a89eb05f76a64a77015e72460f assets/alloyance/models/item/platinum_nugget.json
 528de8975642fadeabd2624f9760ffe175c3f980 assets/alloyance/models/item/platinum_ore.json
+89b211a7f3016636027b69e9152b09765b0aa0fe assets/alloyance/models/item/potash.json
+6771f9c8035e41e1bf37526a44c3962388307ddb assets/alloyance/models/item/potash_block.json
+a58cbefb8ee41d0846189997d527f8be427aaeed assets/alloyance/models/item/potash_ore.json
 3de63934ecea52817379801ed035ef255a0529da assets/alloyance/models/item/prometheum_block.json
 4ba2ea9e3b9c0be48f97f495f457717448d210f3 assets/alloyance/models/item/prometheum_dust.json
 89d323675d6aa34753f77167f1c2af8fc5bcc8cb assets/alloyance/models/item/prometheum_ingot.json

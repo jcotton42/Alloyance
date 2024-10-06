@@ -26,6 +26,12 @@ import net.neoforged.neoforge.registries.DeferredBlock
 import net.neoforged.neoforge.registries.DeferredRegister
 import java.util.function.ToIntFunction
 
+private val oreProps = BlockBehaviour.Properties.of()
+    .mapColor(MapColor.STONE)
+    .instrument(NoteBlockInstrument.BASEDRUM)
+    .requiresCorrectToolForDrops()
+    .sound(SoundType.STONE)
+    .strength(3.0f, 3.0f)
 private val deepslateOreProps = BlockBehaviour.Properties.of()
     .mapColor(MapColor.DEEPSLATE)
     .instrument(NoteBlockInstrument.BASEDRUM)
@@ -74,6 +80,16 @@ object AlloyanceBlocks {
         BlockEntityType.Builder.of(::CrusherBlockEntity, CRUSHER.get()).build(null)
     }
 
+    val POTASH_ORE = ore("potash")
+    val DEEPSLATE_POTASH_ORE = deepslateOre("potash")
+    val POTASH_BLOCK = BLOCKS.registerSimpleBlock("potash_block", BlockBehaviour.Properties.of()
+        .mapColor(MapColor.COLOR_RED)
+        .sound(SoundType.STONE)
+        .instrument(NoteBlockInstrument.BASEDRUM)
+        .strength(3f, 10f)
+        .requiresCorrectToolForDrops()
+    )
+
     val DEEPSLATE_SULFUR_ORE = deepslateOre("sulfur")
     val SULFUR_BLOCK = BLOCKS.registerSimpleBlock("sulfur_block", BlockBehaviour.Properties.of()
         .mapColor(MapColor.COLOR_LIGHT_GREEN)
@@ -83,19 +99,19 @@ object AlloyanceBlocks {
         .requiresCorrectToolForDrops()
     )
 
-    val DEEP_IRON_ORE = ore(DEEP_IRON)
+    val DEEP_IRON_ORE = metalOre(DEEP_IRON)
     val DEEPSLATE_DEEP_IRON_ORE = metalDeepslateOre(DEEP_IRON)
     val DEEP_IRON_BLOCK = storageBlock(DEEP_IRON)
 
-    val PROMETHEUM_ORE = ore(PROMETHEUM)
+    val PROMETHEUM_ORE = metalOre(PROMETHEUM)
     val DEEPSLATE_PROMETHEUM_ORE = metalDeepslateOre(PROMETHEUM)
     val PROMETHEUM_BLOCK = storageBlock(PROMETHEUM)
 
-    val ZINC_ORE = ore(ZINC)
+    val ZINC_ORE = metalOre(ZINC)
     val DEEPSLATE_ZINC_ORE = metalDeepslateOre(ZINC)
     val ZINC_BLOCK = storageBlock(ZINC)
 
-    val TIN_ORE = ore(TIN)
+    val TIN_ORE = metalOre(TIN)
     val TIN_BLOCK = storageBlock(TIN)
 
     val BRONZE_BLOCK = storageBlock(BRONZE)
@@ -107,15 +123,15 @@ object AlloyanceBlocks {
     val DEEPSLATE_OSMIUM_ORE = metalDeepslateOre(OSMIUM)
     val OSMIUM_BLOCK = storageBlock(OSMIUM)
 
-    val SILVER_ORE = ore(SILVER)
+    val SILVER_ORE = metalOre(SILVER)
     val DEEPSLATE_SILVER_ORE = metalDeepslateOre(SILVER)
     val SILVER_BLOCK = storageBlock(SILVER)
 
-    val INFUSCOLIUM_ORE = ore(INFUSCOLIUM)
+    val INFUSCOLIUM_ORE = metalOre(INFUSCOLIUM)
     val DEEPSLATE_INFUSCOLIUM_ORE = metalDeepslateOre(INFUSCOLIUM)
     val INFUSCOLIUM_BLOCK = storageBlock(INFUSCOLIUM)
 
-    val MANGANESE_ORE = ore(MANGANESE)
+    val MANGANESE_ORE = metalOre(MANGANESE)
     val DEEPSLATE_MANGANESE_ORE = metalDeepslateOre(MANGANESE)
     val MANGANESE_BLOCK = storageBlock(MANGANESE)
 
@@ -129,17 +145,17 @@ object AlloyanceBlocks {
 
     val ELECTRUM_BLOCK = storageBlock(ELECTRUM)
 
-    val ASTRAL_SILVER_ORE = ore(ASTRAL_SILVER)
+    val ASTRAL_SILVER_ORE = metalOre(ASTRAL_SILVER)
     val ASTRAL_SILVER_BLOCK = storageBlock(ASTRAL_SILVER)
 
     val NETHER_IGNATIUS_ORE = netherOre(IGNATIUS)
     val IGNATIUS_BLOCK = storageBlock(IGNATIUS)
 
-    val OURECLASE_ORE = ore(OURECLASE)
+    val OURECLASE_ORE = metalOre(OURECLASE)
     val DEEPSLATE_OURECLASE_ORE = metalDeepslateOre(OURECLASE)
     val OURECLASE_BLOCK = storageBlock(OURECLASE)
 
-    val RUBRACIUM_ORE = ore(RUBRACIUM)
+    val RUBRACIUM_ORE = metalOre(RUBRACIUM)
     val DEEPSLATE_RUBRACIUM_ORE = metalDeepslateOre(RUBRACIUM)
     val RUBRACIUM_BLOCK = storageBlock(RUBRACIUM)
 
@@ -160,11 +176,11 @@ object AlloyanceBlocks {
     val NETHER_MIDASIUM_ORE = netherOre(MIDASIUM)
     val MIDASIUM_BLOCK = storageBlock(MIDASIUM)
 
-    val ORICHALCUM_ORE = ore(ORICHALCUM)
+    val ORICHALCUM_ORE = metalOre(ORICHALCUM)
     val DEEPSLATE_ORICHALCUM_ORE = metalDeepslateOre(ORICHALCUM)
     val ORICHALCUM_BLOCK = storageBlock(ORICHALCUM)
 
-    val PLATINUM_ORE = ore(PLATINUM)
+    val PLATINUM_ORE = metalOre(PLATINUM)
     val DEEPSLATE_PLATINUM_ORE = metalDeepslateOre(PLATINUM)
     val PLATINUM_BLOCK = storageBlock(PLATINUM)
 
@@ -175,7 +191,7 @@ object AlloyanceBlocks {
 
     val AMORDRINE_BLOCK = storageBlock(AMORDRINE)
 
-    val CARMOT_ORE = ore(CARMOT)
+    val CARMOT_ORE = metalOre(CARMOT)
     val DEEPSLATE_CARMOT_ORE = metalDeepslateOre(CARMOT)
     val CARMOT_BLOCK = storageBlock(CARMOT)
 
@@ -185,7 +201,7 @@ object AlloyanceBlocks {
     val END_MEUTOITE_ORE = endOre(MEUTOITE)
     val MEUTOITE_BLOCK = storageBlock(MEUTOITE)
 
-    val MITHRIL_ORE = ore(MITHRIL)
+    val MITHRIL_ORE = metalOre(MITHRIL)
     val MITHRIL_BLOCK = storageBlock(MITHRIL)
 
     val NETHER_SANGUINITE_ORE = netherOre(SANGUINITE)
@@ -200,11 +216,11 @@ object AlloyanceBlocks {
 
     val DESICHALKOS_BLOCK = storageBlock(DESICHALKOS)
 
-    val ATLARUS_ORE = ore(ATLARUS)
+    val ATLARUS_ORE = metalOre(ATLARUS)
     val DEEPSLATE_ATLARUS_ORE = metalDeepslateOre(ATLARUS)
     val ATLARUS_BLOCK = storageBlock(ATLARUS)
 
-    val ADAMANTINE_ORE = ore(ADAMANTINE)
+    val ADAMANTINE_ORE = metalOre(ADAMANTINE)
     val DEEPSLATE_ADAMANTINE_ORE = metalDeepslateOre(ADAMANTINE)
     val ADAMANTINE_BLOCK = storageBlock(ADAMANTINE)
 
@@ -228,18 +244,16 @@ object AlloyanceBlocks {
         BLOCK_ENTITIES.register(bus)
     }
 
-    private fun ore(metal: Metal): DeferredBlock<Block> {
-        val ore = BLOCKS.registerSimpleBlock(
-            "${metal.id}_ore",
-            BlockBehaviour.Properties.of()
-                .mapColor(MapColor.STONE)
-                .instrument(NoteBlockInstrument.BASEDRUM)
-                .requiresCorrectToolForDrops()
-                .sound(SoundType.STONE)
-                .strength(3.0f, 3.0f)
-        )
+    private fun metalOre(metal: Metal): DeferredBlock<Block> {
+        val ore = BLOCKS.registerSimpleBlock("${metal.id}_ore", oreProps)
         ORES[metal] = ore
         return ore
+    }
+
+    private fun ore(name: String): DeferredBlock<Block> {
+        return BLOCKS.register("${name}_ore") { ->
+            DropExperienceBlock(UniformInt.of(2, 5), oreProps)
+        }
     }
 
     private fun metalDeepslateOre(metal: Metal): DeferredBlock<Block> {

@@ -26,15 +26,25 @@ class AlloyanceBlockTagsProvider(
     existingFileHelper
 ) {
     override fun addTags(provider: HolderLookup.Provider) {
+        tag(AlloyanceBlockTags.ORES_POTASH).add(AlloyanceBlocks.POTASH_ORE.get(), AlloyanceBlocks.DEEPSLATE_POTASH_ORE.get())
+        tag(AlloyanceBlockTags.STORAGE_BLOCKS_POTASH).add(AlloyanceBlocks.POTASH_BLOCK.get())
+
         tag(AlloyanceBlockTags.ORES_SULFUR).add(AlloyanceBlocks.DEEPSLATE_SULFUR_ORE.get())
         tag(AlloyanceBlockTags.STORAGE_BLOCKS_SULFUR).add(AlloyanceBlocks.SULFUR_BLOCK.get())
+
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
             AlloyanceBlocks.ALLOYER.get(),
             AlloyanceBlocks.CRUSHER.get(),
+            AlloyanceBlocks.POTASH_ORE.get(),
+            AlloyanceBlocks.DEEPSLATE_POTASH_ORE.get(),
+            AlloyanceBlocks.POTASH_BLOCK.get(),
             AlloyanceBlocks.DEEPSLATE_SULFUR_ORE.get(),
             AlloyanceBlocks.SULFUR_BLOCK.get(),
         )
         tag(BlockTags.NEEDS_STONE_TOOL).add(
+            AlloyanceBlocks.POTASH_ORE.get(),
+            AlloyanceBlocks.DEEPSLATE_POTASH_ORE.get(),
+            AlloyanceBlocks.POTASH_BLOCK.get(),
             AlloyanceBlocks.DEEPSLATE_SULFUR_ORE.get(),
             AlloyanceBlocks.SULFUR_BLOCK.get(),
         )
@@ -43,9 +53,11 @@ class AlloyanceBlockTagsProvider(
             AlloyanceBlocks.CRUSHER.get(),
         )
         tag(Tags.Blocks.STORAGE_BLOCKS).addTags(
+            AlloyanceBlockTags.STORAGE_BLOCKS_POTASH,
             AlloyanceBlockTags.STORAGE_BLOCKS_SULFUR,
         )
         tag(Tags.Blocks.ORES).addTags(
+            AlloyanceBlockTags.ORES_POTASH,
             AlloyanceBlockTags.ORES_SULFUR,
         )
         // workaround for https://github.com/neoforged/NeoForge/issues/1571

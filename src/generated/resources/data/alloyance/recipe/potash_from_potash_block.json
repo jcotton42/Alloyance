@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "potash",
+  "ingredients": [
+    {
+      "item": "alloyance:potash_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "alloyance:potash"
+  }
+}

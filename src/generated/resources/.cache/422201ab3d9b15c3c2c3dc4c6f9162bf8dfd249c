@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-05T22:23:18.9325625	Tags for minecraft:item mod id alloyance
+// 1.21.1	2024-10-05T23:29:58.0222413	Tags for minecraft:item mod id alloyance
 e0ef9489be0c2c56800d4f3d788924d486fe9288 data/alloyance/tags/item/alloyables.json
 d265905cd36b5fa147f634f382472decc42a452f data/alloyance/tags/item/alloyables/adamantine.json
 f2a29a8939f26c8a90782cbe64e69c890179b939 data/alloyance/tags/item/alloyables/alduorite.json
@@ -90,6 +90,7 @@ a274d268b707d995e44c1e400ef560ccc22e20f9 data/c/tags/item/dusts/orichalcum.json
 7d5b24495b7771ac5434e73603c7efb7110192a0 data/c/tags/item/dusts/osmium.json
 bf0ab37edffc8e50042c75d2106821b53b168d32 data/c/tags/item/dusts/oureclase.json
 d84c790b78841fd34e7dca8d2e50aa58254a1af8 data/c/tags/item/dusts/platinum.json
+b7235df35c4f3ce988f5c375ed636931a200f022 data/c/tags/item/dusts/potash.json
 8d65f8f2a3350ee219c8563f968acd87a47b2e39 data/c/tags/item/dusts/prometheum.json
 62a3457f7bfeb8a08641fb8cc8f33b6ffd62c9c8 data/c/tags/item/dusts/quicksilver.json
 6942d39348df114687dbbd2ea152f35eeb333ce2 data/c/tags/item/dusts/rubracium.json
@@ -202,7 +203,7 @@ a2633c778b43458bac53a888c52aaec0decf9388 data/c/tags/item/nuggets/tartarite.json
 7e7990f9246227ba6596081a6b1fb47e89008f11 data/c/tags/item/nuggets/vulcanite.json
 562bd56eeca5778df150732cfc07b81aea0843dd data/c/tags/item/nuggets/vyroxeres.json
 74dd75e5f736dce3240bcce26f0ccf4890de7cbc data/c/tags/item/nuggets/zinc.json
-e71dba0fb4e45d814e42a968938806e12ef08eb8 data/c/tags/item/ores.json
+10af58e81b3ca8ec7b7d7b8be882bfb9efd96ac9 data/c/tags/item/ores.json
 eee77fbdd60d030b8a05c26a6b886775e1fbaa94 data/c/tags/item/ores/adamantine.json
 48b6fd0e8a94232da539b2d3efa9e7c5060c5ec6 data/c/tags/item/ores/alduorite.json
 b0b453b05b70b674bcd6d479954b4063df9a6945 data/c/tags/item/ores/astral_silver.json
@@ -224,6 +225,7 @@ bed510ba65568a68013580ad65f7fc087b320649 data/c/tags/item/ores/midasium.json
 575815da68c26150b0582acb33bef4122723d33b data/c/tags/item/ores/osmium.json
 dbd0f3bb8b9b62211b78b785ccb78e980eb3bb3f data/c/tags/item/ores/oureclase.json
 61dff438b260336bc8cbec8d980afcdeb8307299 data/c/tags/item/ores/platinum.json
+4452fed930cf0fca0e432550bdd6b76eeac50cfc data/c/tags/item/ores/potash.json
 538157290f51d545311567f0cefb785a4b3e1842 data/c/tags/item/ores/prometheum.json
 0827241a8c8683422ede89f162caf55079b0437b data/c/tags/item/ores/rubracium.json
 4cda00645712267c8598a21472960ecf2aa08fff data/c/tags/item/ores/sanguinite.json
@@ -269,7 +271,7 @@ fc6448189ba34be78d422411fe2dedb3913a9849 data/c/tags/item/raw_materials/promethe
 7927393ae096233440d37fbdedf84910605ea761 data/c/tags/item/raw_materials/vulcanite.json
 75f56540883ddd13fa3a2017bce6d8647afcf691 data/c/tags/item/raw_materials/vyroxeres.json
 49ba2295d2bb6e79b49ce95fa10f56418a5955d6 data/c/tags/item/raw_materials/zinc.json
-2266a7d06fc77a1fb9ed735366db74ec9697556d data/c/tags/item/storage_blocks.json
+dd5018d5beab0f68b7f35b4f4d9d803ae575f17e data/c/tags/item/storage_blocks.json
 e1be8f7aa9f785e82a8cb87ad2a4da780f1d288a data/c/tags/item/storage_blocks/adamantine.json
 5c95cccd13bb0ba463f366f010b8342b27d6bb97 data/c/tags/item/storage_blocks/alduorite.json
 6b8487afd922d222ded413fc5159e17ea84adcea data/c/tags/item/storage_blocks/amordrine.json
@@ -305,6 +307,7 @@ bbbade344ccf613c29a548809edcdd8315229a9b data/c/tags/item/storage_blocks/orichal
 7d9c5bd1d44dfbd432c1366cda8c67dce2ae72e5 data/c/tags/item/storage_blocks/osmium.json
 f464b3cc1f706e2695cbf0f2336327e99ed6fc9c data/c/tags/item/storage_blocks/oureclase.json
 798929df46d307494d901852c465ebb0300ae707 data/c/tags/item/storage_blocks/platinum.json
+22e7b7fa35639246806d50e34139b725ea703a9e data/c/tags/item/storage_blocks/potash.json
 f6747fa94156223e85cc85c8446fd91731f53886 data/c/tags/item/storage_blocks/prometheum.json
 8e04c2ec11c530c86fe2a056ad61564010bc3a5c data/c/tags/item/storage_blocks/quicksilver.json
 a916a0dd4b16bfdc996d5753a9c5d076d9784572 data/c/tags/item/storage_blocks/rubracium.json

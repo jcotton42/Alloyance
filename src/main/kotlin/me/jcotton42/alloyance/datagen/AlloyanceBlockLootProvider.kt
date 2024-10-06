@@ -23,6 +23,11 @@ class AlloyanceBlockLootProvider(lookupProvider: HolderLookup.Provider): BlockLo
     override fun generate() {
         dropSelf(AlloyanceBlocks.ALLOYER.get())
         dropSelf(AlloyanceBlocks.CRUSHER.get())
+
+        oreDropsItem(AlloyanceBlocks.POTASH_ORE.get(), AlloyanceItems.POTASH.get(), 1f, 3f)
+        oreDropsItem(AlloyanceBlocks.DEEPSLATE_POTASH_ORE.get(), AlloyanceItems.POTASH.get(), 1f, 3f)
+        dropSelf(AlloyanceBlocks.POTASH_BLOCK.get())
+
         oreDropsItem(AlloyanceBlocks.DEEPSLATE_SULFUR_ORE.get(), AlloyanceItems.SULFUR.get(), 1f, 4f)
         dropSelf(AlloyanceBlocks.SULFUR_BLOCK.get())
 

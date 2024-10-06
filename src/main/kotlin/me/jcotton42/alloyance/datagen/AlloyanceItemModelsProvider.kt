@@ -21,6 +21,11 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
         basicItem(AlloyanceItems.INFUSED_IGNATIUS.get())
         basicItem(AlloyanceItems.THERMITE_DUST.get())
 
+        basicItem(AlloyanceItems.POTASH.get())
+        basicBlockItem(AlloyanceBlocks.POTASH_BLOCK)
+        basicBlockItem(AlloyanceBlocks.POTASH_ORE)
+        basicBlockItem(AlloyanceBlocks.DEEPSLATE_POTASH_ORE)
+
         basicItem(AlloyanceItems.SULFUR.get())
         basicBlockItem(AlloyanceBlocks.SULFUR_BLOCK)
         basicBlockItem(AlloyanceBlocks.DEEPSLATE_SULFUR_ORE)

@@ -18,6 +18,16 @@ class AlloyanceEnglishLanguageProvider(
     "en_us"
 ) {
     override fun addTranslations() {
+        add(AlloyanceBlocks.POTASH_ORE.get(), "Potash Ore")
+        add(AlloyanceBlocks.DEEPSLATE_POTASH_ORE.get(), "Deepslate Potash Ore")
+        add(AlloyanceBlocks.POTASH_BLOCK.get(), "Block of Potash")
+        add(AlloyanceItems.POTASH.get(), "Potash")
+        add(AlloyanceBlockTags.ORES_POTASH, "Potash Ores")
+        add(AlloyanceBlockTags.STORAGE_BLOCKS_POTASH, "Potash Storage Blocks")
+        add(AlloyanceItemTags.DUSTS_POTASH, "Potash Dusts")
+        add(AlloyanceItemTags.ORES_POTASH, "Potash Ores")
+        add(AlloyanceItemTags.STORAGE_BLOCKS_POTASH, "Potash Storage Blocks")
+
         add(AlloyanceBlocks.DEEPSLATE_SULFUR_ORE.get(), "Deepslate Sulfur Ore")
         add(AlloyanceBlocks.SULFUR_BLOCK.get(), "Block of Sulfur")
         add(AlloyanceItems.SULFUR.get(), "Sulfur")

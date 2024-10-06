@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-05T16:26:11.646622	Loot Tables
+// 1.21.1	2024-10-05T23:36:49.384619	Loot Tables
 c900960f05fd9b83417973a0e30e13cc4abbdb90 data/alloyance/loot_table/blocks/adamantine_block.json
 8e7e56838177962741d8dd34e99516a9bc981054 data/alloyance/loot_table/blocks/adamantine_ore.json
 7a4d2b4ddcd5c8b78f386bcc5a049313cbc020aa data/alloyance/loot_table/blocks/alduorite_block.json
@@ -28,6 +28,7 @@ be4ca5b1c44889cfa9bcb5b013566625972b86a9 data/alloyance/loot_table/blocks/deepsl
 b539dc94601fa4e931f16e5a9542fd903c67c1f0 data/alloyance/loot_table/blocks/deepslate_osmium_ore.json
 2f893b2a1f3d5b462e23eb832d3a89dd3a33a5b1 data/alloyance/loot_table/blocks/deepslate_oureclase_ore.json
 86bf081bd9dd96dc393db1a6d94ff592496b7be7 data/alloyance/loot_table/blocks/deepslate_platinum_ore.json
+1c04242b6db094d2b02dfa60b7734af0be7edef8 data/alloyance/loot_table/blocks/deepslate_potash_ore.json
 8e48254d80df669d78f06de749ca2a95cb6e32dd data/alloyance/loot_table/blocks/deepslate_prometheum_ore.json
 40ff5973e2bea135c9693da832bf4d5fe960cf5e data/alloyance/loot_table/blocks/deepslate_rubracium_ore.json
 d13fb44d986b37f3bd832263b7887a82fdb946e6 data/alloyance/loot_table/blocks/deepslate_silver_ore.json
@@ -75,6 +76,8 @@ afdf364c1c272e5befd0be061f7e9c86b2cd6e05 data/alloyance/loot_table/blocks/osmium
 14fb194a93f15e3aad8bc3320dd3d4469b53b5b1 data/alloyance/loot_table/blocks/oureclase_ore.json
 419960f45ee8a4b5de6c92ac371ab21a89593bcb data/alloyance/loot_table/blocks/platinum_block.json
 90ff3b5b42486e41d8005e6f836e224d2a81de88 data/alloyance/loot_table/blocks/platinum_ore.json
+1b5972aa57b20b27b6161ce021fe8b550ba0eae1 data/alloyance/loot_table/blocks/potash_block.json
+1eff5a7f19cf254a1c142c59ceb4191d8eaa83d5 data/alloyance/loot_table/blocks/potash_ore.json
 20e12d45d1ac4c0334a30338efd35ab6ffcf8a79 data/alloyance/loot_table/blocks/prometheum_block.json
 6f8306da99c434da45c942ecbef90c776e11435e data/alloyance/loot_table/blocks/prometheum_ore.json
 5cb0eeb80e62fcaea21362d8853e123f62e7cde6 data/alloyance/loot_table/blocks/quicksilver_block.json

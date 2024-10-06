@@ -20,6 +20,9 @@ import java.util.concurrent.CompletableFuture
 
 class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFuture<HolderLookup.Provider>): RecipeProvider(output, lookupProvider) {
     override fun buildRecipes(output: RecipeOutput) {
+        nineBlockStorageRecipe(output, AlloyanceItems.POTASH, AlloyanceItems.POTASH_BLOCK)
+        crushOre(output, AlloyanceItems.POTASH, 3, AlloyanceItemTags.DUSTS_POTASH)
+
         nineBlockStorageRecipe(output, AlloyanceItems.SULFUR, AlloyanceItems.SULFUR_BLOCK)
         crushOre(output, AlloyanceItems.SULFUR, 4, AlloyanceItemTags.ORES_SULFUR)
 
