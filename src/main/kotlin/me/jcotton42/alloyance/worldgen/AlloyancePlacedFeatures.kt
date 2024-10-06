@@ -69,6 +69,7 @@ object AlloyancePlacedFeatures {
     val ADAMANTINE_ORE = registerKey("adamantine_ore")
     val ALDUORITE_ORE = registerKey("alduorite_ore")
     val LUTETIUM_ORE = registerKey("lutetium_ore")
+    val PHOSPHORITE_ORE = registerKey("phosphorite_ore")
     val POTASH_ORE = registerKey("potash_ore")
     val SULFUR_ORE = registerKey("sulfur_ore")
 
@@ -461,6 +462,15 @@ object AlloyancePlacedFeatures {
             )
         )
 
+        register(
+            context,
+            PHOSPHORITE_ORE,
+            configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.PHOSPHORITE_ORE),
+            countOrePlacement(
+                UNCOMMON,
+                HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(80))
+            )
+        )
         register(
             context,
             POTASH_ORE,

@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-05T23:40:11.6604615	Tags for minecraft:worldgen/biome mod id alloyance
+// 1.21.1	2024-10-06T00:42:43.9791144	Tags for minecraft:worldgen/biome mod id alloyance
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_adamantine_ore.json
 a24545b58f3f91c6c033586e2b2ae12f1e8131b1 data/alloyance/tags/worldgen/biome/has_alduorite_ore.json
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_astral_silver_ore.json
@@ -19,6 +19,7 @@ b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_orichalcum_ore.json
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_osmium_ore.json
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_oureclase_ore.json
+b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_phosphorite_ore.json
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_platinum_ore.json
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/alloyance/tags/worldgen/biome/has_potash_ore.json
 c3d4e55bd4ed5d178abb10df76626eccdab7c209 data/alloyance/tags/worldgen/biome/has_prometheum_ore.json

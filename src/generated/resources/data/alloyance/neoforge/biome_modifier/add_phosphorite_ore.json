@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alloyance:has_phosphorite_ore",
+  "features": "alloyance:phosphorite_ore",
+  "step": "underground_ores"
+}
