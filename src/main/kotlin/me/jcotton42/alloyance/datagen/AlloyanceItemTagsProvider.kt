@@ -99,8 +99,7 @@ class AlloyanceItemTagsProvider(
         copy(Tags.Blocks.ORES, Tags.Items.ORES)
         copy(Tags.Blocks.ORES_IN_GROUND_STONE, Tags.Items.ORES_IN_GROUND_STONE)
         copy(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE, Tags.Items.ORES_IN_GROUND_DEEPSLATE)
-        // TODO uncomment after adding first end ore
-        //copy(AlloyanceBlockTags.ORES_IN_GROUND_END_STONE, AlloyanceItemTags.ORES_IN_GROUND_END_STONE)
+        copy(AlloyanceBlockTags.ORES_IN_GROUND_END_STONE, AlloyanceItemTags.ORES_IN_GROUND_END_STONE)
         copy(Tags.Blocks.ORES_IN_GROUND_NETHERRACK, Tags.Items.ORES_IN_GROUND_NETHERRACK)
         copy(Tags.Blocks.ORE_RATES_SINGULAR, Tags.Items.ORE_RATES_SINGULAR)
     }

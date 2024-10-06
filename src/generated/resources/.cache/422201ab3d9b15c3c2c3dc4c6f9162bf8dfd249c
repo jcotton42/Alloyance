@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-05T23:29:58.0222413	Tags for minecraft:item mod id alloyance
+// 1.21.1	2024-10-05T23:44:06.0466925	Tags for minecraft:item mod id alloyance
 e0ef9489be0c2c56800d4f3d788924d486fe9288 data/alloyance/tags/item/alloyables.json
 d265905cd36b5fa147f634f382472decc42a452f data/alloyance/tags/item/alloyables/adamantine.json
 f2a29a8939f26c8a90782cbe64e69c890179b939 data/alloyance/tags/item/alloyables/alduorite.json
@@ -237,6 +237,7 @@ f13d32622c3b291c40fae53c04ac9a0eabeb12ce data/c/tags/item/ores/sulfur.json
 953b7d8ccc973497dfdef60f277b28b48517d567 data/c/tags/item/ores/vyroxeres.json
 8f8ea038e3acfede87f4a8fb814ec02cd1dfe917 data/c/tags/item/ores/zinc.json
 4d60bee5c691240280ce11d43ee7d1d863581e4e data/c/tags/item/ores_in_ground/deepslate.json
+107d25e6dc3440268afd02f81bae0928950afa3e data/c/tags/item/ores_in_ground/end_stone.json
 0c63af0bf0cf67405fd088c73cd72b6e9c57b096 data/c/tags/item/ores_in_ground/netherrack.json
 6c98cbb8f012fb94d68c42271cebc5d435568094 data/c/tags/item/ores_in_ground/stone.json
 abb6d1fc648015f5404189dbcf1ec15a0660b885 data/c/tags/item/ore_rates/singular.json
