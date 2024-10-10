@@ -14,6 +14,7 @@ import net.minecraft.core.registries.Registries
 import net.minecraft.util.valueproviders.UniformInt
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.DropExperienceBlock
+import net.minecraft.world.level.block.LiquidBlock
 import net.minecraft.world.level.block.SoundType
 import net.minecraft.world.level.block.entity.BlockEntityType
 import net.minecraft.world.level.block.state.BlockBehaviour
@@ -21,6 +22,7 @@ import net.minecraft.world.level.block.state.BlockState
 import net.minecraft.world.level.block.state.properties.BlockStateProperties
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument
 import net.minecraft.world.level.material.MapColor
+import net.minecraft.world.level.material.PushReaction
 import net.neoforged.bus.api.IEventBus
 import net.neoforged.neoforge.registries.DeferredBlock
 import net.neoforged.neoforge.registries.DeferredRegister
@@ -91,6 +93,23 @@ object AlloyanceBlocks {
         .instrument(NoteBlockInstrument.BASEDRUM)
         .strength(3f, 10f)
         .requiresCorrectToolForDrops()
+    )
+
+    val MOLTEN_TAR = BLOCKS.register("molten_tar") { ->
+        LiquidBlock(AlloyanceFluids.MOLTEN_TAR.get(), BlockBehaviour.Properties.of()
+            .mapColor(MapColor.COLOR_BLACK)
+            .replaceable()
+            .noCollission()
+            .strength(100.0f)
+            .pushReaction(PushReaction.DESTROY)
+            .noLootTable()
+            .liquid()
+            .sound(SoundType.EMPTY))
+    }
+    val TAR_ORE = BLOCKS.registerSimpleBlock("tar_ore", BlockBehaviour.Properties.of()
+        .mapColor(MapColor.COLOR_BLACK)
+        .strength(3f, 10f)
+        .sound(SoundType.STONE)
     )
 
     val DEEPSLATE_SULFUR_ORE = deepslateOre("sulfur")

@@ -2,13 +2,14 @@ package me.jcotton42.alloyance.registration
 
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.client.TooltipStyle
-import me.jcotton42.alloyance.registration.AlloyanceItems.ITEMS
 import me.jcotton42.alloyance.registration.Metal.*
 import net.minecraft.core.Holder
 import net.minecraft.core.component.DataComponents
 import net.minecraft.network.chat.Component
 import net.minecraft.world.item.BlockItem
+import net.minecraft.world.item.BucketItem
 import net.minecraft.world.item.Item
+import net.minecraft.world.item.Items
 import net.minecraft.world.item.component.ItemLore
 import net.minecraft.world.level.block.Block
 import net.neoforged.bus.api.IEventBus
@@ -42,6 +43,13 @@ object AlloyanceItems {
     val DEEPSLATE_SULFUR_ORE = block(AlloyanceBlocks.DEEPSLATE_SULFUR_ORE)
     val SULFUR_BLOCK = block(AlloyanceBlocks.SULFUR_BLOCK)
     val SULFUR = ITEMS.registerSimpleItem("sulfur")
+
+    val BITUMEN = ITEMS.registerSimpleItem("bitumen")
+    val TAR = ITEMS.registerSimpleItem("tar")
+    val TAR_ORE = block(AlloyanceBlocks.TAR_ORE)
+    val MOLTEN_TAR_BUCKET = ITEMS.register("molten_tar_bucket") { ->
+        BucketItem(AlloyanceFluids.MOLTEN_TAR.get(), Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1))
+    }
 
     // TODO fireproof?
     // TODO tags?

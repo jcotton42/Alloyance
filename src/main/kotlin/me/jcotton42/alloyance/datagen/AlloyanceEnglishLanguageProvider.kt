@@ -47,6 +47,7 @@ class AlloyanceEnglishLanguageProvider(
         // TODO clean this up and categorize
         addTab(AlloyanceCreativeTabs.BLOCKS, "Alloyance Blocks")
         addTab(AlloyanceCreativeTabs.DUSTS, "Alloyance Dusts")
+        addTab(AlloyanceCreativeTabs.FLUIDS, "Alloyance Fluids")
         addTab(AlloyanceCreativeTabs.INGOTS, "Alloyance Ingots")
         addTab(AlloyanceCreativeTabs.NUGGETS, "Alloyance Nuggets")
         addTab(AlloyanceCreativeTabs.RAW_MATERIALS, "Alloyance Raw Materials")

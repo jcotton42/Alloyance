@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "alloyance:molten_tar",
+  "loader": "neoforge:fluid_container"
+}

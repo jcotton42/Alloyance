@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-06T00:30:03.2671082	Loot Tables
+// 1.21.1	2024-10-10T22:52:26.1621725	Loot Tables
 c900960f05fd9b83417973a0e30e13cc4abbdb90 data/alloyance/loot_table/blocks/adamantine_block.json
 8e7e56838177962741d8dd34e99516a9bc981054 data/alloyance/loot_table/blocks/adamantine_ore.json
 7a4d2b4ddcd5c8b78f386bcc5a049313cbc020aa data/alloyance/loot_table/blocks/alduorite_block.json
@@ -93,6 +93,7 @@ ddf6a22386853a575fc967430e43be6b22338e30 data/alloyance/loot_table/blocks/silver
 ad562ccd44763f3bc7f00e876172dcdf546ca282 data/alloyance/loot_table/blocks/steel_block.json
 88566a0859b8e36fa511df81c3184dc0df4144af data/alloyance/loot_table/blocks/sulfur_block.json
 897b768aa9c5e9074e3e80e54bc43a4f85960da8 data/alloyance/loot_table/blocks/tartarite_block.json
+1232e21c647f25a5c7f1369915c2a3474ade7b32 data/alloyance/loot_table/blocks/tar_ore.json
 d7e1dd86184c33a50e8344c96e25b97f6cad75fd data/alloyance/loot_table/blocks/tin_block.json
 997e8796cd5f357a034ee34feffb3667e55c9803 data/alloyance/loot_table/blocks/tin_ore.json
 0db459efb93a062fbfb7efc82ea236559baf498c data/alloyance/loot_table/blocks/vulcanite_block.json
