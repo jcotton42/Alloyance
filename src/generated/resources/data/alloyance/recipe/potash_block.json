@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "potash_block",
+  "key": {
+    "#": {
+      "item": "alloyance:potash"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:potash_block"
+  }
+}

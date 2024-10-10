@@ -30,6 +30,19 @@ object AlloyanceItems {
     val IRON_DUST = ITEMS.registerSimpleItem("iron_dust")
     val GOLD_DUST = ITEMS.registerSimpleItem("gold_dust")
 
+    val PHOSPHORITE_ORE = block(AlloyanceBlocks.PHOSPHORITE_ORE)
+    val DEEPSLATE_PHOSPHORITE_ORE = block(AlloyanceBlocks.DEEPSLATE_PHOSPHORITE_ORE)
+    val PHOSPHORUS = ITEMS.registerSimpleItem("phosphorus")
+
+    val POTASH_ORE = block(AlloyanceBlocks.POTASH_ORE)
+    val DEEPSLATE_POTASH_ORE = block(AlloyanceBlocks.DEEPSLATE_POTASH_ORE)
+    val POTASH_BLOCK = block(AlloyanceBlocks.POTASH_BLOCK)
+    val POTASH = ITEMS.registerSimpleItem("potash")
+
+    val DEEPSLATE_SULFUR_ORE = block(AlloyanceBlocks.DEEPSLATE_SULFUR_ORE)
+    val SULFUR_BLOCK = block(AlloyanceBlocks.SULFUR_BLOCK)
+    val SULFUR = ITEMS.registerSimpleItem("sulfur")
+
     // TODO fireproof?
     // TODO tags?
     val INFUSED_IGNATIUS = ITEMS.registerSimpleItem("infused_ignatius", Item.Properties().lore("tooltip.alloyance.infused_ignatius"))

@@ -1,5 +1,12 @@
 {
   "values": [
+    "alloyance:phosphorite_ore",
+    "alloyance:deepslate_phosphorite_ore",
+    "alloyance:potash_ore",
+    "alloyance:deepslate_potash_ore",
+    "alloyance:potash_block",
+    "alloyance:deepslate_sulfur_ore",
+    "alloyance:sulfur_block",
     "alloyance:deep_iron_block",
     "alloyance:prometheum_block",
     "alloyance:zinc_block",

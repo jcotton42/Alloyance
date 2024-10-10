@@ -1,5 +1,8 @@
 {
   "values": [
+    "#c:ores/phosphorite",
+    "#c:ores/potash",
+    "#c:ores/sulfur",
     "#c:ores/deep_iron",
     "#c:ores/prometheum",
     "#c:ores/zinc",

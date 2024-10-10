@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "sulfur_block",
+  "key": {
+    "#": {
+      "item": "alloyance:sulfur"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:sulfur_block"
+  }
+}

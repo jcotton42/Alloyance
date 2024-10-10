@@ -1,0 +1,12 @@
+{
+  "type": "alloyance:crusher",
+  "experience": 0.75,
+  "group": "potash",
+  "ingredient": {
+    "tag": "c:ores/potash"
+  },
+  "result": {
+    "count": 6,
+    "id": "alloyance:potash"
+  }
+}

@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T22:26:59.4633874	Item Models: alloyance
+// 1.21.1	2024-10-06T00:30:03.2841807	Item Models: alloyance
 6f3701e75c5cc7421d5146a262eae52e34592565 assets/alloyance/models/item/adamantine_block.json
 4b1bfbc8cf265a0a7a6220be35ffec627f9d35c2 assets/alloyance/models/item/adamantine_dust.json
 61a3f9dd92fc288e7a15147d5b7db4165b8c77b0 assets/alloyance/models/item/adamantine_ingot.json
@@ -65,10 +65,13 @@ e1cad102fde35956f1932c4d52219803f643d5a3 assets/alloyance/models/item/deepslate_
 35f0c6fd7b9c1daa7f5333c7833bc3a6ee93dc90 assets/alloyance/models/item/deepslate_orichalcum_ore.json
 1400859d2d9829efeaf6d7cfa0007937ceb0a0d8 assets/alloyance/models/item/deepslate_osmium_ore.json
 c1cbfa0ff96d2b322f5cd2ad0d84925886b3ca90 assets/alloyance/models/item/deepslate_oureclase_ore.json
+3cb4de199f6487790ae05b4fe92e960528f32bcc assets/alloyance/models/item/deepslate_phosphorite_ore.json
 cb6549731391064d2bca815323043d619545a601 assets/alloyance/models/item/deepslate_platinum_ore.json
+4a2f3860342bef13d6e8ef95cfd9da26fadd06c2 assets/alloyance/models/item/deepslate_potash_ore.json
 b98e1368967fea5c54f6239efcf34e74bc5dc472 assets/alloyance/models/item/deepslate_prometheum_ore.json
 150b16204e942bdc980e2cc9231febc06ce196d0 assets/alloyance/models/item/deepslate_rubracium_ore.json
 f54e9f2a3e6e52b6eaa168f0a17d532ce6a15647 assets/alloyance/models/item/deepslate_silver_ore.json
+628b8208dbb1624b5a169e5fd32b25f1830c2dc6 assets/alloyance/models/item/deepslate_sulfur_ore.json
 2f745cfff636b10445d4b30749957d12592fc576 assets/alloyance/models/item/deepslate_zinc_ore.json
 3d476e645ab5fad8076d0828910b3be75f6f55a2 assets/alloyance/models/item/deep_iron_block.json
 8875e5f698c3c4dc69d5837ddc0bd0e625a1f0d1 assets/alloyance/models/item/deep_iron_dust.json
@@ -176,11 +179,16 @@ f0d6903d3473370abc0f536033c80f994eebddbe assets/alloyance/models/item/osmium_dus
 3748fa272b857b1bf03680751c56d01cbe348c30 assets/alloyance/models/item/oureclase_ingot.json
 fe22f50e78544960ad83e4e9974893df95beeda0 assets/alloyance/models/item/oureclase_nugget.json
 5e5e0e237796382b05b327a3af2a95243532bab4 assets/alloyance/models/item/oureclase_ore.json
+0c83e3a7d05a08d2c5ef85ba2e69ba3c349136ab assets/alloyance/models/item/phosphorite_ore.json
+48b44a8eb4f027bf105c7b80d0145818a1446e28 assets/alloyance/models/item/phosphorus.json
 b0de2f5a4f3af2a785662f1ae9cc7f200809b892 assets/alloyance/models/item/platinum_block.json
 b714e70644bc80b3c1a30c45e03807a4fd9e0623 assets/alloyance/models/item/platinum_dust.json
 32fc69d8c7e67c3364a60df9988ec645a3e9a32c assets/alloyance/models/item/platinum_ingot.json
 73c4e5328981b3a89eb05f76a64a77015e72460f assets/alloyance/models/item/platinum_nugget.json
 528de8975642fadeabd2624f9760ffe175c3f980 assets/alloyance/models/item/platinum_ore.json
+89b211a7f3016636027b69e9152b09765b0aa0fe assets/alloyance/models/item/potash.json
+6771f9c8035e41e1bf37526a44c3962388307ddb assets/alloyance/models/item/potash_block.json
+a58cbefb8ee41d0846189997d527f8be427aaeed assets/alloyance/models/item/potash_ore.json
 3de63934ecea52817379801ed035ef255a0529da assets/alloyance/models/item/prometheum_block.json
 4ba2ea9e3b9c0be48f97f495f457717448d210f3 assets/alloyance/models/item/prometheum_dust.json
 89d323675d6aa34753f77167f1c2af8fc5bcc8cb assets/alloyance/models/item/prometheum_ingot.json
@@ -246,6 +254,8 @@ aa05ce0d3794a5dca367dd2c15adda9ef496b384 assets/alloyance/models/item/steel_bloc
 a733ca3f9f53981749d9dd1b91b9ef0f7c03f263 assets/alloyance/models/item/steel_dust.json
 3336ef295f7a286fd9aa24596deb1f9c6c5b19c4 assets/alloyance/models/item/steel_ingot.json
 6bb5f90180c1829ea161ecfa2fb9ab8544c6a00c assets/alloyance/models/item/steel_nugget.json
+e548dcdd029e8aade441278537709f481d5f23ca assets/alloyance/models/item/sulfur.json
+0941340b6e0ae0bee631e4636c2ee1ea3990f06c assets/alloyance/models/item/sulfur_block.json
 cfa0004d4e03015a073c23039d8d29cfad6896c7 assets/alloyance/models/item/tartarite_block.json
 9c71753fc5a652f24c590f1091bba204792e7bd1 assets/alloyance/models/item/tartarite_dust.json
 d03fd6a298e539480e3d51ae1160f4dc6bc11e19 assets/alloyance/models/item/tartarite_ingot.json

@@ -2,10 +2,7 @@ package me.jcotton42.alloyance.datagen
 
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.datagen.VanillaMetal.*
-import me.jcotton42.alloyance.registration.AlloyanceBlocks
-import me.jcotton42.alloyance.registration.AlloyanceItemTags
-import me.jcotton42.alloyance.registration.AlloyanceItems
-import me.jcotton42.alloyance.registration.Metal
+import me.jcotton42.alloyance.registration.*
 import me.jcotton42.alloyance.registration.Metal.*
 import net.minecraft.core.HolderLookup
 import net.minecraft.data.PackOutput
@@ -23,12 +20,20 @@ import java.util.concurrent.CompletableFuture
 
 class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFuture<HolderLookup.Provider>): RecipeProvider(output, lookupProvider) {
     override fun buildRecipes(output: RecipeOutput) {
+        crushOre(output, AlloyanceItems.PHOSPHORUS, 6, AlloyanceItemTags.ORES_PHOSPHORITE)
+
+        nineBlockStorageRecipe(output, AlloyanceItems.POTASH, AlloyanceItems.POTASH_BLOCK)
+        crushOre(output, AlloyanceItems.POTASH, 6, AlloyanceItemTags.ORES_POTASH)
+
+        nineBlockStorageRecipe(output, AlloyanceItems.SULFUR, AlloyanceItems.SULFUR_BLOCK)
+        crushOre(output, AlloyanceItems.SULFUR, 6, AlloyanceItemTags.ORES_SULFUR)
+
         addVanillaCompatRecipes(output)
 
         Metal.entries.forEach { metal ->
-            addStorageRecipes(output, metal)
-            addSmeltingRecipes(output, metal)
-            addCrusherRecipes(output, metal)
+            addMetalStorageRecipes(output, metal)
+            addMetalSmeltingRecipes(output, metal)
+            addMetalCrusherRecipes(output, metal)
         }
 
         addAlloy(output, BRONZE, 4, 1.75f, COPPER, 3, TIN, 1)
@@ -51,29 +56,48 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
         addAlloy(output, ETHERIUM, 2, 1.25f, SANGUINITE, 1, ALDUORITE, 1)
     }
 
+    private fun nineBlockStorageRecipe(output: RecipeOutput, unpacked: ItemLike, packed: ItemLike) {
+        val unpackedName = getItemName(unpacked)
+        val packedName = getItemName(packed)
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, unpacked, 9)
+            .requires(packed)
+            .group(unpackedName)
+            .unlockedBy(getHasName(packed), has(packed))
+            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${unpackedName}_from_${packedName}"))
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, packed)
+            .pattern("###")
+            .pattern("###")
+            .pattern("###")
+            .define('#', unpacked)
+            .group(packedName)
+            .unlockedBy(getHasName(unpacked), has(unpacked))
+            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, packedName))
+    }
+
     private fun addVanillaCompatRecipes(output: RecipeOutput) {
         smeltToIngot(output, AlloyanceItems.IRON_DUST, Items.IRON_INGOT)
-        crushOre(output, AlloyanceItems.IRON_DUST, Tags.Items.ORES_IRON)
+        crushOre(output, AlloyanceItems.IRON_DUST, 2, Tags.Items.ORES_IRON)
         crushRawMaterial(output, AlloyanceItems.IRON_DUST, Tags.Items.RAW_MATERIALS_IRON)
         crushIngot(output, AlloyanceItems.IRON_DUST, Tags.Items.INGOTS_IRON)
 
         smeltToIngot(output, AlloyanceItems.GOLD_DUST, Items.GOLD_INGOT)
-        crushOre(output, AlloyanceItems.GOLD_DUST, Tags.Items.ORES_GOLD)
+        crushOre(output, AlloyanceItems.GOLD_DUST, 2, Tags.Items.ORES_GOLD)
         crushRawMaterial(output, AlloyanceItems.GOLD_DUST, Tags.Items.RAW_MATERIALS_GOLD)
         crushIngot(output, AlloyanceItems.GOLD_DUST, Tags.Items.INGOTS_GOLD)
 
         smeltToIngot(output, AlloyanceItems.COPPER_DUST, Items.COPPER_INGOT)
-        crushOre(output, AlloyanceItems.COPPER_DUST, Tags.Items.ORES_COPPER)
+        crushOre(output, AlloyanceItems.COPPER_DUST, 2, Tags.Items.ORES_COPPER)
         crushRawMaterial(output, AlloyanceItems.COPPER_DUST, Tags.Items.RAW_MATERIALS_COPPER)
         crushIngot(output, AlloyanceItems.COPPER_DUST, Tags.Items.INGOTS_COPPER)
 
-        crushOre(output, Items.REDSTONE, Tags.Items.ORES_REDSTONE)
-        crushOre(output, Items.DIAMOND, Tags.Items.ORES_DIAMOND)
-        crushOre(output, Items.EMERALD, Tags.Items.ORES_EMERALD)
-        crushOre(output, Items.QUARTZ, Tags.Items.ORES_QUARTZ)
+        crushOre(output, Items.REDSTONE, 2, Tags.Items.ORES_REDSTONE)
+        crushOre(output, Items.DIAMOND, 2, Tags.Items.ORES_DIAMOND)
+        crushOre(output, Items.EMERALD, 2, Tags.Items.ORES_EMERALD)
+        crushOre(output, Items.QUARTZ, 2, Tags.Items.ORES_QUARTZ)
     }
 
-    private fun addStorageRecipes(output: RecipeOutput, metal: Metal) {
+    private fun addMetalStorageRecipes(output: RecipeOutput, metal: Metal) {
         // deliberately not using tags here
         val block = AlloyanceBlocks.STORAGE_BLOCKS.getValue(metal).get()
         val blockName = getItemName(block)
@@ -111,7 +135,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
             .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, nuggetName))
     }
 
-    private fun addSmeltingRecipes(output: RecipeOutput, metal: Metal) {
+    private fun addMetalSmeltingRecipes(output: RecipeOutput, metal: Metal) {
         val ingot = AlloyanceItems.INGOTS.getValue(metal)
         val smeltables = listOf(
             AlloyanceBlocks.ORES[metal],
@@ -127,7 +151,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
         }
     }
 
-    private fun addCrusherRecipes(output: RecipeOutput, metal: Metal) {
+    private fun addMetalCrusherRecipes(output: RecipeOutput, metal: Metal) {
         val dust = AlloyanceItems.DUSTS.getValue(metal)
         val ingotTag = AlloyanceItemTags.INGOTS.getValue(metal)
         val oreTag = AlloyanceItemTags.ORES[metal]
@@ -135,7 +159,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
 
         crushIngot(output, dust, ingotTag)
         if (oreTag != null) {
-            crushOre(output, dust, oreTag)
+            crushOre(output, dust, 2, oreTag)
         }
         if (rawMaterialTag != null) {
             crushRawMaterial(output, dust, rawMaterialTag)
@@ -191,8 +215,8 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
             .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${ingotName}_from_blasting_${inputName}"))
     }
 
-    private fun crushOre(output: RecipeOutput, dust: ItemLike, oreTag: TagKey<Item>) {
-        CrusherRecipeBuilder(ItemStack(dust, 2), Ingredient.of(oreTag), 0.75F, 140)
+    private fun crushOre(output: RecipeOutput, dust: ItemLike, dustCount: Int, oreTag: TagKey<Item>) {
+        CrusherRecipeBuilder(ItemStack(dust, dustCount), Ingredient.of(oreTag), 0.75F, 140)
             .group(getItemName(dust))
             .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${getItemName(dust)}_from_crushing_ore"))
     }
