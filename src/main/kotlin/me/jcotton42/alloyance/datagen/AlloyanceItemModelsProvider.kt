@@ -2,14 +2,12 @@ package me.jcotton42.alloyance.datagen
 
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.registration.AlloyanceBlocks
-import me.jcotton42.alloyance.registration.AlloyanceFluids
 import me.jcotton42.alloyance.registration.AlloyanceItems
 import net.minecraft.data.PackOutput
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.BucketItem
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.material.Fluid
-import net.neoforged.neoforge.client.model.generators.ItemModelBuilder
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider
 import net.neoforged.neoforge.client.model.generators.loaders.DynamicFluidContainerModelBuilder
 import net.neoforged.neoforge.common.data.ExistingFileHelper
@@ -45,7 +43,6 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
         basicItem(AlloyanceItems.BITUMEN.get())
         basicItem(AlloyanceItems.TAR.get())
         basicBlockItem(AlloyanceBlocks.TAR_ORE)
-        bucket(AlloyanceItems.MOLTEN_TAR_BUCKET, AlloyanceFluids.MOLTEN_TAR)
 
         AlloyanceBlocks.ORES.values.forEach(::basicBlockItem)
         AlloyanceBlocks.DEEPSLATE_ORES.values.forEach(::basicBlockItem)
@@ -57,13 +54,16 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
         AlloyanceItems.RAW_MATERIALS.values.forEach { basicItem(it.get()) }
         AlloyanceItems.NUGGETS.values.forEach { basicItem(it.get()) }
         AlloyanceItems.DUSTS.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.BUCKETS.forEach { (fluid, bucket) ->
+            bucket(fluid, bucket)
+        }
     }
 
     private fun basicBlockItem(block: DeferredBlock<Block>) {
         withExistingParent(block.id.path, modLoc("block/${block.id.path}"))
     }
 
-    private fun <F: Fluid> bucket(item: DeferredItem<BucketItem>, fluid: Supplier<F>) {
+    private fun <F: Fluid> bucket(fluid: Supplier<F>, item: DeferredItem<BucketItem>) {
         // this may need to be replaced with RegisterColorHandlersEvent.Item
         getBuilder(item.id.path)
             .parent(getExistingFile(ResourceLocation.parse("neoforge:bucket")))

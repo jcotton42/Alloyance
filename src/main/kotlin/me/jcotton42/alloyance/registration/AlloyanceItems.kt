@@ -12,7 +12,9 @@ import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
 import net.minecraft.world.item.component.ItemLore
 import net.minecraft.world.level.block.Block
+import net.minecraft.world.level.material.Fluid
 import net.neoforged.bus.api.IEventBus
+import net.neoforged.neoforge.registries.DeferredHolder
 import net.neoforged.neoforge.registries.DeferredItem
 import net.neoforged.neoforge.registries.DeferredRegister
 
@@ -23,6 +25,7 @@ object AlloyanceItems {
     val INGOTS = mutableMapOf<Metal, DeferredItem<Item>>()
     val NUGGETS = mutableMapOf<Metal, DeferredItem<Item>>()
     val DUSTS = mutableMapOf<Metal, DeferredItem<Item>>()
+    val BUCKETS = mutableMapOf<DeferredHolder<Fluid, out Fluid>, DeferredItem<BucketItem>>()
 
     val ALLOYER = block(AlloyanceBlocks.ALLOYER)
     val CRUSHER = block(AlloyanceBlocks.CRUSHER)
@@ -47,9 +50,7 @@ object AlloyanceItems {
     val BITUMEN = ITEMS.registerSimpleItem("bitumen")
     val TAR = ITEMS.registerSimpleItem("tar")
     val TAR_ORE = block(AlloyanceBlocks.TAR_ORE)
-    val MOLTEN_TAR_BUCKET = ITEMS.register("molten_tar_bucket") { ->
-        BucketItem(AlloyanceFluids.MOLTEN_TAR.get(), Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1))
-    }
+    val MOLTEN_TAR_BUCKET = bucket(AlloyanceFluids.MOLTEN_TAR)
 
     // TODO fireproof?
     // TODO tags?
@@ -403,6 +404,14 @@ object AlloyanceItems {
     private fun dust(metal: Metal): DeferredItem<Item> {
         val item = ITEMS.register("${metal.id}_dust") { -> Item(Item.Properties().tooltipColor(metal.color)) }
         DUSTS[metal] = item
+        return item
+    }
+
+    private fun bucket(fluid: DeferredHolder<Fluid, out Fluid>): DeferredItem<BucketItem> {
+        val item = ITEMS.register("${fluid.id.path}_bucket") { ->
+            BucketItem(fluid.get(), Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1))
+        }
+        BUCKETS[fluid] = item
         return item
     }
 }
