@@ -2,6 +2,7 @@ package me.jcotton42.alloyance
 
 import com.mojang.logging.LogUtils
 import me.jcotton42.alloyance.client.AlloyanceClientEvents
+import me.jcotton42.alloyance.client.AlloyanceClientModEvents
 import me.jcotton42.alloyance.datagen.generateData
 import me.jcotton42.alloyance.registration.*
 import net.minecraft.client.Minecraft
@@ -33,6 +34,7 @@ object Alloyance {
         AlloyanceCreativeTabs.register(MOD_BUS)
         AlloyanceDataComponents.register(MOD_BUS)
         AlloyanceDataMaps.register(MOD_BUS)
+        AlloyanceFluids.register(MOD_BUS)
         AlloyanceItems.register(MOD_BUS)
         AlloyanceMenuTypes.register(MOD_BUS)
         AlloyanceRecipes.register(MOD_BUS)
@@ -43,6 +45,7 @@ object Alloyance {
         val obj = runForDist(
             clientTarget = {
                 MOD_BUS.addListener(Alloyance::onClientSetup)
+                MOD_BUS.register(AlloyanceClientModEvents)
                 NeoForge.EVENT_BUS.register(AlloyanceClientEvents)
                 Minecraft.getInstance()
             },

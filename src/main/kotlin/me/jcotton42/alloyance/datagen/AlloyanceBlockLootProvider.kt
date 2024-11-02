@@ -9,9 +9,15 @@ import net.minecraft.world.flag.FeatureFlags
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.enchantment.Enchantments
 import net.minecraft.world.level.block.Block
+import net.minecraft.world.level.storage.loot.LootPool
+import net.minecraft.world.level.storage.loot.entries.EntryGroup
 import net.minecraft.world.level.storage.loot.entries.LootItem
+import net.minecraft.world.level.storage.loot.entries.LootPoolEntry
+import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer
+import net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction
+import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator
 
 class AlloyanceBlockLootProvider(lookupProvider: HolderLookup.Provider): BlockLootSubProvider(
@@ -33,6 +39,8 @@ class AlloyanceBlockLootProvider(lookupProvider: HolderLookup.Provider): BlockLo
 
         oreDropsItem(AlloyanceBlocks.DEEPSLATE_SULFUR_ORE.get(), AlloyanceItems.SULFUR.get(), 1f, 4f)
         dropSelf(AlloyanceBlocks.SULFUR_BLOCK.get())
+
+        createTarOreDrops()
 
         AlloyanceBlocks.STORAGE_BLOCKS.values.forEach { dropSelf(it.get()) }
         AlloyanceBlocks.ORES.forEach { (metal, ore) ->
@@ -67,6 +75,30 @@ class AlloyanceBlockLootProvider(lookupProvider: HolderLookup.Provider): BlockLo
                 LootItem.lootTableItem(item)
                     .apply(SetItemCountFunction.setCount(UniformGenerator.between(countLower, countUpper)))
                     .apply(ApplyBonusCount.addOreBonusCount(enchantments.getOrThrow(Enchantments.FORTUNE)))
+            )
+        )
+        add(block, builder)
+    }
+
+    private fun createTarOreDrops() {
+        val block = AlloyanceBlocks.TAR_ORE.get()
+        val enchantments = registries.lookupOrThrow(Registries.ENCHANTMENT)
+        val builder = createSilkTouchDispatchTable(
+            block,
+            EntryGroup.list(
+                applyExplosionDecay(
+                    block,
+                    LootItem.lootTableItem(AlloyanceItems.TAR)
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1f, 2f)))
+                        .apply(ApplyBonusCount.addOreBonusCount(enchantments.getOrThrow(Enchantments.FORTUNE)))
+                ),
+                applyExplosionDecay(
+                    block,
+                    LootItem.lootTableItem(AlloyanceItems.BITUMEN)
+                        .`when`(LootItemRandomChanceCondition.randomChance(0.5f))
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1f, 2f)))
+                        .apply(ApplyBonusCount.addOreBonusCount(enchantments.getOrThrow(Enchantments.FORTUNE)))
+                )
             )
         )
         add(block, builder)

@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-06T00:30:03.2841807	Item Models: alloyance
+// 1.21.1	2024-10-10T23:24:14.456831	Item Models: alloyance
 6f3701e75c5cc7421d5146a262eae52e34592565 assets/alloyance/models/item/adamantine_block.json
 4b1bfbc8cf265a0a7a6220be35ffec627f9d35c2 assets/alloyance/models/item/adamantine_dust.json
 61a3f9dd92fc288e7a15147d5b7db4165b8c77b0 assets/alloyance/models/item/adamantine_ingot.json
@@ -26,6 +26,7 @@ b3836844a1534df852d2ce40e2944832c8b1bf85 assets/alloyance/models/item/atlarus_du
 943c5f6c07e7942cf7b6f41e51055245252cbeb8 assets/alloyance/models/item/atlarus_ingot.json
 58de8a68a195d2a9bd3fdda6007e07da02a4f049 assets/alloyance/models/item/atlarus_nugget.json
 e337a427597b7cfd5d4d27f9aaa7e42bbeedaf27 assets/alloyance/models/item/atlarus_ore.json
+c28b71033554ce395ec3f9c142cb5242427b1136 assets/alloyance/models/item/bitumen.json
 3cc2d63d4beff0505bc0006e7444b67c83971c8f assets/alloyance/models/item/black_steel_block.json
 07a403b38c5c7f7dfbba1a6a6e1cb8fd84d00ab8 assets/alloyance/models/item/black_steel_dust.json
 1ed0b85fa06affd6a7ece8214992da1c30631e53 assets/alloyance/models/item/black_steel_ingot.json
@@ -154,6 +155,7 @@ bfbcb0403b183cc53b39537e40d6f452b53a2818 assets/alloyance/models/item/mithril_du
 f50bee9cdf20c897411016069b0a3b9e8b6a80bf assets/alloyance/models/item/mithril_ingot.json
 8f015ed4921360ddc479eecc4e74ab47ad66aa78 assets/alloyance/models/item/mithril_nugget.json
 d5bbf5ff25f14cc620eb2bed777a422e942b8682 assets/alloyance/models/item/mithril_ore.json
+ac98cb1d6a844a2622b8d78d18b9283186908cc3 assets/alloyance/models/item/molten_tar_bucket.json
 c383c52bc113024cbf7b74165d56ff84e546d19f assets/alloyance/models/item/nether_alduorite_ore.json
 03684423b4f14c5e9fdf5eff129a70e8fa029763 assets/alloyance/models/item/nether_ceruclase_ore.json
 1f73bb7bd2a90948ba4e76a431e97f3e3e4307c8 assets/alloyance/models/item/nether_ignatius_ore.json
@@ -256,10 +258,12 @@ a733ca3f9f53981749d9dd1b91b9ef0f7c03f263 assets/alloyance/models/item/steel_dust
 6bb5f90180c1829ea161ecfa2fb9ab8544c6a00c assets/alloyance/models/item/steel_nugget.json
 e548dcdd029e8aade441278537709f481d5f23ca assets/alloyance/models/item/sulfur.json
 0941340b6e0ae0bee631e4636c2ee1ea3990f06c assets/alloyance/models/item/sulfur_block.json
+1993add3d05e31d4bab6911806f002e57818eb9e assets/alloyance/models/item/tar.json
 cfa0004d4e03015a073c23039d8d29cfad6896c7 assets/alloyance/models/item/tartarite_block.json
 9c71753fc5a652f24c590f1091bba204792e7bd1 assets/alloyance/models/item/tartarite_dust.json
 d03fd6a298e539480e3d51ae1160f4dc6bc11e19 assets/alloyance/models/item/tartarite_ingot.json
 7369f6d45c8e1f15e6970dbc21c1923cfadfba24 assets/alloyance/models/item/tartarite_nugget.json
+7856eba06fe0362b751465130fbd591bbf68709e assets/alloyance/models/item/tar_ore.json
 5af677e15357cdfe325366aea1dfbb8fa90dd9a4 assets/alloyance/models/item/thermite_dust.json
 de7becb63407e4fc36d8ab78179f895a771b0b81 assets/alloyance/models/item/tin_block.json
 7fbf0505df28d0b8bf7e637239580763d2a63b6a assets/alloyance/models/item/tin_dust.json

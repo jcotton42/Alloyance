@@ -6,9 +6,11 @@ import net.minecraft.data.PackOutput
 import net.minecraft.sounds.SoundEvent
 import net.minecraft.world.item.CreativeModeTab
 import net.minecraft.world.item.Item
+import net.minecraft.world.level.material.Fluid
 import net.neoforged.neoforge.common.data.LanguageProvider
 import net.neoforged.neoforge.registries.DeferredHolder
 import net.neoforged.neoforge.registries.DeferredItem
+import java.util.*
 
 class AlloyanceEnglishLanguageProvider(
     output: PackOutput,
@@ -44,9 +46,13 @@ class AlloyanceEnglishLanguageProvider(
         add(AlloyanceItemTags.ORES_SULFUR, "Sulfur Ores")
         add(AlloyanceItemTags.STORAGE_BLOCKS_SULFUR, "Sulfur Storage Blocks")
 
+        add(AlloyanceBlocks.TAR_ORE.get(), "Tar Ore")
+        add(AlloyanceBlocks.MOLTEN_TAR.get(), "Molten Tar")
+
         // TODO clean this up and categorize
         addTab(AlloyanceCreativeTabs.BLOCKS, "Alloyance Blocks")
         addTab(AlloyanceCreativeTabs.DUSTS, "Alloyance Dusts")
+        addTab(AlloyanceCreativeTabs.FLUIDS, "Alloyance Fluids")
         addTab(AlloyanceCreativeTabs.INGOTS, "Alloyance Ingots")
         addTab(AlloyanceCreativeTabs.NUGGETS, "Alloyance Nuggets")
         addTab(AlloyanceCreativeTabs.RAW_MATERIALS, "Alloyance Raw Materials")
@@ -54,32 +60,35 @@ class AlloyanceEnglishLanguageProvider(
         addTab(AlloyanceCreativeTabs.ORES, "Alloyance Ores")
 
         AlloyanceBlocks.STORAGE_BLOCKS.forEach { (metal, block) ->
-            add(block.get(), "Block of ${getEnglishName(metal)}")
+            add(block.get(), "Block of ${getMetalName(metal)}")
         }
         AlloyanceBlocks.ORES.forEach { (metal, ore) ->
-            add(ore.get(), "${getEnglishName(metal)} Ore")
+            add(ore.get(), "${getMetalName(metal)} Ore")
         }
         AlloyanceBlocks.DEEPSLATE_ORES.forEach { (metal, ore) ->
-            add(ore.get(), "Deepslate ${getEnglishName(metal)} Ore")
+            add(ore.get(), "Deepslate ${getMetalName(metal)} Ore")
         }
         AlloyanceBlocks.END_ORES.forEach { (metal, ore) ->
-            add(ore.get(), "End ${getEnglishName(metal)} Ore")
+            add(ore.get(), "End ${getMetalName(metal)} Ore")
         }
         AlloyanceBlocks.NETHER_ORES.forEach { (metal, ore) ->
-            add(ore.get(), "Nether ${getEnglishName(metal)} Ore")
+            add(ore.get(), "Nether ${getMetalName(metal)} Ore")
         }
 
         AlloyanceItems.RAW_MATERIALS.forEach { (metal, raw) ->
-            add(raw.get(), "Raw ${getEnglishName(metal)}")
+            add(raw.get(), "Raw ${getMetalName(metal)}")
         }
         AlloyanceItems.INGOTS.forEach { (metal, ingot) ->
-            add(ingot.get(), "${getEnglishName(metal)} Ingot")
+            add(ingot.get(), "${getMetalName(metal)} Ingot")
         }
         AlloyanceItems.NUGGETS.forEach { (metal, nugget) ->
-            add(nugget.get(), "${getEnglishName(metal)} Nugget")
+            add(nugget.get(), "${getMetalName(metal)} Nugget")
         }
         AlloyanceItems.DUSTS.forEach { (metal, dust) ->
-            add(dust.get(), "${getEnglishName(metal)} Dust")
+            add(dust.get(), "${getMetalName(metal)} Dust")
+        }
+        AlloyanceItems.BUCKETS.forEach { (fluid, bucket) ->
+            add(bucket.get(), "${getFluidName(fluid)} Bucket")
         }
 
         add(AlloyanceBlocks.ALLOYER.get(), "Alloyer")
@@ -118,32 +127,32 @@ class AlloyanceEnglishLanguageProvider(
         add(AlloyanceItemTags.ALLOYABLES_IRON, "Iron Alloyables")
 
         AlloyanceItemTags.RAW_MATERIALS.forEach { (metal, tag) ->
-            add(tag, "${getEnglishName(metal)} Raw Materials")
+            add(tag, "${getMetalName(metal)} Raw Materials")
         }
         AlloyanceItemTags.INGOTS.forEach { (metal, tag) ->
-            add(tag, "${getEnglishName(metal)} Ingots")
+            add(tag, "${getMetalName(metal)} Ingots")
         }
         AlloyanceItemTags.NUGGETS.forEach { (metal, tag) ->
-            add(tag, "${getEnglishName(metal)} Nuggets")
+            add(tag, "${getMetalName(metal)} Nuggets")
         }
         AlloyanceItemTags.DUSTS.forEach { (metal, tag) ->
-            add(tag, "${getEnglishName(metal)} Dusts")
+            add(tag, "${getMetalName(metal)} Dusts")
         }
         AlloyanceItemTags.STORAGE_BLOCKS.forEach { (metal, tag) ->
-            add(tag, "${getEnglishName(metal)} Storage Blocks")
+            add(tag, "${getMetalName(metal)} Storage Blocks")
         }
         AlloyanceItemTags.ORES.forEach { (metal, tag) ->
-            add(tag, "${getEnglishName(metal)} Ores")
+            add(tag, "${getMetalName(metal)} Ores")
         }
         AlloyanceItemTags.ALLOYABLES.forEach { (metal, tag) ->
-            add(tag, "${getEnglishName(metal)} Alloyables")
+            add(tag, "${getMetalName(metal)} Alloyables")
         }
 
         AlloyanceBlockTags.STORAGE_BLOCKS.forEach { (metal, tag) ->
-            add(tag, "${getEnglishName(metal)} Storage Blocks")
+            add(tag, "${getMetalName(metal)} Storage Blocks")
         }
         AlloyanceBlockTags.ORES.forEach { (metal, tag) ->
-            add(tag, "${getEnglishName(metal)} Ores")
+            add(tag, "${getMetalName(metal)} Ores")
         }
     }
 
@@ -159,7 +168,7 @@ class AlloyanceEnglishLanguageProvider(
         add(item.id.toLanguageKey("tooltip"), tooltip)
     }
 
-    private fun getEnglishName(metal: Metal): String = when (metal) {
+    private fun getMetalName(metal: Metal): String = when (metal) {
         Metal.DEEP_IRON -> "Deep Iron"
         Metal.PROMETHEUM -> "Prometheum"
         Metal.ZINC -> "Zinc"
@@ -213,5 +222,17 @@ class AlloyanceEnglishLanguageProvider(
         Metal.KRIK -> "Krik"
         Metal.TARTARITE -> "Tartarite"
         Metal.ETHERIUM -> "Etherium"
+    }
+
+    private fun getFluidName(fluid: DeferredHolder<Fluid, out Fluid>): String = when (fluid) {
+        AlloyanceFluids.MOLTEN_TAR -> "Molten Tar"
+        else -> {
+            val name = fluid.id.path.removePrefix("molten_").uppercase(Locale.ENGLISH)
+            try {
+                "Molten ${getMetalName(Metal.valueOf(name))}"
+            } catch (e: IllegalArgumentException) {
+                throw IllegalArgumentException("Unknown fluid ${fluid.id.path}", e)
+            }
+        }
     }
 }

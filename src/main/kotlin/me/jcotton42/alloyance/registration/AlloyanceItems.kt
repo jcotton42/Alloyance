@@ -2,16 +2,19 @@ package me.jcotton42.alloyance.registration
 
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.client.TooltipStyle
-import me.jcotton42.alloyance.registration.AlloyanceItems.ITEMS
 import me.jcotton42.alloyance.registration.Metal.*
 import net.minecraft.core.Holder
 import net.minecraft.core.component.DataComponents
 import net.minecraft.network.chat.Component
 import net.minecraft.world.item.BlockItem
+import net.minecraft.world.item.BucketItem
 import net.minecraft.world.item.Item
+import net.minecraft.world.item.Items
 import net.minecraft.world.item.component.ItemLore
 import net.minecraft.world.level.block.Block
+import net.minecraft.world.level.material.Fluid
 import net.neoforged.bus.api.IEventBus
+import net.neoforged.neoforge.registries.DeferredHolder
 import net.neoforged.neoforge.registries.DeferredItem
 import net.neoforged.neoforge.registries.DeferredRegister
 
@@ -22,6 +25,7 @@ object AlloyanceItems {
     val INGOTS = mutableMapOf<Metal, DeferredItem<Item>>()
     val NUGGETS = mutableMapOf<Metal, DeferredItem<Item>>()
     val DUSTS = mutableMapOf<Metal, DeferredItem<Item>>()
+    val BUCKETS = mutableMapOf<DeferredHolder<Fluid, out Fluid>, DeferredItem<BucketItem>>()
 
     val ALLOYER = block(AlloyanceBlocks.ALLOYER)
     val CRUSHER = block(AlloyanceBlocks.CRUSHER)
@@ -42,6 +46,11 @@ object AlloyanceItems {
     val DEEPSLATE_SULFUR_ORE = block(AlloyanceBlocks.DEEPSLATE_SULFUR_ORE)
     val SULFUR_BLOCK = block(AlloyanceBlocks.SULFUR_BLOCK)
     val SULFUR = ITEMS.registerSimpleItem("sulfur")
+
+    val BITUMEN = ITEMS.registerSimpleItem("bitumen")
+    val TAR = ITEMS.registerSimpleItem("tar")
+    val TAR_ORE = block(AlloyanceBlocks.TAR_ORE)
+    val MOLTEN_TAR_BUCKET = bucket(AlloyanceFluids.MOLTEN_TAR)
 
     // TODO fireproof?
     // TODO tags?
@@ -395,6 +404,14 @@ object AlloyanceItems {
     private fun dust(metal: Metal): DeferredItem<Item> {
         val item = ITEMS.register("${metal.id}_dust") { -> Item(Item.Properties().tooltipColor(metal.color)) }
         DUSTS[metal] = item
+        return item
+    }
+
+    private fun bucket(fluid: DeferredHolder<Fluid, out Fluid>): DeferredItem<BucketItem> {
+        val item = ITEMS.register("${fluid.id.path}_bucket") { ->
+            BucketItem(fluid.get(), Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1))
+        }
+        BUCKETS[fluid] = item
         return item
     }
 }

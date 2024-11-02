@@ -49,6 +49,16 @@ object AlloyanceCreativeTabs {
             .build()
     }
 
+    val FLUIDS: DeferredHolder<CreativeModeTab, CreativeModeTab> = TABS.register("fluids") { location ->
+        CreativeModeTab.builder()
+            .title(Component.translatable(location.toLanguageKey("itemGroup")))
+            .icon { ItemStack(AlloyanceItems.MOLTEN_TAR_BUCKET.get()) }
+            .displayItems { _, output ->
+                output.accept(AlloyanceItems.MOLTEN_TAR_BUCKET.get())
+            }
+            .build()
+    }
+
     val INGOTS: DeferredHolder<CreativeModeTab, CreativeModeTab> = TABS.register("ingots") { location ->
         CreativeModeTab.builder()
             .title(Component.translatable(location.toLanguageKey("itemGroup")))
