@@ -1,3 +1,6 @@
+// LakeFeature is still in use by vanilla
+@file:Suppress("DEPRECATION")
+
 package me.jcotton42.alloyance.worldgen
 
 import me.jcotton42.alloyance.Alloyance
@@ -11,13 +14,17 @@ import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature
 import net.minecraft.world.level.levelgen.feature.Feature
+import net.minecraft.world.level.levelgen.feature.LakeFeature
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest
 import java.util.function.Supplier
 
 object AlloyanceConfiguredFeatures {
+    val TAR_LAKE = registerKey("tar_lake")
+
     val DEEP_IRON_ORE = registerKey("deep_iron_ore")
     val PROMETHEUM_ORE = registerKey("prometheum_ore")
     val TIN_ORE = registerKey("tin_ore")
@@ -53,6 +60,11 @@ object AlloyanceConfiguredFeatures {
     val SULFUR_ORE = registerKey("sulfur_ore")
 
     fun bootstrap(context: BootstrapContext<ConfiguredFeature<*, *>>) {
+        register(context, TAR_LAKE, Feature.LAKE, LakeFeature.Configuration(
+            BlockStateProvider.simple(AlloyanceBlocks.MOLTEN_TAR.get().defaultBlockState()),
+            BlockStateProvider.simple(Blocks.STONE.defaultBlockState())
+        ))
+
         val deepIronOres = listOf(inStone(AlloyanceBlocks.DEEP_IRON_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_DEEP_IRON_ORE))
         val prometheumOres = listOf(inStone(AlloyanceBlocks.PROMETHEUM_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_PROMETHEUM_ORE))
         val tinOres = listOf(inStone(AlloyanceBlocks.TIN_ORE))

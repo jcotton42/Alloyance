@@ -7,6 +7,8 @@ import net.minecraft.tags.TagKey
 import net.minecraft.world.level.biome.Biome
 
 object AlloyanceBiomeTags {
+    val HAS_TAR_LAKE: TagKey<Biome> = create("has_tar_lake")
+
     val HAS_DEEP_IRON_ORE: TagKey<Biome> = create("has_deep_iron_ore")
     val HAS_UNDERWATER_DEEP_IRON_ORE: TagKey<Biome> = create("has_underwater_deep_iron_ore")
     val HAS_PROMETHEUM_ORE: TagKey<Biome> = create("has_prometheum_ore")

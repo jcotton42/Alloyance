@@ -11,6 +11,7 @@ import net.minecraft.world.level.levelgen.Heightmap
 import net.minecraft.world.level.levelgen.VerticalAnchor
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature
 import net.minecraft.world.level.levelgen.heightproviders.TrapezoidHeight
+import net.minecraft.world.level.levelgen.heightproviders.UniformHeight
 import net.minecraft.world.level.levelgen.placement.BiomeFilter
 import net.minecraft.world.level.levelgen.placement.CountPlacement
 import net.minecraft.world.level.levelgen.placement.HeightRangePlacement
@@ -27,6 +28,8 @@ private const val VERY_RARE = 3
 private const val ULTRA_RARE = 1
 
 object AlloyancePlacedFeatures {
+    val TAR_LAKE = registerKey("tar_lake")
+
     val DEEP_IRON_ORE = registerKey("deep_iron_ore")
     val UNDERWATER_DEEP_IRON_ORE = registerKey("underwater_deep_iron_ore")
     val PROMETHEUM_ORE_UPPER = registerKey("prometheum_ore_upper")
@@ -75,6 +78,19 @@ object AlloyancePlacedFeatures {
 
     fun bootstrap(context: BootstrapContext<PlacedFeature>) {
         val configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE)
+
+        register(
+            context,
+            TAR_LAKE,
+            configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.TAR_LAKE),
+            listOf(
+                RarityFilter.onAverageOnceEvery(5),
+                InSquarePlacement.spread(),
+                HeightRangePlacement.of(UniformHeight.of(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(0))),
+                // TODO other filters
+                BiomeFilter.biome(),
+            )
+        )
 
         register(
             context,

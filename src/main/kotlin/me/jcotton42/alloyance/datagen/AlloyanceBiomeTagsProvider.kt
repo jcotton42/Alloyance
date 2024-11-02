@@ -21,6 +21,9 @@ class AlloyanceBiomeTagsProvider(
     existingFileHelper,
 ) {
     override fun addTags(provider: HolderLookup.Provider) {
+        tag(AlloyanceBiomeTags.HAS_TAR_LAKE)
+            .addTags(BiomeTags.IS_OVERWORLD)
+
         tag(AlloyanceBiomeTags.HAS_DEEP_IRON_ORE)
             .addTags(BiomeTags.IS_OCEAN, BiomeTags.IS_RIVER, BiomeTags.IS_BEACH)
         tag(AlloyanceBiomeTags.HAS_UNDERWATER_DEEP_IRON_ORE)
