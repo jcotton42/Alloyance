@@ -46,6 +46,9 @@ class AlloyanceEnglishLanguageProvider(
         add(AlloyanceItemTags.ORES_SULFUR, "Sulfur Ores")
         add(AlloyanceItemTags.STORAGE_BLOCKS_SULFUR, "Sulfur Storage Blocks")
 
+        add(AlloyanceBlocks.TAR_ORE.get(), "Tar Ore")
+        add(AlloyanceBlocks.MOLTEN_TAR.get(), "Molten Tar")
+
         // TODO clean this up and categorize
         addTab(AlloyanceCreativeTabs.BLOCKS, "Alloyance Blocks")
         addTab(AlloyanceCreativeTabs.DUSTS, "Alloyance Dusts")
