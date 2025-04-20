@@ -10,7 +10,7 @@ import net.neoforged.neoforge.registries.datamaps.builtin.NeoForgeDataMaps
 import java.util.concurrent.CompletableFuture
 
 class AlloyanceDataMapProvider(output: PackOutput, lookupProvider: CompletableFuture<HolderLookup.Provider>): DataMapProvider(output, lookupProvider) {
-    override fun gather() {
+    override fun gather(provider: HolderLookup.Provider) {
         builder(AlloyanceDataMaps.FUEL_SPEED)
             .add(AlloyanceItems.THERMITE_DUST, 2, false)
             .add(AlloyanceItems.INFUSED_IGNATIUS, 3, false)
