@@ -122,6 +122,7 @@ object AlloyanceCreativeTabs {
                 output.accept(AlloyanceItems.DEEPSLATE_PHOSPHORITE_ORE)
                 output.accept(AlloyanceItems.POTASH_ORE)
                 output.accept(AlloyanceItems.DEEPSLATE_POTASH_ORE)
+                output.accept(AlloyanceItems.SULFUR_ORE)
                 output.accept(AlloyanceItems.DEEPSLATE_SULFUR_ORE)
             }
             .build()

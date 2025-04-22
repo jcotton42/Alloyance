@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-06T00:30:03.2886994	Tags for minecraft:item mod id alloyance
+// 1.21.1	2025-04-21T22:50:24.1278123	Tags for minecraft:item mod id alloyance
 e0ef9489be0c2c56800d4f3d788924d486fe9288 data/alloyance/tags/item/alloyables.json
 d265905cd36b5fa147f634f382472decc42a452f data/alloyance/tags/item/alloyables/adamantine.json
 f2a29a8939f26c8a90782cbe64e69c890179b939 data/alloyance/tags/item/alloyables/alduorite.json
@@ -207,7 +207,7 @@ a2633c778b43458bac53a888c52aaec0decf9388 data/c/tags/item/nuggets/tartarite.json
 35fc3d3de277364ae81a383ee8e18d79c70f59d9 data/c/tags/item/ores.json
 eee77fbdd60d030b8a05c26a6b886775e1fbaa94 data/c/tags/item/ores/adamantine.json
 48b6fd0e8a94232da539b2d3efa9e7c5060c5ec6 data/c/tags/item/ores/alduorite.json
-b0b453b05b70b674bcd6d479954b4063df9a6945 data/c/tags/item/ores/astral_silver.json
+73efc876644393cf5b151b559781c50a02931dc9 data/c/tags/item/ores/astral_silver.json
 3b965a37cc416e97278f626dcbf330b0ea600ef7 data/c/tags/item/ores/atlarus.json
 3112e7ad5289c46f0ad110e30faa957eae9402a8 data/c/tags/item/ores/carmot.json
 75ab44eb59d5383582bb81f9ee3ea79ead6930b7 data/c/tags/item/ores/ceruclase.json
@@ -221,9 +221,9 @@ f35a436e2862d8ee1b39a188225d3cf44ede3856 data/c/tags/item/ores/lutetium.json
 7cf3fd3aafcb434fdd0bb1346418575ad62b3e8b data/c/tags/item/ores/manganese.json
 01ea4378509726510bc631317b805f2d2f97a574 data/c/tags/item/ores/meutoite.json
 bed510ba65568a68013580ad65f7fc087b320649 data/c/tags/item/ores/midasium.json
-8167f6ba21bbd29e81f84602169dfcd5a15a8fc4 data/c/tags/item/ores/mithril.json
+b97d0c7a9e366a541d9a5b9b3eb5335725e99d36 data/c/tags/item/ores/mithril.json
 71bf5ee7723d715f6bc86011139b7d2a3b405b07 data/c/tags/item/ores/orichalcum.json
-575815da68c26150b0582acb33bef4122723d33b data/c/tags/item/ores/osmium.json
+cbf8d48c3d46174c71703f24f0e9ea91708f8d38 data/c/tags/item/ores/osmium.json
 dbd0f3bb8b9b62211b78b785ccb78e980eb3bb3f data/c/tags/item/ores/oureclase.json
 3f31a9a0ee1a218908ec68f2ee1c07fed96e070d data/c/tags/item/ores/phosphorite.json
 61dff438b260336bc8cbec8d980afcdeb8307299 data/c/tags/item/ores/platinum.json
@@ -233,16 +233,16 @@ dbd0f3bb8b9b62211b78b785ccb78e980eb3bb3f data/c/tags/item/ores/oureclase.json
 4cda00645712267c8598a21472960ecf2aa08fff data/c/tags/item/ores/sanguinite.json
 14c73626dad32df7f05d0661c1eea1a0dd3fa409 data/c/tags/item/ores/shadow_iron.json
 b5847b4a65fb265052f0d2c49f73b82b8b8bc0f9 data/c/tags/item/ores/silver.json
-f13d32622c3b291c40fae53c04ac9a0eabeb12ce data/c/tags/item/ores/sulfur.json
-96299ff0191a5fa4286bcbaf443628b556345d85 data/c/tags/item/ores/tin.json
+0b6b0edf67725207c8364a7e95aaa69f2b62586a data/c/tags/item/ores/sulfur.json
+28224e97cdf31638d09471d9b560d97bafb8ac3a data/c/tags/item/ores/tin.json
 9248c67e796c14386d25b241f4f160d8878f5935 data/c/tags/item/ores/vulcanite.json
 953b7d8ccc973497dfdef60f277b28b48517d567 data/c/tags/item/ores/vyroxeres.json
 8f8ea038e3acfede87f4a8fb814ec02cd1dfe917 data/c/tags/item/ores/zinc.json
-20fb1ed3a4696e8e2d3500166f7ccf9323c5cf57 data/c/tags/item/ores_in_ground/deepslate.json
+04dbfec5db576002cd3336bef30820139bcfd081 data/c/tags/item/ores_in_ground/deepslate.json
 107d25e6dc3440268afd02f81bae0928950afa3e data/c/tags/item/ores_in_ground/end_stone.json
 0c63af0bf0cf67405fd088c73cd72b6e9c57b096 data/c/tags/item/ores_in_ground/netherrack.json
-4cd665c2ab5958e75f939686db3ae2c92503d125 data/c/tags/item/ores_in_ground/stone.json
-abb6d1fc648015f5404189dbcf1ec15a0660b885 data/c/tags/item/ore_rates/singular.json
+58abfbc779766bfe3400d94dfaa4bcb286885c67 data/c/tags/item/ores_in_ground/stone.json
+5789d50624864caf7dc4ccda0d586b0077f69f40 data/c/tags/item/ore_rates/singular.json
 318b7784f7e7daf759597213afa9278482ab7b4c data/c/tags/item/raw_materials.json
 3eee80bb9162c83de8c7744af162da53096a4ea2 data/c/tags/item/raw_materials/adamantine.json
 f96382a229ca48702cf4ec3c837d9d10b588ccc0 data/c/tags/item/raw_materials/alduorite.json

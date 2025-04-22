@@ -36,7 +36,7 @@ class AlloyanceItemTagsProvider(
         copy(AlloyanceBlockTags.STORAGE_BLOCKS_POTASH, AlloyanceItemTags.STORAGE_BLOCKS_POTASH)
 
         tag(AlloyanceItemTags.DUSTS_SULFUR).add(AlloyanceItems.SULFUR.get())
-        tag(AlloyanceItemTags.ORES_SULFUR).add(AlloyanceItems.DEEPSLATE_SULFUR_ORE.get())
+        tag(AlloyanceItemTags.ORES_SULFUR).add(AlloyanceItems.SULFUR_ORE.get(), AlloyanceItems.DEEPSLATE_SULFUR_ORE.get())
         tag(AlloyanceItemTags.STORAGE_BLOCKS_SULFUR).add(AlloyanceItems.SULFUR_BLOCK.get())
         copy(AlloyanceBlockTags.ORES_SULFUR, AlloyanceItemTags.ORES_SULFUR)
         copy(AlloyanceBlockTags.STORAGE_BLOCKS_SULFUR, AlloyanceItemTags.STORAGE_BLOCKS_SULFUR)

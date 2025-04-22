@@ -6,6 +6,15 @@
     "targets": [
       {
         "state": {
+          "Name": "alloyance:sulfur_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
+        }
+      },
+      {
+        "state": {
           "Name": "alloyance:deepslate_sulfur_ore"
         },
         "target": {

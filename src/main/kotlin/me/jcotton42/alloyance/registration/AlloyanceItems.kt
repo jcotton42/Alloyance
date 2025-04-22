@@ -43,6 +43,7 @@ object AlloyanceItems {
     val POTASH_BLOCK = block(AlloyanceBlocks.POTASH_BLOCK)
     val POTASH = ITEMS.registerSimpleItem("potash")
 
+    val SULFUR_ORE = block(AlloyanceBlocks.SULFUR_ORE)
     val DEEPSLATE_SULFUR_ORE = block(AlloyanceBlocks.DEEPSLATE_SULFUR_ORE)
     val SULFUR_BLOCK = block(AlloyanceBlocks.SULFUR_BLOCK)
     val SULFUR = ITEMS.registerSimpleItem("sulfur")
@@ -82,6 +83,7 @@ object AlloyanceItems {
     val ZINC_DUST = dust(ZINC)
 
     val TIN_ORE = block(AlloyanceBlocks.TIN_ORE, TIN)
+    val DEEPSLATE_TIN_ORE = block(AlloyanceBlocks.DEEPSLATE_TIN_ORE, TIN)
     val TIN_BLOCK = block(AlloyanceBlocks.TIN_BLOCK, TIN)
     val RAW_TIN = rawMaterial(TIN)
     val TIN_INGOT = ingot(TIN)
@@ -103,6 +105,7 @@ object AlloyanceItems {
     val DAMASCUS_STEEL_NUGGET = nugget(DAMASCUS_STEEL)
     val DAMASCUS_STEEL_DUST = dust(DAMASCUS_STEEL)
 
+    val OSMIUM_ORE = block(AlloyanceBlocks.OSMIUM_ORE, OSMIUM)
     val DEEPSLATE_OSMIUM_ORE = block(AlloyanceBlocks.DEEPSLATE_OSMIUM_ORE, OSMIUM)
     val OSMIUM_BLOCK = block(AlloyanceBlocks.OSMIUM_BLOCK, OSMIUM)
     val RAW_OSMIUM = rawMaterial(OSMIUM)
@@ -160,6 +163,7 @@ object AlloyanceItems {
     val ELECTRUM_DUST = dust(ELECTRUM)
 
     val ASTRAL_SILVER_ORE = block(AlloyanceBlocks.ASTRAL_SILVER_ORE, ASTRAL_SILVER)
+    val DEEPSLATE_ASTRAL_SILVER_ORE = block(AlloyanceBlocks.DEEPSLATE_ASTRAL_SILVER_ORE, ASTRAL_SILVER)
     val ASTRAL_SILVER_BLOCK = block(AlloyanceBlocks.ASTRAL_SILVER_BLOCK, ASTRAL_SILVER)
     val RAW_ASTRAL_SILVER = rawMaterial(ASTRAL_SILVER)
     val ASTRAL_SILVER_INGOT = ingot(ASTRAL_SILVER)
@@ -285,6 +289,7 @@ object AlloyanceItems {
     val MEUTOITE_DUST = dust(MEUTOITE)
 
     val MITHRIL_ORE = block(AlloyanceBlocks.MITHRIL_ORE, MITHRIL)
+    val DEEPSLATE_MITHRIL_ORE = block(AlloyanceBlocks.DEEPSLATE_MITHRIL_ORE, MITHRIL)
     val MITHRIL_BLOCK = block(AlloyanceBlocks.MITHRIL_BLOCK, MITHRIL)
     val RAW_MITHRIL = rawMaterial(MITHRIL)
     val MITHRIL_INGOT = ingot(MITHRIL)

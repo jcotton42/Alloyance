@@ -112,6 +112,7 @@ object AlloyanceBlocks {
         .sound(SoundType.STONE)
     )
 
+    val SULFUR_ORE = ore("sulfur")
     val DEEPSLATE_SULFUR_ORE = deepslateOre("sulfur")
     val SULFUR_BLOCK = BLOCKS.registerSimpleBlock("sulfur_block", BlockBehaviour.Properties.of()
         .mapColor(MapColor.COLOR_LIGHT_GREEN)
@@ -134,6 +135,7 @@ object AlloyanceBlocks {
     val ZINC_BLOCK = storageBlock(ZINC)
 
     val TIN_ORE = metalOre(TIN)
+    val DEEPSLATE_TIN_ORE = metalDeepslateOre(TIN)
     val TIN_BLOCK = storageBlock(TIN)
 
     val BRONZE_BLOCK = storageBlock(BRONZE)
@@ -142,6 +144,7 @@ object AlloyanceBlocks {
 
     val DAMASCUS_STEEL_BLOCK = storageBlock(DAMASCUS_STEEL)
 
+    val OSMIUM_ORE = metalOre(OSMIUM)
     val DEEPSLATE_OSMIUM_ORE = metalDeepslateOre(OSMIUM)
     val OSMIUM_BLOCK = storageBlock(OSMIUM)
 
@@ -168,6 +171,7 @@ object AlloyanceBlocks {
     val ELECTRUM_BLOCK = storageBlock(ELECTRUM)
 
     val ASTRAL_SILVER_ORE = metalOre(ASTRAL_SILVER)
+    val DEEPSLATE_ASTRAL_SILVER_ORE = metalDeepslateOre(ASTRAL_SILVER)
     val ASTRAL_SILVER_BLOCK = storageBlock(ASTRAL_SILVER)
 
     val NETHER_IGNATIUS_ORE = netherOre(IGNATIUS)
@@ -224,6 +228,7 @@ object AlloyanceBlocks {
     val MEUTOITE_BLOCK = storageBlock(MEUTOITE)
 
     val MITHRIL_ORE = metalOre(MITHRIL)
+    val DEEPSLATE_MITHRIL_ORE = metalDeepslateOre(MITHRIL)
     val MITHRIL_BLOCK = storageBlock(MITHRIL)
 
     val NETHER_SANGUINITE_ORE = netherOre(SANGUINITE)
