@@ -2,5 +2,5 @@
   "type": "neoforge:add_features",
   "biomes": "#alloyance:has_tar_lake",
   "features": "alloyance:tar_lake",
-  "step": "underground_ores"
+  "step": "lakes"
 }

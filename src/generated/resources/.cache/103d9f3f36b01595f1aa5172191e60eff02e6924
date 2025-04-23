@@ -1,4 +1,4 @@
-// 1.21.1	2025-04-22T20:23:11.8695901	Registries
+// 1.21.1	2025-04-22T20:28:15.1903075	Registries
 19f1d24a57cf7e1901adfd5fcaa2292d8eb70094 data/alloyance/neoforge/biome_modifier/add_adamantine_ore.json
 f9d13408d4f246137d6b977977957802fc8746e1 data/alloyance/neoforge/biome_modifier/add_alduorite_ore.json
 2a35aeca6a4b63401f83a5f1c4b599d069835f3d data/alloyance/neoforge/biome_modifier/add_astral_silver_ore_lower.json
@@ -40,7 +40,7 @@ ce3ee794e6ee73333636111787b97a188cd36c90 data/alloyance/neoforge/biome_modifier/
 6c85046af5e9830482c5fbd4de34687ef7898740 data/alloyance/neoforge/biome_modifier/add_silver_ore_lower.json
 57d309255d16dcbcccb0aa1da6b727ec4e70537e data/alloyance/neoforge/biome_modifier/add_silver_ore_upper.json
 a1ecb4ca358c10e628b573384f4108fd5f1e745e data/alloyance/neoforge/biome_modifier/add_sulfur_ore.json
-575236de43eeb338f19db8fea80ec404e244a862 data/alloyance/neoforge/biome_modifier/add_tar_lake.json
+8486414afc0132a3fd161f393720dc368ecbb791 data/alloyance/neoforge/biome_modifier/add_tar_lake.json
 757829ac21ec3a8675da8515181e576da796d921 data/alloyance/neoforge/biome_modifier/add_tin_ore.json
 f4a727bc4a4340b20a53aab1e9a15a150ddc7bc1 data/alloyance/neoforge/biome_modifier/add_underwater_deep_iron_ore.json
 2b80d8b44f43ba40312fe7d70aa88d83ddd2adf3 data/alloyance/neoforge/biome_modifier/add_vulcanite_ore.json

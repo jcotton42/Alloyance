@@ -144,8 +144,6 @@ object AlloyanceBiomeModifiers {
     val ADD_SULFUR_ORE = registerKey("add_sulfur_ore")
 
     private val ores = listOf(
-        Triple(ADD_TAR_LAKE, HAS_TAR_LAKE, TAR_LAKE),
-
         Triple(ADD_DEEP_IRON_ORE, HAS_DEEP_IRON_ORE, DEEP_IRON_ORE),
         Triple(ADD_UNDERWATER_DEEP_IRON_ORE, HAS_UNDERWATER_DEEP_IRON_ORE, UNDERWATER_DEEP_IRON_ORE),
         Triple(ADD_PROMETHEUM_ORE_UPPER, HAS_PROMETHEUM_ORE, PROMETHEUM_ORE_UPPER),
@@ -197,6 +195,14 @@ object AlloyanceBiomeModifiers {
     fun bootstrap(context: BootstrapContext<BiomeModifier>) {
         val placedFeatures = context.lookup(Registries.PLACED_FEATURE)
         val biomes = context.lookup(Registries.BIOME)
+
+        context.register(
+            ADD_TAR_LAKE, BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(HAS_TAR_LAKE),
+                HolderSet.direct(placedFeatures.getOrThrow(TAR_LAKE)),
+                GenerationStep.Decoration.LAKES
+            )
+        )
 
         for ((modifierKey, biomeTagKey, placedKey) in ores) {
             context.register(
