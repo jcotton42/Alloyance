@@ -55,7 +55,8 @@ object AlloyancePlacedFeatures {
     val ORICHALCUM_ORE_UPPER = registerKey("orichalcum_ore_upper")
     val ORICHALCUM_ORE_MIDDLE = registerKey("orichalcum_ore_middle")
     val ORICHALCUM_ORE_LOWER = registerKey("orichalcum_ore_lower")
-    val PLATINUM_ORE_UPPER = registerKey("platinum_ore_upper")
+    val PLATINUM_ORE_UPPER_COOL = registerKey("platinum_ore_upper")
+    val PLATINUM_ORE_UPPER_WARM = registerKey("platinum_ore_upper_warm")
     val PLATINUM_ORE_LOWER = registerKey("platinum_ore_lower")
     val VULCANITE_ORE = registerKey("vulcanite_ore")
     val CARMOT_ORE_UPPER = registerKey("carmot_ore_upper")
@@ -324,10 +325,21 @@ object AlloyancePlacedFeatures {
         )
         register(
             context,
-            PLATINUM_ORE_UPPER,
+            PLATINUM_ORE_UPPER_COOL,
             configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.PLATINUM_ORE),
             countOrePlacement(
                 ULTRA_RARE,
+                BiomeTemperatureFilter.coolerThan(0.95F),
+                HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(80))
+            )
+        )
+        register(
+            context,
+            PLATINUM_ORE_UPPER_WARM,
+            configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.PLATINUM_ORE),
+            countOrePlacement(
+                UNCOMMON,
+                BiomeTemperatureFilter.warmerThan(0.95F),
                 HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(80))
             )
         )

@@ -37,6 +37,7 @@ object Alloyance {
         AlloyanceFluids.register(MOD_BUS)
         AlloyanceItems.register(MOD_BUS)
         AlloyanceMenuTypes.register(MOD_BUS)
+        AlloyancePlacementModifierTypes.register(MOD_BUS)
         AlloyanceRecipes.register(MOD_BUS)
         AlloyanceSounds.register(MOD_BUS)
         MOD_BUS.addListener(::generateData)
