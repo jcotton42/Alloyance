@@ -20,6 +20,7 @@ import net.minecraft.world.level.levelgen.placement.PlacedFeature
 import net.minecraft.world.level.levelgen.placement.PlacementModifier
 import net.minecraft.world.level.levelgen.placement.RarityFilter
 import net.minecraft.world.level.levelgen.placement.SurfaceRelativeThresholdFilter
+import net.minecraft.world.level.levelgen.structure.BuiltinStructures
 
 private const val COMMON = 10
 private const val UNCOMMON = 7
@@ -430,8 +431,9 @@ object AlloyancePlacedFeatures {
             SANGUINITE_ORE,
             configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.SANGUINITE_ORE),
             countOrePlacement(
-                VERY_RARE,
-                HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.TOP)
+                COMMON,
+                HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.TOP),
+                StructureProximityFilter(BuiltinStructures.FORTRESS, 90, VERY_RARE / COMMON.toFloat()),
             )
         )
         register(
