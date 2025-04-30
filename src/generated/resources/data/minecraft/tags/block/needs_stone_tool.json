@@ -5,6 +5,7 @@
     "alloyance:potash_ore",
     "alloyance:deepslate_potash_ore",
     "alloyance:potash_block",
+    "alloyance:sulfur_ore",
     "alloyance:deepslate_sulfur_ore",
     "alloyance:sulfur_block",
     "alloyance:deep_iron_block",
@@ -19,6 +20,7 @@
     "alloyance:tin_ore",
     "alloyance:deepslate_deep_iron_ore",
     "alloyance:deepslate_prometheum_ore",
-    "alloyance:deepslate_zinc_ore"
+    "alloyance:deepslate_zinc_ore",
+    "alloyance:deepslate_tin_ore"
   ]
 }

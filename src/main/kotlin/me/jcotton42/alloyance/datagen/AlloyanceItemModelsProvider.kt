@@ -38,6 +38,7 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
 
         basicItem(AlloyanceItems.SULFUR.get())
         basicBlockItem(AlloyanceBlocks.SULFUR_BLOCK)
+        basicBlockItem(AlloyanceBlocks.SULFUR_ORE)
         basicBlockItem(AlloyanceBlocks.DEEPSLATE_SULFUR_ORE)
 
         basicItem(AlloyanceItems.BITUMEN.get())

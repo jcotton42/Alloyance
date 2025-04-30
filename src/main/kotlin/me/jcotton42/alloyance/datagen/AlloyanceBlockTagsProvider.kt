@@ -31,7 +31,7 @@ class AlloyanceBlockTagsProvider(
         tag(AlloyanceBlockTags.ORES_POTASH).add(AlloyanceBlocks.POTASH_ORE.get(), AlloyanceBlocks.DEEPSLATE_POTASH_ORE.get())
         tag(AlloyanceBlockTags.STORAGE_BLOCKS_POTASH).add(AlloyanceBlocks.POTASH_BLOCK.get())
 
-        tag(AlloyanceBlockTags.ORES_SULFUR).add(AlloyanceBlocks.DEEPSLATE_SULFUR_ORE.get())
+        tag(AlloyanceBlockTags.ORES_SULFUR).add(AlloyanceBlocks.SULFUR_ORE.get(), AlloyanceBlocks.DEEPSLATE_SULFUR_ORE.get())
         tag(AlloyanceBlockTags.STORAGE_BLOCKS_SULFUR).add(AlloyanceBlocks.SULFUR_BLOCK.get())
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
@@ -42,6 +42,7 @@ class AlloyanceBlockTagsProvider(
             AlloyanceBlocks.POTASH_ORE.get(),
             AlloyanceBlocks.DEEPSLATE_POTASH_ORE.get(),
             AlloyanceBlocks.POTASH_BLOCK.get(),
+            AlloyanceBlocks.SULFUR_ORE.get(),
             AlloyanceBlocks.DEEPSLATE_SULFUR_ORE.get(),
             AlloyanceBlocks.SULFUR_BLOCK.get(),
         )
@@ -51,6 +52,7 @@ class AlloyanceBlockTagsProvider(
             AlloyanceBlocks.POTASH_ORE.get(),
             AlloyanceBlocks.DEEPSLATE_POTASH_ORE.get(),
             AlloyanceBlocks.POTASH_BLOCK.get(),
+            AlloyanceBlocks.SULFUR_ORE.get(),
             AlloyanceBlocks.DEEPSLATE_SULFUR_ORE.get(),
             AlloyanceBlocks.SULFUR_BLOCK.get(),
         )
@@ -70,23 +72,13 @@ class AlloyanceBlockTagsProvider(
         tag(Tags.Blocks.ORES_IN_GROUND_STONE).add(
             AlloyanceBlocks.PHOSPHORITE_ORE.get(),
             AlloyanceBlocks.POTASH_ORE.get(),
+            AlloyanceBlocks.SULFUR_ORE.get(),
         )
         tag(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE).add(
             AlloyanceBlocks.DEEPSLATE_PHOSPHORITE_ORE.get(),
             AlloyanceBlocks.DEEPSLATE_POTASH_ORE.get(),
             AlloyanceBlocks.DEEPSLATE_SULFUR_ORE.get(),
         )
-        // workaround for https://github.com/neoforged/NeoForge/issues/1571
-        tag(BlockTags.INCORRECT_FOR_WOODEN_TOOL)
-            .addTags(Tags.Blocks.NEEDS_NETHERITE_TOOL)
-        tag(BlockTags.INCORRECT_FOR_STONE_TOOL)
-            .addTags(Tags.Blocks.NEEDS_NETHERITE_TOOL)
-        tag(BlockTags.INCORRECT_FOR_IRON_TOOL)
-            .addTags(Tags.Blocks.NEEDS_NETHERITE_TOOL)
-        tag(BlockTags.INCORRECT_FOR_GOLD_TOOL)
-            .addTags(Tags.Blocks.NEEDS_NETHERITE_TOOL)
-        tag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
-            .addTag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
 
         AlloyanceBlocks.STORAGE_BLOCKS.forEach { (metal, block) ->
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get())

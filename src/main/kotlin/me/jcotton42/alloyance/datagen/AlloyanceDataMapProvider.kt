@@ -1,5 +1,6 @@
 package me.jcotton42.alloyance.datagen
 
+import me.jcotton42.alloyance.machine.FuelProperties
 import me.jcotton42.alloyance.registration.AlloyanceDataMaps
 import me.jcotton42.alloyance.registration.AlloyanceItems
 import net.minecraft.core.HolderLookup
@@ -11,9 +12,9 @@ import java.util.concurrent.CompletableFuture
 
 class AlloyanceDataMapProvider(output: PackOutput, lookupProvider: CompletableFuture<HolderLookup.Provider>): DataMapProvider(output, lookupProvider) {
     override fun gather(provider: HolderLookup.Provider) {
-        builder(AlloyanceDataMaps.FUEL_SPEED)
-            .add(AlloyanceItems.THERMITE_DUST, 2, false)
-            .add(AlloyanceItems.INFUSED_IGNATIUS, 3, false)
+        builder(AlloyanceDataMaps.FUEL_PROPERTIES)
+            .add(AlloyanceItems.THERMITE_DUST, FuelProperties(2), false)
+            .add(AlloyanceItems.INFUSED_IGNATIUS, FuelProperties(3), false)
 
         builder(NeoForgeDataMaps.FURNACE_FUELS)
             .add(AlloyanceItems.THERMITE_DUST, FurnaceFuel(8 * 200), false)

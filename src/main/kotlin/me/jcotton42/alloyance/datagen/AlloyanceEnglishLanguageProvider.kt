@@ -37,6 +37,7 @@ class AlloyanceEnglishLanguageProvider(
         add(AlloyanceItemTags.ORES_POTASH, "Potash Ores")
         add(AlloyanceItemTags.STORAGE_BLOCKS_POTASH, "Potash Storage Blocks")
 
+        add(AlloyanceBlocks.SULFUR_ORE.get(), "Sulfur Ore")
         add(AlloyanceBlocks.DEEPSLATE_SULFUR_ORE.get(), "Deepslate Sulfur Ore")
         add(AlloyanceBlocks.SULFUR_BLOCK.get(), "Block of Sulfur")
         add(AlloyanceItems.SULFUR.get(), "Sulfur")

@@ -9,6 +9,7 @@ import net.minecraft.resources.ResourceLocation
 import net.minecraft.util.valueproviders.UniformInt
 import net.minecraft.world.level.levelgen.Heightmap
 import net.minecraft.world.level.levelgen.VerticalAnchor
+import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature
 import net.minecraft.world.level.levelgen.heightproviders.TrapezoidHeight
 import net.minecraft.world.level.levelgen.heightproviders.UniformHeight
@@ -20,6 +21,9 @@ import net.minecraft.world.level.levelgen.placement.PlacedFeature
 import net.minecraft.world.level.levelgen.placement.PlacementModifier
 import net.minecraft.world.level.levelgen.placement.RarityFilter
 import net.minecraft.world.level.levelgen.placement.SurfaceRelativeThresholdFilter
+import net.minecraft.world.level.levelgen.structure.BuiltinStructures
+import net.minecraft.world.level.material.Fluid
+import net.minecraft.world.level.material.Fluids
 
 private const val COMMON = 10
 private const val UNCOMMON = 7
@@ -55,7 +59,8 @@ object AlloyancePlacedFeatures {
     val ORICHALCUM_ORE_UPPER = registerKey("orichalcum_ore_upper")
     val ORICHALCUM_ORE_MIDDLE = registerKey("orichalcum_ore_middle")
     val ORICHALCUM_ORE_LOWER = registerKey("orichalcum_ore_lower")
-    val PLATINUM_ORE_UPPER = registerKey("platinum_ore_upper")
+    val PLATINUM_ORE_UPPER_COOL = registerKey("platinum_ore_upper")
+    val PLATINUM_ORE_UPPER_WARM = registerKey("platinum_ore_upper_warm")
     val PLATINUM_ORE_LOWER = registerKey("platinum_ore_lower")
     val VULCANITE_ORE = registerKey("vulcanite_ore")
     val CARMOT_ORE_UPPER = registerKey("carmot_ore_upper")
@@ -237,7 +242,8 @@ object AlloyancePlacedFeatures {
             configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.RUBRACIUM_ORE),
             countOrePlacement(
                 UNCOMMON,
-                HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(8))
+                HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(8)),
+                NextToBlockFilter(BlockPredicate.matchesFluids(Fluids.LAVA, Fluids.FLOWING_LAVA), UNCOMMON / 2F)
             )
         )
         register(
@@ -324,10 +330,21 @@ object AlloyancePlacedFeatures {
         )
         register(
             context,
-            PLATINUM_ORE_UPPER,
+            PLATINUM_ORE_UPPER_COOL,
             configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.PLATINUM_ORE),
             countOrePlacement(
                 ULTRA_RARE,
+                BiomeTemperatureFilter.coolerThan(0.95F),
+                HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(80))
+            )
+        )
+        register(
+            context,
+            PLATINUM_ORE_UPPER_WARM,
+            configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.PLATINUM_ORE),
+            countOrePlacement(
+                UNCOMMON,
+                BiomeTemperatureFilter.warmerThan(0.95F),
                 HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(80))
             )
         )
@@ -418,8 +435,9 @@ object AlloyancePlacedFeatures {
             SANGUINITE_ORE,
             configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.SANGUINITE_ORE),
             countOrePlacement(
-                VERY_RARE,
-                HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.TOP)
+                COMMON,
+                HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.TOP),
+                StructureInChunkFilter(BuiltinStructures.FORTRESS, VERY_RARE / COMMON.toFloat()),
             )
         )
         register(

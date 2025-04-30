@@ -73,7 +73,7 @@ object AlloyanceConfiguredFeatures {
         val silverOres = listOf(inStone(AlloyanceBlocks.SILVER_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_SILVER_ORE))
         val infuscoliumOres = listOf(inStone(AlloyanceBlocks.INFUSCOLIUM_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_INFUSCOLIUM_ORE))
         val manganeseOres = listOf(inStone(AlloyanceBlocks.MANGANESE_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_MANGANESE_ORE))
-        val astralSilverOres = listOf(inStone(AlloyanceBlocks.ASTRAL_SILVER_ORE))
+        val astralSilverOres = listOf(inStone(AlloyanceBlocks.ASTRAL_SILVER_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_ASTRAL_SILVER_ORE))
         val ignatiusOres = listOf(inNetherrack(AlloyanceBlocks.NETHER_IGNATIUS_ORE))
         val oureclaseOres = listOf(inStone(AlloyanceBlocks.OURECLASE_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_OURECLASE_ORE))
         val rubraciumOres = listOf(inStone(AlloyanceBlocks.RUBRACIUM_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_RUBRACIUM_ORE))
@@ -97,7 +97,7 @@ object AlloyanceConfiguredFeatures {
         val lutetiumOres = listOf(inNetherrack(AlloyanceBlocks.NETHER_LUTETIUM_ORE))
         val phosphoriteOres = listOf(inStone(AlloyanceBlocks.PHOSPHORITE_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_PHOSPHORITE_ORE))
         val potashOres = listOf(inStone(AlloyanceBlocks.POTASH_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_POTASH_ORE))
-        val sulfurOres = listOf(inDeepslate(AlloyanceBlocks.DEEPSLATE_SULFUR_ORE))
+        val sulfurOres = listOf(inStone(AlloyanceBlocks.SULFUR_ORE), inDeepslate(AlloyanceBlocks.DEEPSLATE_SULFUR_ORE))
 
         register(context, DEEP_IRON_ORE, Feature.ORE, OreConfiguration(deepIronOres, 5))
         register(context, PROMETHEUM_ORE, Feature.ORE, OreConfiguration(prometheumOres, 6))

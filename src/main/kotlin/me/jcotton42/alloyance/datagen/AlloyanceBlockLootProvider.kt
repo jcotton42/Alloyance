@@ -37,6 +37,7 @@ class AlloyanceBlockLootProvider(lookupProvider: HolderLookup.Provider): BlockLo
         oreDropsItem(AlloyanceBlocks.DEEPSLATE_POTASH_ORE.get(), AlloyanceItems.POTASH.get(), 1f, 3f)
         dropSelf(AlloyanceBlocks.POTASH_BLOCK.get())
 
+        oreDropsItem(AlloyanceBlocks.SULFUR_ORE.get(), AlloyanceItems.SULFUR.get(), 1f, 4f)
         oreDropsItem(AlloyanceBlocks.DEEPSLATE_SULFUR_ORE.get(), AlloyanceItems.SULFUR.get(), 1f, 4f)
         dropSelf(AlloyanceBlocks.SULFUR_BLOCK.get())
 

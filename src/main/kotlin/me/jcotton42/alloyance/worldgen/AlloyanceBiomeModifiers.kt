@@ -65,7 +65,8 @@ import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.OSMIUM_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.OURECLASE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PHOSPHORITE_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PLATINUM_ORE_LOWER
-import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PLATINUM_ORE_UPPER
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PLATINUM_ORE_UPPER_COOL
+import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PLATINUM_ORE_UPPER_WARM
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.POTASH_ORE
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PROMETHEUM_ORE_LOWER
 import me.jcotton42.alloyance.worldgen.AlloyancePlacedFeatures.PROMETHEUM_ORE_UPPER
@@ -120,7 +121,8 @@ object AlloyanceBiomeModifiers {
     val ADD_ORICHALCUM_ORE_UPPER = registerKey("add_orichalcum_ore_upper")
     val ADD_ORICHALCUM_ORE_MIDDLE = registerKey("add_orichalcum_ore_middle")
     val ADD_ORICHALCUM_ORE_LOWER = registerKey("add_orichalcum_ore_lower")
-    val ADD_PLATINUM_ORE_UPPER = registerKey("add_platinum_ore_upper")
+    val ADD_PLATINUM_ORE_UPPER_COOL = registerKey("add_platinum_ore_upper_cool")
+    val ADD_PLATINUM_ORE_UPPER_WARM = registerKey("add_platinum_ore_upper_warm")
     val ADD_PLATINUM_ORE_LOWER = registerKey("add_platinum_ore_lower")
     val ADD_VULCANITE_ORE = registerKey("add_vulcanite_ore")
     val ADD_CARMOT_ORE_UPPER = registerKey("add_carmot_ore_upper")
@@ -142,8 +144,6 @@ object AlloyanceBiomeModifiers {
     val ADD_SULFUR_ORE = registerKey("add_sulfur_ore")
 
     private val ores = listOf(
-        Triple(ADD_TAR_LAKE, HAS_TAR_LAKE, TAR_LAKE),
-
         Triple(ADD_DEEP_IRON_ORE, HAS_DEEP_IRON_ORE, DEEP_IRON_ORE),
         Triple(ADD_UNDERWATER_DEEP_IRON_ORE, HAS_UNDERWATER_DEEP_IRON_ORE, UNDERWATER_DEEP_IRON_ORE),
         Triple(ADD_PROMETHEUM_ORE_UPPER, HAS_PROMETHEUM_ORE, PROMETHEUM_ORE_UPPER),
@@ -169,7 +169,8 @@ object AlloyanceBiomeModifiers {
         Triple(ADD_ORICHALCUM_ORE_UPPER, HAS_ORICHALCUM_ORE, ORICHALCUM_ORE_UPPER),
         Triple(ADD_ORICHALCUM_ORE_MIDDLE, HAS_ORICHALCUM_ORE, ORICHALCUM_ORE_MIDDLE),
         Triple(ADD_ORICHALCUM_ORE_LOWER, HAS_ORICHALCUM_ORE, ORICHALCUM_ORE_LOWER),
-        Triple(ADD_PLATINUM_ORE_UPPER, HAS_PLATINUM_ORE, PLATINUM_ORE_UPPER),
+        Triple(ADD_PLATINUM_ORE_UPPER_COOL, HAS_PLATINUM_ORE, PLATINUM_ORE_UPPER_COOL),
+        Triple(ADD_PLATINUM_ORE_UPPER_WARM, HAS_PLATINUM_ORE, PLATINUM_ORE_UPPER_WARM),
         Triple(ADD_PLATINUM_ORE_LOWER, HAS_PLATINUM_ORE, PLATINUM_ORE_LOWER),
         Triple(ADD_VULCANITE_ORE, HAS_VULCANITE_ORE, VULCANITE_ORE),
         Triple(ADD_CARMOT_ORE_UPPER, HAS_CARMOT_ORE, CARMOT_ORE_UPPER),
@@ -194,6 +195,14 @@ object AlloyanceBiomeModifiers {
     fun bootstrap(context: BootstrapContext<BiomeModifier>) {
         val placedFeatures = context.lookup(Registries.PLACED_FEATURE)
         val biomes = context.lookup(Registries.BIOME)
+
+        context.register(
+            ADD_TAR_LAKE, BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(HAS_TAR_LAKE),
+                HolderSet.direct(placedFeatures.getOrThrow(TAR_LAKE)),
+                GenerationStep.Decoration.LAKES
+            )
+        )
 
         for ((modifierKey, biomeTagKey, placedKey) in ores) {
             context.register(
