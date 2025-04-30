@@ -433,7 +433,7 @@ object AlloyancePlacedFeatures {
             countOrePlacement(
                 COMMON,
                 HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.TOP),
-                StructureProximityFilter(BuiltinStructures.FORTRESS, 90, VERY_RARE / COMMON.toFloat()),
+                StructureInChunkFilter(BuiltinStructures.FORTRESS, VERY_RARE / COMMON.toFloat()),
             )
         )
         register(

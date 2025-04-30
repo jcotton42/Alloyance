@@ -21,9 +21,8 @@
       }
     },
     {
-      "type": "alloyance:structure_proximity_filter",
+      "type": "alloyance:structure_in_chunk_filter",
       "no_structure_chance": 0.3,
-      "radius": 90,
       "structure": "minecraft:fortress"
     },
     {

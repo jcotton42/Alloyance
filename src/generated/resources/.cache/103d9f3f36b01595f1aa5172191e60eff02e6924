@@ -1,4 +1,4 @@
-// 1.21.1	2025-04-25T21:38:33.0772547	Registries
+// 1.21.1	2025-04-29T19:58:07.3028938	Registries
 19f1d24a57cf7e1901adfd5fcaa2292d8eb70094 data/alloyance/neoforge/biome_modifier/add_adamantine_ore.json
 f9d13408d4f246137d6b977977957802fc8746e1 data/alloyance/neoforge/biome_modifier/add_alduorite_ore.json
 2a35aeca6a4b63401f83a5f1c4b599d069835f3d data/alloyance/neoforge/biome_modifier/add_astral_silver_ore_lower.json
@@ -115,7 +115,7 @@ d657b94d2a53535cc3afe8d84ee4f9cd8713734b data/alloyance/worldgen/placed_feature/
 77a60732966d6dc91fda66c422fd55185e287f53 data/alloyance/worldgen/placed_feature/prometheum_ore_lower.json
 aa30c123740c01253d228e16b825025a393a2562 data/alloyance/worldgen/placed_feature/prometheum_ore_upper.json
 8f5214294b371641beabf665ee73d59fdfc96928 data/alloyance/worldgen/placed_feature/rubracium_ore.json
-ff039a571f928fc0735230c885629034ef345f1c data/alloyance/worldgen/placed_feature/sanguinite_ore.json
+17259b987773e0678d7c3c1b6fef4d475966d0e4 data/alloyance/worldgen/placed_feature/sanguinite_ore.json
 bb594c343eadc497ff6d6cad3ea36fcd00f18ba2 data/alloyance/worldgen/placed_feature/shadow_iron_ore_lower.json
 cf05e0432b909757de04488cc5b6b013d542e138 data/alloyance/worldgen/placed_feature/shadow_iron_ore_upper.json
 e1202af51c585f2fcbeb8e00455f931cc14a04a2 data/alloyance/worldgen/placed_feature/silver_ore_lower.json
