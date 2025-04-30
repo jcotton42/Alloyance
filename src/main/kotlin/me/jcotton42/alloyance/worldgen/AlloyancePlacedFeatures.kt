@@ -9,6 +9,7 @@ import net.minecraft.resources.ResourceLocation
 import net.minecraft.util.valueproviders.UniformInt
 import net.minecraft.world.level.levelgen.Heightmap
 import net.minecraft.world.level.levelgen.VerticalAnchor
+import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature
 import net.minecraft.world.level.levelgen.heightproviders.TrapezoidHeight
 import net.minecraft.world.level.levelgen.heightproviders.UniformHeight
@@ -21,6 +22,8 @@ import net.minecraft.world.level.levelgen.placement.PlacementModifier
 import net.minecraft.world.level.levelgen.placement.RarityFilter
 import net.minecraft.world.level.levelgen.placement.SurfaceRelativeThresholdFilter
 import net.minecraft.world.level.levelgen.structure.BuiltinStructures
+import net.minecraft.world.level.material.Fluid
+import net.minecraft.world.level.material.Fluids
 
 private const val COMMON = 10
 private const val UNCOMMON = 7
@@ -239,7 +242,8 @@ object AlloyancePlacedFeatures {
             configuredFeatures.getOrThrow(AlloyanceConfiguredFeatures.RUBRACIUM_ORE),
             countOrePlacement(
                 UNCOMMON,
-                HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(8))
+                HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(8)),
+                NextToBlockFilter(BlockPredicate.matchesFluids(Fluids.LAVA, Fluids.FLOWING_LAVA), UNCOMMON / 2F)
             )
         )
         register(

@@ -21,6 +21,17 @@
       }
     },
     {
+      "type": "alloyance:next_to_block_filter",
+      "default_chance": 3.5,
+      "predicate": {
+        "type": "minecraft:matching_fluids",
+        "fluids": [
+          "minecraft:lava",
+          "minecraft:flowing_lava"
+        ]
+      }
+    },
+    {
       "type": "minecraft:biome"
     }
   ]
