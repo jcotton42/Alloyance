@@ -1,6 +1,7 @@
 package me.jcotton42.alloyance.machine.crusher
 
 import me.jcotton42.alloyance.Alloyance
+import me.jcotton42.alloyance.registration.Metal
 import net.minecraft.client.gui.GuiGraphics
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen
 import net.minecraft.network.chat.Component
@@ -17,7 +18,7 @@ class CrusherScreen(
         title
 ) {
     companion object {
-        private val BACKGROUND = ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "textures/gui/crusher.png")
+        val BACKGROUND = ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "textures/gui/crusher.png")
         private val BURNING_SPRITE = ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "crusher/burning")
         private val MELTING_SPRITE = ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "crusher/melting")
         private val METER_SPRITE = ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "crusher/meter")
@@ -59,7 +60,6 @@ class CrusherScreen(
     }
 
     override fun renderLabels(guiGraphics: GuiGraphics, mouseX: Int, mouseY: Int) {
-        // a nice Oureclase orange
-        guiGraphics.drawString(this.font, this.title, this.titleLabelX, this.titleLabelY, 0xEC8D69, false)
+        guiGraphics.drawString(this.font, this.title, this.titleLabelX, this.titleLabelY, Metal.OURECLASE.color, false)
     }
 }
