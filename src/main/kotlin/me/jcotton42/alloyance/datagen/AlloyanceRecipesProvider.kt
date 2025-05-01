@@ -21,6 +21,7 @@ import java.util.concurrent.CompletableFuture
 class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFuture<HolderLookup.Provider>): RecipeProvider(output, lookupProvider) {
     override fun buildRecipes(output: RecipeOutput) {
         addMachineRecipes(output)
+        addMiscIngredientRecipes(output)
 
         crushOre(output, AlloyanceItems.PHOSPHORUS, 6, AlloyanceItemTags.ORES_PHOSPHORITE)
 
@@ -99,6 +100,25 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
             .group(alloyerName)
             .unlockedBy(getHasName(AlloyanceItems.OSMIUM_INGOT), has(AlloyanceItemTags.INGOTS_OSMIUM))
             .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, alloyerName))
+    }
+
+    private fun addMiscIngredientRecipes(output: RecipeOutput) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, AlloyanceItems.THERMITE_DUST)
+            .requires(AlloyanceItemTags.DUSTS_POTASH)
+            .requires(AlloyanceItemTags.DUSTS_SULFUR)
+            .requires(AlloyanceItemTags.DUSTS_IRON)
+            .group(getItemName(AlloyanceItems.THERMITE_DUST))
+            .unlockedBy(getHasName(AlloyanceItems.POTASH), has(AlloyanceItemTags.DUSTS_POTASH))
+            .unlockedBy(getHasName(AlloyanceItems.SULFUR), has(AlloyanceItemTags.DUSTS_SULFUR))
+            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(AlloyanceItems.THERMITE_DUST)))
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, AlloyanceItems.INFUSED_IGNATIUS)
+            .requires(AlloyanceItems.THERMITE_DUST)
+            .requires(AlloyanceItemTags.DUSTS_IGNATIUS)
+            .requires(AlloyanceItemTags.DUSTS_PHOSPHOROUS)
+            .group(getItemName(AlloyanceItems.INFUSED_IGNATIUS))
+            .unlockedBy(getHasName(AlloyanceItems.THERMITE_DUST), has(AlloyanceItems.THERMITE_DUST))
+            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(AlloyanceItems.INFUSED_IGNATIUS)))
     }
 
     private fun nineBlockStorageRecipe(output: RecipeOutput, unpacked: ItemLike, packed: ItemLike) {

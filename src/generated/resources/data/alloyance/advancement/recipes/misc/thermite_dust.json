@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_potash": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:dusts/potash"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_sulfur": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:dusts/sulfur"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:thermite_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_potash",
+      "has_sulfur"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:thermite_dust"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "thermite_dust",
+  "ingredients": [
+    {
+      "tag": "c:dusts/potash"
+    },
+    {
+      "tag": "c:dusts/sulfur"
+    },
+    {
+      "tag": "c:dusts/iron"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:thermite_dust"
+  }
+}

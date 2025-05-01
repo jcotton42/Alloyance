@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alloyance:infused_ignatius"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_thermite_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alloyance:thermite_dust"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_thermite_dust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alloyance:infused_ignatius"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "infused_ignatius",
+  "ingredients": [
+    {
+      "item": "alloyance:thermite_dust"
+    },
+    {
+      "tag": "c:dusts/ignatius"
+    },
+    {
+      "tag": "c:dusts/phosphorous"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:infused_ignatius"
+  }
+}
