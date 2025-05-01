@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bimetal_structure",
+  "key": {
+    "t": {
+      "tag": "c:ingots/tin"
+    },
+    "z": {
+      "tag": "c:ingots/zinc"
+    }
+  },
+  "pattern": [
+    "tzt",
+    "z z",
+    "tzt"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:bimetal_structure"
+  }
+}

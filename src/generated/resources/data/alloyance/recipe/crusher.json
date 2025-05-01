@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "crusher",
+  "key": {
+    "f": {
+      "item": "minecraft:blast_furnace"
+    },
+    "m": {
+      "item": "alloyance:bimetal_structure"
+    },
+    "o": {
+      "tag": "c:ingots/oureclase"
+    },
+    "p": {
+      "item": "minecraft:piston"
+    },
+    "s": {
+      "tag": "c:ingots/steel"
+    }
+  },
+  "pattern": [
+    "opo",
+    "omo",
+    "sfs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:crusher"
+  }
+}

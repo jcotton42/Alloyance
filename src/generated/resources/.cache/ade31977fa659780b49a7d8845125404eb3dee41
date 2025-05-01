@@ -1,4 +1,4 @@
-// 1.21.1	2025-04-21T22:50:24.1263148	Tags for minecraft:block mod id alloyance
+// 1.21.1	2025-04-30T21:46:18.5605278	Tags for minecraft:block mod id alloyance
 35fc3d3de277364ae81a383ee8e18d79c70f59d9 data/c/tags/block/ores.json
 eee77fbdd60d030b8a05c26a6b886775e1fbaa94 data/c/tags/block/ores/adamantine.json
 48b6fd0e8a94232da539b2d3efa9e7c5060c5ec6 data/c/tags/block/ores/alduorite.json
@@ -90,8 +90,8 @@ b63f2fd13e913c85cea87aabb8bc11190ff0a790 data/c/tags/block/storage_blocks/vulcan
 91513400935b6397539e2c5375a463112844fe61 data/c/tags/block/storage_blocks/vyroxeres.json
 44dcabb93af53db6238114d0bb7887f3a7b757a7 data/c/tags/block/storage_blocks/zinc.json
 f76db009805d4984ee4fd105da05cdb338558331 data/minecraft/tags/block/beacon_base_blocks.json
-dd59fb61fd5670b804b42994dfc74d2e321f05fd data/minecraft/tags/block/mineable/pickaxe.json
+a0bc177ca7d7f36323750b01a72b38506ed9a2d7 data/minecraft/tags/block/mineable/pickaxe.json
 31f072c87771b6918a355906207d60717964881c data/minecraft/tags/block/needs_diamond_tool.json
-b7e82918fb0aa33c1ed3734fbcb87dd685352445 data/minecraft/tags/block/needs_iron_tool.json
+0c33a88007a98163b4fe042e8b4db2b151789c9d data/minecraft/tags/block/needs_iron_tool.json
 b6984b0ad3129ad010c9369d4c6922e24adf2e0d data/minecraft/tags/block/needs_stone_tool.json
 71716ce555e60ea3fe835fcdd9d51cbd405dc9c5 data/neoforge/tags/block/needs_netherite_tool.json

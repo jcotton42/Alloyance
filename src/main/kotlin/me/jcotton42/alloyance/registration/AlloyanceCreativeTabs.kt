@@ -26,6 +26,7 @@ object AlloyanceCreativeTabs {
                 }
                 output.accept(AlloyanceBlocks.POTASH_BLOCK)
                 output.accept(AlloyanceBlocks.SULFUR_BLOCK)
+                output.accept(AlloyanceBlocks.BIMETAL_STRUCTURE)
             }
             .build()
     }

@@ -2,6 +2,7 @@
   "values": [
     "alloyance:alloyer",
     "alloyance:crusher",
+    "alloyance:bimetal_structure",
     "alloyance:phosphorite_ore",
     "alloyance:deepslate_phosphorite_ore",
     "alloyance:potash_ore",

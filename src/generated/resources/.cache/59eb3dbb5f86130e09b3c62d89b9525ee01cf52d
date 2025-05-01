@@ -1,4 +1,4 @@
-// 1.21.1	2025-04-21T22:50:24.1081892	Loot Tables
+// 1.21.1	2025-04-30T21:46:18.5422654	Loot Tables
 c900960f05fd9b83417973a0e30e13cc4abbdb90 data/alloyance/loot_table/blocks/adamantine_block.json
 8e7e56838177962741d8dd34e99516a9bc981054 data/alloyance/loot_table/blocks/adamantine_ore.json
 7a4d2b4ddcd5c8b78f386bcc5a049313cbc020aa data/alloyance/loot_table/blocks/alduorite_block.json
@@ -9,6 +9,7 @@ d6e65e8d30262ba84d58b5ada3e8bc8b0a49b4c8 data/alloyance/loot_table/blocks/astral
 7608c1ccf302f9bbcbd9d9c8f30dfb7ed07305d5 data/alloyance/loot_table/blocks/astral_silver_ore.json
 a17fe8438e3747a93e9d375f78486c10fa4cd61a data/alloyance/loot_table/blocks/atlarus_block.json
 7ac14e21d9f63ff4116f724e29528389a72411fb data/alloyance/loot_table/blocks/atlarus_ore.json
+c5d2b912159d30f5379c2ab3fdcd252f6f4667ba data/alloyance/loot_table/blocks/bimetal_structure.json
 c688d425bbd99d21cef44b91af577a5f8443c7b0 data/alloyance/loot_table/blocks/black_steel_block.json
 977bab28703316c4ca553b283bd8f0d3bfdd801b data/alloyance/loot_table/blocks/brass_block.json
 9c4df2b41e7f414e4625a84af977c04d43e3e630 data/alloyance/loot_table/blocks/bronze_block.json

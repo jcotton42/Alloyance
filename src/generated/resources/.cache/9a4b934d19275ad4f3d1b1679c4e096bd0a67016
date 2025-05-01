@@ -1,4 +1,4 @@
-// 1.21.1	2025-04-21T22:50:24.1238072	Item Models: alloyance
+// 1.21.1	2025-04-30T21:46:18.5580027	Item Models: alloyance
 6f3701e75c5cc7421d5146a262eae52e34592565 assets/alloyance/models/item/adamantine_block.json
 4b1bfbc8cf265a0a7a6220be35ffec627f9d35c2 assets/alloyance/models/item/adamantine_dust.json
 61a3f9dd92fc288e7a15147d5b7db4165b8c77b0 assets/alloyance/models/item/adamantine_ingot.json
@@ -8,6 +8,7 @@ f3874ffb2c773ae9356ba858a66b33b3eefd80aa assets/alloyance/models/item/alduorite_
 ffe285f219984e45f2719b01d3f6ab577bdbed2a assets/alloyance/models/item/alduorite_dust.json
 6ea67197112bc1c96949b550e6721701d0c7dd08 assets/alloyance/models/item/alduorite_ingot.json
 76dd8d72a2c9b4608092fd3409f104c09d5bc039 assets/alloyance/models/item/alduorite_nugget.json
+a0539f7248e10157230338c072bf88ebd245c7af assets/alloyance/models/item/alloyer.json
 bfb369f6a77fec5776fb060493aa0b7bff388e39 assets/alloyance/models/item/amordrine_block.json
 ffc8a232ff19dbfd15a3ea160593598f3a2fa5d0 assets/alloyance/models/item/amordrine_dust.json
 2cd9b43b2b47414f0270caf00a4845193959d020 assets/alloyance/models/item/amordrine_ingot.json
@@ -26,6 +27,7 @@ b3836844a1534df852d2ce40e2944832c8b1bf85 assets/alloyance/models/item/atlarus_du
 943c5f6c07e7942cf7b6f41e51055245252cbeb8 assets/alloyance/models/item/atlarus_ingot.json
 58de8a68a195d2a9bd3fdda6007e07da02a4f049 assets/alloyance/models/item/atlarus_nugget.json
 e337a427597b7cfd5d4d27f9aaa7e42bbeedaf27 assets/alloyance/models/item/atlarus_ore.json
+12c3df41566791585a75931f506b62182e477536 assets/alloyance/models/item/bimetal_structure.json
 c28b71033554ce395ec3f9c142cb5242427b1136 assets/alloyance/models/item/bitumen.json
 3cc2d63d4beff0505bc0006e7444b67c83971c8f assets/alloyance/models/item/black_steel_block.json
 07a403b38c5c7f7dfbba1a6a6e1cb8fd84d00ab8 assets/alloyance/models/item/black_steel_dust.json
@@ -53,6 +55,7 @@ c7fc7a2db03996cc6112a2b9aea68f163302f7bb assets/alloyance/models/item/celenegil_
 2fc498e42c579f0b49d01a0bdc60c480228b096b assets/alloyance/models/item/ceruclase_ingot.json
 80299198b2ceeb377b2dcadbd833ae67f24f5d4d assets/alloyance/models/item/ceruclase_nugget.json
 db97babee9684bcb62f1cb81ad1e8d29983a2c2a assets/alloyance/models/item/copper_dust.json
+b208b1bc86967660b51c93fa2b89ae8f1fc70c58 assets/alloyance/models/item/crusher.json
 2b9075cdc4241674ce3f17dae57ec70ce133131f assets/alloyance/models/item/damascus_steel_block.json
 a19d1318ccf2e5fd42b41250c8992c934baba2e3 assets/alloyance/models/item/damascus_steel_dust.json
 e99503a1168e632a5a4307bb8ef2f502d6d8b568 assets/alloyance/models/item/damascus_steel_ingot.json

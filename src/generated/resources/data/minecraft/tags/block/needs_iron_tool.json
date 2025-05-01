@@ -2,6 +2,7 @@
   "values": [
     "alloyance:alloyer",
     "alloyance:crusher",
+    "alloyance:bimetal_structure",
     "alloyance:damascus_steel_block",
     "alloyance:osmium_block",
     "alloyance:silver_block",

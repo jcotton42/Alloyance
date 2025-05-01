@@ -9,12 +9,8 @@ import net.minecraft.world.flag.FeatureFlags
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.enchantment.Enchantments
 import net.minecraft.world.level.block.Block
-import net.minecraft.world.level.storage.loot.LootPool
 import net.minecraft.world.level.storage.loot.entries.EntryGroup
 import net.minecraft.world.level.storage.loot.entries.LootItem
-import net.minecraft.world.level.storage.loot.entries.LootPoolEntry
-import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer
-import net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition
@@ -29,6 +25,8 @@ class AlloyanceBlockLootProvider(lookupProvider: HolderLookup.Provider): BlockLo
     override fun generate() {
         dropSelf(AlloyanceBlocks.ALLOYER.get())
         dropSelf(AlloyanceBlocks.CRUSHER.get())
+
+        dropSelf(AlloyanceBlocks.BIMETAL_STRUCTURE.get())
 
         oreDropsItem(AlloyanceBlocks.PHOSPHORITE_ORE.get(), AlloyanceItems.PHOSPHORUS.get(), 1f, 3f)
         oreDropsItem(AlloyanceBlocks.DEEPSLATE_PHOSPHORITE_ORE.get(), AlloyanceItems.PHOSPHORUS.get(), 1f, 3f)

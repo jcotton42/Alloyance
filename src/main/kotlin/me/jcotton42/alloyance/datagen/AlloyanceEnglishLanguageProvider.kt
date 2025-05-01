@@ -20,6 +20,18 @@ class AlloyanceEnglishLanguageProvider(
     "en_us"
 ) {
     override fun addTranslations() {
+        add(AlloyanceBlocks.ALLOYER.get(), "Alloyer")
+        addSubtitle(AlloyanceSounds.ALLOYER_AMBIENCE, "Alloyer working")
+        addSubtitle(AlloyanceSounds.ALLOYER_IMPACT, "Alloyer alloys")
+        addSubtitle(AlloyanceSounds.ALLOYER_WINDUP, "Alloyer starts")
+
+        add(AlloyanceBlocks.CRUSHER.get(), "Crusher")
+        addSubtitle(AlloyanceSounds.CRUSHER_AMBIENCE, "Crusher working")
+        addSubtitle(AlloyanceSounds.CRUSHER_IMPACT, "Crusher crushes")
+        addSubtitle(AlloyanceSounds.CRUSHER_WINDUP, "Crusher starts")
+
+        add(AlloyanceBlocks.BIMETAL_STRUCTURE.get(), "Bimetal Structure")
+
         add(AlloyanceBlocks.PHOSPHORITE_ORE.get(), "Phosphorite Ore")
         add(AlloyanceBlocks.DEEPSLATE_PHOSPHORITE_ORE.get(), "Deepslate Phosphorite Ore")
         add(AlloyanceItems.PHOSPHORUS.get(), "Phosphorous")
@@ -91,16 +103,6 @@ class AlloyanceEnglishLanguageProvider(
         AlloyanceItems.BUCKETS.forEach { (fluid, bucket) ->
             add(bucket.get(), "${getFluidName(fluid)} Bucket")
         }
-
-        add(AlloyanceBlocks.ALLOYER.get(), "Alloyer")
-        addSubtitle(AlloyanceSounds.ALLOYER_AMBIENCE, "Alloyer working")
-        addSubtitle(AlloyanceSounds.ALLOYER_IMPACT, "Alloyer alloys")
-        addSubtitle(AlloyanceSounds.ALLOYER_WINDUP, "Alloyer starts")
-
-        add(AlloyanceBlocks.CRUSHER.get(), "Crusher")
-        addSubtitle(AlloyanceSounds.CRUSHER_AMBIENCE, "Crusher working")
-        addSubtitle(AlloyanceSounds.CRUSHER_IMPACT, "Crusher crushes")
-        addSubtitle(AlloyanceSounds.CRUSHER_WINDUP, "Crusher starts")
 
         add(AlloyanceItems.COPPER_DUST.get(), "Copper Dust")
         add(AlloyanceItems.GOLD_DUST.get(), "Gold Dust")

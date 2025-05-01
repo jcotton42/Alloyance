@@ -20,6 +20,8 @@ import java.util.concurrent.CompletableFuture
 
 class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFuture<HolderLookup.Provider>): RecipeProvider(output, lookupProvider) {
     override fun buildRecipes(output: RecipeOutput) {
+        addMachineRecipes(output)
+
         crushOre(output, AlloyanceItems.PHOSPHORUS, 6, AlloyanceItemTags.ORES_PHOSPHORITE)
 
         nineBlockStorageRecipe(output, AlloyanceItems.POTASH, AlloyanceItems.POTASH_BLOCK)
@@ -54,6 +56,49 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
         addAlloy(output, KRIK, 2, 1.25f, LUTETIUM, 1, OSMIUM, 1)
         addAlloy(output, TARTARITE, 1, 1.5f, ADAMANTINE, 1, ATLARUS, 1)
         addAlloy(output, ETHERIUM, 2, 1.25f, SANGUINITE, 1, ALDUORITE, 1)
+    }
+
+    private fun addMachineRecipes(output: RecipeOutput) {
+        val bimetalName = getItemName(AlloyanceItems.BIMETAL_STRUCTURE)
+        val crusherName = getItemName(AlloyanceItems.CRUSHER)
+        val alloyerName = getItemName(AlloyanceItems.ALLOYER)
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AlloyanceItems.BIMETAL_STRUCTURE)
+            .pattern("tzt")
+            .pattern("z z")
+            .pattern("tzt")
+            .define('t', AlloyanceItemTags.INGOTS_TIN)
+            .define('z', AlloyanceItemTags.INGOTS_ZINC)
+            .group(bimetalName)
+            .unlockedBy(getHasName(AlloyanceItems.TIN_INGOT), has(AlloyanceItemTags.INGOTS_TIN))
+            .unlockedBy(getHasName(AlloyanceItems.ZINC_INGOT), has(AlloyanceItemTags.INGOTS_ZINC))
+            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, bimetalName))
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AlloyanceItems.CRUSHER)
+            .pattern("opo")
+            .pattern("omo")
+            .pattern("sfs")
+            .define('o', AlloyanceItemTags.INGOTS_OURECLASE)
+            .define('p', Items.PISTON)
+            .define('m', AlloyanceItems.BIMETAL_STRUCTURE)
+            .define('s', AlloyanceItemTags.INGOTS_STEEL)
+            .define('f', Items.BLAST_FURNACE)
+            .group(crusherName)
+            .unlockedBy(getHasName(AlloyanceItems.OURECLASE_INGOT), has(AlloyanceItemTags.INGOTS_OURECLASE))
+            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, crusherName))
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AlloyanceItems.ALLOYER)
+            .pattern("obo")
+            .pattern("omo")
+            .pattern("tft")
+            .define('o', AlloyanceItemTags.INGOTS_OSMIUM)
+            .define('b', Items.BUCKET)
+            .define('m', AlloyanceItems.BIMETAL_STRUCTURE)
+            .define('t', AlloyanceItemTags.INGOTS_TIN)
+            .define('f', Items.BLAST_FURNACE)
+            .group(alloyerName)
+            .unlockedBy(getHasName(AlloyanceItems.OSMIUM_INGOT), has(AlloyanceItemTags.INGOTS_OSMIUM))
+            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, alloyerName))
     }
 
     private fun nineBlockStorageRecipe(output: RecipeOutput, unpacked: ItemLike, packed: ItemLike) {
@@ -204,7 +249,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
         val inputName = getItemName(input)
         val ingredient = Ingredient.of(input)
         val ingotName = getItemName(ingot)
-        // TODO check experience, smelt time, blast time values
+
         SimpleCookingRecipeBuilder.smelting(ingredient, RecipeCategory.MISC, ingot, 0.7F, 200)
             .group(ingotName)
             .unlockedBy(getHasName(input), has(input))
