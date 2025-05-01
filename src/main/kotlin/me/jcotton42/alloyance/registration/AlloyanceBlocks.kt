@@ -27,6 +27,7 @@ import net.neoforged.bus.api.IEventBus
 import net.neoforged.neoforge.registries.DeferredBlock
 import net.neoforged.neoforge.registries.DeferredRegister
 import java.util.function.ToIntFunction
+import kotlin.math.max
 
 private val oreProps = BlockBehaviour.Properties.of()
     .mapColor(MapColor.STONE)
@@ -81,6 +82,13 @@ object AlloyanceBlocks {
     val CRUSHER_BLOCK_ENTITY = BLOCK_ENTITIES.register("crusher") { ->
         BlockEntityType.Builder.of(::CrusherBlockEntity, CRUSHER.get()).build(null)
     }
+
+    val BIMETAL_STRUCTURE = BLOCKS.registerSimpleBlock("bimetal_structure", BlockBehaviour.Properties.of()
+        .sound(SoundType.METAL)
+        .strength(max(ZINC.hardness, TIN.hardness), max(ZINC.blockBlastResistance, TIN.blockBlastResistance))
+        .requiresCorrectToolForDrops()
+        .noOcclusion()
+    )
 
     val PHOSPHORITE_ORE = ore("phosphorite")
     val DEEPSLATE_PHOSPHORITE_ORE = deepslateOre("phosphorite")

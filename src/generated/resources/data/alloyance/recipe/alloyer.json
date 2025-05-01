@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "alloyer",
+  "key": {
+    "b": {
+      "item": "minecraft:bucket"
+    },
+    "f": {
+      "item": "minecraft:blast_furnace"
+    },
+    "m": {
+      "item": "alloyance:bimetal_structure"
+    },
+    "o": {
+      "tag": "c:ingots/osmium"
+    },
+    "t": {
+      "tag": "c:ingots/tin"
+    }
+  },
+  "pattern": [
+    "obo",
+    "omo",
+    "tft"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:alloyer"
+  }
+}

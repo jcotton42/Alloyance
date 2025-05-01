@@ -30,6 +30,8 @@ object AlloyanceItems {
     val ALLOYER = block(AlloyanceBlocks.ALLOYER)
     val CRUSHER = block(AlloyanceBlocks.CRUSHER)
 
+    val BIMETAL_STRUCTURE = block(AlloyanceBlocks.BIMETAL_STRUCTURE)
+
     val COPPER_DUST = ITEMS.registerSimpleItem("copper_dust")
     val IRON_DUST = ITEMS.registerSimpleItem("iron_dust")
     val GOLD_DUST = ITEMS.registerSimpleItem("gold_dust")

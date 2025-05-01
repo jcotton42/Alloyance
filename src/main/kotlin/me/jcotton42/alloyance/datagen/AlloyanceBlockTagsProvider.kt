@@ -37,6 +37,7 @@ class AlloyanceBlockTagsProvider(
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
             AlloyanceBlocks.ALLOYER.get(),
             AlloyanceBlocks.CRUSHER.get(),
+            AlloyanceBlocks.BIMETAL_STRUCTURE.get(),
             AlloyanceBlocks.PHOSPHORITE_ORE.get(),
             AlloyanceBlocks.DEEPSLATE_PHOSPHORITE_ORE.get(),
             AlloyanceBlocks.POTASH_ORE.get(),
@@ -59,6 +60,7 @@ class AlloyanceBlockTagsProvider(
         tag(BlockTags.NEEDS_IRON_TOOL).add(
             AlloyanceBlocks.ALLOYER.get(),
             AlloyanceBlocks.CRUSHER.get(),
+            AlloyanceBlocks.BIMETAL_STRUCTURE.get(),
         )
         tag(Tags.Blocks.STORAGE_BLOCKS).addTags(
             AlloyanceBlockTags.STORAGE_BLOCKS_POTASH,

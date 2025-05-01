@@ -21,6 +21,11 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
     existingFileHelper
 ) {
     override fun registerModels() {
+        basicBlockItem(AlloyanceBlocks.ALLOYER)
+        basicBlockItem(AlloyanceBlocks.CRUSHER)
+
+        basicBlockItem(AlloyanceBlocks.BIMETAL_STRUCTURE)
+
         basicItem(AlloyanceItems.COPPER_DUST.get())
         basicItem(AlloyanceItems.IRON_DUST.get())
         basicItem(AlloyanceItems.GOLD_DUST.get())
@@ -60,7 +65,7 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
         }
     }
 
-    private fun basicBlockItem(block: DeferredBlock<Block>) {
+    private fun basicBlockItem(block: DeferredBlock<out Block>) {
         withExistingParent(block.id.path, modLoc("block/${block.id.path}"))
     }
 

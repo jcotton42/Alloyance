@@ -4,10 +4,8 @@ import me.jcotton42.alloyance.Alloyance
 import net.minecraft.core.registries.Registries
 import net.minecraft.network.chat.Component
 import net.minecraft.world.item.CreativeModeTab
-import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.item.ItemStack
 import net.neoforged.bus.api.IEventBus
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent
 import net.neoforged.neoforge.registries.DeferredHolder
 import net.neoforged.neoforge.registries.DeferredRegister
 
@@ -26,6 +24,7 @@ object AlloyanceCreativeTabs {
                 }
                 output.accept(AlloyanceBlocks.POTASH_BLOCK)
                 output.accept(AlloyanceBlocks.SULFUR_BLOCK)
+                output.accept(AlloyanceBlocks.BIMETAL_STRUCTURE)
             }
             .build()
     }
@@ -45,6 +44,8 @@ object AlloyanceCreativeTabs {
                 output.accept(AlloyanceItems.POTASH)
                 output.accept(AlloyanceItems.SULFUR)
                 output.accept(AlloyanceItems.THERMITE_DUST)
+                output.accept(AlloyanceItems.BITUMEN)
+                output.accept(AlloyanceItems.TAR)
             }
             .build()
     }
@@ -118,12 +119,13 @@ object AlloyanceCreativeTabs {
                     AlloyanceBlocks.END_ORES[metal]?.let(output::accept)
                     AlloyanceBlocks.NETHER_ORES[metal]?.let(output::accept)
                 }
-                output.accept(AlloyanceItems.PHOSPHORITE_ORE)
-                output.accept(AlloyanceItems.DEEPSLATE_PHOSPHORITE_ORE)
-                output.accept(AlloyanceItems.POTASH_ORE)
-                output.accept(AlloyanceItems.DEEPSLATE_POTASH_ORE)
-                output.accept(AlloyanceItems.SULFUR_ORE)
-                output.accept(AlloyanceItems.DEEPSLATE_SULFUR_ORE)
+                output.accept(AlloyanceBlocks.PHOSPHORITE_ORE)
+                output.accept(AlloyanceBlocks.DEEPSLATE_PHOSPHORITE_ORE)
+                output.accept(AlloyanceBlocks.POTASH_ORE)
+                output.accept(AlloyanceBlocks.DEEPSLATE_POTASH_ORE)
+                output.accept(AlloyanceBlocks.SULFUR_ORE)
+                output.accept(AlloyanceBlocks.DEEPSLATE_SULFUR_ORE)
+                output.accept(AlloyanceBlocks.TAR_ORE)
             }
             .build()
     }
