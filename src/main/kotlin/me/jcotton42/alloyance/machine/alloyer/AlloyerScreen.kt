@@ -1,6 +1,7 @@
 package me.jcotton42.alloyance.machine.alloyer
 
 import me.jcotton42.alloyance.Alloyance
+import me.jcotton42.alloyance.registration.Metal
 import net.minecraft.client.gui.GuiGraphics
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen
 import net.minecraft.network.chat.Component
@@ -17,7 +18,7 @@ class AlloyerScreen(
         title
 ) {
     companion object {
-        private val BACKGROUND = ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "textures/gui/alloyer.png")
+        val BACKGROUND = ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "textures/gui/alloyer.png")
         private val BURNING_SPRITE = ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "alloyer/burning")
         private val METER_SPRITE = ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "alloyer/meter")
         private val SPOUT_SPRITE = ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "alloyer/spout")
@@ -51,13 +52,12 @@ class AlloyerScreen(
         val alloyProgressPercentage = alloyingTime / totalAlloyingTime.toFloat()
         val alloyHeight = (alloyProgressPercentage * 33).toInt()
         val alloySkip = 33 - alloyHeight
-        guiGraphics.blitSprite(METER_SPRITE, 7, 33, 0, 33 - alloyHeight, leftPos + 40, topPos + 66 + alloySkip, 7, alloyHeight)
+        guiGraphics.blitSprite(METER_SPRITE, 7, 33, 0, 33 - alloyHeight, leftPos + 40, topPos + 65 + alloySkip, 7, alloyHeight)
 
         guiGraphics.blitSprite(SPOUT_SPRITE, 10, 25, 0, 0, leftPos + 52, topPos + 32, 10, alloyHeight)
     }
 
     override fun renderLabels(guiGraphics: GuiGraphics, mouseX: Int, mouseY: Int) {
-        // a nice Osmium blue
-        guiGraphics.drawString(this.font, this.title, this.titleLabelX, this.titleLabelY, 0xB40D8, false)
+        guiGraphics.drawString(this.font, this.title, this.titleLabelX, this.titleLabelY, Metal.OSMIUM.color, false)
     }
 }
