@@ -1,6 +1,7 @@
 package me.jcotton42.alloyance.compat.jei
 
 import me.jcotton42.alloyance.Alloyance
+import me.jcotton42.alloyance.machine.alloyer.AlloyerScreen
 import me.jcotton42.alloyance.machine.crusher.CrusherScreen
 import me.jcotton42.alloyance.registration.AlloyanceItems
 import me.jcotton42.alloyance.registration.AlloyanceRecipes
@@ -19,21 +20,27 @@ class AlloyanceJeiPlugin: IModPlugin {
 
     override fun registerCategories(registration: IRecipeCategoryRegistration) {
         val guiHelper = registration.jeiHelpers.guiHelper
+        registration.addRecipeCategories(AlloyerRecipeCategory(guiHelper))
         registration.addRecipeCategories(CrusherRecipeCategory(guiHelper))
     }
 
     override fun registerRecipes(registration: IRecipeRegistration) {
         val recipeManager = Minecraft.getInstance().level!!.recipeManager
 
+        val alloyerRecipes = recipeManager.getAllRecipesFor(AlloyanceRecipes.ALLOYER_TYPE.get())
+        registration.addRecipes(AlloyerRecipeCategory.RECIPE_TYPE, alloyerRecipes.map { it.value })
+
         val crusherRecipes = recipeManager.getAllRecipesFor(AlloyanceRecipes.CRUSHER_TYPE.get())
         registration.addRecipes(CrusherRecipeCategory.RECIPE_TYPE, crusherRecipes.map { it.value })
     }
 
     override fun registerGuiHandlers(registration: IGuiHandlerRegistration) {
+        registration.addRecipeClickArea(AlloyerScreen::class.java, 52, 32, 10, 26, AlloyerRecipeCategory.RECIPE_TYPE)
         registration.addRecipeClickArea(CrusherScreen::class.java, 59, 45, 21, 18, CrusherRecipeCategory.RECIPE_TYPE)
     }
 
     override fun registerRecipeCatalysts(registration: IRecipeCatalystRegistration) {
+        registration.addRecipeCatalyst(AlloyanceItems.ALLOYER, AlloyerRecipeCategory.RECIPE_TYPE)
         registration.addRecipeCatalyst(AlloyanceItems.CRUSHER, CrusherRecipeCategory.RECIPE_TYPE)
     }
 }
