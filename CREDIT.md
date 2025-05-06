@@ -1,3 +1,9 @@
+[Metallurgy 4](https://github.com/TeamMetallurgy/Metallurgy4) by [TeamMetallurgy](https://github.com/TeamMetallurgy)
+is licensed under [LGPLv3](https://www.gnu.org/licenses/lgpl-3.0.en.html).
+
+[Metallurgy 4: Reforged](https://github.com/Davoleo/Metallurgy-4-Reforged) by [Davoleo](https://github.com/Davoleo/)
+is licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
 [Metallurgy 4 Reforged Assets](https://github.com/Davoleo/Metallurgy-4-Reforged) © 2022 by [matpac](https://github.com/Klazkin)
 is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
