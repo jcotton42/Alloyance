@@ -22,6 +22,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
     override fun buildRecipes(output: RecipeOutput) {
         addMachineRecipes(output)
         addMiscIngredientRecipes(output)
+        addToolRecipes(output)
 
         crushOre(output, AlloyanceItems.PHOSPHORUS, 6, AlloyanceItemTags.ORES_PHOSPHORITE)
 
@@ -119,6 +120,69 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
             .group(getItemName(AlloyanceItems.INFUSED_IGNATIUS))
             .unlockedBy(getHasName(AlloyanceItems.THERMITE_DUST), has(AlloyanceItems.THERMITE_DUST))
             .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(AlloyanceItems.INFUSED_IGNATIUS)))
+    }
+
+    private fun addToolRecipes(output: RecipeOutput) {
+        AlloyanceItems.AXES.forEach { (metal, axe) ->
+            val ingot = AlloyanceItems.INGOTS.getValue(metal)
+            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, axe)
+                .pattern("ii ")
+                .pattern("is ")
+                .pattern(" s ")
+                .define('i', ingot)
+                .define('s', Items.STICK)
+                .group(getItemName(axe))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(axe)))
+        }
+        AlloyanceItems.HOES.forEach { (metal, hoe) ->
+            val ingot = AlloyanceItems.INGOTS.getValue(metal)
+            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, hoe)
+                .pattern("ii ")
+                .pattern(" s ")
+                .pattern(" s ")
+                .define('i', ingot)
+                .define('s', Items.STICK)
+                .group(getItemName(hoe))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(hoe)))
+        }
+        AlloyanceItems.PICKAXES.forEach { (metal, pickaxe) ->
+            val ingot = AlloyanceItems.INGOTS.getValue(metal)
+            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, pickaxe)
+                .pattern("iii")
+                .pattern(" s ")
+                .pattern(" s ")
+                .define('i', ingot)
+                .define('s', Items.STICK)
+                .group(getItemName(pickaxe))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(pickaxe)))
+        }
+        AlloyanceItems.SHOVELS.forEach { (metal, shovel) ->
+            val ingot = AlloyanceItems.INGOTS.getValue(metal)
+            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, shovel)
+                .pattern(" i ")
+                .pattern(" s ")
+                .pattern(" s ")
+                .define('i', ingot)
+                .define('s', Items.STICK)
+                .group(getItemName(shovel))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(shovel)))
+        }
+        AlloyanceItems.SWORDS.forEach { (metal, sword) ->
+            val ingot = AlloyanceItems.INGOTS.getValue(metal)
+            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, sword)
+                .pattern(" i ")
+                .pattern(" i ")
+                .pattern(" s ")
+                .define('i', ingot)
+                .define('s', Items.STICK)
+                .group(getItemName(sword))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(sword)))
+        }
     }
 
     private fun nineBlockStorageRecipe(output: RecipeOutput, unpacked: ItemLike, packed: ItemLike) {

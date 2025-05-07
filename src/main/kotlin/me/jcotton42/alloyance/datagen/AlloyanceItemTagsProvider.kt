@@ -4,13 +4,18 @@ import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.registration.AlloyanceBlockTags
 import me.jcotton42.alloyance.registration.AlloyanceItemTags
 import me.jcotton42.alloyance.registration.AlloyanceItems
+import me.jcotton42.alloyance.registration.Metal
 import net.minecraft.core.HolderLookup
 import net.minecraft.data.PackOutput
 import net.minecraft.data.tags.ItemTagsProvider
+import net.minecraft.resources.ResourceKey
+import net.minecraft.resources.ResourceLocation
+import net.minecraft.tags.ItemTags
 import net.neoforged.neoforge.common.Tags
 import net.neoforged.neoforge.common.data.BlockTagsProvider
 import net.neoforged.neoforge.common.data.ExistingFileHelper
 import java.util.concurrent.CompletableFuture
+import javax.swing.text.html.HTML
 
 class AlloyanceItemTagsProvider(
     output: PackOutput,
@@ -88,6 +93,28 @@ class AlloyanceItemTagsProvider(
             tag(itemTag)
                 .addTag(AlloyanceItemTags.DUSTS.getValue(metal))
                 .addTag(AlloyanceItemTags.INGOTS.getValue(metal))
+        }
+
+        AlloyanceItems.BUCKETS.values.forEach {
+            tag(Tags.Items.BUCKETS).add(it.get())
+        }
+        AlloyanceItems.AXES.values.forEach {
+            tag(ItemTags.AXES).add(it.get())
+            tag(Tags.Items.MELEE_WEAPON_TOOLS).add(it.get())
+        }
+        AlloyanceItems.HOES.values.forEach {
+            tag(ItemTags.HOES).add(it.get())
+        }
+        AlloyanceItems.PICKAXES.values.forEach {
+            tag(ItemTags.PICKAXES).add(it.get())
+            tag(Tags.Items.MINING_TOOL_TOOLS).add(it.get())
+        }
+        AlloyanceItems.SHOVELS.values.forEach {
+            tag(ItemTags.SHOVELS).add(it.get())
+        }
+        AlloyanceItems.SWORDS.values.forEach {
+            tag(ItemTags.SWORDS).add(it.get())
+            tag(Tags.Items.MELEE_WEAPON_TOOLS).add(it.get())
         }
 
         AlloyanceBlockTags.STORAGE_BLOCKS.forEach { (metal, blockTag) ->

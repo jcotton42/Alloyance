@@ -1,4 +1,7 @@
-// 1.21.1	2025-04-30T21:46:18.5605278	Tags for minecraft:block mod id alloyance
+// 1.21.1	2025-05-07T16:49:21.942885861	Tags for minecraft:block mod id alloyance
+950a086f855d118e00d3fc9697663c7721c42db1 data/alloyance/tags/block/incorrect_for_deep_iron_tool.json
+32b13946c4cd1f944b029659ccce5fcb2adad4ff data/alloyance/tags/block/needs_deep_iron_tool.json
+5789d50624864caf7dc4ccda0d586b0077f69f40 data/c/tags/block/ore_rates/singular.json
 35fc3d3de277364ae81a383ee8e18d79c70f59d9 data/c/tags/block/ores.json
 eee77fbdd60d030b8a05c26a6b886775e1fbaa94 data/c/tags/block/ores/adamantine.json
 48b6fd0e8a94232da539b2d3efa9e7c5060c5ec6 data/c/tags/block/ores/alduorite.json
@@ -37,7 +40,6 @@ b5847b4a65fb265052f0d2c49f73b82b8b8bc0f9 data/c/tags/block/ores/silver.json
 107d25e6dc3440268afd02f81bae0928950afa3e data/c/tags/block/ores_in_ground/end_stone.json
 0c63af0bf0cf67405fd088c73cd72b6e9c57b096 data/c/tags/block/ores_in_ground/netherrack.json
 58abfbc779766bfe3400d94dfaa4bcb286885c67 data/c/tags/block/ores_in_ground/stone.json
-5789d50624864caf7dc4ccda0d586b0077f69f40 data/c/tags/block/ore_rates/singular.json
 dd5018d5beab0f68b7f35b4f4d9d803ae575f17e data/c/tags/block/storage_blocks.json
 e1be8f7aa9f785e82a8cb87ad2a4da780f1d288a data/c/tags/block/storage_blocks/adamantine.json
 5c95cccd13bb0ba463f366f010b8342b27d6bb97 data/c/tags/block/storage_blocks/alduorite.json

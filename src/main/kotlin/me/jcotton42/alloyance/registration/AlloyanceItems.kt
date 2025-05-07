@@ -6,10 +6,15 @@ import me.jcotton42.alloyance.registration.Metal.*
 import net.minecraft.core.Holder
 import net.minecraft.core.component.DataComponents
 import net.minecraft.network.chat.Component
+import net.minecraft.world.item.AxeItem
 import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.BucketItem
+import net.minecraft.world.item.HoeItem
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
+import net.minecraft.world.item.PickaxeItem
+import net.minecraft.world.item.ShovelItem
+import net.minecraft.world.item.SwordItem
 import net.minecraft.world.item.component.ItemLore
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.material.Fluid
@@ -26,6 +31,11 @@ object AlloyanceItems {
     val NUGGETS = mutableMapOf<Metal, DeferredItem<Item>>()
     val DUSTS = mutableMapOf<Metal, DeferredItem<Item>>()
     val BUCKETS = mutableMapOf<DeferredHolder<Fluid, out Fluid>, DeferredItem<BucketItem>>()
+    val AXES = mutableMapOf<Metal, DeferredItem<AxeItem>>()
+    val HOES = mutableMapOf<Metal, DeferredItem<HoeItem>>()
+    val PICKAXES = mutableMapOf<Metal, DeferredItem<PickaxeItem>>()
+    val SHOVELS = mutableMapOf<Metal, DeferredItem<ShovelItem>>()
+    val SWORDS = mutableMapOf<Metal, DeferredItem<SwordItem>>()
 
     val ALLOYER = block(AlloyanceBlocks.ALLOYER)
     val CRUSHER = block(AlloyanceBlocks.CRUSHER)
@@ -67,6 +77,11 @@ object AlloyanceItems {
     val DEEP_IRON_INGOT = ingot(DEEP_IRON)
     val DEEP_IRON_NUGGET = nugget(DEEP_IRON)
     val DEEP_IRON_DUST = dust(DEEP_IRON)
+    val DEEP_IRON_AXE = axe(DEEP_IRON)
+    val DEEP_IRON_HOE = hoe(DEEP_IRON)
+    val DEEP_IRON_PICKAXE = pickaxe(DEEP_IRON)
+    val DEEP_IRON_SHOVEL = shovel(DEEP_IRON)
+    val DEEP_IRON_SWORD = sword(DEEP_IRON)
 
     val PROMETHEUM_ORE = block(AlloyanceBlocks.PROMETHEUM_ORE, PROMETHEUM)
     val DEEPSLATE_PROMETHEUM_ORE = block(AlloyanceBlocks.DEEPSLATE_PROMETHEUM_ORE, PROMETHEUM)
@@ -419,6 +434,95 @@ object AlloyanceItems {
             BucketItem(fluid.get(), Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1))
         }
         BUCKETS[fluid] = item
+        return item
+    }
+
+    private fun axe(metal: Metal): DeferredItem<AxeItem> {
+        val item = ITEMS.register("${metal.id}_axe") { ->
+            AxeItem(
+                MetalTiers.TIERS.getValue(metal),
+                Item.Properties()
+                    .tooltipColor(metal.color)
+                    .attributes(AxeItem.createAttributes(
+                        MetalTiers.TIERS.getValue(metal),
+                        // TODO decide
+                        4f,
+                        // TODO decide
+                        -3.4f,
+                    ))
+            )
+        }
+        AXES[metal] = item
+        return item
+    }
+
+    private fun hoe(metal: Metal): DeferredItem<HoeItem> {
+        val item = ITEMS.register("${metal.id}_hoe") { ->
+            HoeItem(
+                MetalTiers.TIERS.getValue(metal),
+                Item.Properties()
+                    .tooltipColor(metal.color)
+                    .attributes(HoeItem.createAttributes(
+                        MetalTiers.TIERS.getValue(metal),
+                        // TODO decide
+                        3f,
+                        // TODO decide
+                        -2.4f,
+                    ))
+            )
+        }
+        HOES[metal] = item
+        return item
+    }
+
+    private fun pickaxe(metal: Metal): DeferredItem<PickaxeItem> {
+        val item = ITEMS.register("${metal.id}_pickaxe") { ->
+            PickaxeItem(
+                MetalTiers.TIERS.getValue(metal),
+                Item.Properties()
+                    .tooltipColor(metal.color)
+                    .attributes(PickaxeItem.createAttributes(
+                        MetalTiers.TIERS.getValue(metal),
+                        1f,
+                        -2.8f,
+                    ))
+            )
+        }
+        PICKAXES[metal] = item
+        return item
+    }
+
+    private fun shovel(metal: Metal): DeferredItem<ShovelItem> {
+        val item = ITEMS.register("${metal.id}_shovel") { ->
+            ShovelItem(
+                MetalTiers.TIERS.getValue(metal),
+                Item.Properties()
+                    .tooltipColor(metal.color)
+                    .attributes(ShovelItem.createAttributes(
+                        MetalTiers.TIERS.getValue(metal),
+                        1.5f,
+                        -3f,
+                    ))
+            )
+        }
+        SHOVELS[metal] = item
+        return item
+    }
+
+    private fun sword(metal: Metal): DeferredItem<SwordItem> {
+        val item = ITEMS.register("${metal.id}_sword") { ->
+            SwordItem(
+                MetalTiers.TIERS.getValue(metal),
+                Item.Properties()
+                    .tooltipColor(metal.color)
+                    .attributes(SwordItem.createAttributes(
+                        MetalTiers.TIERS.getValue(metal),
+                        3,
+                        -2.4f,
+                    ))
+            )
+        }
+        SWORDS[metal] = item
         return item
     }
 }

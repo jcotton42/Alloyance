@@ -71,6 +71,7 @@ class AlloyanceEnglishLanguageProvider(
         addTab(AlloyanceCreativeTabs.RAW_MATERIALS, "Alloyance Raw Materials")
         addTab(AlloyanceCreativeTabs.SPECIAL, "Alloyance Special")
         addTab(AlloyanceCreativeTabs.ORES, "Alloyance Ores")
+        addTab(AlloyanceCreativeTabs.TOOLS, "Alloyance Tools")
 
         AlloyanceBlocks.STORAGE_BLOCKS.forEach { (metal, block) ->
             add(block.get(), "Block of ${getMetalName(metal)}")
@@ -102,6 +103,21 @@ class AlloyanceEnglishLanguageProvider(
         }
         AlloyanceItems.BUCKETS.forEach { (fluid, bucket) ->
             add(bucket.get(), "${getFluidName(fluid)} Bucket")
+        }
+        AlloyanceItems.AXES.forEach { (metal, axe) ->
+            add(axe.get(), "${getMetalName(metal)} Axe")
+        }
+        AlloyanceItems.HOES.forEach { (metal, hoe) ->
+            add(hoe.get(), "${getMetalName(metal)} Hoe")
+        }
+        AlloyanceItems.PICKAXES.forEach { (metal, pickaxe) ->
+            add(pickaxe.get(), "${getMetalName(metal)} Pickaxe")
+        }
+        AlloyanceItems.SHOVELS.forEach { (metal, shovel) ->
+            add(shovel.get(), "${getMetalName(metal)} Shovel")
+        }
+        AlloyanceItems.SWORDS.forEach { (metal, sword) ->
+            add(sword.get(), "${getMetalName(metal)} Sword")
         }
 
         add(AlloyanceItems.COPPER_DUST.get(), "Copper Dust")

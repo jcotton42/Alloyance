@@ -130,6 +130,21 @@ object AlloyanceCreativeTabs {
             .build()
     }
 
+    val TOOLS: DeferredHolder<CreativeModeTab, CreativeModeTab> = TABS.register("tools") { location ->
+        CreativeModeTab.builder()
+            .title(Component.translatable(location.toLanguageKey("itemGroup")))
+            .icon { ItemStack(AlloyanceItems.DEEP_IRON_PICKAXE.get()) }
+            .displayItems { _, output ->
+                Metal.entries.forEach { metal ->
+                    AlloyanceItems.SHOVELS[metal]?.let(output::accept)
+                    AlloyanceItems.PICKAXES[metal]?.let(output::accept)
+                    AlloyanceItems.AXES[metal]?.let(output::accept)
+                    AlloyanceItems.HOES[metal]?.let(output::accept)
+                    AlloyanceItems.SWORDS[metal]?.let(output::accept)
+                }
+            }.build()
+    }
+
     fun register(bus: IEventBus) {
         TABS.register(bus)
     }

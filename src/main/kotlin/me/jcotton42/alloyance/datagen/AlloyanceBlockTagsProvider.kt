@@ -26,6 +26,9 @@ class AlloyanceBlockTagsProvider(
     existingFileHelper
 ) {
     override fun addTags(provider: HolderLookup.Provider) {
+        tag(AlloyanceBlockTags.NEEDS_DEEP_IRON_TOOL).addTag(BlockTags.NEEDS_IRON_TOOL)
+        tag(AlloyanceBlockTags.INCORRECT_FOR_DEEP_IRON_TOOL).addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+
         tag(AlloyanceBlockTags.ORES_PHOSPHORITE).add(AlloyanceBlocks.PHOSPHORITE_ORE.get(), AlloyanceBlocks.DEEPSLATE_PHOSPHORITE_ORE.get())
 
         tag(AlloyanceBlockTags.ORES_POTASH).add(AlloyanceBlocks.POTASH_ORE.get(), AlloyanceBlocks.DEEPSLATE_POTASH_ORE.get())
@@ -85,23 +88,23 @@ class AlloyanceBlockTagsProvider(
         AlloyanceBlocks.STORAGE_BLOCKS.forEach { (metal, block) ->
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get())
             tag(BlockTags.BEACON_BASE_BLOCKS).add(block.get())
-            tag(getToolTag(metal)).add(block.get())
+            tag(getNeedsToolTag(metal)).add(block.get())
         }
         AlloyanceBlocks.ORES.forEach { (metal, block) ->
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get())
-            tag(getToolTag(metal)).add(block.get())
+            tag(getNeedsToolTag(metal)).add(block.get())
         }
         AlloyanceBlocks.DEEPSLATE_ORES.forEach { (metal, block) ->
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get())
-            tag(getToolTag(metal)).add(block.get())
+            tag(getNeedsToolTag(metal)).add(block.get())
         }
         AlloyanceBlocks.END_ORES.forEach { (metal, block) ->
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get())
-            tag(getToolTag(metal)).add(block.get())
+            tag(getNeedsToolTag(metal)).add(block.get())
         }
         AlloyanceBlocks.NETHER_ORES.forEach { (metal, block) ->
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get())
-            tag(getToolTag(metal)).add(block.get())
+            tag(getNeedsToolTag(metal)).add(block.get())
         }
 
         AlloyanceBlockTags.STORAGE_BLOCKS.forEach { (metal, blockTag) ->
@@ -140,7 +143,7 @@ class AlloyanceBlockTagsProvider(
 }
 
 // TODO reconsider these based on hardness
-private fun getToolTag(metal: Metal): TagKey<Block> = when (metal) {
+private fun getNeedsToolTag(metal: Metal): TagKey<Block> = when (metal) {
     // tier 1
     DEEP_IRON, PROMETHEUM, ZINC, TIN, BRONZE, BRASS -> BlockTags.NEEDS_STONE_TOOL
     DAMASCUS_STEEL -> BlockTags.NEEDS_IRON_TOOL

@@ -10,6 +10,8 @@ import net.minecraft.world.level.block.Block
 object AlloyanceBlockTags {
     val STORAGE_BLOCKS: MutableMap<Metal, TagKey<Block>> = mutableMapOf()
     val ORES: MutableMap<Metal, TagKey<Block>> = mutableMapOf()
+    val NEEDS_TOOL: MutableMap<Metal, TagKey<Block>> = mutableMapOf()
+    val INCORRECT_FOR_TOOL: MutableMap<Metal, TagKey<Block>> = mutableMapOf()
 
     val ORES_IN_GROUND_END_STONE: TagKey<Block> = c("ores_in_ground/end_stone")
 
@@ -21,6 +23,8 @@ object AlloyanceBlockTags {
     val STORAGE_BLOCKS_SULFUR = c("storage_blocks/sulfur")
     val ORES_SULFUR: TagKey<Block> = c("ores/sulfur")
 
+    val NEEDS_DEEP_IRON_TOOL: TagKey<Block> = needs(DEEP_IRON)
+    val INCORRECT_FOR_DEEP_IRON_TOOL: TagKey<Block> = incorrectFor(DEEP_IRON)
     val STORAGE_BLOCKS_DEEP_IRON: TagKey<Block> = storageBlocks(DEEP_IRON)
     val ORES_DEEP_IRON: TagKey<Block> = ores(DEEP_IRON)
 
@@ -156,6 +160,18 @@ object AlloyanceBlockTags {
     private fun ores(metal: Metal): TagKey<Block> {
         val tag = c("ores/${metal.id}")
         ORES[metal] = tag
+        return tag
+    }
+
+    private fun incorrectFor(metal: Metal): TagKey<Block> {
+        val tag = alloyance("incorrect_for_${metal.id}_tool")
+        INCORRECT_FOR_TOOL[metal] = tag
+        return tag
+    }
+
+    private fun needs(metal: Metal): TagKey<Block> {
+        val tag = alloyance("needs_${metal.id}_tool")
+        NEEDS_TOOL[metal] = tag
         return tag
     }
 

@@ -63,6 +63,11 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
         AlloyanceItems.BUCKETS.forEach { (fluid, bucket) ->
             bucket(fluid, bucket)
         }
+        AlloyanceItems.AXES.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.HOES.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.PICKAXES.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.SHOVELS.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.SWORDS.values.forEach { basicItem(it.get()) }
     }
 
     private fun basicBlockItem(block: DeferredBlock<out Block>) {
