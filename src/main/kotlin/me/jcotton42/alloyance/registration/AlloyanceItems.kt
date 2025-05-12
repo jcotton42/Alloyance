@@ -6,6 +6,10 @@ import me.jcotton42.alloyance.registration.Metal.*
 import net.minecraft.core.Holder
 import net.minecraft.core.component.DataComponents
 import net.minecraft.network.chat.Component
+import net.minecraft.resources.ResourceLocation
+import net.minecraft.world.entity.EquipmentSlotGroup
+import net.minecraft.world.entity.ai.attributes.AttributeModifier
+import net.minecraft.world.entity.ai.attributes.Attributes
 import net.minecraft.world.item.AxeItem
 import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.BucketItem
@@ -15,6 +19,7 @@ import net.minecraft.world.item.Items
 import net.minecraft.world.item.PickaxeItem
 import net.minecraft.world.item.ShovelItem
 import net.minecraft.world.item.SwordItem
+import net.minecraft.world.item.component.ItemAttributeModifiers
 import net.minecraft.world.item.component.ItemLore
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.material.Fluid
@@ -476,16 +481,34 @@ object AlloyanceItems {
     }
 
     private fun pickaxe(metal: Metal): DeferredItem<PickaxeItem> {
+        val tier = MetalTiers.TIERS.getValue(metal)
+        val attackDamage = 1.0
+        val attackSpeed = -2.8
+        val modifierId = ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "diver_mining")
+        val attributes = ItemAttributeModifiers.builder()
+            // first two from PickaxeItem.createAttributes
+            .add(
+                Attributes.ATTACK_DAMAGE,
+                AttributeModifier(Item.BASE_ATTACK_DAMAGE_ID, attackDamage + tier.attackDamageBonus, AttributeModifier.Operation.ADD_VALUE),
+                EquipmentSlotGroup.MAINHAND
+            )
+            .add(
+                Attributes.ATTACK_SPEED,
+                AttributeModifier(Item.BASE_ATTACK_SPEED_ID, attackSpeed, AttributeModifier.Operation.ADD_VALUE),
+                EquipmentSlotGroup.MAINHAND
+            )
+            .add(
+                Attributes.SUBMERGED_MINING_SPEED,
+                AttributeModifier(modifierId, 3.0, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL),
+                EquipmentSlotGroup.MAINHAND
+            )
+            .build()
         val item = ITEMS.register("${metal.id}_pickaxe") { ->
             PickaxeItem(
-                MetalTiers.TIERS.getValue(metal),
+                tier,
                 Item.Properties()
                     .tooltipColor(metal.color)
-                    .attributes(PickaxeItem.createAttributes(
-                        MetalTiers.TIERS.getValue(metal),
-                        1f,
-                        -2.8f,
-                    ))
+                    .attributes(attributes)
             )
         }
         PICKAXES[metal] = item
