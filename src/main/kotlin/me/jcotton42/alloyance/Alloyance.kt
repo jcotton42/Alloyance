@@ -30,6 +30,7 @@ object Alloyance {
     init {
         LOGGER.info("Hello world!")
 
+        AlloyanceArmorMaterials.register(MOD_BUS)
         AlloyanceBlocks.register(MOD_BUS)
         AlloyanceCreativeTabs.register(MOD_BUS)
         AlloyanceDataComponents.register(MOD_BUS)

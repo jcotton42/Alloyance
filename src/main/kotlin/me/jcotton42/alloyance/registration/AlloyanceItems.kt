@@ -482,27 +482,6 @@ object AlloyanceItems {
 
     private fun pickaxe(metal: Metal): DeferredItem<PickaxeItem> {
         val tier = MetalTiers.TIERS.getValue(metal)
-        val attackDamage = 1.0
-        val attackSpeed = -2.8
-        val modifierId = ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "diver_mining")
-        val attributes = ItemAttributeModifiers.builder()
-            // first two from PickaxeItem.createAttributes
-            .add(
-                Attributes.ATTACK_DAMAGE,
-                AttributeModifier(Item.BASE_ATTACK_DAMAGE_ID, attackDamage + tier.attackDamageBonus, AttributeModifier.Operation.ADD_VALUE),
-                EquipmentSlotGroup.MAINHAND
-            )
-            .add(
-                Attributes.ATTACK_SPEED,
-                AttributeModifier(Item.BASE_ATTACK_SPEED_ID, attackSpeed, AttributeModifier.Operation.ADD_VALUE),
-                EquipmentSlotGroup.MAINHAND
-            )
-            .add(
-                Attributes.SUBMERGED_MINING_SPEED,
-                AttributeModifier(modifierId, 3.0, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL),
-                EquipmentSlotGroup.MAINHAND
-            )
-            .build()
         val item = ITEMS.register("${metal.id}_pickaxe") { ->
             PickaxeItem(
                 tier,
