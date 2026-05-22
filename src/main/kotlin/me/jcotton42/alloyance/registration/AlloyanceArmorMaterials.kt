@@ -55,6 +55,8 @@ object AlloyanceArmorMaterials {
         knockbackResistance = 0f
     )
 
+    // MARKER
+
     private fun material(
         metal: Metal,
         bootDefense: Int,

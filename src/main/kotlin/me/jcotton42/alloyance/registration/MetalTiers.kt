@@ -33,6 +33,7 @@ object MetalTiers {
         14
     )
 
+    // MARKER
 
     private fun tier(metal: Metal, uses: Int, speed: Float, attackDamageBonus: Float, enchantmentValue: Int): Tier {
         val tier = SimpleTier(
