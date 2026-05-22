@@ -63,14 +63,32 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
         AlloyanceItems.BUCKETS.forEach { (fluid, bucket) ->
             bucket(fluid, bucket)
         }
+
+        basicItem(AlloyanceItems.COPPER_AXE.get())
         AlloyanceItems.AXES.values.forEach { basicItem(it.get()) }
+
+        basicItem(AlloyanceItems.COPPER_HOE.get())
         AlloyanceItems.HOES.values.forEach { basicItem(it.get()) }
+
+        basicItem(AlloyanceItems.COPPER_PICKAXE.get())
         AlloyanceItems.PICKAXES.values.forEach { basicItem(it.get()) }
+
+        basicItem(AlloyanceItems.COPPER_SHOVEL.get())
         AlloyanceItems.SHOVELS.values.forEach { basicItem(it.get()) }
+
+        basicItem(AlloyanceItems.COPPER_SWORD.get())
         AlloyanceItems.SWORDS.values.forEach { basicItem(it.get()) }
+
+        basicItem(AlloyanceItems.COPPER_HELMET.get())
         AlloyanceItems.HELMETS.values.forEach { basicItem(it.get()) }
+
+        basicItem(AlloyanceItems.COPPER_CHESTPLATE.get())
         AlloyanceItems.CHESTPLATES.values.forEach { basicItem(it.get()) }
+
+        basicItem(AlloyanceItems.COPPER_LEGGINGS.get())
         AlloyanceItems.LEGGINGS.values.forEach { basicItem(it.get()) }
+
+        basicItem(AlloyanceItems.COPPER_BOOTS.get())
         AlloyanceItems.BOOTS.values.forEach { basicItem(it.get()) }
     }
 

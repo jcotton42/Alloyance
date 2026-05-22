@@ -1,5 +1,6 @@
 package me.jcotton42.alloyance.registration
 
+import com.sun.swing.internal.plaf.metal.resources.metal
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.client.TooltipStyle
 import me.jcotton42.alloyance.registration.Metal.*
@@ -7,6 +8,7 @@ import net.minecraft.core.Holder
 import net.minecraft.core.component.DataComponents
 import net.minecraft.network.chat.Component
 import net.minecraft.world.item.ArmorItem
+import net.minecraft.world.item.ArmorMaterial
 import net.minecraft.world.item.AxeItem
 import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.BucketItem
@@ -16,6 +18,7 @@ import net.minecraft.world.item.Items
 import net.minecraft.world.item.PickaxeItem
 import net.minecraft.world.item.ShovelItem
 import net.minecraft.world.item.SwordItem
+import net.minecraft.world.item.Tier
 import net.minecraft.world.item.component.ItemLore
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.material.Fluid
@@ -48,6 +51,17 @@ object AlloyanceItems {
     val BIMETAL_STRUCTURE = block(AlloyanceBlocks.BIMETAL_STRUCTURE)
 
     val COPPER_DUST = ITEMS.registerSimpleItem("copper_dust")
+    val COPPER_AXE = axe("copper", MetalTiers.COPPER)
+    val COPPER_HOE = hoe("copper", MetalTiers.COPPER)
+    val COPPER_PICKAXE = pickaxe("copper", MetalTiers.COPPER)
+    val COPPER_SHOVEL = shovel("copper", MetalTiers.COPPER)
+    val COPPER_SWORD = sword("copper", MetalTiers.COPPER)
+    val COPPER_HELMET = helmet("copper", AlloyanceArmorMaterials.COPPER, 5)
+    val COPPER_CHESTPLATE = chestplate("copper", AlloyanceArmorMaterials.COPPER, 5)
+    val COPPER_LEGGINGS = leggings("copper", AlloyanceArmorMaterials.COPPER, 5)
+    val COPPER_BOOTS = boots("copper", AlloyanceArmorMaterials.COPPER, 5)
+
+
     val IRON_DUST = ITEMS.registerSimpleItem("iron_dust")
     val GOLD_DUST = ITEMS.registerSimpleItem("gold_dust")
 
@@ -447,150 +461,192 @@ object AlloyanceItems {
     }
 
     private fun axe(metal: Metal): DeferredItem<AxeItem> {
-        val item = ITEMS.register("${metal.id}_axe") { ->
-            AxeItem(
-                MetalTiers.TIERS.getValue(metal),
-                Item.Properties()
-                    .tooltipColor(metal.color)
-                    .attributes(AxeItem.createAttributes(
-                        MetalTiers.TIERS.getValue(metal),
-                        // TODO decide
-                        4f,
-                        // TODO decide
-                        -3.4f,
-                    ))
-            )
-        }
+        val item = axe(metal.id, MetalTiers.TIERS.getValue(metal), metal.color)
         AXES[metal] = item
         return item
     }
 
-    private fun hoe(metal: Metal): DeferredItem<HoeItem> {
-        val item = ITEMS.register("${metal.id}_hoe") { ->
-            HoeItem(
-                MetalTiers.TIERS.getValue(metal),
-                Item.Properties()
-                    .tooltipColor(metal.color)
-                    .attributes(HoeItem.createAttributes(
-                        MetalTiers.TIERS.getValue(metal),
-                        // TODO decide
-                        3f,
-                        // TODO decide
-                        -2.4f,
-                    ))
+    private fun axe(name: String, tier: Tier, color: Int? = null): DeferredItem<AxeItem> {
+        val item = ITEMS.register("${name}_axe") { ->
+            val props = Item.Properties().attributes(AxeItem.createAttributes(
+                tier,
+                4f,
+                -3.4f
+            ))
+            color?.let(props::tooltipColor)
+            AxeItem(
+                tier,
+                props
             )
         }
+        return item
+    }
+
+    private fun hoe(metal: Metal): DeferredItem<HoeItem> {
+        val item = hoe(metal.id, MetalTiers.TIERS.getValue(metal), metal.color)
         HOES[metal] = item
         return item
     }
 
-    private fun pickaxe(metal: Metal): DeferredItem<PickaxeItem> {
-        val tier = MetalTiers.TIERS.getValue(metal)
-        val item = ITEMS.register("${metal.id}_pickaxe") { ->
-            PickaxeItem(
+    private fun hoe(name: String, tier: Tier, color: Int? = null): DeferredItem<HoeItem> {
+        val item = ITEMS.register("${name}_hoe") { ->
+            val props = Item.Properties().attributes(HoeItem.createAttributes(
                 tier,
-                Item.Properties()
-                    .tooltipColor(metal.color)
-                    .attributes(PickaxeItem.createAttributes(
-                        MetalTiers.TIERS.getValue(metal),
-                        // TODO decide
-                        1.0f,
-                        // TODO decide
-                        -2.8f
-                    ))
+                3f,
+                -2.4f
+            ))
+            color?.let(props::tooltipColor)
+            HoeItem(
+                tier,
+                props
             )
         }
+        return item
+    }
+
+    private fun pickaxe(metal: Metal): DeferredItem<PickaxeItem> {
+        val item = pickaxe(metal.id, MetalTiers.TIERS.getValue(metal), metal.color)
         PICKAXES[metal] = item
         return item
     }
 
-    private fun shovel(metal: Metal): DeferredItem<ShovelItem> {
-        val item = ITEMS.register("${metal.id}_shovel") { ->
-            ShovelItem(
-                MetalTiers.TIERS.getValue(metal),
-                Item.Properties()
-                    .tooltipColor(metal.color)
-                    .attributes(ShovelItem.createAttributes(
-                        MetalTiers.TIERS.getValue(metal),
-                        1.5f,
-                        -3f,
-                    ))
+    private fun pickaxe(name: String, tier: Tier, color: Int? = null): DeferredItem<PickaxeItem> {
+        val item = ITEMS.register("${name}_pickaxe") { ->
+            val props = Item.Properties().attributes(PickaxeItem.createAttributes(
+                tier,
+                1.0f,
+                -2.8f
+            ))
+            color?.let(props::tooltipColor)
+            PickaxeItem(
+                tier,
+                props
             )
         }
+        return item
+    }
+
+    private fun shovel(metal: Metal): DeferredItem<ShovelItem> {
+        val item = shovel(metal.id, MetalTiers.TIERS.getValue(metal), metal.color)
         SHOVELS[metal] = item
         return item
     }
 
-    private fun sword(metal: Metal): DeferredItem<SwordItem> {
-        val item = ITEMS.register("${metal.id}_sword") { ->
-            SwordItem(
-                MetalTiers.TIERS.getValue(metal),
-                Item.Properties()
-                    .tooltipColor(metal.color)
-                    .attributes(SwordItem.createAttributes(
-                        MetalTiers.TIERS.getValue(metal),
-                        3,
-                        -2.4f,
-                    ))
+    private fun shovel(name: String, tier: Tier, color: Int? = null): DeferredItem<ShovelItem> {
+        val item = ITEMS.register("${name}_shovel") { ->
+            val props = Item.Properties().attributes(ShovelItem.createAttributes(
+                tier,
+                1.5f,
+                -3f
+            ))
+            color?.let(props::tooltipColor)
+            ShovelItem(
+                tier,
+                props
             )
         }
+        return item
+    }
+
+    private fun sword(metal: Metal): DeferredItem<SwordItem> {
+        val item = sword(metal.id, MetalTiers.TIERS.getValue(metal), metal.color)
         SWORDS[metal] = item
         return item
     }
 
-    private fun helmet(metal: Metal, durability: Int): DeferredItem<ArmorItem> {
-        val item = ITEMS.register("${metal.id}_helmet") { ->
-            ArmorItem(
-                AlloyanceArmorMaterials.MATERIALS.getValue(metal),
-                ArmorItem.Type.HELMET,
-                Item.Properties()
-                    .tooltipColor(metal.color)
-                    .durability(ArmorItem.Type.HELMET.getDurability(durability))
+    private fun sword(name: String, tier: Tier, color: Int? = null): DeferredItem<SwordItem> {
+        val item = ITEMS.register("${name}_sword") { ->
+            val props = Item.Properties().attributes(SwordItem.createAttributes(
+                tier,
+                3,
+                -2.4f
+            ))
+            color?.let(props::tooltipColor)
+            SwordItem(
+                tier,
+                props
             )
         }
+        return item
+    }
+
+    private fun helmet(metal: Metal, durability: Int): DeferredItem<ArmorItem> {
+        val item = helmet(metal.id, AlloyanceArmorMaterials.MATERIALS.getValue(metal), durability, metal.color)
         HELMETS[metal] = item
         return item
     }
 
-    private fun chestplate(metal: Metal, durability: Int): DeferredItem<ArmorItem> {
-        val item = ITEMS.register("${metal.id}_chestplate") { ->
+    private fun helmet(name: String, material: Holder<ArmorMaterial?>, durability: Int, color: Int? = null): DeferredItem<ArmorItem> {
+        val item = ITEMS.register("${name}_helmet") { ->
+            val props = Item.Properties()
+                .durability(ArmorItem.Type.HELMET.getDurability(durability))
+            color?.let(props::tooltipColor)
             ArmorItem(
-                AlloyanceArmorMaterials.MATERIALS.getValue(metal),
-                ArmorItem.Type.CHESTPLATE,
-                Item.Properties()
-                    .tooltipColor(metal.color)
-                    .durability(ArmorItem.Type.CHESTPLATE.getDurability(durability))
+                material,
+                ArmorItem.Type.HELMET,
+                props
             )
         }
+        return item
+    }
+
+    private fun chestplate(metal: Metal, durability: Int): DeferredItem<ArmorItem> {
+        val item = chestplate(metal.id, AlloyanceArmorMaterials.MATERIALS.getValue(metal), durability, metal.color)
         CHESTPLATES[metal] = item
         return item
     }
 
-    private fun leggings(metal: Metal, durability: Int): DeferredItem<ArmorItem> {
-        val item = ITEMS.register("${metal.id}_leggings") { ->
+    private fun chestplate(name: String, material: Holder<ArmorMaterial?>, durability: Int, color: Int? = null): DeferredItem<ArmorItem> {
+        val item = ITEMS.register("${name}_chestplate") { ->
+            val props = Item.Properties()
+                .durability(ArmorItem.Type.CHESTPLATE.getDurability(durability))
+            color?.let(props::tooltipColor)
             ArmorItem(
-                AlloyanceArmorMaterials.MATERIALS.getValue(metal),
-                ArmorItem.Type.LEGGINGS,
-                Item.Properties()
-                    .tooltipColor(metal.color)
-                    .durability(ArmorItem.Type.LEGGINGS.getDurability(durability))
+                material,
+                ArmorItem.Type.CHESTPLATE,
+                props
             )
         }
+        return item
+    }
+
+    private fun leggings(metal: Metal, durability: Int): DeferredItem<ArmorItem> {
+        val item = leggings(metal.id, AlloyanceArmorMaterials.MATERIALS.getValue(metal), durability, metal.color)
         LEGGINGS[metal] = item
         return item
     }
 
-    private fun boots(metal: Metal, durability: Int): DeferredItem<ArmorItem> {
-        val item = ITEMS.register("${metal.id}_boots") { ->
+    private fun leggings(name: String, material: Holder<ArmorMaterial?>, durability: Int, color: Int? = null): DeferredItem<ArmorItem> {
+        val item = ITEMS.register("${name}_leggings") { ->
+            val props = Item.Properties()
+                .durability(ArmorItem.Type.LEGGINGS.getDurability(durability))
+            color?.let(props::tooltipColor)
             ArmorItem(
-                AlloyanceArmorMaterials.MATERIALS.getValue(metal),
-                ArmorItem.Type.BOOTS,
-                Item.Properties()
-                    .tooltipColor(metal.color)
-                    .durability(ArmorItem.Type.BOOTS.getDurability(durability))
+                material,
+                ArmorItem.Type.LEGGINGS,
+                props
             )
         }
+        return item
+    }
+
+    private fun boots(metal: Metal, durability: Int): DeferredItem<ArmorItem> {
+        val item = boots(metal.id, AlloyanceArmorMaterials.MATERIALS.getValue(metal), durability, metal.color)
         BOOTS[metal] = item
+        return item
+    }
+
+    private fun boots(name: String, material: Holder<ArmorMaterial?>, durability: Int, color: Int? = null): DeferredItem<ArmorItem> {
+        val item = ITEMS.register("${name}_boots") { ->
+            val props = Item.Properties()
+                .durability(ArmorItem.Type.BOOTS.getDurability(durability))
+            color?.let(props::tooltipColor)
+            ArmorItem(
+                material,
+                ArmorItem.Type.BOOTS,
+                props
+            )
+        }
         return item
     }
 }

@@ -13,6 +13,9 @@ object AlloyanceBlockTags {
     val NEEDS_TOOL: MutableMap<Metal, TagKey<Block>> = mutableMapOf()
     val INCORRECT_FOR_TOOL: MutableMap<Metal, TagKey<Block>> = mutableMapOf()
 
+    val NEEDS_COPPER_TOOL: TagKey<Block> = alloyance("needs_copper_tool")
+    val INCORRECT_FOR_COPPER_TOOL: TagKey<Block> = alloyance("incorrect_for_copper_tool")
+
     val ORES_IN_GROUND_END_STONE: TagKey<Block> = c("ores_in_ground/end_stone")
 
     val ORES_PHOSPHORITE: TagKey<Block> = c("ores/phosphorite")

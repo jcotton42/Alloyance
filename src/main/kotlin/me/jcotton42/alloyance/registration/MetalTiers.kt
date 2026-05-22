@@ -1,11 +1,21 @@
 package me.jcotton42.alloyance.registration
 
+import net.minecraft.tags.ItemTags
 import net.minecraft.world.item.Tier
 import net.minecraft.world.item.crafting.Ingredient
 import net.neoforged.neoforge.common.SimpleTier
+import net.neoforged.neoforge.common.Tags
 
 object MetalTiers {
     val TIERS = mutableMapOf<Metal, Tier>()
+
+    val COPPER = SimpleTier(
+        AlloyanceBlockTags.INCORRECT_FOR_COPPER_TOOL,
+        120,
+        6.1f,
+        1.2f,
+        25
+    ) { Ingredient.of(Tags.Items.INGOTS_COPPER) }
 
     val DEEP_IRON = tier(
         Metal.DEEP_IRON,

@@ -226,6 +226,11 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
                 .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
         }
 
+        helmet(AlloyanceItems.COPPER_HELMET, Items.COPPER_INGOT)
+        chestplate(AlloyanceItems.COPPER_CHESTPLATE, Items.COPPER_INGOT)
+        leggings(AlloyanceItems.COPPER_LEGGINGS, Items.COPPER_INGOT)
+        boots(AlloyanceItems.COPPER_BOOTS, Items.COPPER_INGOT)
+
         AlloyanceItems.HELMETS.forEach { (metal, helmet) -> helmet(helmet, AlloyanceItems.INGOTS.getValue(metal)) }
         AlloyanceItems.CHESTPLATES.forEach { (metal, chestplate) -> chestplate(chestplate, AlloyanceItems.INGOTS.getValue(metal)) }
         AlloyanceItems.LEGGINGS.forEach { (metal, leggings) -> leggings(leggings, AlloyanceItems.INGOTS.getValue(metal)) }

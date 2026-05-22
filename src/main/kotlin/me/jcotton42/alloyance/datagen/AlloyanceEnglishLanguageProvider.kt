@@ -105,30 +105,48 @@ class AlloyanceEnglishLanguageProvider(
         AlloyanceItems.BUCKETS.forEach { (fluid, bucket) ->
             add(bucket.get(), "${getFluidName(fluid)} Bucket")
         }
+
+        add(AlloyanceItems.COPPER_AXE.get(), "Copper Axe")
         AlloyanceItems.AXES.forEach { (metal, axe) ->
             add(axe.get(), "${getMetalName(metal)} Axe")
         }
+
+        add(AlloyanceItems.COPPER_HOE.get(), "Copper Hoe")
         AlloyanceItems.HOES.forEach { (metal, hoe) ->
             add(hoe.get(), "${getMetalName(metal)} Hoe")
         }
+
+        add(AlloyanceItems.COPPER_PICKAXE.get(), "Copper Pickaxe")
         AlloyanceItems.PICKAXES.forEach { (metal, pickaxe) ->
             add(pickaxe.get(), "${getMetalName(metal)} Pickaxe")
         }
+
+        add(AlloyanceItems.COPPER_SHOVEL.get(), "Copper Shovel")
         AlloyanceItems.SHOVELS.forEach { (metal, shovel) ->
             add(shovel.get(), "${getMetalName(metal)} Shovel")
         }
+
+        add(AlloyanceItems.COPPER_SWORD.get(), "Copper Sword")
         AlloyanceItems.SWORDS.forEach { (metal, sword) ->
             add(sword.get(), "${getMetalName(metal)} Sword")
         }
+
+        add(AlloyanceItems.COPPER_HELMET.get(), "Copper Helmet")
         AlloyanceItems.HELMETS.forEach { (metal, helmet) ->
             add(helmet.get(), "${getMetalName(metal)} Helmet")
         }
+
+        add(AlloyanceItems.COPPER_CHESTPLATE.get(), "Copper Chestplate")
         AlloyanceItems.CHESTPLATES.forEach { (metal, chestplate) ->
             add(chestplate.get(), "${getMetalName(metal)} Chestplate")
         }
+
+        add(AlloyanceItems.COPPER_LEGGINGS.get(), "Copper Leggings")
         AlloyanceItems.LEGGINGS.forEach { (metal, leggings) ->
             add(leggings.get(), "${getMetalName(metal)} Leggings")
         }
+
+        add(AlloyanceItems.COPPER_BOOTS.get(), "Copper Boots")
         AlloyanceItems.BOOTS.forEach { (metal, boots) ->
             add(boots.get(), "${getMetalName(metal)} Boots")
         }

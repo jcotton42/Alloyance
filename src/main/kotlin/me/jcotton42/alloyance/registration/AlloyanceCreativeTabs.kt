@@ -19,6 +19,11 @@ object AlloyanceCreativeTabs {
             .title(Component.translatable(location.toLanguageKey("itemGroup")))
             .icon { ItemStack(AlloyanceItems.DEEP_IRON_HELMET.get()) }
             .displayItems { _, output ->
+                output.accept(AlloyanceItems.COPPER_HELMET)
+                output.accept(AlloyanceItems.COPPER_CHESTPLATE)
+                output.accept(AlloyanceItems.COPPER_LEGGINGS)
+                output.accept(AlloyanceItems.COPPER_BOOTS)
+
                 Metal.entries.forEach {
                     AlloyanceItems.HELMETS[it]?.let(output::accept)
                     AlloyanceItems.CHESTPLATES[it]?.let(output::accept)
@@ -150,6 +155,12 @@ object AlloyanceCreativeTabs {
             .title(Component.translatable(location.toLanguageKey("itemGroup")))
             .icon { ItemStack(AlloyanceItems.DEEP_IRON_PICKAXE.get()) }
             .displayItems { _, output ->
+                output.accept(AlloyanceItems.COPPER_SHOVEL)
+                output.accept(AlloyanceItems.COPPER_PICKAXE)
+                output.accept(AlloyanceItems.COPPER_AXE)
+                output.accept(AlloyanceItems.COPPER_HOE)
+                output.accept(AlloyanceItems.COPPER_SWORD)
+
                 Metal.entries.forEach { metal ->
                     AlloyanceItems.SHOVELS[metal]?.let(output::accept)
                     AlloyanceItems.PICKAXES[metal]?.let(output::accept)

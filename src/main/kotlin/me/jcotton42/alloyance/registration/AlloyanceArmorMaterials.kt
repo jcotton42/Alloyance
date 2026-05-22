@@ -8,12 +8,30 @@ import net.minecraft.world.item.ArmorItem
 import net.minecraft.world.item.ArmorMaterial
 import net.minecraft.world.item.crafting.Ingredient
 import net.neoforged.bus.api.IEventBus
+import net.neoforged.neoforge.common.Tags
 import net.neoforged.neoforge.registries.DeferredHolder
 import net.neoforged.neoforge.registries.DeferredRegister
 
 object AlloyanceArmorMaterials {
     val REGISTRY: DeferredRegister<ArmorMaterial?> = DeferredRegister.create(Registries.ARMOR_MATERIAL, Alloyance.ID)
     val MATERIALS = mutableMapOf<Metal, DeferredHolder<ArmorMaterial?, ArmorMaterial>>()
+
+    val COPPER = REGISTRY.register("copper") { ->
+        ArmorMaterial(
+            mapOf(
+                ArmorItem.Type.BOOTS to 1,
+                ArmorItem.Type.LEGGINGS to 2,
+                ArmorItem.Type.CHESTPLATE to 3,
+                ArmorItem.Type.HELMET to 2,
+            ),
+            25,
+            SoundEvents.ARMOR_EQUIP_IRON,
+            { Ingredient.of(Tags.Items.INGOTS_COPPER) },
+            listOf(ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "copper"))),
+            0f,
+            0f
+        )
+    }
 
     val DEEP_IRON_MATERIAL = material(
         Metal.DEEP_IRON,

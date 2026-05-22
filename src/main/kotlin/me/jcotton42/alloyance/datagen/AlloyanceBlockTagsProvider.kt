@@ -26,6 +26,9 @@ class AlloyanceBlockTagsProvider(
     existingFileHelper
 ) {
     override fun addTags(provider: HolderLookup.Provider) {
+        tag(AlloyanceBlockTags.NEEDS_COPPER_TOOL).addTag(BlockTags.NEEDS_STONE_TOOL)
+        tag(AlloyanceBlockTags.INCORRECT_FOR_COPPER_TOOL).addTag(BlockTags.INCORRECT_FOR_STONE_TOOL)
+
         tag(AlloyanceBlockTags.NEEDS_DEEP_IRON_TOOL).addTag(BlockTags.NEEDS_IRON_TOOL)
         tag(AlloyanceBlockTags.INCORRECT_FOR_DEEP_IRON_TOOL).addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
 
