@@ -44,6 +44,17 @@ object AlloyanceArmorMaterials {
         knockbackResistance = 0f
     )
 
+    val PROMETHEUM_MATERIAL = material(
+        Metal.PROMETHEUM,
+        bootDefense = 1,
+        leggingDefense = 2,
+        chestplateDefense = 2,
+        helmetDefense = 2,
+        enchantability = 14,
+        toughness = 0.5f,
+        knockbackResistance = 0f
+    )
+
     private fun material(
         metal: Metal,
         bootDefense: Int,

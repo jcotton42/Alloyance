@@ -1,4 +1,4 @@
-// 1.21.1	2026-05-22T12:53:03.898864	Item Models: alloyance
+// 1.21.1	2026-05-22T13:28:50.210658	Item Models: alloyance
 6f3701e75c5cc7421d5146a262eae52e34592565 assets/alloyance/models/item/adamantine_block.json
 4b1bfbc8cf265a0a7a6220be35ffec627f9d35c2 assets/alloyance/models/item/adamantine_dust.json
 61a3f9dd92fc288e7a15147d5b7db4165b8c77b0 assets/alloyance/models/item/adamantine_ingot.json
@@ -216,11 +216,20 @@ b714e70644bc80b3c1a30c45e03807a4fd9e0623 assets/alloyance/models/item/platinum_d
 89b211a7f3016636027b69e9152b09765b0aa0fe assets/alloyance/models/item/potash.json
 6771f9c8035e41e1bf37526a44c3962388307ddb assets/alloyance/models/item/potash_block.json
 a58cbefb8ee41d0846189997d527f8be427aaeed assets/alloyance/models/item/potash_ore.json
+7839424198b1f537a3b0e7643089957847447f23 assets/alloyance/models/item/prometheum_axe.json
 3de63934ecea52817379801ed035ef255a0529da assets/alloyance/models/item/prometheum_block.json
+a92a5406cc94e1798e06f3b12d12ba315c628f91 assets/alloyance/models/item/prometheum_boots.json
+77ccc10c15159f3db67ef623f43e7fd6d446e157 assets/alloyance/models/item/prometheum_chestplate.json
 4ba2ea9e3b9c0be48f97f495f457717448d210f3 assets/alloyance/models/item/prometheum_dust.json
+a356858314cd43ed76e611eb070aa127fc82f0b0 assets/alloyance/models/item/prometheum_helmet.json
+471995765cae627c0cc774f7e246cdc4ed82b90c assets/alloyance/models/item/prometheum_hoe.json
 89d323675d6aa34753f77167f1c2af8fc5bcc8cb assets/alloyance/models/item/prometheum_ingot.json
+01cbadee3f3a8e2fe85c9ebe213b71b1c557fc48 assets/alloyance/models/item/prometheum_leggings.json
 c122528d6fda4647c5109d0cbc67baa8759d2544 assets/alloyance/models/item/prometheum_nugget.json
 b3dadf72ade313d203e638c92bbd20e77bb150ce assets/alloyance/models/item/prometheum_ore.json
+41db090205e9f8691ca5ae29288c853db06b3270 assets/alloyance/models/item/prometheum_pickaxe.json
+0cc999934354c34191e4b6c10878251ef6b5bdc6 assets/alloyance/models/item/prometheum_shovel.json
+fbde3994a43b9312d43d44fab65f78857cfabfce assets/alloyance/models/item/prometheum_sword.json
 8b7e119f36b1d8706e0817068bc8cc37f47625d9 assets/alloyance/models/item/quicksilver_block.json
 7ff6d215919f3a20787d9b674d19f9968a973164 assets/alloyance/models/item/quicksilver_dust.json
 1ab905f6a637cd63bb8eee750b4515dab18ad9a1 assets/alloyance/models/item/quicksilver_ingot.json

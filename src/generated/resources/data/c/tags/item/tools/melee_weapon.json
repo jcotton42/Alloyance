@@ -2,7 +2,9 @@
   "values": [
     "alloyance:copper_axe",
     "alloyance:deep_iron_axe",
+    "alloyance:prometheum_axe",
     "alloyance:copper_sword",
-    "alloyance:deep_iron_sword"
+    "alloyance:deep_iron_sword",
+    "alloyance:prometheum_sword"
   ]
 }

@@ -33,6 +33,9 @@ object AlloyanceBlockTags {
 
     val STORAGE_BLOCKS_PROMETHEUM: TagKey<Block> = storageBlocks(PROMETHEUM)
     val ORES_PROMETHEUM: TagKey<Block> = ores(PROMETHEUM)
+    val NEEDS_PROMETHEUM_TOOL: TagKey<Block> = needs(PROMETHEUM)
+    val INCORRECT_FOR_PROMETHEUM_TOOL: TagKey<Block> = incorrectFor(PROMETHEUM)
+
 
     val STORAGE_BLOCKS_ZINC: TagKey<Block> = storageBlocks(ZINC)
     val ORES_ZINC: TagKey<Block> = ores(ZINC)

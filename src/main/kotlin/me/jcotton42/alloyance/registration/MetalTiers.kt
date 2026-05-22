@@ -25,6 +25,15 @@ object MetalTiers {
         19
     )
 
+    val PROMETHEUM = tier(
+        Metal.PROMETHEUM,
+        121,
+        4.7f,
+        2.4f,
+        14
+    )
+
+
     private fun tier(metal: Metal, uses: Int, speed: Float, attackDamageBonus: Float, enchantmentValue: Int): Tier {
         val tier = SimpleTier(
             AlloyanceBlockTags.INCORRECT_FOR_TOOL.getValue(metal),
