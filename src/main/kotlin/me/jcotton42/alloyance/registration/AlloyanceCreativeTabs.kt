@@ -12,7 +12,6 @@ import net.neoforged.neoforge.registries.DeferredRegister
 object AlloyanceCreativeTabs {
     val TABS: DeferredRegister<CreativeModeTab> = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Alloyance.ID)
 
-    // TODO ARMOR
     // TODO pick a variety of metals for the icons
     val ARMOR: DeferredHolder<CreativeModeTab, CreativeModeTab> = TABS.register("armor") { location ->
         CreativeModeTab.builder()

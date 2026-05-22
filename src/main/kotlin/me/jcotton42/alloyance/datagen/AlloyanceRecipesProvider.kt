@@ -124,65 +124,89 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
     }
 
     private fun addToolRecipes(output: RecipeOutput) {
-        AlloyanceItems.AXES.forEach { (metal, axe) ->
-            val ingot = AlloyanceItems.INGOTS.getValue(metal)
-            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, axe)
+        fun axe(result: ItemLike, ingot: ItemLike) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, result)
                 .pattern("ii ")
                 .pattern("is ")
                 .pattern(" s ")
                 .define('i', ingot)
                 .define('s', Items.STICK)
-                .group(getItemName(axe))
+                .group(getItemName(result))
                 .unlockedBy(getHasName(ingot), has(ingot))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(axe)))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
         }
-        AlloyanceItems.HOES.forEach { (metal, hoe) ->
-            val ingot = AlloyanceItems.INGOTS.getValue(metal)
-            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, hoe)
+
+        fun hoe(result: ItemLike, ingot: ItemLike) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, result)
                 .pattern("ii ")
                 .pattern(" s ")
                 .pattern(" s ")
                 .define('i', ingot)
                 .define('s', Items.STICK)
-                .group(getItemName(hoe))
+                .group(getItemName(result))
                 .unlockedBy(getHasName(ingot), has(ingot))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(hoe)))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
         }
-        AlloyanceItems.PICKAXES.forEach { (metal, pickaxe) ->
-            val ingot = AlloyanceItems.INGOTS.getValue(metal)
-            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, pickaxe)
+
+        fun pickaxe(result: ItemLike, ingot: ItemLike) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, result)
                 .pattern("iii")
                 .pattern(" s ")
                 .pattern(" s ")
                 .define('i', ingot)
                 .define('s', Items.STICK)
-                .group(getItemName(pickaxe))
+                .group(getItemName(result))
                 .unlockedBy(getHasName(ingot), has(ingot))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(pickaxe)))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
         }
+
+        fun shovel(result: ItemLike, ingot: ItemLike) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, result)
+                .pattern(" i ")
+                .pattern(" s ")
+                .pattern(" s ")
+                .define('i', ingot)
+                .define('s', Items.STICK)
+                .group(getItemName(result))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+        }
+
+        fun sword(result: ItemLike, ingot: ItemLike) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, result)
+                .pattern(" i ")
+                .pattern(" i ")
+                .pattern(" s ")
+                .define('i', ingot)
+                .define('s', Items.STICK)
+                .group(getItemName(result))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+        }
+
+        axe(AlloyanceItems.COPPER_AXE, Items.COPPER_INGOT)
+        AlloyanceItems.AXES.forEach { (metal, axe) ->
+            axe(axe, AlloyanceItems.INGOTS.getValue(metal))
+        }
+
+        hoe(AlloyanceItems.COPPER_HOE, Items.COPPER_INGOT)
+        AlloyanceItems.HOES.forEach { (metal, hoe) ->
+            hoe(hoe, AlloyanceItems.INGOTS.getValue(metal))
+        }
+
+        pickaxe(AlloyanceItems.COPPER_PICKAXE, Items.COPPER_INGOT)
+        AlloyanceItems.PICKAXES.forEach { (metal, pickaxe) ->
+            pickaxe(pickaxe, AlloyanceItems.INGOTS.getValue(metal))
+        }
+
+        shovel(AlloyanceItems.COPPER_SHOVEL, Items.COPPER_INGOT)
         AlloyanceItems.SHOVELS.forEach { (metal, shovel) ->
-            val ingot = AlloyanceItems.INGOTS.getValue(metal)
-            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, shovel)
-                .pattern(" i ")
-                .pattern(" s ")
-                .pattern(" s ")
-                .define('i', ingot)
-                .define('s', Items.STICK)
-                .group(getItemName(shovel))
-                .unlockedBy(getHasName(ingot), has(ingot))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(shovel)))
+            shovel(shovel, AlloyanceItems.INGOTS.getValue(metal))
         }
+
+        sword(AlloyanceItems.COPPER_SWORD, Items.COPPER_INGOT)
         AlloyanceItems.SWORDS.forEach { (metal, sword) ->
-            val ingot = AlloyanceItems.INGOTS.getValue(metal)
-            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, sword)
-                .pattern(" i ")
-                .pattern(" i ")
-                .pattern(" s ")
-                .define('i', ingot)
-                .define('s', Items.STICK)
-                .group(getItemName(sword))
-                .unlockedBy(getHasName(ingot), has(ingot))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(sword)))
+            sword(sword, AlloyanceItems.INGOTS.getValue(metal))
         }
     }
 

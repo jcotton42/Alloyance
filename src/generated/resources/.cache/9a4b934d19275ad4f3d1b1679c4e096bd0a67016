@@ -1,4 +1,4 @@
-// 1.21.1	2026-05-21T22:22:37.699154038	Item Models: alloyance
+// 1.21.1	2026-05-22T12:53:03.898864	Item Models: alloyance
 6f3701e75c5cc7421d5146a262eae52e34592565 assets/alloyance/models/item/adamantine_block.json
 4b1bfbc8cf265a0a7a6220be35ffec627f9d35c2 assets/alloyance/models/item/adamantine_dust.json
 61a3f9dd92fc288e7a15147d5b7db4165b8c77b0 assets/alloyance/models/item/adamantine_ingot.json
@@ -54,7 +54,16 @@ c7fc7a2db03996cc6112a2b9aea68f163302f7bb assets/alloyance/models/item/celenegil_
 0425561d025d09901d14bd959b946e970d9a46d9 assets/alloyance/models/item/ceruclase_dust.json
 2fc498e42c579f0b49d01a0bdc60c480228b096b assets/alloyance/models/item/ceruclase_ingot.json
 80299198b2ceeb377b2dcadbd833ae67f24f5d4d assets/alloyance/models/item/ceruclase_nugget.json
+7dab66969250d57c464910786950b651f166918b assets/alloyance/models/item/copper_axe.json
+0f4c0ca165c88874b8a533245873c95baeb0bf34 assets/alloyance/models/item/copper_boots.json
+9542da2dd6c696f541e710777da73ce80b89713b assets/alloyance/models/item/copper_chestplate.json
 db97babee9684bcb62f1cb81ad1e8d29983a2c2a assets/alloyance/models/item/copper_dust.json
+48a8ca87ad34d8f59eb284beaadf5e88c6a21f17 assets/alloyance/models/item/copper_helmet.json
+668213e15770773fd087ffdbedc8adbe7108da0a assets/alloyance/models/item/copper_hoe.json
+37a6ca44a7e73a071a030047d63094b974c3fd5a assets/alloyance/models/item/copper_leggings.json
+bc7bf8a5084206434d872557d87bbc75cf9aed1b assets/alloyance/models/item/copper_pickaxe.json
+9d073b562fff84d3d2a323c7a32854b9bfcef47c assets/alloyance/models/item/copper_shovel.json
+53503831b3c927d93c27a39ac3fed22034ac3a9c assets/alloyance/models/item/copper_sword.json
 b208b1bc86967660b51c93fa2b89ae8f1fc70c58 assets/alloyance/models/item/crusher.json
 2b9075cdc4241674ce3f17dae57ec70ce133131f assets/alloyance/models/item/damascus_steel_block.json
 a19d1318ccf2e5fd42b41250c8992c934baba2e3 assets/alloyance/models/item/damascus_steel_dust.json
