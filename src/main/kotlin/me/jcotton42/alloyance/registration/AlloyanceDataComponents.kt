@@ -4,7 +4,6 @@ import com.mojang.serialization.Codec
 import io.netty.buffer.ByteBuf
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.client.TooltipStyle
-import me.jcotton42.alloyance.items.MetalEffect
 import me.jcotton42.alloyance.machine.FuelProperties
 import net.minecraft.core.component.DataComponentType
 import net.minecraft.core.registries.Registries
@@ -19,9 +18,6 @@ object AlloyanceDataComponents {
     val FUEL_PROPERTIES: DeferredHolder<DataComponentType<*>, DataComponentType<FuelProperties>> = COMPONENTS.registerComponentType("fuel_properties") { builder ->
         builder.persistent(FuelProperties.CODEC).networkSynchronized(FuelProperties.STREAM_CODEC)
     }
-
-    val METAL_EFFECT: DeferredHolder<DataComponentType<*>, DataComponentType<MetalEffect>>
-        = register("metal_effect", MetalEffect.CODEC, MetalEffect.STREAM_CODEC)
 
     val TOOLTIP_STYLE: DeferredHolder<DataComponentType<*>, DataComponentType<TooltipStyle>> = COMPONENTS.registerComponentType("tooltip_style") { builder ->
         builder.persistent(TooltipStyle.CODEC).networkSynchronized(TooltipStyle.STREAM_CODEC)

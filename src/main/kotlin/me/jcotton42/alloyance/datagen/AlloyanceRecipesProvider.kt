@@ -23,6 +23,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
         addMachineRecipes(output)
         addMiscIngredientRecipes(output)
         addToolRecipes(output)
+        addArmorRecipes(output)
 
         crushOre(output, AlloyanceItems.PHOSPHORUS, 6, AlloyanceItemTags.ORES_PHOSPHORITE)
 
@@ -183,6 +184,52 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
                 .unlockedBy(getHasName(ingot), has(ingot))
                 .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(sword)))
         }
+    }
+
+    private fun addArmorRecipes(output: RecipeOutput) {
+        fun helmet(result: ItemLike, ingot: ItemLike) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result)
+                .pattern("iii")
+                .pattern("i i")
+                .define('i', ingot)
+                .group(getItemName(result))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+        }
+        fun chestplate(result: ItemLike, ingot: ItemLike) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result)
+                .pattern("i i")
+                .pattern("iii")
+                .pattern("iii")
+                .define('i', ingot)
+                .group(getItemName(result))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+        }
+        fun leggings(result: ItemLike, ingot: ItemLike) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result)
+                .pattern("iii")
+                .pattern("i i")
+                .pattern("i i")
+                .define('i', ingot)
+                .group(getItemName(result))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+        }
+        fun boots(result: ItemLike, ingot: ItemLike) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result)
+                .pattern("i i")
+                .pattern("i i")
+                .define('i', ingot)
+                .group(getItemName(result))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+        }
+
+        AlloyanceItems.HELMETS.forEach { (metal, helmet) -> helmet(helmet, AlloyanceItems.INGOTS.getValue(metal)) }
+        AlloyanceItems.CHESTPLATES.forEach { (metal, chestplate) -> chestplate(chestplate, AlloyanceItems.INGOTS.getValue(metal)) }
+        AlloyanceItems.LEGGINGS.forEach { (metal, leggings) -> leggings(leggings, AlloyanceItems.INGOTS.getValue(metal)) }
+        AlloyanceItems.BOOTS.forEach { (metal, boots) -> boots(boots, AlloyanceItems.INGOTS.getValue(metal)) }
     }
 
     private fun nineBlockStorageRecipe(output: RecipeOutput, unpacked: ItemLike, packed: ItemLike) {

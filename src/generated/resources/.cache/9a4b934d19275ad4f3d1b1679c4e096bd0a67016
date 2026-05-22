@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-07T16:49:21.941230227	Item Models: alloyance
+// 1.21.1	2026-05-21T22:22:37.699154038	Item Models: alloyance
 6f3701e75c5cc7421d5146a262eae52e34592565 assets/alloyance/models/item/adamantine_block.json
 4b1bfbc8cf265a0a7a6220be35ffec627f9d35c2 assets/alloyance/models/item/adamantine_dust.json
 61a3f9dd92fc288e7a15147d5b7db4165b8c77b0 assets/alloyance/models/item/adamantine_ingot.json
@@ -62,9 +62,13 @@ e99503a1168e632a5a4307bb8ef2f502d6d8b568 assets/alloyance/models/item/damascus_s
 5dd5cbe6fff131bd0c7f55614a082ad635a06140 assets/alloyance/models/item/damascus_steel_nugget.json
 023e15b2e09a4220e16f14759b6b65d01f09dfc1 assets/alloyance/models/item/deep_iron_axe.json
 3d476e645ab5fad8076d0828910b3be75f6f55a2 assets/alloyance/models/item/deep_iron_block.json
+357e2de6ca1dbb4f34a92d7930596ca18248aa6b assets/alloyance/models/item/deep_iron_boots.json
+351ab1e4d7581d8e9354f4be33f8705ea46c4c4d assets/alloyance/models/item/deep_iron_chestplate.json
 8875e5f698c3c4dc69d5837ddc0bd0e625a1f0d1 assets/alloyance/models/item/deep_iron_dust.json
+4900b7b1dfcb7d892d291edd0c7651a2977c9384 assets/alloyance/models/item/deep_iron_helmet.json
 4ce64240def4963572b52ff4be42f9ba04b24e4b assets/alloyance/models/item/deep_iron_hoe.json
 0c8eb700b603be3d13acdd9d35824249d902697c assets/alloyance/models/item/deep_iron_ingot.json
+b7ec72e0d84f842f263a4bf3f31ecd761453e317 assets/alloyance/models/item/deep_iron_leggings.json
 85b3d2c3811b2ae300a9064b22b8a36ef4eeca5b assets/alloyance/models/item/deep_iron_nugget.json
 ca6393e0edef3963cd70337fd22e986be52eed5b assets/alloyance/models/item/deep_iron_ore.json
 f331fbb55033568c6e4c72828225ca01429b1706 assets/alloyance/models/item/deep_iron_pickaxe.json

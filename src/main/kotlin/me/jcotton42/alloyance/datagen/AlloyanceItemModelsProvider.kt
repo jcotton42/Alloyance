@@ -68,6 +68,10 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
         AlloyanceItems.PICKAXES.values.forEach { basicItem(it.get()) }
         AlloyanceItems.SHOVELS.values.forEach { basicItem(it.get()) }
         AlloyanceItems.SWORDS.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.HELMETS.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.CHESTPLATES.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.LEGGINGS.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.BOOTS.values.forEach { basicItem(it.get()) }
     }
 
     private fun basicBlockItem(block: DeferredBlock<out Block>) {

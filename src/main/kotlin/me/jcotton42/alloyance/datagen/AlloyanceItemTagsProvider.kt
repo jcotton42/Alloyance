@@ -11,6 +11,7 @@ import net.minecraft.data.tags.ItemTagsProvider
 import net.minecraft.resources.ResourceKey
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.tags.ItemTags
+import net.minecraft.world.item.Items
 import net.neoforged.neoforge.common.Tags
 import net.neoforged.neoforge.common.data.BlockTagsProvider
 import net.neoforged.neoforge.common.data.ExistingFileHelper
@@ -115,6 +116,19 @@ class AlloyanceItemTagsProvider(
         AlloyanceItems.SWORDS.values.forEach {
             tag(ItemTags.SWORDS).add(it.get())
             tag(Tags.Items.MELEE_WEAPON_TOOLS).add(it.get())
+        }
+
+        AlloyanceItems.HELMETS.values.forEach {
+            tag(ItemTags.HEAD_ARMOR).add(it.get())
+        }
+        AlloyanceItems.CHESTPLATES.values.forEach {
+            tag(ItemTags.CHEST_ARMOR).add(it.get())
+        }
+        AlloyanceItems.LEGGINGS.values.forEach {
+            tag(ItemTags.LEG_ARMOR).add(it.get())
+        }
+        AlloyanceItems.BOOTS.values.forEach {
+            tag(ItemTags.FOOT_ARMOR).add(it.get())
         }
 
         AlloyanceBlockTags.STORAGE_BLOCKS.forEach { (metal, blockTag) ->

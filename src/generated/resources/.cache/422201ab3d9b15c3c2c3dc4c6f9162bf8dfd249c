@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-07T16:49:21.943562822	Tags for minecraft:item mod id alloyance
+// 1.21.1	2026-05-21T22:22:37.700034299	Tags for minecraft:item mod id alloyance
 e0ef9489be0c2c56800d4f3d788924d486fe9288 data/alloyance/tags/item/alloyables.json
 d265905cd36b5fa147f634f382472decc42a452f data/alloyance/tags/item/alloyables/adamantine.json
 f2a29a8939f26c8a90782cbe64e69c890179b939 data/alloyance/tags/item/alloyables/alduorite.json
@@ -329,7 +329,11 @@ b63f2fd13e913c85cea87aabb8bc11190ff0a790 data/c/tags/item/storage_blocks/vulcani
 d7d39d0189b597ce6fa5c42bee7f467b1c95dcbe data/c/tags/item/tools/melee_weapon.json
 64062551c58a623439146730a116e85ea533a668 data/c/tags/item/tools/mining_tool.json
 505b522e1060f99f90bdd6241c2fe15f97f14daf data/minecraft/tags/item/axes.json
+77e24e394836010a0b38fe1a277cbc6f940b3d3d data/minecraft/tags/item/chest_armor.json
+f0c1d6e5b8ecfd5845192c70bf2c79b37e69bd55 data/minecraft/tags/item/foot_armor.json
+d93f7ac02351b58e77f21282e1e9e604f0bd1ba6 data/minecraft/tags/item/head_armor.json
 3c47025364866eef59642b0196ea12cf02c39c36 data/minecraft/tags/item/hoes.json
+7048239fa896cb38fbb4da479fca2eb980eb36bf data/minecraft/tags/item/leg_armor.json
 64062551c58a623439146730a116e85ea533a668 data/minecraft/tags/item/pickaxes.json
 eec92d8c839bba09e653a9a130d848a22673473b data/minecraft/tags/item/shovels.json
 c4956fbf949961f2765ab4898f64706cb4a88883 data/minecraft/tags/item/swords.json

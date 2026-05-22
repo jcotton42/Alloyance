@@ -6,10 +6,7 @@ import me.jcotton42.alloyance.registration.Metal.*
 import net.minecraft.core.Holder
 import net.minecraft.core.component.DataComponents
 import net.minecraft.network.chat.Component
-import net.minecraft.resources.ResourceLocation
-import net.minecraft.world.entity.EquipmentSlotGroup
-import net.minecraft.world.entity.ai.attributes.AttributeModifier
-import net.minecraft.world.entity.ai.attributes.Attributes
+import net.minecraft.world.item.ArmorItem
 import net.minecraft.world.item.AxeItem
 import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.BucketItem
@@ -19,7 +16,6 @@ import net.minecraft.world.item.Items
 import net.minecraft.world.item.PickaxeItem
 import net.minecraft.world.item.ShovelItem
 import net.minecraft.world.item.SwordItem
-import net.minecraft.world.item.component.ItemAttributeModifiers
 import net.minecraft.world.item.component.ItemLore
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.material.Fluid
@@ -41,6 +37,10 @@ object AlloyanceItems {
     val PICKAXES = mutableMapOf<Metal, DeferredItem<PickaxeItem>>()
     val SHOVELS = mutableMapOf<Metal, DeferredItem<ShovelItem>>()
     val SWORDS = mutableMapOf<Metal, DeferredItem<SwordItem>>()
+    val HELMETS = mutableMapOf<Metal, DeferredItem<ArmorItem>>()
+    val CHESTPLATES = mutableMapOf<Metal, DeferredItem<ArmorItem>>()
+    val LEGGINGS = mutableMapOf<Metal, DeferredItem<ArmorItem>>()
+    val BOOTS = mutableMapOf<Metal, DeferredItem<ArmorItem>>()
 
     val ALLOYER = block(AlloyanceBlocks.ALLOYER)
     val CRUSHER = block(AlloyanceBlocks.CRUSHER)
@@ -87,6 +87,10 @@ object AlloyanceItems {
     val DEEP_IRON_PICKAXE = pickaxe(DEEP_IRON)
     val DEEP_IRON_SHOVEL = shovel(DEEP_IRON)
     val DEEP_IRON_SWORD = sword(DEEP_IRON)
+    val DEEP_IRON_HELMET = helmet(DEEP_IRON, 15)
+    val DEEP_IRON_CHESTPLATE = chestplate(DEEP_IRON, 15)
+    val DEEP_IRON_LEGGINGS = leggings(DEEP_IRON, 15)
+    val DEEP_IRON_BOOTS = boots(DEEP_IRON, 15)
 
     val PROMETHEUM_ORE = block(AlloyanceBlocks.PROMETHEUM_ORE, PROMETHEUM)
     val DEEPSLATE_PROMETHEUM_ORE = block(AlloyanceBlocks.DEEPSLATE_PROMETHEUM_ORE, PROMETHEUM)
@@ -487,7 +491,13 @@ object AlloyanceItems {
                 tier,
                 Item.Properties()
                     .tooltipColor(metal.color)
-                    .attributes(attributes)
+                    .attributes(PickaxeItem.createAttributes(
+                        MetalTiers.TIERS.getValue(metal),
+                        // TODO decide
+                        1.0f,
+                        // TODO decide
+                        -2.8f
+                    ))
             )
         }
         PICKAXES[metal] = item
@@ -525,6 +535,62 @@ object AlloyanceItems {
             )
         }
         SWORDS[metal] = item
+        return item
+    }
+
+    private fun helmet(metal: Metal, durability: Int): DeferredItem<ArmorItem> {
+        val item = ITEMS.register("${metal.id}_helmet") { ->
+            ArmorItem(
+                AlloyanceArmorMaterials.MATERIALS.getValue(metal),
+                ArmorItem.Type.HELMET,
+                Item.Properties()
+                    .tooltipColor(metal.color)
+                    .durability(ArmorItem.Type.HELMET.getDurability(durability))
+            )
+        }
+        HELMETS[metal] = item
+        return item
+    }
+
+    private fun chestplate(metal: Metal, durability: Int): DeferredItem<ArmorItem> {
+        val item = ITEMS.register("${metal.id}_chestplate") { ->
+            ArmorItem(
+                AlloyanceArmorMaterials.MATERIALS.getValue(metal),
+                ArmorItem.Type.CHESTPLATE,
+                Item.Properties()
+                    .tooltipColor(metal.color)
+                    .durability(ArmorItem.Type.CHESTPLATE.getDurability(durability))
+            )
+        }
+        CHESTPLATES[metal] = item
+        return item
+    }
+
+    private fun leggings(metal: Metal, durability: Int): DeferredItem<ArmorItem> {
+        val item = ITEMS.register("${metal.id}_leggings") { ->
+            ArmorItem(
+                AlloyanceArmorMaterials.MATERIALS.getValue(metal),
+                ArmorItem.Type.LEGGINGS,
+                Item.Properties()
+                    .tooltipColor(metal.color)
+                    .durability(ArmorItem.Type.LEGGINGS.getDurability(durability))
+            )
+        }
+        LEGGINGS[metal] = item
+        return item
+    }
+
+    private fun boots(metal: Metal, durability: Int): DeferredItem<ArmorItem> {
+        val item = ITEMS.register("${metal.id}_boots") { ->
+            ArmorItem(
+                AlloyanceArmorMaterials.MATERIALS.getValue(metal),
+                ArmorItem.Type.BOOTS,
+                Item.Properties()
+                    .tooltipColor(metal.color)
+                    .durability(ArmorItem.Type.BOOTS.getDurability(durability))
+            )
+        }
+        BOOTS[metal] = item
         return item
     }
 }

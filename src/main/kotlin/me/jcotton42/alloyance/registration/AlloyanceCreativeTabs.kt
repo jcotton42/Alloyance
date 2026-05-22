@@ -14,6 +14,21 @@ object AlloyanceCreativeTabs {
 
     // TODO ARMOR
     // TODO pick a variety of metals for the icons
+    val ARMOR: DeferredHolder<CreativeModeTab, CreativeModeTab> = TABS.register("armor") { location ->
+        CreativeModeTab.builder()
+            .title(Component.translatable(location.toLanguageKey("itemGroup")))
+            .icon { ItemStack(AlloyanceItems.DEEP_IRON_HELMET.get()) }
+            .displayItems { _, output ->
+                Metal.entries.forEach {
+                    AlloyanceItems.HELMETS[it]?.let(output::accept)
+                    AlloyanceItems.CHESTPLATES[it]?.let(output::accept)
+                    AlloyanceItems.LEGGINGS[it]?.let(output::accept)
+                    AlloyanceItems.BOOTS[it]?.let(output::accept)
+                }
+            }
+            .build()
+    }
+
     val BLOCKS: DeferredHolder<CreativeModeTab, CreativeModeTab> = TABS.register("blocks") { location ->
         CreativeModeTab.builder()
             .title(Component.translatable(location.toLanguageKey("itemGroup")))

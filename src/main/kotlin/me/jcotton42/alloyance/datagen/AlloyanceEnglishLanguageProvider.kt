@@ -63,6 +63,7 @@ class AlloyanceEnglishLanguageProvider(
         add(AlloyanceBlocks.MOLTEN_TAR.get(), "Molten Tar")
 
         // TODO clean this up and categorize
+        addTab(AlloyanceCreativeTabs.ARMOR, "Alloyance Armor")
         addTab(AlloyanceCreativeTabs.BLOCKS, "Alloyance Blocks")
         addTab(AlloyanceCreativeTabs.DUSTS, "Alloyance Dusts")
         addTab(AlloyanceCreativeTabs.FLUIDS, "Alloyance Fluids")
@@ -118,6 +119,18 @@ class AlloyanceEnglishLanguageProvider(
         }
         AlloyanceItems.SWORDS.forEach { (metal, sword) ->
             add(sword.get(), "${getMetalName(metal)} Sword")
+        }
+        AlloyanceItems.HELMETS.forEach { (metal, helmet) ->
+            add(helmet.get(), "${getMetalName(metal)} Helmet")
+        }
+        AlloyanceItems.CHESTPLATES.forEach { (metal, chestplate) ->
+            add(chestplate.get(), "${getMetalName(metal)} Chestplate")
+        }
+        AlloyanceItems.LEGGINGS.forEach { (metal, leggings) ->
+            add(leggings.get(), "${getMetalName(metal)} Leggings")
+        }
+        AlloyanceItems.BOOTS.forEach { (metal, boots) ->
+            add(boots.get(), "${getMetalName(metal)} Boots")
         }
 
         add(AlloyanceItems.COPPER_DUST.get(), "Copper Dust")
