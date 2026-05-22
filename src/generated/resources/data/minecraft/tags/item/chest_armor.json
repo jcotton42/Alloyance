@@ -2,6 +2,8 @@
   "values": [
     "alloyance:copper_chestplate",
     "alloyance:deep_iron_chestplate",
-    "alloyance:prometheum_chestplate"
+    "alloyance:prometheum_chestplate",
+    "alloyance:bronze_chestplate",
+    "alloyance:brass_chestplate"
   ]
 }

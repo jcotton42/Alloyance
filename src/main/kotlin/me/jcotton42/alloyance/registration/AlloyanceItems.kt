@@ -1,6 +1,5 @@
 package me.jcotton42.alloyance.registration
 
-import com.sun.swing.internal.plaf.metal.resources.metal
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.client.TooltipStyle
 import me.jcotton42.alloyance.registration.Metal.*
@@ -78,13 +77,12 @@ object AlloyanceItems {
     val SULFUR_BLOCK = block(AlloyanceBlocks.SULFUR_BLOCK)
     val SULFUR_ORE = block(AlloyanceBlocks.SULFUR_ORE)
 
+    // TODO fireproof for Infused Ignatius and Thermite Dust? Also, look at potential tags.
     val BITUMEN = ITEMS.registerSimpleItem("bitumen")
+    val INFUSED_IGNATIUS = ITEMS.registerSimpleItem("infused_ignatius", Item.Properties().lore("tooltip.alloyance.infused_ignatius"))
     val MOLTEN_TAR_BUCKET = bucket(AlloyanceFluids.MOLTEN_TAR)
     val TAR = ITEMS.registerSimpleItem("tar")
     val TAR_ORE = block(AlloyanceBlocks.TAR_ORE)
-    // TODO fireproof?
-    // TODO tags?
-    val INFUSED_IGNATIUS = ITEMS.registerSimpleItem("infused_ignatius", Item.Properties().lore("tooltip.alloyance.infused_ignatius"))
     val THERMITE_DUST = ITEMS.registerSimpleItem("thermite_dust", Item.Properties().lore("tooltip.alloyance.thermite_dust"))
 
     val DEEP_IRON_AXE = axe(DEEP_IRON)
@@ -137,15 +135,33 @@ object AlloyanceItems {
     val TIN_NUGGET = nugget(TIN)
     val TIN_ORE = block(AlloyanceBlocks.TIN_ORE, TIN)
 
+    val BRONZE_AXE = axe(BRONZE)
     val BRONZE_BLOCK = block(AlloyanceBlocks.BRONZE_BLOCK, BRONZE)
+    val BRONZE_BOOTS = boots(BRONZE, 25)
+    val BRONZE_CHESTPLATE = chestplate(BRONZE, 25)
     val BRONZE_DUST = dust(BRONZE)
+    val BRONZE_HELMET = helmet(BRONZE, 25)
+    val BRONZE_HOE = hoe(BRONZE)
     val BRONZE_INGOT = ingot(BRONZE)
+    val BRONZE_LEGGINGS = leggings(BRONZE, 25)
     val BRONZE_NUGGET = nugget(BRONZE)
+    val BRONZE_PICKAXE = pickaxe(BRONZE)
+    val BRONZE_SHOVEL = shovel(BRONZE)
+    val BRONZE_SWORD = sword(BRONZE)
 
+    val BRASS_AXE = axe(BRASS)
     val BRASS_BLOCK = block(AlloyanceBlocks.BRASS_BLOCK, BRASS)
+    val BRASS_BOOTS = boots(BRASS, 14)
+    val BRASS_CHESTPLATE = chestplate(BRASS, 14)
     val BRASS_DUST = dust(BRASS)
+    val BRASS_HELMET = helmet(BRASS, 14)
+    val BRASS_HOE = hoe(BRASS)
     val BRASS_INGOT = ingot(BRASS)
+    val BRASS_LEGGINGS = leggings(BRASS, 14)
     val BRASS_NUGGET = nugget(BRASS)
+    val BRASS_PICKAXE = pickaxe(BRASS)
+    val BRASS_SHOVEL = shovel(BRASS)
+    val BRASS_SWORD = sword(BRASS)
 
     val DAMASCUS_STEEL_BLOCK = block(AlloyanceBlocks.DAMASCUS_STEEL_BLOCK, DAMASCUS_STEEL)
     val DAMASCUS_STEEL_DUST = dust(DAMASCUS_STEEL)
@@ -421,7 +437,6 @@ object AlloyanceItems {
     val ETHERIUM_DUST = dust(ETHERIUM)
     val ETHERIUM_INGOT = ingot(ETHERIUM)
     val ETHERIUM_NUGGET = nugget(ETHERIUM)
-
     fun register(bus: IEventBus) {
         ITEMS.register(bus)
     }

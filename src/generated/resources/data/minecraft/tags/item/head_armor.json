@@ -2,6 +2,8 @@
   "values": [
     "alloyance:copper_helmet",
     "alloyance:deep_iron_helmet",
-    "alloyance:prometheum_helmet"
+    "alloyance:prometheum_helmet",
+    "alloyance:bronze_helmet",
+    "alloyance:brass_helmet"
   ]
 }

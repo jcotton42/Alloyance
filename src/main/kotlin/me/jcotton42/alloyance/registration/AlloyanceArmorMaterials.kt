@@ -55,6 +55,28 @@ object AlloyanceArmorMaterials {
         knockbackResistance = 0f
     )
 
+    val BRONZE_MATERIAL = material(
+        Metal.BRONZE,
+        bootDefense = 2,
+        leggingDefense = 3,
+        chestplateDefense = 4,
+        helmetDefense = 3,
+        enchantability = 9,
+        toughness = 1f,
+        knockbackResistance = 0f
+    )
+
+    val BRASS_MATERIAL = material(
+        Metal.BRASS,
+        bootDefense = 2,
+        leggingDefense = 3,
+        chestplateDefense = 3,
+        helmetDefense = 2,
+        enchantability = 18,
+        toughness = 3f,
+        knockbackResistance = 0.2f
+    )
+
     // MARKER
 
     private fun material(

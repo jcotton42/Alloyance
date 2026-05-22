@@ -1,6 +1,5 @@
 package me.jcotton42.alloyance.registration
 
-import net.minecraft.tags.ItemTags
 import net.minecraft.world.item.Tier
 import net.minecraft.world.item.crafting.Ingredient
 import net.neoforged.neoforge.common.SimpleTier
@@ -31,6 +30,22 @@ object MetalTiers {
         4.7f,
         2.4f,
         14
+    )
+
+    val BRONZE = tier(
+        Metal.BRONZE,
+        224,
+        7f,
+        2.2f,
+        16
+    )
+
+    val BRASS = tier(
+        Metal.BRASS,
+        895,
+        6.8f,
+        3.2f,
+        8
     )
 
     // MARKER

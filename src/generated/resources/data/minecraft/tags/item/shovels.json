@@ -2,6 +2,8 @@
   "values": [
     "alloyance:copper_shovel",
     "alloyance:deep_iron_shovel",
-    "alloyance:prometheum_shovel"
+    "alloyance:prometheum_shovel",
+    "alloyance:bronze_shovel",
+    "alloyance:brass_shovel"
   ]
 }

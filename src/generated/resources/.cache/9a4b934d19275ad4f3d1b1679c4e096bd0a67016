@@ -1,4 +1,4 @@
-// 1.21.1	2026-05-22T13:28:50.210658	Item Models: alloyance
+// 1.21.1	2026-05-22T18:34:42.194897	Item Models: alloyance
 6f3701e75c5cc7421d5146a262eae52e34592565 assets/alloyance/models/item/adamantine_block.json
 4b1bfbc8cf265a0a7a6220be35ffec627f9d35c2 assets/alloyance/models/item/adamantine_dust.json
 61a3f9dd92fc288e7a15147d5b7db4165b8c77b0 assets/alloyance/models/item/adamantine_ingot.json
@@ -33,14 +33,32 @@ c28b71033554ce395ec3f9c142cb5242427b1136 assets/alloyance/models/item/bitumen.js
 07a403b38c5c7f7dfbba1a6a6e1cb8fd84d00ab8 assets/alloyance/models/item/black_steel_dust.json
 1ed0b85fa06affd6a7ece8214992da1c30631e53 assets/alloyance/models/item/black_steel_ingot.json
 68e874a0dc5b31fc3e9c230df5c39c5460671e0e assets/alloyance/models/item/black_steel_nugget.json
+913039882ff1e6bf7867bd2e8bc0753f63a692c7 assets/alloyance/models/item/brass_axe.json
 5facb9ab27d0a31e5ed78d734fd05fbf45b69b48 assets/alloyance/models/item/brass_block.json
+ac8694de0f58f4d5ac5ebdfc3da67726dc218373 assets/alloyance/models/item/brass_boots.json
+f59be3e0fb29f5597df46699fbf27dde7610c2c1 assets/alloyance/models/item/brass_chestplate.json
 bbd4f561ea91ce4f4f9b2459f328a9ca9d20b1b7 assets/alloyance/models/item/brass_dust.json
+291a3b58b68d188e2506b6bf8f9dc7a80dbe9816 assets/alloyance/models/item/brass_helmet.json
+47d3e589bc0b97bb8b30142f9d08b08639be83ca assets/alloyance/models/item/brass_hoe.json
 7264319356f2c8c8be9605198e31056446786b2d assets/alloyance/models/item/brass_ingot.json
+d444d1fb6a89d74f6384ffb386a99bdb1c2c8aa0 assets/alloyance/models/item/brass_leggings.json
 8c7d52dddb138255ca2f8ec150c605529f80e8e9 assets/alloyance/models/item/brass_nugget.json
+e0bf08d5a78689f46f1947c779fd92a882f45a5f assets/alloyance/models/item/brass_pickaxe.json
+62f3a342b4c9a202c2160cc671184af80bf36d35 assets/alloyance/models/item/brass_shovel.json
+932096bc5a9a06bd4f0c0e1c27fb90e40fd45a9e assets/alloyance/models/item/brass_sword.json
+c60fd215db44d0ba9567f5fbc2b6e9840060a66b assets/alloyance/models/item/bronze_axe.json
 ed30e9cf1aec257ef52efba11dd6fbb0594c49b8 assets/alloyance/models/item/bronze_block.json
+4dadc0e8fe7341b1b58a7b87ff29ac06ad08ddd2 assets/alloyance/models/item/bronze_boots.json
+c64fcd34f2212ea3d07a3d518b20be0f3a9528d9 assets/alloyance/models/item/bronze_chestplate.json
 00675336f96e908e026e0bd40781acc0c710a87c assets/alloyance/models/item/bronze_dust.json
+1cfab4b08809a156996f2f232fe99f2a766ccfdf assets/alloyance/models/item/bronze_helmet.json
+07debac47eb71655d5edf04d3d2c7868065ef500 assets/alloyance/models/item/bronze_hoe.json
 bb3c4148a5d88b5c00f7f8fe03f715f335784290 assets/alloyance/models/item/bronze_ingot.json
+03ea7ba4fa6ce9e5a05c936ddddc3a41f3448ed5 assets/alloyance/models/item/bronze_leggings.json
 48ece8da966a18759ccb2f718af642aea1dc2ba6 assets/alloyance/models/item/bronze_nugget.json
+b863b5cb0ad29849f7474587e8a4d3a02a7f5f42 assets/alloyance/models/item/bronze_pickaxe.json
+0163dfa18eeaff0a1fa253b7e3164748da2600d2 assets/alloyance/models/item/bronze_shovel.json
+b2f64a05319a1d89a730294d995669bf5677abcf assets/alloyance/models/item/bronze_sword.json
 ea6df82706e5bd95adb0c61ebc3a0f5faf8dab93 assets/alloyance/models/item/carmot_block.json
 bad45b87a7c68da5e11e1cbb08b43a91b28c35cc assets/alloyance/models/item/carmot_dust.json
 76158c3038c898ba92d39e1ac7361903326e14c1 assets/alloyance/models/item/carmot_ingot.json

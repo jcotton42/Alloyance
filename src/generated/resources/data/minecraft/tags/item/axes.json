@@ -2,6 +2,8 @@
   "values": [
     "alloyance:copper_axe",
     "alloyance:deep_iron_axe",
-    "alloyance:prometheum_axe"
+    "alloyance:prometheum_axe",
+    "alloyance:bronze_axe",
+    "alloyance:brass_axe"
   ]
 }

@@ -2,6 +2,8 @@
   "values": [
     "alloyance:copper_hoe",
     "alloyance:deep_iron_hoe",
-    "alloyance:prometheum_hoe"
+    "alloyance:prometheum_hoe",
+    "alloyance:bronze_hoe",
+    "alloyance:brass_hoe"
   ]
 }

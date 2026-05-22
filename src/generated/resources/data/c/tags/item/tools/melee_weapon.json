@@ -3,8 +3,12 @@
     "alloyance:copper_axe",
     "alloyance:deep_iron_axe",
     "alloyance:prometheum_axe",
+    "alloyance:bronze_axe",
+    "alloyance:brass_axe",
     "alloyance:copper_sword",
     "alloyance:deep_iron_sword",
-    "alloyance:prometheum_sword"
+    "alloyance:prometheum_sword",
+    "alloyance:bronze_sword",
+    "alloyance:brass_sword"
   ]
 }

@@ -42,8 +42,12 @@ object AlloyanceBlockTags {
     val ORES_TIN: TagKey<Block> = ores(TIN)
     val STORAGE_BLOCKS_TIN: TagKey<Block> = storageBlocks(TIN)
 
+    val INCORRECT_FOR_BRONZE_TOOL: TagKey<Block> = incorrectFor(BRONZE)
+    val NEEDS_BRONZE_TOOL: TagKey<Block> = needs(BRONZE)
     val STORAGE_BLOCKS_BRONZE: TagKey<Block> = storageBlocks(BRONZE)
 
+    val INCORRECT_FOR_BRASS_TOOL: TagKey<Block> = incorrectFor(BRASS)
+    val NEEDS_BRASS_TOOL: TagKey<Block> = needs(BRASS)
     val STORAGE_BLOCKS_BRASS: TagKey<Block> = storageBlocks(BRASS)
 
     val STORAGE_BLOCKS_DAMASCUS_STEEL: TagKey<Block> = storageBlocks(DAMASCUS_STEEL)
@@ -155,7 +159,6 @@ object AlloyanceBlockTags {
     val STORAGE_BLOCKS_TARTARITE: TagKey<Block> = storageBlocks(TARTARITE)
 
     val STORAGE_BLOCKS_ETHERIUM: TagKey<Block> = storageBlocks(ETHERIUM)
-
     private fun incorrectFor(metal: Metal): TagKey<Block> {
         val tag = alloyance("incorrect_for_${metal.id}_tool")
         INCORRECT_FOR_TOOL[metal] = tag
