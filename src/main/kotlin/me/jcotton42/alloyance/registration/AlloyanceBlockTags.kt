@@ -51,12 +51,16 @@ object AlloyanceBlockTags {
     val STORAGE_BLOCKS_BRASS: TagKey<Block> = storageBlocks(BRASS)
 
     val STORAGE_BLOCKS_DAMASCUS_STEEL: TagKey<Block> = storageBlocks(DAMASCUS_STEEL)
+    val NEEDS_DAMASCUS_STEEL_TOOL: TagKey<Block> = needs(DAMASCUS_STEEL)
+    val INCORRECT_FOR_DAMASCUS_STEEL_TOOL: TagKey<Block> = incorrectFor(DAMASCUS_STEEL)
 
     val ORES_OSMIUM = ores(OSMIUM)
     val STORAGE_BLOCKS_OSMIUM = storageBlocks(OSMIUM)
 
     val ORES_SILVER = ores(SILVER)
     val STORAGE_BLOCKS_SILVER = storageBlocks(SILVER)
+    val NEEDS_SILVER_TOOL: TagKey<Block> = needs(SILVER)
+    val INCORRECT_FOR_SILVER_TOOL: TagKey<Block> = incorrectFor(SILVER)
 
     val ORES_INFUSCOLIUM = ores(INFUSCOLIUM)
     val STORAGE_BLOCKS_INFUSCOLIUM = storageBlocks(INFUSCOLIUM)
@@ -65,59 +69,99 @@ object AlloyanceBlockTags {
     val STORAGE_BLOCKS_MANGANESE = storageBlocks(MANGANESE)
 
     val STORAGE_BLOCKS_ANGMALLEN = storageBlocks(ANGMALLEN)
+    val NEEDS_ANGMALLEN_TOOL: TagKey<Block> = needs(ANGMALLEN)
+    val INCORRECT_FOR_ANGMALLEN_TOOL: TagKey<Block> = incorrectFor(ANGMALLEN)
 
     val STORAGE_BLOCKS_STEEL = storageBlocks(STEEL)
+    val NEEDS_STEEL_TOOL: TagKey<Block> = needs(STEEL)
+    val INCORRECT_FOR_STEEL_TOOL: TagKey<Block> = incorrectFor(STEEL)
 
     val STORAGE_BLOCKS_HEPATIZON = storageBlocks(HEPATIZON)
+    val NEEDS_HEPATIZON_TOOL: TagKey<Block> = needs(HEPATIZON)
+    val INCORRECT_FOR_HEPATIZON_TOOL: TagKey<Block> = incorrectFor(HEPATIZON)
 
     val STORAGE_BLOCKS_BLACK_STEEL = storageBlocks(BLACK_STEEL)
+    val NEEDS_BLACK_STEEL_TOOL: TagKey<Block> = needs(BLACK_STEEL)
+    val INCORRECT_FOR_BLACK_STEEL_TOOL: TagKey<Block> = incorrectFor(BLACK_STEEL)
 
     val STORAGE_BLOCKS_ELECTRUM = storageBlocks(ELECTRUM)
+    val NEEDS_ELECTRUM_TOOL: TagKey<Block> = needs(ELECTRUM)
+    val INCORRECT_FOR_ELECTRUM_TOOL: TagKey<Block> = incorrectFor(ELECTRUM)
 
     val ORES_ASTRAL_SILVER: TagKey<Block> = ores(ASTRAL_SILVER)
     val STORAGE_BLOCKS_ASTRAL_SILVER: TagKey<Block> = storageBlocks(ASTRAL_SILVER)
+    val NEEDS_ASTRAL_SILVER_TOOL: TagKey<Block> = needs(ASTRAL_SILVER)
+    val INCORRECT_FOR_ASTRAL_SILVER_TOOL: TagKey<Block> = incorrectFor(ASTRAL_SILVER)
 
     val ORES_IGNATIUS: TagKey<Block> = ores(IGNATIUS)
     val STORAGE_BLOCKS_IGNATIUS: TagKey<Block> = storageBlocks(IGNATIUS)
+    val NEEDS_IGNATIUS_TOOL: TagKey<Block> = needs(IGNATIUS)
+    val INCORRECT_FOR_IGNATIUS_TOOL: TagKey<Block> = incorrectFor(IGNATIUS)
 
     val ORES_OURECLASE = ores(OURECLASE)
     val STORAGE_BLOCKS_OURECLASE = storageBlocks(OURECLASE)
+    val NEEDS_OURECLASE_TOOL: TagKey<Block> = needs(OURECLASE)
+    val INCORRECT_FOR_OURECLASE_TOOL: TagKey<Block> = incorrectFor(OURECLASE)
 
     val ORES_RUBRACIUM = ores(RUBRACIUM)
     val STORAGE_BLOCKS_RUBRACIUM = storageBlocks(RUBRACIUM)
 
     val ORES_SHADOW_IRON: TagKey<Block> = ores(SHADOW_IRON)
     val STORAGE_BLOCKS_SHADOW_IRON: TagKey<Block> = storageBlocks(SHADOW_IRON)
+    val NEEDS_SHADOW_IRON_TOOL: TagKey<Block> = needs(SHADOW_IRON)
+    val INCORRECT_FOR_SHADOW_IRON_TOOL: TagKey<Block> = incorrectFor(SHADOW_IRON)
 
     val STORAGE_BLOCKS_QUICKSILVER: TagKey<Block> = storageBlocks(QUICKSILVER)
+    val NEEDS_QUICKSILVER_TOOL: TagKey<Block> = needs(QUICKSILVER)
+    val INCORRECT_FOR_QUICKSILVER_TOOL: TagKey<Block> = incorrectFor(QUICKSILVER)
 
     val ORES_CERUCLASE: TagKey<Block> = ores(CERUCLASE)
     val STORAGE_BLOCKS_CERUCLASE: TagKey<Block> = storageBlocks(CERUCLASE)
+    val NEEDS_CERUCLASE_TOOL: TagKey<Block> = needs(CERUCLASE)
+    val INCORRECT_FOR_CERUCLASE_TOOL: TagKey<Block> = incorrectFor(CERUCLASE)
 
     val ORES_EXIMITE: TagKey<Block> = ores(EXIMITE)
     val STORAGE_BLOCKS_EXIMITE: TagKey<Block> = storageBlocks(EXIMITE)
+    val NEEDS_EXIMITE_TOOL: TagKey<Block> = needs(EXIMITE)
+    val INCORRECT_FOR_EXIMITE_TOOL: TagKey<Block> = incorrectFor(EXIMITE)
 
     val ORES_KALENDRITE: TagKey<Block> = ores(KALENDRITE)
     val STORAGE_BLOCKS_KALENDRITE: TagKey<Block> = storageBlocks(KALENDRITE)
+    val NEEDS_KALENDRITE_TOOL: TagKey<Block> = needs(KALENDRITE)
+    val INCORRECT_FOR_KALENDRITE_TOOL: TagKey<Block> = incorrectFor(KALENDRITE)
 
     val ORES_MIDASIUM: TagKey<Block> = ores(MIDASIUM)
     val STORAGE_BLOCKS_MIDASIUM: TagKey<Block> = storageBlocks(MIDASIUM)
+    val NEEDS_MIDASIUM_TOOL: TagKey<Block> = needs(MIDASIUM)
+    val INCORRECT_FOR_MIDASIUM_TOOL: TagKey<Block> = incorrectFor(MIDASIUM)
 
     val ORES_ORICHALCUM = ores(ORICHALCUM)
     val STORAGE_BLOCKS_ORICHALCUM = storageBlocks(ORICHALCUM)
+    val NEEDS_ORICHALCUM_TOOL: TagKey<Block> = needs(ORICHALCUM)
+    val INCORRECT_FOR_ORICHALCUM_TOOL: TagKey<Block> = incorrectFor(ORICHALCUM)
 
     val ORES_PLATINUM = ores(PLATINUM)
     val STORAGE_BLOCKS_PLATINUM = storageBlocks(PLATINUM)
+    val NEEDS_PLATINUM_TOOL: TagKey<Block> = needs(PLATINUM)
+    val INCORRECT_FOR_PLATINUM_TOOL: TagKey<Block> = incorrectFor(PLATINUM)
 
     val ORES_VULCANITE: TagKey<Block> = ores(VULCANITE)
     val STORAGE_BLOCKS_VULCANITE: TagKey<Block> = storageBlocks(VULCANITE)
+    val NEEDS_VULCANITE_TOOL: TagKey<Block> = needs(VULCANITE)
+    val INCORRECT_FOR_VULCANITE_TOOL: TagKey<Block> = incorrectFor(VULCANITE)
 
     val STORAGE_BLOCKS_CELENEGIL: TagKey<Block> = storageBlocks(CELENEGIL)
+    val NEEDS_CELENEGIL_TOOL: TagKey<Block> = needs(CELENEGIL)
+    val INCORRECT_FOR_CELENEGIL_TOOL: TagKey<Block> = incorrectFor(CELENEGIL)
 
     val STORAGE_BLOCKS_AMORDRINE: TagKey<Block> = storageBlocks(AMORDRINE)
+    val NEEDS_AMORDRINE_TOOL: TagKey<Block> = needs(AMORDRINE)
+    val INCORRECT_FOR_AMORDRINE_TOOL: TagKey<Block> = incorrectFor(AMORDRINE)
 
     val ORES_CARMOT = ores(CARMOT)
     val STORAGE_BLOCKS_CARMOT = storageBlocks(CARMOT)
+    val NEEDS_CARMOT_TOOL: TagKey<Block> = needs(CARMOT)
+    val INCORRECT_FOR_CARMOT_TOOL: TagKey<Block> = incorrectFor(CARMOT)
 
     val ORES_LEMURITE: TagKey<Block> = ores(LEMURITE)
     val STORAGE_BLOCKS_LEMURITE: TagKey<Block> = storageBlocks(LEMURITE)
@@ -127,24 +171,40 @@ object AlloyanceBlockTags {
 
     val ORES_MITHRIL: TagKey<Block> = ores(MITHRIL)
     val STORAGE_BLOCKS_MITHRIL: TagKey<Block> = storageBlocks(MITHRIL)
+    val NEEDS_MITHRIL_TOOL: TagKey<Block> = needs(MITHRIL)
+    val INCORRECT_FOR_MITHRIL_TOOL: TagKey<Block> = incorrectFor(MITHRIL)
 
     val ORES_SANGUINITE: TagKey<Block> = ores(SANGUINITE)
     val STORAGE_BLOCKS_SANGUINITE: TagKey<Block> = storageBlocks(SANGUINITE)
+    val NEEDS_SANGUINITE_TOOL: TagKey<Block> = needs(SANGUINITE)
+    val INCORRECT_FOR_SANGUINITE_TOOL: TagKey<Block> = incorrectFor(SANGUINITE)
 
     val ORES_VYROXERES: TagKey<Block> = ores(VYROXERES)
     val STORAGE_BLOCKS_VYROXERES: TagKey<Block> = storageBlocks(VYROXERES)
+    val NEEDS_VYROXERES_TOOL: TagKey<Block> = needs(VYROXERES)
+    val INCORRECT_FOR_VYROXERES_TOOL: TagKey<Block> = incorrectFor(VYROXERES)
 
     val STORAGE_BLOCKS_SHADOW_STEEL: TagKey<Block> = storageBlocks(SHADOW_STEEL)
+    val NEEDS_SHADOW_STEEL_TOOL: TagKey<Block> = needs(SHADOW_STEEL)
+    val INCORRECT_FOR_SHADOW_STEEL_TOOL: TagKey<Block> = incorrectFor(SHADOW_STEEL)
 
     val STORAGE_BLOCKS_HADEROTH: TagKey<Block> = storageBlocks(HADEROTH)
+    val NEEDS_HADEROTH_TOOL: TagKey<Block> = needs(HADEROTH)
+    val INCORRECT_FOR_HADEROTH_TOOL: TagKey<Block> = incorrectFor(HADEROTH)
 
     val STORAGE_BLOCKS_DESICHALKOS: TagKey<Block> = storageBlocks(DESICHALKOS)
+    val NEEDS_DESICHALKOS_TOOL: TagKey<Block> = needs(DESICHALKOS)
+    val INCORRECT_FOR_DESICHALKOS_TOOL: TagKey<Block> = incorrectFor(DESICHALKOS)
 
     val ORES_ATLARUS = ores(ATLARUS)
     val STORAGE_BLOCKS_ATLARUS = storageBlocks(ATLARUS)
+    val NEEDS_ATLARUS_TOOL: TagKey<Block> = needs(ATLARUS)
+    val INCORRECT_FOR_ATLARUS_TOOL: TagKey<Block> = incorrectFor(ATLARUS)
 
     val ORES_ADAMANTINE = ores(ADAMANTINE)
     val STORAGE_BLOCKS_ADAMANTINE = storageBlocks(ADAMANTINE)
+    val NEEDS_ADAMANTINE_TOOL: TagKey<Block> = needs(ADAMANTINE)
+    val INCORRECT_FOR_ADAMANTINE_TOOL: TagKey<Block> = incorrectFor(ADAMANTINE)
 
     val ORES_ALDUORITE: TagKey<Block> = ores(ALDUORITE)
     val STORAGE_BLOCKS_ALDUORITE: TagKey<Block> = storageBlocks(ALDUORITE)
@@ -153,12 +213,21 @@ object AlloyanceBlockTags {
     val STORAGE_BLOCKS_LUTETIUM: TagKey<Block> = storageBlocks(LUTETIUM)
 
     val STORAGE_BLOCKS_INOLASHITE: TagKey<Block> = storageBlocks(INOLASHITE)
+    val NEEDS_INOLASHITE_TOOL: TagKey<Block> = needs(INOLASHITE)
+    val INCORRECT_FOR_INOLASHITE_TOOL: TagKey<Block> = incorrectFor(INOLASHITE)
 
     val STORAGE_BLOCKS_KRIK: TagKey<Block> = storageBlocks(KRIK)
+    val NEEDS_KRIK_TOOL: TagKey<Block> = needs(KRIK)
+    val INCORRECT_FOR_KRIK_TOOL: TagKey<Block> = incorrectFor(KRIK)
 
     val STORAGE_BLOCKS_TARTARITE: TagKey<Block> = storageBlocks(TARTARITE)
+    val NEEDS_TARTARITE_TOOL: TagKey<Block> = needs(TARTARITE)
+    val INCORRECT_FOR_TARTARITE_TOOL: TagKey<Block> = incorrectFor(TARTARITE)
 
     val STORAGE_BLOCKS_ETHERIUM: TagKey<Block> = storageBlocks(ETHERIUM)
+    val NEEDS_ETHERIUM_TOOL: TagKey<Block> = needs(ETHERIUM)
+    val INCORRECT_FOR_ETHERIUM_TOOL: TagKey<Block> = incorrectFor(ETHERIUM)
+
     private fun incorrectFor(metal: Metal): TagKey<Block> {
         val tag = alloyance("incorrect_for_${metal.id}_tool")
         INCORRECT_FOR_TOOL[metal] = tag
