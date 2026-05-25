@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "hepatizon_leggings",
+  "key": {
+    "i": {
+      "item": "alloyance:hepatizon_ingot"
+    }
+  },
+  "pattern": [
+    "iii",
+    "i i",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:hepatizon_leggings"
+  }
+}

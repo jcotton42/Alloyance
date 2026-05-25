@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "sanguinite_boots",
+  "key": {
+    "i": {
+      "item": "alloyance:sanguinite_ingot"
+    }
+  },
+  "pattern": [
+    "i i",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:sanguinite_boots"
+  }
+}

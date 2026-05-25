@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "ceruclase_helmet",
+  "key": {
+    "i": {
+      "item": "alloyance:ceruclase_ingot"
+    }
+  },
+  "pattern": [
+    "iii",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:ceruclase_helmet"
+  }
+}

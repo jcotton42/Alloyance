@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "hepatizon_boots",
+  "key": {
+    "i": {
+      "item": "alloyance:hepatizon_ingot"
+    }
+  },
+  "pattern": [
+    "i i",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:hepatizon_boots"
+  }
+}

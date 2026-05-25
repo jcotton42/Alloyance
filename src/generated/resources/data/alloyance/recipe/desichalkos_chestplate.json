@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "desichalkos_chestplate",
+  "key": {
+    "i": {
+      "item": "alloyance:desichalkos_ingot"
+    }
+  },
+  "pattern": [
+    "i i",
+    "iii",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:desichalkos_chestplate"
+  }
+}
