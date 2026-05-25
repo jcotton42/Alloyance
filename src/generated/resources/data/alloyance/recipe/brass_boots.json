@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "brass_boots",
+  "key": {
+    "i": {
+      "item": "alloyance:brass_ingot"
+    }
+  },
+  "pattern": [
+    "i i",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:brass_boots"
+  }
+}

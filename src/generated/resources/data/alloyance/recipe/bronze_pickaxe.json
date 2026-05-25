@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "bronze_pickaxe",
+  "key": {
+    "i": {
+      "item": "alloyance:bronze_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "iii",
+    " s ",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:bronze_pickaxe"
+  }
+}

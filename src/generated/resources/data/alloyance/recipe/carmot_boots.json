@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "carmot_boots",
+  "key": {
+    "i": {
+      "item": "alloyance:carmot_ingot"
+    }
+  },
+  "pattern": [
+    "i i",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:carmot_boots"
+  }
+}

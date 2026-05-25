@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "osmium_leggings",
+  "key": {
+    "i": {
+      "item": "alloyance:osmium_ingot"
+    }
+  },
+  "pattern": [
+    "iii",
+    "i i",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:osmium_leggings"
+  }
+}

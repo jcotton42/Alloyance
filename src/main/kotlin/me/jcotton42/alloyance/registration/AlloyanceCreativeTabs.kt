@@ -12,8 +12,27 @@ import net.neoforged.neoforge.registries.DeferredRegister
 object AlloyanceCreativeTabs {
     val TABS: DeferredRegister<CreativeModeTab> = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Alloyance.ID)
 
-    // TODO ARMOR
     // TODO pick a variety of metals for the icons
+    val ARMOR: DeferredHolder<CreativeModeTab, CreativeModeTab> = TABS.register("armor") { location ->
+        CreativeModeTab.builder()
+            .title(Component.translatable(location.toLanguageKey("itemGroup")))
+            .icon { ItemStack(AlloyanceItems.DEEP_IRON_HELMET.get()) }
+            .displayItems { _, output ->
+                output.accept(AlloyanceItems.COPPER_HELMET)
+                output.accept(AlloyanceItems.COPPER_CHESTPLATE)
+                output.accept(AlloyanceItems.COPPER_LEGGINGS)
+                output.accept(AlloyanceItems.COPPER_BOOTS)
+
+                Metal.entries.forEach {
+                    AlloyanceItems.HELMETS[it]?.let(output::accept)
+                    AlloyanceItems.CHESTPLATES[it]?.let(output::accept)
+                    AlloyanceItems.LEGGINGS[it]?.let(output::accept)
+                    AlloyanceItems.BOOTS[it]?.let(output::accept)
+                }
+            }
+            .build()
+    }
+
     val BLOCKS: DeferredHolder<CreativeModeTab, CreativeModeTab> = TABS.register("blocks") { location ->
         CreativeModeTab.builder()
             .title(Component.translatable(location.toLanguageKey("itemGroup")))
@@ -128,6 +147,27 @@ object AlloyanceCreativeTabs {
                 output.accept(AlloyanceBlocks.TAR_ORE)
             }
             .build()
+    }
+
+    val TOOLS: DeferredHolder<CreativeModeTab, CreativeModeTab> = TABS.register("tools") { location ->
+        CreativeModeTab.builder()
+            .title(Component.translatable(location.toLanguageKey("itemGroup")))
+            .icon { ItemStack(AlloyanceItems.DEEP_IRON_PICKAXE.get()) }
+            .displayItems { _, output ->
+                output.accept(AlloyanceItems.COPPER_SHOVEL)
+                output.accept(AlloyanceItems.COPPER_PICKAXE)
+                output.accept(AlloyanceItems.COPPER_AXE)
+                output.accept(AlloyanceItems.COPPER_HOE)
+                output.accept(AlloyanceItems.COPPER_SWORD)
+
+                Metal.entries.forEach { metal ->
+                    AlloyanceItems.SHOVELS[metal]?.let(output::accept)
+                    AlloyanceItems.PICKAXES[metal]?.let(output::accept)
+                    AlloyanceItems.AXES[metal]?.let(output::accept)
+                    AlloyanceItems.HOES[metal]?.let(output::accept)
+                    AlloyanceItems.SWORDS[metal]?.let(output::accept)
+                }
+            }.build()
     }
 
     fun register(bus: IEventBus) {

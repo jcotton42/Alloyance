@@ -1,10 +1,13 @@
 package me.jcotton42.alloyance.registration
 
+import com.mojang.serialization.Codec
+import io.netty.buffer.ByteBuf
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.client.TooltipStyle
 import me.jcotton42.alloyance.machine.FuelProperties
 import net.minecraft.core.component.DataComponentType
 import net.minecraft.core.registries.Registries
+import net.minecraft.network.codec.StreamCodec
 import net.neoforged.bus.api.IEventBus
 import net.neoforged.neoforge.registries.DeferredHolder
 import net.neoforged.neoforge.registries.DeferredRegister
@@ -22,5 +25,11 @@ object AlloyanceDataComponents {
 
     fun register(bus: IEventBus) {
         COMPONENTS.register(bus)
+    }
+
+    private fun <T> register(name: String, codec: Codec<T>, streamCodec: StreamCodec<ByteBuf, T>): DeferredHolder<DataComponentType<*>, DataComponentType<T>> {
+        return COMPONENTS.registerComponentType(name) { builder ->
+            builder.persistent(codec).networkSynchronized(streamCodec)
+        }
     }
 }

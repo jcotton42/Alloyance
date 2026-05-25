@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "silver_boots",
+  "key": {
+    "i": {
+      "item": "alloyance:silver_ingot"
+    }
+  },
+  "pattern": [
+    "i i",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:silver_boots"
+  }
+}

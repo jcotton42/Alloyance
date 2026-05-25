@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "atlarus_pickaxe",
+  "key": {
+    "i": {
+      "item": "alloyance:atlarus_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "iii",
+    " s ",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:atlarus_pickaxe"
+  }
+}

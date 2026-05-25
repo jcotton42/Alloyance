@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "haderoth_hoe",
+  "key": {
+    "i": {
+      "item": "alloyance:haderoth_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "ii ",
+    " s ",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:haderoth_hoe"
+  }
+}

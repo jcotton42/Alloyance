@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "eximite_leggings",
+  "key": {
+    "i": {
+      "item": "alloyance:eximite_ingot"
+    }
+  },
+  "pattern": [
+    "iii",
+    "i i",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:eximite_leggings"
+  }
+}

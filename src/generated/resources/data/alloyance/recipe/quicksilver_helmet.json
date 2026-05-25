@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "quicksilver_helmet",
+  "key": {
+    "i": {
+      "item": "alloyance:quicksilver_ingot"
+    }
+  },
+  "pattern": [
+    "iii",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:quicksilver_helmet"
+  }
+}

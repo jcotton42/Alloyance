@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "midasium_axe",
+  "key": {
+    "i": {
+      "item": "alloyance:midasium_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "ii ",
+    "is ",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:midasium_axe"
+  }
+}

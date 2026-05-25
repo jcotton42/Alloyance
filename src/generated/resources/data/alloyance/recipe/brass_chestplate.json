@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "brass_chestplate",
+  "key": {
+    "i": {
+      "item": "alloyance:brass_ingot"
+    }
+  },
+  "pattern": [
+    "i i",
+    "iii",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:brass_chestplate"
+  }
+}

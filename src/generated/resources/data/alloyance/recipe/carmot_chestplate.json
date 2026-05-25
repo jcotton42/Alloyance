@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "carmot_chestplate",
+  "key": {
+    "i": {
+      "item": "alloyance:carmot_ingot"
+    }
+  },
+  "pattern": [
+    "i i",
+    "iii",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:carmot_chestplate"
+  }
+}

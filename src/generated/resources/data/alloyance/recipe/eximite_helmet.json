@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "eximite_helmet",
+  "key": {
+    "i": {
+      "item": "alloyance:eximite_ingot"
+    }
+  },
+  "pattern": [
+    "iii",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:eximite_helmet"
+  }
+}

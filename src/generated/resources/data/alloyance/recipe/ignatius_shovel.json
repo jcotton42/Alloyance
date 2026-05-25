@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "ignatius_shovel",
+  "key": {
+    "i": {
+      "item": "alloyance:ignatius_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " i ",
+    " s ",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:ignatius_shovel"
+  }
+}

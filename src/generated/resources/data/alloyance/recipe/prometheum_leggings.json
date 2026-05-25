@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "prometheum_leggings",
+  "key": {
+    "i": {
+      "item": "alloyance:prometheum_ingot"
+    }
+  },
+  "pattern": [
+    "iii",
+    "i i",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:prometheum_leggings"
+  }
+}

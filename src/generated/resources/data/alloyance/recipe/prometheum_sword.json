@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "prometheum_sword",
+  "key": {
+    "i": {
+      "item": "alloyance:prometheum_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " i ",
+    " i ",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:prometheum_sword"
+  }
+}

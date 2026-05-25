@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "damascus_steel_chestplate",
+  "key": {
+    "i": {
+      "item": "alloyance:damascus_steel_ingot"
+    }
+  },
+  "pattern": [
+    "i i",
+    "iii",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:damascus_steel_chestplate"
+  }
+}

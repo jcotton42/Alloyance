@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "astral_silver_chestplate",
+  "key": {
+    "i": {
+      "item": "alloyance:astral_silver_ingot"
+    }
+  },
+  "pattern": [
+    "i i",
+    "iii",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:astral_silver_chestplate"
+  }
+}

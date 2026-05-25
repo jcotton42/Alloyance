@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "midasium_helmet",
+  "key": {
+    "i": {
+      "item": "alloyance:midasium_ingot"
+    }
+  },
+  "pattern": [
+    "iii",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:midasium_helmet"
+  }
+}

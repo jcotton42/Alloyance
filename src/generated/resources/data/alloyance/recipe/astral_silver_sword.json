@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "astral_silver_sword",
+  "key": {
+    "i": {
+      "item": "alloyance:astral_silver_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " i ",
+    " i ",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:astral_silver_sword"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "mithril_helmet",
+  "key": {
+    "i": {
+      "item": "alloyance:mithril_ingot"
+    }
+  },
+  "pattern": [
+    "iii",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:mithril_helmet"
+  }
+}

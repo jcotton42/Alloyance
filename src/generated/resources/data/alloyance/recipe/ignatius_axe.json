@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "ignatius_axe",
+  "key": {
+    "i": {
+      "item": "alloyance:ignatius_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "ii ",
+    "is ",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:ignatius_axe"
+  }
+}

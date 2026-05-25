@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "astral_silver_boots",
+  "key": {
+    "i": {
+      "item": "alloyance:astral_silver_ingot"
+    }
+  },
+  "pattern": [
+    "i i",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:astral_silver_boots"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "silver_sword",
+  "key": {
+    "i": {
+      "item": "alloyance:silver_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " i ",
+    " i ",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:silver_sword"
+  }
+}

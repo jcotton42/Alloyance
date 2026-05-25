@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "deep_iron_shovel",
+  "key": {
+    "i": {
+      "item": "alloyance:deep_iron_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " i ",
+    " s ",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:deep_iron_shovel"
+  }
+}

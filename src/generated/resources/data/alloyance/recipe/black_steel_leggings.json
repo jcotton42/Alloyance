@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "black_steel_leggings",
+  "key": {
+    "i": {
+      "item": "alloyance:black_steel_ingot"
+    }
+  },
+  "pattern": [
+    "iii",
+    "i i",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:black_steel_leggings"
+  }
+}

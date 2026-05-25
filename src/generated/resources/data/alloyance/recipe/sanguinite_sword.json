@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "sanguinite_sword",
+  "key": {
+    "i": {
+      "item": "alloyance:sanguinite_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " i ",
+    " i ",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:sanguinite_sword"
+  }
+}

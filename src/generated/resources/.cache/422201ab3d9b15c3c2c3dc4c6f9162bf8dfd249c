@@ -1,4 +1,4 @@
-// 1.21.1	2025-04-21T22:50:24.1278123	Tags for minecraft:item mod id alloyance
+// 1.21.1	2026-05-25T14:49:39.630770475	Tags for minecraft:item mod id alloyance
 e0ef9489be0c2c56800d4f3d788924d486fe9288 data/alloyance/tags/item/alloyables.json
 d265905cd36b5fa147f634f382472decc42a452f data/alloyance/tags/item/alloyables/adamantine.json
 f2a29a8939f26c8a90782cbe64e69c890179b939 data/alloyance/tags/item/alloyables/alduorite.json
@@ -51,6 +51,7 @@ b30ec7180331d21549e22bc18a2e234b64b3b5ee data/alloyance/tags/item/alloyables/tar
 9b7c0574a1f26dd54363b52052e4d22153e16596 data/alloyance/tags/item/alloyables/vulcanite.json
 3f8b82dd283a91515db678b1dd1f3b120f3b88f7 data/alloyance/tags/item/alloyables/vyroxeres.json
 68143d514bf194a281517d128892c2d73c34fbe9 data/alloyance/tags/item/alloyables/zinc.json
+7cc246103a61a14ff68cb4c256c69df4e6cb7f4c data/c/tags/item/buckets.json
 5cd1fb5b188332db2f23b23d6643abce617e6134 data/c/tags/item/dusts.json
 0c8d437503347b572533db271f23f64a4c58d699 data/c/tags/item/dusts/adamantine.json
 a8c41566db57b2009b73cb1ccd009dec2c7c54b4 data/c/tags/item/dusts/alduorite.json
@@ -204,6 +205,7 @@ a2633c778b43458bac53a888c52aaec0decf9388 data/c/tags/item/nuggets/tartarite.json
 7e7990f9246227ba6596081a6b1fb47e89008f11 data/c/tags/item/nuggets/vulcanite.json
 562bd56eeca5778df150732cfc07b81aea0843dd data/c/tags/item/nuggets/vyroxeres.json
 74dd75e5f736dce3240bcce26f0ccf4890de7cbc data/c/tags/item/nuggets/zinc.json
+5789d50624864caf7dc4ccda0d586b0077f69f40 data/c/tags/item/ore_rates/singular.json
 35fc3d3de277364ae81a383ee8e18d79c70f59d9 data/c/tags/item/ores.json
 eee77fbdd60d030b8a05c26a6b886775e1fbaa94 data/c/tags/item/ores/adamantine.json
 48b6fd0e8a94232da539b2d3efa9e7c5060c5ec6 data/c/tags/item/ores/alduorite.json
@@ -242,7 +244,6 @@ b5847b4a65fb265052f0d2c49f73b82b8b8bc0f9 data/c/tags/item/ores/silver.json
 107d25e6dc3440268afd02f81bae0928950afa3e data/c/tags/item/ores_in_ground/end_stone.json
 0c63af0bf0cf67405fd088c73cd72b6e9c57b096 data/c/tags/item/ores_in_ground/netherrack.json
 58abfbc779766bfe3400d94dfaa4bcb286885c67 data/c/tags/item/ores_in_ground/stone.json
-5789d50624864caf7dc4ccda0d586b0077f69f40 data/c/tags/item/ore_rates/singular.json
 318b7784f7e7daf759597213afa9278482ab7b4c data/c/tags/item/raw_materials.json
 3eee80bb9162c83de8c7744af162da53096a4ea2 data/c/tags/item/raw_materials/adamantine.json
 f96382a229ca48702cf4ec3c837d9d10b588ccc0 data/c/tags/item/raw_materials/alduorite.json
@@ -325,3 +326,14 @@ f827a7d6fcf6dfe3eee3acf5972208bb27dd7814 data/c/tags/item/storage_blocks/tin.jso
 b63f2fd13e913c85cea87aabb8bc11190ff0a790 data/c/tags/item/storage_blocks/vulcanite.json
 91513400935b6397539e2c5375a463112844fe61 data/c/tags/item/storage_blocks/vyroxeres.json
 44dcabb93af53db6238114d0bb7887f3a7b757a7 data/c/tags/item/storage_blocks/zinc.json
+7f137443e7a0ece2d8d4331ad720f038053ac925 data/c/tags/item/tools/melee_weapon.json
+c368fe6b4501d23b1393468a030695c88a6037fc data/c/tags/item/tools/mining_tool.json
+2bc9e34176494d5b1232d4ae7e6f108b3928f130 data/minecraft/tags/item/axes.json
+0328104ced7060dea4ad10bf625444a1e4b6995a data/minecraft/tags/item/chest_armor.json
+10c7dd0bcc5ef90675bf4f601e04400d71ba4508 data/minecraft/tags/item/foot_armor.json
+9f4b30600974752d8af8da917d96d4e876707839 data/minecraft/tags/item/head_armor.json
+e1aac0673e334d6cbf944a8ff7df34ce9d6dae04 data/minecraft/tags/item/hoes.json
+06c05e3764ad160275d19ab8ae53c83f0ed66260 data/minecraft/tags/item/leg_armor.json
+c368fe6b4501d23b1393468a030695c88a6037fc data/minecraft/tags/item/pickaxes.json
+fce2954f1534531281c39e384836999573b92b64 data/minecraft/tags/item/shovels.json
+846f18197cf5dfc3d0382b276715324b4fd88b31 data/minecraft/tags/item/swords.json

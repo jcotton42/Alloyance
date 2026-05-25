@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "lutetium_chestplate",
+  "key": {
+    "i": {
+      "item": "alloyance:lutetium_ingot"
+    }
+  },
+  "pattern": [
+    "i i",
+    "iii",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:lutetium_chestplate"
+  }
+}

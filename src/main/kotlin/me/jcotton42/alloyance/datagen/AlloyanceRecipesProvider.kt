@@ -22,6 +22,8 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
     override fun buildRecipes(output: RecipeOutput) {
         addMachineRecipes(output)
         addMiscIngredientRecipes(output)
+        addToolRecipes(output)
+        addArmorRecipes(output)
 
         crushOre(output, AlloyanceItems.PHOSPHORUS, 6, AlloyanceItemTags.ORES_PHOSPHORITE)
 
@@ -119,6 +121,144 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
             .group(getItemName(AlloyanceItems.INFUSED_IGNATIUS))
             .unlockedBy(getHasName(AlloyanceItems.THERMITE_DUST), has(AlloyanceItems.THERMITE_DUST))
             .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(AlloyanceItems.INFUSED_IGNATIUS)))
+    }
+
+    private fun addToolRecipes(output: RecipeOutput) {
+        fun axe(result: ItemLike, ingot: ItemLike) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, result)
+                .pattern("ii ")
+                .pattern("is ")
+                .pattern(" s ")
+                .define('i', ingot)
+                .define('s', Items.STICK)
+                .group(getItemName(result))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+        }
+
+        fun hoe(result: ItemLike, ingot: ItemLike) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, result)
+                .pattern("ii ")
+                .pattern(" s ")
+                .pattern(" s ")
+                .define('i', ingot)
+                .define('s', Items.STICK)
+                .group(getItemName(result))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+        }
+
+        fun pickaxe(result: ItemLike, ingot: ItemLike) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, result)
+                .pattern("iii")
+                .pattern(" s ")
+                .pattern(" s ")
+                .define('i', ingot)
+                .define('s', Items.STICK)
+                .group(getItemName(result))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+        }
+
+        fun shovel(result: ItemLike, ingot: ItemLike) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, result)
+                .pattern(" i ")
+                .pattern(" s ")
+                .pattern(" s ")
+                .define('i', ingot)
+                .define('s', Items.STICK)
+                .group(getItemName(result))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+        }
+
+        fun sword(result: ItemLike, ingot: ItemLike) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, result)
+                .pattern(" i ")
+                .pattern(" i ")
+                .pattern(" s ")
+                .define('i', ingot)
+                .define('s', Items.STICK)
+                .group(getItemName(result))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+        }
+
+        axe(AlloyanceItems.COPPER_AXE, Items.COPPER_INGOT)
+        AlloyanceItems.AXES.forEach { (metal, axe) ->
+            axe(axe, AlloyanceItems.INGOTS.getValue(metal))
+        }
+
+        hoe(AlloyanceItems.COPPER_HOE, Items.COPPER_INGOT)
+        AlloyanceItems.HOES.forEach { (metal, hoe) ->
+            hoe(hoe, AlloyanceItems.INGOTS.getValue(metal))
+        }
+
+        pickaxe(AlloyanceItems.COPPER_PICKAXE, Items.COPPER_INGOT)
+        AlloyanceItems.PICKAXES.forEach { (metal, pickaxe) ->
+            pickaxe(pickaxe, AlloyanceItems.INGOTS.getValue(metal))
+        }
+
+        shovel(AlloyanceItems.COPPER_SHOVEL, Items.COPPER_INGOT)
+        AlloyanceItems.SHOVELS.forEach { (metal, shovel) ->
+            shovel(shovel, AlloyanceItems.INGOTS.getValue(metal))
+        }
+
+        sword(AlloyanceItems.COPPER_SWORD, Items.COPPER_INGOT)
+        AlloyanceItems.SWORDS.forEach { (metal, sword) ->
+            sword(sword, AlloyanceItems.INGOTS.getValue(metal))
+        }
+    }
+
+    private fun addArmorRecipes(output: RecipeOutput) {
+        fun helmet(result: ItemLike, ingot: ItemLike) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result)
+                .pattern("iii")
+                .pattern("i i")
+                .define('i', ingot)
+                .group(getItemName(result))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+        }
+        fun chestplate(result: ItemLike, ingot: ItemLike) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result)
+                .pattern("i i")
+                .pattern("iii")
+                .pattern("iii")
+                .define('i', ingot)
+                .group(getItemName(result))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+        }
+        fun leggings(result: ItemLike, ingot: ItemLike) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result)
+                .pattern("iii")
+                .pattern("i i")
+                .pattern("i i")
+                .define('i', ingot)
+                .group(getItemName(result))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+        }
+        fun boots(result: ItemLike, ingot: ItemLike) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result)
+                .pattern("i i")
+                .pattern("i i")
+                .define('i', ingot)
+                .group(getItemName(result))
+                .unlockedBy(getHasName(ingot), has(ingot))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+        }
+
+        helmet(AlloyanceItems.COPPER_HELMET, Items.COPPER_INGOT)
+        chestplate(AlloyanceItems.COPPER_CHESTPLATE, Items.COPPER_INGOT)
+        leggings(AlloyanceItems.COPPER_LEGGINGS, Items.COPPER_INGOT)
+        boots(AlloyanceItems.COPPER_BOOTS, Items.COPPER_INGOT)
+
+        AlloyanceItems.HELMETS.forEach { (metal, helmet) -> helmet(helmet, AlloyanceItems.INGOTS.getValue(metal)) }
+        AlloyanceItems.CHESTPLATES.forEach { (metal, chestplate) -> chestplate(chestplate, AlloyanceItems.INGOTS.getValue(metal)) }
+        AlloyanceItems.LEGGINGS.forEach { (metal, leggings) -> leggings(leggings, AlloyanceItems.INGOTS.getValue(metal)) }
+        AlloyanceItems.BOOTS.forEach { (metal, boots) -> boots(boots, AlloyanceItems.INGOTS.getValue(metal)) }
     }
 
     private fun nineBlockStorageRecipe(output: RecipeOutput, unpacked: ItemLike, packed: ItemLike) {

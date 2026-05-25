@@ -4,13 +4,19 @@ import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.registration.AlloyanceBlockTags
 import me.jcotton42.alloyance.registration.AlloyanceItemTags
 import me.jcotton42.alloyance.registration.AlloyanceItems
+import me.jcotton42.alloyance.registration.Metal
 import net.minecraft.core.HolderLookup
 import net.minecraft.data.PackOutput
 import net.minecraft.data.tags.ItemTagsProvider
+import net.minecraft.resources.ResourceKey
+import net.minecraft.resources.ResourceLocation
+import net.minecraft.tags.ItemTags
+import net.minecraft.world.item.Items
 import net.neoforged.neoforge.common.Tags
 import net.neoforged.neoforge.common.data.BlockTagsProvider
 import net.neoforged.neoforge.common.data.ExistingFileHelper
 import java.util.concurrent.CompletableFuture
+import javax.swing.text.html.HTML
 
 class AlloyanceItemTagsProvider(
     output: PackOutput,
@@ -88,6 +94,61 @@ class AlloyanceItemTagsProvider(
             tag(itemTag)
                 .addTag(AlloyanceItemTags.DUSTS.getValue(metal))
                 .addTag(AlloyanceItemTags.INGOTS.getValue(metal))
+        }
+
+        AlloyanceItems.BUCKETS.values.forEach {
+            tag(Tags.Items.BUCKETS).add(it.get())
+        }
+
+        tag(ItemTags.AXES).add(AlloyanceItems.COPPER_AXE.get())
+        tag(Tags.Items.MELEE_WEAPON_TOOLS).add(AlloyanceItems.COPPER_AXE.get())
+        AlloyanceItems.AXES.values.forEach {
+            tag(ItemTags.AXES).add(it.get())
+            tag(Tags.Items.MELEE_WEAPON_TOOLS).add(it.get())
+        }
+
+        tag(ItemTags.HOES).add(AlloyanceItems.COPPER_HOE.get())
+        AlloyanceItems.HOES.values.forEach {
+            tag(ItemTags.HOES).add(it.get())
+        }
+
+        tag(ItemTags.PICKAXES).add(AlloyanceItems.COPPER_PICKAXE.get())
+        tag(Tags.Items.MINING_TOOL_TOOLS).add(AlloyanceItems.COPPER_PICKAXE.get())
+        AlloyanceItems.PICKAXES.values.forEach {
+            tag(ItemTags.PICKAXES).add(it.get())
+            tag(Tags.Items.MINING_TOOL_TOOLS).add(it.get())
+        }
+
+        tag(ItemTags.SHOVELS).add(AlloyanceItems.COPPER_SHOVEL.get())
+        AlloyanceItems.SHOVELS.values.forEach {
+            tag(ItemTags.SHOVELS).add(it.get())
+        }
+
+        tag(ItemTags.SWORDS).add(AlloyanceItems.COPPER_SWORD.get())
+        tag(Tags.Items.MELEE_WEAPON_TOOLS).add(AlloyanceItems.COPPER_SWORD.get())
+        AlloyanceItems.SWORDS.values.forEach {
+            tag(ItemTags.SWORDS).add(it.get())
+            tag(Tags.Items.MELEE_WEAPON_TOOLS).add(it.get())
+        }
+
+        tag(ItemTags.HEAD_ARMOR).add(AlloyanceItems.COPPER_HELMET.get())
+        AlloyanceItems.HELMETS.values.forEach {
+            tag(ItemTags.HEAD_ARMOR).add(it.get())
+        }
+
+        tag(ItemTags.CHEST_ARMOR).add(AlloyanceItems.COPPER_CHESTPLATE.get())
+        AlloyanceItems.CHESTPLATES.values.forEach {
+            tag(ItemTags.CHEST_ARMOR).add(it.get())
+        }
+
+        tag(ItemTags.LEG_ARMOR).add(AlloyanceItems.COPPER_LEGGINGS.get())
+        AlloyanceItems.LEGGINGS.values.forEach {
+            tag(ItemTags.LEG_ARMOR).add(it.get())
+        }
+
+        tag(ItemTags.FOOT_ARMOR).add(AlloyanceItems.COPPER_BOOTS.get())
+        AlloyanceItems.BOOTS.values.forEach {
+            tag(ItemTags.FOOT_ARMOR).add(it.get())
         }
 
         AlloyanceBlockTags.STORAGE_BLOCKS.forEach { (metal, blockTag) ->

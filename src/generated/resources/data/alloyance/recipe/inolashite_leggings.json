@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "inolashite_leggings",
+  "key": {
+    "i": {
+      "item": "alloyance:inolashite_ingot"
+    }
+  },
+  "pattern": [
+    "iii",
+    "i i",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:inolashite_leggings"
+  }
+}

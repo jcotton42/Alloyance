@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "adamantine_helmet",
+  "key": {
+    "i": {
+      "item": "alloyance:adamantine_ingot"
+    }
+  },
+  "pattern": [
+    "iii",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "alloyance:adamantine_helmet"
+  }
+}
