@@ -8,8 +8,10 @@ import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.crafting.RecipeType
 import net.neoforged.bus.api.IEventBus
 import net.neoforged.neoforge.registries.DeferredRegister
+import net.neoforged.neoforge.registries.NeoForgeRegistries
 
 object AlloyanceRecipes {
+    val INGREDIENT_TYPES = DeferredRegister.create(NeoForgeRegistries.INGREDIENT_TYPES, Alloyance.ID)
     val RECIPE_TYPES = DeferredRegister.create(Registries.RECIPE_TYPE, Alloyance.ID)
     val RECIPE_SERIALIZERS = DeferredRegister.create(Registries.RECIPE_SERIALIZER, Alloyance.ID)
 
@@ -24,6 +26,7 @@ object AlloyanceRecipes {
     val CRUSHER_SERIALIZER = RECIPE_SERIALIZERS.register("crusher", CrusherRecipe::Serializer)
 
     fun register(bus: IEventBus) {
+        INGREDIENT_TYPES.register(bus)
         RECIPE_TYPES.register(bus)
         RECIPE_SERIALIZERS.register(bus)
     }
