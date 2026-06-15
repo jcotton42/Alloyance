@@ -427,7 +427,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
     }
 
     private fun crushRawMaterial(output: RecipeOutput, dust: ItemLike, rawMaterialTag: TagKey<Item>) {
-        CrusherRecipeBuilder(ItemStack(dust, 1), Ingredient.of(rawMaterialTag), 0.75F, 140)
+        CrusherRecipeBuilder(ItemStack(dust, 2), Ingredient.of(rawMaterialTag), 0.75F, 140)
             .group(getItemName(dust))
             .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${getItemName(dust)}_from_crushing_raw_material"))
     }
