@@ -1,6 +1,13 @@
 {
   "values": [
-    "#minecraft:needs_diamond_tool",
+    "#alloyance:needs_copper_tool",
+    "#alloyance:needs_angmallen_tool",
+    "#alloyance:needs_brass_tool",
+    "#alloyance:needs_bronze_tool",
+    "#alloyance:needs_deep_iron_tool",
+    "#alloyance:needs_electrum_tool",
+    "#alloyance:needs_prometheum_tool",
+    "#alloyance:needs_silver_tool",
     "#alloyance:needs_astral_silver_tool",
     "#alloyance:needs_black_steel_tool",
     "#alloyance:needs_damascus_steel_tool",
@@ -8,7 +15,6 @@
     "#alloyance:needs_oureclase_tool",
     "#alloyance:needs_quicksilver_tool",
     "#alloyance:needs_steel_tool",
-    "#neoforge:needs_netherite_tool",
     "#alloyance:needs_amordrine_tool",
     "#alloyance:needs_ceruclase_tool",
     "#alloyance:needs_ignatius_tool",

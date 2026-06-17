@@ -7,7 +7,7 @@ import me.jcotton42.alloyance.registration.Metal
 import me.jcotton42.alloyance.registration.Metal.*
 import net.minecraft.core.HolderLookup
 import net.minecraft.data.PackOutput
-import net.minecraft.tags.BlockTags
+import net.minecraft.tags.BlockTags.*
 import net.minecraft.tags.TagKey
 import net.minecraft.world.level.block.Block
 import net.neoforged.neoforge.common.Tags
@@ -25,18 +25,18 @@ class AlloyanceBlockTagsProvider(
     Alloyance.ID,
     existingFileHelper
 ) {
-    override fun addTags(provider: HolderLookup.Provider) {
+    override fun addTags(provider: HolderLookup.Provider) = with(AlloyanceBlockTags) {
         setupToolTags()
 
-        tag(AlloyanceBlockTags.ORES_PHOSPHORITE).add(AlloyanceBlocks.PHOSPHORITE_ORE.get(), AlloyanceBlocks.DEEPSLATE_PHOSPHORITE_ORE.get())
+        tag(ORES_PHOSPHORITE).add(AlloyanceBlocks.PHOSPHORITE_ORE.get(), AlloyanceBlocks.DEEPSLATE_PHOSPHORITE_ORE.get())
 
-        tag(AlloyanceBlockTags.ORES_POTASH).add(AlloyanceBlocks.POTASH_ORE.get(), AlloyanceBlocks.DEEPSLATE_POTASH_ORE.get())
-        tag(AlloyanceBlockTags.STORAGE_BLOCKS_POTASH).add(AlloyanceBlocks.POTASH_BLOCK.get())
+        tag(ORES_POTASH).add(AlloyanceBlocks.POTASH_ORE.get(), AlloyanceBlocks.DEEPSLATE_POTASH_ORE.get())
+        tag(STORAGE_BLOCKS_POTASH).add(AlloyanceBlocks.POTASH_BLOCK.get())
 
-        tag(AlloyanceBlockTags.ORES_SULFUR).add(AlloyanceBlocks.SULFUR_ORE.get(), AlloyanceBlocks.DEEPSLATE_SULFUR_ORE.get())
-        tag(AlloyanceBlockTags.STORAGE_BLOCKS_SULFUR).add(AlloyanceBlocks.SULFUR_BLOCK.get())
+        tag(ORES_SULFUR).add(AlloyanceBlocks.SULFUR_ORE.get(), AlloyanceBlocks.DEEPSLATE_SULFUR_ORE.get())
+        tag(STORAGE_BLOCKS_SULFUR).add(AlloyanceBlocks.SULFUR_BLOCK.get())
 
-        tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
+        tag(MINEABLE_WITH_PICKAXE).add(
             AlloyanceBlocks.ALLOYER.get(),
             AlloyanceBlocks.CRUSHER.get(),
             AlloyanceBlocks.BIMETAL_STRUCTURE.get(),
@@ -49,7 +49,7 @@ class AlloyanceBlockTagsProvider(
             AlloyanceBlocks.DEEPSLATE_SULFUR_ORE.get(),
             AlloyanceBlocks.SULFUR_BLOCK.get(),
         )
-        tag(BlockTags.NEEDS_STONE_TOOL).add(
+        tag(NEEDS_STONE_TOOL).add(
             AlloyanceBlocks.PHOSPHORITE_ORE.get(),
             AlloyanceBlocks.DEEPSLATE_PHOSPHORITE_ORE.get(),
             AlloyanceBlocks.POTASH_ORE.get(),
@@ -59,19 +59,19 @@ class AlloyanceBlockTagsProvider(
             AlloyanceBlocks.DEEPSLATE_SULFUR_ORE.get(),
             AlloyanceBlocks.SULFUR_BLOCK.get(),
         )
-        tag(BlockTags.NEEDS_IRON_TOOL).add(
+        tag(NEEDS_IRON_TOOL).add(
             AlloyanceBlocks.ALLOYER.get(),
             AlloyanceBlocks.CRUSHER.get(),
             AlloyanceBlocks.BIMETAL_STRUCTURE.get(),
         )
         tag(Tags.Blocks.STORAGE_BLOCKS).addTags(
-            AlloyanceBlockTags.STORAGE_BLOCKS_POTASH,
-            AlloyanceBlockTags.STORAGE_BLOCKS_SULFUR,
+            STORAGE_BLOCKS_POTASH,
+            STORAGE_BLOCKS_SULFUR,
         )
         tag(Tags.Blocks.ORES).addTags(
-            AlloyanceBlockTags.ORES_PHOSPHORITE,
-            AlloyanceBlockTags.ORES_POTASH,
-            AlloyanceBlockTags.ORES_SULFUR,
+            ORES_PHOSPHORITE,
+            ORES_POTASH,
+            ORES_SULFUR,
         )
         tag(Tags.Blocks.ORES_IN_GROUND_STONE).add(
             AlloyanceBlocks.PHOSPHORITE_ORE.get(),
@@ -85,33 +85,33 @@ class AlloyanceBlockTagsProvider(
         )
 
         AlloyanceBlocks.STORAGE_BLOCKS.forEach { (metal, block) ->
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get())
-            tag(BlockTags.BEACON_BASE_BLOCKS).add(block.get())
+            tag(MINEABLE_WITH_PICKAXE).add(block.get())
+            tag(BEACON_BASE_BLOCKS).add(block.get())
             tag(getNeedsToolTagForBlock(metal)).add(block.get())
         }
         AlloyanceBlocks.ORES.forEach { (metal, block) ->
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get())
+            tag(MINEABLE_WITH_PICKAXE).add(block.get())
             tag(getNeedsToolTagForBlock(metal)).add(block.get())
         }
         AlloyanceBlocks.DEEPSLATE_ORES.forEach { (metal, block) ->
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get())
+            tag(MINEABLE_WITH_PICKAXE).add(block.get())
             tag(getNeedsToolTagForBlock(metal)).add(block.get())
         }
         AlloyanceBlocks.END_ORES.forEach { (metal, block) ->
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get())
+            tag(MINEABLE_WITH_PICKAXE).add(block.get())
             tag(getNeedsToolTagForBlock(metal)).add(block.get())
         }
         AlloyanceBlocks.NETHER_ORES.forEach { (metal, block) ->
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get())
+            tag(MINEABLE_WITH_PICKAXE).add(block.get())
             tag(getNeedsToolTagForBlock(metal)).add(block.get())
         }
 
-        AlloyanceBlockTags.STORAGE_BLOCKS.forEach { (metal, blockTag) ->
+        STORAGE_BLOCKS.forEach { (metal, blockTag) ->
             tag(Tags.Blocks.STORAGE_BLOCKS).addTag(blockTag)
             tag(blockTag).add(AlloyanceBlocks.STORAGE_BLOCKS.getValue(metal).get())
         }
 
-        AlloyanceBlockTags.ORES.forEach { (metal, blockTag) ->
+        ORES.forEach { (metal, blockTag) ->
             tag(Tags.Blocks.ORES).addTag(blockTag)
             val ore = AlloyanceBlocks.ORES[metal]?.get()
             val deepslateOre = AlloyanceBlocks.DEEPSLATE_ORES[metal]?.get()
@@ -129,7 +129,7 @@ class AlloyanceBlockTagsProvider(
             }
             if (endOre != null) {
                 tag(blockTag).add(endOre)
-                tag(AlloyanceBlockTags.ORES_IN_GROUND_END_STONE).add(endOre)
+                tag(ORES_IN_GROUND_END_STONE).add(endOre)
                 tag(Tags.Blocks.ORE_RATES_SINGULAR).add(endOre)
             }
             if (netherOre != null) {
@@ -140,53 +140,114 @@ class AlloyanceBlockTagsProvider(
         }
     }
 
-    private fun setupToolTags() {
-        tag(AlloyanceBlockTags.NEEDS_COPPER_TOOL).addTag(BlockTags.NEEDS_STONE_TOOL)
-        tag(AlloyanceBlockTags.INCORRECT_FOR_COPPER_TOOL).addTag(BlockTags.INCORRECT_FOR_STONE_TOOL)
+    private fun setupToolTags() = with(AlloyanceBlockTags) {
+        tag(NEEDS_COPPER_TOOL).addTag(NEEDS_STONE_TOOL)
+        tag(INCORRECT_FOR_COPPER_TOOL).addTag(INCORRECT_FOR_STONE_TOOL)
 
-        AlloyanceBlockTags.NEEDS_TOOL.forEach { (metal, needs) ->
-            tag(needs).addTag(getNeedsToolTagForBlock(metal))
-        }
-        AlloyanceBlockTags.INCORRECT_FOR_TOOL.forEach { (metal, incorrectFor) ->
-            tag(incorrectFor).addTag(getIncorrectForTag(metal))
+        val rankedIncorrectFor = arrayOf(
+            arrayOf(INCORRECT_FOR_WOODEN_TOOL, INCORRECT_FOR_GOLD_TOOL),
+            arrayOf(INCORRECT_FOR_STONE_TOOL, INCORRECT_FOR_COPPER_TOOL),
+            arrayOf(
+                INCORRECT_FOR_IRON_TOOL,
+                INCORRECT_FOR_ANGMALLEN_TOOL,
+                INCORRECT_FOR_BRASS_TOOL,
+                INCORRECT_FOR_BRONZE_TOOL,
+                INCORRECT_FOR_COPPER_TOOL,
+                INCORRECT_FOR_DEEP_IRON_TOOL,
+                INCORRECT_FOR_ELECTRUM_TOOL,
+                INCORRECT_FOR_PROMETHEUM_TOOL,
+                INCORRECT_FOR_SILVER_TOOL,
+            ),
+            arrayOf(
+                INCORRECT_FOR_DIAMOND_TOOL,
+                INCORRECT_FOR_ASTRAL_SILVER_TOOL,
+                INCORRECT_FOR_BLACK_STEEL_TOOL,
+                INCORRECT_FOR_DAMASCUS_STEEL_TOOL,
+                INCORRECT_FOR_HEPATIZON_TOOL,
+                INCORRECT_FOR_OURECLASE_TOOL,
+                INCORRECT_FOR_QUICKSILVER_TOOL,
+                INCORRECT_FOR_STEEL_TOOL,
+            ),
+            arrayOf(
+                INCORRECT_FOR_NETHERITE_TOOL,
+                INCORRECT_FOR_AMORDRINE_TOOL,
+                INCORRECT_FOR_CERUCLASE_TOOL,
+                INCORRECT_FOR_IGNATIUS_TOOL,
+                INCORRECT_FOR_KALENDRITE_TOOL,
+                INCORRECT_FOR_MIDASIUM_TOOL,
+                INCORRECT_FOR_ORICHALCUM_TOOL,
+                INCORRECT_FOR_PLATINUM_TOOL,
+                INCORRECT_FOR_SHADOW_IRON_TOOL,
+            ),
+            arrayOf(
+                INCORRECT_FOR_CARMOT_TOOL,
+                INCORRECT_FOR_CELENEGIL_TOOL,
+                INCORRECT_FOR_EXIMITE_TOOL,
+                INCORRECT_FOR_MITHRIL_TOOL,
+                INCORRECT_FOR_SANGUINITE_TOOL,
+                INCORRECT_FOR_VULCANITE_TOOL,
+                INCORRECT_FOR_VYROXERES_TOOL,
+            ),
+            arrayOf(
+                INCORRECT_FOR_ADAMANTINE_TOOL,
+                INCORRECT_FOR_ATLARUS_TOOL,
+                INCORRECT_FOR_DESICHALKOS_TOOL,
+                INCORRECT_FOR_ETHERIUM_TOOL,
+                INCORRECT_FOR_HADEROTH_TOOL,
+                INCORRECT_FOR_INOLASHITE_TOOL,
+                INCORRECT_FOR_KRIK_TOOL,
+                INCORRECT_FOR_SHADOW_STEEL_TOOL,
+            ),
+            arrayOf(INCORRECT_FOR_TARTARITE_TOOL),
+        )
+
+        val rankedNeedsTool = arrayOf(
+            arrayOf(NEEDS_STONE_TOOL, NEEDS_COPPER_TOOL),
+            arrayOf(NEEDS_IRON_TOOL, NEEDS_ANGMALLEN_TOOL, NEEDS_BRASS_TOOL, NEEDS_BRONZE_TOOL, NEEDS_DEEP_IRON_TOOL, NEEDS_ELECTRUM_TOOL, NEEDS_PROMETHEUM_TOOL, NEEDS_SILVER_TOOL),
+            arrayOf(NEEDS_DIAMOND_TOOL, NEEDS_ASTRAL_SILVER_TOOL, NEEDS_BLACK_STEEL_TOOL, NEEDS_DAMASCUS_STEEL_TOOL, NEEDS_HEPATIZON_TOOL, NEEDS_OURECLASE_TOOL, NEEDS_QUICKSILVER_TOOL, NEEDS_STEEL_TOOL),
+            arrayOf(Tags.Blocks.NEEDS_NETHERITE_TOOL, NEEDS_AMORDRINE_TOOL, NEEDS_CERUCLASE_TOOL, NEEDS_IGNATIUS_TOOL, NEEDS_KALENDRITE_TOOL, NEEDS_MIDASIUM_TOOL, NEEDS_ORICHALCUM_TOOL, NEEDS_PLATINUM_TOOL, NEEDS_SHADOW_IRON_TOOL),
+            arrayOf(NEEDS_CARMOT_TOOL, NEEDS_CELENEGIL_TOOL, NEEDS_EXIMITE_TOOL, NEEDS_MITHRIL_TOOL, NEEDS_SANGUINITE_TOOL, NEEDS_VULCANITE_TOOL, NEEDS_VYROXERES_TOOL),
+            arrayOf(NEEDS_ADAMANTINE_TOOL, NEEDS_ATLARUS_TOOL, NEEDS_DESICHALKOS_TOOL, NEEDS_ETHERIUM_TOOL, NEEDS_HADEROTH_TOOL, NEEDS_INOLASHITE_TOOL, NEEDS_KRIK_TOOL, NEEDS_SHADOW_STEEL_TOOL),
+            arrayOf(NEEDS_TARTARITE_TOOL),
+        )
+        val vanillaIncorrectFor = arrayOf(INCORRECT_FOR_WOODEN_TOOL, INCORRECT_FOR_GOLD_TOOL, INCORRECT_FOR_STONE_TOOL, INCORRECT_FOR_IRON_TOOL, INCORRECT_FOR_DIAMOND_TOOL, INCORRECT_FOR_NETHERITE_TOOL)
+        val vanillaNeeds = arrayOf(NEEDS_STONE_TOOL, NEEDS_IRON_TOOL, NEEDS_DIAMOND_TOOL, Tags.Blocks.NEEDS_NETHERITE_TOOL)
+
+        rankedIncorrectFor.forEachIndexed { index, incorrectFors ->
+            incorrectFors.forEach { incorrectFor ->
+                val incorrectForTag = tag(incorrectFor)
+                for (needsIndex in index..<rankedNeedsTool.size) {
+                    for (needs in rankedNeedsTool[needsIndex]) {
+                        if (vanillaNeeds.contains(needs) && vanillaIncorrectFor.contains(incorrectFor)) continue
+                        tag(needs)
+                        incorrectForTag.addTag(needs)
+                    }
+                }
+            }
         }
     }
 }
 
-// TODO reconsider these based on hardness
 private fun getNeedsToolTagForBlock(metal: Metal): TagKey<Block> = when (metal) {
     // tier 1
-    DEEP_IRON, PROMETHEUM, ZINC, TIN, BRONZE, BRASS -> BlockTags.NEEDS_STONE_TOOL
-    DAMASCUS_STEEL -> BlockTags.NEEDS_IRON_TOOL
+    DEEP_IRON, PROMETHEUM, ZINC, TIN, BRONZE, BRASS -> NEEDS_STONE_TOOL
+    DAMASCUS_STEEL -> NEEDS_IRON_TOOL
 
     // tier 2
-    OSMIUM, SILVER, INFUSCOLIUM, MANGANESE, ANGMALLEN, ELECTRUM -> BlockTags.NEEDS_IRON_TOOL
-    STEEL, HEPATIZON, BLACK_STEEL -> BlockTags.NEEDS_DIAMOND_TOOL
+    OSMIUM, SILVER, INFUSCOLIUM, MANGANESE, ANGMALLEN, ELECTRUM -> NEEDS_IRON_TOOL
+    STEEL, HEPATIZON, BLACK_STEEL -> NEEDS_DIAMOND_TOOL
 
     // tier 3
-    ASTRAL_SILVER, IGNATIUS, OURECLASE, RUBRACIUM, SHADOW_IRON, QUICKSILVER -> BlockTags.NEEDS_DIAMOND_TOOL
+    ASTRAL_SILVER, IGNATIUS, OURECLASE, RUBRACIUM, SHADOW_IRON, QUICKSILVER -> NEEDS_DIAMOND_TOOL
 
     // tier 4
     CERUCLASE, EXIMITE, KALENDRITE, MIDASIUM, ORICHALCUM, PLATINUM, VULCANITE, AMORDRINE -> Tags.Blocks.NEEDS_NETHERITE_TOOL
-    // TODO below here should be higher than netherite once tools are implemented
-    CELENEGIL -> Tags.Blocks.NEEDS_NETHERITE_TOOL
+    CELENEGIL -> AlloyanceBlockTags.NEEDS_CARMOT_TOOL
 
     // tier 5
-    CARMOT, LEMURITE, MEUTOITE, MITHRIL, SANGUINITE, VYROXERES -> Tags.Blocks.NEEDS_NETHERITE_TOOL
-    SHADOW_STEEL, HADEROTH, DESICHALKOS -> Tags.Blocks.NEEDS_NETHERITE_TOOL
+    CARMOT, LEMURITE, MEUTOITE, MITHRIL, SANGUINITE, VYROXERES -> AlloyanceBlockTags.NEEDS_CARMOT_TOOL
+    SHADOW_STEEL, HADEROTH, DESICHALKOS -> AlloyanceBlockTags.NEEDS_ADAMANTINE_TOOL
 
-    // TODO double check all these values, above and below
     // tier 6
-    ATLARUS, ADAMANTINE, ALDUORITE, LUTETIUM, INOLASHITE, KRIK, TARTARITE, ETHERIUM -> Tags.Blocks.NEEDS_NETHERITE_TOOL
-}
-
-private fun getIncorrectForTag(metal: Metal): TagKey<Block> = when (metal) {
-    ANGMALLEN, BRASS, BRONZE, DEEP_IRON, ELECTRUM, PROMETHEUM, SILVER -> BlockTags.INCORRECT_FOR_IRON_TOOL
-    ASTRAL_SILVER, BLACK_STEEL, DAMASCUS_STEEL, HEPATIZON, OURECLASE, QUICKSILVER, STEEL -> BlockTags.INCORRECT_FOR_DIAMOND_TOOL
-    AMORDRINE, CERUCLASE, IGNATIUS, KALENDRITE, MIDASIUM, ORICHALCUM, PLATINUM, SHADOW_IRON -> BlockTags.INCORRECT_FOR_NETHERITE_TOOL
-    // TODO the below should be higher than Netherite
-    CARMOT, CELENEGIL, EXIMITE, MITHRIL, SANGUINITE, VULCANITE, VYROXERES -> BlockTags.INCORRECT_FOR_NETHERITE_TOOL
-    ADAMANTINE, ATLARUS, DESICHALKOS, ETHERIUM, HADEROTH, INOLASHITE, KRIK, SHADOW_STEEL -> BlockTags.INCORRECT_FOR_NETHERITE_TOOL
-    TARTARITE -> BlockTags.INCORRECT_FOR_NETHERITE_TOOL
-    else -> throw IllegalArgumentException("Unmapped tool material $metal")
+    ATLARUS, ADAMANTINE, ALDUORITE, LUTETIUM, INOLASHITE, KRIK, TARTARITE, ETHERIUM -> AlloyanceBlockTags.NEEDS_ADAMANTINE_TOOL
 }

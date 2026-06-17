@@ -1,5 +1,20 @@
 {
   "values": [
-    "#minecraft:incorrect_for_netherite_tool"
+    "#alloyance:needs_carmot_tool",
+    "#alloyance:needs_celenegil_tool",
+    "#alloyance:needs_eximite_tool",
+    "#alloyance:needs_mithril_tool",
+    "#alloyance:needs_sanguinite_tool",
+    "#alloyance:needs_vulcanite_tool",
+    "#alloyance:needs_vyroxeres_tool",
+    "#alloyance:needs_adamantine_tool",
+    "#alloyance:needs_atlarus_tool",
+    "#alloyance:needs_desichalkos_tool",
+    "#alloyance:needs_etherium_tool",
+    "#alloyance:needs_haderoth_tool",
+    "#alloyance:needs_inolashite_tool",
+    "#alloyance:needs_krik_tool",
+    "#alloyance:needs_shadow_steel_tool",
+    "#alloyance:needs_tartarite_tool"
   ]
 }

@@ -1,5 +1,19 @@
 {
   "values": [
-    "#neoforge:needs_netherite_tool"
+    "alloyance:celenegil_block",
+    "alloyance:carmot_block",
+    "alloyance:lemurite_block",
+    "alloyance:meutoite_block",
+    "alloyance:mithril_block",
+    "alloyance:sanguinite_block",
+    "alloyance:vyroxeres_block",
+    "alloyance:carmot_ore",
+    "alloyance:mithril_ore",
+    "alloyance:deepslate_carmot_ore",
+    "alloyance:deepslate_mithril_ore",
+    "alloyance:end_meutoite_ore",
+    "alloyance:nether_lemurite_ore",
+    "alloyance:nether_sanguinite_ore",
+    "alloyance:nether_vyroxeres_ore"
   ]
 }
