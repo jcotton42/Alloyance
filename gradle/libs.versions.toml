@@ -3,12 +3,12 @@
 parchment = "2024.11.17"
 parchmentMinecraft = "1.21.1"
 # Plugins
-modDevGradle = "2.0.80"
-kotlin = "2.1.20"
+modDevGradle = "2.0.141"
+kotlin = "2.3.0"
 # Dependencies
 minecraft = "1.21.1"
-neoforge = "21.1.159"
-kotlinForForge = "5.7.0"
+neoforge = "21.1.233"
+kotlinForForge = "5.11.0"
 jei = "19.21.1.248"
 top = "1.21_neo-12.0.3-5"
 
