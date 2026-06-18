@@ -51,7 +51,7 @@ sourceSets {
     }
 }
 
-// val datagen: SourceSet by sourceSets.creating
+ val datagen: SourceSet by sourceSets.creating
 
 /**
  * Sets up a dependency configuration called 'localRuntime'.
@@ -61,21 +61,21 @@ sourceSets {
  */
 val localRuntime: Configuration by configurations.creating
 
-// val datagenImplementation: Configuration = configurations.getByName(datagen.implementationConfigurationName)
+val datagenImplementation: Configuration = configurations.getByName(datagen.implementationConfigurationName)
 
 configurations.runtimeClasspath.configure {
-    extendsFrom(localRuntime/*, datagenImplementation*/)
+    extendsFrom(localRuntime, datagenImplementation)
 }
 
-//configurations {
-//    getByName(datagen.compileClasspathConfigurationName).extendsFrom(compileClasspath.get())
-//    getByName(datagen.runtimeClasspathConfigurationName).extendsFrom(runtimeClasspath.get())
-//    getByName(datagen.annotationProcessorConfigurationName).extendsFrom(annotationProcessor.get())
-//}
+configurations {
+    getByName(datagen.compileClasspathConfigurationName).extendsFrom(compileClasspath.get())
+    getByName(datagen.runtimeClasspathConfigurationName).extendsFrom(runtimeClasspath.get())
+    getByName(datagen.annotationProcessorConfigurationName).extendsFrom(annotationProcessor.get())
+}
 
 neoForge {
     version = libs.versions.neoforge.get()
-//    addModdingDependenciesTo(datagen)
+    addModdingDependenciesTo(datagen)
 
     parchment {
         minecraftVersion = libs.versions.parchmentMinecraft
@@ -98,7 +98,7 @@ neoForge {
             programArgument("--nogui")
         }
 
-        register("datagen") {
+        register("data") {
             data()
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             programArguments.addAll(
@@ -116,7 +116,7 @@ neoForge {
     mods {
         create(modId) {
             sourceSet(sourceSets.main.get())
-//            sourceSet(datagen)
+            sourceSet(datagen)
         }
     }
 }
@@ -140,8 +140,7 @@ repositories {
 dependencies {
     implementation(libs.kotlinForForge)
     // datagen can use mod code
-//    datagenImplementation(sourceSets.main.get().output)
-//    datagenImplementation(libs.datagenUtils)
+    datagenImplementation(sourceSets.main.get().output)
 
     // QOL Dev dependencies should use `localRuntime`. `runtimeOnly` is for stuff we actually want at runtime
     localRuntime(libs.top)
