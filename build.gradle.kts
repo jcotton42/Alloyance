@@ -100,6 +100,7 @@ neoForge {
 
         register("data") {
             data()
+            sourceSet = datagen
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             programArguments.addAll(
                 "--mod",
@@ -135,6 +136,13 @@ repositories {
         forRepository { maven { url = uri("https://maven.k-4u.nl/") } }
         filter { includeGroup("mcjty.theoneprobe") }
     }
+    exclusiveContent {
+        forRepository { maven { url = uri("https://maven.rover656.dev/releases") } }
+        filter {
+            includeGroup("com.enderio")
+            includeGroup("dev.gigaherz.graph")
+        }
+    }
 }
 
 dependencies {
@@ -148,6 +156,8 @@ dependencies {
     // JEI
     compileOnly(libs.bundles.jei.api)
     runtimeOnly(libs.jei)
+
+    datagenImplementation(libs.enderio)
 }
 
 // IDEA no longer automatically downloads sources/javadoc jars for dependencies, so we need to explicitly enable the behavior.
