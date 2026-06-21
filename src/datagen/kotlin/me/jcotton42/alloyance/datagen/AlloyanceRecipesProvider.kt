@@ -285,24 +285,24 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
 
     private fun addVanillaCompatRecipes(output: RecipeOutput) {
         smeltToIngot(output, AlloyanceItems.IRON_DUST, Items.IRON_INGOT)
-        crushOre(output, AlloyanceItems.IRON_DUST, 2, Tags.Items.ORES_IRON)
-        crushRawMaterial(output, AlloyanceItems.IRON_DUST, Tags.Items.RAW_MATERIALS_IRON)
-        crushIngot(output, AlloyanceItems.IRON_DUST, Tags.Items.INGOTS_IRON)
+        crushOre(output, AlloyanceItems.IRON_DUST, 2, Tags.Items.ORES_IRON, true)
+        crushRawMaterial(output, AlloyanceItems.IRON_DUST, Tags.Items.RAW_MATERIALS_IRON, true)
+        crushIngot(output, AlloyanceItems.IRON_DUST, Tags.Items.INGOTS_IRON, true)
 
         smeltToIngot(output, AlloyanceItems.GOLD_DUST, Items.GOLD_INGOT)
-        crushOre(output, AlloyanceItems.GOLD_DUST, 2, Tags.Items.ORES_GOLD)
-        crushRawMaterial(output, AlloyanceItems.GOLD_DUST, Tags.Items.RAW_MATERIALS_GOLD)
-        crushIngot(output, AlloyanceItems.GOLD_DUST, Tags.Items.INGOTS_GOLD)
+        crushOre(output, AlloyanceItems.GOLD_DUST, 2, Tags.Items.ORES_GOLD, true)
+        crushRawMaterial(output, AlloyanceItems.GOLD_DUST, Tags.Items.RAW_MATERIALS_GOLD, true)
+        crushIngot(output, AlloyanceItems.GOLD_DUST, Tags.Items.INGOTS_GOLD, true)
 
         smeltToIngot(output, AlloyanceItems.COPPER_DUST, Items.COPPER_INGOT)
-        crushOre(output, AlloyanceItems.COPPER_DUST, 2, Tags.Items.ORES_COPPER)
-        crushRawMaterial(output, AlloyanceItems.COPPER_DUST, Tags.Items.RAW_MATERIALS_COPPER)
-        crushIngot(output, AlloyanceItems.COPPER_DUST, Tags.Items.INGOTS_COPPER)
+        crushOre(output, AlloyanceItems.COPPER_DUST, 2, Tags.Items.ORES_COPPER, true)
+        crushRawMaterial(output, AlloyanceItems.COPPER_DUST, Tags.Items.RAW_MATERIALS_COPPER, true)
+        crushIngot(output, AlloyanceItems.COPPER_DUST, Tags.Items.INGOTS_COPPER, true)
 
-        crushOre(output, Items.REDSTONE, 2, Tags.Items.ORES_REDSTONE)
-        crushOre(output, Items.DIAMOND, 2, Tags.Items.ORES_DIAMOND)
-        crushOre(output, Items.EMERALD, 2, Tags.Items.ORES_EMERALD)
-        crushOre(output, Items.QUARTZ, 2, Tags.Items.ORES_QUARTZ)
+        crushOre(output, Items.REDSTONE, 2, Tags.Items.ORES_REDSTONE, true)
+        crushOre(output, Items.DIAMOND, 2, Tags.Items.ORES_DIAMOND, true)
+        crushOre(output, Items.EMERALD, 2, Tags.Items.ORES_EMERALD, true)
+        crushOre(output, Items.QUARTZ, 2, Tags.Items.ORES_QUARTZ, true)
     }
 
     private fun addMetalStorageRecipes(output: RecipeOutput, metal: Metal) {
@@ -447,20 +447,41 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
                 ),
                 2400,
                 SagMillingRecipe.BonusType.NONE)
-            output.enderIo().accept(enderio("sag_milling/${getItemName(dust)}_from_crushing_ore"), recipe, null)
+            output.enderIo().accept(enderio("sag_milling/${getItemName(dust)}_from_ore"), recipe, null)
         }
     }
 
-    private fun crushRawMaterial(output: RecipeOutput, dust: ItemLike, rawMaterialTag: TagKey<Item>) {
+    private fun crushRawMaterial(output: RecipeOutput, dust: ItemLike, rawMaterialTag: TagKey<Item>, isVanilla: Boolean = false) {
         CrusherRecipeBuilder(ItemStack(dust, 2), Ingredient.of(rawMaterialTag), 0.75F, 140)
             .group(getItemName(dust))
             .save(output, alloyance("${getItemName(dust)}_from_crushing_raw_material"))
+
+        if (!isVanilla) {
+            val recipe = SagMillingRecipe(Ingredient.of(rawMaterialTag),
+                listOf(
+                    SagMillingRecipe.OutputItem.of(dust.asItem(), 1, 1F, false),
+                    SagMillingRecipe.OutputItem.of(dust.asItem(), 1, 0.80F, false),
+                ),
+                2400,
+                SagMillingRecipe.BonusType.NONE)
+            output.enderIo().accept(enderio("sag_milling/${getItemName(dust)}_from_raw_material"), recipe, null)
+        }
     }
 
-    private fun crushIngot(output: RecipeOutput, dust: ItemLike, ingotTag: TagKey<Item>) {
+    private fun crushIngot(output: RecipeOutput, dust: ItemLike, ingotTag: TagKey<Item>, isVanilla: Boolean = false) {
         CrusherRecipeBuilder(ItemStack(dust, 1), Ingredient.of(ingotTag), 0F, 140)
             .group(getItemName(dust))
             .save(output, alloyance("${getItemName(dust)}_from_crushing_ingot"))
+
+        if (!isVanilla) {
+            val recipe = SagMillingRecipe(Ingredient.of(ingotTag),
+                listOf(
+                    SagMillingRecipe.OutputItem.of(dust.asItem(), 1, 1F, false),
+                ),
+                2400,
+                SagMillingRecipe.BonusType.NONE)
+            output.enderIo().accept(enderio("sag_milling/${getItemName(dust)}_from_ingot"), recipe, null)
+        }
     }
 
     private fun getAlloyDust(input: Any): TagKey<Item> = when (input) {
