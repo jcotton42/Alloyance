@@ -31,7 +31,7 @@ tasks.withType<ProcessResources>().configureEach {
         "kff_version" to libs.versions.kotlinForForge.get(),
     )
     inputs.properties(modReplacementProperties)
-    filesMatching("META-INF/neoforge.mods.toml") {
+    filesMatching(listOf("META-INF/neoforge.mods.toml", "pack.mcmeta")) {
         expand(modReplacementProperties)
     }
 }
