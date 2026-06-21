@@ -383,7 +383,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
         val ingredient1 = SizedIngredient.of(alloyableTag1, input1Count)
         val dustTag2 = getAlloyDust(input2)
         val alloyableTag2 = getAlloyAlloyable(input2)
-        val ingredient2 = SizedIngredient.of(alloyableTag2, input1Count)
+        val ingredient2 = SizedIngredient.of(alloyableTag2, input2Count)
         val id2 = getAlloyId(input2)
 
         AlloyerRecipeBuilder(
