@@ -64,20 +64,20 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
             bucket(fluid, bucket)
         }
 
-        basicItem(AlloyanceItems.COPPER_AXE.get())
-        AlloyanceItems.AXES.values.forEach { basicItem(it.get()) }
+        handheldItem(AlloyanceItems.COPPER_AXE.get())
+        AlloyanceItems.AXES.values.forEach { handheldItem(it.get()) }
 
-        basicItem(AlloyanceItems.COPPER_HOE.get())
-        AlloyanceItems.HOES.values.forEach { basicItem(it.get()) }
+        handheldItem(AlloyanceItems.COPPER_HOE.get())
+        AlloyanceItems.HOES.values.forEach { handheldItem(it.get()) }
 
-        basicItem(AlloyanceItems.COPPER_PICKAXE.get())
-        AlloyanceItems.PICKAXES.values.forEach { basicItem(it.get()) }
+        handheldItem(AlloyanceItems.COPPER_PICKAXE.get())
+        AlloyanceItems.PICKAXES.values.forEach { handheldItem(it.get()) }
 
-        basicItem(AlloyanceItems.COPPER_SHOVEL.get())
-        AlloyanceItems.SHOVELS.values.forEach { basicItem(it.get()) }
+        handheldItem(AlloyanceItems.COPPER_SHOVEL.get())
+        AlloyanceItems.SHOVELS.values.forEach { handheldItem(it.get()) }
 
-        basicItem(AlloyanceItems.COPPER_SWORD.get())
-        AlloyanceItems.SWORDS.values.forEach { basicItem(it.get()) }
+        handheldItem(AlloyanceItems.COPPER_SWORD.get())
+        AlloyanceItems.SWORDS.values.forEach { handheldItem(it.get()) }
 
         basicItem(AlloyanceItems.COPPER_HELMET.get())
         AlloyanceItems.HELMETS.values.forEach { basicItem(it.get()) }
