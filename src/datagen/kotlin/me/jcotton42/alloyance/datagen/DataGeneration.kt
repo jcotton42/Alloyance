@@ -1,9 +1,15 @@
+@file:EventBusSubscriber(modid = Alloyance.ID)
+
 package me.jcotton42.alloyance.datagen
 
+import me.jcotton42.alloyance.Alloyance
 import net.minecraft.data.loot.LootTableProvider
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets
+import net.neoforged.bus.api.SubscribeEvent
+import net.neoforged.fml.common.EventBusSubscriber
 import net.neoforged.neoforge.data.event.GatherDataEvent
 
+@SubscribeEvent
 fun generateData(event: GatherDataEvent) {
     val existingFileHelper = event.existingFileHelper
     val generator = event.generator
@@ -17,8 +23,14 @@ fun generateData(event: GatherDataEvent) {
 
     val blockTags = AlloyanceBlockTagsProvider(packOutput, lookupProvider, existingFileHelper)
     generator.addProvider(event.includeServer(), blockTags)
-    generator.addProvider(event.includeServer(), AlloyanceItemTagsProvider(packOutput, lookupProvider, blockTags, existingFileHelper))
-    generator.addProvider(event.includeServer(), AlloyanceBiomeTagsProvider(packOutput, lookupProvider, existingFileHelper))
+    generator.addProvider(
+        event.includeServer(),
+        AlloyanceItemTagsProvider(packOutput, lookupProvider, blockTags, existingFileHelper)
+    )
+    generator.addProvider(
+        event.includeServer(),
+        AlloyanceBiomeTagsProvider(packOutput, lookupProvider, existingFileHelper)
+    )
     generator.addProvider(event.includeServer(), AlloyanceRecipesProvider(packOutput, lookupProvider))
     generator.addProvider(event.includeServer(), AlloyanceWorldGenProvider(packOutput, lookupProvider))
     generator.addProvider(event.includeServer(), AlloyanceDataMapProvider(packOutput, lookupProvider))
@@ -27,7 +39,8 @@ fun generateData(event: GatherDataEvent) {
         ::AlloyanceBlockLootProvider,
         LootContextParamSets.BLOCK
     )
-    generator.addProvider(event.includeServer(),
+    generator.addProvider(
+        event.includeServer(),
         LootTableProvider(packOutput, emptySet(), listOf(blockLoot), lookupProvider)
     )
 }

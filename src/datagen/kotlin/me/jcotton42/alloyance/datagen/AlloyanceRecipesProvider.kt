@@ -1,5 +1,7 @@
 package me.jcotton42.alloyance.datagen
 
+import com.enderio.enderio.content.machines.alloy.AlloySmeltingRecipe
+import com.enderio.enderio.content.machines.sag_mill.SagMillingRecipe
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.datagen.VanillaMetal.*
 import me.jcotton42.alloyance.registration.*
@@ -15,6 +17,7 @@ import net.minecraft.world.item.Items
 import net.minecraft.world.item.crafting.Ingredient
 import net.minecraft.world.level.ItemLike
 import net.neoforged.neoforge.common.Tags
+import net.neoforged.neoforge.common.conditions.ModLoadedCondition
 import net.neoforged.neoforge.common.crafting.SizedIngredient
 import java.util.concurrent.CompletableFuture
 
@@ -75,7 +78,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
             .group(bimetalName)
             .unlockedBy(getHasName(AlloyanceItems.TIN_INGOT), has(AlloyanceItemTags.INGOTS_TIN))
             .unlockedBy(getHasName(AlloyanceItems.ZINC_INGOT), has(AlloyanceItemTags.INGOTS_ZINC))
-            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, bimetalName))
+            .save(output, alloyance(bimetalName))
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AlloyanceItems.CRUSHER)
             .pattern("opo")
@@ -88,7 +91,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
             .define('f', Items.BLAST_FURNACE)
             .group(crusherName)
             .unlockedBy(getHasName(AlloyanceItems.OURECLASE_INGOT), has(AlloyanceItemTags.INGOTS_OURECLASE))
-            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, crusherName))
+            .save(output, alloyance(crusherName))
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AlloyanceItems.ALLOYER)
             .pattern("obo")
@@ -101,7 +104,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
             .define('f', Items.BLAST_FURNACE)
             .group(alloyerName)
             .unlockedBy(getHasName(AlloyanceItems.OSMIUM_INGOT), has(AlloyanceItemTags.INGOTS_OSMIUM))
-            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, alloyerName))
+            .save(output, alloyance(alloyerName))
     }
 
     private fun addMiscIngredientRecipes(output: RecipeOutput) {
@@ -112,7 +115,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
             .group(getItemName(AlloyanceItems.THERMITE_DUST))
             .unlockedBy(getHasName(AlloyanceItems.POTASH), has(AlloyanceItemTags.DUSTS_POTASH))
             .unlockedBy(getHasName(AlloyanceItems.SULFUR), has(AlloyanceItemTags.DUSTS_SULFUR))
-            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(AlloyanceItems.THERMITE_DUST)))
+            .save(output, alloyance(getItemName(AlloyanceItems.THERMITE_DUST)))
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, AlloyanceItems.INFUSED_IGNATIUS)
             .requires(AlloyanceItems.THERMITE_DUST)
@@ -120,7 +123,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
             .requires(AlloyanceItemTags.DUSTS_PHOSPHOROUS)
             .group(getItemName(AlloyanceItems.INFUSED_IGNATIUS))
             .unlockedBy(getHasName(AlloyanceItems.THERMITE_DUST), has(AlloyanceItems.THERMITE_DUST))
-            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(AlloyanceItems.INFUSED_IGNATIUS)))
+            .save(output, alloyance(getItemName(AlloyanceItems.INFUSED_IGNATIUS)))
     }
 
     private fun addToolRecipes(output: RecipeOutput) {
@@ -133,7 +136,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
                 .define('s', Items.STICK)
                 .group(getItemName(result))
                 .unlockedBy(getHasName(ingot), has(ingot))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+                .save(output, alloyance(getItemName(result)))
         }
 
         fun hoe(result: ItemLike, ingot: ItemLike) {
@@ -145,7 +148,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
                 .define('s', Items.STICK)
                 .group(getItemName(result))
                 .unlockedBy(getHasName(ingot), has(ingot))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+                .save(output, alloyance(getItemName(result)))
         }
 
         fun pickaxe(result: ItemLike, ingot: ItemLike) {
@@ -157,7 +160,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
                 .define('s', Items.STICK)
                 .group(getItemName(result))
                 .unlockedBy(getHasName(ingot), has(ingot))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+                .save(output, alloyance(getItemName(result)))
         }
 
         fun shovel(result: ItemLike, ingot: ItemLike) {
@@ -169,7 +172,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
                 .define('s', Items.STICK)
                 .group(getItemName(result))
                 .unlockedBy(getHasName(ingot), has(ingot))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+                .save(output, alloyance(getItemName(result)))
         }
 
         fun sword(result: ItemLike, ingot: ItemLike) {
@@ -181,7 +184,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
                 .define('s', Items.STICK)
                 .group(getItemName(result))
                 .unlockedBy(getHasName(ingot), has(ingot))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+                .save(output, alloyance(getItemName(result)))
         }
 
         axe(AlloyanceItems.COPPER_AXE, Items.COPPER_INGOT)
@@ -218,7 +221,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
                 .define('i', ingot)
                 .group(getItemName(result))
                 .unlockedBy(getHasName(ingot), has(ingot))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+                .save(output, alloyance(getItemName(result)))
         }
         fun chestplate(result: ItemLike, ingot: ItemLike) {
             ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result)
@@ -228,7 +231,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
                 .define('i', ingot)
                 .group(getItemName(result))
                 .unlockedBy(getHasName(ingot), has(ingot))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+                .save(output, alloyance(getItemName(result)))
         }
         fun leggings(result: ItemLike, ingot: ItemLike) {
             ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result)
@@ -238,7 +241,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
                 .define('i', ingot)
                 .group(getItemName(result))
                 .unlockedBy(getHasName(ingot), has(ingot))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+                .save(output, alloyance(getItemName(result)))
         }
         fun boots(result: ItemLike, ingot: ItemLike) {
             ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result)
@@ -247,7 +250,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
                 .define('i', ingot)
                 .group(getItemName(result))
                 .unlockedBy(getHasName(ingot), has(ingot))
-                .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, getItemName(result)))
+                .save(output, alloyance(getItemName(result)))
         }
 
         helmet(AlloyanceItems.COPPER_HELMET, Items.COPPER_INGOT)
@@ -269,7 +272,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
             .requires(packed)
             .group(unpackedName)
             .unlockedBy(getHasName(packed), has(packed))
-            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${unpackedName}_from_${packedName}"))
+            .save(output, alloyance("${unpackedName}_from_${packedName}"))
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, packed)
             .pattern("###")
             .pattern("###")
@@ -277,29 +280,29 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
             .define('#', unpacked)
             .group(packedName)
             .unlockedBy(getHasName(unpacked), has(unpacked))
-            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, packedName))
+            .save(output, alloyance(packedName))
     }
 
     private fun addVanillaCompatRecipes(output: RecipeOutput) {
         smeltToIngot(output, AlloyanceItems.IRON_DUST, Items.IRON_INGOT)
-        crushOre(output, AlloyanceItems.IRON_DUST, 2, Tags.Items.ORES_IRON)
-        crushRawMaterial(output, AlloyanceItems.IRON_DUST, Tags.Items.RAW_MATERIALS_IRON)
-        crushIngot(output, AlloyanceItems.IRON_DUST, Tags.Items.INGOTS_IRON)
+        crushOre(output, AlloyanceItems.IRON_DUST, 2, Tags.Items.ORES_IRON, true)
+        crushRawMaterial(output, AlloyanceItems.IRON_DUST, Tags.Items.RAW_MATERIALS_IRON, true)
+        crushIngot(output, AlloyanceItems.IRON_DUST, Tags.Items.INGOTS_IRON, true)
 
         smeltToIngot(output, AlloyanceItems.GOLD_DUST, Items.GOLD_INGOT)
-        crushOre(output, AlloyanceItems.GOLD_DUST, 2, Tags.Items.ORES_GOLD)
-        crushRawMaterial(output, AlloyanceItems.GOLD_DUST, Tags.Items.RAW_MATERIALS_GOLD)
-        crushIngot(output, AlloyanceItems.GOLD_DUST, Tags.Items.INGOTS_GOLD)
+        crushOre(output, AlloyanceItems.GOLD_DUST, 2, Tags.Items.ORES_GOLD, true)
+        crushRawMaterial(output, AlloyanceItems.GOLD_DUST, Tags.Items.RAW_MATERIALS_GOLD, true)
+        crushIngot(output, AlloyanceItems.GOLD_DUST, Tags.Items.INGOTS_GOLD, true)
 
         smeltToIngot(output, AlloyanceItems.COPPER_DUST, Items.COPPER_INGOT)
-        crushOre(output, AlloyanceItems.COPPER_DUST, 2, Tags.Items.ORES_COPPER)
-        crushRawMaterial(output, AlloyanceItems.COPPER_DUST, Tags.Items.RAW_MATERIALS_COPPER)
-        crushIngot(output, AlloyanceItems.COPPER_DUST, Tags.Items.INGOTS_COPPER)
+        crushOre(output, AlloyanceItems.COPPER_DUST, 2, Tags.Items.ORES_COPPER, true)
+        crushRawMaterial(output, AlloyanceItems.COPPER_DUST, Tags.Items.RAW_MATERIALS_COPPER, true)
+        crushIngot(output, AlloyanceItems.COPPER_DUST, Tags.Items.INGOTS_COPPER, true)
 
-        crushOre(output, Items.REDSTONE, 2, Tags.Items.ORES_REDSTONE)
-        crushOre(output, Items.DIAMOND, 2, Tags.Items.ORES_DIAMOND)
-        crushOre(output, Items.EMERALD, 2, Tags.Items.ORES_EMERALD)
-        crushOre(output, Items.QUARTZ, 2, Tags.Items.ORES_QUARTZ)
+        crushOre(output, Items.REDSTONE, 2, Tags.Items.ORES_REDSTONE, true)
+        crushOre(output, Items.DIAMOND, 2, Tags.Items.ORES_DIAMOND, true)
+        crushOre(output, Items.EMERALD, 2, Tags.Items.ORES_EMERALD, true)
+        crushOre(output, Items.QUARTZ, 2, Tags.Items.ORES_QUARTZ, true)
     }
 
     private fun addMetalStorageRecipes(output: RecipeOutput, metal: Metal) {
@@ -318,12 +321,12 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
             .define('i', ingot)
             .group(blockName)
             .unlockedBy(getHasName(ingot), has(ingot))
-            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, blockName))
+            .save(output, alloyance(blockName))
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ingot, 9)
             .requires(block)
             .group(ingotName)
             .unlockedBy(getHasName(block), has(block))
-            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${ingotName}_from_${blockName}"))
+            .save(output, alloyance("${ingotName}_from_${blockName}"))
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ingot)
             .pattern("nnn")
@@ -332,12 +335,12 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
             .define('n', nugget)
             .group(ingotName)
             .unlockedBy(getHasName(nugget), has(nugget))
-            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${ingotName}_from_nuggets"))
+            .save(output, alloyance("${ingotName}_from_nuggets"))
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, nugget, 9)
             .requires(ingot)
             .group(nuggetName)
             .unlockedBy(getHasName(ingot), has(ingot))
-            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, nuggetName))
+            .save(output, alloyance(nuggetName))
     }
 
     private fun addMetalSmeltingRecipes(output: RecipeOutput, metal: Metal) {
@@ -377,22 +380,32 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
         val dustTag1 = getAlloyDust(input1)
         val alloyableTag1 = getAlloyAlloyable(input1)
         val id1 = getAlloyId(input1)
+        val ingredient1 = SizedIngredient.of(alloyableTag1, input1Count)
         val dustTag2 = getAlloyDust(input2)
         val alloyableTag2 = getAlloyAlloyable(input2)
+        val ingredient2 = SizedIngredient.of(alloyableTag2, input2Count)
         val id2 = getAlloyId(input2)
 
         AlloyerRecipeBuilder(
             ItemStack(resultIngot.get(), resultCount),
-            SizedIngredient.of(alloyableTag1, input1Count),
-            SizedIngredient.of(alloyableTag2, input2Count),
+            ingredient1,
+            ingredient2,
             experience,
             140
         )
             .group(getItemName(resultIngot))
-            .save(
-                output,
-                ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${getItemName(resultIngot)}_from_alloying")
-            )
+            .save(output, alloyance("${getItemName(resultIngot)}_from_alloying"))
+
+        output.enderIo().accept(
+            enderio("alloy_smelting/${getItemName(resultIngot)}"),
+            AlloySmeltingRecipe(
+                listOf(ingredient1, ingredient2),
+                ItemStack(resultIngot.get(), resultCount),
+                3000,
+                experience
+            ),
+            null
+        )
 
         if (input1Count + input2Count > 9) return
 
@@ -402,7 +415,7 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
             .group(getItemName(resultDust))
             .unlockedBy("has_${id1}_dust", has(dustTag1))
             .unlockedBy("has_${id2}_dust", has(dustTag2))
-            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${getItemName(resultDust)}_from_mixing"))
+            .save(output, alloyance("${getItemName(resultDust)}_from_mixing"))
     }
 
     private fun smeltToIngot(output: RecipeOutput, input: ItemLike, ingot: ItemLike) {
@@ -413,29 +426,62 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
         SimpleCookingRecipeBuilder.smelting(ingredient, RecipeCategory.MISC, ingot, 0.7F, 200)
             .group(ingotName)
             .unlockedBy(getHasName(input), has(input))
-            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${ingotName}_from_smelting_${inputName}"))
+            .save(output, alloyance("${ingotName}_from_smelting_${inputName}"))
         SimpleCookingRecipeBuilder.blasting(ingredient, RecipeCategory.MISC, ingot, 0.7F, 100)
             .group(ingotName)
             .unlockedBy(getHasName(input), has(input))
-            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${ingotName}_from_blasting_${inputName}"))
+            .save(output, alloyance("${ingotName}_from_blasting_${inputName}"))
     }
 
-    private fun crushOre(output: RecipeOutput, dust: ItemLike, dustCount: Int, oreTag: TagKey<Item>) {
+    private fun crushOre(output: RecipeOutput, dust: ItemLike, dustCount: Int, oreTag: TagKey<Item>, isVanilla: Boolean = false) {
         CrusherRecipeBuilder(ItemStack(dust, dustCount), Ingredient.of(oreTag), 0.75F, 140)
             .group(getItemName(dust))
-            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${getItemName(dust)}_from_crushing_ore"))
+            .save(output, alloyance("${getItemName(dust)}_from_crushing_ore"))
+
+        if (!isVanilla) {
+            val recipe = SagMillingRecipe(Ingredient.of(oreTag),
+                listOf(
+                    SagMillingRecipe.OutputItem.of(dust.asItem(), 1, 1F, false),
+                    SagMillingRecipe.OutputItem.of(dust.asItem(), 1, 0.33F, false),
+                    SagMillingRecipe.OutputItem.of(Items.COBBLESTONE, 1, 0.15F, false)
+                ),
+                2400,
+                SagMillingRecipe.BonusType.NONE)
+            output.enderIo().accept(enderio("sag_milling/${getItemName(dust)}_from_ore"), recipe, null)
+        }
     }
 
-    private fun crushRawMaterial(output: RecipeOutput, dust: ItemLike, rawMaterialTag: TagKey<Item>) {
+    private fun crushRawMaterial(output: RecipeOutput, dust: ItemLike, rawMaterialTag: TagKey<Item>, isVanilla: Boolean = false) {
         CrusherRecipeBuilder(ItemStack(dust, 2), Ingredient.of(rawMaterialTag), 0.75F, 140)
             .group(getItemName(dust))
-            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${getItemName(dust)}_from_crushing_raw_material"))
+            .save(output, alloyance("${getItemName(dust)}_from_crushing_raw_material"))
+
+        if (!isVanilla) {
+            val recipe = SagMillingRecipe(Ingredient.of(rawMaterialTag),
+                listOf(
+                    SagMillingRecipe.OutputItem.of(dust.asItem(), 1, 1F, false),
+                    SagMillingRecipe.OutputItem.of(dust.asItem(), 1, 0.80F, false),
+                ),
+                2400,
+                SagMillingRecipe.BonusType.NONE)
+            output.enderIo().accept(enderio("sag_milling/${getItemName(dust)}_from_raw_material"), recipe, null)
+        }
     }
 
-    private fun crushIngot(output: RecipeOutput, dust: ItemLike, ingotTag: TagKey<Item>) {
+    private fun crushIngot(output: RecipeOutput, dust: ItemLike, ingotTag: TagKey<Item>, isVanilla: Boolean = false) {
         CrusherRecipeBuilder(ItemStack(dust, 1), Ingredient.of(ingotTag), 0F, 140)
             .group(getItemName(dust))
-            .save(output, ResourceLocation.fromNamespaceAndPath(Alloyance.ID, "${getItemName(dust)}_from_crushing_ingot"))
+            .save(output, alloyance("${getItemName(dust)}_from_crushing_ingot"))
+
+        if (!isVanilla) {
+            val recipe = SagMillingRecipe(Ingredient.of(ingotTag),
+                listOf(
+                    SagMillingRecipe.OutputItem.of(dust.asItem(), 1, 1F, false),
+                ),
+                2400,
+                SagMillingRecipe.BonusType.NONE)
+            output.enderIo().accept(enderio("sag_milling/${getItemName(dust)}_from_ingot"), recipe, null)
+        }
     }
 
     private fun getAlloyDust(input: Any): TagKey<Item> = when (input) {
@@ -455,6 +501,13 @@ class AlloyanceRecipesProvider(output: PackOutput, lookupProvider: CompletableFu
         is VanillaMetal -> input.id
         else -> throw IllegalArgumentException("Not a vanilla or Alloyance metal: $input")
     }
+}
+
+private fun alloyance(path: String) = ResourceLocation.fromNamespaceAndPath(Alloyance.ID, path)
+private fun enderio(path: String) = alloyance("compat/enderio/$path")
+
+private fun RecipeOutput.enderIo(): RecipeOutput {
+    return this.withConditions(ModLoadedCondition("enderio"))
 }
 
 private enum class VanillaMetal(val id: String, val dustTag: TagKey<Item>, val alloyableTag: TagKey<Item>) {

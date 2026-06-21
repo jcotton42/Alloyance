@@ -3,13 +3,15 @@ package me.jcotton42.alloyance
 import com.mojang.logging.LogUtils
 import me.jcotton42.alloyance.client.AlloyanceClientEvents
 import me.jcotton42.alloyance.client.AlloyanceClientModEvents
-import me.jcotton42.alloyance.datagen.generateData
 import me.jcotton42.alloyance.registration.*
 import net.minecraft.client.Minecraft
+import net.neoforged.bus.api.SubscribeEvent
+import net.neoforged.fml.common.EventBusSubscriber
 import net.neoforged.fml.common.Mod
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent
 import net.neoforged.fml.event.lifecycle.FMLDedicatedServerSetupEvent
 import net.neoforged.neoforge.common.NeoForge
+import net.neoforged.neoforge.data.event.GatherDataEvent
 import thedarkcolour.kotlinforforge.neoforge.forge.MOD_BUS
 import thedarkcolour.kotlinforforge.neoforge.forge.runForDist
 
@@ -41,7 +43,6 @@ object Alloyance {
         AlloyancePlacementModifierTypes.register(MOD_BUS)
         AlloyanceRecipes.register(MOD_BUS)
         AlloyanceSounds.register(MOD_BUS)
-        MOD_BUS.addListener(::generateData)
         MOD_BUS.addListener(::registerCapabilities)
 
         val obj = runForDist(
