@@ -18,7 +18,7 @@ object MetalTiers {
 
     val DEEP_IRON = tier(
         metal = Metal.DEEP_IRON,
-        uses = 230,
+        uses = 250,
         speed = 6.2f,
         attackDamageBonus = 1.7f,
         enchantmentValue = 19
@@ -34,7 +34,7 @@ object MetalTiers {
 
     val BRONZE = tier(
         metal = Metal.BRONZE,
-        uses = 224,
+        uses = 657,
         speed = 7f,
         attackDamageBonus = 2.2f,
         enchantmentValue = 16
@@ -42,7 +42,7 @@ object MetalTiers {
 
     val BRASS = tier(
         metal = Metal.BRASS,
-        uses = 895,
+        uses = 388,
         speed = 6.8f,
         attackDamageBonus = 3.2f,
         enchantmentValue = 8
@@ -50,7 +50,7 @@ object MetalTiers {
 
     val DAMASCUS_STEEL = tier(
         metal = Metal.DAMASCUS_STEEL,
-        uses = 395,
+        uses = 988,
         speed = 6f,
         attackDamageBonus = 2.5f,
         enchantmentValue = 27
@@ -58,15 +58,15 @@ object MetalTiers {
 
     val SILVER = tier(
         metal = Metal.SILVER,
-        uses = 75,
+        uses = 100,
         speed = 11.2f,
         attackDamageBonus = 3.4f,
-        enchantmentValue = 19
+        enchantmentValue = 17
     )
 
     val ANGMALLEN = tier(
         metal = Metal.ANGMALLEN,
-        uses = 164,
+        uses = 412,
         speed = 7.2f,
         attackDamageBonus = 2.7f,
         enchantmentValue = 32
@@ -74,7 +74,7 @@ object MetalTiers {
 
     val STEEL = tier(
         metal = Metal.STEEL,
-        uses = 421,
+        uses = 1096,
         speed = 6.4f,
         attackDamageBonus = 2.3f,
         enchantmentValue = 14
@@ -82,7 +82,7 @@ object MetalTiers {
 
     val HEPATIZON = tier(
         metal = Metal.HEPATIZON,
-        uses = 761,
+        uses = 1386,
         speed = 7.2f,
         attackDamageBonus = 4.2f,
         enchantmentValue = 29
@@ -90,7 +90,7 @@ object MetalTiers {
 
     val BLACK_STEEL = tier(
         metal = Metal.BLACK_STEEL,
-        uses = 976,
+        uses = 1213,
         speed = 6.6f,
         attackDamageBonus = 3.9f,
         enchantmentValue = 11
@@ -101,12 +101,12 @@ object MetalTiers {
         uses = 366,
         speed = 7.9f,
         attackDamageBonus = 2.7f,
-        enchantmentValue = 17
+        enchantmentValue = 22
     )
 
     val ASTRAL_SILVER = tier(
         metal = Metal.ASTRAL_SILVER,
-        uses = 523,
+        uses = 820,
         speed = 8.5f,
         attackDamageBonus = 2.8f,
         enchantmentValue = 36
@@ -114,7 +114,7 @@ object MetalTiers {
 
     val IGNATIUS = tier(
         metal = Metal.IGNATIUS,
-        uses = 84,
+        uses = 384,
         speed = 4f,
         attackDamageBonus = 2.4f,
         enchantmentValue = 11
@@ -122,7 +122,7 @@ object MetalTiers {
 
     val OURECLASE = tier(
         metal = Metal.OURECLASE,
-        uses = 198,
+        uses = 555,
         speed = 8f,
         attackDamageBonus = 4.1f,
         enchantmentValue = 26
@@ -130,7 +130,7 @@ object MetalTiers {
 
     val SHADOW_IRON = tier(
         metal = Metal.SHADOW_IRON,
-        uses = 118,
+        uses = 450,
         speed = 6.4f,
         attackDamageBonus = 5.9f,
         enchantmentValue = 9
@@ -138,7 +138,7 @@ object MetalTiers {
 
     val QUICKSILVER = tier(
         metal = Metal.QUICKSILVER,
-        uses = 452,
+        uses = 714,
         speed = 10f,
         attackDamageBonus = 2.5f,
         enchantmentValue = 24
@@ -146,7 +146,7 @@ object MetalTiers {
 
     val CERUCLASE = tier(
         metal = Metal.CERUCLASE,
-        uses = 103,
+        uses = 503,
         speed = 5f,
         attackDamageBonus = 3.5f,
         enchantmentValue = 16
@@ -154,7 +154,7 @@ object MetalTiers {
 
     val EXIMITE = tier(
         metal = Metal.EXIMITE,
-        uses = 789,
+        uses = 1089,
         speed = 7.8f,
         attackDamageBonus = 4.9f,
         enchantmentValue = 28
@@ -162,7 +162,7 @@ object MetalTiers {
 
     val KALENDRITE = tier(
         metal = Metal.KALENDRITE,
-        uses = 212,
+        uses = 512,
         speed = 8.1f,
         attackDamageBonus = 4f,
         enchantmentValue = 19
@@ -170,7 +170,7 @@ object MetalTiers {
 
     val MIDASIUM = tier(
         metal = Metal.MIDASIUM,
-        uses = 89,
+        uses = 439,
         speed = 7f,
         attackDamageBonus = 2.6f,
         enchantmentValue = 28
@@ -178,7 +178,7 @@ object MetalTiers {
 
     val ORICHALCUM = tier(
         metal = Metal.ORICHALCUM,
-        uses = 1350,
+        uses = 1850,
         speed = 7.7f,
         attackDamageBonus = 6.2f,
         enchantmentValue = 20
@@ -186,7 +186,7 @@ object MetalTiers {
 
     val PLATINUM = tier(
         metal = Metal.PLATINUM,
-        uses = 998,
+        uses = 1398,
         speed = 9f,
         attackDamageBonus = 3.2f,
         enchantmentValue = 30
@@ -194,7 +194,7 @@ object MetalTiers {
 
     val VULCANITE = tier(
         metal = Metal.VULCANITE,
-        uses = 712,
+        uses = 1212,
         speed = 8.8f,
         attackDamageBonus = 3.8f,
         enchantmentValue = 19
@@ -202,7 +202,7 @@ object MetalTiers {
 
     val CELENEGIL = tier(
         metal = Metal.CELENEGIL,
-        uses = 521,
+        uses = 2255,
         speed = 8.2f,
         attackDamageBonus = 4.8f,
         enchantmentValue = 23
@@ -210,7 +210,7 @@ object MetalTiers {
 
     val AMORDRINE = tier(
         metal = Metal.AMORDRINE,
-        uses = 832,
+        uses = 1232,
         speed = 11f,
         attackDamageBonus = 4f,
         enchantmentValue = 40
@@ -218,15 +218,15 @@ object MetalTiers {
 
     val CARMOT = tier(
         metal = Metal.CARMOT,
-        uses = 414,
+        uses = 914,
         speed = 4.9f,
         attackDamageBonus = 1.4f,
-        enchantmentValue = 7
+        enchantmentValue = 22
     )
 
     val MITHRIL = tier(
         metal = Metal.MITHRIL,
-        uses = 1111,
+        uses = 1651,
         speed = 9f,
         attackDamageBonus = 5.5f,
         enchantmentValue = 18
@@ -234,7 +234,7 @@ object MetalTiers {
 
     val SANGUINITE = tier(
         metal = Metal.SANGUINITE,
-        uses = 666,
+        uses = 1166,
         speed = 11f,
         attackDamageBonus = 8f,
         enchantmentValue = 25
@@ -242,7 +242,7 @@ object MetalTiers {
 
     val VYROXERES = tier(
         metal = Metal.VYROXERES,
-        uses = 487,
+        uses = 1087,
         speed = 11f,
         attackDamageBonus = 6.2f,
         enchantmentValue = 16
@@ -250,7 +250,7 @@ object MetalTiers {
 
     val SHADOW_STEEL = tier(
         metal = Metal.SHADOW_STEEL,
-        uses = 214,
+        uses = 1566,
         speed = 9f,
         attackDamageBonus = 6.8f,
         enchantmentValue = 5
@@ -258,7 +258,8 @@ object MetalTiers {
 
     val HADEROTH = tier(
         metal = Metal.HADEROTH,
-        uses = 80,
+        // TODO if the improves-after-breaking effect is added, revert this to 80
+        uses = 2580,
         speed = 12f,
         attackDamageBonus = 4f,
         enchantmentValue = 19
@@ -274,7 +275,7 @@ object MetalTiers {
 
     val ATLARUS = tier(
         metal = Metal.ATLARUS,
-        uses = 1750,
+        uses = 2250,
         speed = 11f,
         attackDamageBonus = 5f,
         enchantmentValue = 22
@@ -282,7 +283,7 @@ object MetalTiers {
 
     val ADAMANTINE = tier(
         metal = Metal.ADAMANTINE,
-        uses = 2943,
+        uses = 3443,
         speed = 10.5f,
         attackDamageBonus = 5f,
         enchantmentValue = 22
@@ -290,7 +291,7 @@ object MetalTiers {
 
     val INOLASHITE = tier(
         metal = Metal.INOLASHITE,
-        uses = 1028,
+        uses = 1528,
         speed = 7.2f,
         attackDamageBonus = 5f,
         enchantmentValue = 22
@@ -298,7 +299,7 @@ object MetalTiers {
 
     val KRIK = tier(
         metal = Metal.KRIK,
-        uses = 1652,
+        uses = 2152,
         speed = 9.5f,
         attackDamageBonus = 4.1f,
         enchantmentValue = 17
@@ -306,7 +307,7 @@ object MetalTiers {
 
     val TARTARITE = tier(
         metal = Metal.TARTARITE,
-        uses = 3782,
+        uses = 4782,
         speed = 12f,
         attackDamageBonus = 9f,
         enchantmentValue = 14
@@ -314,7 +315,7 @@ object MetalTiers {
 
     val ETHERIUM = tier(
         metal = Metal.ETHERIUM,
-        uses = 2056,
+        uses = 2556,
         speed = 16f,
         attackDamageBonus = 6f,
         enchantmentValue = 30
