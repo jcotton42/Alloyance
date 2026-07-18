@@ -3,7 +3,7 @@
 parchment = "2024.11.17"
 parchmentMinecraft = "1.21.1"
 # Plugins
-modDevGradle = "2.0.141"
+modDevGradle = "2.0.142"
 kotlin = "2.3.0"
 # Dependencies
 minecraft = "1.21.1"
