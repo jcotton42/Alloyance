@@ -3,6 +3,7 @@ package me.jcotton42.alloyance.datagen
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.registration.AlloyanceBlocks
 import me.jcotton42.alloyance.registration.AlloyanceItems
+import net.minecraft.core.Holder
 import net.minecraft.data.PackOutput
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.BucketItem
@@ -21,6 +22,12 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
     existingFileHelper
 ) {
     override fun registerModels() {
+        extendedHandheldItem(AlloyanceItems.TARTARITE_AXE)
+        extendedHandheldItem(AlloyanceItems.TARTARITE_HOE)
+        extendedHandheldItem(AlloyanceItems.TARTARITE_PICKAXE)
+        extendedHandheldItem(AlloyanceItems.TARTARITE_SHOVEL)
+        extendedHandheldItem(AlloyanceItems.TARTARITE_SWORD)
+
         basicBlockItem(AlloyanceBlocks.ALLOYER)
         basicBlockItem(AlloyanceBlocks.CRUSHER)
 
@@ -65,31 +72,31 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
         }
 
         handheldItem(AlloyanceItems.COPPER_AXE.get())
-        AlloyanceItems.AXES.values.forEach { handheldItem(it.get()) }
+        AlloyanceItems.AXES.values.skipHandled().forEach { handheldItem(it.get()) }
 
         handheldItem(AlloyanceItems.COPPER_HOE.get())
-        AlloyanceItems.HOES.values.forEach { handheldItem(it.get()) }
+        AlloyanceItems.HOES.values.skipHandled().forEach { handheldItem(it.get()) }
 
         handheldItem(AlloyanceItems.COPPER_PICKAXE.get())
-        AlloyanceItems.PICKAXES.values.forEach { handheldItem(it.get()) }
+        AlloyanceItems.PICKAXES.values.skipHandled().forEach { handheldItem(it.get()) }
 
         handheldItem(AlloyanceItems.COPPER_SHOVEL.get())
-        AlloyanceItems.SHOVELS.values.forEach { handheldItem(it.get()) }
+        AlloyanceItems.SHOVELS.values.skipHandled().forEach { handheldItem(it.get()) }
 
         handheldItem(AlloyanceItems.COPPER_SWORD.get())
-        AlloyanceItems.SWORDS.values.forEach { handheldItem(it.get()) }
+        AlloyanceItems.SWORDS.values.skipHandled().forEach { handheldItem(it.get()) }
 
         basicItem(AlloyanceItems.COPPER_HELMET.get())
-        AlloyanceItems.HELMETS.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.HELMETS.values.skipHandled().forEach { basicItem(it.get()) }
 
         basicItem(AlloyanceItems.COPPER_CHESTPLATE.get())
-        AlloyanceItems.CHESTPLATES.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.CHESTPLATES.values.skipHandled().forEach { basicItem(it.get()) }
 
         basicItem(AlloyanceItems.COPPER_LEGGINGS.get())
-        AlloyanceItems.LEGGINGS.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.LEGGINGS.values.skipHandled().forEach { basicItem(it.get()) }
 
         basicItem(AlloyanceItems.COPPER_BOOTS.get())
-        AlloyanceItems.BOOTS.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.BOOTS.values.skipHandled().forEach { basicItem(it.get()) }
     }
 
     private fun basicBlockItem(block: DeferredBlock<out Block>) {
@@ -104,4 +111,16 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
                 DynamicFluidContainerModelBuilder.begin(b, e)
             }.fluid(fluid.get())
     }
+
+    private fun extendedHandheldItem(item: DeferredItem<*>) {
+        singleTexture(
+            item.id.path,
+            modLoc("item/extended_handheld"),
+            "layer0",
+            modLoc("item/${item.id.path}"))
+        handled.add(item)
+    }
+
+    private val handled = mutableListOf<Holder<*>>()
+    private fun <T: Holder<*>> Iterable<T>.skipHandled(): Iterable<T> = this.filterNot { handled.contains(it) }
 }
