@@ -28,6 +28,31 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
         extendedHandheldItem(AlloyanceItems.TARTARITE_SHOVEL)
         extendedHandheldItem(AlloyanceItems.TARTARITE_SWORD)
 
+        extendedItem(AlloyanceItems.AMORDRINE_CHESTPLATE)
+        extendedItem(AlloyanceItems.ATLARUS_CHESTPLATE)
+        extendedItem(AlloyanceItems.BLACK_STEEL_CHESTPLATE)
+        extendedItem(AlloyanceItems.CARMOT_CHESTPLATE)
+        extendedItem(AlloyanceItems.CELENEGIL_CHESTPLATE)
+        extendedItem(AlloyanceItems.DESICHALKOS_CHESTPLATE)
+        extendedItem(AlloyanceItems.ETHERIUM_BOOTS)
+        extendedItem(AlloyanceItems.ETHERIUM_CHESTPLATE)
+        extendedItem(AlloyanceItems.INOLASHITE_BOOTS)
+        extendedItem(AlloyanceItems.INOLASHITE_CHESTPLATE)
+        extendedItem(AlloyanceItems.KRIK_BOOTS)
+        extendedItem(AlloyanceItems.KRIK_CHESTPLATE)
+        extendedItem(AlloyanceItems.ORICHALCUM_CHESTPLATE)
+        extendedItem(AlloyanceItems.OURECLASE_BOOTS)
+        extendedItem(AlloyanceItems.OURECLASE_CHESTPLATE)
+        extendedItem(AlloyanceItems.SANGUINITE_BOOTS)
+        extendedItem(AlloyanceItems.SANGUINITE_CHESTPLATE)
+        extendedItem(AlloyanceItems.SHADOW_IRON_CHESTPLATE)
+        extendedItem(AlloyanceItems.SHADOW_STEEL_BOOTS)
+        extendedItem(AlloyanceItems.SHADOW_STEEL_CHESTPLATE)
+        extendedItem(AlloyanceItems.TARTARITE_BOOTS)
+        extendedItem(AlloyanceItems.TARTARITE_CHESTPLATE)
+        extendedItem(AlloyanceItems.VYROXERES_BOOTS)
+        extendedItem(AlloyanceItems.VYROXERES_CHESTPLATE)
+
         basicBlockItem(AlloyanceBlocks.ALLOYER)
         basicBlockItem(AlloyanceBlocks.CRUSHER)
 
@@ -57,16 +82,16 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
         basicItem(AlloyanceItems.TAR.get())
         basicBlockItem(AlloyanceBlocks.TAR_ORE)
 
-        AlloyanceBlocks.ORES.values.forEach(::basicBlockItem)
-        AlloyanceBlocks.DEEPSLATE_ORES.values.forEach(::basicBlockItem)
-        AlloyanceBlocks.END_ORES.values.forEach(::basicBlockItem)
-        AlloyanceBlocks.NETHER_ORES.values.forEach(::basicBlockItem)
-        AlloyanceBlocks.STORAGE_BLOCKS.values.forEach(::basicBlockItem)
+        AlloyanceBlocks.ORES.values.skipHandled().forEach(::basicBlockItem)
+        AlloyanceBlocks.DEEPSLATE_ORES.values.skipHandled().forEach(::basicBlockItem)
+        AlloyanceBlocks.END_ORES.values.skipHandled().forEach(::basicBlockItem)
+        AlloyanceBlocks.NETHER_ORES.values.skipHandled().forEach(::basicBlockItem)
+        AlloyanceBlocks.STORAGE_BLOCKS.values.skipHandled().forEach(::basicBlockItem)
 
-        AlloyanceItems.INGOTS.values.forEach { basicItem(it.get()) }
-        AlloyanceItems.RAW_MATERIALS.values.forEach { basicItem(it.get()) }
-        AlloyanceItems.NUGGETS.values.forEach { basicItem(it.get()) }
-        AlloyanceItems.DUSTS.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.INGOTS.values.skipHandled().forEach { basicItem(it.get()) }
+        AlloyanceItems.RAW_MATERIALS.values.skipHandled().forEach { basicItem(it.get()) }
+        AlloyanceItems.NUGGETS.values.skipHandled().forEach { basicItem(it.get()) }
+        AlloyanceItems.DUSTS.values.skipHandled().forEach { basicItem(it.get()) }
         AlloyanceItems.BUCKETS.forEach { (fluid, bucket) ->
             bucket(fluid, bucket)
         }
@@ -110,6 +135,15 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
             .customLoader { b, e ->
                 DynamicFluidContainerModelBuilder.begin(b, e)
             }.fluid(fluid.get())
+    }
+
+    private fun extendedItem(item: DeferredItem<*>) {
+        singleTexture(
+            item.id.path,
+            modLoc("item/extended"),
+            "layer0",
+            modLoc("item/${item.id.path}"))
+        handled.add(item)
     }
 
     private fun extendedHandheldItem(item: DeferredItem<*>) {
