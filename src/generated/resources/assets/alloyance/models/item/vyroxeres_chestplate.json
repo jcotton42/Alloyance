@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "alloyance:item/extended",
   "textures": {
     "layer0": "alloyance:item/vyroxeres_chestplate"
   }

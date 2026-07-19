@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/handheld",
+  "parent": "alloyance:item/extended_handheld",
   "textures": {
     "layer0": "alloyance:item/tartarite_axe"
   }

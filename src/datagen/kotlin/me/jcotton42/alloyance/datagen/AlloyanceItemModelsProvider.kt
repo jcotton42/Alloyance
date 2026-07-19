@@ -3,6 +3,7 @@ package me.jcotton42.alloyance.datagen
 import me.jcotton42.alloyance.Alloyance
 import me.jcotton42.alloyance.registration.AlloyanceBlocks
 import me.jcotton42.alloyance.registration.AlloyanceItems
+import net.minecraft.core.Holder
 import net.minecraft.data.PackOutput
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.BucketItem
@@ -21,6 +22,37 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
     existingFileHelper
 ) {
     override fun registerModels() {
+        extendedHandheldItem(AlloyanceItems.TARTARITE_AXE)
+        extendedHandheldItem(AlloyanceItems.TARTARITE_HOE)
+        extendedHandheldItem(AlloyanceItems.TARTARITE_PICKAXE)
+        extendedHandheldItem(AlloyanceItems.TARTARITE_SHOVEL)
+        extendedHandheldItem(AlloyanceItems.TARTARITE_SWORD)
+
+        extendedItem(AlloyanceItems.AMORDRINE_CHESTPLATE)
+        extendedItem(AlloyanceItems.ATLARUS_CHESTPLATE)
+        extendedItem(AlloyanceItems.BLACK_STEEL_CHESTPLATE)
+        extendedItem(AlloyanceItems.CARMOT_CHESTPLATE)
+        extendedItem(AlloyanceItems.CELENEGIL_CHESTPLATE)
+        extendedItem(AlloyanceItems.DESICHALKOS_CHESTPLATE)
+        extendedItem(AlloyanceItems.ETHERIUM_BOOTS)
+        extendedItem(AlloyanceItems.ETHERIUM_CHESTPLATE)
+        extendedItem(AlloyanceItems.INOLASHITE_BOOTS)
+        extendedItem(AlloyanceItems.INOLASHITE_CHESTPLATE)
+        extendedItem(AlloyanceItems.KRIK_BOOTS)
+        extendedItem(AlloyanceItems.KRIK_CHESTPLATE)
+        extendedItem(AlloyanceItems.ORICHALCUM_CHESTPLATE)
+        extendedItem(AlloyanceItems.OURECLASE_BOOTS)
+        extendedItem(AlloyanceItems.OURECLASE_CHESTPLATE)
+        extendedItem(AlloyanceItems.SANGUINITE_BOOTS)
+        extendedItem(AlloyanceItems.SANGUINITE_CHESTPLATE)
+        extendedItem(AlloyanceItems.SHADOW_IRON_CHESTPLATE)
+        extendedItem(AlloyanceItems.SHADOW_STEEL_BOOTS)
+        extendedItem(AlloyanceItems.SHADOW_STEEL_CHESTPLATE)
+        extendedItem(AlloyanceItems.TARTARITE_BOOTS)
+        extendedItem(AlloyanceItems.TARTARITE_CHESTPLATE)
+        extendedItem(AlloyanceItems.VYROXERES_BOOTS)
+        extendedItem(AlloyanceItems.VYROXERES_CHESTPLATE)
+
         basicBlockItem(AlloyanceBlocks.ALLOYER)
         basicBlockItem(AlloyanceBlocks.CRUSHER)
 
@@ -50,46 +82,46 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
         basicItem(AlloyanceItems.TAR.get())
         basicBlockItem(AlloyanceBlocks.TAR_ORE)
 
-        AlloyanceBlocks.ORES.values.forEach(::basicBlockItem)
-        AlloyanceBlocks.DEEPSLATE_ORES.values.forEach(::basicBlockItem)
-        AlloyanceBlocks.END_ORES.values.forEach(::basicBlockItem)
-        AlloyanceBlocks.NETHER_ORES.values.forEach(::basicBlockItem)
-        AlloyanceBlocks.STORAGE_BLOCKS.values.forEach(::basicBlockItem)
+        AlloyanceBlocks.ORES.values.skipHandled().forEach(::basicBlockItem)
+        AlloyanceBlocks.DEEPSLATE_ORES.values.skipHandled().forEach(::basicBlockItem)
+        AlloyanceBlocks.END_ORES.values.skipHandled().forEach(::basicBlockItem)
+        AlloyanceBlocks.NETHER_ORES.values.skipHandled().forEach(::basicBlockItem)
+        AlloyanceBlocks.STORAGE_BLOCKS.values.skipHandled().forEach(::basicBlockItem)
 
-        AlloyanceItems.INGOTS.values.forEach { basicItem(it.get()) }
-        AlloyanceItems.RAW_MATERIALS.values.forEach { basicItem(it.get()) }
-        AlloyanceItems.NUGGETS.values.forEach { basicItem(it.get()) }
-        AlloyanceItems.DUSTS.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.INGOTS.values.skipHandled().forEach { basicItem(it.get()) }
+        AlloyanceItems.RAW_MATERIALS.values.skipHandled().forEach { basicItem(it.get()) }
+        AlloyanceItems.NUGGETS.values.skipHandled().forEach { basicItem(it.get()) }
+        AlloyanceItems.DUSTS.values.skipHandled().forEach { basicItem(it.get()) }
         AlloyanceItems.BUCKETS.forEach { (fluid, bucket) ->
             bucket(fluid, bucket)
         }
 
         handheldItem(AlloyanceItems.COPPER_AXE.get())
-        AlloyanceItems.AXES.values.forEach { handheldItem(it.get()) }
+        AlloyanceItems.AXES.values.skipHandled().forEach { handheldItem(it.get()) }
 
         handheldItem(AlloyanceItems.COPPER_HOE.get())
-        AlloyanceItems.HOES.values.forEach { handheldItem(it.get()) }
+        AlloyanceItems.HOES.values.skipHandled().forEach { handheldItem(it.get()) }
 
         handheldItem(AlloyanceItems.COPPER_PICKAXE.get())
-        AlloyanceItems.PICKAXES.values.forEach { handheldItem(it.get()) }
+        AlloyanceItems.PICKAXES.values.skipHandled().forEach { handheldItem(it.get()) }
 
         handheldItem(AlloyanceItems.COPPER_SHOVEL.get())
-        AlloyanceItems.SHOVELS.values.forEach { handheldItem(it.get()) }
+        AlloyanceItems.SHOVELS.values.skipHandled().forEach { handheldItem(it.get()) }
 
         handheldItem(AlloyanceItems.COPPER_SWORD.get())
-        AlloyanceItems.SWORDS.values.forEach { handheldItem(it.get()) }
+        AlloyanceItems.SWORDS.values.skipHandled().forEach { handheldItem(it.get()) }
 
         basicItem(AlloyanceItems.COPPER_HELMET.get())
-        AlloyanceItems.HELMETS.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.HELMETS.values.skipHandled().forEach { basicItem(it.get()) }
 
         basicItem(AlloyanceItems.COPPER_CHESTPLATE.get())
-        AlloyanceItems.CHESTPLATES.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.CHESTPLATES.values.skipHandled().forEach { basicItem(it.get()) }
 
         basicItem(AlloyanceItems.COPPER_LEGGINGS.get())
-        AlloyanceItems.LEGGINGS.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.LEGGINGS.values.skipHandled().forEach { basicItem(it.get()) }
 
         basicItem(AlloyanceItems.COPPER_BOOTS.get())
-        AlloyanceItems.BOOTS.values.forEach { basicItem(it.get()) }
+        AlloyanceItems.BOOTS.values.skipHandled().forEach { basicItem(it.get()) }
     }
 
     private fun basicBlockItem(block: DeferredBlock<out Block>) {
@@ -104,4 +136,25 @@ class AlloyanceItemModelsProvider(output: PackOutput, existingFileHelper: Existi
                 DynamicFluidContainerModelBuilder.begin(b, e)
             }.fluid(fluid.get())
     }
+
+    private fun extendedItem(item: DeferredItem<*>) {
+        singleTexture(
+            item.id.path,
+            modLoc("item/extended"),
+            "layer0",
+            modLoc("item/${item.id.path}"))
+        handled.add(item)
+    }
+
+    private fun extendedHandheldItem(item: DeferredItem<*>) {
+        singleTexture(
+            item.id.path,
+            modLoc("item/extended_handheld"),
+            "layer0",
+            modLoc("item/${item.id.path}"))
+        handled.add(item)
+    }
+
+    private val handled = mutableListOf<Holder<*>>()
+    private fun <T: Holder<*>> Iterable<T>.skipHandled(): Iterable<T> = this.filterNot { handled.contains(it) }
 }
